@@ -6,6 +6,7 @@
 
 .goog-te-gadget {
     font-size: 0 !important;
+    display: inline-block;
 }
 
 .goog-te-combo {
@@ -38,4 +39,10 @@
 
 .goog-tooltip {
     display: none !important;
+}
+.goog-text-highlight{
+background-color: transparent!important;
+-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0)!important;
+-moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0)!important;
+box-shadow: 0 0px 0px rgba(0, 0, 0, 0)!important;
 }
