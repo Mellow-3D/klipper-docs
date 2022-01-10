@@ -8,54 +8,33 @@
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/theme-simple.css">
-
+    <link rel="stylesheet" href="css/translate-google.css">
+    <style>
+        nav.app-nav li ul {
+            min-width: 130px;
+        }
+    </style>
 </head>
-
-<style>
-#google_translate_element {
-    overflow: hidden;
-    border-width: 1px;
-    border-radius: 0.25rem;
-}
-
-.goog-te-gadget {
-    font-size: 0 !important;
-}
-
-.goog-te-combo {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    font-size: 0.75rem !important;
-    line-height: 1rem !important;
-    outline: 2px solid transparent !important;
-    outline-offset: 2px !important;
-}
-.goog-logo-link {
-    display: none !important;
-}
-.goog-te-banner-frame {
-    display: none !important;
-    position: fixed !important;
-}
-</style>
 
 <body>
     <div id="app"></div>
-    <div id="google_translate_element"></div>
+    <div class="app-nav" id="google_translate_element">Translate</div>
 
     <script async src="js/translate-google.js"></script>
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'af,ga,sq,it,ar,ja,az,kn,eu,ko,bn,la,be,lv,bg,lt,ca,mk,zh-CN,ms,zh-TW,mt,hr,no,cs,fa,da,pl,nl,pt,en,ro,eo,ru,et,sr,tl,sk,fi,sl,fr,es,gl,sw,ka,sv,de,ta,el,te,gu,th,ht,tr,iw,uk,hi,ur,hu,vi,is,cy,id,yi',
-                autoDisplay: true
+                pageLanguage: 'zh-CN',
+                includedLanguages: 'zh-CN,zh-TW,en,ja,de,ko',
+                autoDisplay: false
             }, 'google_translate_element');
         }
     </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.min.js"></script>
     <script>
         window.$docsify = {
+
             name: 'Fly Klipper Docs',
             repo: '',
             el: '#app',
@@ -64,20 +43,26 @@
             notFoundPage: true,
             coverpage: true,
             auto2top: true,
+            executeScript: true,
+            loadNavbar: false,
+            mergeNavbar: true,
 
             nameLink: {
-                '/': '#/'
+                '/': '#/',
             },
             search: {
                 noData: {
-                    '/zh-cn/': '没有结果!'
+                    '/': '没有结果!',
                 },
                 paths: 'auto',
                 placeholder: {
-                    '/zh-cn/': '搜索'
+                    '/': '搜索',
                 },
-                pathNamespaces: ['/es', '/de-de', '/ru-ru', '/zh-cn']
+                pathNamespaces: ['/']
             },
+            plugins: [
+
+            ],
             onlyCover: false,
             pagination: {
                 previousText: '上一章节',
@@ -89,7 +74,6 @@
     </script>
     <script src="js/docsify.min.js"></script>
     <script src="js/docsify-themeable.min.js"></script>
-    <script src="js/ga.min.js"></script>
     <script src="js/emoji.min.js"></script>
     <script src="js/zoom-image.min.js"></script>
     <script src="js/search.min.js"></script>

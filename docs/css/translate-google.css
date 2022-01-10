@@ -1,0 +1,44 @@
+#google_translate_element {
+    overflow: hidden;
+    border-width: 1px;
+    border-radius: 0.25rem;
+}
+
+.goog-te-gadget {
+    font-size: 0 !important;
+}
+
+.goog-te-combo {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important;
+
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    z-index: 999;
+    background-color: #ffffff;
+    background-image: none !important;
+    filter: none !important;
+    border: 0.5px solid #e5e5e5;
+    outline: none;
+    height: 25px !important;
+    line-height: 25px;
+}
+.goog-logo-link {
+    display: none !important;
+}
+.goog-te-banner-frame {
+    display: none !important;
+    position: fixed !important;
+}
+
+.goog-tooltip {
+    display: none !important;
+}
+.skiptranslate {
+    display: none !important;
+}

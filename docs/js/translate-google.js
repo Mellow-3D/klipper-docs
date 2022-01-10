@@ -143,6 +143,7 @@
         c._cest = gtConstEvalStartTime;
         gtConstEvalStartTime = undefined;
         c._cl = navigator.language || navigator.userLanguage;
+        console.log(navigator.language,navigator.userLanguage)
         c._cuc = 'googleTranslateElementInit';
         c._cac = '';
         c._cam = '';
