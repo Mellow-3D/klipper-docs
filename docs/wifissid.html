@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="preconnect" href="//cdn.w3cbus.com">
+    <link rel="preconnect" href="//cdn.jsdelivr.net">
+    <title>工具</title>
+
+    <!-- MDUI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+</head>
+
+<body>
+    
+    <div class="mdui-container">
+        <div class="mdui-row">
+            <div class="mdui-col-xs-12">
+                <div class="mdui-textfield" style="width: 400px; margin: auto;">
+                    <input id="ssid" type="text" class="mdui-textfield-input" placeholder="SSID" />
+                    <div class="mdui-textfield-helper">WIFI名称不支持中文</div>
+                </div>
+                <div class="mdui-textfield" style="width: 400px; margin: auto;">
+                    <input id="pass" type="text" class="mdui-textfield-input" placeholder="PASSWORD" />
+                    <div class="mdui-textfield-helper">WIFI密码</div>
+                </div>
+                <textarea style="width: 400px; margin: auto; visibility: hidden;" id="input"></textarea>
+            </br>
+                <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" style="width: 150px; margin-left: auto; margin-right: auto;" onclick="start()">生成</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MDUI JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous">
+        </script>
+    <script>
+        function start(){
+            var pattern = new RegExp("[\u4E00-\u9FA5]+");
+
+            var ssid = document.getElementById('ssid').value;
+            var pass = document.getElementById('pass').value;
+
+            if(ssid != null && ssid != "" && pass != null && pass != ""){
+                if (/.*[\u4e00-\u9fa5]+.*$/.test(ssid)) {
+                    alert("SSID不能有中文");
+                    return false;
+                }else{
+                    var ssids = ssid.split("");
+                    var passs = pass.split("");
+                    for(var i = 0;i < ssids.length;i++){
+                         if (/^[a-z]+$/.test(ssids[i])){
+                            ssids[i] = "'" + ssids[i];
+                         }
+                    }
+                    ssid = "";
+                    for (var i = 0; i < ssids.length; i++) {
+                        ssid += ssids[i];
+                    }
+
+                    for (var i = 0; i < passs.length; i++) {
+                        if (/^[a-z]+$/.test(passs[i])) {
+                            passs[i] = "'" + passs[i];
+                        }
+                    }
+                    pass = "";
+                    for (var i = 0; i < passs.length; i++) {
+                        pass += passs[i];
+                    }
+                    var str = 'M587 S"' + ssid + '" P"' + pass + '"';
+                    mdui.dialog({
+                        title: '生成结果',
+                        content: str,
+                        buttons: [
+                            {
+                                text: '取消'
+                            },
+                            {
+                                text: '复制',
+                                onClick: function (inst) {
+                                    var input = document.getElementById("input");
+                                    input.value = str; // 修改文本框的内容
+                                    input.select(); // 选中文本
+                                    document.execCommand("copy"); // 执行浏览器复制命令
+                                }
+                            }
+                        ]
+                    });
+                }
+            }else{
+                alert("请输入WIFI及密码");
+            }
+        }
+    </script>
+</body>
+
+</html>
