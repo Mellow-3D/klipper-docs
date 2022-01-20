@@ -7,7 +7,7 @@
 ## 正式版
 
 [谷歌网盘](https://drive.google.com/drive/folders/1llH-lq-WsbIdwkmLL51n3OHo5dNNpcPy)
-[又拍云](https://fly3d.zxkxz.cn/img/releases/FLY-Gemini_Armbian_21_12_8_server.img.xz)
+[又拍云](http://fly3d.zxkxz.cn/img/releases/FLY-Gemini_Armbian_21_12_8_server.img.xz)
 
 国内用户请前往QQ群下载
 
@@ -19,4 +19,4 @@
 * 请附带日志，截图或详细说明
 * 请尽量描述复现方式
  
-[又拍云](https://fly3d.zxkxz.cn/img/beta/Armbian_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
+[又拍云](http://fly3d.zxkxz.cn/img/beta/Armbian_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
