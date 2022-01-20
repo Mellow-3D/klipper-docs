@@ -18,5 +18,8 @@
   * [常见问题](/guide/what.md)
 
 * 进阶
-
   * [加速度计](/advanced/Accelerometer.md)
+
+* 系统
+  * [下载镜像](/introduction/downloadimg.md)
+  * [更新日志](/introduction/systemupdatelog.md)
