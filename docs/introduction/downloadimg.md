@@ -19,4 +19,5 @@
 * 请附带日志，截图或详细说明
 * 请尽量描述复现方式
  
-[又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/Armbian_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
+* v2    [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/Armbian_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
+* v2.1  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/FLY_v2.1_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
