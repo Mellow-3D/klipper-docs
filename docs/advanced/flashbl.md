@@ -19,7 +19,7 @@
 
 * 连接实物图
 
-![FLASH](../images/adv/flashbl2.jpg ":no-zooom")
+![FLASH](../images/adv/flashbl2.png ":no-zooom")
 
 2. 连接跳线帽
 
@@ -33,7 +33,7 @@
 * Gemini v1.1版本，跳线帽将右侧排针与中间排针连接
 * 下图为V1.1版本
 
-![FLASH](../images/adv/flashbl4.jpg ":no-zooom")
+![FLASH](../images/adv/flashbl4.png ":no-zooom")
 
 3. 进入系统并连接到ssh
 
@@ -61,6 +61,11 @@
 * 等待100%完成后即烧录BL完成
 
 ![FLASH](../images/adv/flashbl7.png ":no-zooom")
+
+## 启动
+
+* 烧录完BL后记得拔掉两个跳线帽，否则是没法启动的
+* 取掉两个跳线帽后再按重启键
 
 ## 烧录固件
 
