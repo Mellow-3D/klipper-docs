@@ -21,3 +21,4 @@
  
 * v2    [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/Armbian_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
 * v2.1  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/FLY_v2.1_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
+* v2.2  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/FLY_V2.2_-trunk_Flygemini_bullseye_current_5.10.85.img.xz)

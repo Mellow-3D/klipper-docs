@@ -15,6 +15,10 @@
 
 * 修复CatSerial没有连接设备出错
 
+### v2.2
+
+* 新增Gemini系列主板BL固件，烧录文档见[BL烧录](/advanced/flashbl.md)
+
 ## v1
 
 * 与Gemini同时间发布
