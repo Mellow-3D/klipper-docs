@@ -18,6 +18,7 @@
   * [常见问题](/guide/what.md)
 
 * 进阶
+  * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
 
 * 系统
