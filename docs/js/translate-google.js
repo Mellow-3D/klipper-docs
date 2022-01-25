@@ -161,6 +161,7 @@
         c._ps = b + '/translate_static/css/translateelement.css';
         c._puh = 'translate.google.cn';
         _loadCss(c._ps);
+        console.log(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
         _loadJs(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
     })();
 })();
