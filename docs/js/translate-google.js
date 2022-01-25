@@ -143,7 +143,6 @@
         c._cest = gtConstEvalStartTime;
         gtConstEvalStartTime = undefined;
         c._cl = navigator.language || navigator.userLanguage;
-        console.log(navigator.language,navigator.userLanguage)
         c._cuc = 'googleTranslateElementInit';
         c._cac = '';
         c._cam = '';
@@ -161,7 +160,6 @@
         c._ps = b + '/translate_static/css/translateelement.css';
         c._puh = 'translate.google.cn';
         _loadCss(c._ps);
-        console.log(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
         _loadJs(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
     })();
 })();

@@ -37,7 +37,7 @@ CS   ----> CS
 * 打开printer.cfg加入加速度计配置
 * spi_bus必须配置，如果加速度计的cs引脚接到主板SPI0的cs1则spi_bus: spidev0.1
 
-```
+```ini
 [mcu host]
 serial: /tmp/klipper_host_mcu
 
@@ -75,7 +75,7 @@ probe_points:
 
 * 过高的`accel_per_hz`会让振动变得剧烈，可以适当降低
 
-```
+```ini
 [resonance_tester]
 accel_chip: adxl345
 accel_per_hz: 50  # 默认值为75
