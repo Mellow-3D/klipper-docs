@@ -2,8 +2,8 @@
 
 > 购买ADXL345加速度计模块时请仔细辨别
 
-?> 建议使用Mellow的ADXL345加速度计模块
-?> 可直接安装到36步进电机上，接口兼容Gemini主板
+?> 建议使用Mellow的ADXL345加速度计模块.
+ 可直接安装到36步进电机上，接口兼容Gemini主板
 
 ![ACCE](../images/adv/accele/acc7.png ":no-zooom")
 
