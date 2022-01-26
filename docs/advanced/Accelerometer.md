@@ -8,7 +8,9 @@
 ![ACCE](../images/adv/accele/acc7.png ":no-zooom")
 
 * 接线线序简单，如下图
-* 固=固定方便，免去改结构件的麻烦
+* 固定方便，免去改结构件的麻烦
+
+----
 
 ![ACCE](../images/adv/accele/acc6.png ":no-zooom")
 
