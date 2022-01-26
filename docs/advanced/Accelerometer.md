@@ -5,6 +5,8 @@
 ?> 建议使用Mellow的ADXL345加速度计模块.
  可直接安装到36步进电机上，接口兼容Gemini主板
 
+?> 可代替V0/V0.1的固定线管的打印件
+
 ![ACCE](../images/adv/accele/acc7.png ":no-zooom")
 
 * 接线线序简单，如下图
