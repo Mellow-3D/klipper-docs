@@ -19,6 +19,13 @@
 
 * 新增Gemini系列主板BL固件，烧录文档见[BL烧录](/advanced/flashbl.md)
 
+### v2.4
+
+* 修复Klipper缺少烧录环境问题
+* 修改配置模板
+* 新增mJpg支持摄像头
+* 新增V1,V1.1主板引脚配置。在FLY_Config切换
+
 ## v1
 
 * 与Gemini同时间发布

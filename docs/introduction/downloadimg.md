@@ -4,6 +4,8 @@
 
 > 如果是重新烧录系统，请提前备份好配置文件。
 
+?> 下个正式版本将采用APT仓库来实现增量更新，免去烧录镜像的麻烦
+
 ## 正式版
 
 [谷歌网盘](https://drive.google.com/drive/folders/1llH-lq-WsbIdwkmLL51n3OHo5dNNpcPy)
@@ -18,7 +20,7 @@
 * 邮件主题：系统问题反馈
 * 请附带日志，截图或详细说明
 * 请尽量描述复现方式
- 
-* v2    [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/Armbian_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
-* v2.1  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/FLY_v2.1_21.11.0-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
-* v2.2  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/FLY_V2.2_-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
+
+?> 以后只提供最新版本的下载链接
+
+* v2.4  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Beta/FLY_V2.4-trunk_Flygemini_bullseye_current_5.10.85.img.xz)
