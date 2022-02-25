@@ -1,6 +1,8 @@
 * 介绍
  
-  * [FLY-Gemini](/board/fly_gemini/)
+  * [FLY-Gemini v1](/board/fly_gemini_v1/)
+  * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
+  * [FLY-Gemini v2](/board/fly_gemini_v2/)
 
 * 入门
   * [开始](README)
