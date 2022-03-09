@@ -10,4 +10,6 @@
 
 [QQ群](https://jq.qq.com/?_wv=1027&k=h12iKRbe)
 
+[Discord](https://discord.gg/pAXrGWdw)
+
 [速卖通](https://mellow.aliexpress.com/store/1531088?spm=a2g0o.home.1000002.3.2e8910d03hpSga)
