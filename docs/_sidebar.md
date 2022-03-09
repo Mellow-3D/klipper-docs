@@ -3,6 +3,7 @@
   * [FLY-Gemini v1](/board/fly_gemini_v1/)
   * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
   * [FLY-Gemini v2](/board/fly_gemini_v2/)
+  * [FLY-SHT36/42](/board/fly_sht36_42/)
 
 * 入门
   * [开始](README)
@@ -22,7 +23,7 @@
 * 进阶
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
-
+  * [CAN使用](/advanced/can.md)
 
 * 系统
   * [下载镜像](/introduction/downloadimg.md)
