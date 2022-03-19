@@ -103,6 +103,8 @@
 
 ## 查看CAN UUID
 
+?> 以下文档适用于Gemini系列主板，树莓派相关文档在[树莓派CAN使用](/advanced/can_rpi.md)
+
 * 完成前面所有步骤后正常上电开机
 * 打开`http://ip:9999`或者[打开FLY-Tools](http://flygemini.lan:9999/)
 * 如下图选择CAN，并点击右下角刷新按钮(可以多点几次)
