@@ -2,7 +2,7 @@
 
 > 当前文档不仅适用于树莓派，香橙派等等其他设备同理
 
-?> USB转CAN模块介绍等内容在文档[CAN使用](/advanced/can.md)中
+?> **FLY-UTOC**介绍等内容在文档[CAN使用](/advanced/can.md)中
 
 ## 准备
 
@@ -53,7 +53,7 @@ sudo ifconfig can0 up
 
 ## 连接
 
-* 使用Type-c数据线连接树莓派于USB转CAN模块
+* 使用Type-c数据线连接树莓派和**FLY-UTOC**
 * 具体接线可查看文档[CAN使用](/advanced/can.md)
 
 ## 查看UUID

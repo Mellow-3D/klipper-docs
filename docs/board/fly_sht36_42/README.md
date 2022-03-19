@@ -13,3 +13,10 @@
 * 支持PT100(MAX31865)
 * 接口：可控风扇*2，RGB*2，限位*3，Probe*1，Servo*1，加热管*1，热敏*1，PT100*1
 
+# SHT-36
+
+![CAN](../../images/boards/fly_sht36_42/sht36.png ":no-zooom")
+
+# SHT-42
+
+![CAN](../../images/boards/fly_sht36_42/sht42.png ":no-zooom")

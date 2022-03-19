@@ -4,22 +4,25 @@
 
 ## **USB转CAN模块**介绍
 
+* 型号：FLY-UTOC
+* 以下所有文档中简称**UTOC**
+
 ![CAN](../images/adv/can/can1.png ":no-zooom")
 
 * **USB-IN**: USB转CAN输入接口，连接到上位机
 * **12-24v & GND**: 电源接口
 * **CANBUS**: CAN接口，连接到扩展主板和工具板等(连接到有板载CAN收发芯片的设备)
-* **CANBUS\***: CAN接口，连接到扩展主板和工具板等(连接到无板载CAN收发芯片的设备)
+* **CANBUS\***: CAN接口，连接到扩展主板和工具板等(仅限连接到STM32设备的USB接口[PA11,PA12],请注意购买相应版本的UTOC)
 
-## 连接**USB转CAN模块**
+## 连接UTOC
 
-* 使用USB-Type-c线将**USB转CAN模块**的**USB-IN**接口连接到Gemini系列主板USB接口
-* 如果您的连接正确，此时**USB转CAN模块**Type-c接口旁的LED会闪烁几次后常亮，如果没有常亮请检查系统版本
+* 使用USB-Type-c线将**UTOC**的**USB-IN**接口连接到Gemini系列主板USB接口
+* 如果您的连接正确，此时**UTOC**的Type-c接口旁的LED会闪烁几次后常亮，如果没有常亮请检查系统版本
 
 ## 连接到主板
 
-* `FLY-Super8_v1`,`FLY-Gemini_v1`,`FLY-CDY系列`,`FLY-E3系列`等无CAN功能的主板需要连接到**USB转CAN模块**的**CANBUS\***接口
-* 除上述外的其他FLY主板和有CAN功能的主板均可直接连接到**USB转CAN模块**的**CANBUS**接口
+* `FLY-Super8_v1`,`FLY-Gemini_v1`,`FLY-CDY系列`,`FLY-E3系列`等无CAN功能的主板需要连接到**UTOC**的**CANBUS\***接口
+* 除上述外的其他FLY主板和有CAN功能的主板均可直接连接到**UTOC**的**CANBUS**接口
 
 * 部分主板连接的特殊配置
 
@@ -41,7 +44,7 @@
 | PIN7 | ***打开*** |
 | PIN8 | ***打开*** |
 
-* 将主板上的第二个(右侧)Type-c接口连接到**USB转CAN模块**的**CANBUS\***接口
+* 将主板上的第二个(右侧)Type-c接口连接到**UTOC**的**CANBUS\***接口
 
 
 #### **FLY-Gemini v2**
@@ -59,15 +62,15 @@
 | PIN7 | 关闭 |
 | PIN8 | 关闭 |
 
-* 将主板上的CAN接口(XH2.54-4P)连接到**USB转CAN模块**的**CANBUS**接口
+* 将主板上的CAN接口(XH2.54-4P)连接到**UTOC**的**CANBUS**接口
 
 #### **FLY-Super8 v1**
 
-* 将主板上的Type-c接口连接到**USB转CAN模块**的**CANBUS\***接口
+* 将主板上的Type-c接口连接到**UTOC**的**CANBUS\***接口
 
 #### **FLY-Super8 v1.1**
 
-* 将主板上的CAN接口(XH2.54-4P)连接到**USB转CAN模块**的**CANBUS**接口
+* 将主板上的CAN接口(XH2.54-4P)连接到**UTOC**的**CANBUS**接口
 
 <!-- tabs:end -->
 
