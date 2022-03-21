@@ -1,9 +1,16 @@
 * 介绍
- 
-  * [FLY-Gemini v1](/board/fly_gemini_v1/)
-  * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
-  * [FLY-Gemini v2](/board/fly_gemini_v2/)
+
   * [FLY-SHT36/42](/board/fly_sht36_42/)
+  * [FLY-Gemini v2](/board/fly_gemini_v2/)
+  * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
+  * [FLY-Gemini v1](/board/fly_gemini_v1/)
+  * [FLY-Super8](/board/fly_super8/)
+  * [FLY-CDY v2/v3](/board/fly_cdy_v2/)
+  * [FLY-CDY v1](/board/fly_cdy_v1/)
+  * [FLY-E3 Pro](/board/fly_e3_pro/)
+
+
+
 
 * 入门
   * [开始](README)
