@@ -8,7 +8,7 @@
             l.test(a) ? a : ""
     }
     function p(a, b) {
-        function c() {}
+        function c() { }
         c.prototype = b.prototype;
         a.i = b.prototype;
         a.prototype = new c;
@@ -88,11 +88,11 @@
                     var e = k;
                     break a
                 }
-            } catch (t) {}
+            } catch (t) { }
             e = null
         }
         if (e && "undefined" != typeof e.HTMLScriptElement && (!c || !(c instanceof e.HTMLScriptElement) && (c instanceof e
-                .Location || c instanceof e.Element))) {
+            .Location || c instanceof e.Element))) {
             e = typeof c;
             if ("object" == e && null != c || "function" == e) try {
                 var d = c.constructor.displayName || c.constructor.name || Object.prototype.toString.call(c)
@@ -138,11 +138,14 @@
         }, !1);
     if (_isNS('google.translate.Element')) {
         return
-    }(function () {
+    } (function () {
         var c = _setupNS('google.translate._const');
         c._cest = gtConstEvalStartTime;
         gtConstEvalStartTime = undefined;
         c._cl = navigator.language || navigator.userLanguage;
+        if (c._cl == 'en') {
+            c._cl = "en-GB";
+        }
         c._cuc = 'googleTranslateElementInit';
         c._cac = '';
         c._cam = '';
@@ -160,6 +163,6 @@
         c._ps = b + '/translate_static/css/translateelement.css';
         c._puh = 'translate.google.cn';
         _loadCss(c._ps);
-        _loadJs(b + `/translate_static/js/element/main_${navigator.language || navigator.userLanguage}.js`);
+        _loadJs(b + `/translate_static/js/element/main_${c._cl}.js`);
     })();
 })();
