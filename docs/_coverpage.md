@@ -2,7 +2,7 @@
  
 # Fly Klipper Docs <small>v0.2</small>
  
-> Fly RRF固件文档
+> Fly 文档
  
 - 产品文档
 - 入门教程

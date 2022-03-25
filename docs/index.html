@@ -50,6 +50,7 @@
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.min.js"></script>
+
     <script>
         window.$docsify = {
 
@@ -107,18 +108,28 @@
 
 
     <script>
+        function init() {
+            language = navigator.language || navigator.userLanguage;
+            googtrans = getCookie("googtrans");
+            if (language == undefined || language == null || language == "") {
+                if (language != 'en-GB' && language != 'zh-CN' && language != 'zh-TW' && language != 'ja' && language != 'de' && language != 'ko') {
+                    language = "en-GB"
+                }
+            }
+            if (googtrans == undefined || googtrans == null || googtrans == "" || googtrans.split("/").length < 3) {
+                translateLanguage(language);
+                return;
+            }
+            googtrans = googtrans.split("/")[2];
 
-        language = navigator.language || navigator.userLanguage;
-        googtrans = getCookie("googtrans");
-        if (language == undefined || language == null || language == "") {
-            language = "en";
+            if (googtrans == "zh-CN" && language != "zh-CN") {
+                translateLanguage(language);
+                return;
+            }
+
         }
-        if (googtrans == undefined || googtrans == null || googtrans == "") {
-            translateLanguage(language);
-        }
-        if (googtrans.split("/")[2] == "zh-CN" && language != "zh-CN") {
-            translateLanguage(language);
-        }
+        init();
+
     </script>
 </body>
 
