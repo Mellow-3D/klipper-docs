@@ -107,7 +107,7 @@
 
         language = navigator.language || navigator.userLanguage;
         googtrans = getCookie("googtrans");
-        if (language != undefined && language != null) {
+        if (language == undefined || language == null) {
             language = "en";
         }
         if (googtrans == undefined || googtrans == null || googtrans == "") {
