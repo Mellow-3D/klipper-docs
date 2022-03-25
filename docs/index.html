@@ -9,17 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/theme-simple.css">
     <link rel="stylesheet" href="css/translate-google.css">
-    <style>
-        nav.app-nav li ul {
-            min-width: 130px;
-        }
-    </style>
 </head>
 
-<body>
+<body style="position: relative !important; min-height: 100% !important; top: 0px !important;">
+    <div class="app-nav select" id="google_translate_element"></div>
+
     <div id="app"></div>
-    <div class="app-nav" id="google_translate_element">
-    </div>
 
     <script async src="js/translate-google.js"></script>
 
@@ -28,8 +23,27 @@
             new google.translate.TranslateElement({
                 pageLanguage: 'zh-CN',
                 includedLanguages: 'zh-CN,zh-TW,en,ja,de,ko',
-                autoDisplay: true
+                autoDisplay: false,
+                disableAutoTranslation: false,
             }, 'google_translate_element');
+        }
+        function translateLanguage(lang) {
+            setCookie("googtrans", "/zh-CN/" + lang);
+            //googleTranslateElementInit();
+            window.location.reload(false);
+        }
+
+        function setCookie(name, value) {
+            var Days = 1;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+            document.cookie = name + "=" + escape(value) + ";expires=" + exp.toGMTString();
+        }
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+            if (arr = document.cookie.match(reg)) return unescape(arr[2]);
+            else return null;
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.min.js"></script>
@@ -90,8 +104,14 @@
 
 
     <script>
-        function start() {
 
+        language = navigator.language || navigator.userLanguage;
+        googtrans = getCookie("googtrans");
+        if (language != undefined && language != null) {
+            language = "en";
+        }
+        if (googtrans == undefined || googtrans == null || googtrans == "") {
+            translateLanguage(language);
         }
     </script>
 </body>

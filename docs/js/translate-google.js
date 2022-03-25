@@ -146,6 +146,9 @@
         if (c._cl == 'en') {
             c._cl = "en-GB";
         }
+        //if (c._cl != 'en-GB' && c._cl != 'zh-CN' && c._cl != 'zh-TW' && c._cl != 'ja' && c._cl != 'de' && c._cl != 'ko') {
+        //    c._cl = "en-GB"
+        //}
         c._cuc = 'googleTranslateElementInit';
         c._cac = '';
         c._cam = '';
