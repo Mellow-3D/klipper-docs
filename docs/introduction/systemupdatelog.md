@@ -27,15 +27,6 @@
 * 新增mJpg支持摄像头
 * 新增V1,V1.1主板引脚配置。在FLY_Config切换
 
-### v2.9
-
-* 修改默认视频输出为NONE，无输出
-* 新增USB转CAN即插即用功能
-* 修改CatSerial为FLYTools，可查看CAN UUID
-* 修改部分配置
-* 修复FLY-Config可能不生效问题
-* 修复重复添加WIFI配置问题
-* 修复FBTFT问题
 
 ## v1
 
