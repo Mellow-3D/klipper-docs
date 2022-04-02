@@ -2,6 +2,11 @@
 
 ?> 确保FLYOS系统版本≥2.9
 
+## 注意事项
+
+* Gemini-v1, v1.1版本不建议CANBUS和KlipperScreen同时启用，因为这两个进程的内存占用都比较大。Gemini-v2有1G内存可以正常启用
+* 如遇到Klipper多MCU归位超时问题建议禁用HDMI输出，详情参考[issues 4861](https://github.com/Klipper3d/klipper/issues/4861),[RPI4-HDMI](https://hackaday.com/2019/11/28/raspberry-pi-4-hdmi-is-jamming-its-own-wifi/)
+
 ## **USB转CAN模块**介绍
 
 * 型号：FLY-UTOC
