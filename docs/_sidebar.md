@@ -31,6 +31,7 @@
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
   * [CAN使用](/advanced/can.md)
+  * [屏幕使用](/advanced/screen.md)
 
 * 系统
   * [下载镜像](/introduction/downloadimg.md)
