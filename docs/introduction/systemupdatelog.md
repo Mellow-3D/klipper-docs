@@ -33,6 +33,7 @@
 * 完善CAN支持
 * CAN设备的即插即用
 * gs_usb内核模块修改
+* 修复apt update/apt upgrade内核更新导致无法开机的问题
 
 
 ## v1

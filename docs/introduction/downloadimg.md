@@ -4,4 +4,4 @@
 
 ?> 以后只提供最新版本的下载链接
 
-* v2.9  [又拍云](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9_Flygemini_bullseye_current_5.10.85.img.xz)
+* v2.9  [2022-04-12](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9_Flygemini_bullseye_current_5.10.85.img.xz)
