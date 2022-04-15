@@ -79,7 +79,7 @@ z_offset: 2.1
 ## PT100设置
 [temperature_sensor PT100]
 sensor_type: MAX31865
-sensor_pin: sht36:PA5
+sensor_pin: sht36:PA3
 spi_bus: spi1
 min_temp: -50
 max_temp: 350
