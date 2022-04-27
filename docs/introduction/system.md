@@ -13,7 +13,7 @@
 下载需要用到的工具和文件，国内用户请前往QQ群下载
 
 * [工具](https://drive.google.com/drive/folders/1llH-lq-WsbIdwkmLL51n3OHo5dNNpcPy)
-* [系统镜像](./downloadimg.md)
+* [系统镜像](/introduction/downloadimg.md)
 
 ## 烧录SD卡
 
