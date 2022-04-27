@@ -8,9 +8,9 @@
 aliases:
     # Stepper drivers
     X_EN=PB2, X_STEP=PC13, X_DIR=PC1, X_CS=PB11,    # X
-    Y_EN=PB6, Y_STEP=PC14,  Y_DIR=PC4,  Y_CS=PB9,  # Y
-    Z_EN=PB5,  Z_STEP=PC15, Z_DIR=PC5,  Z_CS=PB8,   # Z
-    E_EN=PB4,  E_STEP=PC3,  E_DIR=PC7,  E_CS=PB7,   # E
+    Y_EN=PD2, Y_STEP=PC14,  Y_DIR=PC4,  Y_CS=PB9,  # Y
+    Z_EN=PC12,  Z_STEP=PC15, Z_DIR=PC5,  Z_CS=PB8,   # Z
+    E_EN=PC11,  E_STEP=PC3,  E_DIR=PC8,  E_CS=PB7,   # E
 
     # Motor SPI
     SCK=PA5,
@@ -26,16 +26,16 @@ aliases:
     HEAT_TEMP=PC0,
 
     # Fans
-    FAN0=PC6,
+    FAN0=PC6, FAN1=PC7,
 
     # End stops
     X_STOP=PA3,  Y_STOP=PB1,  Z_STOP=PB10,
 
     # EXP1 header
-    EXP1_1=<NC>, EXP1_3=PA13,  EXP1_5=PA9,   EXP1_7=<NC>,  EXP1_9=<GND>,
-    EXP1_2=PA4,  EXP1_4=PA10,  EXP1_6=PA8,   EXP1_8=<NC>,  EXP1_10=<5V>,
+    EXP1_1=PC9,  EXP1_3=PA13,  EXP1_5=PA9,   EXP1_7=<NC>,  EXP1_9=<GND>,
+    EXP1_2=PB6,  EXP1_4=PA10,  EXP1_6=PA8,   EXP1_8=<NC>,  EXP1_10=<5V>,
     # EXP2 header
-    EXP2_1=PB14, EXP2_3=PA15,  EXP2_5=PA14,  EXP2_7=PB3,   EXP2_9=<GND>,
+    EXP2_1=PB14, EXP2_3=PA15,  EXP2_5=PA14,  EXP2_7=PC10,   EXP2_9=<GND>,
     EXP2_2=PB13, EXP2_4=PB12,  EXP2_6=PB15,  EXP2_8=<RST>, EXP2_10=<NC>,
 
 
