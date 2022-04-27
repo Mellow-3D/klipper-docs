@@ -12,9 +12,11 @@
 
 ## 系统配置
 
-1. 执行下面的命令安装nano编辑器
+?> 注意：使用SPI转CAN(MCP215)等设备时建议设置bitrate为250000
+
+1. 执行下面的命令安装当前文档所需软件包
 ```bash
-sudo apt update && sudo apt install nano -y
+sudo apt update && sudo apt install nano wget -y
 ```
 
 2. 创建配置文件,全部复制粘贴到终端并回车
@@ -31,7 +33,9 @@ EOF
 
 3. 开机自动启用CAN
 ```bash
-sudo sed -i '/^exit\ 0$/i \ifconfig can0 down\nip link set can0 type can bitrate 500000\nip link set can0 txqueuelen 256\nifconfig can0 up' /etc/rc.local
+sudo wget https://upyun.pan.zxkxz.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
+sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
+sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 256' /etc/rc.local
 ```
 
 4. 重启设备
@@ -39,16 +43,12 @@ sudo sed -i '/^exit\ 0$/i \ifconfig can0 down\nip link set can0 type can bitrate
 sudo reboot
 ```
 
-5. USB转CAN模块在树莓派无法即插即用
+5. USB转CAN模块在树莓派中无法即插即用
 
-?> 即插即用只适用于Gemini系列主板，且系统版本≥V2.9
-
-* 如果树莓派设备插拔过USB转CAN请重启设备或者执行下面的命令
+* 如果树莓派设备插拔过USB转CAN设备请重启设备或者执行下面的命令
+* 确保已完成步骤3
 ```bash
-sudo ifconfig can0 down
-sudo ip link set can0 type can bitrate 500000
-sudo ip link set can0 txqueuelen 256
-sudo ifconfig can0 up
+sudo can-enable -d can0 -b 500000 -t 256
 ```
 
 ## 连接
