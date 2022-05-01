@@ -30,7 +30,7 @@
 
 * 第二个，有3个排针
 * 此处需要注意，如果主板版本是第一版，跳线帽将左侧排针与中间排针连接
-* Gemini v1.1版本，跳线帽将右侧排针与中间排针连接
+* Gemini v1.1版本和v2，跳线帽将右侧排针与中间排针连接
 * 下图为V1.1版本
 
 ![FLASH](../images/adv/flashbl4.png ":no-zooom")
@@ -46,7 +46,7 @@
 * 在SSH终端一次输入下面的命令，每行回车
 * 在执行前请按一次主板MCU的重置按键，在连接串口端子的右侧，丝印RESET1
 * ```stm32flash -w /root/.BL/Gemini_v1.1_BL.bin -v -g 0 /dev/ttyS2```
-* 上面这句适用于v1.1主板，如果是v1请执行下面的
+* 上面这句适用于v1.1和v2主板，如果是v1请执行下面的
 * ```stm32flash -w /root/.BL/Gemini_v1_BL.bin -v -g 0 /dev/ttyS2```
 * 如果出现下图情况，则连接失败
 
