@@ -119,9 +119,9 @@
 
 ![CAN](../images/adv/can/can7.png ":no-zooom")
 
-* SHT板载两个120欧姆电阻，通过两个跳线帽使其生效。
+* SHT板载一个120欧姆电阻，通过两个跳线帽使其生效。
 * 如果您使用UTOC连接到SHT，需要连接SHT的两个跳线帽。
-* 注意：如果使用CAN连接到Gemini的板载MCU，不需要再配置额外的电阻。Gemini板载两个120欧姆电阻。
+* 注意：如果使用CAN连接到Gemini的板载MCU，不需要再配置额外的电阻。Gemini板载120欧姆电阻。
 
 ## 查看CAN UUID
 
