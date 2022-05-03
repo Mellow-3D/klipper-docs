@@ -28,6 +28,10 @@
   * [常见问题](/guide/what.md)
   * [Geminiv2_CAN](/guide/geminiv2_can.md)
 
+* 用户投稿
+  * [投稿须知](/users/README)
+  
+
 * 进阶
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
