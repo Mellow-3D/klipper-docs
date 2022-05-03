@@ -1,4 +1,4 @@
-﻿# Gemini V2-CAN的配置流程
+﻿# Gemini_V2-CAN的配置详细流程
 **全程参考官网：** [mellow.klipper.cn](https://mellow.klipper.cn/)
 
 ?> 本文提供了<font style="background:yellow">软件</font>，<font style="background:yellow">镜像</font>，以及编译好的<font style="background:yellow">klipper固件</font>,方便一次性下载。
@@ -31,7 +31,10 @@
 </div>
 
 ## 1.物品准备
-* ### 硬件类：
+> 本文中使用的是**SHT42** 
+
+> 按照官网的说明FLY-SHT36与SHT42除了外形不同外，接口配置完全一致
+* ### 硬件
   
   **<center><font size=4>Gemini_v2</font></center>**
   <div align=center>
@@ -49,7 +52,7 @@
   <img src="./images/boards/fly_sht36_42/sht42.png" />
   </div>
 
-* ### 线材类：
+* ### 线材
 
   * 18awg x 5m 黑色
 
@@ -69,7 +72,7 @@
      b.**SHT42**与 **UTOC**进行CAN通讯的<font color=red>4根线</font>(CAN L / <font color=red>CAN H</font> / <font color=red>24V</font>/ GND)
      </div>
 
-* ### 工具类：
+* ### 工具
   * 4.2mm 5557 端子 压线钳
   
   * ot 冷压端子 压线钳
@@ -308,7 +311,7 @@
 
         * 推荐使用DiskGenius的格式化功能(Windows下不能直接格式化为FAT32的情况下)
 
-        > 本文开头的[包链接](/users/geminiv2_can?id=gemini-v2-can的配置流程)中有提供此软件
+        > 本文开头的[包链接](/users/geminiv2_can)中有提供此软件
 
         <div align=center>
         <img src="https://img-blog.csdnimg.cn/4ff07dc56e3248b480870d1e7007728c.png"/>
@@ -419,6 +422,8 @@
 
           > 准备1个跳线帽
 
+          ![usbflash](../images/boards/fly_sht36_42/usbflash.png ":no-zooom")
+
           * 插在第三排
           <div align=center>
           <img src="https://img-blog.csdnimg.cn/322f9302b99d426e90179800809c4ec2.png"/>
@@ -459,11 +464,13 @@
 
           如图：
 
+          ![CAN](../images/adv/can/can7.png ":no-zooom")
+
           <div align=center>
           <img src="https://img-blog.csdnimg.cn/536d8dd8baf34781bab65571e916d5fc.png"/>
           </div>
 
-          > 接下来进行接线，一定要断电操作。确保每个端子和螺丝都是<font color=red>牢靠</font>的，<font color=red>没有虚连的状态</font>
+          > :warning: 接下来进行接线，一定要断电操作。确保每个端子和螺丝都是<font color=red>牢靠</font>的，<font color=red>没有虚连的状态</font>
 
           如图：
           <div align=center>
@@ -565,6 +572,7 @@
   >:warning:配置klipper限位的时候建议大家拔掉wifi,通过USB进行配置,如果配置有误,WIFI容易烧掉
 
  ## 完结 
+ 原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程](https://blog.csdn.net/KeyBordkiller/article/details/124524274?spm=1001.2014.3001.5502)
 
 
   

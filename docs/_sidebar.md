@@ -29,7 +29,7 @@
 
 * 用户投稿
   * [投稿须知](/users/README)
-  * [Geminiv2_CAN](/users/geminiv2_can.md)
+  * [Geminiv2上配置CAN](/users/geminiv2_can.md)
   
 
 * 进阶
