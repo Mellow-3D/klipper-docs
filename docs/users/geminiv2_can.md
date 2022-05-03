@@ -126,7 +126,7 @@
 **<center><u><font size=6>至此接线部分完成</font></u></center>**
 
 ## 3.固件刷写
- ***<center>对于购买SD卡套餐的朋友，<font style="background:LightSteelBlue" color=red size=5>请直接看[通电测试](../advanced/gemini_can?id=通电测试)</font></center>***
+ ***<center>对于购买SD卡套餐的朋友，<font style="background:LightSteelBlue" color=red size=5>请直接看[通电测试](/users/geminiv2_can?id=通电测试)</font></center>***
 
   *  ### linux镜像的刷入
    > :warning: 一定要根据官网提供的<font style="background:yellow" color=red>最新</font>固件:</br>
@@ -308,7 +308,7 @@
 
         * 推荐使用DiskGenius的格式化功能(Windows下不能直接格式化为FAT32的情况下)
 
-        > 本文开头的包链接中有提供此软件
+        > 本文开头的[包链接](/users/geminiv2_can?id=gemini-v2-can的配置流程)中有提供此软件
 
         <div align=center>
         <img src="https://img-blog.csdnimg.cn/4ff07dc56e3248b480870d1e7007728c.png"/>
