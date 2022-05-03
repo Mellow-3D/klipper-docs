@@ -27,6 +27,10 @@
   * [基础配置](/guide/configs.md)
   * [常见问题](/guide/what.md)
 
+* 用户投稿
+  * [投稿须知](/users/README)
+  
+
 * 进阶
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
