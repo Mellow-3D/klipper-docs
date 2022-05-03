@@ -26,10 +26,10 @@
 * 指南
   * [基础配置](/guide/configs.md)
   * [常见问题](/guide/what.md)
-  * [Geminiv2_CAN](/guide/geminiv2_can.md)
-
+  
 * 用户投稿
   * [投稿须知](/users/README)
+  * [Geminiv2_CAN](/guide/geminiv2_can.md)
   
 
 * 进阶
