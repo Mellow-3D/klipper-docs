@@ -572,7 +572,7 @@
   >:warning:配置klipper限位的时候建议大家拔掉wifi,通过USB进行配置,如果配置有误,WIFI容易烧掉
 
  ## 完结 
- 原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程](https://blog.csdn.net/KeyBordkiller/article/details/124524274?spm=1001.2014.3001.5502)
+ 原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程](https://blog.csdn.net/KeyBordkiller/article/details/124524274)
 
 
   
