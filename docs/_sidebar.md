@@ -26,6 +26,7 @@
 * 指南
   * [基础配置](/guide/configs.md)
   * [常见问题](/guide/what.md)
+  * [Geminiv2_CAN](/guide/geminiv2_can.md)
 
 * 进阶
   * [烧录BL](/advanced/flashbl.md)
