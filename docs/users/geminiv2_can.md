@@ -126,7 +126,7 @@
 **<center><u><font size=6>至此接线部分完成</font></u></center>**
 
 ## 3.固件刷写
- ***<center>对于购买SD卡套餐的朋友，<font style="background:LightSteelBlue" color=red size=5>请直接看[通电测试](/users/geminiv2_can?id=通电测试)</font></center>***
+ ***<center>对于购买SD卡套餐的朋友，请直接看<font color=red size=5>[通电测试](/users/geminiv2_can?id=通电测试)</font></center>***
 
   *  ### linux镜像的刷入
    > :warning: 一定要根据官网提供的<font style="background:yellow" color=red>最新</font>固件:</br>
