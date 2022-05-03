@@ -41,12 +41,12 @@
   **<center><font size=4>UTOC-1</font></center>**
 
   <div align=center>
-  <img src="../images/adv/can/can1.png" />
+  <img src="./images/adv/can/can1.png" />
   </div>
 
   **<center><font size=4>SHT42</font></center>**
   <div align=center>
-  <img src="../images/boards/fly_sht36_42/sht42.png" />
+  <img src="./images/boards/fly_sht36_42/sht42.png" />
   </div>
 
 * ### 线材类：
