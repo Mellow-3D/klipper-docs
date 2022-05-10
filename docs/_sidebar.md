@@ -1,5 +1,5 @@
 * 介绍
-
+  * [FLY-RHT36/42](/board/fly_rht36_42/)
   * [FLY-SHT36/42](/board/fly_sht36_42/)
   * [FLY-Gemini v2](/board/fly_gemini_v2/)
   * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
