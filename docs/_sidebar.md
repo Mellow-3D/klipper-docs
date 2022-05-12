@@ -30,13 +30,13 @@
 * 用户投稿
   * [投稿须知](/users/README)
   * [Geminiv2上配置CAN](/users/geminiv2_can.md)
-  
 
 * 进阶
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
   * [CAN使用](/advanced/can.md)
   * [屏幕使用](/advanced/screen.md)
+  * [CanBOOT](/advanced/canboot.md)
 
 * 系统
   * [下载镜像](/introduction/downloadimg.md)
