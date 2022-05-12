@@ -2,6 +2,8 @@
 
 > 当前文档不仅适用于树莓派，香橙派等等其他设备同理
 
+?> 注意：目前收到很多反馈，都是CAN缓冲区设置太小，导致数据无法及时交换。从而导致Klipper报错。请将CAN缓冲区设置为1024
+
 ?> **FLY-UTOC**介绍等内容在文档[CAN使用](/advanced/can.md)中
 
 ## 准备
@@ -25,7 +27,7 @@ sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
 auto can0
 iface can0 can static
     bitrate 500000
-    up ifconfig $IFACE txqueuelen 256
+    up ifconfig $IFACE txqueuelen 1024
 EOF
 ```
 
@@ -35,7 +37,7 @@ EOF
 ```bash
 sudo wget https://upyun.pan.zxkxz.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
 sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
-sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 256' /etc/rc.local
+sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 1024' /etc/rc.local
 ```
 
 4. 重启设备
@@ -48,7 +50,7 @@ sudo reboot
 * 如果树莓派设备插拔过USB转CAN设备请重启设备或者执行下面的命令
 * 确保已完成步骤3
 ```bash
-sudo can-enable -d can0 -b 500000 -t 256
+sudo can-enable -d can0 -b 500000 -t 1024
 ```
 
 ## 连接
