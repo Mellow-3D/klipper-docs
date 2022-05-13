@@ -4,3 +4,4 @@
   * [引脚分布](/board/fly_rht36_42/pins.md)
   * [示例配置](/board/fly_rht36_42/cfg.md)
   * [固件烧录](/board/fly_rht36_42/flash.md)
+  * [使用教程](/board/fly_rht36_42/use.md)
