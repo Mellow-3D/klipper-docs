@@ -35,11 +35,16 @@
 * gs_usb内核模块修改
 * 修复apt update/apt upgrade内核更新导致无法开机的问题
 
+### v2.93
 
-## v1
-
-* 与Gemini同时间发布
-* 第一版系统镜像，不太成熟。
-* 基于Armbian修改
-* 预装Klipper，Moonraker，fluidd
-
+* 适配FLY-Π
+* 预装内核源及头文件
+* 更新环境
+* 添加私有APT库公钥
+* 安装Moonraker的PolicyKit规则
+* 修复udev规则冲突问题
+* 修复缺少libusb库导致klipper的flash报错问题
+* 修复FLY-Tools静态资源无法加载的问题
+* 修改默认主板型号为Gemini v2
+* 修改printer.cfg中默认serial为/dev/ttyACM0
+* 修改CAN发送缓冲区大小为1024
