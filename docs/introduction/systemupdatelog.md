@@ -48,3 +48,7 @@
 * 修改默认主板型号为Gemini v2
 * 修改printer.cfg中默认serial为/dev/ttyACM0
 * 修改CAN发送缓冲区大小为1024
+
+### v2.9.4
+
+* 修复RTL88XXau驱动无法挂载的问题
