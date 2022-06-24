@@ -8,7 +8,7 @@
 * 系统：FLY定制版Armbian
 * 硬件：FLY系列主板
 
-# RRF相关文档请移至[teamgloomy](https://teamgloomy.github.io/)
+# RRF相关文档请移至 [teamgloomy](https://teamgloomy.github.io/)
 
 # 相关链接
 
