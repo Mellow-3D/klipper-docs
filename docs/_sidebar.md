@@ -1,5 +1,6 @@
 * 介绍
   * [FLY-π Pro](/board/fly_pi_pro/)
+  * [FLY-Super8-Pro](/board/fly_super8_pro/)
   * [FLY-π](/board/fly_pi/)
   * [FLY-RPFMEX](/board/fly_rpfmex/)
   * [FLY-RHT36/42](/board/fly_rht36_42/)
