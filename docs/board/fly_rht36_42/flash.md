@@ -67,9 +67,16 @@ lsusb | grep 2e8a:0003
 cd ~/klipper
 make flash FLASH_DEVICE=first
 ```
+
+* 如果上面的命令无法烧录，出现报错。请使用下面的命令
+
+```bash
+cd ~/klipper
+sudo make flash FLASH_DEVICE=1d50:614e
+```
  
 ![5](../../images/boards/fly_rht36_42/5.png ":no-zooom")
 
-6. 出现上图内容则烧录成功
+1. 出现上图内容则烧录成功
 
 ?> 注意：烧录成功后一定记得拔下来跳线帽
