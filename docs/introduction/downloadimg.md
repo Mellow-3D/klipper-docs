@@ -2,10 +2,10 @@
 
 > 如果是重新烧录系统，请提前备份好配置文件。
 
-?> 以后只提供最新版本的下载链接
+?> FLYOS（预装Klipper及所有所需环境）
 
-* v2.9.4  [2022-06-13](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.4_Flygemini_bullseye_current_5.10.85.img.xz)
+* FLYOS_v2.9.4  [2022-06-13](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.4_Flygemini_bullseye_current_5.10.85.img.xz)
 
-?> (A)版本镜像将不会预装klipper等环境，为纯净版Armbian
+?> 原版Armbian系统（不提供klipper安装等支持）
 
-* v2.9.4(A)  [2022-06-22](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.4(A)_Flygemini_bullseye_current_5.10.85.img.xz)
+* Armbian_22.08.0  [2022-07-11](https://upyun.pan.zxkxz.cn/IMG/Release/Armbian_22.08.0-trunk_Flypiv1_bullseye_current_5.15.52.img.xz)
