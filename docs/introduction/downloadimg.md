@@ -4,7 +4,7 @@
 
 ?> FLYOS（预装Klipper及所有所需环境）
 
-* FLYOS_v2.9.4  [2022-06-13](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.4_Flygemini_bullseye_current_5.10.85.img.xz)
+* FLYOS_v2.9.5  [2022-07-12](https://upyun.pan.zxkxz.cn/IMG/Release/FLY-v2.9.5_Flygemini_bullseye_current_5.10.85.img.xz)
 
 ?> 原版Armbian系统（不提供klipper安装等支持）
 
