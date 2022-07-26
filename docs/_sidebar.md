@@ -40,6 +40,7 @@
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
   * [CAN使用](/advanced/can.md)
+  * [USB桥接CAN](/advanced/usb2can.md)
   * [屏幕使用](/advanced/screen.md)
   * [CanBOOT](/advanced/canboot.md)
 
