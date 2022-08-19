@@ -1,5 +1,5 @@
 * 介绍
-* 
+  * [FLY-SHT-v2](/board/fly_sht_v2/)
   * [FLY-Puppet](/board/fly_puppet/)
   * [FLY-Super8-Pro](/board/fly_super8_pro/)
   * [FLY-π](/board/fly_pi/)

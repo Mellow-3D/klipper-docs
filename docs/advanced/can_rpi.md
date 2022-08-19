@@ -21,10 +21,10 @@
 sudo apt update && sudo apt install nano wget -y
 ```
 
-2. 创建配置文件,全部复制粘贴到终端并回车
+2. 创建配置文件,复制粘贴到终端并回车
 ```bash
 sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
-auto can0
+allow-hotplug can0
 iface can0 can static
     bitrate 500000
     up ifconfig $IFACE txqueuelen 1024
@@ -33,7 +33,7 @@ EOF
 
 ?> 测试发现在部分设备中无法开机自动启用CAN，所以建议都执行下面操作
 
-3. 开机自动启用CAN
+1. 开机自动启用CAN
 ```bash
 sudo wget https://upyun.pan.zxkxz.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
 sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
