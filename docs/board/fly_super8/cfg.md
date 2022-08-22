@@ -19,7 +19,7 @@
 ## Drive1_DIR_PIN          PF13
 ## Drive1_ENABLE_PIN       PF14
 ## Drive1_STOP_PIN         PG11 #IO1
-## Drive1_UART_PIN         PC12
+## Drive1_UART_PIN         PF12
 
 ## E
 ## Drive2_STEP_PIN         PE4
