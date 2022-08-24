@@ -20,7 +20,7 @@
      配置如下图
 ![config](../../images/boards/fly_sht_v2/config.png ":no-zooom")
 
-1. 编译
+3. 编译
 
     ```bash
     make -j4
@@ -46,7 +46,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
 
-1. 烧录
+2. 烧录
 
     将下面命令中的**365f54003b9d**替换为第一步中查找到的uuid
 
@@ -58,7 +58,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
-1. 检查
+3. 检查
 
     如果正确配置编译并烧录成功，则SHTv2板的这个灯会常亮
 
