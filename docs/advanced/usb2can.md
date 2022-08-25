@@ -6,7 +6,7 @@
 
 * Klipper配置
 
-![config](../../images/boards/fly_super8_pro/config.png ":no-zooom")
+![config](../../images/adv/1.png ":no-zooom")
 
 * 如何编译固件参考[固件编译](/introduction/firmware)
   
