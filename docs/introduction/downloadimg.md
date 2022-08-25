@@ -1,11 +1,37 @@
 # 系统镜像下载
 
-> 如果是重新烧录系统，请提前备份好配置文件。
+?> 如果是重新烧录系统，请提前备份好配置文件。
 
-?> FLYOS（预装Klipper及所有所需环境）
+<!-- tabs:start -->
 
-* FLYOS_v2.9.5  [2022-07-12](https://upyun.pan.zxkxz.cn/IMG/Release/FLY-v2.9.5_Flygemini_bullseye_current_5.10.85.img.xz)
+#### **FLY-Gemini & FLY-π**
 
-?> 原版Armbian系统（不提供klipper安装等支持）
+1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
 
-* Armbian_22.08.0  [2022-07-11](https://upyun.pan.zxkxz.cn/IMG/Release/Armbian_22.08.0-trunk_Flypiv1_bullseye_current_5.15.52.img.xz)
+    FLYOS_v2.9.6  [2022-08-25](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.6_Flygemini_bullseye_current_5.10.85.img.xz)
+
+    [更新记录](introduction/systemupdatelog_gemini.md)
+
+----
+
+2. 原版Armbian系统（不提供klipper安装等支持）
+
+    Armbian_22.08.0  [2022-07-11](https://upyun.pan.zxkxz.cn/IMG/Release/Armbian_22.08.0-trunk_Flypiv1_bullseye_current_5.15.52.img.xz)
+
+#### **FLY-π Pro**
+
+1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
+
+    FLYOS_v1  [2022-00-00]()
+
+    [更新记录](introduction/systemupdatelog_pipro.md)
+
+----
+
+2. 原版Armbian系统（不提供klipper安装等支持）
+
+    Armbian_00.00.00  [2022-00-00]()
+
+
+<!-- tabs:end -->
+

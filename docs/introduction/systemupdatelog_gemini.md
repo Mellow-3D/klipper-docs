@@ -1,4 +1,4 @@
-# 系统镜像更新日志
+# FLY-GEMINI & FLY-π系统镜像更新日志
 
 
 ## v2
@@ -57,4 +57,10 @@
 ### v2.9.5
 
 * 增加KlipperScreen的WiFi网络管理
+* 修复其他问题
+
+### v2.9.6
+
+* 支持EMMC及WIFI模块
+* 弃用mjpg-streamer,使用crowsnest
 * 修复其他问题

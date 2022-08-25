@@ -47,4 +47,3 @@
 
 * 系统
   * [下载镜像](/introduction/downloadimg.md)
-  * [更新日志](/introduction/systemupdatelog.md)
