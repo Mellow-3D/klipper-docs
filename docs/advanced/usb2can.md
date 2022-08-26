@@ -6,7 +6,7 @@
 
 * Klipper配置
 
-![config](../../images/adv/1.png ":no-zooom")
+![config](../../images/adv/usb2can/1.png ":no-zooom")
 
 * 如何编译固件参考[固件编译](/introduction/firmware)
   
