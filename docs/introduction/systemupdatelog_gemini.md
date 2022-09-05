@@ -64,3 +64,9 @@
 * 支持EMMC及WIFI模块
 * 弃用mjpg-streamer,使用crowsnest
 * 修复其他问题
+
+### v2.9.7
+
+* 修复KlipperScreen无法启动的问题
+* 优化WIFI驱动（不会出现类似友商的wifi无法连接，断联，连接断开，不稳定等问题）
+* 优化文件系统

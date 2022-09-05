@@ -8,7 +8,7 @@
 
 1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
 
-    FLYOS_v2.9.6  [2022-08-25](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.6_Flygemini_bullseye_current_5.10.85.img.xz)
+    FLYOS_v2.9.7  [2022-09-05](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9.7_Flygemini_bullseye_current_5.10.85.img.xz)
 
     [更新记录](introduction/systemupdatelog_gemini.md)
 
