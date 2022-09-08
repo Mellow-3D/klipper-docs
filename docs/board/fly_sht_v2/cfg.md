@@ -22,11 +22,11 @@ max_temp: 350
 
 ## FAN0
 [fan]
-pin: sht36v2:PB11
+pin: sht36v2:PB10
 
 ## FAN1
 [fan_generic fan]
-pin: sht36v2:PB10
+pin: sht36v2:PB11
 
 ## X限位设置
 [stepper_x]
