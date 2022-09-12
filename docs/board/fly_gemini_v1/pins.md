@@ -2,6 +2,8 @@
 
 ## Gemini-v1引脚
 
+![CAN](https://github.com/Mellow-3D/Fly-Gemini-V1/blob/main/Hardware/fly_gemini_pins.svg ":no-zoom")
+
 ### 步进电机驱动部分
 
 <!-- tabs:start -->
