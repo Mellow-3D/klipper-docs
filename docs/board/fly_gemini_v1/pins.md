@@ -2,7 +2,7 @@
 
 ## Gemini-v1引脚
 
-![Gemini v1 Pinout](https://github.com/Mellow-3D/Fly-Gemini-V1/blob/ea74c5bad2f99441a4ca7fbc11e7e779edb8c931/Hardware/fly_gemini_pins.svg)
+![Gemini v1 Pinout](https://raw.githubusercontent.com/Mellow-3D/Fly-Gemini-V1/ea74c5bad2f99441a4ca7fbc11e7e779edb8c931/Hardware/fly_gemini_pins.svg)
 
 ### 步进电机驱动部分
 
