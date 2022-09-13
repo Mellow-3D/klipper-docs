@@ -2,6 +2,8 @@
 
 ## Gemini-v1.1引脚
 
+![Gemini v1.1 Pinout](https://raw.githubusercontent.com/Mellow-3D/Fly-Gemini-V1.1/main/Hardware/pinout_gemini_v_1.1.svg)
+
 ### 步进电机驱动部分
 
 <!-- tabs:start -->

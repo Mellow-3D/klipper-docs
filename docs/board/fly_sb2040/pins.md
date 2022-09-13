@@ -2,6 +2,7 @@
 
 ## SB2040 v1引脚
 
+![SB2040 v1 Pinout](../../images/boards/fly_sb2040/pinout.jpg ":no-zooom")
 
 ### 通信
 
