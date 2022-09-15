@@ -134,7 +134,7 @@
   *  ### linux镜像的刷入
    > :warning: 一定要根据官网提供的<font style="background:yellow" color=red>最新</font>固件:</br>
 
-     下载链接：v2.9 [2022-04-12](https://upyun.pan.zxkxz.cn/IMG/Build/FLY-v2.9_Flygemini_bullseye_current_5.10.85.img.xz)
+     下载链接：v2.9 [2022-04-12](https://cdn.mellow.klipper.cn/IMG/Build/FLY-v2.9_Flygemini_bullseye_current_5.10.85.img.xz)
    
    <div align=center>
    <img src="https://img-blog.csdnimg.cn/f19fe836a4dc413196991c6aec5cb9f4.png"/>

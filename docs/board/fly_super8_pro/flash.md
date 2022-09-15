@@ -18,7 +18,7 @@ Super8 Pro的Klipper固件配置
 
 ### 方式一：电脑USB烧录
 
-1. 下载烧录工具[STM32CubeProgrammer](https://upyun.pan.zxkxz.cn/Utils/STM32CubeProgrammer.zip)
+1. 下载烧录工具[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip)
 2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
 3. 将前面编译好的固件(klipper.bin)复制到电脑任意目录
 4. 使用Type-C数据线将Super8 Pro板连接到电脑，请确保连接前已安装短接跳线
