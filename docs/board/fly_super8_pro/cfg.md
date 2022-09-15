@@ -122,7 +122,7 @@ rotation_distance: 32
 microsteps: 16
 step_pulse_duration: 0.000004
 full_steps_per_rotation:200  #set to 400 for 0.9 degree stepper
-endstop_pin: 36:PA0
+endstop_pin: PG9
 position_endstop: 0
 position_min: 0
 position_max: 330
@@ -151,7 +151,8 @@ enable_pin: !PE9
 microsteps: 16
 rotation_distance: 4
 step_pulse_duration: 0.000004
-endstop_pin: probe:z_virtual_endstop
+endstop_pin: PG11
+position_min: 0.5
 position_max: 350
 
 [stepper_z1]
@@ -199,7 +200,7 @@ pin: PA0 #FAN0
 
 [tmc5160 stepper_x]
 cs_pin: PC4
-spi_bus: spi3
+spi_bus: spi1a
 run_current: 1.0
 interpolate: False
 #stealthchop_threshold: 999999
@@ -207,7 +208,7 @@ interpolate: False
 
 [tmc5160 stepper_y]
 cs_pin: PF12
-spi_bus: spi3
+spi_bus: spi1a
 run_current: 1.50
 interpolate: False
 #stealthchop_threshold: 999999
