@@ -4,4 +4,5 @@
   * [引脚分布](/board/fly_gemini_v2/pins.md)
   * [示例配置](/board/fly_gemini_v2/cfg.md)
   * [CAN Hat](/board/fly_gemini_v2/canhat.md)
+  * [eMMC & WiFi模块](/board/fly_gemini_v2/m2we.md)
 
