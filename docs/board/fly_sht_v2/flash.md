@@ -17,8 +17,13 @@
     make menuconfig
     ```
 
-     配置如下图
+?> 注意，自2022-10-18后购买的请注意观察主控芯片，首批是GD32F103,后面出货为APM32F072
+
+    GD32F103版本配置如下图
 ![config](../../images/boards/fly_sht_v2/config.png ":no-zooom")
+    
+    APM32F072版本配置如下图
+![config](../../images/boards/fly_sht_v2/config_072.png ":no-zooom")
 
 3. 编译
 
