@@ -20,6 +20,15 @@
 * 板载一个TMC2209驱动，可用于挤出机
 * 接口：可控风扇\*3，RGB\*1，限位\*3，加热管\*1，热敏\*1
 
+----
+
+?> 重要
+
+* 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
+* 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)
+
+----
+
 ## SB2040
 
 ![CAN](../../images/boards/fly_sb2040/sb2040.png ":no-zooom")
