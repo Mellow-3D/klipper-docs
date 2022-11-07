@@ -13,6 +13,15 @@
 * 支持PT100(MAX31865)
 * 接口：可控风扇\*2，RGB\*1，限位\*3，Probe\*1，Servo\*1，加热管\*1，热敏\*1，PT100\*1
 
+----
+
+?> 重要
+
+* 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
+* 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)
+
+----
+
 ## SHT-36
 
 ![CAN](../../images/boards/fly_sht36_42/sht36.png ":no-zooom")

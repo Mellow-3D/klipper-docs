@@ -14,6 +14,14 @@
   5. 为Klipper定制的系统，小白更容易上手
   6. 系统与FLY-Gemini互相兼容
 
+----
+
+?> 重要
+
+* 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
+* 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)
+
+----
 
 ## FLY-π
 
