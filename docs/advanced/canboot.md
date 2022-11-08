@@ -21,15 +21,23 @@ cd CanBoot
 make menuconfig
 ```
 
-* **Processor model** 选择 **STM32F072**
-* **Clock Reference** 选择 **8 MHz crystal** ，默认即可
-* **CAN pins** 选择 **Pins PB8(rx) and PB9(tx)**
-* **CAN bus speed** CANBUS速率按照你的CAN配置及klipper固件配置，需保存一致。常见为**500000**和**250000**
-* 其他配置保持默认即可，无需修改。具体配置见下图
-* 这里只能键盘操作，上下键选择菜单，回车键进入菜单或确认，ESC返回上一页
-* SHT36/42配置如图
+* 请注意自己使用的主板型号
 
-![config](../../images/adv/canboot/2.png ":no-zooom")
+<!-- tabs:start -->
+
+#### **FLY-SHT & FLY-SHTV2**
+
+?> ShtV2用户请注意，如果您板的主控型号是GD32F103请将 **Processor model (STM32F072)** 选择更换为 **STM32F103**
+
+![config](../../images/adv/canboot/sht.png ":no-zooom")
+
+#### **SB2040**
+
+?> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
+
+![config](../../images/adv/canboot/sb2040.png ":no-zooom")
+
+<!-- tabs:end -->
 
 * 配置完成后按“Q”键，然后再按“Y”键即可退出并保存
 
@@ -39,9 +47,11 @@ make
 
 ![make](../../images/adv/canboot/3.png ":no-zooom")
 
-* 像上图一样出现**Creating hex file out/canboot.bin**即为编译成功
+* 像上图一样出现**Creating hex file out/canboot.bin** 或 **Creating uf2 file out/canboot.uf2** 即为编译成功
 
 ## 烧录CanBoot引导固件
+
+?> SB2040烧录最为简单，阅读[SB2040固件烧录](/board/fly_sb2040/flash?id=烧录固件), 烧录固件步骤一样，只需将klipper.uf2文件替换为canboot.uf2文件
 
 * 为SHT36/42烧录固件详细文档请阅读[SHT固件烧录](/board/fly_sht36_42/flash?id=烧录固件)
 * 烧录固件步骤一样，只需将klipper.bin文件替换为canboot.bin文件
@@ -79,23 +89,45 @@ cd ~/klipper
 git pull
 ```
 
+?> 目前Klipper主分支还未支持RP2040的CanBoot，如果Klipper提交[#5874](https://github.com/Klipper3d/klipper/pull/5874)正式合并到了主分支，请跳过下面的第**2**步
+
+2. 切换rp2040canboot分支
+
+```bash
+git checkout work-rp2040canboot-20221103
+```
+
 ![git pull](../../images/adv/canboot/5.png ":no-zooom")
 
-2. 为SHT36/42配置最新的klipper固件
+3. 配置最新的klipper固件
 
 ```bash
 make menuconfig
 ```
 
+* 请注意自己使用的主板型号
+
+<!-- tabs:start -->
+
+#### **FLY-SHT & FLY-SHTV2**
+
+?> ShtV2用户请注意，如果您板的主控型号是GD32F103请将 **Processor model (STM32F072)** 选择更换为 **STM32F103**
+
 * 这里只能键盘操作，上下键选择菜单，回车键进入菜单或确认，ESC返回上一页
 * 与[SHT固件烧录](/board/fly_sht36_42/flash?id=烧录固件)中固件配置只有一个区别，就是 **Bootloader offset** 必须选择 **8KiB bootloader**
 * 配置为下图中一样即可
 
-![config](../../images/adv/canboot/6.png ":no-zooom")
+![config](../../images/adv/canboot/sht-k.png ":no-zooom")
+
+#### **SB2040**
+
+![config](../../images/adv/canboot/sb2040-k.png ":no-zooom")
+
+<!-- tabs:end -->
 
 * 配置成上图那样后按“Q”键，然后再按“Y”键即可退出并保存
 
-3. 编译klipper固件
+4. 编译klipper固件
 
 ```bash
 make
@@ -105,7 +137,9 @@ make
 
 * 像上图一样出现**Creating hex file out/klipper.bin**即为编译成功
 
-4. 第一次为SHT36/42烧录带有CanBoot的klipper固件不能使用canbus烧录，使用USB烧录
+?> 如果是SB2040请直接跳过下面的第**5** **6** **7**步，直接从第**9**步接着看
+
+5. 第一次为SHT36/42烧录带有CanBoot的klipper固件不能使用canbus烧录，使用USB烧录
 
 * 连接SHT板的boot跳线帽，并使用USB线连接到klipper上位机
 
@@ -115,7 +149,7 @@ lsusb | grep 0483:df11
 
 * 出现**Bus 007 Device 002: ID 0483:df11 STMicroelectronics STM Device in DFU Mode**内容则表示SHT已进入DFU模式
 
-5. USB烧录Klipper固件
+6. USB烧录Klipper固件
 
 ```bash
 cd ~/klipper/
@@ -126,9 +160,9 @@ sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08002000 -D out/klipper.bin
   
 ![flash2](../../images/adv/canboot/8.png ":no-zooom")
 
-6. 取下SHT36/42的boot跳线帽，并断开USB连接
-7. 将SHT36/42连接到UTOC或MCP2125等CAN设备
-8. 查看SHT36/42的UUID
+7. 取下SHT36/42的boot跳线帽，并断开USB连接
+8. 将板连接到UTOC或MCP2125等CAN设备
+9. 查看板的UUID
 
 * 必须使用python3
 
@@ -141,7 +175,7 @@ python3 lib/canboot/flash_can.py -q
 
 ![uuid](../../images/adv/canboot/9.png ":no-zooom")
 
-9. 通过CANBUS烧录Klipper固件
+10. 通过CANBUS烧录Klipper固件
 
 * 下面命令中的**fea6a45462e9**需要替换为你上一步中得到的UUID
 
@@ -153,12 +187,13 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 
 * 像上图中出现**CAN Flash Success**则表示烧录成功
 
-10. 以后如果需要更新klipper看下面操作即可
+11. 以后如果需要更新klipper看下面操作即可
 
-* 拉取最新的klipper
+* 切换至主分支并拉取最新的klipper
 
 ```bash
 cd ~/klipper
+git checkout master
 git pull
 ```
 
