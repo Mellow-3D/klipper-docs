@@ -1,4 +1,5 @@
 * 介绍
+  * [FLY-Gemini v3](/board/fly_gemini_v3/)
   * [FLY-SB2040](/board/fly_sb2040/)
   * [FLY-SHT-v2](/board/fly_sht_v2/)
   * [FLY-Puppet](/board/fly_puppet/)
@@ -11,7 +12,7 @@
   * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
   * [FLY-Gemini v1](/board/fly_gemini_v1/)
   * [FLY-Super8](/board/fly_super8/)
-  * [FLY-CDY v2/v3](/board/fly_cdy_v2/)
+  * [FLY-CDY v2/v3](/board/fly_cdy_v3/)
   * [FLY-CDY v1](/board/fly_cdy_v1/)
   * [FLY-E3 Pro](/board/fly_e3_pro/)
 
