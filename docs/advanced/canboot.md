@@ -31,7 +31,7 @@ make menuconfig
 
 ![config](../../images/adv/canboot/sht.png ":no-zooom")
 
-#### **SB2040**
+#### **SB2040 & ERCF**
 
 ?> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
 
@@ -39,15 +39,15 @@ make menuconfig
 
 <!-- tabs:end -->
 
-* 配置完成后按“Q”键，然后再按“Y”键即可退出并保存
+* 配置完成后按“Q”键，然后再按“Y”键即可退出并保存。执行下面的命令编译固件
 
-```bash
-make
-```
+    ```bash
+    make
+    ```
 
-![make](../../images/adv/canboot/3.png ":no-zooom")
+    ![make](../../images/adv/canboot/3.png ":no-zooom")
 
-* 像上图一样出现**Creating hex file out/canboot.bin** 或 **Creating uf2 file out/canboot.uf2** 即为编译成功
+    * 像上图一样出现**Creating hex file out/canboot.bin** 或 **Creating uf2 file out/canboot.uf2** 即为编译成功
 
 ## 烧录CanBoot引导固件
 
@@ -89,17 +89,9 @@ cd ~/klipper
 git pull
 ```
 
-?> 目前Klipper主分支还未支持RP2040的CanBoot，如果Klipper提交[#5874](https://github.com/Klipper3d/klipper/pull/5874)正式合并到了主分支，请跳过下面的第**2**步
-
-2. 切换rp2040canboot分支
-
-```bash
-git checkout work-rp2040canboot-20221103
-```
-
 ![git pull](../../images/adv/canboot/5.png ":no-zooom")
 
-3. 配置最新的klipper固件
+2. 配置最新的klipper固件
 
 ```bash
 make menuconfig
@@ -119,7 +111,7 @@ make menuconfig
 
 ![config](../../images/adv/canboot/sht-k.png ":no-zooom")
 
-#### **SB2040**
+#### **SB2040 & ERCF**
 
 ![config](../../images/adv/canboot/sb2040-k.png ":no-zooom")
 
@@ -189,11 +181,10 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 
 11. 以后如果需要更新klipper看下面操作即可
 
-* 切换至主分支并拉取最新的klipper
+* 拉取最新的klipper
 
 ```bash
 cd ~/klipper
-git checkout master
 git pull
 ```
 
