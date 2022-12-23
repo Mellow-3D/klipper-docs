@@ -1,4 +1,5 @@
-* 介绍
+* 产品
+  * [FLY-ERCF](/board/fly_ercf/)
   * [FLY-Gemini v3](/board/fly_gemini_v3/)
   * [FLY-SB2040](/board/fly_sb2040/)
   * [FLY-SHT-v2](/board/fly_sht_v2/)
