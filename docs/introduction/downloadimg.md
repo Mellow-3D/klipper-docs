@@ -41,5 +41,20 @@
     Armbian_00.00.00  [2022-00-00]()
 
 
+
+#### **FLY-π Lite**
+
+1. Lite系统镜像基于[debian 11](https://www.debian.org/)
+
+    fly-pi-lite-v1(beta)  [2023-01-16](https://cdn.mellow.klipper.cn/IMG/Build/fly-pi-lite-v1.img.xz)
+    * 账号：`fly` 或者 `root`
+    * 密码：`mellow`
+    * 可通过这个本地域名访问lite [http://fly-pi-lite/](http://fly-pi-lite/)
+
+    [更新记录](introduction/systemupdatelog_lite.md)
+
+----
+
+
 <!-- tabs:end -->
 
