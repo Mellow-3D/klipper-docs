@@ -46,7 +46,7 @@
 
 1. Lite系统镜像基于[debian 11](https://www.debian.org/)
 
-    fly-pi-lite-v1(beta)  [2023-01-16](https://cdn.mellow.klipper.cn/IMG/Build/fly-pi-lite-v1.img.xz)
+    fly-pi-lite-v1.3(beta)  [2023-01-29](https://cdn.mellow.klipper.cn/IMG/Beta/fly-pi-lite-v1.3.img.xz)
     * 账号：`fly` 或者 `root`
     * 密码：`mellow`
     * 可通过这个本地域名访问lite [http://fly-pi-lite/](http://fly-pi-lite/)
