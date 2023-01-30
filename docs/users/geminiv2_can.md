@@ -76,41 +76,42 @@
   * 4.2mm 5557 端子 压线钳
   
   * ot 冷压端子 压线钳
- 
+
 ## 2.电气接线部分
 
    ***接线方式有很多种，这里仅仅展示一种情况，其他都可以根据CAN的功能进行类比。***
 
   * ### 制作CAN的4线通讯线（以 **UTOC** 和 **SHT42** 为例）
     * 2x2p的 5557 端子，在购买的SHT42板的包裹中已经附带了
-   
+    
+    
      如图：
     <div align=center>
     <img src="https://img-blog.csdnimg.cn/a66fa3ec5fce4d69999eb269092e1438.png"/>
     </div>
-
+    
     > :warning: <font style="background:yellow" color=red>5557 端子 一定要压好，不要让vcc虚连 </font>
-
+    
     * VCC 和 GND，CAN H 和 CAN L 分别对应好位置
-
+    
     <div align=center>
     <img src="https://img-blog.csdnimg.cn/bf80bb107d0b474fa8b4a3551e780657.png"/>
     </div>
-
+    
     <div align=center>
     <img src="https://img-blog.csdnimg.cn/0c67a35dc9fd4e12ad931c6529dc3af9.png"/>
     </div>
-
+    
     * 接线端子的实际效果：
     <div align=center>
     <img src="https://img-blog.csdnimg.cn/be73b5077bc7407ca321c97d2b4e232e.png"/>
     </div>
-  
+    
     * 连线的实际效果：
     <div align=center>
     <img src="https://img-blog.csdnimg.cn/50b823c23c1c43c0adab91c9f07b6ed5.png"/>
     </div>
-
+    
     > :warning: <font style="background:yellow" color=red>线序一定不要接错</font>
     
   * ### CAN的VCC取电
@@ -135,7 +136,7 @@
    > :warning: 一定要根据官网提供的<font style="background:yellow" color=red>最新</font>固件:</br>
 
      下载链接：v2.9 [2022-04-12](https://cdn.mellow.klipper.cn/IMG/Build/FLY-v2.9_Flygemini_bullseye_current_5.10.85.img.xz)
-   
+
    <div align=center>
    <img src="https://img-blog.csdnimg.cn/f19fe836a4dc413196991c6aec5cb9f4.png"/>
    </div>
@@ -144,7 +145,7 @@
    <img src="https://img-blog.csdnimg.cn/fc1a53c255a0468d8a3712f92852959d.png"/>
    </div>
    * 通过工具balenaEtcher给sd卡刷入镜像：
-   
+
    下载链接：[balenaEtcher - Flash OS images to SD cards & USB drives](https://www.balena.io/etcher/)
    <div align=center>
    <img src="https://img-blog.csdnimg.cn/29f64ff3bf3c4fe6a959eb13ffccb22b.png"/>
@@ -175,9 +176,9 @@
      * 上电测试：注意这里采用的是USB（ CH340 ）连接的方式。
      
      * 因为刚烧录好的系统，没有配置WiFi
-  
+     
      * 有些朋友不从事嵌入式开发，<font color=red>可能需要</font >：Windows下的CH340驱  动，要单独下载，在<font color=red>文章开头</font >的软件包中提供。
-  
+     
      > :warning:<font color=red>如果使用12~24V 的VCC取电方式，USB连接一定要断开。</font >
 
 *  ### 终端连接**Gemini**
@@ -240,7 +241,7 @@
       <div align=center>
       <img src="https://img-blog.csdnimg.cn/ab7c2a9dad564f59b9330f843e9c6ba8.png"/  >
       </div>
-     
+    
   *  ### 下位机和CAN的配置
 
       * #### 下位机固件制作+刷写
@@ -573,4 +574,3 @@
 
  ## 完结 
  原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程](https://blog.csdn.net/KeyBordkiller/article/details/124524274)
- 
