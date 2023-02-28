@@ -66,11 +66,19 @@ dir_pin: !PG6         # 修改后
 
 * 使用mini12864下方的复位按钮，达到紧急停止的目的。按下按钮后，主板会与klipper断开连接，需要在终端控制界面点击左上角的“重启firmware”，如果未连接成功，则多尝试几次即可。
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/重启firmwarepng.png" alt="重启firmwarepng" style="zoom:50%;" />
 
 * 将电脑摆放在打印机旁边，使用web终端控制界面的紧急停止按钮来重启。
 
 ![紧急停止](../../images/boards/fly_super8/紧急停止.png)
+=======
+<img src="../../images/boards/fly_super8/restart_firmware.png" alt="restart_firmware" style="zoom:60%;" />
+
+* 将电脑摆放在打印机旁边，使用web终端控制界面的紧急停止按钮来重启。
+
+![emergency_stop](../../images/boards/fly_super8/emergency_stop.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
 * 关闭整个打印机电源，达到紧急停止的效果，但是这种方法不建议，极大概率会损坏上位机SD卡或者eMMC中的系统文件，导致您必须重新写入镜像才能正常使用！！！
 
@@ -106,7 +114,11 @@ dir_pin: !PG6         # 修改后
 
 保存重启完成后，可以尝试点击控制台的“全部归位”，或者使用G28命令来归位所有轴。如果在z归位结束时，您的喷嘴没有超过热床的平面，请降低Z高度，避免撞击喷头，导致喷头或者其他部件损坏。
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/全部归位.png" alt="全部归位" style="zoom:60%;" />
+=======
+<img src="../../images/boards/fly_super8/homeall.png" alt="homeall" style="zoom:60%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
 ## 1.5 调平传感器的配置与检查
 
