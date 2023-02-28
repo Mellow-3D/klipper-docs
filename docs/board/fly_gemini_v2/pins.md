@@ -1,5 +1,7 @@
 # 引脚分布
 
+![Geminiv2_pinout](../../images/boards/fly_gemini_v2/Geminiv2_pinout.svg)
+
 ## Gemini-v2引脚
 
 ### 步进电机驱动部分

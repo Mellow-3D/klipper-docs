@@ -11,3 +11,4 @@
   * [桥接CAN](/board/fly_sb2040/canbridge.md)
   * [加速度计](/board/fly_sb2040/jiasudu.md)
   * [CanBoot](/board/fly_sb2040/shtcanboot.md)
+  * [相关链接](/board/fly_sb2040/link.md)

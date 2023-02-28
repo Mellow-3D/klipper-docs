@@ -2,6 +2,8 @@
 
 ## Gemini-v3引脚
 
+![Gemini_v3_pinout](../../images/boards/fly_gemini_v3/Gemini_v3_pinout.svg)
+
 ### 步进电机驱动部分
 
 <!-- tabs:start -->
