@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 # FLY -TFT 的使用
+=======
+<<<<<<< HEAD
+# FLY  TFT 的使用
+=======
+# FLY -TFT 的使用
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.1 修改配置
 
@@ -24,7 +32,15 @@
 
 ![v1-1](../../images/boards/fly_pi/v1-1.png)
 
+<<<<<<< HEAD
 * **Gemini-V2、Gemini-V3 和 Fly- π 接线图**
+=======
+<<<<<<< HEAD
+* **Gemini-V2 和 Fly- π 接线图**
+=======
+* **Gemini-V2、Gemini-V3 和 Fly- π 接线图**
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ![v2](../../images/boards/fly_pi/v2.png)
 

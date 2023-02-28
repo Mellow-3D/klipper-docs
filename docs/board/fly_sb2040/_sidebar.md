@@ -10,5 +10,14 @@
   * [示例配置](/board/fly_sb2040/cfg.md)
   * [桥接CAN](/board/fly_sb2040/canbridge.md)
   * [加速度计](/board/fly_sb2040/jiasudu.md)
+<<<<<<< HEAD
   * [CanBoot](/board/fly_sb2040/shtcanboot.md)
   * [相关链接](/board/fly_sb2040/link.md)
+=======
+<<<<<<< HEAD
+  * [CanBoot](/board/fly_sb2040/shtcanboot.md)
+=======
+  * [CanBoot](/board/fly_sb2040/shtcanboot.md)
+  * [相关链接](/board/fly_sb2040/link.md)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec

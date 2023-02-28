@@ -4,19 +4,43 @@
 
 ## 1.1 Super8接口图
 
+<<<<<<< HEAD
 ![super8](../../images/boards/fly_super8/super8.png)
+=======
+<<<<<<< HEAD
+![接口图](../../images/boards/fly_super8/接口图.png)
+=======
+![super8](../../images/boards/fly_super8/super8.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.1 电源接线
 
 **保险丝：**拿到主板后，首先按图接好四个保险丝。接好保险丝后才能接线，否则主板不通电。保险丝需要稍微用力才能按进去
 
+<<<<<<< HEAD
 ![fuse](../../images/boards/fly_super8/fuse.png)
+=======
+<<<<<<< HEAD
+![保险丝](../../images/boards/fly_super8/保险丝.png)
+=======
+![fuse](../../images/boards/fly_super8/fuse.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 **供电：**Super8的供电分为四个部分，分别是0-2号驱动供电、3-7号驱动供电、主板（加热棒、风扇、主控）供电、热床供电。
 
 ?>注：Super8 1.0版本只有0-2号驱动位支持12-48V供电，3-7号驱动位仅支持12-24V供电 
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/power.png" alt="power" style="zoom:80%;" />
+=======
+<<<<<<< HEAD
+![电源接线](../../images/boards/fly_super8/电源接线.png)
+=======
+<img src="../../images/boards/fly_super8/power.png" alt="power" style="zoom:80%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.2  步进电机接线
 
@@ -28,7 +52,15 @@
 
 **SPI模式。**最常见的使用这种模式的驱动有：TMC5160、TMC2230等。这类驱动芯片通过spi与主控同步串行通信，同样的也可以通过修改配置文件来设置驱动的细分、运行电流、静音模式等。
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/drive_dip.png" alt="drive_dip" style="zoom:75%;" />
+=======
+<<<<<<< HEAD
+<img src="../../images/boards/fly_super8/驱动跳线.jpg" alt="驱动跳线" style="zoom:67%;" />
+=======
+<img src="../../images/boards/fly_super8/drive_dip.png" alt="drive_dip" style="zoom:75%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 **注：使用A4988驱动或者外接驱动，跳线模式选择：正常跳线模式。并在配置中将驱动配置删除即可。**
 
@@ -36,7 +68,15 @@
 
 Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个信号引脚的输出电压（默认5v，无需修改，最常见）。
 
+<<<<<<< HEAD
 ![drive_voltage](../../images/boards/fly_super8/drive_voltage.png)
+=======
+<<<<<<< HEAD
+![驱动io电压选择](../../images/boards/fly_super8/驱动io电压选择.png)
+=======
+![drive_voltage](../../images/boards/fly_super8/drive_voltage.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ### 1.2.3 驱动的安装
 
@@ -44,6 +84,20 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 
 **FLY驱动：**如果不使用无限位归零功能，请将拨码开关拨到1的位置；相反如果要使用无限位归零功能，请将拨码开关拨到ON的位置。
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![fly2209驱动无限位归零](../../images/boards/fly_super8/fly2209驱动无限位归零.png)
+
+**非FLY驱动：**如果是非FLY的驱动（下图为mks 2209），在安装之前需要剪掉图中两个引脚（这两个引脚为无限位归零引脚，不使用无限位归零功能则需要剪掉）。不同厂家的设计可能会有所区别，使用前请咨询相应厂家。
+
+![mks2209驱动剪脚](../../images/boards/fly_super8/mks2209驱动剪脚.png)
+
+**注意！！！ 安装驱动模块时，一定要保证插入的方向正确，即EN引脚在左上角，否则会损坏驱动甚至主板！！！注意给驱动贴好散热片！！！**
+
+![驱动安装](../../images/boards/fly_super8/驱动安装.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 ![fly2209](../../images/boards/fly_super8/fly2209.png)
 
 **非FLY驱动：**如果是非FLY的驱动（下图为mks 2209），在安装之前需要剪掉图中两个引脚（这两个引脚为无限位归零引脚，不使用无限位归零功能则需要剪掉）。不同厂家的设计可能会有所区别，使用前请咨询相应厂家。
@@ -53,6 +107,10 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 **注意！！！ 安装驱动模块时，一定要保证插入的方向正确，即EN引脚在左上角，否则会损坏驱动甚至主板！！！注意给驱动贴好散热片！！！**
 
 ![drive_install](../../images/boards/fly_super8/drive_install.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ### 1.2.4 步进电机接线
 
@@ -62,6 +120,24 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 
 2. 使用万用表的蜂鸣器档，测量四根线中任意两根，如果蜂鸣器响，则说明这两根线为同一组。反之，则不是同一组，需要更换其中一根线再次测量。
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![步进电机原理图](../../images/boards/fly_super8/步进电机原理图.png)
+
+**Voron Trident：**将X、Y、E0、Z 、Z1、 Z2 共六个电机依次接到主板上的Driver0 - Driver5
+
+![步进电机接线图](../../images/boards/fly_super8/步进电机接线图.png)
+
+**Voron 2.4：**将X、Y、E0、Z 、Z1、 Z2、Z3 共七个电机依次接到主板上的Driver0 - Driver6
+
+![2.4步进电机接线图](../../images/boards/fly_super8/2.4步进电机接线图.png)
+
+## 1.3  加热棒接线
+
+![加热棒接线](../../images/boards/fly_super8/加热棒接线.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 ![motorSCH](../../images/boards/fly_super8/motorSCH.png)
 
 **Voron Trident：**将X、Y、E0、Z 、Z1、 Z2 共六个电机依次接到主板上的Driver0 - Driver5
@@ -75,11 +151,28 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 ## 1.3  加热棒接线
 
 ![heat](../../images/boards/fly_super8/heat.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.4  热床接线
 
 **交流热床：**固态继电器在接线时，请注意输入和输出别接错了。
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<img src="../../images/boards/fly_super8/交流继电器.png" alt="交流继电器" style="zoom:70%;" />
+
+
+![热床接线](../../images/boards/fly_super8/热床接线.png)
+
+**直流热床：**板载MOS接直流热床时请注意使用功率，直流热床最大电流不能超过10A。如果超过10A，建议使用外接MOS模块来使用热床，否则可能会对Super8主板造成不可逆的损伤。
+
+![直流热床接线](../../images/boards/fly_super8/直流热床接线.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 <img src="../../images/boards/fly_super8/relay.png" alt="relay" style="zoom:75%;" />
 
 
@@ -88,6 +181,10 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 **直流热床：**板载MOS接直流热床时请注意使用功率，直流热床最大电流不能超过10A。如果超过10A，建议使用外接MOS模块来使用热床，否则可能会对Super8主板造成不可逆的损伤。
 
 ![DCbed](../../images/boards/fly_super8/DCbed.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.5  热敏电阻接线
 
@@ -95,6 +192,26 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 如果为fly购买的（如下图所示），请将sensor_type 配置为：**ATC Semitec 104GT-2**。
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![热敏电阻1](../../images/boards/fly_super8/热敏电阻1.png)
+
+如果为常规的NTC 100K（如下图所示），请将sensor_type 配置为：**Generic 3950**
+
+<img src="../../images/boards/fly_super8/热敏2.png" alt="热敏2" style="zoom:70%;" />
+
+<img src="../../images/boards/fly_super8/热敏3.png" alt="热敏3" style="zoom:80%;" />
+
+**喷头热敏：**
+
+![热敏接线](../../images/boards/fly_super8/热敏接线.png)
+
+**热床热敏：**
+
+![热床热敏接线](../../images/boards/fly_super8/热床热敏接线.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 ![semitec1](../../images/boards/fly_super8/semitec1.png)
 
 如果为常规的NTC 100K（如下图所示），请将sensor_type 配置为：**Generic 3950**
@@ -110,6 +227,10 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 **热床热敏：**
 
 ![bed_TH](../../images/boards/fly_super8/bed_TH.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.6 风扇接线
 
@@ -117,6 +238,20 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 **注意！！！选择错误的风扇电压可能会损坏风扇或者MOS模块。**
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![风扇电压选择](../../images/boards/fly_super8/风扇电压选择.png)
+
+**MOS模块的安装（不分正反）。**如下图
+
+<img src="../../images/boards/fly_super8/风扇MOS.png" alt="风扇MOS" style="zoom:60%;" />
+
+**风扇接线。**如下图。
+
+![风扇接线](../../images/boards/fly_super8/风扇接线.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 ![fan_voltage](../../images/boards/fly_super8/fan_voltage.png)
 
 **MOS模块的安装（不分正反）。**如下图
@@ -126,6 +261,10 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 **风扇接线。**如下图。
 
 ![fan](../../images/boards/fly_super8/fan.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.7  限位开关接线
 
@@ -133,9 +272,21 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 **Super8的限位电压是可以通过更改短接电阻来更改电压的，可选3.3v、5v、12v，默认5V。默认电压已经能够满足大多数使用场景，无需修改，如需修改，请谨慎使用。**
 
+<<<<<<< HEAD
 ![endstop_voltage](../../images/boards/fly_super8/endstop_voltage.png)
 
 ![endstop](../../images/boards/fly_super8/endstop.png)
+=======
+<<<<<<< HEAD
+![限位开关io电压选择](../../images/boards/fly_super8/限位开关io电压选择.png)
+
+![限位开关接线](../../images/boards/fly_super8/限位开关接线.png)
+=======
+![endstop_voltage](../../images/boards/fly_super8/endstop_voltage.png)
+
+![endstop](../../images/boards/fly_super8/endstop.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.8 调平传感器接线
 
@@ -147,16 +298,44 @@ VORON官方建议是使用欧姆龙Omron TL-Q5MC（之前官方推荐的是PL08N
 
 欧姆龙接近开关支持10-30V供电。由于super8的高压接口默认电压为5V，不能驱动接近开关，需要更改输出电压至12V才能正常使用。更改方式如下图所示。
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![高压限位跳线](../../images/boards/fly_super8/高压限位跳线.png)
+
+如果没有烙铁等工具，或者对自己的技术没有信心，建议将接近开关的电源线接到主板供电口。接线方法如下图所示。
+
+![pl08n第三种接线](../../images/boards/fly_super8/pl08n第三种接线.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 ![HV_endstop_dip](../../images/boards/fly_super8/HV_endstop_dip.png)
 
 如果没有烙铁等工具，或者对自己的技术没有信心，建议将接近开关的电源线接到主板供电口。接线方法如下图所示。
 
 ![pl08n2](../../images/boards/fly_super8/pl08n2.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ### 1.8.2 BL-Touch接线
 
 BL-touch一共有五根线，三根为第一组，负责传感器的供电和探针的收放，第二组为地线和信号线，输出限位信号。BL-touch接线时请仔细核对线序，错误的接线可能会永久性损坏传感器和主板！！！接线方法如下图所示。
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+![bltouch接线png](../../images/boards/fly_super8/bltouch接线png.png)
+
+### 1.8.3 Klicky接线
+
+Klicky为第三方的调平传感器，能够用极低的成本自己在家制作，且性能稳定，性价比最高，非常推荐使用。接线方法如下图所示。
+
+项目地址：[jlas1/Klicky-Probe: ](https://github.com/jlas1/Klicky-Probe "项目地址，点击即可跳转")
+
+![klicky接线](../../images/boards/fly_super8/klicky接线.png)
+=======
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 ![bltouch](../../images/boards/fly_super8/bltouch.png)
 
 ### 1.8.3 Klicky接线
@@ -166,6 +345,10 @@ Klicky为第三方的调平传感器，能够用极低的成本自己在家制�
 项目地址：[jlas1/Klicky-Probe: ](https://github.com/jlas1/Klicky-Probe "项目地址，点击即可跳转")
 
 ![klicky](../../images/boards/fly_super8/klicky.png)
+<<<<<<< HEAD
+=======
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ### 1.8.4 Voron Tap接线
 
@@ -173,7 +356,15 @@ Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整�
 
 **注意！！！5V和GND不能接反，否则会损坏Tap传感器甚至主板！！！**
 
+<<<<<<< HEAD
 ![tap](../../images/boards/fly_super8/tap.png)
+=======
+<<<<<<< HEAD
+![Tap接线png](../../images/boards/fly_super8/Tap接线png.png)
+=======
+![tap](../../images/boards/fly_super8/tap.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.9 RGB接线
 
@@ -181,7 +372,15 @@ Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整�
 
 **注意！！！5V和GND不能接反，否则会损坏LED灯板甚至主板！！！**
 
+<<<<<<< HEAD
 ![rgb](../../images/boards/fly_super8/rgb.png)
+=======
+<<<<<<< HEAD
+![RGB接线](../../images/boards/fly_super8/RGB接线.png)
+=======
+![rgb](../../images/boards/fly_super8/rgb.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.10 FLY-Mini12864接线
 
@@ -193,9 +392,21 @@ Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整�
 
 主板通过TypeC接口连接到上位机的USB口，也可以用过串口连接到上位机。这里只对前者做介绍。
 
+<<<<<<< HEAD
 ![toπ](../../images/boards/fly_super8/toπ.png)
 
 ![usbpower](../../images/boards/fly_super8/usbpower.png)
+=======
+<<<<<<< HEAD
+![连接到上位机png](../../images/boards/fly_super8/连接到上位机png.png)
+
+![usb口供电跳线帽png](../../images/boards/fly_super8/usb口供电跳线帽png.png)
+=======
+![toπ](../../images/boards/fly_super8/toπ.png)
+
+![usbpower](../../images/boards/fly_super8/usbpower.png)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
+>>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 
 
