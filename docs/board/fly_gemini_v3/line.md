@@ -4,11 +4,7 @@
 
 ## 1.1 Gemini接口图
 
-<<<<<<< HEAD
 ![Interface](../../images/boards/fly_gemini_v3/Interface.png)
-=======
-![interface](../../images/boards/fly_gemini_v3/interface.png)
->>>>>>> fff00a83fd528b37dfb986d3181b75d834e508ec
 
 ## 1.1 电源接线
 
