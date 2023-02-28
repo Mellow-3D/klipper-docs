@@ -1,9 +1,21 @@
 * FLY-Gemini v3
- 
-  * [配置信息](/board/fly_gemini_v3/README.md)
-  * [引脚分布](/board/fly_gemini_v3/pins.md)
+
+  * [产品简介](/board/fly_gemini_v3/README.md)
+  * [4轴扩展板](/board/fly_gemini_v3/extend.md)
+  * [镜像烧录](/board/fly_gemini_v3/mirror.md)
+  * [FLY_Config的使用](/board/fly_gemini_v3/flyconfig.md)
+  * [FLY-TFT的使用](/board/fly_gemini_v3/tft.md)
+  * [HDMI屏幕的使用](/board/fly_gemini_v3/hdmi.md)
+  * [连接到SSH](/board/fly_gemini_v3/ssh.md)
+  * [CPU散热风扇](/board/fly_gemini_v3/corefan.md)
+  * [Gemini主板接线](/board/fly_gemini_v3/line.md)
+  * [拨码开关的使用](/board/fly_gemini_v3/dip.md)
+  * [固件编译烧录](/board/fly_gemini_v3/flash.md)
+  * [读取主板ID](/board/fly_gemini_v3/readid.md)
   * [示例配置](/board/fly_gemini_v3/cfg.md)
-  * [USB桥接CAN](/board/fly_gemini_v3/usb2can.md)
+  * [桥接CAN](/board/fly_gemini_v3/canbridge.md)
   * [eMMC & WiFi模块](/board/fly_gemini_v3/m2we.md)
-  * [GeminiV3固件烧录](/board/fly_gemini_v3/flash.md)
+  * [Klipper调试](/board/fly_gemini_v3/boardtest.md)
+  * [引脚分布](/board/fly_gemini_v3/pins.md)
+  * [相关链接](/board/fly_gemini_v3/link.md)
 

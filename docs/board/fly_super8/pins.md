@@ -3,4 +3,4 @@
 
 
 ## Super8引脚图
-![super8 pins](../../images/boards/fly_super8/fly_super8_pins.svg)
+![Super8 pin](../../images/boards/fly_super8/Super8_pin.png)

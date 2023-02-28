@@ -4,6 +4,7 @@
 
 在进行三轴调平之前，先打开printer.cfg，找到3Z调平的宏 [z_tilt]，根据热床的大小调整3个探测点的位置，确保探测点都在热床的打印范围内。
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/调平.png" alt="调平" style="zoom:60%;" />
 
 在第一次运行3Z调平之前，请先用手将热床平台的三个角的高度调到差不多一致，然后运行一次``全部归位``，然后再点击“Z轴倾斜校准”。
@@ -13,6 +14,17 @@
 打印机开始执行3Z自动调平动作，喷头从左下角开始采集高度数据，并按顺时针依次探测完3个点。每次探测完，系统会自动计算出一个平均的公差值，并自动调整3个角的高度。重复探测2-3次，直至公差值小于 ``retry_tolerance: ``的设定值，即完成了3Z调平的动作。
 
 <img src="../../images/boards/fly_super8/调平3.png" alt="调平3" style="zoom:70%;" />
+=======
+<img src="../../images/boards/fly_super8/levelling1.png" alt="levelling1" style="zoom:60%;" />
+
+在第一次运行3Z调平之前，请先用手将热床平台的三个角的高度调到差不多一致，然后运行一次``全部归位``，然后再点击“Z轴倾斜校准”。
+
+<img src="../../images/boards/fly_super8/levelling2.png" alt="levelling2" style="zoom:60%;" />
+
+打印机开始执行3Z自动调平动作，喷头从左下角开始采集高度数据，并按顺时针依次探测完3个点。每次探测完，系统会自动计算出一个平均的公差值，并自动调整3个角的高度。重复探测2-3次，直至公差值小于 ``retry_tolerance: ``的设定值，即完成了3Z调平的动作。
+
+<img src="../../images/boards/fly_super8/levelling3.png" alt="levelling3" style="zoom:80%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
 ?> **注意：**如果偏差越来越大，请检查是电机的顺序是否正确。如果探测次数超过5圈仍未达到预设公差，系统将会报错。Z轴丝杆和电机的安装情况以及劣质的传感器都会影响重复探测的精度。
 
@@ -56,7 +68,11 @@
 
 在打印过程中，可以使用控制页面上的Z偏移微调按钮来动态调整喷嘴的高度，使首层打印效果更好。打印完成后，可以点击旁边的保存按钮，系统会自动保存刚刚动态微调的参数，当前的微调偏移值会累加到原有的偏移值上。
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/动态z.png" alt="动态z" style="zoom:70%;" />
+=======
+<img src="../../images/boards/fly_super8/zoffset.png" alt="zoffset" style="zoom:80%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
 ## 1.6 在加热时调平
 
@@ -87,13 +103,21 @@ relative_reference_index: 12
 
 找到调整选项，然后点击校准，系统会自动执行网床校准。命令执行完成后，在控制台输入：``SAVE_CONFIG`` 命令，系统会自动保存探测的参数。
 
+<<<<<<< HEAD
 ![网床补偿](../../images/boards/fly_super8/网床补偿.png)
+=======
+<img src="../../images/boards/fly_super8/bedmesh2.png" alt="bedmesh2" style="zoom:90%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
 使用网床补偿时，请在``printer.cfg``中的``[PRINT_START]``宏中添加命令：``BED_MESH_PROFILE LOAD=default``（如果网床数据是自定义的名称，那么请将default修改为自定义的名称）。
 
 同时，请在``[PRINT_START]``宏中的热床调平命令前添加命令：``BED_MESH_CLEAR``
 
+<<<<<<< HEAD
 <img src="../../images/boards/fly_super8/网床.png" alt="网床" style="zoom:50%;" />
+=======
+<img src="../../images/boards/fly_super8/bedmesh1.png" alt="bedmesh1" style="zoom:70%;" />
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
 ## 1.8 挤出机校准
 

@@ -10,4 +10,9 @@
   * [示例配置](/board/fly_sht_v2/cfg.md)
   * [桥接CAN](/board/fly_sht_v2/canbridge.md)
   * [加速度计](/board/fly_sht_v2/jiasudu.md)
+<<<<<<< HEAD
   * [CanBoot](/board/fly_sht_v2/shtcanboot.md)
+=======
+  * [CanBoot](/board/fly_sht_v2/shtcanboot.md)
+  * [相关链接](/board/fly_sht_v2/link.md)
+>>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
