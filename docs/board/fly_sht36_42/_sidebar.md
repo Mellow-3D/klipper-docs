@@ -11,8 +11,5 @@
   * [桥接CAN](/board/fly_sht36_42/canbridge.md)
   * [加速度计](/board/fly_sht36_42/jiasudu.md)
   * [CanBoot](/board/fly_sht36_42/shtcanboot.md)
-<<<<<<< HEAD
-=======
   * [相关链接](/board/fly_sht36_42/link.md)
->>>>>>> 5c05aa80531525af768e0e85464d928adf35d270
 
