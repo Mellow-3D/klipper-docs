@@ -23,6 +23,13 @@
 * 驱动: 高压驱动位*4
 * MCU: STM32F405
 
+<<<<<<< HEAD
+<img src="../../images/boards/fly_gemini_v3/GeminiV3.jpg" alt="GeminiV3" style="zoom:60%;" />
+
+![size](../../images/boards/fly_gemini_v3/size.png)
+
+=======
+>>>>>>> 9df734613a22d04908e9232826c27f19115a9b53
 ## 产品详情
 
 [Fly3D Gemini双子座4轴3D打印机主板klipper/RRF固件运行linux-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a230r.1.14.1.1a4840a8a8t04w&id=661670024975&ns=1&abbucket=16#detail "点击即可跳转")
@@ -39,6 +46,10 @@
 * Gemini V2.0：RAM升级至1G，可同时使用CAN和Klipperscreen
 * Gemini V3.0：分开芯片5V供电和板载上位机端口5V供电，主板5V端子短路时不会影响到系统使用；删除主板sd卡接口，改用hid烧录固件；板载CAN收发芯片，无需使用CAN Hat
 
+<<<<<<< HEAD
+## Gemini V3
+=======
 ## FLY-Gemini  V3
+>>>>>>> 9df734613a22d04908e9232826c27f19115a9b53
 
 ![geminiv3](../../images/boards/fly_gemini_v3/geminiv3.png)

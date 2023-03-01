@@ -94,7 +94,9 @@ Klicky 为第三方的调平传感器，能够用极低的成本自己在家制�
 
 Voron Tap为Voron团队最新发布的调平传感器方案，有着精度高，稳定性强，适应性好等特点。接线时，请注意正负极不能接反，否则会损坏Tap传感器甚至SHT工具板。
 
-<img src="../../images/boards/fly_sb2040/tap.png" alt="tap" style="zoom:80%;" />
+?> Voron Tap不建议接 **24V** ，某些版本使用 **24V** 有一定概率会导致Tap传感器烧坏，这并非Fly产品的问题，是Voron Tap的设计缺陷，请悉知！！！
+
+<img src="../../images/boards/fly_sb2040/tap.png" alt="tap" style="zoom:90%;" />
 
 ### 1.9.4 Bltouch
 
