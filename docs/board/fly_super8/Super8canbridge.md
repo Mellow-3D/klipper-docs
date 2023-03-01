@@ -14,13 +14,13 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 ![canbridge](../../images/boards/fly_super8/canbridge.png)
 
-## 1.2 固件参数配置
+## 1.2 主板固件参数配置
 
 Klipper固件配置界面如下图。编译固件后，按照[固件编译和烧录](/board/fly_super8/firmware "点击即可跳转")给出的方法，将固件刷入主板中。
 
 ![canbridge2](../../images/boards/fly_super8/canbridge2.png)
 
-## 1.3 CAN uuid的读取
+## 1.3 主板CAN uuid的读取
 
 固件刷好后，先不连接SHT36V2工具板，使用下面的命令读取Super8主板的CAN ID。
 
@@ -36,8 +36,15 @@ Klipper固件配置界面如下图。编译固件后，按照[固件编译和烧
  
  [mcu ]
  #serial: /dev/serial/by-id/usb-Klipper_stm32f407*******   # 注释掉这一行
- canbus_uuid: *3251a329e6e3*                               # 在此处填写主板的CAN ID
+ canbus_uuid: 3251a329e6e3                                # 在此处填写主板的CAN ID
  ```
 
-在读到主板CAN ID之后，断开主板电源，接好SHT36V2，并将固件刷好。固件刷写完成后，将读到的SHT36V2工具板的CAN ID填写到配置文件中即可。
+在读到主板CAN ID之后，将uuid填写到配置文件保存后，断开主板电源，接好SHT36V2。
 
+## 1.4 SHT36 V2固件刷写
+
+主板桥接CAN固件刷好后，还需要刷写SHT36 V2工具板的固件才能正常使用。
+
+> 由于SHT36 V2是使用CanBoot刷写固件，因此需要先刷好**主板桥接CAN固件**，并正确**连接SHT工具板和主板**才能刷写SHT工具板的固件。
+
+SHT36 V2刷写教程：[SHT36 V2固件编译和烧录](/board/fly_sht_v2/flash "点击即可跳转")

@@ -11,3 +11,4 @@
   * [桥接CAN](/board/fly_sht_v2/canbridge.md)
   * [加速度计](/board/fly_sht_v2/jiasudu.md)
   * [CanBoot](/board/fly_sht_v2/shtcanboot.md)
+  * [相关链接](/board/fly_sht_v2/link.md)
