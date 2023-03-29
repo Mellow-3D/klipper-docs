@@ -22,7 +22,7 @@ Mellow Fly Super8是广州镁伦电子科技有限公司Fly3D主板研发团队�
 
 淘宝：[Fly3D Super8轴3D打印机主板RRF/marlin/Klipper固件VzBoT Voron-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.18.68de3903lHTcFZ&id=654767618383 "点击即可跳转")
 
-![主板图](../../images/boards/fly_super8/主板图.png)
+![super8](../../images/boards/fly_super8/super8.png)
 
 ## Super8主板升级说明
 
@@ -34,5 +34,5 @@ Mellow Fly Super8是广州镁伦电子科技有限公司Fly3D主板研发团队�
 
 ?> 重要
 
-* 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
-* 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)
+* 非FLY上位机请按 [上位机配置](/board/fly_sht_v2/piconfig "点击即可跳转") 文档配置好CAN
+* 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md)

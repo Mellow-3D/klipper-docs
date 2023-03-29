@@ -93,7 +93,7 @@ Klicky 为第三方的调平传感器，能够用极低的成本自己在家制�
 
 Voron Tap为Voron团队最新发布的调平传感器方案，有着精度高，稳定性强，适应性好等特点。接线时，请注意正负极不能接反，否则会损坏Tap传感器甚至SHT工具板。
 
-<img src="../../images/boards/fly_sht36_42/TAPpng.png" alt="TAPpng" style="zoom:70%;" />
+![TAPpng](../../images/boards/fly_sht36_42/TAPpng.png)
 
 ### 1.10.4 Bltouch
 
