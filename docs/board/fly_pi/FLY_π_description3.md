@@ -1,4 +1,4 @@
-# FLY  TFT 的使用
+# FLY -TFT 的使用
 
 ## 1.1 修改配置
 
@@ -24,7 +24,7 @@
 
 ![v1-1](../../images/boards/fly_pi/v1-1.png)
 
-* **Gemini-V2 和 Fly- π 接线图**
+* **Gemini-V2、Gemini-V3 和 Fly- π 接线图**
 
 ![v2](../../images/boards/fly_pi/v2.png)
 

@@ -655,6 +655,17 @@ gcode:
 ## FAN8               PD14
 ## FAN9               PD15
 
+## Stop
+# IO0_Stop            PG12       
+# IO1_Stop            PG11         
+# IO2_Stop            PG10
+# IO3_Stop            PG9         
+# IO4_Stop            PD7          
+# IO5_Stop            PD6
+# IO6_Stop            PA8
+# HV_IN               PF3          
+
+
 ## SERVO              PC6   #BLTOUCH
 ## PROBE			  PC3   #BLTOUCH
 
