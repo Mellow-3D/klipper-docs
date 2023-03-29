@@ -19,6 +19,11 @@ FLY SB2040是广州镁伦电子科技有限公司针对VORON Stealthburber打印
 * 兼容hartk的Stealthburner Toolhead Board （风扇小板可以不用更换）
 * 接口：可控风扇\*3，RGB\*1，限位\*3，加热管\*1，热敏\*1
 
+以下为V2相较于V1的升级内容
+1. 增加MAX31865支持PT100
+2. 增加风扇小板5V防倒灌
+3. 修改部分布局，减少短路风险
+
 ## 产品详情
 
 淘宝：[FLY3D打印机 Voron 2.4 R2 Trident Stealthburner Can工具头主板-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.36.68de3903lHTcFZ&id=681269728598 "点击即可跳转")
@@ -32,8 +37,14 @@ FLY SB2040是广州镁伦电子科技有限公司针对VORON Stealthburber打印
 
 ----
 
-## SB2040
+## SB2040-V2
 
-![CAN](../../images/boards/fly_sb2040/sb2040.png ":no-zooom")
+![SB2040-V2](../../images/boards/fly_sb2040/sb2040v2.jpg ":no-zooom")
+
+
+## SB2040-V1
+
+![SB2040-V1](../../images/boards/fly_sb2040/sb2040.png ":no-zooom")
+
 
 ![size](../../images/boards/fly_sb2040/size.jpg)

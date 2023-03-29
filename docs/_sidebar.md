@@ -2,7 +2,7 @@
   * [FLY-π-Lite](/board/fly_pi_lite/)
   * [FLY-ERCF](/board/fly_ercf/)
   * [FLY-Gemini v3](/board/fly_gemini_v3/)
-  * [FLY-SB2040](/board/fly_sb2040/)
+  * [FLY-SB2040-V1 & V2](/board/fly_sb2040/)
   * [FLY-SHT-v2](/board/fly_sht_v2/)
   * [FLY-Puppet](/board/fly_puppet/)
   * [FLY-Super8-Pro](/board/fly_super8_pro/)
