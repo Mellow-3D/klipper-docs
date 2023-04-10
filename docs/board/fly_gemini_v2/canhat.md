@@ -30,7 +30,7 @@ Gemini-V2需要搭配CAN Hat才能使用桥接CAN。
 
 Klipper固件配置界面如下图。编译固件后，按照 [固件编译和烧录](/board/fly_super8/firmware "点击即可跳转") 给出的方法，将固件刷入主板中。
 
-![usb2can](../../images/boards/fly_gemini_v3/usb2can.png)
+![can](../../images/boards/fly_gemini_v2/config-can.png)
 
 ## 1.4 查看CAN uuid
 
