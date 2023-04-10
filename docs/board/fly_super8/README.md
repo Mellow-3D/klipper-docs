@@ -24,6 +24,8 @@ Mellow Fly Super8是广州镁伦电子科技有限公司Fly3D主板研发团队�
 
 ![super8](../../images/boards/fly_super8/super8.png)
 
+![size](../../images/boards/fly_super8/size.png)
+
 ## Super8主板升级说明
 
   * Super8 1.1：修复CAN芯片供电
