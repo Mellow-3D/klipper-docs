@@ -1,7 +1,8 @@
-# FLY-SB2040 v1配置参考
+# FLY-SB2040 v1 & v2配置参考
 
 ?> 文档中出现的所有`*`包裹的内容需要按照自己实际的修改
 
+?> V2配置只比V1多了PT100，其余配置完全兼容
 
 ```cfg
 ## SB2040设置
@@ -73,3 +74,14 @@ cs_pin: sb2040:gpio1
 spi_software_sclk_pin: sb2040:gpio0
 spi_software_mosi_pin: sb2040:gpio3
 spi_software_miso_pin: sb2040:gpio2
+
+## PT100设置 仅V2支持
+# [temperature_sensor PT100]
+# sensor_type: MAX31865
+# sensor_pin: sb2040:gpio22
+# spi_software_sclk_pin: sb2040:gpio18
+# spi_software_mosi_pin: sb2040:gpio19
+# spi_software_miso_pin: sb2040:gpio23
+# min_temp: -50
+# max_temp: 350
+# rtd_reference_r: 430

@@ -4,7 +4,11 @@
 
 ## 接线图
 
+ V1
  ![jiexian](../../images/boards/fly_sb2040/jiexian.png)
+
+V2
+![jiexian](../../images/boards/fly_sb2040/pinoutv2.jpg)
 
 ## 1.1 终端电阻配置
 

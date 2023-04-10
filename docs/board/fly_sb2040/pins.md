@@ -1,5 +1,11 @@
 # 引脚分布
 
+## SB2040 v2引脚
+
+![SB2040 v2 Pinout](../../images/boards/fly_sb2040/pinoutV2.jpg ":no-zooom")
+
+----
+
 ## SB2040 v1引脚
 
 ![SB2040 v1 Pinout](../../images/boards/fly_sb2040/pinout.jpg ":no-zooom")
@@ -70,3 +76,13 @@
 | ADXL345-INT1 | ***gpio21*** |
 | ADXL345-INT2 | ***gpio20*** |
 
+----
+
+## MAX31865 (V2)
+
+| 功能 | 引脚号 |
+| :----: | :----- |
+| MISO | ***gpio23*** |
+| MOSI | ***gpio19*** |
+| CLK | ***gpio18*** |
+| MAX31865-CS | ***gpio22*** |
