@@ -16,10 +16,7 @@
   * [CAN Hat](/board/fly_gemini_v2/canhat.md)
   * [eMMC & WiFi模块](/board/fly_gemini_v2/m2we.md)
   * [Klipper调试](/board/fly_gemini_v2/boardtest.md)
-<<<<<<< HEAD
   * [加速度计的使用](/board/fly_gemini_v2/adxl345.md)
-=======
->>>>>>> 9df734613a22d04908e9232826c27f19115a9b53
   * [引脚分布](/board/fly_gemini_v2/pins.md)
   * [相关链接](/board/fly_gemini_v2/link.md)
 

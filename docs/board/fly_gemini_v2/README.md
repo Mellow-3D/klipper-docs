@@ -22,13 +22,10 @@
 * 系统与FLY-Gemini互相兼容
 * 驱动: 高压驱动位*4
 * MCU: STM32F405
-<<<<<<< HEAD
 
 <img src="../../images/boards/fly_gemini_v2/Geminiv2.jpg" alt="Geminiv2" style="zoom:90%;" />
 
 ![size](../../images/boards/fly_gemini_v2/size.png)
-=======
->>>>>>> 9df734613a22d04908e9232826c27f19115a9b53
 
 ----
 
