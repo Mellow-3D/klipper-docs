@@ -23,6 +23,10 @@
 * 驱动: 高压驱动位*4
 * MCU: STM32F405
 
+<img src="../../images/boards/fly_gemini_v2/Geminiv2.jpg" alt="Geminiv2" style="zoom:90%;" />
+
+![size](../../images/boards/fly_gemini_v2/size.png)
+
 ----
 
 ?> 重要
