@@ -12,8 +12,6 @@
 
 4. 工具软件请前往FLY官方群文件夹下载：Fly-Gemini系列；l 需要用到的软件有：balenaEtcher（fly群中文件名为系统镜像写入工具）、putty、WinSCP
 
-   
-
 5. [系统镜像](/introduction/downloadimg.md "点击即可跳转") 
 
 **注：其他非FLY的上位机请勿使用FLY的专属镜像，否则会损坏上位机！！！**
