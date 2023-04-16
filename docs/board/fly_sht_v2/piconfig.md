@@ -1,22 +1,34 @@
-# 上位机配置
+# 3. 上位机配置
 
-## 1.1 FLY上位机
+## 3.1 非FLY上位机检测
+
+?> 此操作针对非FLY上位机，FLY上位机无需执行这一步操作
+
+非FLY上位机的，请注意检查自己烧录的镜像内核是否支持CAN，如果不支持则无法使用CAN。检测方法如下。
+
+在SSH输入：
+
+```
+sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持CAN"
+```
+
+输入以上指令后，如果您的内核支持CAN就会返回：``您的内核支持CAN``；如果不支持就会返回：``您的内核不支持CAN``。
 
 ?>FLY上位机，FLY已为您完成所有配置工作，您只需确保镜像烧录正确即可。镜像烧录请查看：[系统镜像烧录](/#/board/fly_pi/FLY_π_description1 "点击即可跳转")
 
-## 1.2 非FLY上位机
+## 3.2 非FLY上位机配置
 
 > 当前文档不仅适用于树莓派，香橙派等等其他设备同理
 
 ?> 注意：目前收到很多反馈，都是CAN缓冲区设置太小，导致数据无法及时交换。从而导致Klipper报错。请将CAN缓冲区设置为1024
 
-### 1.2.1 准备
+### 3.2.1 准备
 
 1. 启动树莓派并确保其连接到网络
 2. 使用你熟悉的SSH终端工具连接到树莓派
 3. 如果登录到了root账户请切换到普通用户
 
-### 1.2.2 系统配置
+### 3.2.2 系统配置
 
 ?> 注意：使用SPI转CAN(MCP215)等设备时建议设置bitrate为250000
 
@@ -43,7 +55,13 @@ EOF
 
 ```bash
 sudo wget https://cdn.mellow.klipper.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
+```
+
+```
 sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
+```
+
+```
 sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 1024' /etc/rc.local
 ```
 
@@ -62,12 +80,12 @@ sudo reboot
 sudo can-enable -d can0 -b 500000 -t 1024
 ```
 
-### 1.2.3 连接
+### 3.2.3 连接UTOC
 
 * 使用Type-c数据线连接树莓派和**FLY-UTOC**
-* 具体接线可查看文档 [连接UTOC](/board/fly_sht_v2/shtv2line?id=_111-sht36-v2连接utoc "点击即可跳转")
+* 具体接线可查看文档 [连接UTOC](/board/fly_sb2040/sb2040line?id=_110-sb2040连接utoc "点击即可跳转")
 
-### 1.2.4 查看uuid
+### 3.2.4 查看uuid
 
 * 执行下面的命令来查找所有已连接的CAN设备
 

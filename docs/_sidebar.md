@@ -1,6 +1,7 @@
 * 产品
   * [FLY-π-Lite](/board/fly_pi_lite/)
   * [FLY-ERCF](/board/fly_ercf/)
+  * [FLY-E3 v2](/board/fly_e3_v2/)
   * [FLY-Gemini v3](/board/fly_gemini_v3/)
   * [FLY-SB2040-V1 & V2](/board/fly_sb2040/)
   * [FLY-SHT-v2](/board/fly_sht_v2/)

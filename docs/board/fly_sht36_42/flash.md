@@ -1,8 +1,8 @@
-# 固件烧录
+# 4. 固件烧录
 
 SHT36/42在出厂时并未刷写固件，因此在使用前需要为CAN工具板重新编译并烧写固件后，才能使用CANBUS。
 
-## 1.1 编译固件
+## 4.1 编译固件
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -12,7 +12,7 @@ SHT36/42在出厂时并未刷写固件，因此在使用前需要为CAN工具板
 
 ![config](../../images/boards/fly_sht36_42/config.png ":no-zooom")
 
-## 1.2 烧录固件 
+## 4.2 烧录固件 
 
 ?> SHT板连接到电脑或者上位机之前必须安装下面图中的短接跳线帽，否则SHT板无法进入USB烧录模式
 
@@ -25,7 +25,7 @@ SHT36/42在出厂时并未刷写固件，因此在使用前需要为CAN工具板
 ![d36](../../images/boards/fly_sht36_42/d36.png ":no-zooom")
 ![d42](../../images/boards/fly_sht36_42/d42.png ":no-zooom")
 
-### 1.2.1 上位机烧录
+### 4.2.1 上位机烧录
 
 1. 安装烧录工具
 
@@ -56,7 +56,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 ?> 注意：烧录成功后一定记得拔下来跳线帽
 
-### 1.2.2 电脑烧录
+### 4.2.2 电脑烧录
 
 1. 下载烧录工具[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip)
 2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
