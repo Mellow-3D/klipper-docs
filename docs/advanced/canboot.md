@@ -27,7 +27,7 @@ make menuconfig
 
 <!-- tabs:start -->
 
-#### **FLY-SHT & FLY-SHTV2**
+#### **FLY-SHT**
 
 ?> ShtV2用户请注意，如果您板的主控型号是GD32F103请将 ``Processor model (STM32F072)`` 选择更换为 ``STM32F103``
 
@@ -52,6 +52,31 @@ make menuconfig
     * 像上图一样出现``Creating hex file out/canboot.bin`` 或 ``Creating uf2 file out/canboot.uf2`` 即为编译成功
 
 ## 2. 烧录CanBoot引导固件
+
+
+
+<!-- tabs:start -->
+
+#### **FLY-SHT**
+
+?> ShtV2用户请注意，如果您板的主控型号是GD32F103请将 ``Processor model (STM32F072)`` 选择更换为 ``STM32F103``
+
+![config](../../images/adv/canboot/sht.png ":no-zooom")
+
+#### **SB2040 & ERCF**
+
+?> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot（在CanBoot目录下输入 `git pull` 即可拉取最新的CanBoot）
+
+![config](../../images/adv/canboot/sb2040.png ":no-zooom")
+
+#### **SHT36v2**
+
+
+
+
+<!-- tabs:end -->
+
+
 
 **1. SB2040**
 
@@ -203,6 +228,6 @@ make
 * 下面命令中的``fea6a45462e9``需要替换为你查询到的UUID
 
 ```bash
-python3 lib/canboot/flash_can.py -i can0 -q
-python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
+python3 ~/klipper/lib/canboot/flash_can.py -i can0 -q
+python3  ~/klipper/lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 ```

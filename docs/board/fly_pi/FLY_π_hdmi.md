@@ -1,4 +1,4 @@
-#  HDMI屏幕的使用
+#  6. HDMI屏幕的使用
 
 1. 启用 klipperscreen 将``KlipperScreen=false``修改为``KlipperScreen=true``
 
@@ -8,4 +8,4 @@
 
    **注：FLY π上板载的HDMI接口是Micro HDMI，购买HDMI线时请注意！！！**
 
-   ![配置hdmi](../../images/boards/fly_pi/配置hdmi.png)
+   ![hdmi](../../images/boards/fly_pi/hdmi.png)

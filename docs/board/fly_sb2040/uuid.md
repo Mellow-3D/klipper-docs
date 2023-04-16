@@ -1,4 +1,4 @@
-# uuid读取
+# 5. uuid读取
 
 ?>如果是FLY-Gemini系列或FLY-π系列主板可参考:[查看uuid](/advanced/can?id=查看can-uuid "点击即可跳转")
 

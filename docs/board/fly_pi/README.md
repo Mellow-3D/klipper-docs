@@ -1,4 +1,4 @@
-# 产品简介
+# 1. 产品简介
 
 我们很高兴地发布全新的FLY-π主板。此板可替代树莓派作为上位机运行，它拥有有1GB的板载DDR3内存，允许运行完整的LINUX桌面（基于 Armbian定制优化）。该板可与Klipper和RRF固件一起使用，甚至可以在使用SHT工具板时运行Klipper屏幕。
 
@@ -19,15 +19,13 @@
 * 为Klipper定制的系统，无需安装系统等复杂的操作，小白更容易上手
 * 系统与FLY-Gemini互相兼容
 
-## 产品详情
+## 1.1 产品详情
 
 [Fly3D Fly-π上位机主板替代树莓派运行3D打印机Klipper/RRF固件-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.26.68de3903lHTcFZ&id=676114118467 "点击即可跳转")
 
-## FLY-π
+## 1.2 FLY-π
 
-![pi接口图jpg](../../images/boards/fly_pi/pi接口图jpg.jpg)
-
-<img src="../../images/boards/fly_pi/fly_pi.png" alt="pi" title=":no-zooom" style="zoom:60%;" />
+![pi_interface](../../images/boards/fly_pi/pi_interface.jpg)
 
 ----
 

@@ -4,7 +4,25 @@
 
 Super8 Pro的Klipper固件配置
 
+?> 早期的 Super8pro 使用的主控芯片为`H743`，不带`pro`字样，后期带`pro`字样的使用的是`H723`芯片。编译固件前请仔细检查主控型号，避免编译烧录错误的固件！！！
+
+* H743
+
 ![config](../../images/boards/fly_super8_pro/config.png ":no-zooom")
+
+* H723
+
+  <img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
+
+  > 如果找不到`H723`芯片选型，请执行如下命令后重新进入固件编译界面
+
+  ```
+  cd ~/klipper
+  ```
+
+  ```
+  git pull
+  ```
 
 * 如何编译固件参考[固件烧录](/introduction/firmware)
 

@@ -1,8 +1,8 @@
-# 固件烧录
+# 4. 固件烧录
 
 ?> SHTV2预装了CanBoot，只支持CAN烧录，烧录前请使用CAN连接到上位机
 
-## 1. 编译固件
+## 4.1 编译固件
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -37,7 +37,7 @@
 
      最后出现**Creating hex file out/klipper.bin**则编译成功
 
-## 2. 查找uuid
+## 4.2 查找uuid
 
 ?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHTV2与上位机通过CAN总线连接
 
@@ -79,7 +79,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")
 
-## 3. 烧录固件
+## 4.3 烧录固件
 
 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 

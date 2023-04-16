@@ -1,8 +1,8 @@
-# FLY-Gemini v2参考配置
+# 14. FLY-Gemini v2参考配置
 
 ?> 文档中出现的所有`*`包裹的内容需要按照自己实际的修改
 
-## FLY_GEMINI_V2.cfg
+## 14.1 FLY_GEMINI_V2.cfg
 ```cfg
 [board_pins]
 aliases:
@@ -44,7 +44,7 @@ aliases:
     PROBE=PA1  # BL Touch end stop pin
 ```
 
-## printer.cfg
+## 14.2 printer.cfg
 
 ```cfg
 [include FLY_GEMINI_V2.cfg]

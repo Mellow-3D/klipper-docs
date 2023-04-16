@@ -1,6 +1,6 @@
-# 加速度计的使用
+# 9. 加速度计的使用
 
-## 1.1 配置
+## 9.1 配置
 
 配置如下：
 
@@ -19,9 +19,31 @@ probe_points:
     100, 100, 20  # 此坐标为你需要测量的位置，一般为热床中间
 ```
 
-?> 非fly上位机请自行查找教程，并安装加速度计依赖包等
+?> 装加速度计依赖包安装方法如下
 
-## 1.2 测试
+?> 此步骤使用于 `非FLY上位机`，如果您为`Fly-π`或者`Gemini`系列则无需执行！！！
+
+依次执行以下三条命令以安装加速度计依赖包。
+
+```
+sudo apt update
+```
+
+```
+sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
+```
+
+```
+~/klippy-env/bin/pip install -v numpy
+```
+
+请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。在某些情况下，如果主板的 RAM 太少 安装可能会失败，您需要启用交换。
+
+然后，检查并按照 [RPi微控制器文档中](http://www.klipper3d.org/RPi_microcontroller.html "点击即可跳转") 的说明设置。 Raspberry Pi上的`Linux mcu`。
+
+也可自行上bilibili查找教程。
+
+## 9.2 测试
 
 修改配置并保存重启后，在控制台输入指令：
 
@@ -56,7 +78,7 @@ accel_per_hz: 50  # 默认值为75
 probe_points: ...
 ```
 
-## 1.3 使用
+## 9.3 使用
 
 ?> klipper支持自动校准，在校准开始前记得全部归位
 
