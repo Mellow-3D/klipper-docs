@@ -2,6 +2,7 @@
 
 ## 6Pin拨码开关使用
 
+* 使用FLY-π时,不需要调整拨码开关
 * 6P拨码开关用于USB控制，2P为一组，默认全部是OFF，需用户自行开启
 * 第一组：拨码开关1,2 。 **ON：将CM4的USB拓展到板载的4个USB口** 不能与第三组同时ON
 * 第二组：拨码开关3,4 。 **ON：将下位机RP2040的USB连接到板载Type-c接口** 不能与第三组同时ON
@@ -9,9 +10,18 @@
 
 ## 编译固件
 
-PUPPET的Klipper固件配置
+1.Puppet的Klipper固件配置
 
-![config](../../images/boards/fly_puppet/config.png ":no-zooom")
+* 打开第二组拨码开关时使用USB连接如下图配置
+  ![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_puppet\config-usb.png)
+
+2.使用串口配置
+
+* 使用40pin串口与上位机连接时使用如下配置
+
+  ![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_puppet\config-chuanko.png)
+
+  
 
 * 如何编译固件参考[固件烧录](/introduction/firmware)
 
@@ -27,6 +37,7 @@ PUPPET的Klipper固件配置
 2. 使用USB Type-c数据线连接RPFMEX板到电脑
 3. 如果一切正常，电脑中会出现一个可移动磁盘 RPI-RP2
    
+
 ![2](../../images/boards/fly_rht36_42/2.png ":no-zooom")
 
 ![3](../../images/boards/fly_rht36_42/3.png ":no-zooom")
