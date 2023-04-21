@@ -57,6 +57,10 @@ SHT36 v2支持最多两个可控风扇，风扇电压为电源电压，接线方
 
 ![风扇](../../images/boards/fly_sht_v2/风扇.png)
 
+需要使用跳线选择风扇电压
+
+![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_sht_v2\风扇电源选择.png)
+
 ## 2.8 RGB接线
 
 RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
