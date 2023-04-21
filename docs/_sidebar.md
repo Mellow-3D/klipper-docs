@@ -42,5 +42,7 @@
   * [USB桥接CAN](/advanced/usb2can.md)
   * [屏幕使用](/advanced/screen.md)
   * [CanBoot](/advanced/canboot.md)
+  * [USB加速度计](/advanced/usbadxl.md)
+  * [TAP](/advanced/tap.md)
 * 系统
   * [下载镜像](/introduction/downloadimg.md)
