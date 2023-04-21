@@ -43,6 +43,6 @@
   * [屏幕使用](/advanced/screen.md)
   * [CanBoot](/advanced/canboot.md)
   * [USB加速度计](/advanced/usbadxl.md)
-  * [TAP](/advanced/tap.md)
+  * [TAP](/advanced/.md)
 * 系统
   * [下载镜像](/introduction/downloadimg.md)
