@@ -19,6 +19,14 @@
 2. 打印机
 3. 连接线
 
+## 固件烧录
+
+* USB连接如下图配置
+
+![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\adv\TAP\config-usb.png)
+
+* 如何编译固件参考[固件烧录](/introduction/firmware)
+
 ## 测试
 
 * 打开printer.cfg加入加速度计配置
