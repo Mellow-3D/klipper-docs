@@ -5,18 +5,19 @@
 配置如下：
 
 ```
-##ADXL345加速度计
+######################################################################
+#                       adxl345加速度计配置（需要时启用即可）
+#####################################################################
 [adxl345]
-cs_pin: sb2040:gpio1
-spi_software_sclk_pin: sb2040:gpio0
-spi_software_mosi_pin: sb2040:gpio3
-spi_software_miso_pin: sb2040:gpio2
-
-
+cs_pin: sht36:PA9
+spi_bus:spi2
+# spi_software_sclk_pin: sht36:PB13
+# spi_software_mosi_pin: sht36:PB15
+# spi_software_miso_pin: sht36:PB14
+#--------------------------------------------------------------------
 [resonance_tester]
-accel_chip: adxl345
-probe_points:
-    100, 100, 20  # 此坐标为你需要测量的位置，一般为热床中间
+accel_chip: adxl345         # 加速度芯片型号
+probe_points: 150,150,10    # 坐标配置为热床的中间
 ```
 
 ?> 装加速度计依赖包安装方法如下
