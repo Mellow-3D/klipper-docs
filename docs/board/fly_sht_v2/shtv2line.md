@@ -57,6 +57,8 @@ SHT36 v2支持最多两个可控风扇，风扇电压为电源电压，接线方
 
 ![风扇](../../images/boards/fly_sht_v2/风扇.png)
 
+![电压](../../images/boards/fly_sht_v2/dianya.png)
+
 ## 2.8 RGB接线
 
 RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
