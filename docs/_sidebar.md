@@ -44,5 +44,6 @@
   * [CanBoot](/advanced/canboot.md)
   * [USB加速度计](/advanced/usbadxl.md)
   * [TAP](/advanced/tap.md)
+  * [7040鼓风机](/advanced/7040.md)
 * 系统
   * [下载镜像](/introduction/downloadimg.md)

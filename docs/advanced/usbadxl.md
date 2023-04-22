@@ -5,7 +5,7 @@
 ?> 建议使用Mellow的ADXL345加速度计模块.
 ?> 可代替V0/V0.1的固定线管的打印件
 
-![](..\images\adv\accele\usbadxl.png)
+![usbadxl](../images/adv/accele/usbadxl.png)
 
 
 
@@ -23,7 +23,7 @@
 
 * USB连接如下图配置
 
-![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\adv\TAP\config-usb.png)
+![config](../images/adv/accele/config-usb.png)
 
 * 如何编译固件参考[固件烧录](/introduction/firmware)
 
