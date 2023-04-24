@@ -48,7 +48,7 @@ max_temp: 490                     # 最大温度（注意：测量温度超过�
 #注：接完线需测试运行方向
 [extruder]                          # 挤出机
 step_pin: sht36v2:PB4               # 挤出电机方脉冲引脚
-step_pin: sht36v2:PB4               # 挤出电机方向引脚设置
+step_pin: sht36v2:PB3               # 挤出电机方向引脚设置
 enable_pin: !sht36v2:PA15           # 挤出电机方使能引脚设置
 ## 执行挤出机校准时，更新以下值
 ## 比如你要求100毫米的进料，但实际上是98毫米：
@@ -122,7 +122,7 @@ endstop_pin: !sht36v2:PA2
 #                           SB头led配置
 #####################################################################
 [neopixel sb_leds]
-pin: sht36:PB0              # 信号接口
+pin: sht36v2:PB0            # 信号接口
 chain_count: 3              # 灯珠数量
 color_order: GRBW           # 灯珠类型
 initial_RED: 0.4            # 
