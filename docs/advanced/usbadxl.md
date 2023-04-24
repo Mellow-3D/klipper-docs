@@ -33,9 +33,9 @@
 
 ```ini
 [mcu adxl]
-serial: /dev/serial/by-id/usb-Klipper_stm32f407xx_XXXXXXXXXXXXXXXXXXXXX
+serial: /dev/serial/by-id/usb-Klipper_rp2040_XXXXXXXXXXXXXXXXXXXXX
 ### 查询usb固件id是：ls -l /dev/serial/by-id/
-### 把/dev/serial/by-id/usb-Klipper_stm32f407xx_XXXXXXXXXXXXXXXXXXXXX替换查询到的id
+### 把/dev/serial/by-id/usb-Klipper_rp2040_XXXXXXXXXXXXXXXXXXXXX替换查询到的id
 
 ##ADXL345加速度计
 [adxl345]
