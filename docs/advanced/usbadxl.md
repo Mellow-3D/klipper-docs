@@ -33,11 +33,13 @@
 
 ```ini
 [mcu adxl]
-serial: /tmp/klipper_host_mcu
+serial: /dev/serial/by-id/usb-Klipper_stm32f407xx_XXXXXXXXXXXXXXXXXXXXX
+### 查询usb固件id是：ls -l /dev/serial/by-id/
+### 把/dev/serial/by-id/usb-Klipper_stm32f407xx_XXXXXXXXXXXXXXXXXXXXX替换查询到的id
 
 ##ADXL345加速度计
 [adxl345]
-cs_pin: adxl:gpio13
+cs_pin: adxl:gpio9
 spi_software_sclk_pin: adxl:gpio10
 spi_software_mosi_pin: adxl:gpio11
 spi_software_miso_pin: adxl:gpio12
