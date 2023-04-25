@@ -2,7 +2,7 @@
 
 ## 编译固件
 
-Super5的Klipper固件配置
+Super5-PRO的Klipper固件配置
 
 * H723
 
