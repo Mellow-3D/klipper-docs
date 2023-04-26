@@ -53,11 +53,13 @@
 
 ## 2.7 风扇接线
 
-SHT36 v2支持最多两个可控风扇，风扇电压为电源电压，接线方法如下。
+SHT36 v2支持最多两个可控风扇，接线方法如下。
+
+?>  通电前请选择风扇电压，否则风扇不能正常工作！！！
+
+<img src="../../images/boards/fly_sht_v2/fan_voltage.png" alt="fan_voltage" style="zoom:75%;" />
 
 ![风扇](../../images/boards/fly_sht_v2/风扇.png)
-
-![电压](../../images/boards/fly_sht_v2/dianya.png)
 
 ## 2.8 RGB接线
 
