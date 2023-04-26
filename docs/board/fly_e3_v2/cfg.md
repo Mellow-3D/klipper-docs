@@ -335,8 +335,8 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 #####################################################################
 [board_pins]
 aliases:
-    EXP1_1=PD10, EXP1_3=PA8,   EXP1_5=PE14,   EXP1_7=PA14,  EXP1_9=<GND>,
-    EXP1_2=PA9,  EXP1_4=PA10,  EXP1_6=PE15,   EXP1_8=PA13,  EXP1_10=<5V>,
+    EXP1_1=PD10, EXP1_3=PA8,   EXP1_5=PE15,   EXP1_7=PA14,  EXP1_9=<GND>,
+    EXP1_2=PA9,  EXP1_4=PA10,  EXP1_6=PE14,   EXP1_8=PA13,  EXP1_10=<5V>,
     # EXP2 header
     EXP2_1=PA6, EXP2_3=PB11,  EXP2_5=PB10,  EXP2_7=PE13,   EXP2_9=<GND>,
     EXP2_2=PA5, EXP2_4=PA4,   EXP2_6=PA7,   EXP2_8=<RST>, EXP2_10=<NC>,
