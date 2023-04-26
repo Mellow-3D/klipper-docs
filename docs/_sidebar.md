@@ -1,5 +1,5 @@
 * 产品
-  * [FLY-Super5](/board/fly_super5/)
+  * [FLY-Super5-PRO](/board/fly_super5/)
   * [FLY-π-Lite](/board/fly_pi_lite/)
   * [FLY-ERCF](/board/fly_ercf/)
   * [FLY-E3 v2](/board/fly_e3_v2/)
@@ -19,7 +19,8 @@
   * [FLY-CDY v2/v3](/board/fly_cdy_v3/)
   * [FLY-CDY v1](/board/fly_cdy_v1/)
   * [FLY-E3 Pro](/board/fly_e3_pro/)
-
+  * [FLY-9轴](/board/fly_9/)
+  
 * 入门
   * [开始](README)
   * [系统镜像](/introduction/system.md)

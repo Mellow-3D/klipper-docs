@@ -234,6 +234,10 @@ pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0�
 pressure_advance_smooth_time: 0.040 # 平稳推进时间-默认值为0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
 #喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
+control = pid                # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+pid_kp = 26.213              # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+pid_ki = 1.304               # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+pid_kd = 131.721             # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
 #--------------------------------------------------------------------
 [tmc2209 extruder]                  # 挤出机驱动配置- TMC2209
 uart_pin: PD4                       # 通讯端口Pin脚定义
@@ -261,6 +265,10 @@ max_power: 1.0               # 热床功率
 min_temp: 0                  # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 490                # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 # 热床温度PID校准命令：  "PID_CALIBRATE HEATER=heater_bed TARGET=100"
+control: pid                # PID热床温度自动校准项（pid校准完成后，会被注释）
+pid_kp: 58.437              # PID热床温度自动校准项（pid校准完成后，会被注释）
+pid_ki: 2.347               # PID热床温度自动校准项（pid校准完成后，会被注释）
+pid_kd: 363.769             # PID热床温度自动校准项（pid校准完成后，会被注释）
 
 #####################################################################
 #                            风扇配置                                # 
@@ -325,6 +333,14 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 #####################################################################
 #                      FLY-Mini 12864 LCD                           #
 #####################################################################
+[board_pins]
+aliases:
+    EXP1_1=PD10, EXP1_3=PA8,   EXP1_5=PE15,   EXP1_7=PA14,  EXP1_9=<GND>,
+    EXP1_2=PA9,  EXP1_4=PA10,  EXP1_6=PE14,   EXP1_8=PA13,  EXP1_10=<5V>,
+    # EXP2 header
+    EXP2_1=PA6, EXP2_3=PB11,  EXP2_5=PB10,  EXP2_7=PE13,   EXP2_9=<GND>,
+    EXP2_2=PA5, EXP2_4=PA4,   EXP2_6=PA7,   EXP2_8=<RST>, EXP2_10=<NC>,
+    
 #[display]
 #lcd_type: uc1701                # 显示屏驱动类型
 #cs_pin: EXP1_3                  # 显示屏片选cs引脚设置
@@ -333,7 +349,7 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 #contrast: 63                    # 对比度
 #encoder_pins: ^EXP2_5, ^!EXP2_3 # 旋转编码器（旋钮开关）引脚设置
 #click_pin: ^!EXP1_2             # 旋转编码器（旋钮开关）确认按键的引脚设置
-#spi_bus: spi1                   #必须指定SPI通道
+#spi_bus: spi1                   # 必须指定SPI通道
 #--------------------------------------------------------------------
 #####适用于FLY Mini12864
 #[neopixel fly_mini12864]
@@ -415,28 +431,6 @@ gcode:
     G90                               # 设置绝对坐标体系
     G0 X{max_x / 2} Y{max_y} F3600    # 将喷嘴停在后部
     BED_MESH_CLEAR                    # 卸载网床
-
-
-#####################################################################
-#                     以下为脚本配置保存参数（勿动）
-#####################################################################
-
-#*# <---------------------- SAVE_CONFIG ---------------------->
-#*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
-#*#
-#*# [heater_bed]
-#*# control = pid
-#*# pid_kp = 60.871
-#*# pid_ki = 1.960
-#*# pid_kd = 472.514
-#*#
-#*# [extruder]
-#*# control = pid
-#*# pid_kp = 6.371
-#*# pid_ki = 0.244
-#*# pid_kd = 29.568
-#*#
-
 
 
 ```

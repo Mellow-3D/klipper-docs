@@ -1,7 +1,7 @@
-* FLY-Super5
+* FLY-Super5-PRO
 
   * [1. 产品简介](/board/fly_super5/README.md)
-  * [2. FLY-Super5接线](/board/fly_super5/fly_super5line.md)
+  * [2. FLY-Super5-PRO接线](/board/fly_super5/fly_super5line.md)
   * [3. 非FLY上位机配置](/board/fly_super5/piconfig.md)
   * [4. 固件编译和烧录](/board/fly_super5/flash.md)
   * [5. uuid读取](/board/fly_super5/uuid.md "点击即可跳转")
