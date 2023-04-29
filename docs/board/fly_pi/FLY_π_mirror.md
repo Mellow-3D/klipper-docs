@@ -74,45 +74,7 @@
    首先请安装好M2WE模块及天线，准备烧录系统。烧录镜像系统有两种方法，一种是将现有的SD卡系统迁移至eMMC模块，下面将对着两种使用方法做介绍。
 
 
-   #### 1. 现有的SD卡系统迁移至eMMC模块
-
-
-   1. 给Gemini 或 π 安装好M2WE模块并上电启动
-   2. 连接到SSH
-   3. 执行下面的命令, 可能会提示输入密码，输入``mellow``回车
-
-   ```bash
-   sudo nand-sata-install
-   ```
-
-![emmc-install](../../images/boards/fly_pi/emmc_install_1.png ":size=50%")
-
-   4. 选择``Boot from eMMC - system on eMMC``选项后按回车键（一般默认选项就是，直接按回车键）
-
-      ![emmc-install](../../images/boards/fly_pi/emmc_install_2.png ":size=50%")
-
-   5. 出现``This script will erase your eMMC. Continue?``时选择``Yes``按回车键（一般默认选项就是，直接按回车键）
-
-      ![emmc-install](../../images/boards/fly_pi/emmc_install_3.png ":size=50%")
-
-   6. 选择文件系统类型为``ext4``按回车键（一般默认选项就是，直接按回车键）
-
-   7. 耐心等待直到出现进度条（如果等待超过2分钟仍未出现下图进度条请按``CTRL+C``来终止操作，然后重启设备后重试）
-
-      ![emmc-install](../../images/boards/fly_pi/emmc_install_4.png ":size=50%")
-
-   8. 系统迁移过程中请勿断电及进行其他操作，直到迁移完成
-
-      ![emmc-install](../../images/boards/fly_pi/emmc_install_5.png ":size=50%")
-
-   9. 迁移完成，直接按回车键，等待设备完全关机
-
-   10. 关机后取下SD卡，重新上电开机，此时已经可以通过eMMC中的系统来启动
-
-
-   #### 2. 通过USB为eMMC烧录系统镜像
-
-
+   #### 1. 通过USB为eMMC烧录系统镜像
 
 1. 先下载安装需要的软件
 
@@ -183,3 +145,38 @@
 14. 这样就可以直接用Win32diskimager或balenaEtcher来烧录系统镜像，盘符选择为这个14.5GU盘的盘符
 15. 系统镜像烧录可参考 [内存卡镜像烧录](#_221-内存卡镜像烧录 "点击即可跳转")
 16. 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_description2 "点击即可跳转")
+
+   #### 2. 现有的SD卡系统迁移至eMMC模块
+
+
+      1. 给Gemini 或 π 安装好M2WE模块并上电启动
+      2. 连接到SSH
+      3. 执行下面的命令, 可能会提示输入密码，输入``mellow``回车
+
+   ```bash
+sudo nand-sata-install
+   ```
+
+![emmc-install](../../images/boards/fly_pi/emmc_install_1.png ":size=50%")
+
+   4. 选择``Boot from eMMC - system on eMMC``选项后按回车键（一般默认选项就是，直接按回车键）
+
+      ![emmc-install](../../images/boards/fly_pi/emmc_install_2.png ":size=50%")
+
+   5. 出现``This script will erase your eMMC. Continue?``时选择``Yes``按回车键（一般默认选项就是，直接按回车键）
+
+      ![emmc-install](../../images/boards/fly_pi/emmc_install_3.png ":size=50%")
+
+   6. 选择文件系统类型为``ext4``按回车键（一般默认选项就是，直接按回车键）
+
+   7. 耐心等待直到出现进度条（如果等待超过2分钟仍未出现下图进度条请按``CTRL+C``来终止操作，然后重启设备后重试）
+
+      ![emmc-install](../../images/boards/fly_pi/emmc_install_4.png ":size=50%")
+
+   8. 系统迁移过程中请勿断电及进行其他操作，直到迁移完成
+
+      ![emmc-install](../../images/boards/fly_pi/emmc_install_5.png ":size=50%")
+
+   9. 迁移完成，直接按回车键，等待设备完全关机
+
+   10. 关机后取下SD卡，重新上电开机，此时已经可以通过eMMC中的系统来启动
