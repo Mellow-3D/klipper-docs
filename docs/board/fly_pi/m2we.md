@@ -18,4 +18,4 @@
 
 ## 11.3 eMMC使用
 
-eMMC的使用请查看[eMMC镜像烧录](/board/fly_pi/FLY_π_description1?id=_122-fly_m2weemmc镜像烧录 "点击即可跳转")
+eMMC的使用请查看[eMMC镜像烧录](/board/fly_pi/FLY_π_mirror?id=_222-fly_m2weemmc镜像烧录 "点击即可跳转")
