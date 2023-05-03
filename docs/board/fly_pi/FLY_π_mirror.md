@@ -95,6 +95,7 @@
 ----
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_2.png ":size=50%")
+
 ![usb-flash](../../images/boards/fly_pi/usb_flash_3.png ":size=42%")
 
 4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到Gemini或Pi的下图中的USB接口

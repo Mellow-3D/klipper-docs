@@ -133,6 +133,3 @@ Voron Tap的配置教程可以查看：[Voron Tap的配置](https://www.bilibili
 此时喷头会自动下降，直至probe被触发，然后再抬升。触发动作会连续执行十次。命令执行完成后，控制台会返回一个标准偏差值，标准偏差值应小于0.003mm。如果每次的探测值不稳定或者是呈趋势性的变化，需要检查Z 轴安装是否安装牢固，丝杆是否固定好。此外，劣质的传感器也会影响重复探测的精度。
 
 ![probeaccuracy](../../images/boards/fly_super8/probeaccuracy.jpg)
-
-
-
