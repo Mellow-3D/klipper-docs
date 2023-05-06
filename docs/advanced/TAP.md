@@ -59,7 +59,7 @@ print_start
 M109 S[first_layer_temperature]
 ```
 
-![](..\images\adv\TAP\PrusaSlicer.png)
+![](../images/adv/TAP/PrusaSlicer.png)
 
 
 
@@ -71,10 +71,10 @@ print_start
 M109 S{material_print_temperature_layer_0} ;Start heating extruder
 ```
 
-![](..\images\adv\TAP\CURA.png)
+![](../images/adv/TAP/CURA.png)
 
 
 
 * 效果展示：
 
-![](..\images\adv\TAP\klipper.png)
+![](../images/adv/TAP/klipper.png)

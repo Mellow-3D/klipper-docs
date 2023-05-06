@@ -18,7 +18,7 @@
   * [FLY-Super8](/board/fly_super8/)
   * [FLY-CDY v2/v3](/board/fly_cdy_v3/)
   * [FLY-CDY v1](/board/fly_cdy_v1/)
-  * [FLY-E3 Pro](/board/fly_e3_pro/)
+  * [FLY-E3 pro](/board/fly_e3_pro/)
   * [FLY-9轴](/board/fly_9/)
   
 * 入门
