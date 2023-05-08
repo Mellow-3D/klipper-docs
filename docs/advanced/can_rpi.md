@@ -36,7 +36,6 @@ EOF
 1. 开机自动启用CAN
 ```bash
 sudo wget https://cdn.mellow.klipper.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
-
 ```
 
 ```
@@ -46,6 +45,8 @@ sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /e
 ```
 sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 1024' /etc/rc.local
 ```
+
+
 
 4. 重启设备
 

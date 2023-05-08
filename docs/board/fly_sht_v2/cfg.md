@@ -48,7 +48,7 @@ max_temp: 490                     # 最大温度（注意：测量温度超过�
 #注：接完线需测试运行方向
 [extruder]                          # 挤出机
 step_pin: sht36v2:PB4               # 挤出电机方脉冲引脚
-step_pin: sht36v2:PB3               # 挤出电机方向引脚设置
+dir_pin: sht36v2:PB3               # 挤出电机方向引脚设置
 enable_pin: !sht36v2:PA15           # 挤出电机方使能引脚设置
 ## 执行挤出机校准时，更新以下值
 ## 比如你要求100毫米的进料，但实际上是98毫米：
@@ -62,7 +62,7 @@ nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
 heater_pin: sht36v2:PA8             # 加热棒引脚,接到HETA0
 #--------------------------------------------------------------------
-sensor_type: ATC Semitec 104GT-2    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: sht36v2:PA3             # 传感器引脚  
 
 #sensor_type: MAX31865              # 传感器型号，PT100版本需要时候请删除前面#并且把上面的配置屏蔽或者删除

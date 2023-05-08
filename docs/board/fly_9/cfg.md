@@ -281,7 +281,7 @@ full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 �
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
 heater_pin: PF7                     # 加热棒引脚
-sensor_type: ATC Semitec 104GT-2    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PA0                     # 传感器引脚,连接到 ADC_0   
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
@@ -832,7 +832,7 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 ##	Z3 步进电机 - 右前方E2接口  
 [stepper_z3]
 step_pin: PD15                # z2轴电机脉冲引脚设置
-dir_pin: PG7                 # z2轴电机方向引脚设置,方向引脚需要按实际判断，加感叹号会让运行方向反转
+dir_pin: PG7                  # z2轴电机方向引脚设置,方向引脚需要按实际判断，加感叹号会让运行方向反转
 enable_pin: !PG8              # z2轴电机使能引脚设置,使能引脚需要加感叹号，否者电机不工作
 rotation_distance: 40         # 主动轮周长mm （2GT-20T为 40mm  16T为 32mm）
 gear_ratio: 80:16             # 减速比
@@ -859,7 +859,7 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #####################################################################
 #E5电机口
 [extruder]                          # 挤出机
-step_pin: PD12                       # 挤出电机方脉冲引脚
+step_pin: PD12                      # 挤出电机方脉冲引脚
 dir_pin: !PD8                       # 挤出电机方向引脚设置
 enable_pin: !PD9                    # 挤出电机方使能引脚设置
 ## 执行挤出机校准时，更新以下值
@@ -873,7 +873,7 @@ full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 �
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
 heater_pin: PF7                     # 加热棒引脚
-sensor_type: ATC Semitec 104GT-2    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PA0                     # 传感器引脚,连接到 ADC_0   
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）

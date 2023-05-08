@@ -223,7 +223,7 @@ full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 �
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
 heater_pin: PD12                    # 加热棒引脚,接到HETA0
-sensor_type: ATC Semitec 104GT-2    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PC4                     # 传感器引脚,接到ADC-1
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
@@ -259,7 +259,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #####################################################################
 [heater_bed]
 heater_pin: PD13             # 热床接口,接到HETA1
-sensor_type: Generic 3950    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: Generic 3950    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PC5              # 热床传感器接口,接到ADC-2
 max_power: 1.0               # 热床功率
 min_temp: 0                  # 最小温度（注意：测量温度超过设定值会触发紧急停止）
