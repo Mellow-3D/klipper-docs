@@ -278,7 +278,7 @@ full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 �
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
 heater_pin: PB0                     # 加热棒引脚
-sensor_type: ATC Semitec 104GT-2    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PF4                     # 传感器引脚,连接到 ADC_0   
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
@@ -860,7 +860,7 @@ full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 �
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
 heater_pin: PB0                     # 加热棒引脚
-sensor_type: ATC Semitec 104GT-2    # 传感器型号  (generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PF4                     # 传感器引脚,连接到 ADC_0   
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）

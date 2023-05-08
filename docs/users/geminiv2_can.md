@@ -36,22 +36,14 @@
 > 按照官网的说明FLY-SHT36与SHT42除了外形不同外，接口配置完全一致
 * ### 硬件
   
-  **<center><font size=4>Gemini_v2</font></center>**
-  <div align=center>
-  <img src="https://cdn.jsdelivr.net/gh/wintimes/PicGo_Repo_Mellow@main//Gemini_v2.png"/>
-  </div>
-
-  **<center><font size=4>UTOC-1</font></center>**
-
-  <div align=center>
-  <img src="./images/adv/can/can1.png" />
-  </div>
-
+  ![geminiv2_can](../images/users/geminiv2_can/Gemini_v2.png)
+  
+  ​          **<center><font size=4>UTOC-1</font></center>**![can](../images//adv/can/can1.png)
+  
   **<center><font size=4>SHT42</font></center>**
-  <div align=center>
-  <img src="./images/boards/fly_sht36_42/sht42.png" />
-  </div>
-
+  
+  ![sht42](../images/boards/fly_sht36_42/sht42.png)
+  
 * ### 线材
 
   * 18awg x 5m 黑色
@@ -60,15 +52,13 @@
   
   （长度可按需求，一般这些就够了）
 
-  * 叉型冷压端子若干(如图)
-  <div align=center>
-  <img src="https://img-blog.csdnimg.cn/ebb9ffc8ecf444f6ad7d30e54cd685c2.png"/>
-  </div>
+  * 叉型冷压端子若干(如图线材主要用于：
+  
+    ![sht42](../images/users/geminiv2_can/duanzi.png)
 
 
-   > 线材主要用于：
-    <div>
-     a.**UTOC**的供电<font color=red>2根线</font>(<font color=red>24V</font>/<font color=black>GND</font>)</br>
+   > <div>
+    a.**UTOC**的供电<font color=red>2根线</font>(<font color=red>24V</font>/<font color=black>GND</font>)</br>
      b.**SHT42**与 **UTOC**进行CAN通讯的<font color=red>4根线</font>(CAN L / <font color=red>CAN H</font> / <font color=red>24V</font>/ GND)
      </div>
 
