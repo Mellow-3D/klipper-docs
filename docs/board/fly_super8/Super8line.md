@@ -4,7 +4,7 @@
 
 ## 2.1 Super8接口图
 
-![super8](../../images/boards/fly_super8/super8.png)
+![interface](../../images/boards/fly_super8/interface.png)
 
 ## 2.1 电源接线
 
