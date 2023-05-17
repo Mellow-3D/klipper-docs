@@ -13,13 +13,13 @@
 
    eMMc进入BOOT盘方法，请参考：[通过usb为emmc烧录系统镜像](/board/fly_pi/FLY_π_description1?id=_2-通过usb为emmc烧录系统镜像)
 
-   ![打开boot](../../images/boards/fly_pi/打开boot.png)
+   ![open_boot](../images/boards/fly_pi/open_boot.png)
 
    
 
 2. 打开BOOT盘下的FLY-Config.conf
 
-   ![打开flyconfig](../../images/boards/fly_pi/打开flyconfig.png)
+   ![open_flyconfig](../images/boards/fly_pi/open_flyconfig.png)
 
 ## 1.2 可用配置
 
@@ -31,7 +31,7 @@
 ## 1.3 连接WiFi
 
    找到WIFI配置，将WIFI处的flase改成true，并将WiFi名称和密码填写上，保存，插回上位机。等待几分钟后，进入路由器后台管理界面查看IP地址。
-   ![连接wifi](../../images/boards/fly_pi/连接wifi.png)
+![connect_wifi](../images/boards/fly_pi/connect_wifi.png)
 
 ## 1.4 其他可用配置
 
@@ -39,15 +39,15 @@
 
 找到下图所示选项，将``UI=fluidd``修改为``UI=mainsail``，则可将控制网页由``fluidd``切换为``mainsail``。
 
-![可用配置2](../../images/boards/fly_pi/可用配置2.png)
+![config1](../images/boards/fly_pi/config1.png)
 
 ### 1.4.2 Klipperscreen的配置
 
 找到下图所示选项，将``klipperscreen=flase``修改为``klipperscreen=true``，则可启用klipperscreen屏幕。
 
-![可用配置2](../../images/boards/fly_pi/可用配置2.png)
+![config1](../images/boards/fly_pi/config1.png)
 
 另外还需要指定使用的屏幕类型才能够正常使用！！！按下图中的提示修改为对应的配置即可。
 
-![可用配置4](../../images/boards/fly_pi/可用配置4.png)
+![hdmi](../images/boards/fly_pi/hdmi.png)
 

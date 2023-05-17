@@ -1,4 +1,4 @@
-# CAN HAT使用
+# 15. CAN HAT使用
 
 CAN总线是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。CAN协议用于汽车中各种不同元件之间的通信，以此取代昂贵而笨重的配电线束。该协议的健壮性使其用途延伸到其他自动化和工业应用。CAN协议的特性包括完整性的串行数据通讯、提供实时支持、传输速率高达1Mb/s、同时具有11位的寻址以及检错能力。
 
@@ -8,7 +8,7 @@ Gemini-V2需要搭配CAN Hat才能使用桥接CAN。
 
 本章只简要概述桥接CAN的使用，具体使用教程请查看本网站上：ST36/42使用教程、SHT36 V2使用教程、SB2040使用教程。
 
-## 1.1  CANHAT安装
+## 15.1  CANHAT安装
 
 1. CANHat的红色排针对应FLY-Gemini的红色排母，黑色对应黑色（插反会烧毁设备）
 
@@ -20,19 +20,19 @@ Gemini-V2需要搭配CAN Hat才能使用桥接CAN。
     
     ![dip3](../../images/boards/fly_gemini_v2/dip3.png)
 
-## 1.2 CAN接线
+## 15.2 CAN接线
 
 以SHT36V2为例，接线如下图所示
 
 ![canbridge](../../images/boards/fly_gemini_v2/canbridge.png)
 
-## 1.3 主板固件参数配置
+## 15.3 主板固件参数配置
 
 Klipper固件配置界面如下图。编译固件后，按照 [固件编译和烧录](/board/fly_super8/firmware "点击即可跳转") 给出的方法，将固件刷入主板中。
 
-![usb2can](../../images/boards/fly_gemini_v3/usb2can.png)
+![can](../../images/boards/fly_gemini_v2/config-can.png)
 
-## 1.4 查看CAN uuid
+## 15.4 查看CAN uuid
 
 固件刷好后，先不连接SHT36V2工具板，使用下面的命令读取Gemini-V2主板的CAN ID。
 
@@ -52,7 +52,7 @@ canbus_uuid: 3251a329e6e3                                # 在此处填写主板
 
 在读到主板CAN ID之后，将uuid填写到配置文件保存后，断开主板电源，接好SHT36V2。
 
-## 1.5 SHT36 V2固件刷写
+## 15.5 SHT36 V2固件刷写
 
 主板桥接CAN固件刷好后，还需要刷写SHT36 V2工具板的固件才能正常使用。
 

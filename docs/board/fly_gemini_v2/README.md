@@ -1,4 +1,4 @@
-# 产品简介
+# 1. 产品简介
 
 我们很高兴地发布全新的FLY-Gemini主板。此板可替代树莓派作为上位机运行，它拥有有1GB的板载DDR3内存，允许运行完整的LINUX桌面（基于 Armbian定制优化）。该板可与Klipper和RRF固件一起使用，甚至可以在使用SHT工具板时运行Klipper屏幕。
 
@@ -23,6 +23,10 @@
 * 驱动: 高压驱动位*4
 * MCU: STM32F405
 
+<img src="../../images/boards/fly_gemini_v2/Geminiv2.jpg" alt="Geminiv2" style="zoom:90%;" />
+
+![size](../../images/boards/fly_gemini_v2/size.png)
+
 ----
 
 ?> 重要
@@ -30,11 +34,11 @@
 * 非FLY上位机请按 [上位机配置]( "点击即可跳转") 文档配置好CAN
 * 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md "点击即可跳转")
 
-## Gemini系列升级说明
+## 1.1 Gemini系列升级说明
 
 * Gemini V1.1：修复can芯片供电，以及打印偏移问题
 * Gemini V2.0：RAM升级至1G，可同时使用CAN和Klipperscreen
 
-## FLY-Gemini V2
+## 1.2 FLY-Gemini V2
 
 ![geminiv2](../../images/boards/fly_gemini_v2/geminiv2.png)

@@ -1,4 +1,4 @@
-# 产品简介
+# 1. 产品简介
 
 FLY SB2040是广州镁伦电子科技有限公司针对VORON Stealthburber打印头推出的一款喷头工具板，使用该工具板，可以用四根线来替代原来主板与打印头之间繁杂的接线，优化布局。SB2040适用于36步进电机，其集成了CAN收发器、USB口、TMC2209驱动、ADXL345加速度传感器，两个可控风扇等其他功能的工具板。此工具板适用于Klipper固件。
 
@@ -24,7 +24,7 @@ FLY SB2040是广州镁伦电子科技有限公司针对VORON Stealthburber打印
 2. 增加风扇小板5V防倒灌
 3. 修改部分布局，减少短路风险
 
-## 产品详情
+## 1.1 产品详情
 
 淘宝：[FLY3D打印机 Voron 2.4 R2 Trident Stealthburner Can工具头主板-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.36.68de3903lHTcFZ&id=681269728598 "点击即可跳转")
 
@@ -37,12 +37,12 @@ FLY SB2040是广州镁伦电子科技有限公司针对VORON Stealthburber打印
 
 ----
 
-## SB2040-V2
+## 1.2 SB2040-V2
 
 ![SB2040-V2](../../images/boards/fly_sb2040/sb2040v2.jpg ":no-zooom")
 
 
-## SB2040-V1
+## 1.3 SB2040-V1
 
 ![SB2040-V1](../../images/boards/fly_sb2040/sb2040.png ":no-zooom")
 

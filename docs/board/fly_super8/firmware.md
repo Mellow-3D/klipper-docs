@@ -1,8 +1,16 @@
-# 固件烧录
+# 5. 固件烧录
 
 > 烧录固件之前确保已完成[FLY π系统镜像](/board/fly_pi/FLY_π_description1 "点击即可跳转")文档
 
-## 1. 编译Klipper固件
+## 5.1 固件参数配置
+
+Super8配置如下图所示。
+
+<img src="../../images/boards/fly_super8/e3v2config.png" alt="e3v2config" style="zoom:150%;" />
+
+下面介绍如何编译和烧录固件。
+
+## 5.2 编译Klipper固件
 
 1. 请先阅读[连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")文档
 2. 连接到SSH后输入```cd ~/klipper/```回车
@@ -57,7 +65,7 @@
 
 ![putty](../../images/firmware/down4.png ":no-zooom")
 
-## 2. 烧录固件到主板
+## 5.3  烧录固件到主板
 
 1. 准备一张SD卡(<32GB)，并且格式化成 **FAT32** 格式
 2. 将klipper.bin复制到SD卡，并且重命名为```firmware.bin```
