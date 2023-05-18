@@ -2,7 +2,7 @@
 
 ## 6.1 SB2040 v2引脚
 
-![SB2040 v2 Pinout](../../images/boards/fly_sb2040/pinoutV2.jpg ":no-zooom")
+![SB2040 v2 Pinout](../../images/boards/fly_sb2040/pinoutv2.jpg ":no-zooom")
 
 ----
 

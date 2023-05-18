@@ -1,4 +1,4 @@
-* FLY-halo
+* FLY-Halo
 
   * [1. 产品简介](/board/fly_halo/README)
   * [2. 开始使用](/board/fly_halo/fly_halo)

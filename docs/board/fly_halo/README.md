@@ -29,7 +29,7 @@ FLY_halo 1.28寸Wifi圆屏
 
 [FLY-halo 1.28寸Wifi圆屏 ips智能3D打印机电容触摸屏幕-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-23066022670.10.32b94dc3ClDcas&id=718424224059 "点击即可跳转")
 
-## 1.2 FLY_halo
+## 1.2 FLY_Halo
 
 ![pi_interface](../../images/boards/fly_halo/halo.png)
 

@@ -56,9 +56,11 @@ SB2040工具板不支持PT100。下图为普通热敏和**PT1000**的接线方�
 
 SB2040支持最多两个可控风扇，风扇电压可选24V、5V，支持2、3、4线风扇，接线方法如下。
 
-![两线风扇](../../images/boards/fly_sb2040/两线风扇.png)
+?> 三线风扇第三根线一般为测速线，可不接，直接两根电源线，接线方法和两线风扇是一样的。
 
-![三四线风扇](../../images/boards/fly_sb2040/三四线风扇.png)
+<img src="../../images/boards/fly_sb2040/两线风扇.png" alt="两线风扇" style="zoom:80%;" />
+
+<img src="../../images/boards/fly_sb2040/三四线风扇.png" alt="三四线风扇" style="zoom:80%;" />
 
 ## 2.7 RGB接线
 
