@@ -1,6 +1,6 @@
 * 产品
   * [FLY-Halo](/board/fly_halo/)
-  * [FLY-Super5-PRO](/board/fly_super5/)
+  * [FLY-Super5-Pro](/board/fly_super5/)
   * [FLY-π-Lite](/board/fly_pi_lite/)
   * [FLY-ERCF](/board/fly_ercf/)
   * [FLY-E3 v2](/board/fly_e3_v2/)
