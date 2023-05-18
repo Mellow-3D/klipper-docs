@@ -37,11 +37,7 @@ sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 ~/klippy-env/bin/pip install -v numpy
 ```
 
-请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。在某些情况下，如果主板的 RAM 太少 安装可能会失败，您需要启用交换。
-
-然后，检查并按照 [RPi微控制器文档中](http://www.klipper3d.org/RPi_microcontroller.html "点击即可跳转") 的说明设置。 Raspberry Pi上的`Linux mcu`。
-
-也可自行上bilibili查找教程。
+请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。
 
 ## 9.2 测试
 

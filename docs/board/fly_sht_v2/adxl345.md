@@ -5,20 +5,18 @@
 配置如下：
 
 ```
-#####################################################################
-#                       adxl345加速度计配置（需要时启用即可）
-#####################################################################
-## ADXL345加速度计
+##ADXL345加速度计
 [adxl345]
-cs_pin: sht36v2:PA9
-spi_bus = spi2
-# spi_software_sclk_pin: sht36v2:PB13
-# spi_software_mosi_pin: sht36v2:PB15
-# spi_software_miso_pin: sht36v2:PB14
-#--------------------------------------------------------------------
+cs_pin: sb2040:gpio1
+spi_software_sclk_pin: sb2040:gpio0
+spi_software_mosi_pin: sb2040:gpio3
+spi_software_miso_pin: sb2040:gpio2
+
+
 [resonance_tester]
-accel_chip: adxl345         # 加速度芯片型号
-probe_points: 150,150,10    # 坐标配置为热床的中间
+accel_chip: adxl345
+probe_points:
+    100, 100, 20  # 此坐标为你需要测量的位置，一般为热床中间
 ```
 
 ?> 装加速度计依赖包安装方法如下
@@ -39,11 +37,7 @@ sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 ~/klippy-env/bin/pip install -v numpy
 ```
 
-请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。在某些情况下，如果主板的 RAM 太少 安装可能会失败，您需要启用交换。
-
-然后，检查并按照 [RPi微控制器文档中](http://www.klipper3d.org/RPi_microcontroller.html "点击即可跳转") 的说明设置。 Raspberry Pi上的`Linux mcu`。
-
-也可自行上bilibili查找教程。
+请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。
 
 ## 9.2 测试
 
