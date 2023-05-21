@@ -98,7 +98,7 @@ lsusb
 5. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
 
 ```bash
-dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
+dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.bin
 ```
 
 6. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
@@ -195,58 +195,26 @@ make
 
 * 像上图一样出现``Creating hex file out/klipper.bin``即为编译成功
 
-3. 接好线后，建议整机断电重新上电开机一次。接着便可以使用CanBoot烧写固件。首先输入以下命令
-
-```
-python3 ~/klipper/lib/canboot/flash_can.py -q
-```
-
-下图中高亮部分``365f54003b9d``就是这块SHT的uuid，这个uuid每块板子都不一样。同一块SHT板烧录固件后uuid是不会变的
-
-![uuid](../images/boards/fly_sht_v2/uuid.png)
-
-?>如果找不到CAN ID，请检查：
-
-* 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
-* SHT36/42板上的120Ω跳线帽是否插上
-* 您的镜像内核是否支持CAN
-* 检查CanBoot编译是否正确，如果没有错误，可以尝试再次刷写CanBoot，刷写步骤请参考：[SHT36固件刷写](/advanced/canboot?id=_2-烧录canboot引导固件 "点击即可跳转")
-* 如果还是不能找到ID，可以使用上位机再次烧写固件
-
-4.通过CANBUS烧录Klipper固件
-
-* 下面命令中的``fea6a45462e9``需要替换为你上一步中得到的UUID
-
-```bash
-python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
-```
-
-![10](../images/adv/canboot/10.png)
-
-* 像上图中出现``CAN Flash Success``则表示烧录成功
-
-?> 如果烧录了多次的CanBoot还是找不到CanBoot的ID，可以使用如下方法烧写固件：
-
-1. 连接SHT板的boot跳线帽，并使用USB线连接到klipper上位机
+3. 接下来连接SHT36的boot跳线帽，并使用USB线连接到klipper上位机
 
 ```bash
 lsusb | grep 0483:df11
 ```
 
-2. 出现``Bus 007 Device 002: ID 0483:df11 STMicroelectronics STM Device in DFU Mode``内容则表示SHT已进入DFU模式
+4. 出现``Bus 007 Device 002: ID 0483:df11 STMicroelectronics STM Device in DFU Mode``内容则表示SHT已进入DFU模式
 
-3. USB烧录Klipper固件
+5. USB烧录Klipper固件
 
 ```bash
 cd ~/klipper/
 sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08002000 -D out/klipper.bin
 ```
 
-4. 出现下图中``File downloaded successfully``则表示烧录成功
+6. 出现下图中``File downloaded successfully``则表示烧录成功
 
 ![8](../images/adv/canboot/8.png)
 
-5. 取下SHT36/42的boot跳线帽，并断开USB连接
+7. 取下SHT36/42的boot跳线帽，并断开USB连接
 
 ---
 
@@ -363,7 +331,7 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 
 1. 首先编译Klipper固件
 
-?> 注意，在2022-10-18 **前** 购买的主控芯片为GD32F103；在2022-10-18 **后** 购买的主控芯片为APM32F07。
+?> 注意，在2022-10-18 **前** 购买的主控芯片为GD32F103；在2022-10-18 **后** 购买的主控芯片为APM32F072；
 
 * GD32F103版本配置如下图
 
@@ -438,5 +406,9 @@ make
 
 ```bash
 python3 ~/klipper/lib/canboot/flash_can.py -i can0 -q
+```
+
+```
 python3  ~/klipper/lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 ```
+
