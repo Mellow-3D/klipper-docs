@@ -113,9 +113,9 @@ run_current: 0.8                    # 电机运行电流值（单位：mA）
 sense_resistor: 0.110               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 #--------------------------------------------------------------------
-#[tmc5160 stepper_X]                 # 挤出机驱动配置- TMC5160
+#[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PB10                        # SPI 片选Pin脚定义
-#spi_bus: spi1                       # SPI 通讯总线定义
+#spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -150,7 +150,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PE10                        # SPI 片选Pin脚定义
-#spi_bus: spi1                       # SPI 通讯总线定义
+#spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -199,7 +199,7 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z]            # 挤出机驱动配置- TMC5160
 #cs_pin: PA4                    # SPI 片选Pin脚定义
-#spi_bus: spi1                  # SPI 通讯总线定义
+#spi_bus: spi3                  # SPI 通讯总线定义
 #run_current: 1.0               # 电机运行电流值
 #interpolate: False             # 是否开启256微步插值（不建议开启）
 #sense_resistor: 0.075          # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -249,7 +249,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 extruder]                  # 挤出机驱动配置- TMC5160
 #cs_pin: PC0                         # SPI 片选Pin脚定义
-#spi_bus: spi1                       # SPI 通讯总线定义
+#spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -352,7 +352,7 @@ aliases:
 #contrast: 63                    # 对比度
 #encoder_pins: ^EXP2_5, ^!EXP2_3 # 旋转编码器（旋钮开关）引脚设置
 #click_pin: ^!EXP1_2             # 旋转编码器（旋钮开关）确认按键的引脚设置
-#spi_bus: spi1                   # 必须指定SPI通道
+#spi_bus: spi3                   # 必须指定SPI通道
 #--------------------------------------------------------------------
 #####适用于FLY Mini12864
 #[neopixel fly_mini12864]
