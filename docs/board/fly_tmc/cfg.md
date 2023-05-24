@@ -39,14 +39,14 @@ gcode:
 
 ## 2.添加无限位回退与电流配置
 
-> 需要自行创建并且添加此文件
+> 需要自行创建并且在printer.cfg中引用此文件
 
 ```
 [include sensorless.cfg]
 # 无限位
 ```
 
-> sensorless.cfg的内容如下
+> sensorless.cfg的内容如下，驱动需要按自己的修改
 
 ```
 [gcode_macro _HOME_X]

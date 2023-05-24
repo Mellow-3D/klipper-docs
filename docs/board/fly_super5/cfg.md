@@ -65,7 +65,7 @@ sensor_type: temperature_mcu      # 关联mcu（默认）
 min_temp: 0                       # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 200                     # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 #--------------------------------------------------------------------
-[temperature_sensor raspberry_pi] # 上位机度
+[temperature_sensor FLY-π]        # 上位机温度
 sensor_type: temperature_host     # 关联上位机
 min_temp: 0                       # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 200                     # 最大温度（注意：测量温度超过设定值会触发紧急停止）
@@ -86,12 +86,12 @@ max_temp: 200                     # 最大温度（注意：测量温度超过�
 #   |                  |
 #          正前方   
 #####################################################################
-#                  X 轴步进电机     X电机位 (B Motor)                 #
+#                  X 轴步进电机   DRIVER0  (B Motor)                 #
 #####################################################################
 #注：接完线需测试运行方向
 [stepper_x]
 step_pin: PE14                      # X轴电机脉冲引脚设置
-dir_pin: !PE15                      # X轴电机运行引脚设置,方向按实际判断，加感叹号会让运行方向反转
+dir_pin: PE15                       # X轴电机运行引脚设置,方向按实际判断，加感叹号会让运行方向反转
 enable_pin: !PB11                   # X轴电机使能引脚设置,使能引脚需要加感叹号，否者电机不工作
 rotation_distance: 40               # 主动带轮周长mm（2GT-20T带轮40，2GT-16T带轮32）
 microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
@@ -108,7 +108,7 @@ homing_positive_dir: true           # 复位方向（一般不需要改动）
 ##  请确保驱动型号配置正确 (2208 or 2209)
 [tmc2209 stepper_x]                # X 驱动配置 -TMC2209
 uart_pin: PB10                      # 通讯端口Pin脚定义
-interpolate: False                  # 是否开启256微步插值（不建议开启）
+#interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 run_current: 0.8                    # 电机运行电流值（单位：mA）
 sense_resistor: 0.110               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
@@ -117,16 +117,16 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #cs_pin: PB10                        # SPI 片选Pin脚定义
 #spi_bus: spi1                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
-#interpolate: False                  # 是否开启256微步插值（不建议开启）
-#sense_resistor: 0.110               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
+#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 #####################################################################
-#                  Y 轴步进电机     Y电机位 (B Motor)                 #
+#                 Y 轴步进电机     DRIVER01   (B Motor)              #
 #####################################################################
 #注：接完线需测试运行方向
 [stepper_y]
 step_pin: PE11                      # Y轴电机脉冲引脚设置
-dir_pin: !PE12                      # Y轴电机运行引脚设置,方向按实际判断，加感叹号会让运行方向反转
+dir_pin: PE12                       # Y轴电机运行引脚设置,方向按实际判断，加感叹号会让运行方向反转
 enable_pin: !PE13                   # Y轴电机使能引脚设置,使能引脚需要加感叹号，否者电机不工作
 rotation_distance: 40               # 主动带轮周长mm（2GT-20T带轮40，2GT-16T带轮32）
 microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
@@ -142,8 +142,8 @@ homing_positive_dir: true           # 复位方向（一般不需要改动）
 #--------------------------------------------------------------------
 ##  请确保驱动型号配置正确 (2208 or 2209)
 [tmc2209 stepper_y]                 # Y驱动配置 -TMC2209
-uart_pin: PE10                       # 通讯端口Pin脚定义
-interpolate: False                  # 是否开启256微步插值（不建议开启）
+uart_pin: PE10                      # 通讯端口Pin脚定义
+#interpolate: False                 # 是否开启256微步插值（开启是True，关闭是False)
 run_current: 0.8                    # 电机运行电流值（单位：mA）
 sense_resistor: 0.110               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
@@ -152,8 +152,8 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #cs_pin: PE10                        # SPI 片选Pin脚定义
 #spi_bus: spi1                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
-#interpolate: False                  # 是否开启256微步插值（不建议开启）
-#sense_resistor: 0.110               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
+#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
@@ -166,7 +166,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #   |-----显示屏----|
 
 #####################################################################
-#                           Z轴步进电机                              #
+#                           Z轴步进电机  DRIVER02                    #
 #####################################################################
 #注：接完线需测试运行方向
 [stepper_z]
@@ -202,13 +202,14 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #spi_bus: spi1                  # SPI 通讯总线定义
 #run_current: 1.0               # 电机运行电流值
 #interpolate: False             # 是否开启256微步插值（不建议开启）
-#sense_resistor: 0.110          # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#sense_resistor: 0.075          # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500     # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
 #                     E0 挤出机设置 （E0 Settings）                   # 
 #####################################################################
-[extruder]                         # 挤出机
+#DRIVER03
+[extruder]                          # 挤出机
 step_pin: PE4                       # 挤出电机方脉冲引脚
 dir_pin: PE5                        # 挤出电机方向引脚设置
 enable_pin: !PC1                    # 挤出电机方使能引脚设置
@@ -239,9 +240,9 @@ pid_kp = 26.213              # PID喷嘴温度自动校准项（pid校准完成�
 pid_ki = 1.304               # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
 pid_kd = 131.721             # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
 #--------------------------------------------------------------------
-[tmc2209 extruder]                 # 挤出机驱动配置- TMC2209
+[tmc2209 extruder]                  # 挤出机驱动配置- TMC2209
 uart_pin: PC0                       # 通讯端口Pin脚定义
-interpolate: False                  # 是否开启256微步插值（不建议开启）
+#interpolate: False                 # 是否开启256微步插值（开启是True，关闭是False)
 run_current: 0.8                    # 电机运行电流值
 sense_resistor: 0.110               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
@@ -250,8 +251,8 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #cs_pin: PC0                         # SPI 片选Pin脚定义
 #spi_bus: spi1                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
-#interpolate: False                  # 是否开启256微步插值（不建议开启）
-#sense_resistor: 0.110               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
+#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
@@ -278,7 +279,7 @@ pin: PA0                     # 信号接口
 kick_start_time: 0.5         # 启动时间（勿动）
 off_below: 0.10              # 勿动
 #--------------------------------------------------------------------
-[heater_fan hotend_fan]     # 喉管冷却风扇
+[heater_fan hotend_fan]      # 喉管冷却风扇
 pin: PA1                     # 信号接口
 max_power: 1.0               # 最大转速
 kick_start_time: 0.5         # 启动时间（勿动）
@@ -286,14 +287,15 @@ heater: extruder             # 关联的设备：挤出机
 heater_temp: 50              # 挤出机达到多少度启动风扇
 fan_speed: 1.0               # 风扇转速
 #--------------------------------------------------------------------
-[controller_fan controller_fan] # 电器仓风扇
+[heater_fan controller_fan]  # 电器仓风扇
 pin: PA2                     # 信号接口
 max_power: 1.0               # 最大转速
 kick_start_time: 0.5         # 启动时间（勿动）
-stepper:stepper_x            # 关联驱动   
+heater: heater_bed           # 关联的设备：热床
+heater_temp: 50              # 热床达到多少度启动风扇
 fan_speed: 1.0               # 风扇转速
 #--------------------------------------------------------------------
-[heater_fan exhaust_fan]    # 排风扇风扇
+[heater_fan exhaust_fan]     # 排风扇风扇
 pin: PA3                     # 信号接口
 max_power: 1.0               # 最大转速
 kick_start_time: 0.5         # 启动时间（勿动）
@@ -337,7 +339,7 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 aliases:
     # EXP1 header
     EXP1_1=PA8, EXP1_3=PA15, EXP1_5=PD0, EXP1_7=PD4, EXP1_9=<GND>,
-    EXP1_2=PA13, EXP1_4=PA14,EXP1_6=PD1, EXP1_8=PD2, EXP1_10=<5V>,
+    EXP1_2=PA13, EXP1_4=PA14,EXP1_6=PD1, EXP1_8=PD3, EXP1_10=<5V>,
     # EXP2 header
     EXP2_1=PB4, EXP2_3=PD7, EXP2_5=PD6, EXP2_7=PD5,  EXP2_9=<GND>,
     EXP2_2=PB3, EXP2_4=PB6, EXP2_6=PB5, EXP2_8=<RST>, EXP2_10=<5V>
@@ -350,23 +352,27 @@ aliases:
 #contrast: 63                    # 对比度
 #encoder_pins: ^EXP2_5, ^!EXP2_3 # 旋转编码器（旋钮开关）引脚设置
 #click_pin: ^!EXP1_2             # 旋转编码器（旋钮开关）确认按键的引脚设置
-#spi_bus: spi1                   #必须指定SPI通道
+#spi_bus: spi1                   # 必须指定SPI通道
 #--------------------------------------------------------------------
 #####适用于FLY Mini12864
 #[neopixel fly_mini12864]
 #pin: EXP1_6                     # 显示屏背光灯控制引脚设置
 #chain_count: 3
-#initial_RED: 0.0                # 红色LED灯亮度控制（范围：0-1）
-#initial_GREEN: 1.0              # 绿色LED灯亮度控制（范围：0-1）
-#initial_BLUE: 1.0               # 蓝色LED灯亮度控制（范围：0-1）
-#color_order: RGB
-
+#initial_RED: 0.5                # 红色LED灯亮度控制（范围：0-1）
+#initial_GREEN: 0.5              # 绿色LED灯亮度控制（范围：0-1）
+#initial_BLUE: 0.5               # 蓝色LED灯亮度控制（范围：0-1）
+#color_order: RGB                # 颜色顺序
 
 #####################################################################
 #                           自定义gcode宏                            #
 #####################################################################
 [gcode_arcs]                       # 允许圆弧插补
 resolution: 1.0                    # 启用圆弧插补G2，G3
+#   一条弧线将被分割成若干段。每段的长度将
+#   等于上面设置的分辨率（mm）。更低的值会产生一个
+#   更细腻的弧线，但也会需要机器进行更多运算。小于
+#   配置值的曲线会被视为直线。
+#   默认为1毫米。
 
 #--------------------------------------------------------------------
 [gcode_macro PRINT_START]          # 将 PRINT_START 设置为开始打印时的宏，自定义打印前的动作

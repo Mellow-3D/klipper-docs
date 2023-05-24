@@ -74,7 +74,7 @@
 
 ```
 [bed_mesh]             # 网床补偿
-speed: 120			  # 探测速度
+speed: 120             # 探测速度
 horizontal_move_z: 5   # probe触发后，热床平台下降的距离
 mesh_min: 40, 40       # 网探测的起始位置（修改此处）
 mesh_max: 210,210      # 探测的结束位置（修改此处）
