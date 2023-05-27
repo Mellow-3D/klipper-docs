@@ -7,6 +7,7 @@
   * [5. 固件编译和烧录](/board/fly_super8/firmware.md)
   * [6. 读取主板ID](/board/fly_super8/Super8id.md)
   * [7. 示例配置](/board/fly_super8/cfg.md)
+  * [7. Example configuration](/board/fly_super8/Example_configuration.md)
   * [8. Klipper常见错误](/board/fly_super8/klippererro.md)
   * [9. Klipper配置检查](/board/fly_super8/klippercheck.md)
   * [10. 打印前的准备](/board/fly_super8/Super8prepare.md)

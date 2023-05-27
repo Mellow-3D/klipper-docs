@@ -113,7 +113,7 @@ run_current: 0.8                    # 电机运行电流值（单位：mA）
 sense_resistor: 0.110               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 #--------------------------------------------------------------------
-#[tmc5160 stepper_xx]                 # 挤出机驱动配置- TMC5160
+#[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PC4                         # SPI 片选Pin脚定义
 #spi_bus: spi1a                      # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
@@ -284,9 +284,9 @@ min_temp: 10                        # 最小温度（注意：测量温度超过
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 max_power: 1.0                      # 最大功率
 min_extrude_temp: 170               # 最小挤出温度（至少需要达到这个温度，挤出机才能挤出）
-pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0以下
 pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0以下(压力提前是调整这个)
 #压力提前调整方法:https://www.klipper3d.org/zh/Pressure_Advance.html
+pressure_advance_smooth_time: 0.040 # 平稳推进时间-默认值为0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
 #喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
 control = pid                # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
@@ -876,9 +876,9 @@ min_temp: 10                        # 最小温度（注意：测量温度超过
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 max_power: 1.0                      # 最大功率
 min_extrude_temp: 170               # 最小挤出温度（至少需要达到这个温度，挤出机才能挤出）
-pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0以下
 pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0以下(压力提前是调整这个)
 #压力提前调整方法:https://www.klipper3d.org/zh/Pressure_Advance.html
+pressure_advance_smooth_time: 0.040 # 平稳推进时间-默认值为0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
 #喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
 control = pid                # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
