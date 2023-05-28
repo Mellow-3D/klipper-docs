@@ -1,6 +1,6 @@
 
 
-# 9. FLY Gemini V3 CPU散热风扇的使用
+# 9. FLY Gemini V2 CPU散热风扇的使用
 
 * Gemini V3 板载了一个5V的可控风扇接口，用于CPU散热，接线方法如下图
 
@@ -9,6 +9,12 @@
 * 配置如下：
 
   ```
+  [mcu host]                     # FlyOS已默认为您生成linux MCU，定义即可使用           
+  serial: /tmp/klipper_host_mcu 
+  
+  [temperature_sensor Gemini-v2]     # 上位机温度
+  sensor_type: temperature_host
+  
   [temperature_fan core_fan]      # 上位机散热风扇
   pin: host:gpio3           	    # 上位机风扇pin脚
   max_power: 1.0
@@ -23,5 +29,5 @@
   min_speed: 0.3            	    # 最小转速，为满功率运转时的30%
   
   ```
-
+  
   
