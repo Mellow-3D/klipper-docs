@@ -68,7 +68,7 @@ sensor_pin: sb2040:gpio27            # 传感器引脚
 #--------------------------------------------------------------------
 ##pt1000配置
 #sensor_type: PT1000                 # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
-#pullup_resistor: 1100               # 热敏上拉电阻为1100，如果温度为负-180需要更换跳线
+#pullup_resistor: 1000               # 热敏上拉电阻为1000，如果温度为负-180需要更换跳线
 #sensor_pin: sb2040:gpio27           # 传感器引脚 
 #--------------------------------------------------------------------
 ## PT100设置 仅V2支持
@@ -88,7 +88,11 @@ pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0�
 pressure_advance_smooth_time: 0.040 # 平稳推进时间-默认值为0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
 #喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
-
+control = pid                # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+pid_kp = 26.213              # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+pid_ki = 1.304               # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+pid_kd = 131.721             # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
+step_pulse_duration=0.000004       
 #--------------------------------------------------------------------
 [tmc2209 extruder]                  # 挤出机驱动配置- TMC2209
 uart_pin: sb2040:gpio8              # 通讯端口Pin脚定义
