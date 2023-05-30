@@ -11,8 +11,15 @@
 * 配置如下：
 
   ```
+  [mcu host]                     # FlyOS已默认为您生成linux MCU，定义即可使用           
+  serial: /tmp/klipper_host_mcu 
+  
+  [temperature_sensor FLY-π]     # 上位机温度
+  sensor_type: temperature_host
+  
+  
   [temperature_fan core_fan]      # 上位机散热风扇
-  pin: host:gpio3           	    # 上位机风扇pin脚
+  pin: host:gpiochip1/gpio3           	    # 上位机风扇pin脚
   max_power: 1.0
   sensor_type: temperature_host   # 设置为上位机主控温度
   control:watermark          		# 控制方式
@@ -25,5 +32,5 @@
   min_speed: 0.3            	    # 最小转速，为满功率运转时的30%
   
   ```
-
+  
   
