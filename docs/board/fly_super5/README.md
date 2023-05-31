@@ -21,4 +21,4 @@
 
 # FLY-Super5-PRO
 
-![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_super5\fly_super5.JPG)
+![](../../images/boards/fly_super5/super5.png)

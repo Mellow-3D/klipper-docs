@@ -89,6 +89,7 @@ position_max: 300                     # The maximum travel (250mm-300mm-350mm) n
 homing_speed: 50
 homing_retract_dist: 5                # If using infinite positions, please change to 0
 homing_positive_dir: true
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 ## Please confirm the model of the driver you are using.
 [tmc2209 stepper_x]
@@ -122,6 +123,7 @@ position_max: 300
 homing_speed: 50
 homing_retract_dist: 5
 homing_positive_dir: true
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_y]
 uart_pin: PF12
@@ -163,6 +165,7 @@ position_max: 300
 homing_speed: 5
 second_homing_speed: 3
 homing_retract_dist: 0
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z]
 uart_pin: PE7
@@ -187,6 +190,7 @@ enable_pin: !PF2
 rotation_distance: 4
 full_steps_per_rotation: 200
 microsteps: 16
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z1]
 uart_pin: PE10
@@ -211,6 +215,7 @@ enable_pin: !PC15
 rotation_distance: 4
 full_steps_per_rotation: 200
 microsteps: 16
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z2]
 uart_pin: PF1
@@ -259,6 +264,7 @@ pid_kp: 26.213
 pid_ki: 1.304               
 pid_kd : 131.721            
 ##Calibration: https://www.klipper3d.org/G-Codes.html?h=calibrate#pid_calibrate_1
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 extruder]
 uart_pin: PF15
@@ -342,6 +348,7 @@ samples: 3
 samples_result: median
 sample_retract_dist: 4.0
 samples_tolerance: 0.006
+samples_tolerance_retries: 3 
 
 #####################################################################
 #                             Zeroing                               #
@@ -625,6 +632,7 @@ position_max: 300                     # The maximum travel (250mm-300mm-350mm) n
 homing_speed: 50
 homing_retract_dist: 5                # If using infinite positions, please change to 0
 homing_positive_dir: true
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 ## Please confirm the model of the driver you are using.
 [tmc2209 stepper_x]
@@ -658,6 +666,7 @@ position_max: 300
 homing_speed: 50
 homing_retract_dist: 5
 homing_positive_dir: true
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_y]
 uart_pin: PF12
@@ -700,6 +709,7 @@ position_max: 300
 homing_speed: 5
 second_homing_speed: 3
 homing_retract_dist: 0
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z]
 uart_pin: PE7
@@ -725,6 +735,7 @@ rotation_distance: 40
 gear_ratio: 80:16
 full_steps_per_rotation: 200
 microsteps: 16
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z1]
 uart_pin: PE10
@@ -750,6 +761,7 @@ rotation_distance: 40
 gear_ratio: 80:16
 full_steps_per_rotation: 200
 microsteps: 16
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z2]
 uart_pin: PF1
@@ -775,6 +787,7 @@ rotation_distance: 40
 gear_ratio: 80:16
 full_steps_per_rotation: 200
 microsteps: 16
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 stepper_z3]
 uart_pin: PG2
@@ -823,6 +836,7 @@ pid_kp: 26.213
 pid_ki: 1.304               
 pid_kd : 131.721            
 ##Calibration: https://www.klipper3d.org/G-Codes.html?h=calibrate#pid_calibrate_1
+step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 extruder]
 uart_pin: PF15
@@ -906,7 +920,7 @@ samples: 3
 samples_result: median
 sample_retract_dist: 4.0
 samples_tolerance: 0.006
-
+samples_tolerance_retries: 3 
 #####################################################################
 #                             Zeroing                               #
 #####################################################################
