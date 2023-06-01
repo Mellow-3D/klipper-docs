@@ -92,7 +92,7 @@ control = pid                # PID喷嘴温度自动校准项（pid校准完成�
 pid_kp = 26.213              # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
 pid_ki = 1.304               # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
 pid_kd = 131.721             # PID喷嘴温度自动校准项（pid校准完成后，会被注释）
-step_pulse_duration=0.000004       
+step_pulse_duration: 0.000004     
 #--------------------------------------------------------------------
 [tmc2209 extruder]                  # 挤出机驱动配置- TMC2209
 uart_pin: sb2040:gpio8              # 通讯端口Pin脚定义

@@ -6,6 +6,7 @@
 2. 先下载我们提供的两个STL并自行打印
 3. [Stealthburner_main_body(Adapt_to_Halo).stl(点击下载)](https://cdn.mellow.klipper.cn/Utils/Stealthburner_main_body(Adapt_to_Halo).stl)
 4. [Halo_mounting_bracket.stl(点击下载)](https://cdn.mellow.klipper.cn/Utils/Halo_mounting_bracket.stl)
+5. [Stealthburner_CW2_Assembly-2 v9.step(点击下载)](https://cdn.mellow.klipper.cn/STEP/Stealthburner_CW2_Assembly-2-v9.step)
 
 ### 安装步骤
 
