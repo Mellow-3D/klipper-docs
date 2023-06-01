@@ -64,6 +64,19 @@ max_temp: 200
 # max_temp: 200
 
 #####################################################################
+#                               Bed_mes                             # 
+#####################################################################
+[bed_mesh]
+speed: 50              # Calibration speed
+horizontal_move_z: 5   # The height of the raised Z.
+mesh_min: 30,30        # Minimum calibration point coordinates x, y
+mesh_max: 270, 270     # Maximum calibration point coordinates x, y
+probe_count: 4,4       # Number of sampling points (16 points for 4X4)
+mesh_pps: 2,2          # Additional sampling points
+algorithm: bicubic     # Algorithm model
+bicubic_tension: 0.2  
+
+#####################################################################
 #                        (X/Y Stepper Settings)                     # 
 #####################################################################
 #   B Motor ---- Motor A 
@@ -605,6 +618,19 @@ max_temp: 200
 ## Analog input pin connected to the thermistor. This parameter must
 # min_temp: 0 
 # max_temp: 200
+
+#####################################################################
+#                               Bed_mes                             # 
+#####################################################################
+[bed_mesh]
+speed: 50              # Calibration speed
+horizontal_move_z: 5   # The height of the raised Z.
+mesh_min: 30,30        # Minimum calibration point coordinates x, y
+mesh_max: 270, 270     # Maximum calibration point coordinates x, y
+probe_count: 4,4       # Number of sampling points (16 points for 4X4)
+mesh_pps: 2,2          # Additional sampling points
+algorithm: bicubic     # Algorithm model
+bicubic_tension: 0.2  
 
 #####################################################################
 #                        (X/Y Stepper Settings)                     # 
