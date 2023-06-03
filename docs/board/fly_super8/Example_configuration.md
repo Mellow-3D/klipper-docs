@@ -352,7 +352,7 @@ timeout: 1800                # Turn off the heated bed after 30 minutes of inact
 #                             PROBE                                 #
 #####################################################################
 [probe]
-pin: PG10
+pin: ^PG10
 x_offset: 0
 y_offset: 25.0
 z_offset: 0
@@ -937,7 +937,7 @@ timeout: 1800                # Turn off the heated bed after 30 minutes of inact
 #                             PROBE                                 #
 #####################################################################
 [probe]
-pin: PG10
+pin: ^PG10
 x_offset: 0
 y_offset: 25.0
 z_offset: 0
