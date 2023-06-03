@@ -4,7 +4,7 @@
 
 ## 2.1 接线图
 
-![4](../../images/boards/fly_sht_v2/jiexian.png ":no-zooom")
+![4](../../images/boards/fly_sht_v2/jiexian.jpg)
 
 ## 2.2 终端电阻配置
 

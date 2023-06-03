@@ -344,7 +344,7 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 #samples_tolerance_retries: 3 # 超公差重试次数
 #--------------------------------------------------------------------
 #[bltoch]
-#sensor_pin: PC2              # 信号接口
+#sensor_pin: ^PC2             # 信号接口
 #control_pin：PE6             # 舵机引脚
 #x_offset: 0                  # X轴-传感器相对喷嘴偏移量
 #y_offset: 25.0               # Y轴-传感器相对喷嘴偏移量
