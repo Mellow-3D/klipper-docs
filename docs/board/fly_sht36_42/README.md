@@ -41,7 +41,7 @@ FLY SHT36/42是广州镁伦电子科技有限公司针对3D打印机挤出头设
 
 ----
 
-![外观尺寸](../../images/boards/fly_sht36_42/外观尺寸.png)
+![size](../../images/boards/fly_sht36_42/size.png)
 
 ## 1.2 SHT-36
 

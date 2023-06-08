@@ -4,7 +4,7 @@
 
 ## 2.1 接线图
 
-![4](../../images/boards/fly_sht_v2/jiexian.jpg)
+![interface](../../images/boards/fly_sht_v2/interface.jpg)
 
 ## 2.2 终端电阻配置
 
@@ -14,7 +14,7 @@
 *  不管你连接几个USB设备，只要是在一条总线就只配置两个120欧姆电阻。不用为每个设备加一个电阻
 * 在接好CAN H和CAN L信号线之后，使用万用表测量CAN H与CAN L，两者之间的阻值应约为60欧姆
 
-<img src="../../images/boards/fly_sht_v2/120跳线.png" alt="120跳线" style="zoom:70%;" />
+<img src="../../images/boards/fly_sht_v2/120Ω.png" alt="120Ω" style="zoom:70%;" />
 
 ## 2.3 电源接线
 
@@ -27,7 +27,7 @@
 | 黄色 | ***CAN H***          |
 | 白色 | ***CAN L***          |
 
-<img src="../../images/boards/fly_sht_v2/电源.png" alt="电源" style="zoom:80%;" />
+<img src="../../images/boards/fly_sht_v2/power.png" alt="power" style="zoom:80%;" />
 
 ## 2.4 风扇MOS
 
@@ -39,17 +39,17 @@
 
 加热棒支持最大10A的电流，使用时请注意加热棒的功率！
 
-![加热棒](../../images/boards/fly_sht_v2/加热棒.png)
+![heater](../../images/boards/fly_sht_v2/heater.png)
 
 ## 2.6 热敏接线
 
 下图为普通热敏和**PT1000**的接线方法。
 
-<img src="../../images/boards/fly_sht_v2/热敏.png" alt="热敏" style="zoom:90%;" />
+<img src="../../images/boards/fly_sht_v2/thermistor.png" alt="thermistor" style="zoom:80%;" />
 
 下图为**PT100**的接线方法。默认两线PT100，只需连接到从左至右第2、3个引脚即可。
 
-![PT100](../../images/boards/fly_sht_v2/PT100.png)
+<img src="../../images/boards/fly_sht_v2/PT100.png" alt="PT100" style="zoom:80%;" />
 
 ## 2.7 风扇接线
 
@@ -57,21 +57,23 @@ SHT36 v2支持最多两个可控风扇，接线方法如下。
 
 ?>  通电前请选择风扇电压，否则风扇不能正常工作！！！
 
-<img src="../../images/boards/fly_sht_v2/fan_voltage.png" alt="fan_voltage" style="zoom:75%;" />
+?> VCC为电源电压，即你电源使用多少伏，风扇电压就是多少伏
 
-![风扇](../../images/boards/fly_sht_v2/风扇.png)
+<img src="../../images/boards/fly_sht_v2/fan_voltage.png" alt="fan_voltage" style="zoom:70%;" />
+
+<img src="../../images/boards/fly_sht_v2/fan.png" alt="fan" style="zoom:75%;" />
 
 ## 2.8 RGB接线
 
 RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
 
-![rgb](../../images/boards/fly_sht_v2/rgb.png)
+<img src="../../images/boards/fly_sht_v2/rgb.png" alt="rgb" style="zoom:80%;" />
 
 ## 2.9 挤出机接线
 
 挤出机接线完成后，请注意配置好驱动电流，校准好挤出机电机转向。
 
-![挤出机](../../images/boards/fly_sht_v2/挤出机.png)
+![extruder](../../images/boards/fly_sht_v2/extruder.png)
 
 ## 2.10 限位开关
 
@@ -84,7 +86,7 @@ RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
 endstop_pin: ^sht36v2:PA2  # 在前面加上^,将信号上拉，特别是在使用PA1时，请务必加上上拉 ^
 ```
 
-<img src="../../images/boards/fly_sht_v2/限位.png" alt="限位" style="zoom:80%;" />
+<img src="../../images/boards/fly_sht_v2/endstop.png" alt="endstop" style="zoom:75%;" />
 
 ##  2.11 调平传感器接线
 
@@ -92,13 +94,13 @@ endstop_pin: ^sht36v2:PA2  # 在前面加上^,将信号上拉，特别是在使�
 
 VORON 官方建议是使用欧姆龙 Omron TL-Q5MC（之前官方推荐的是 PL08N，两者原 理一样，只是探测距离不一样）传感器来进行热床调平。
 
-<img src="../../images/boards/fly_sht_v2/接近开关.png" alt="接近开关" style="zoom:80%;" />
+<img src="../../images/boards/fly_sht_v2/pl08.png" alt="pl08" style="zoom:90%;" />
 
 ### 2.11.2 Klicky
 
 Klicky 为第三方的调平传感器，能够用极低的成本自己在家制作，且性能稳定，性价比非常高，推荐使用。接线方法如下图所示。
 
-![klicky](../../images/boards/fly_sht_v2/klicky.png)
+<img src="../../images/boards/fly_sht_v2/klicky.png" alt="klicky" style="zoom:80%;" />
 
 ### 2.11.3 Voron Tap
 
@@ -106,7 +108,7 @@ Voron Tap为Voron团队最新发布的调平传感器方案，有着精度高，
 
 ?> Voron Tap不建议接 **24V** ，某些版本使用 **24V** 有一定概率会导致Tap传感器烧坏，这并非Fly产品的问题，是Voron Tap的设计缺陷，请悉知！！！
 
-![tap](../../images/boards/fly_sht_v2/tap.png)
+<img src="../../images/boards/fly_sht_v2/tap.png" alt="tap" style="zoom:80%;" />
 
 ### 2.11.4 Bltouch
 

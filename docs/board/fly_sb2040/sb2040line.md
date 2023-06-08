@@ -6,7 +6,7 @@
 
 ### 2.1.1 SB2040 V1
 
- ![jiexian](../../images/boards/fly_sb2040/jiexian.png)
+![pinout](../../images/boards/fly_sb2040/pinout.jpg)
 
 ### 2.1.2 SB2040 V2
 ![jiexian](../../images/boards/fly_sb2040/pinoutv2.jpg)
@@ -19,7 +19,7 @@
 *  不管你连接几个USB设备，只要是在一条总线就只配置两个120欧姆电阻。不用为每个设备加一个电阻
 * 在接好CAN H和CAN L信号线之后，使用万用表测量CAN H与CAN L，两者之间的阻值应约为60欧姆
 
-![跳线](../../images/boards/fly_sb2040/跳线.png)
+<img src="../../images/boards/fly_sb2040/120Ω.png" alt="120Ω" style="zoom:80%;" />
 
 ## 2.3 电源接线
 
@@ -34,23 +34,23 @@
 | 黄色 | ***CAN H***          |
 | 白色 | ***CAN L***          |
 
-![电源](../../images/boards/fly_sb2040/电源.png)
+![power](../../images/boards/fly_sb2040/power.png)
 
 ## 2.4 加热棒接线
 
 加热棒支持最大10A的电流，使用时请注意加热棒的功率！
 
-![加热棒](../../images/boards/fly_sb2040/加热棒.png)
+<img src="../../images/boards/fly_sb2040/heater.png" alt="heater" style="zoom:80%;" />
 
 ## 2.5 热敏接线
 
 SB2040工具板不支持PT100。下图为普通热敏和**PT1000**的接线方法。
 
-![热敏](../../images/boards/fly_sb2040/热敏.png)
+<img src="../../images/boards/fly_sb2040/thermistor.png" alt="thermistor" style="zoom:80%;" />
 
 > SB2040 V2支持 **PT100**，两线的PT100连接到中间两个引脚
 
-![sb2040v2_pt100](../../images/boards/fly_sb2040/sb2040v2_pt100.png)
+<img src="../../images/boards/fly_sb2040/sb2040v2_pt100.png" alt="sb2040v2_pt100" style="zoom:80%;" />
 
 ## 2.6 风扇接线
 
@@ -58,21 +58,21 @@ SB2040支持最多两个可控风扇，风扇电压可选24V、5V，支持2、3�
 
 ?> 三线风扇第三根线一般为测速线，可不接，直接两根电源线，接线方法和两线风扇是一样的。
 
-<img src="../../images/boards/fly_sb2040/两线风扇.png" alt="两线风扇" style="zoom:80%;" />
+<img src="../../images/boards/fly_sb2040/2_3-fan.png" alt="2_3-fan" style="zoom:65%;" />
 
-<img src="../../images/boards/fly_sb2040/三四线风扇.png" alt="三四线风扇" style="zoom:80%;" />
+<img src="../../images/boards/fly_sb2040/4-fan.png" alt="4-fan" style="zoom:65%;" />
 
 ## 2.7 RGB接线
 
 RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
 
-![RGB](../../images/boards/fly_sb2040/RGB.png)
+<img src="../../images/boards/fly_sb2040/RGB.png" alt="RGB" style="zoom:65%;" />
 
 ## 2.8  挤出机接线
 
 挤出机接线完成后，请注意配置好驱动电流，校准好挤出机电机转向。
 
-![挤出机](../../images/boards/fly_sb2040/挤出机.png)
+![extruder](../../images/boards/fly_sb2040/extruder.png)
 
 ## 2.9 限位开关
 
@@ -85,7 +85,7 @@ RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
 endstop_pin: ^sb2040:PA0  # 在前面加上^,将信号上拉
 ```
 
-<img src="../../images/boards/fly_sb2040/限位.png" alt="限位" style="zoom:90%;" />
+<img src="../../images/boards/fly_sb2040/endstop.png" alt="endstop" style="zoom:80%;" />
 
 ##  2.10 调平传感器接线
 
@@ -93,13 +93,13 @@ endstop_pin: ^sb2040:PA0  # 在前面加上^,将信号上拉
 
 VORON 官方建议是使用欧姆龙 Omron TL-Q5MC（之前官方推荐的是 PL08N，两者原 理一样，只是探测距离不一样）传感器来进行热床调平。
 
-![接近开关](../../images/boards/fly_sb2040/接近开关.png)
+<img src="../../images/boards/fly_sb2040/pl08.png" alt="pl08" style="zoom:85%;" />
 
 ### 2.10.2 Klicky
 
 Klicky 为第三方的调平传感器，能够用极低的成本自己在家制作，且性能稳定，性价比非常高，推荐使用。接线方法如下图所示。
 
-![klicky](../../images/boards/fly_sb2040/klicky.png)
+<img src="../../images/boards/fly_sb2040/klicky.png" alt="klicky" style="zoom:80%;" />
 
 ### 2.10.3 Voron Tap
 
@@ -107,7 +107,7 @@ Voron Tap为Voron团队最新发布的调平传感器方案，有着精度高，
 
 ?> Voron Tap不建议接 **24V** ，某些版本使用 **24V** 有一定概率会导致Tap传感器烧坏，这并非Fly产品的问题，是Voron Tap的设计缺陷，请悉知！！！
 
-<img src="../../images/boards/fly_sb2040/tap.png" alt="tap" style="zoom:90%;" />
+<img src="../../images/boards/fly_sb2040/tap.png" alt="tap" style="zoom: 80%;" />
 
 ### 2.10.4 Bltouch
 
@@ -121,7 +121,7 @@ FLY UTOC是一款USB转CAN总线的模块，通过它将FLY π的USB端口专为
 
 ![utoc](../../images/boards/fly_sb2040/utoc.png)
 
-![接线](../../images/boards/fly_sb2040/接线.png)
+![utoc2](../../images/boards/fly_sb2040/utoc2.png)
 
 **USB-IN:** USB转CAN输入接口，连接到上位机
 

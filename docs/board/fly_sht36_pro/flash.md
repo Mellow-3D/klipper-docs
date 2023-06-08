@@ -1,6 +1,6 @@
 # 4. 固件烧录
 
-?> SHTV2预装了CanBoot，只支持CAN烧录，烧录前请使用CAN连接到上位机
+?> SHT36 Pro预装了CanBoot，支持CAN烧录，烧录前请使用CAN连接到上位机；也可以使用Type-C数据线连到到上位机，使用USB烧录
 
 ## 4.1 编译固件
 
@@ -21,8 +21,19 @@
     make menuconfig
     ```
 
-    FLY-SHT36-PRO版本配置如下图
-![flansh](../../images/boards/fly_sht36_pro/flashcan.png)
+    配置如下图
+
+    <!-- tabs:start -->
+
+    ### **SHT36 Pro 5160版本**
+
+    ![flansh](../../images/boards/fly_sht36_pro/flashcan.png)
+
+    ### **SHT36 Pro 2209版本**
+
+    ![flashcan_2209](../../images/boards/fly_sht36_pro/flashcan_2209.png)
+
+    <!-- tabs:end -->
 3. 编译
 
     ```bash
@@ -33,11 +44,11 @@
 
 ## 4.2 查找uuid
 
-?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-SHT36-PRO与上位机通过CAN总线连接
+?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-SHT36 Pro与上位机通过CAN总线连接
 
 ?> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
-> 由于FLY-SHT36-PRO预装了CanBoot，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+> 由于FLY-SHT36 Pro预装了CanBoot，支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
 
 首先进入ssh，然后依次输入以下指令
 
@@ -62,10 +73,10 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 ?>如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
-* FLY-SHT36-PRO板上的120Ω跳线帽是否插上
+* FLY-SHT36 Pro板上的120Ω跳线帽是否插上
 * 您的镜像内核是否支持CAN
 
-如果确认没有上述问题，则可以尝试在**通电状态**下强制进入CanBoot来解决。此方法也可以在刷错固件连不上工具板之后尝试。进入CanBoot的方法如下，请小心使用！！！以免损坏SHT工具板！！！
+如果确认没有上述问题，则可以使用使用上位机的USB来烧录固件。
 
 ## 4.3 烧录固件
 
@@ -78,4 +89,8 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 如下图，出现``CAN Flash Success``则烧录成功
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
+
+## 4.4 使用Type-C烧录固件
+
+
 

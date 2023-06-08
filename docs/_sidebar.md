@@ -1,5 +1,5 @@
 * 产品
-  * [FLY-SHT36-PRO](/board/fly_sht36_pro/)
+  * [FLY-SHT36-Pro](/board/fly_sht36_pro/)
   * [FLY-Halo](/board/fly_halo/)
   * [FLY-Super5-Pro](/board/fly_super5/)
   * [FLY-π-Lite](/board/fly_pi_lite/)
@@ -7,7 +7,7 @@
   * [FLY-E3 v2](/board/fly_e3_v2/)
   * [FLY-Gemini v3](/board/fly_gemini_v3/)
   * [FLY-SB2040-V1 & V2](/board/fly_sb2040/)
-  * [FLY-SHT-v2](/board/fly_sht_v2/)
+  * [FLY-SHT36-v2](/board/fly_sht_v2/)
   * [FLY-Puppet](/board/fly_puppet/)
   * [FLY-Super8-Pro](/board/fly_super8_pro/)
   * [FLY-π](/board/fly_pi/)

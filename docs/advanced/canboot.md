@@ -117,7 +117,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.b
 
    按住SB2040板的BOOT键，然后将usb连接到上位机
 
-   ![boot](../images/boards/fly_sb2040/boot.png)
+   <img src="../images/boards/fly_sb2040/boot.png" alt="boot" style="zoom:80%;" />
 
    ```bash
    lsusb
@@ -296,7 +296,7 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 
    按住SB2040板的BOOT键，然后将usb连接到上位机
 
-   ![boot](../images/boards/fly_sb2040/boot.png)
+   <img src="../images/boards/fly_sb2040/boot.png" alt="boot" style="zoom:80%;" />
 
    ```bash
    lsusb

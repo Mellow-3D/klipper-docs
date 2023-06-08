@@ -21,13 +21,19 @@
     make menuconfig
     ```
 
-?> 注意，在2022-10-18 **前** 购买的主控芯片为GD32F103；在2022-10-18 **后** 购买的主控芯片为APM32F072
+?> 注意，在2022-10-18 **前** 购买的主控芯片为GD32F103；在2022-10-18 **后** 购买的主控芯片为APM32F072；在2023-05-01 **后** 购买的主控为STM32F072
 
-    GD32F103版本配置如下图
+<!-- tabs:start -->
+
+#### **GD32F103**
+
 ![config](../../images/boards/fly_sht_v2/config.png ":no-zooom")
-    
-    APM32F072版本配置如下图
+
+#### **APM32F072 & STM32F072**
+
 ![config](../../images/boards/fly_sht_v2/config_072.png ":no-zooom")
+
+<!-- tabs:end -->
 
 3. 编译
 
@@ -73,7 +79,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 如果确认没有上述问题，则可以尝试在**通电状态**下强制进入CanBoot来解决。此方法也可以在刷错固件连不上工具板之后尝试。进入CanBoot的方法如下，请小心使用！！！以免损坏SHT工具板！！！
 
-<img src="../../images/boards/fly_sht_v2/强制canboot.png" alt="强制canboot" style="zoom:80%;" />
+<img src="../../images/boards/fly_sht_v2/canboot.png" alt="canboot" style="zoom:80%;" />
 
 如果成功进入Canboot，下图中的LED灯会以一定的频率闪烁
 
