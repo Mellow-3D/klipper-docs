@@ -5,7 +5,7 @@
 uuid在前面使用CanBooot烧写固件的时候已经查找过了，具体请查看：[查找uuid](/board/fly_sht_v2/flash?id=_2-查找uuid "点击即可跳转")
 
 ```
-[mcu sht36v2] # 工具主板序列号
+[mcu sht36] # 工具主板序列号
 canbus_uuid: b7c79ec3f948
 ```
 

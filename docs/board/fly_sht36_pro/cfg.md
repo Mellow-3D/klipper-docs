@@ -34,10 +34,9 @@ max_temp: 490                     # 最大温度（注意：测量温度超过�
 ## ADXL345加速度计
 [adxl345]
 cs_pin: SHT36:gpio9
-spi_bus: spi2
-# spi_software_sclk_pin: SHT36:gpio10
-# spi_software_mosi_pin: SHT36:gpio11
-# spi_software_miso_pin: SHT36:gpio13
+spi_software_sclk_pin: SHT36:gpio10
+spi_software_mosi_pin: SHT36:gpio11
+spi_software_miso_pin: SHT36:gpio12
 #--------------------------------------------------------------------
 [resonance_tester]
 accel_chip: adxl345         # 加速度芯片型号
@@ -213,10 +212,9 @@ max_temp: 490                     # 最大温度（注意：测量温度超过�
 ## ADXL345加速度计
 [adxl345]
 cs_pin: SHT36:gpio9
-spi_bus: spi2
-# spi_software_sclk_pin: SHT36:gpio10
-# spi_software_mosi_pin: SHT36:gpio11
-# spi_software_miso_pin: SHT36:gpio13
+spi_software_sclk_pin: SHT36:gpio10
+spi_software_mosi_pin: SHT36:gpio11
+spi_software_miso_pin: SHT36:gpio12
 #--------------------------------------------------------------------
 [resonance_tester]
 accel_chip: adxl345         # 加速度芯片型号

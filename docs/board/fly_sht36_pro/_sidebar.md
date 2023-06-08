@@ -1,7 +1,7 @@
-* FLY-SHT36-PRO
+* FLY-SHT36-Pro
 
   * [1. 产品简介](/board/fly_sht36_pro/README.md)
-  * [2. FLY-SHT36-PRO接线](/board/fly_sht36_pro/SHT36line.md)
+  * [2. FLY-SHT36-Pro接线](/board/fly_sht36_pro/wiring.md)
   * [3. 非FLY上位机配置](/board/fly_sht36_pro/piconfig.md)
   * [4. 固件编译和烧录](/board/fly_sht36_pro/flash.md)
   * [5. uuid读取](/board/fly_sht36_pro/uuid.md "点击即可跳转")

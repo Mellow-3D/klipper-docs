@@ -36,29 +36,29 @@ SHT36与SHT42只有外观和安装尺寸不同，其他没有区别，SHT42使�
 
 下图为普通热敏和PT1000的接线方法。
 
-![热敏](../../images/boards/fly_sht36_42/热敏.png)
+<img src="../../images/boards/fly_sht36_42/nozzle_thermistor.png" alt="nozzle_thermistor" style="zoom:70%;" />
 
 下图为PT100的接线方法。默认两线PT100，只需连接到从左至右第2、3个引脚即可。
 
-<img src="../../images/boards/fly_sht36_42/pt100.png" alt="pt100" style="zoom:70%;" />
+![pt100](../../images/boards/fly_sht36_42/pt100.png)
 
 ## 2.6风扇接线
 
 SHT36支持最多两个可控风扇，风扇电压为电源电压，接线方法如下。
 
-<img src="../../images/boards/fly_sht36_42/风扇.png" alt="风扇" style="zoom:70%;" />
+<img src="../../images/boards/fly_sht36_42/fan.png" alt="fan" style="zoom:80%;" />
 
 ## 2.7 RGB接线
 
 RGB灯珠的正负极千万不能接反，否则会损坏SHT工具板。
 
-![rgb接线](../../images/boards/fly_sht36_42/rgb接线.png)
+<img src="../../images/boards/fly_sht36_42/rgb.png" alt="rgb" style="zoom:70%;" />
 
 ## 2.8 挤出机接线
 
 挤出机接线完成后，请注意配置好驱动电流，校准好挤出机电机转向。
 
-<img src="../../images/boards/fly_sht36_42/挤出机接线.png" alt="挤出机接线" style="zoom:67%;" />
+<img src="../../images/boards/fly_sht36_42/extruder.png" alt="extruder" style="zoom:80%;" />
 
 ## 2.9 限位开关
 
@@ -71,7 +71,7 @@ RGB灯珠的正负极千万不能接反，否则会损坏SHT工具板。
 endstop_pin: ^sht36:PA0  # 在前面加上^,将信号上拉，特别是在使用PA1时，请务必加上上拉 ^
 ```
 
-<img src="../../images/boards/fly_sht36_42/限位开关.png" alt="限位开关" style="zoom:80%;" />
+<img src="../../images/boards/fly_sht36_42/endstop.png" alt="endstop" style="zoom:75%;" />
 
 ##  2.10 调平传感器接线
 
@@ -81,7 +81,7 @@ VORON 官方建议是使用欧姆龙 Omron TL-Q5MC（之前官方推荐的是 PL
 
 SHT36/42不建议使用接近开关，需要自己单独接一根12V或者24V的电源线给接线开关供电。
 
-![接近开关](../../images/boards/fly_sht36_42/接近开关.png)
+<img src="../../images/boards/fly_sht36_42/pl08.png" alt="pl08" style="zoom:90%;" />
 
 ### 2.10.2 Klicky
 
@@ -95,7 +95,7 @@ Voron Tap为Voron团队最新发布的调平传感器方案，有着精度高，
 
 ?> Voron Tap不建议接 **24V** ，某些版本使用 **24V** 有一定概率会导致Tap传感器烧坏，这并非Fly产品的问题，是Voron Tap的设计缺陷，请悉知！！！
 
-![TAPpng](../../images/boards/fly_sht36_42/TAPpng.png)
+<img src="../../images/boards/fly_sht36_42/TAPpng.png" alt="TAPpng" style="zoom:80%;" />
 
 ### 2.10.4 Bltouch
 
