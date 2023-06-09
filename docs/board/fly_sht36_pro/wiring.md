@@ -83,7 +83,7 @@ RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
 
 ```
 [stepper_x]
-endstop_pin: ^sht36:PA2  # 在前面加上^,将信号上拉，特别是在使用PA1时，请务必加上上拉 ^
+endstop_pin: ^SHT36:gpio21  # 在前面加上^,将信号上拉，特别是在使用gpio21时，请务必加上上拉 ^
 ```
 
 <img src="../../images/boards/fly_sht36_pro/endstop.png" alt="endstop" style="zoom:80%;" />
