@@ -1,6 +1,6 @@
 # 4. 固件烧录
 
-?> SHT36 Pro预装了CanBoot，支持CAN烧录，烧录前请使用CAN连接到上位机；也可以使用Type-C数据线连到到上位机，使用USB烧录
+?> RRF36预装了CanBoot，支持CAN烧录，烧录前请使用CAN连接到上位机；也可以使用Type-C数据线连到到上位机，使用USB烧录
 
 ## 4.1 编译固件
 
@@ -25,17 +25,23 @@
 
     <!-- tabs:start -->
 
-    ### **SHT36 Pro 使用CANBOOT烧录时编译此固件**
+    
+
+    ### **RRF36-使用CANBOOT烧录**
 
     **感叹号是英文否则会编译错误**
 
-    ![flansh](../../images/boards/fly_sht36_pro/flashcan.png)
+    **使用CANBOOT烧录时编译此固件**
 
-    ### **SHT36 Pro 使用USB烧录时编译此固件**
-
+    ![flashcan](../../images/boards/fly_rrf/flash1.png)
+    
+    ### **RRF36-使用USB烧录**
+    
     **感叹号是英文否则会编译错误**
     
-    ![flashcan_2209](../../images/boards/fly_sht36_pro/flash.png)
+    **使用USB烧录时编译此固件**
+    
+    ![flashcan](../../images/boards/fly_rrf36/flash.png)
     
     <!-- tabs:end -->
 3. 编译
@@ -44,17 +50,15 @@
     make -j4
     ```
 
-     使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
-    
-     使用usb烧录的固件最后出现**Creating uf2 file out/klipper.uf2**则编译成功
+     最后出现**Creating hex file out/klipper.bin**则编译成功
 
 ## 4.2 查找uuid
 
-?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-SHT36 Pro与上位机通过CAN总线连接
+?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-RRF36与上位机通过CAN总线连接
 
 ?> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
-> 由于FLY-SHT36 Pro预装了CanBoot，支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+> 由于FLY-RRF36预装了CanBoot，支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
 
 首先进入ssh，然后依次输入以下指令
 
@@ -79,7 +83,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 ?>如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
-* FLY-SHT36 Pro板上的120Ω跳线帽是否插上
+* FLY-RRF36板上的120Ω跳线帽是否插上
 * 您的镜像内核是否支持CAN
 
 如果确认没有上述问题，则可以使用使用上位机的USB来烧录固件。
@@ -98,7 +102,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ## 4.4 使用Type-C烧录固件
 
-![rst](../../images/boards/fly_sht36_pro/rst.png)
+![rst](../../images/boards/fly_rrf/rst.png)
 
 **短接跳线插上type-c到电脑会弹出RPI-RP2**
 
