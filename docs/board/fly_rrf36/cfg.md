@@ -67,13 +67,13 @@ M906 X800 Y800 Z800 E800 I30                 ; set motor currents (mA) and motor
 M84 S30                                      ; Set idle timeout
 ```
 
-将里面的**M955 P124.0 **下面添加
+将里面的**M955 P0 S1**下面添加
 
 ```
 M569 P124.0 S1
 ```
 
-把**M584 X0 Y1 Z2 E3 **替换
+把**M584 X0 Y1 Z2 E3**替换
 
 ```
 M584 X0 Y1 Z2 E124.0 
@@ -182,5 +182,4 @@ M950 H1 C"heat0" T1
 ```
 M950 H1 C"124.out0" T1  
 ```
-
 

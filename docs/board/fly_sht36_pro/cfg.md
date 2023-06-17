@@ -59,16 +59,16 @@ microsteps: 16                      # 电机细分设置,细分越高，质量�
 full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
-heater_pin: SHT36:gpio8           # 加热棒引脚,接到HETA0
+heater_pin: SHT36:gpio8             # 加热棒引脚,接到HETA0
 #--------------------------------------------------------------------
 ##普通热敏配置
 sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
-sensor_pin: SHT36:gpio26          # 传感器引脚  
+sensor_pin: SHT36:gpio26           # 传感器引脚  
 #--------------------------------------------------------------------
 ##pt1000配置
 #sensor_type: PT1000                 # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
-#pullup_resistor: 1100               # 热敏上拉电阻为1100，如果温度为负-180需要更换跳线
-#sensor_pin: SHT36:gpio26          # 传感器引脚  
+#pullup_resistor: 1000               # 热敏上拉电阻为1000，如果温度为负-180需要更换跳线
+#sensor_pin: SHT36:gpio26            # 传感器引脚  
 #--------------------------------------------------------------------
 min_temp: -200                      # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
