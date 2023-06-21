@@ -25,7 +25,40 @@
 
 ![config](../images/adv/accele/config-usb.png)
 
-* 如何编译固件参考[固件烧录](/introduction/firmware)
+## 固件烧录
+
+?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
+
+上位机配置CAN及UTOC使用请查看[上位机配置](/board/fly_sb2040/piconfig "点击即可跳转")
+
+1. 查看是否连接到SB2040的BOOT烧录模式
+
+   按住SB2040板的BOOT键，然后将usb连接到上位机
+
+   ![config](../images/boards/fly_sb2040/boot.png ":no-zooom")
+
+   ```bash
+   lsusb
+   ```
+
+   执行上面的命令查看是否有 ``ID 2e8a:0003 Raspberry Pi RP2 Boot``这行，如没有请检查USB线(连接前记得按住BOOT键)
+
+![config](../images/boards/fly_sb2040/lsusb.png ":no-zooom")
+
+2. 烧录
+
+   ```bash
+   cd ~/klipper/
+   make flash FLASH_DEVICE=2e8a:0003
+   ```
+
+   执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
+
+   出现下图则烧录成功
+
+![flash](C:/Users/74103/Documents/GitHub/klipper-docs/docs/images/boards/fly_sb2040/flash.png ":no-zooom")
+
+
 
 ## 测试
 
