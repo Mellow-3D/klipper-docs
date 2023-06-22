@@ -1,6 +1,6 @@
 # 6. 引脚分布
 
-![interface](../../images/boards/fly_sht36_pro/interface.jpg)
+![interface](../../images/boards/fly_rrf36/interface.png)
 
 ## SHT36-PRO引脚
 
