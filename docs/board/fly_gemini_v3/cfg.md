@@ -364,9 +364,9 @@ aliases:
 #[neopixel fly_mini12864]
 #pin: EXP1_6                     # 显示屏背光灯控制引脚设置
 #chain_count: 3
-#initial_RED: 0.5                # 红色LED灯亮度控制（范围：0-1）
-#initial_GREEN: 0.5              # 绿色LED灯亮度控制（范围：0-1）
-#initial_BLUE: 0.5               # 蓝色LED灯亮度控制（范围：0-1）
+#initial_RED: 1.0                # 红色LED灯亮度控制（范围：0-1）
+#initial_GREEN: 1.0              # 绿色LED灯亮度控制（范围：0-1）
+#initial_BLUE: 1.0               # 蓝色LED灯亮度控制（范围：0-1）
 #color_order: RGB                # 颜色顺序
 
 #####################################################################
