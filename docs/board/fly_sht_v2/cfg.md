@@ -75,9 +75,9 @@ sensor_pin: sht36v2:PA3             # 传感器引脚
 #sensor_type: MAX31865                # 传感器型号，PT100版本
 #sensor_pin: sht36v2:PB12             # 传感器引脚，PT100版本
 #spi_bus: spi2                        # SPI 通讯总线定义
-# spi_software_sclk_pin: sht36v2:PB13 # 勿动
-# spi_software_mosi_pin: sht36v2:PB15 # 勿动
-# spi_software_miso_pin: sht36v2:PB14 # 勿动
+## spi_software_sclk_pin: sht36v2:PB13 # 勿动
+## spi_software_mosi_pin: sht36v2:PB15 # 勿动
+## spi_software_miso_pin: sht36v2:PB14 # 勿动
 #rtd_reference_r: 430                 # 使用31865时需要删除前面#
 #--------------------------------------------------------------------
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
