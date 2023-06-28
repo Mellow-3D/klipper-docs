@@ -354,7 +354,7 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 #samples_tolerance: 0.01      # 采样公差（注意过小的值可能造成采样次数增加）
 #samples_tolerance_retries: 3 # 超公差重试次数
 #--------------------------------------------------------------------
-#[bltoch]
+#[bltouch]
 #sensor_pin: ^PC2             # 信号接口
 #control_pin：PE6             # 舵机控制
 #x_offset: 0                  # X轴-传感器相对喷嘴偏移量

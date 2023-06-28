@@ -398,7 +398,7 @@ sample_retract_dist: 4.0     # 调平回缩距离
 samples_tolerance: 0.006     # 采样公差（注意过小的值可能造成采样次数增加）
 samples_tolerance_retries: 3 # 超公差重试次数
 #--------------------------------------------------------------------
-#[bltoch]
+#[bltouch]
 #sensor_pin: PC14             # 信号接口
 #control_pin：PE11            # 舵机引脚(SERVOO)
 #x_offset: 0                  # X轴-传感器相对喷嘴偏移量
@@ -1018,7 +1018,7 @@ sample_retract_dist: 4.0     # 调平回缩距离
 samples_tolerance: 0.006     # 采样公差（注意过小的值可能造成采样次数增加）
 samples_tolerance_retries: 3 # 超公差重试次数
 #--------------------------------------------------------------------
-#[bltoch]
+#[bltouch]
 #sensor_pin: PC14             # 信号接口
 #control_pin：PE11            # 舵机引脚(SERVOO)
 #x_offset: 0                  # X轴-传感器相对喷嘴偏移量
