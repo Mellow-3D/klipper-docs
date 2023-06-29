@@ -153,7 +153,7 @@ initial_WHITE: 0.0          # 连接后会亮起来
 #samples_tolerance_retries: 3 # 超公差重试次数
 
 #--------------------------------------------------------------------
-#[bltoch]
+#[bltouch]
 #sensor_pin: ^sb2040:gpio29   # 信号接口
 #control_pin: sb2040:gpio28   # 舵机控制
 #x_offset: -26.1              # X轴-传感器相对喷嘴偏移量，需要自行确定偏移量
