@@ -64,8 +64,7 @@
 
    * 账号：`fly` 或者 `root`
    * 密码：`mellow`
-   * 可通过这个本地域名访问lite [http://fly-pi-lite/](http://fly-pi-lite/)
-
-   [更新记录](introduction/systemupdatelog_lite.md)
+   
+[更新记录](introduction/systemupdatelog_lite2.md)
 
 <!-- tabs:end -->

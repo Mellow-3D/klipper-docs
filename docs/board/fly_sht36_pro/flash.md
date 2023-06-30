@@ -35,6 +35,8 @@
 
     **感叹号是英文否则会编译错误**
     
+    **使用USB烧录会覆盖CanBoot**
+    
     ![flashcan_2209](../../images/boards/fly_sht36_pro/flash.png)
     
     <!-- tabs:end -->
