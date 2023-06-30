@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="css/translate-google.css">
 </head>
 
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 <body style="position: relative !important; min-height: 100% !important; top: 0px !important;">
 
     <div class="app-nav select" id="google_translate_element"></div>
 
     <div id="app"></div>
 
-    <script async src="js/translate-google.js"></script>
 
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -105,6 +106,16 @@
                     id: ""
                 },
             },
+            // 在每个页面加载完成后执行的回调函数
+            doneEach: function () {
+                // 创建一个谷歌翻译的脚本标签
+                var script = document.createElement('script');
+                script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+                script.async = true;
+                document.body.appendChild(script);
+
+                document.body.style.top = "0px";
+            }
         }
     </script>
     <script src="js/docsify.min.js"></script>
