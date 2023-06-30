@@ -1,5 +1,10 @@
 @import "https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
 
+body {
+    position: fixed;
+    top: 0px;
+}
+
 #google_translate_element {
     overflow: hidden;
     border-width: 1px;
@@ -7,6 +12,14 @@
     z-index: 9999;
     position: fixed !important;
     right: 0px; top: 0px;
+}
+
+.skiptranslate {
+    display:none;
+}
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display:none;
 }
 
 .goog-te-gadget {
