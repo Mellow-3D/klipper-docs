@@ -8,7 +8,7 @@
 
 ## 10.1 Gemini接口图
 
-![interface](../../images/boards/fly_gemini_v3/interface.png)
+![interface](../../images/boards/fly_gemini_v3/Interface.png)
 
 ## 10.2 电源接线
 

@@ -73,7 +73,16 @@ M109 S{material_print_temperature_layer_0} ;Start heating extruder
 
 ![](../images/adv/TAP/CURA.png)
 
+* orca-slicer启始宏修改
 
+```
+M190 S[bed_temperature_initial_layer_single]
+M109 S150
+print_start  PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}
+M109 S[nozzle_temperature_initial_layer]
+```
+
+![orca-slicer](../../images/adv/TAP/orca.png)
 
 * 效果展示：
 
