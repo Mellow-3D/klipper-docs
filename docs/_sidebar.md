@@ -1,4 +1,5 @@
 * 产品
+  * [FLY-π-Lite2](/board/fly_pi_lite2/)
   * [FLY-RRF36](/board/fly_rrf36/)
   * [FLY-SHT36-Pro](/board/fly_sht36_pro/)
   * [FLY-Halo](/board/fly_halo/)

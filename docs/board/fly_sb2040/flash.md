@@ -42,7 +42,7 @@
    
     按住SB2040板的BOOT键，然后将usb连接到上位机
 
-    <img src="../../images/boards/fly_sb2040/boot.png" alt="boot" style="zoom:80%;" />
+    ![boot](../../images/boards/fly_sb2040/boot.png)
     
     ```bash
     lsusb

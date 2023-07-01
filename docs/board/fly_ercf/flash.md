@@ -54,3 +54,42 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 如下图，出现``CAN Flash Success``则烧录成功
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
+
+## 使用USB烧录固件
+
+?>**使用usb烧录时会覆盖掉CanBoot**
+
+1. 查看是否连接到ERCF的BOOT烧录模式
+
+   按住ERCF板的BOOT键，然后将usb连接到上位机
+
+   ![boot](../../images/boards/fly_ercf/boot.png)
+
+```
+lsusb
+```
+
+执行上面的命令查看是否有 ``ID 2e8a:0003 Raspberry Pi RP2 Boot``这行，如没有请检查USB线(连接前记得按住BOOT键)
+
+![config](../../images/boards/fly_sb2040/lsusb.png ":no-zooom")
+
+2. 烧录
+   
+    ```bash
+    cd ~/klipper/
+    make flash FLASH_DEVICE=2e8a:0003
+    ```
+    
+   执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
+   
+   出现下图则烧录成功
+
+![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
+
+
+
+3. 检查
+
+如果正确配置编译并烧录成功，则ERCF板的这个灯会常亮
+
+![led](../../images/boards/fly_ercf/led.png)
