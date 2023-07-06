@@ -6,7 +6,7 @@ uuid在前面使用CanBooot烧写固件的时候已经查找过了，具体请�
 
 ```
 [mcu sht36]
-uuid: b7c79ec3f948     #将读取到的uuid填写到此处
+canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```
 
 也可以在SSH中输入下面的命令查找uuid
