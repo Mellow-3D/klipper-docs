@@ -5,3 +5,4 @@
   * [连接到SSH](/board/fly_pi_lite2/connssh.md)
   * [FLY_Confing使用](/board/fly_pi_lite2/config.md)
   * [屏幕使用](/board/fly_pi_lite2/screen.md)
+  * [CAN配置](/board/fly_pi_lite2/can.md)
