@@ -128,7 +128,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-#sense_resistor: 0.110               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 #####################################################################
 #                  Y 轴步进电机     Y电机位 (A Motor)                 #
@@ -164,7 +164,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-#sense_resistor: 0.110               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
@@ -214,7 +214,7 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #spi_bus: spi3                  # SPI 通讯总线定义
 #run_current: 1.0               # 电机运行电流值
 #interpolate: False             # 是否开启256微步插值（不建议开启）
-#sense_resistor: 0.110          # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#sense_resistor: 0.075          # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500     # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
@@ -266,7 +266,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-#sense_resistor: 0.110               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
 #stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################

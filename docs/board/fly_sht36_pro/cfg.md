@@ -94,7 +94,7 @@ spi_software_mosi_pin: SHT36:gpio11
 spi_software_miso_pin: SHT36:gpio12
 interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 run_current: 0.8                    # 电机运行电流值
-sense_resistor: 0.110               # 驱动采样电阻不要改
+sense_resistor: 0.075               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
