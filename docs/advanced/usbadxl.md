@@ -2,8 +2,7 @@
 
 > 购买ADXL345加速度计模块时请仔细辨别
 
-?> 建议使用Mellow的ADXL345加速度计模块.
-?> 可代替V0/V0.1的固定线管的打印件
+?> 建议使用Mellow的ADXL345加速度计模块
 
 ![usbadxl](../images/adv/accele/usbadxl.png)
 
@@ -27,15 +26,11 @@
 
 ## 固件烧录
 
-?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
+1. 查看是否连接到USB加速度计的BOOT烧录模式
 
-上位机配置CAN及UTOC使用请查看[上位机配置](/board/fly_sb2040/piconfig "点击即可跳转")
+   按住USB加速度计的BOOT键，然后将usb连接到上位机
 
-1. 查看是否连接到SB2040的BOOT烧录模式
-
-   按住SB2040板的BOOT键，然后将usb连接到上位机
-
-   ![config](../images/boards/fly_sb2040/boot.png ":no-zooom")
+   ![boot](../images/adv/accele/usbadxl-boot.png)
 
    ```bash
    lsusb
