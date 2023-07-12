@@ -51,7 +51,7 @@
 
    出现下图则烧录成功
 
-![flash](C:/Users/74103/Documents/GitHub/klipper-docs/docs/images/boards/fly_sb2040/flash.png ":no-zooom")
+![flash](../images/boards/fly_sb2040/flash.png ":no-zooom")
 
 
 
