@@ -1,6 +1,6 @@
 # 4. 固件编译和烧录
 
-?> 为测试，SB2040发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
+?> 为测试，SB2040-PRO发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
 
 ## 4.1 编译固件
 
@@ -21,8 +21,25 @@
     make menuconfig
     ```
 
-     配置如下图
-![config](../../images/boards/fly_sb2040/config.png ":no-zooom")
+   配置如下图
+
+    <!-- tabs:start -->
+
+    ### **SB2040-PRO 使用CANBOOT烧录时编译此固件**
+
+    **感叹号是英文否则会编译错误**
+
+    ![flansh](../../images/boards/fly_sb2040_pro/flashcan.png)
+
+    ### **SB2040-PRO 使用USB烧录时编译此固件**
+
+    **感叹号是英文否则会编译错误**
+   
+    **使用USB烧录会覆盖CanBoot**
+   
+    ![flashcan_2209](../../images/boards/fly_sb2040_pro/flashcan.png)
+   
+    <!-- tabs:end -->
 
 3. 编译
 
@@ -31,12 +48,16 @@
     ```
 
      最后出现``Creating uf2 file out/klipper.uf2``则编译成功
-
-## 4.2 烧录固件
+    
+    
+    
+## 4.2 使用CANBOOT烧录固件
 
 ?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
 
 上位机配置CAN及UTOC使用请查看[上位机配置](/board/fly_sb2040/piconfig "点击即可跳转")
+
+## 4.3 使用USB烧录固件
 
 1. 查看是否连接到SB2040的BOOT烧录模式
    

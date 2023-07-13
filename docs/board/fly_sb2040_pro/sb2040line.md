@@ -112,6 +112,8 @@ BL-touch 一共有五根线，三根为第一组，负责传感器的供电和�
 
 ![bltouch](../../images/boards/fly_sb2040_pro/bltouch.png)
 
+?>**使用Bltouch需要拆掉此电容！！**
+
 ## 2.11 SB2040连接UTOC
 
 FLY UTOC是一款USB转CAN总线的模块，通过它将FLY π的USB端口专为CAN总线，通过CAN总线连接3D打印主板、SB2040等CAN总线产品。FLY UTOC板上拥有多种端子接口，使用灵活性好，可以适配不同的使用场景。**另外，UTOC在出厂时已经刷好固件，到手即用，无需再刷写固件。**
