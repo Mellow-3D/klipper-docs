@@ -4,7 +4,7 @@
 
 ## 3.1 固件下载
 
-GITHUD:
+GITHUD:[Releases · gloomyandy/RepRapFirmware (github.com)](https://github.com/gloomyandy/RepRapFirmware/releases)
 
 ## 3.2 使用Type-C烧录固件
 

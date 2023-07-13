@@ -1,6 +1,6 @@
 # 6. 引脚分布
 
-## 6.1 SB2040 v2引脚
+## 6.1 SB2040-PRO引脚
 
 ![SB2040 v2 Pinout](../../images/boards/fly_sb2040_pro/pinout.jpg ":no-zooom")
 
@@ -25,6 +25,13 @@
 | E | STEP | ***gpio9*** |
 | E | DIR | ***gpio10*** |
 | E | CS | ***gpio8*** |
+
+* E电机
+| SPI | 引脚号 |
+| :----: | :----- |
+| SCLK | ***gpio0*** |
+| MOSI | ***gpio3*** |
+| MISO | ***gpio2*** |
 
 ### 6.4 限位
 
