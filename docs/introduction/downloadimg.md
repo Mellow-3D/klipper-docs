@@ -58,13 +58,14 @@
 
 #### **FLY-π Lite2**
 
-1. Lite2系统镜像基于[debian 11](https://www.debian.org/)
+1. Lite2系统镜像基于[Armbian](https://www.armbian.com/)
 
    fly-pi-lite2-v3.0(beta)  （2023-6-21） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Release/FLY-v3.0_Flypilite2_bullseye_current.img.xz'">点我下载</button>
 
    * 账号：`fly` 或者 `root`
    * 密码：`mellow`
    
+
 [更新记录](introduction/systemupdatelog_lite2.md)
 
 <!-- tabs:end -->

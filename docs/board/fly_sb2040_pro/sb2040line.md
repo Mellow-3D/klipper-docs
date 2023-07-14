@@ -6,7 +6,7 @@
 
 ### 2.1 SB2040-PRO
 
-![jiexian](../../images/boards/fly_sb2040_pro_pro/pinout.jpg)
+![jiexian](../../images/boards/fly_sb2040_pro/pinout.jpg)
 
 ## 2.2 终端电阻配置
 
@@ -113,6 +113,8 @@ BL-touch 一共有五根线，三根为第一组，负责传感器的供电和�
 ![bltouch](../../images/boards/fly_sb2040_pro/bltouch.png)
 
 ?>**使用Bltouch需要拆掉此电容！！**
+
+![touch](../../images/boards/fly_sb2040_pro/touch.png)
 
 ## 2.11 SB2040连接UTOC
 

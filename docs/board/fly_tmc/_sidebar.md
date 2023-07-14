@@ -4,5 +4,5 @@ FLY-驱动
 * [2. FLY-TMC5160](/board/fly_tmc/5160.md)
 * [3. FLY-TMC5160 PRO](/board/fly_tmc/5160PRO.md)
 * [4. FLY-TMC2240](/board/fly_tmc/2240.md)
-* [45 关于无限位配置优化](/board/fly_tmc/cfg.md)
+* [5 关于无限位配置优化](/board/fly_tmc/cfg.md)
 
