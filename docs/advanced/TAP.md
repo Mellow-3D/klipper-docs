@@ -59,7 +59,7 @@ print_start
 M109 S[first_layer_temperature]
 ```
 
-![](../images/adv/TAP/PrusaSlicer.png)
+![1](../images/adv/TAP/PrusaSlicer.png)
 
 
 
@@ -71,7 +71,7 @@ print_start
 M109 S{material_print_temperature_layer_0} ;Start heating extruder
 ```
 
-![](../images/adv/TAP/CURA.png)
+![2](../images/adv/TAP/CURA.png)
 
 * orca-slicer启始宏修改
 
@@ -86,4 +86,4 @@ M109 S[nozzle_temperature_initial_layer]
 
 * 效果展示：
 
-![](../images/adv/TAP/klipper.png)
+![3](../images/adv/TAP/klipper.png)

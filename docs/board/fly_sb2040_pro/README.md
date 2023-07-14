@@ -3,7 +3,7 @@
 FLY SB2040-PRO是广州镁伦电子科技有限公司针对VORON Stealthburber打印头推出的一款喷头工具板，使用该工具板，可以用四根线来替代原来主板与打印头之间繁杂的接线，优化布局。SB2040-PRO适用于36步进电机，其集成了CAN收发器、USB口、TMC2240驱动、ADXL345加速度传感器，两个可控风扇等其他功能的工具板。此工具板适用于Klipper固件。
 
 * 支持CAN总线连接，数据传输更稳定，延迟更小，连接更稳定
-* 板载TMC2240驱动，使用SPI模式，可用于挤出机
+* 板载TMC2240驱动，使用SPI模式
 * 板载ADXL345加速度传感器
 * 支持BLTOUCH、PL08N等调平传感器，集成XY限位开关
 * 支持12-24V电压输入 
@@ -21,8 +21,8 @@ FLY SB2040-PRO是广州镁伦电子科技有限公司针对VORON Stealthburber�
 * 支持PT100（MAX31865）
 
 以下为SB2040-PRO相较于SB2040的升级内容
-1. 板载TMC2209升级为TMC2240
-2. 修改部分布局，减少短路风险
+1. 板载TMC2209升级为TMC2240，发热更小
+2. 修改部分布局，减少安装不当短路风险
 
 ## 1.1 产品详情
 
@@ -39,7 +39,7 @@ FLY SB2040-PRO是广州镁伦电子科技有限公司针对VORON Stealthburber�
 
 ## 1.2 SB2040-PRO
 
-![SB2040-V2](../../images/boards/fly_sb2040/sb2040v2.jpg ":no-zooom")
+![SB2040-V2](../../images/boards/fly_sb2040_pro/sb2040v2.jpg ":no-zooom")
 
 
 
