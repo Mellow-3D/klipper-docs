@@ -42,18 +42,18 @@
 
       1. 点击“**此电脑**” 
 
-      ![格式化1](../../images/boards/fly_pi/格式化1.png)
+      ![format1](../../images/boards/fly_pi/format1.png)
 
       2. 再点击“**磁盘管理**”，找到刚刚插入的内存卡（可移动磁盘），选中后单击右键，点击“**删除卷**”，
 
-      <img src="../../images/boards/fly_pi/格式化2.png" alt="格式化1" style="zoom: 80%;" />
+      <img src="../../images/boards/fly_pi/format2.png" alt="format1" style="zoom: 80%;" />
 
       3. 单击右键再单击右键**“新建简单卷**”，新建分区请注意选择文件系统格式为**FAT32**，一直点下一步，直至完成，便将内存卡格式化为只有一个盘。
 
          当然也可以借助第三方工具来格式化内存卡和eMMC。
 
-      ![格式化1](../../images/boards/fly_pi/格式化3.png)
+      ![format1](../../images/boards/fly_pi/format3.png)
 
-      <img src="../../images/boards/fly_pi/格式化4.png" alt="格式化1" style="zoom:80%;" />
+      <img src="../../images/boards/fly_pi/format4.png" alt="format1" style="zoom:80%;" />
 
    7. 至此已经完成FLY镜像的写入，但是请勿拔出内存卡，还需要修改boot盘中的NetWork文件，具体修改方法请查看：[FLY_Config](/board/fly_pi_lite/network "点击即可跳转")

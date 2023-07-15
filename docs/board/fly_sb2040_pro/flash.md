@@ -17,11 +17,13 @@
 
 2. 修改klipper编译配置
 
-    ```bash
-    make menuconfig
-    ```
+   ```bash
+   make menuconfig
+   ```
 
    配置如下图
+   
+?>如果想使用500k速率需要将**1000000**改为**500000**
 
     <!-- tabs:start -->
 
@@ -34,12 +36,14 @@
     ### **SB2040-PRO 使用USB烧录时编译此固件**
 
     **感叹号是英文否则会编译错误**
-   
+
     **使用USB烧录会覆盖CanBoot**
-   
+
     ![flashcan_2209](../../images/boards/fly_sb2040_pro/usb.png)
-   
+
     <!-- tabs:end -->
+
+
 
 3. 编译
 
