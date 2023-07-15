@@ -231,10 +231,10 @@ step_pin: PE4                       # 挤出电机方脉冲引脚
 dir_pin: PE5                        # 挤出电机方向引脚设置
 enable_pin: !PC1                    # 挤出电机方使能引脚设置
 ## 执行挤出机校准时，更新以下值
-## 比如你要求100毫米的进料，但实际上是102：
-## rotation_distance = <旧rotation_distance> * <实际挤出长度> / <请求的挤出长度>
-## 校准步进值: 22.44=旧值22*实际值102/目标值100
-rotation_distance: 22.44            # 步进值
+## 比如你要求100毫米的进料，但实际上是98毫米：
+## 新值=旧值 x（实际挤出长度/目标长度）
+## 校准步进值: 23.1325301 = 旧值22.6789511*（实际值102/目标值100）
+rotation_distance: 22.6789511       # 步进值-Bondtech 5mm 驱动齿轮
 gear_ratio: 50:17                   # 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
 microsteps: 16                      # 电机细分设置,细分越高，质量越高，但主控负荷越大
 full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
@@ -343,7 +343,7 @@ timeout: 1800                # 空闲时间超过30分钟则关闭热床
 #samples_tolerance: 0.006     # 采样公差（注意过小的值可能造成采样次数增加）
 #samples_tolerance_retries: 3 # 超公差重试次数
 #--------------------------------------------------------------------
-#[bltouch]
+#[bltoch]
 #sensor_pin: ^PC2             # 信号接口
 #control_pin：PE6             # 舵机引脚
 #x_offset: 0                  # X轴-传感器相对喷嘴偏移量
@@ -376,9 +376,9 @@ aliases:
 #[neopixel fly_mini12864]
 #pin: EXP1_6                     # 显示屏背光灯控制引脚设置
 #chain_count: 3
-#initial_RED: 1.0                # 红色LED灯亮度控制（范围：0-1）
-#initial_GREEN: 1.0              # 绿色LED灯亮度控制（范围：0-1）
-#initial_BLUE: 1.0               # 蓝色LED灯亮度控制（范围：0-1）
+#initial_RED: 0.5                # 红色LED灯亮度控制（范围：0-1）
+#initial_GREEN: 0.5              # 绿色LED灯亮度控制（范围：0-1）
+#initial_BLUE: 0.5               # 蓝色LED灯亮度控制（范围：0-1）
 #color_order: RGB                # 颜色顺序
 
 #####################################################################
