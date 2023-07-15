@@ -2,7 +2,7 @@
 
 ## 编译固件
 
-Super5-PRO的Klipper固件配置
+Super5-Pro的Klipper固件配置
 
 * H723
 
@@ -24,34 +24,11 @@ Super5-PRO的Klipper固件配置
 
 ### USB烧录
 
-?> Super5需要插跳线帽来进入DFU模式，进行USB烧录
+?> Super5需要按下图所示，在**主板断电状态**下插入跳线帽来进入DFU模式，使用USB口进行线刷。
 
-![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_super5\fly_super5-boot.jpg)
+![dfu](../../images/boards/fly_super5/dfu.png)
 
-### 方式一：电脑USB烧录
-
-1. 下载烧录工具[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip)
-2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
-3. 将前面编译好的固件(klipper.bin)复制到电脑任意目录
-4. 使用Type-C数据线将Super5板连接到电脑，请确保连接前已安装短接跳线
-5. STM32CubeProgrammer中选择USB模式，并刷新，连接
-
-![2](../../images/boards/fly_sht36_42/2.png ":no-zooom")
-
-6. 如果没有出现错误弹窗则连接成功
-7. 打开固件文件，在弹窗中选择前面编译完成的固件文件(klipper.bin)
-
-![3](../../images/boards/fly_sht36_42/3.png ":no-zooom")
-
-8. 确认页面有内容，不是00000。然后点击**Download**
-
-![4](../../images/boards/fly_sht36_42/4.png ":no-zooom")
-
-9. 出现图中就是烧录成功
-
-![5](../../images/boards/fly_sht36_42/5.png ":no-zooom")
-
-### 方式二：Klipper上位机烧录
+### 方式一：Klipper上位机烧录
 
 1. 安装烧录工具
 
@@ -80,3 +57,26 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 6. 出现上图内容则烧录成功
 
 ?> 注意：烧录成功后一定记得拔下来跳线帽
+
+### 方式二：电脑USB烧录
+
+1. 下载烧录工具[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip)
+2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
+3. 将前面编译好的固件(klipper.bin)复制到电脑任意目录
+4. 使用Type-C数据线将Super5板连接到电脑，请确保连接前已安装短接跳线
+5. STM32CubeProgrammer中选择USB模式，并刷新，连接
+
+![2](../../images/boards/fly_sht36_42/2.png ":no-zooom")
+
+6. 如果没有出现错误弹窗则连接成功
+7. 打开固件文件，在弹窗中选择前面编译完成的固件文件(klipper.bin)
+
+![3](../../images/boards/fly_sht36_42/3.png ":no-zooom")
+
+8. 确认页面有内容，不是00000。然后点击**Download**
+
+![4](../../images/boards/fly_sht36_42/4.png ":no-zooom")
+
+9. 出现图中就是烧录成功
+
+![5](../../images/boards/fly_sht36_42/5.png ":no-zooom")
