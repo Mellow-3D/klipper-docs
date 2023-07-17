@@ -1,4 +1,4 @@
-* FLY-SB2040-PRO
+* FLY-SB2040-Pro
 
   * [1. 产品简介](/board/fly_sb2040_pro/README.md)
   * [2. SB2040接线](/board/fly_sb2040_pro/sb2040line.md)
