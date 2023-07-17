@@ -1,29 +1,15 @@
 # 使用说明
 
-```
-[fly_probe]
-calibration_pin:2040:PB1          # 舵机口接校准
-probe_pwm_pin:2040:PC15           # 限位口接pwm
+## 1. 移动喷嘴
 
-[probe]
-pin:2040:PA1                      # 限位口接zstop
-x_offset: -23.2
-y_offset: 5
-z_offset: 0.00
-speed: 10
-lift_speed: 5
-```
+?>**手动/半自动将喷嘴移动到距离热床0.2mm距离**
 
-?>**手动/半自动将喷嘴移动到距离热床0.2mm距离（越低越好，0.2安全点，熟练使用后可以更低）**
+?>**可以使用铁片/pei等金属物品可以提前触发,在校准完成后可以在正常归位**
 
-![PROBE](../../images/boards/fly_sensor/PROBE.png)
-
-
-
-### 1. 控制台发送
+## 2. 控制台发送
 
 ```
-FLY_PROBE_CALIBRATION
+FLY_PROBE_Z0
 ```
 
 （这一步是记录ztop触发点）
@@ -36,14 +22,16 @@ FLY_PROBE_CALIBRATION
 
 ![led2](../../images/boards/fly_sensor/led2.png)
 
-## 2. 归位
+## 3. 归位
 
 ![g28](../../images/boards/fly_sensor/g28.png)
 
-归为完成后将Z移动到0坐标（框里可以直接输入0）
+归位以后在控制台输入
 
-![g28-1](../../images/boards/fly_sensor/g28-1.png)
+自动校准
 
-然后打印校准文件
+```
+FLY_PROBE_CALIBRATION
+```
 
-![gcode](../../images/boards/fly_sensor/gcode.png)
+![probe1](../../images/boards/fly_sensor/probe1.png)
