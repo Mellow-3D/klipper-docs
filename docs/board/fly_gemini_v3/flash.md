@@ -32,13 +32,36 @@
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 * ```bash
-sudo wget https://cdn.mellow.klipper.cn/shell/geminiv3-flash -O /usr/bin/geminiv3-flash > /dev/null 2>&1 && sudo chmod +x /usr/bin/geminiv3-flash || echo "The operation failed"
+ curl https://cdn.mellow.klipper.cn/Utils/geminiv3-tools/gemini-tools_install.sh | bash
 ```
 * 执行下面的命令来自动烧录固件
 * ```bash
-sudo geminiv3-flash
+sudo geminiv3-tools -f ~/klipper/out.klipper.bin
 ```
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
+
+* 进入烧录模式
+
+  ```
+  geminiv3-tools -h
+  ```
+  
+* 正常启动MCU
+
+  ```
+  geminiv3-tools -s
+  ```
+
+  
+
+* 重置MCU
+
+  ```
+  geminiv3-tools -r
+  ```
+
+  
+
 
 ?> 烧录完成后将跳线帽插入``G/BT1``侧（拉低BT1）
 
