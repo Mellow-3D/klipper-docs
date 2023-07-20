@@ -173,7 +173,6 @@ full_steps_per_rotation: 200
 microsteps: 16
 endstop_pin: !PG11
 position_min: -15
-position_endstop: 300
 position_max: 300
 homing_speed: 5
 second_homing_speed: 3
@@ -730,7 +729,6 @@ full_steps_per_rotation: 200
 microsteps: 16
 endstop_pin: !PG11
 position_min: -15
-position_endstop: 300
 position_max: 300
 homing_speed: 5
 second_homing_speed: 3

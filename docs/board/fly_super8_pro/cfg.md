@@ -199,7 +199,6 @@ endstop_pin: !PG11            # 限位开关PIN脚,建议常闭然后添加！�
 ## 增加position_ endstop的数值会使喷嘴更靠近床
 ## 在运行Z_ENDSTOP_CALIBRATE之后，position_endstop将存储在CFG配置的最后
 position_min: -15             # （配置喷嘴清洁需要-5左右）
-position_endstop: 300         # 软限位最大行程 (250mm-300mm-350mm)
 position_max: 300             # 机械限位最大行程 (250mm-300mm-350mm)
 homing_speed: 5               # 复位速度-最大 20
 second_homing_speed: 3        # 二次复位速度-最大 10
@@ -789,8 +788,6 @@ endstop_pin: !PG11            # 限位开关PIN脚,建议常闭然后添加！�
 ## 增加position_ endstop的数值会使喷嘴更靠近床
 ## 在运行Z_ENDSTOP_CALIBRATE之后，position_endstop将存储在CFG配置的最后
 position_min: -15             # （配置喷嘴清洁需要-5左右）
-position_endstop: 300         # 软限位最大行程 (250mm-300mm-350mm)
-position_max: 300             # 机械限位最大行程 (250mm-300mm-350mm)
 homing_speed: 5               # 复位速度-最大 20
 second_homing_speed: 3        # 二次复位速度-最大 10
 homing_retract_dist: 0        # 后撤距离

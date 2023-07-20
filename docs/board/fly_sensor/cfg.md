@@ -4,6 +4,12 @@
 
 Fly_senso安装脚本链接：[GitHub](https://github.com/kluoyun/Fly-Sensor) 
 
+?>**使用前需要更新安装的主板固件**
+
+?>**使用前需要更新安装的主板固件**
+
+?>**使用前需要更新安装的主板固件**
+
 ## 2. Klipper配置
 
 ```cfg
