@@ -22,7 +22,7 @@ probe_mode:1 #0 当做接近开关使用  1：Z轴不升降采样距离
 speed: 100                   # 校准速度
 mesh_min: 20,20              # 最小校准点坐标x，y
 mesh_max: 195, 200           # 最大校准点坐标x，y
-probe_count: 10,10           # 采样点数（4X4为16点）
+probe_count: 6,6             # 采样点数（6X6为36点）
 horizontal_move_z: 1.2
 algorithm: bicubic           # 算法模型
 bicubic_tension: 0.2         
@@ -45,7 +45,7 @@ probe_mode:1
 speed: 100                   # Calibration speed
 mesh_min: 20,20              # Minimum calibration point coordinates x, y
 mesh_max: 195, 200           # Maximum calibration point coordinates x, y
-probe_count: 10,10           # Number of sampling points (100 points for 10X10)
+probe_count: 6,6             # Number of sampling points (36 points for 6X6)
 horizontal_move_z: 1.2
 algorithm: bicubic           # Algorithm model
 bicubic_tension: 0.2         
