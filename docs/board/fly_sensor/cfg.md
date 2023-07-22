@@ -4,6 +4,24 @@
 
 Fly_senso安装脚本链接：[GitHub](https://github.com/kluoyun/Fly-Sensor) 
 
+建议使用**MobaXterm_Personal**等**SSH**工具安装脚本
+
+更新klipper
+
+```
+cd ~/klipper
+git checkout .
+git pull
+```
+安装脚本
+```
+cd ~/
+git clone https://github.com/kluoyun/Fly-Sensor
+sudo chmod +x ./Fly-Sensor/scripts/install.sh
+sudo ./Fly-Sensor/scripts/install.sh
+
+```
+
 ?>**使用前需要更新安装的主板固件**
 
 ?>**使用前需要更新安装的主板固件**
@@ -16,7 +34,7 @@ Fly_senso安装脚本链接：[GitHub](https://github.com/kluoyun/Fly-Sensor)
 [fly_probe]
 calibration_pin:sht36:PB1    # 舵机信号口
 probe_pwm_pin:sht36:PC15     # pwm
-zstop_pin:PB13               # zstop
+zstop_pin:sht36:PB13         # zstop
 x_offset: -23.2
 y_offset: -13
 z_offset: 0.0
@@ -38,7 +56,7 @@ bicubic_tension: 0.2
 [fly_probe]
 calibration_pin:sht36:PB1    # Servo signal port
 probe_pwm_pin:sht36:PC15     # pwm
-zstop_pin:PB13               # zstop
+zstop_pin:sht36:PB13         # zstop
 x_offset: -23.2
 y_offset: -13
 z_offset: 0.0
