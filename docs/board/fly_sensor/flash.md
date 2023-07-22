@@ -12,8 +12,9 @@
 
 ## 固件升级（USB）
 
-?>**FLY-SENSOR已经自带固件**
 * 升级固件则需要使用USB将Fly_sensor连接到电脑来升级
+
+?> 全量升级您的原有设置将不会保留，所有设置都会恢复默认
 
 1. 下载并解压USB烧录工具[flash_download_tool_3.9.4.zip(点击下载)](https://cdn.mellow.klipper.cn/Utils/flash_download_tool_3.9.4.zip)
 2. 下载固件: **[firmware]**
