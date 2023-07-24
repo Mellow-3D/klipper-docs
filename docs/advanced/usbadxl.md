@@ -20,6 +20,8 @@
 
 ## 固件烧录
 
+?> 出厂自带固件无需在烧录
+
 * USB连接如下图配置
 
 ![config](../images/adv/accele/config-usb.png)
@@ -55,8 +57,31 @@
 
 
 
+
+
 ## 测试
 
+?> 装加速度计依赖包安装方法如下
+
+?> 建议使用**MobaXterm_Personal**等**SSH**工具操作
+
+?> 此步骤使用于 `非FLY上位机`，如果您为`Fly-π`或者`Gemini`系列则无需执行！！！
+
+依次执行以下三条命令以安装加速度计依赖包。
+
+```
+sudo apt update
+```
+
+```
+sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
+```
+
+```
+~/klippy-env/bin/pip install -v numpy
+```
+
+请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。在某些情况下，如果主板的 RAM 太少 安装可能会失败。
 * 打开printer.cfg加入加速度计配置
 
 ```ini

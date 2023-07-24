@@ -41,21 +41,21 @@
  cd ~/klipper/lib/hidflash && make
  ```
   ?>执行下面的命令来自动烧录固件
-```
-sudo geminiv3-tools -f ~/klipper/out.klipper.bin
+ ```
+sudo geminiv3-tools -f ~/klipper/out/klipper.bin
 ```
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
 
 * 进入烧录模式
 
-  ```
-  geminiv3-tools -h
+```
+  sudo geminiv3-tools -h
   ```
   
 * 正常启动MCU
 
   ```
-  geminiv3-tools -s
+  sudo geminiv3-tools -s
   ```
 
   
@@ -63,7 +63,7 @@ sudo geminiv3-tools -f ~/klipper/out.klipper.bin
 * 重置MCU
 
   ```
-  geminiv3-tools -r
+  sudo geminiv3-tools -r
   ```
 
   

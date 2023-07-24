@@ -1,8 +1,10 @@
 # 4. 固件编译和烧录
 
-?> 为测试，SB2040-PRO发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
+?> 为测试，SB2040-PRO发货前会烧录CanBoot固件，上电后所有引脚全部拉高，使用前请重新烧录
 
 ## 4.1 编译固件
+
+?>CanBoot固件默认1M
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -23,25 +25,26 @@
 
    配置如下图
    
+
 ?>如果想使用500k速率需要将**1000000**改为**500000**
 
-    <!-- tabs:start -->
+<!-- tabs:start -->
 
-    ### **SB2040-PRO 使用CANBOOT烧录时编译此固件**
+### **SB2040-PRO 使用CANBOOT烧录时编译此固件**
 
-    **感叹号是英文否则会编译错误**
+**感叹号是英文否则会编译错误**
 
-    ![flansh](../../images/boards/fly_sb2040_pro/can.png)
+![flansh](../../images/boards/fly_sb2040_pro/can.png)
 
-    ### **SB2040-PRO 使用USB烧录时编译此固件**
+### **SB2040-PRO 使用USB烧录时编译此固件**
 
-    **感叹号是英文否则会编译错误**
+**感叹号是英文否则会编译错误**
 
-    **使用USB烧录会覆盖CanBoot**
+**使用USB烧录会覆盖CanBoot**
 
-    ![flashcan_2209](../../images/boards/fly_sb2040_pro/usb.png)
+![flashcan_2209](../../images/boards/fly_sb2040_pro/usb.png)
 
-    <!-- tabs:end -->
+<!-- tabs:end -->
 
 
 
