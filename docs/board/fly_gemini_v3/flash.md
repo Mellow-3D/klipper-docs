@@ -1,6 +1,6 @@
 # 12. 固件编译烧录
 
-?> Gemini v3烧录时**不要**在``G/BT1/3.3V``处插入任何跳线帽，烧录完成后将跳线帽插入``G/BT1``侧（拉低BT1）
+?> Gemini v3烧录时**不要**在``G/BT1/3.3V``处插入任何跳线帽，烧录完成后无需将插入任何跳线
 
 <img src="../../images/boards/fly_gemini_v3/flash.png" alt="flash" style="zoom:80%;" />
 
