@@ -32,7 +32,7 @@
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 * ```bash
- wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/geminiv3-tools/gemini-tools_install.sh && sudo bash gemini-tools_install.sh 
+ wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh
  ```
  
  ?>**如果提示hid-flash错误可以执行下面命令，没有就无需执行**
@@ -42,20 +42,20 @@
  ```
   ?>执行下面的命令来自动烧录固件
  ```
-sudo geminiv3-tools -f ~/klipper/out/klipper.bin
+sudo gemini-v3-tools -f ~/klipper/out/klipper.bin
 ```
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
 
 * 进入烧录模式
 
 ```
-  sudo geminiv3-tools -h
+  sudo gemini-v3-tools -h
   ```
   
 * 正常启动MCU
 
   ```
-  sudo geminiv3-tools -s
+  sudo gemini-v3-tools -s
   ```
 
   
@@ -63,7 +63,7 @@ sudo geminiv3-tools -f ~/klipper/out/klipper.bin
 * 重置MCU
 
   ```
-  sudo geminiv3-tools -r
+  sudo gemini-v3-tools -r
   ```
 
   
