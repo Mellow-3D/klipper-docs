@@ -1,18 +1,16 @@
 # TAP的配置教程
 
-TAP配置修改地方
+?> **TAP配置修改printer.cfg**
 
-printer.cfg
+?> **因为tap是直接使用喷嘴当限位触发所以无任何偏移**
+
+?> **装好tap后需要手动触发限位查看是否工作正常！**
+
+?> **TAP修改的地方只有z限位与probe**
 
 ```
-#TAP修改修改的地址只有z限位与probe
-
-## Z0 步进电机 - 左前
 [stepper_z]
 endstop_pin: probe:z_virtual_endstop             # 限位开关接口
-
-#因为tap是直接使用喷嘴当限位触发所以无任何偏移
-#装好tap后需要手动触发限位查看是否工作正常！
 
 [probe]
 pin: ^sht36:PA1              # 信号接口

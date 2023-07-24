@@ -1,6 +1,6 @@
 # 12. 固件编译烧录
 
-?> Gemini v3烧录时**不要**在``G/BT1/3.3V``处插入任何跳线帽，烧录完成后将跳线帽插入``G/BT1``侧（拉低BT1）
+?> Gemini v3烧录时**不要**在``G/BT1/3.3V``处插入任何跳线帽，烧录完成后无需将插入任何跳线
 
 <img src="../../images/boards/fly_gemini_v3/flash.png" alt="flash" style="zoom:80%;" />
 
@@ -32,14 +32,41 @@
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 * ```bash
-sudo wget https://cdn.mellow.klipper.cn/shell/geminiv3-flash -O /usr/bin/geminiv3-flash > /dev/null 2>&1 && sudo chmod +x /usr/bin/geminiv3-flash || echo "The operation failed"
-```
-* 执行下面的命令来自动烧录固件
-* ```bash
-sudo geminiv3-flash
+wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh && sudo bash gemini-tools_install.sh gemini-v3-tools
+ ```
+ 
+ ?>**如果提示hid-flash错误可以执行下面命令，没有就无需执行**
+ 
+ ```
+ cd ~/klipper/lib/hidflash && make
+ ```
+  ?>执行下面的命令来自动烧录固件
+ ```
+sudo gemini-v3-tools -f ~/klipper/out/klipper.bin
 ```
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
 
-?> 烧录完成后将跳线帽插入``G/BT1``侧（拉低BT1）
+* 进入烧录模式
 
-![flash2](../../images/boards/fly_gemini_v3/flash2.png)
+```
+  sudo gemini-v3-tools -h
+  ```
+  
+* 正常启动MCU
+
+  ```
+  sudo gemini-v3-tools -s
+  ```
+
+  
+
+* 重置MCU
+
+  ```
+  sudo gemini-v3-tools -r
+  ```
+
+  
+
+
+?> 烧录完成后无需将插入任何跳线

@@ -173,7 +173,6 @@ full_steps_per_rotation: 200
 microsteps: 16
 endstop_pin: !PG11
 position_min: -15
-position_endstop: 300
 position_max: 300
 homing_speed: 5
 second_homing_speed: 3
@@ -560,7 +559,7 @@ gcode:
 
 ## 7.2 Voron 2.4 Example Configuration
 
-```
+```position_endstop: 300         # 软限位最大行程 (250mm-300mm-350mm)
 ####################################################################################
 #                         3D MELLOW /FLY-Super8-Pro                                #
 ####################################################################################
@@ -730,8 +729,6 @@ full_steps_per_rotation: 200
 microsteps: 16
 endstop_pin: !PG11
 position_min: -15
-position_endstop: 300
-position_max: 300
 homing_speed: 5
 second_homing_speed: 3
 homing_retract_dist: 0

@@ -6,6 +6,8 @@
 
 ![FLY-ERCF](../../images/boards/fly_ercf/2.jpg)
 
+![ERCF](../../images/boards/fly_ercf/12.jpg)
+
 ## FLY-ERCF驱动跳线图
 
 ![TMC](../../images/boards/fly_ercf/2209-urat.png)

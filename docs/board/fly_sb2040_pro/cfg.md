@@ -93,10 +93,10 @@ pid_kd = 131.721
 step_pulse_duration: 0.000004     
 #--------------------------------------------------------------------
 [tmc2240 extruder]
-cs_pin: 2040:gpio11                 # SPI 片选Pin脚定义
-spi_software_sclk_pin: 2040:gpio0
-spi_software_mosi_pin: 2040:gpio3
-spi_software_miso_pin: 2040:gpio2
+cs_pin: sb2040:gpio11               # SPI 片选Pin脚定义
+spi_software_sclk_pin: sb2040:gpio0
+spi_software_mosi_pin: sb2040:gpio3
+spi_software_miso_pin: sb2040:gpio2
 run_current: 0.65                   # 电机运行电流值
 interpolate: False                  # 是否开启256微步插值（不建议开启）
 rref: 12300                         # 驱动采样电阻

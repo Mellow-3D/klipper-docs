@@ -16,17 +16,14 @@
 
 屏幕端子需要自己连接
 
-* **Gemini-V1 屏幕接线图**
 
-![v1](../../images/boards/fly_pi/v1.png)
 
-* **Gemini-V1.1接线图**
-
-![v1-1](../../images/boards/fly_pi/v1-1.png)
-
-* **Gemini-V2、Gemini-V3 和 Fly- π 接线图**
+* **Fly- π 接线图**
 
 ![v2](../../images/boards/fly_pi/v2.png)
+
+* **Fly- π 一线通接线图**
+* ![tft](../../images/boards/fly_pi/tft.jpg)
 
 ## 5.3 连接屏幕与上位机
 
