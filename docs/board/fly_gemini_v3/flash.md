@@ -32,7 +32,7 @@
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 * ```bash
- wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh
+wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh && sudo bash gemini-tools_install.sh gemini-v3-tools
  ```
  
  ?>**如果提示hid-flash错误可以执行下面命令，没有就无需执行**
