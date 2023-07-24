@@ -69,6 +69,4 @@ sudo geminiv3-tools -f ~/klipper/out/klipper.bin
   
 
 
-?> 烧录完成后将跳线帽插入``G/BT1``侧（拉低BT1）
-
-![flash2](../../images/boards/fly_gemini_v3/flash2.png)
+?> 烧录完成后无需将插入任何跳线
