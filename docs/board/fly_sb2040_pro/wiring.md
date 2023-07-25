@@ -6,7 +6,7 @@
 
 ### 2.1 SB2040-Pro
 
-![jiexian](../../images/boards/fly_sb2040_pro/pinout.jpg)
+![pinout](../../images/boards/fly_sb2040_pro/pinout.jpg)
 
 ## 2.2 终端电阻配置
 
@@ -16,9 +16,10 @@
 *  不管你连接几个USB设备，只要是在一条总线就只配置两个120欧姆电阻。不用为每个设备加一个电阻
 * 在接好CAN H和CAN L信号线之后，使用万用表测量CAN H与CAN L，两者之间的阻值应约为60欧姆
 
-<img src="../../images/boards/fly_sb2040_pro/120Ω.png" alt="120Ω" style="zoom:80%;" />
+![120Ω](../../images/boards/fly_sb2040_pro/120Ω.png)
 
 ## 2.3 电源接线
+
 
 ?>SB2040 Pro不支持电源防反接功能，通电前请检查好电源正负极接线是否正确！！！否则会损坏SB2040 Pro工具板！！！！
 
@@ -31,13 +32,13 @@
 | 黄色 | ***CAN H***          |
 | 白色 | ***CAN L***          |
 
-![power](../../images/boards/fly_sb2040_pro/power.png)
+<img src="../../images/boards/fly_sb2040_pro/power.png" alt="power" style="zoom:80%;" />
 
 ## 2.4 加热棒接线
 
 加热棒支持最大10A的电流，使用时请注意加热棒的功率！
 
-<img src="../../images/boards/fly_sb2040_pro/heater.png" alt="heater" style="zoom:80%;" />
+![heater](../../images/boards/fly_sb2040_pro/heater.png)
 
 ## 2.5 热敏接线
 
@@ -47,7 +48,7 @@
 
 > **PT100**的接线方法，两线的PT100连接到中间两个引脚
 
-<img src="../../images/boards/fly_sb2040_pro/sb2040v2_pt100.png" alt="sb2040v2_pt100" style="zoom:80%;" />
+<img src="../../images/boards/fly_sb2040_pro/sb2040v2_pt100.png" alt="sb2040v2_pt100" style="zoom:90%;" />
 
 ## 2.6 风扇接线
 
@@ -82,7 +83,7 @@ RGB灯珠的正负极千万不能接反，否则会损坏CAN工具板。
 endstop_pin: ^sb2040:PA0  # 在前面加上^,将信号上拉
 ```
 
-<img src="../../images/boards/fly_sb2040_pro/endstop.png" alt="endstop" style="zoom:80%;" />
+![endstop](../../images/boards/fly_sb2040_pro/endstop.png)
 
 ##  2.10 调平传感器接线
 
@@ -90,13 +91,13 @@ endstop_pin: ^sb2040:PA0  # 在前面加上^,将信号上拉
 
 VORON 官方建议是使用欧姆龙 Omron TL-Q5MC（之前官方推荐的是 PL08N，两者原 理一样，只是探测距离不一样）传感器来进行热床调平。
 
-<img src="../../images/boards/fly_sb2040_pro/pl08.png" alt="pl08" style="zoom:85%;" />
+![pl08](../../images/boards/fly_sb2040_pro/pl08.png)
 
 ### 2.10.2 Klicky
 
 Klicky 为第三方的调平传感器，能够用极低的成本自己在家制作，且性能稳定，性价比非常高，推荐使用。接线方法如下图所示。
 
-<img src="../../images/boards/fly_sb2040_pro/klicky.png" alt="klicky" style="zoom:80%;" />
+![klicky](../../images/boards/fly_sb2040_pro/klicky.png)
 
 ### 2.10.3 Voron Tap
 
@@ -104,7 +105,7 @@ Voron Tap为Voron团队最新发布的调平传感器方案，有着精度高，
 
 ?> Voron Tap不建议接 **24V** ，某些版本使用 **24V** 有一定概率会导致Tap传感器烧坏，这并非Fly产品的问题，是Voron Tap的设计缺陷，请悉知！！！
 
-<img src="../../images/boards/fly_sb2040_pro/tap.png" alt="tap" style="zoom: 80%;" />
+![tap](../../images/boards/fly_sb2040_pro/tap.png)
 
 ### 2.10.4 Bltouch
 
