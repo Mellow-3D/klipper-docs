@@ -60,7 +60,7 @@
 
 1. Lite2系统镜像基于[Armbian](https://www.armbian.com/)
 
-   fly-pi-lite2-v3.0(beta)  （2023-7-25） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Release/FLY-v3.0_Flypilite2_bullseye_current.img.xz'">点我下载</button>
+   fly-pi-lite2-v3.0(beta)  （2023-7-25） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Build/FLY-v3.0_Flypilite2_bullseye_current_0725.img.xz'">点我下载</button>
 
    * 账号：`fly` 或者 `root`
    * 密码：`mellow`
@@ -71,7 +71,7 @@
 ----
 1. 原版Armbian系统（不提供klipper安装等支持）
 
-    Armbian_21.11.0  （2023-07-20）<button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Build/FLY-v3.0_Flypilite2_bullseye_current_0725.img.xz'">点我下载</button>
+    Armbian_21.11.0  （2023-07-20）<button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Build/Armbian_Flypilite2_bullseye_current_5.10.85.img.xz'">点我下载</button>
 
     * 初始账号：`root`
     * 初始密码：`1234`
