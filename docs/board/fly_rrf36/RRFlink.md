@@ -14,11 +14,15 @@ RRF最新主板固件下载[RRF Config Tool (teamgloomy.github.io)](https://team
 
 ## 4.2 CAN接线
 
-?> H7主控不需要其他设备即可连接
+?> SUPER8不需要其他设备即可连接
 
 ?> 连接到主板后LED会降低闪烁速度
 
-RRF接线，接线如下图所示
+?>**RRF接线，接线如下图所示**
+
+![canbridge](../../images/boards/fly_super8/canbridge.png)
+
+?>**非Super8接线方法**
 
 ![canbridge](../../images/boards/fly_rrf36/15.jpg)
 
