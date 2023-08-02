@@ -1,6 +1,6 @@
-# 5. FLY -TFT 的使用
+# 6. FLY -TFT 的使用
 
-## 5.1 修改配置
+## 6.1 修改配置
 
 ?> 首先，请打开FLY_config配置文件，打开方式请参照[打开fly_Config](/board/fly_pi/FLY_π_description2?id=_11-打开-fly_config "点击即可跳转")
 
@@ -12,7 +12,7 @@
 
 ![display](../../images/boards/fly_pi/display.png)
 
-## 5.2 屏幕接线
+## 6.2 屏幕接线
 
 屏幕端子需要自己连接
 
@@ -22,18 +22,17 @@
 
 ![v2](../../images/boards/fly_pi/v2.png)
 
-* **Fly- π 一线通接线图**
-* ![tft](../../images/boards/fly_pi/tft.jpg)
 
-## 5.3 连接屏幕与上位机
 
-* **FLY Gemini**
-
-  ![tft_gemini](../../images/boards/fly_pi/tft_gemini.png)
+## 6.3 连接屏幕与上位机
 
 * **FLY π**
 
   ![tft_flyπ](../../images/boards/fly_pi/tft_flyπ.png)
+
+  * **Fly- π 一线通接线图**
+
+    ![tft](../../images/boards/fly_pi/tft.jpg)
 
   如果屏幕只显示下图所示界面，请检查``FLY_CONFIG``中``Klipperscreen``的配置是否修改正确。
 

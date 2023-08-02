@@ -13,13 +13,13 @@
 1.Puppet的Klipper固件配置
 
 * 打开第二组拨码开关时使用USB连接如下图配置
-  ![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_puppet\config-usb.png)
+  ![](../../images/boards/fly_puppet/config-usb.png)
 
 2.使用串口配置
 
 * 使用40pin串口与上位机连接时使用如下配置
 
-  ![](C:\Users\fenghua\Documents\GitHub\klipper-docs\docs\images\boards\fly_puppet\config-chuanko.png)
+  ![](../../images/boards/fly_puppet/config-chuanko.png)
 
   
 
@@ -102,6 +102,14 @@
 ![1](../../images/boards/fly_puppet/use/1.png ":no-zooom")
 
 3. 打开其中的**config.txt**文件加入两行配置
+
+树莓派3B与4B添加此配置
+
+```
+dtoverlay=pi3-miniuart-bt
+```
+
+ 树莓派CM4添加此配置
 
 ```cfg
 dtoverlay=pi3-miniuart-bt
