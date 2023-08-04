@@ -1,6 +1,6 @@
-# 2 使用USB烧录M2WE
+# 3 使用USB烧录M2WE
 
-   #### 2.1 通过USB为eMMC烧录系统镜像
+   #### 3.1 通过USB为eMMC烧录系统镜像
 
 1. 先下载安装需要的软件
 
@@ -56,4 +56,4 @@
 
 13. 现在可以打开文件资源管理器，多出一个14.5G的U盘（16G eMMC显示大小为14.5G）
 14. 这样就可以直接用Win32diskimager或balenaEtcher来烧录系统镜像，盘符选择为这个14.5GU盘的盘符
-15. 镜像烧录完成后，请配置 [FLY_Config](
+15. 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")

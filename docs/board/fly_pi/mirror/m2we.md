@@ -1,16 +1,16 @@
-# 3. eMMC WiFi模块烧录
+# 2. eMMC WiFi模块烧录
 
 ?> FLY-M2WE只适用于FLY-π，FLY-Gemini v2，FLY-Gemini v3
 
 ?> 不要带电插拔模块，此模块不支持热插拔
 
-## 3.1 产品详情
+## 2.1 产品详情
 
 [FLY3D打印机M2WE板16G eMMC 5g wifi用于KlIpper双子座V2.0PI主板-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a230r.1.14.6.1a4840a8a8t04w&id=685372879431&ns=1&abbucket=16#detail "点击即可跳转")
 
 <img src="../../../images/boards/fly_pi/emmcjpg.jpg" alt="emmcjpg" style="zoom:60%;" />
 
-## 3.2 使用SD卡镜像烧录
+## 2.2 使用SD卡镜像烧录
 
    FLY-M2WE提供了16G的eMMC和5G WiFi，能够提供更稳定的系统运行和更快的网络传输。（建议使用2.4GWiFi，虽然速度稍慢，但是距离远，连接也更稳定）
 

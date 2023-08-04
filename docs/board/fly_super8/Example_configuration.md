@@ -1,8 +1,8 @@
-# 7. Example configuration
+# 6. Example configuration
 
 Here, taking Trident as an example, a configuration file is given. This configuration file is matched with [Super8](http://mellow.klipper.cn/#/board/fly_super8/Super8line.md) wiring.
 
-## 7.1 Voron Trident example configuration
+## 6.1 Voron Trident example configuration
 
 ```cfg
 ####################################################################################
@@ -557,7 +557,7 @@ gcode:
 
 ```
 
-## 7.2 Voron 2.4 Example Configuration
+## 6.2 Voron 2.4 Example Configuration
 
 ```position_endstop: 300         # 软限位最大行程 (250mm-300mm-350mm)
 ####################################################################################

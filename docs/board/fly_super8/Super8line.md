@@ -1,12 +1,12 @@
-# 2. Super8 接线
+# 3. Super8 接线
 
 ?> 此教程以Voron Trident为例介绍接线方法，请结合自己的实际使用情况接线
 
-## 2.1 Super8接口图
+## 3.1 Super8接口图
 
 ![interface](../../images/boards/fly_super8/interface.png)
 
-## 2.1 电源接线
+## 3.1 电源接线
 
 **保险丝：**拿到主板后，首先按图接好四个保险丝。接好保险丝后才能接线，否则主板不通电。保险丝需要稍微用力才能按进去
 
@@ -18,9 +18,9 @@
 
 <img src="../../images/boards/fly_super8/power.png" alt="power" style="zoom:80%;" />
 
-## 2.2  步进电机接线
+## 3.2  步进电机接线
 
-### 2.2.1 主板驱动跳线
+### 3.3.1 主板驱动跳线
 
 **STEP/DIR模式。**在这个模式下，通过使用跳线帽来设置细分，通过调节电位器来调整电流。最常见的是A4988驱动，使用这类驱动需要查询厂家提供的细分配置表，然后通过跳线帽来设置细分。
 
@@ -32,13 +32,13 @@
 
 **注：使用A4988驱动或者外接驱动，跳线模式选择：正常跳线模式。并在配置中将驱动配置删除即可。**
 
-### 2.2.2主板驱动IO电压选择
+### 3.3.2主板驱动IO电压选择
 
 Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个信号引脚的输出电压（默认5v，无需修改，最常见）。
 
 ![drive_voltage](../../images/boards/fly_super8/drive_voltage.png)
 
-### 2.2.3 驱动的安装
+### 3.3.3 驱动的安装
 
 驱动在安装前需要进行相应的检查，以免对驱动或主板造成损坏。
 
@@ -54,7 +54,7 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 
 ![drive_install](../../images/boards/fly_super8/drive_install.png)
 
-### 2.2.4 步进电机接线
+### 3.3.4 步进电机接线
 
 在3D打印机中，最常用的是两相四线步进电机，其原理如图所示。鉴别步进电机线序有两种方法：
 
@@ -70,13 +70,13 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 
 **Voron 2.4：**将X、Y、E0、Z 、Z1、 Z2、Z3 共七个电机依次接到主板上的Driver0 - Driver6
 
-![motor_2.4](../../images/boards/fly_super8/motor_2.4.png)
+![motor_3.4](../../images/boards/fly_super8/motor_3.4.png)
 
-## 2.3  加热棒接线
+## 3.3  加热棒接线
 
 ![heat](../../images/boards/fly_super8/heat.png)
 
-## 2.4  热床接线
+## 3.4  热床接线
 
 **交流热床：**固态继电器在接线时，请注意输入和输出别接错了。
 
@@ -89,7 +89,7 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 
 ![DCbed](../../images/boards/fly_super8/DCbed.png)
 
-## 2.5  热敏电阻接线
+## 3.5  热敏电阻接线
 
 Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线方法如下图。热敏电阻的类型请咨询购买商家。
 
@@ -99,7 +99,7 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 如果为常规的NTC 100K（如下图所示），请将sensor_type 配置为：**Generic 3950**
 
-<img src="../../images/boards/fly_super8/semitec2.png" alt="semitec2" style="zoom:70%;" />
+<img src="../../images/boards/fly_super8/semitec3.png" alt="semitec2" style="zoom:70%;" />
 
 <img src="../../images/boards/fly_super8/semitec3.png" alt="semitec3" style="zoom:80%;" />
 
@@ -111,7 +111,7 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 ![bed_TH](../../images/boards/fly_super8/bed_TH.png)
 
-## 2.6 风扇接线
+## 3.6 风扇接线
 
 风扇电压选择。使用跳线帽短接对应电压的排针即可，选择方式如下图**。**注：图中黄色方框内的跳线方式均相同。
 
@@ -127,7 +127,7 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 ![fan](../../images/boards/fly_super8/fan.png)
 
-## 2.7  限位开关接线
+## 3.7  限位开关接线
 
 限位开关有常开（NO）和常闭（NC）两种。一般在3D打印机上，建议使用**常闭（NC）**，这样在限位开关线路出现问题时，系统会及时报错，可以避免一些不必要的撞车，避免损坏打印机。
 
@@ -137,9 +137,9 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 ![endstop](../../images/boards/fly_super8/endstop.png)
 
-## 2.8 调平传感器接线
+## 3.8 调平传感器接线
 
-### 2.8.1 PL08N接线
+### 3.8.1 PL08N接线
 
 VORON官方建议是使用欧姆龙Omron TL-Q5MC（之前官方推荐的是PL08N，两者原理一样，只是探测距离不一样）传感器来进行热床调平。Super8主板上红色3P端子支持高压输入，板载了二极管，无需外接。接线方式如下图所示。
 
@@ -153,13 +153,13 @@ VORON官方建议是使用欧姆龙Omron TL-Q5MC（之前官方推荐的是PL08N
 
 ![pl08n2](../../images/boards/fly_super8/pl08n2.png)
 
-### 2.8.2 BL-Touch接线
+### 3.8.2 BL-Touch接线
 
 BL-touch一共有五根线，三根为第一组，负责传感器的供电和探针的收放，第二组为地线和信号线，输出限位信号。BL-touch接线时请仔细核对线序，错误的接线可能会永久性损坏传感器和主板！！！接线方法如下图所示。
 
 ![bltouch](../../images/boards/fly_super8/bltouch.png)
 
-### 2.8.3 Klicky接线
+### 3.8.3 Klicky接线
 
 Klicky为第三方的调平传感器，能够用极低的成本自己在家制作，且性能稳定，性价比高，非常推荐使用。接线方法如下图所示。
 
@@ -167,7 +167,7 @@ Klicky为第三方的调平传感器，能够用极低的成本自己在家制�
 
 ![klicky](../../images/boards/fly_super8/klicky.png)
 
-### 2.8.4 Voron Tap接线
+### 3.8.4 Voron Tap接线
 
 Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整个工具头移动以触发光开关，精度比常规限位开关更好，可以使用几乎市面上所有的打印平台。
 
@@ -177,7 +177,7 @@ Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整�
 
 ![tap](../../images/boards/fly_super8/tap.png)
 
-## 2.9 RGB接线
+## 3.9 RGB接线
 
 由于super8大部分的IO口都做了防烧的保护机制，如果要使用RGB灯带，只能接到主板的EXP口上，或者其他没有保护的IO口。5V和GND不一定要EXP接口上的，但是S一定要是EXP口上的。（也可以使用fly π上的IO）
 
@@ -185,13 +185,13 @@ Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整�
 
 ![rgb](../../images/boards/fly_super8/rgb.png)
 
-## 2.10 FLY-Mini12864接线
+## 3.10 FLY-Mini12864接线
 
 下图为FLY的mini12864的接线方式，其他厂家的屏幕请咨询相应厂家。Mini12864屏幕接接反，接错可能会导致上位机连不上MCU。如果使用mini12864屏幕之前可以正常连上主板的MCU，而使用mini12864后就连不上MCU了，请尝试拔出mini12864的接线！！！
 
 ![flymini12864](../../images/boards/fly_super8/flymini12864.png)
 
-## 2.11 连接到上位机
+## 3.11 连接到上位机
 
 主板通过TypeC接口连接到上位机的USB口，也可以用过串口连接到上位机。这里只对前者做介绍。
 
