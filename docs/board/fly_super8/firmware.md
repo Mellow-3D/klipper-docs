@@ -1,8 +1,8 @@
-# 5. 固件烧录
+# 2. 固件烧录
 
-> 烧录固件之前确保已完成[FLY π系统镜像](/board/fly_pi/FLY_π_description1 "点击即可跳转")文档
+> 烧录固件之前确保已完成[FLY π系统镜像](/board/fly_pi/mirror/FLY_π_mirror.md "点击即可跳转")文档
 
-## 5.1 固件参数配置
+## 2.1 固件参数配置
 
 Super8配置如下图所示。
 
@@ -10,9 +10,9 @@ Super8配置如下图所示。
 
 下面介绍如何编译和烧录固件。
 
-## 5.2 编译Klipper固件
+## 2.2 编译Klipper固件
 
-1. 请先阅读[连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")文档
+1. 请先阅读[连接到SSH](/board/fly_host/fly_pi/FLY_π_ssh "点击即可跳转")文档
 2. 连接到SSH后输入```cd ~/klipper/```回车
 3. 按顺序执行下面的命令，输入命令后需要回车才会执行
 4. ```make clean```
@@ -37,14 +37,14 @@ Super8配置如下图所示。
 
 ![f407](../../images/boards/fly_super8/f407.png)
 
-12. 按```Q```键，出现**Save configuration?**，这时再按```Y```键
+12. 按```Q```键，出现**Save configuration**，这时再按```Y```键
 * 现在应该保存了配置并且退出到了命令行界面
 
 13. 输入```make -j4```开始编译，时间有点长
 
 * 出现下图则编译成功
 
-![putty](../../images/firmware/make5.png ":no-zooom")
+![putty](../../images/firmware/make2.png ":no-zooom")
 
 14. 下载固件到电脑
 
@@ -65,7 +65,7 @@ Super8配置如下图所示。
 
 ![putty](../../images/firmware/down4.png ":no-zooom")
 
-## 5.3  烧录固件到主板
+## 2.3  烧录固件到主板
 
 1. 准备一张SD卡(<32GB)，并且格式化成 **FAT32** 格式
 2. 将klipper.bin复制到SD卡，并且重命名为```firmware.bin```

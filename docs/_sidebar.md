@@ -1,47 +1,43 @@
 * 产品
 
-  * [FLY-SENSOR](/board/fly_sensor/)
-  * [FLY-SB2040-Pro](/board/fly_sb2040_pro/)
-  * [FLY-π-Lite2](/board/fly_pi_lite2/)
-  * [FLY-RRF36](/board/fly_rrf36/)
-  * [FLY-SHT36-Pro](/board/fly_sht36_pro/)
-  * [FLY-Halo](/board/fly_halo/)
-  * [FLY-Super5-Pro](/board/fly_super5/)
-  * [FLY-π-Lite](/board/fly_pi_lite/)
-  * [FLY-ERCF](/board/fly_ercf/)
-  * [FLY-E3 v2](/board/fly_e3_v2/)
-  * [FLY-Gemini v3](/board/fly_gemini_v3/)
-  * [FLY-SB2040-V1 & V2](/board/fly_sb2040/)
-  * [FLY-SHT36-v2](/board/fly_sht_v2/)
-  * [FLY-Puppet](/board/fly_puppet/)
-  * [FLY-Super8-Pro](/board/fly_super8_pro/)
-  * [FLY-π](/board/fly_pi/)
-  * [FLY-RPFMEX](/board/fly_rpfmex/)
-  * [FLY-RHT36/42](/board/fly_rht36_42/)
-  * [FLY-SHT36/42](/board/fly_sht36_42/)
-  * [FLY-Gemini v2](/board/fly_gemini_v2/)
-  * [FLY-Gemini v1.1](/board/fly_gemini_v1-1/)
-  * [FLY-Gemini v1](/board/fly_gemini_v1/)
-  * [FLY-Super8](/board/fly_super8/)
-  * [FLY-CDY v2/v3](/board/fly_cdy_v3/)
-  * [FLY-CDY v1](/board/fly_cdy_v1/)
-  * [FLY-E3 pro](/board/fly_e3_pro/)
+  * [FLY-上位机](/board/directory/fly_host/)
+  * [FLY-Super系列](/board/directory/fly_super/)
+  * [FLY-Genmini系列](/board/directory/fly_gemini/)
+  * [FLY-CDY系列](/board/directory/fly_cdy/)
+  * [FLY-E3系列](/board/directory/fly_e3/)
   * [FLY-9轴](/board/fly_9/)
+  * [FLY-Puppet](/board/fly_puppet/)
+  * [FLY-RPFMEX](/board/fly_rpfmex/) 
   * [FLY-驱动](/board/fly_tmc/)
+  
+* 工具板
+  * [SHT系列](/board/directory/fly_sht/)
+  * [SB2040系列](/board/directory/fly_sb2040/)
+  * [FLY-RRF36](/board/fly_rrf36/)
+  * [FLY-RHT36/42](/board/fly_rht36_42/)
+  * [FLY-ERCF](/board/fly_ercf/)
+* 扩展类
+  * [FLY-SENSOR](/board/fly_sensor/)
+  * [FLY-Halo](/board/fly_halo/)
+  
 * 入门
   * [开始](README)
   * [系统镜像](/introduction/system.md)
   * [连接到SSH](/introduction/conntossh.md)
   * [固件烧录](/introduction/firmware.md)
+  
 * FLY-Config
   * [介绍](/fly_config/README)
   * [使用方法](/fly_config/Instructions.md)
+  
 * 指南
   * [基础配置](/guide/configs.md)
   * [常见问题](/guide/what.md)
+  
 * 用户投稿
   * [投稿须知](/users/README)
   * [Geminiv2上配置CAN](/users/geminiv2_can.md)
+  
 * 进阶
   * [烧录BL](/advanced/flashbl.md)
   * [加速度计](/advanced/Accelerometer.md)
@@ -52,5 +48,6 @@
   * [USB加速度计](/advanced/usbadxl.md)
   * [TAP](/advanced/TAP.md)
   * [7040鼓风机](/advanced/7040.md)
+  
 * 系统
   * [下载镜像](/introduction/downloadimg.md)

@@ -1,6 +1,6 @@
-# 6. 读取主板ID
+# 5. 读取主板ID
 
-1.[连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")，然后输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
+1.[连接到SSH](/board/fly_host/fly_pi/FLY_π_ssh.md "点击即可跳转")，然后输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
 
 <img src="../../images/boards/fly_super8/id.png" alt="id" style="zoom:80%;" />
 
