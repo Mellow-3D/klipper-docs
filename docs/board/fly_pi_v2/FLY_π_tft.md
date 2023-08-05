@@ -2,7 +2,8 @@
 
 ## 5.1 修改配置
 
-?> 首先，请打开FLY_config配置文件，打开方式请参照[打开fly_Config](/board/fly_pi/FLY_π_description2?id=_11-打开-fly_config "点击即可跳转")
+> [!TIP]
+> 首先，请打开FLY_config配置文件，打开方式请参照[打开fly_Config](/board/fly_pi/FLY_π_description2?id=_11-打开-fly_config "点击即可跳转")
 
 1. 启用 klipperscreen 将``KlipperScreen=false``修改为``KlipperScreen=true``
 
@@ -44,4 +45,5 @@
 
 5.上位机上电开机。
 
-?>修改Display后首次开机时间较长，请耐心等待几分钟！如果遇到白屏等情况，请检查接线和配置是否正确！！！
+> [!TIP]
+> 修改Display后首次开机时间较长，请耐心等待几分钟！如果遇到白屏等情况，请检查接线和配置是否正确！！！

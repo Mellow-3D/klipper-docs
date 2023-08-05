@@ -1,6 +1,7 @@
 # 3. 固件烧录
 
-?> RRF36预装了RRF固件，支持CAN连接，烧录前请使用USB连接到上位机，使用USB烧录
+> [!TIP]
+> RRF36预装了RRF固件，支持CAN连接，烧录前请使用USB连接到上位机，使用USB烧录
 
 ## 3.1 固件下载
 
@@ -20,5 +21,6 @@ GITHUD:[Releases · gloomyandy/RepRapFirmware (github.com)](https://github.com/g
 
 **把klipper.uf2放进去，弹窗会关闭**
 
-?>**刷完固件，led会快速闪烁**
+> [!TIP]
+> **刷完固件，led会快速闪烁**
 

@@ -1,10 +1,13 @@
 # 树莓派CAN使用
 
+> [!NOTE]
 > 当前文档不仅适用于树莓派，香橙派等等其他设备同理
 
-?> 注意：目前收到很多反馈，都是CAN缓冲区设置太小，导致数据无法及时交换。从而导致Klipper报错。请将CAN缓冲区设置为1024
+> [!TIP]
+> 注意：目前收到很多反馈，都是CAN缓冲区设置太小，导致数据无法及时交换。从而导致Klipper报错。请将CAN缓冲区设置为1024
 
-?> **FLY-UTOC**介绍等内容在文档[CAN使用](/advanced/can.md)中
+> [!TIP]
+> **FLY-UTOC**介绍等内容在文档[CAN使用](/advanced/can.md)中
 
 ## 准备
 
@@ -14,7 +17,8 @@
 
 ## 系统配置
 
-?> 注意：使用SPI转CAN(MCP215)等设备时建议设置bitrate为250000
+> [!TIP]
+> 注意：使用SPI转CAN(MCP215)等设备时建议设置bitrate为250000
 
 1. 执行下面的命令安装当前文档所需软件包
 ```bash
@@ -31,18 +35,19 @@ iface can0 can static
 EOF
 ```
 
-?> 测试发现在部分设备中无法开机自动启用CAN，所以建议都执行下面操作
+> [!TIP]
+> 测试发现在部分设备中无法开机自动启用CAN，所以建议都执行下面操作
 
 1. 开机自动启用CAN
 ```bash
 sudo wget https://cdn.mellow.klipper.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
 ```
 
-```
+```bash
 sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
 ```
 
-```
+```bash
 sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 1024' /etc/rc.local
 ```
 
@@ -69,7 +74,8 @@ sudo can-enable -d can0 -b 500000 -t 1024
 
 ## 查看UUID
 
-?> 网页查看ID只适用于Gemini系列主板，且系统版本≥V2.9
+> [!TIP]
+> 网页查看ID只适用于Gemini系列主板，且系统版本≥V2.9
 
 * 执行下面的命令来查找所有已连接的CAN设备
 

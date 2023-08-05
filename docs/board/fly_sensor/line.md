@@ -2,7 +2,8 @@
 
 ## 1. FPC接线
 
-?>**Fly-Sensor自带FPC排线两条，正向一条反向**
+> [!TIP]
+> **Fly-Sensor自带FPC排线两条，正向一条反向**
 
 ![fpc](../../images/boards/fly_sensor/fpc.png)
 
@@ -19,7 +20,8 @@
 |        PWM        | ***橙色*** |
 | Servo signal port | ***绿色*** |
 
-?>**白色可以剪断**
+> [!TIP]
+> **白色可以剪断**
 
 ![link](../../images/boards/fly_sensor/line.png)
 
@@ -49,7 +51,8 @@
 
 ###  3.3 SB2040
 
-?>**SB2040**使用Servo signal port需要拆掉电容[SB2040-Pro](https://mellow.klipper.cn/#/board/fly_sb2040_pro/sb2040line)
+> [!TIP]
+> **SB2040**使用Servo signal port需要拆掉电容[SB2040-Pro](https://mellow.klipper.cn/#/board/fly_sb2040_pro/sb2040line)
 
 |       功能        |   GPIO    |
 | :---------------: | :--------- |

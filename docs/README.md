@@ -1,8 +1,10 @@
 # 欢迎
 
-?> The source language of the document is Chinese, and the entire site adopts Google Translate, which will be automatically translated according to the system language. You can also switch the language manually through the menu in the upper right corner.
+> [!WARNING]
+> The source language of the document is Chinese, and the entire site adopts Google Translate, which will be automatically translated according to the system language. You can also switch the language manually through the menu in the upper right corner.
 
-?> If you have any questions, please give me feedback in time
+> [!TIP]
+> If you have any questions, please give me feedback in time
 
 * 文档内容基于以下环境
 * 系统：FLY定制版Armbian

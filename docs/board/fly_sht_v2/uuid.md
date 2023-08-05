@@ -19,7 +19,8 @@ canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 
 出现``Found canbus_uuid=b7c79ec3f948``则查找到设备ID，其中``b7c79ec3f948``为设备UUID。
 
-?>如果找不到CAN ID，请检查：
+> [!TIP]
+> 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * SHT36 V2板上的120Ω终端电阻跳线帽是否插上
@@ -27,4 +28,5 @@ canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 * 您的镜像内核是否支持CAN
 * 固件编译是否正确
 
-?>已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
+> [!TIP]
+> 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）

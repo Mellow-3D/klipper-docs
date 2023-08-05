@@ -33,7 +33,8 @@
 
 ----
 
-?> 重要
+> [!TIP]
+> 重要
 
 * 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md "点击即可跳转")
 

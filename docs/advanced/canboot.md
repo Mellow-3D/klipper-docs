@@ -43,7 +43,8 @@ make
 
 #### **SB2040 & ERCF**
 
-?> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
+> [!TIP]
+> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
 
 ![sb2040](../images/adv/canboot/sb2040.png)
 
@@ -59,7 +60,8 @@ make
 
 #### **FLY-SHT36 v2**
 
-?> SHT36 v2出厂已刷好CanBoot，无需执行这一步！！！
+> [!TIP]
+> SHT36 v2出厂已刷好CanBoot，无需执行这一步！！！
 
 <!-- tabs:end -->
 
@@ -73,7 +75,8 @@ make
 
 #### **FLY-SHT**
 
-?> SHT板连接到电脑或者上位机之前必须安装下面图中的短接跳线帽，否则SHT板无法进入USB烧录模式
+> [!TIP]
+> SHT板连接到电脑或者上位机之前必须安装下面图中的短接跳线帽，否则SHT板无法进入USB烧录模式
 
 1. 进入SHT36,SHT42的USB烧录模式
 
@@ -107,11 +110,13 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.b
 
 7. 出现上图内容则烧录成功
 
-?> 注意：烧录成功后一定记得拔下来跳线帽
+> [!TIP]
+> 注意：烧录成功后一定记得拔下来跳线帽
 
 #### **SB2040 & ERCF**
 
-?> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot（在CanBoot目录下输入 `git pull` 即可拉取最新的CanBoot）
+> [!TIP]
+> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot（在CanBoot目录下输入 `git pull` 即可拉取最新的CanBoot）
 
 1. 查看是否连接到SB2040的BOOT烧录模式
 
@@ -148,7 +153,8 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.b
 
 #### **SHT36 v2**
 
-?> SHT36 v2出厂已刷好CanBoot，无需执行这一步！！！
+> [!TIP]
+> SHT36 v2出厂已刷好CanBoot，无需执行这一步！！！
 
 <!-- tabs:end -->
 
@@ -258,7 +264,8 @@ make
 
 3. 接好线后，建议整机断电重新上电开机一次。接着便可以使用CanBoot烧写固件。首先输入以下命令
 
-   ?> 通电后，此状态灯应该会以一定频率闪烁!!! 如果没有闪烁，请重新烧录CanBoot引导固件！！
+   > [!TIP]
+> 通电后，此状态灯应该会以一定频率闪烁!!! 如果没有闪烁，请重新烧录CanBoot引导固件！！
 
    <img src="../images/boards/fly_sb2040/statusled.png" alt="statusled" style="zoom:67%;" />
 
@@ -270,7 +277,8 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![uuid](../images/boards/fly_sht_v2/uuid.png)
 
-?>如果找不到CAN ID，请检查：
+> [!TIP]
+> 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * SB2040板上的120Ω跳线帽是否插上
@@ -290,7 +298,8 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 
 * 像上图中出现``CAN Flash Success``则表示烧录成功
 
-?> 如果烧录了多次的CanBoot还是找不到CanBoot的ID，可以使用如下方法烧写固件：
+> [!TIP]
+> 如果烧录了多次的CanBoot还是找不到CanBoot的ID，可以使用如下方法烧写固件：
 
 1. 查看是否连接到SB2040的BOOT烧录模式
 
@@ -331,7 +340,8 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 
 1. 首先编译Klipper固件
 
-?> 注意，在2022-10-18 **前** 购买的主控芯片为GD32F103；在2022-10-18 **后** 购买的主控芯片为APM32F072；
+> [!TIP]
+> 注意，在2022-10-18 **前** 购买的主控芯片为GD32F103；在2022-10-18 **后** 购买的主控芯片为APM32F072；
 
 * GD32F103版本配置如下图
 
@@ -363,7 +373,8 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![uuid](../images/boards/fly_sht_v2/uuid.png)
 
-?>如果找不到CAN ID，请检查：
+> [!TIP]
+> 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * SHT36 v2板上的120Ω跳线帽是否插上

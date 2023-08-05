@@ -12,7 +12,8 @@ RPFMEX的Klipper固件配置
 
 ### USB烧录模式
 
-?> RPFMEX板需要在通电前按住Clear1按键来进入烧录模式
+> [!TIP]
+> RPFMEX板需要在通电前按住Clear1按键来进入烧录模式
 
 
 ### 方式一：Windows系统下烧录
@@ -75,4 +76,5 @@ sudo make flash FLASH_DEVICE=1d50:614e
 
 1. 出现上图内容则烧录成功
 
-?> 注意：烧录成功后一定记得拔下来跳线帽
+> [!TIP]
+> 注意：烧录成功后一定记得拔下来跳线帽

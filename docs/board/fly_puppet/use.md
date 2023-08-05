@@ -29,7 +29,8 @@
 
 ### USB烧录模式
 
-?> PUPPET需要插入BOOT跳线帽来进入烧录模式
+> [!TIP]
+> PUPPET需要插入BOOT跳线帽来进入烧录模式
 
 * 请提前将拨码开关第二组拨至ON，打开状态
 
@@ -95,7 +96,8 @@
 * [FluiddPi 下载](https://github.com/fluidd-core/FluiddPi/releases/latest)
 * [FluiddPi 烧录教程](https://docs.fluidd.xyz/installation/fluiddpi)
 
-?> 烧录完成后请先不要启动系统，完成以下设置
+> [!TIP]
+> 烧录完成后请先不要启动系统，完成以下设置
 
 * 烧录好的SD卡在电脑中是一个boot磁盘
 

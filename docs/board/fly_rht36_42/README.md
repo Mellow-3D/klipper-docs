@@ -1,6 +1,7 @@
 # 配置信息
 
-?> FLY-RHT36与RHT42除了外形不同外，接口配置完全一致
+> [!TIP]
+> FLY-RHT36与RHT42除了外形不同外，接口配置完全一致
 
 * **全新的Klipper工具头板**
 
@@ -14,7 +15,8 @@
 
 ----
 
-?> 重要
+> [!TIP]
+> 重要
 
 * 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
 * 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)

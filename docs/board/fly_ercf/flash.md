@@ -1,6 +1,7 @@
 # 固件烧录
 
-?>ERCF自带**CANBOOT**无需在编译烧录**CANBOOT**
+> [!TIP]
+> ERCF自带**CANBOOT**无需在编译烧录**CANBOOT**
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -57,7 +58,8 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ## 使用USB烧录固件
 
-?>**使用usb烧录时会覆盖掉CanBoot**
+> [!TIP]
+> **使用usb烧录时会覆盖掉CanBoot**
 
 1. 查看是否连接到ERCF的BOOT烧录模式
 

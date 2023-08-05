@@ -1,10 +1,12 @@
 # 4. 固件编译和烧录
 
-?> 为测试，SB2040发货前会烧录CANBOOT固件，上电后所有引脚全部拉高，使用前请重新烧录
+> [!TIP]
+> 为测试，SB2040发货前会烧录CANBOOT固件，上电后所有引脚全部拉高，使用前请重新烧录
 
 ## 4.1 编译固件
 
-?>CanBoot固件默认500k
+> [!TIP]
+> CanBoot固件默认500k
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -36,7 +38,8 @@
 
 ## 4.2 烧录固件
 
-?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
 
 上位机配置CAN及UTOC使用请查看[上位机配置](/board/fly_sb2040/piconfig "点击即可跳转")
 

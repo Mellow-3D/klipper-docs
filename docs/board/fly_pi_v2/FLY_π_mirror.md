@@ -60,16 +60,19 @@
 
    FLY-M2WE提供了16G的eMMC和5G WiFi，能够提供更稳定的系统运行和更快的网络传输。（建议使用2.4GWiFi，虽然速度稍慢，但是距离远，连接也更稳定）
 
-?> FLY-M2WE只适用于FLY-π和FLY-Gemini v2，不要带电插拔模块，此模块不支持热插拔
+> [!TIP]
+> FLY-M2WE只适用于FLY-π和FLY-Gemini v2，不要带电插拔模块，此模块不支持热插拔
 
-?>  FLY-M2WE只适用于FLY-π和FLY-Gemini v2
+> [!TIP]
+>  FLY-M2WE只适用于FLY-π和FLY-Gemini v2
 
 **[FLY_M2WE eMMC购买地址](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.38.25636b45lpxmgF&id=685372879431 "点击即可跳转")**
 
    1. FLYOS v2.9.6开始已经完全支持M2WE
    2. WiFi驱动已经预装，直接插上并固定好即可
 
-   ?> 如果同时有SD卡和emmc，并且两个都有系统，会优先启动SD卡系统
+   > [!TIP]
+> 如果同时有SD卡和emmc，并且两个都有系统，会优先启动SD卡系统
 
    首先请安装好M2WE模块及天线，准备烧录系统。烧录镜像系统有两种方法，一种是将现有的SD卡系统迁移至eMMC模块，下面将对着两种使用方法做介绍。
 
@@ -102,7 +105,8 @@
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_4.png ":size=50%")
 
-?> 确保是在按键按下状态时将设备连接到电脑的
+> [!TIP]
+> 确保是在按键按下状态时将设备连接到电脑的
 
 ----
 

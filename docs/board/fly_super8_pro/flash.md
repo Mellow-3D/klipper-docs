@@ -4,7 +4,8 @@
 
 Super8 Pro的Klipper固件配置
 
-?> 早期的 Super8pro 使用的主控芯片为`H743`，不带`pro`字样，后期带`pro`字样的使用的是`H723`芯片。编译固件前请仔细检查主控型号，避免编译烧录错误的固件！！！
+> [!TIP]
+> 早期的 Super8pro 使用的主控芯片为`H743`，不带`pro`字样，后期带`pro`字样的使用的是`H723`芯片。编译固件前请仔细检查主控型号，避免编译烧录错误的固件！！！
 
 * H743
 
@@ -30,7 +31,8 @@ Super8 Pro的Klipper固件配置
 
 ### USB烧录
 
-?> Super8 Pro需要插入BT0/3.3V跳线帽来进入DFU模式，进行USB烧录
+> [!TIP]
+> Super8 Pro需要插入BT0/3.3V跳线帽来进入DFU模式，进行USB烧录
 
 ![usbflash](../../images/boards/fly_super8_pro/boot.png ":no-zooom")
 
@@ -85,4 +87,5 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 6. 出现上图内容则烧录成功
 
-?> 注意：烧录成功后一定记得拔下来跳线帽
+> [!TIP]
+> 注意：烧录成功后一定记得拔下来跳线帽

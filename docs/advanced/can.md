@@ -1,6 +1,7 @@
 # CAN使用
 
-?> 确保FLYOS系统版本≥2.9
+> [!TIP]
+> 确保FLYOS系统版本≥2.9
 
 ## 注意事项
 
@@ -26,7 +27,8 @@
 
 ## 连接到主板
 
-?> 如果您有fly-Gemini主板与工具板，建议将Gemini板载MCU使用USB连接，工具板使用CAN连接。
+> [!TIP]
+> 如果您有fly-Gemini主板与工具板，建议将Gemini板载MCU使用USB连接，工具板使用CAN连接。
 
 * `FLY-Super8_v1`,`FLY-Gemini_v1`,`FLY-CDY系列`,`FLY-E3系列`等无CAN功能的主板需要连接到**UTOC**的**CANBUS\***接口
 * 除上述外的其他FLY主板和有CAN功能的主板均可直接连接到**UTOC**的**CANBUS**接口
@@ -125,7 +127,8 @@
 
 ## 查看CAN UUID
 
-?> 以下文档适用于Gemini系列主板，树莓派相关文档在[树莓派CAN使用](/advanced/can_rpi.md)
+> [!TIP]
+> 以下文档适用于Gemini系列主板，树莓派相关文档在[树莓派CAN使用](/advanced/can_rpi.md)
 
 * 完成前面所有步骤后正常上电开机
 * 打开`http://ip:9999`或者[打开FLY-Tools](http://flygemini.lan:9999/)
@@ -135,7 +138,8 @@
 
 * 查找到ID后可以直接点击ID自动复制
 
-?> 如果没有查找到ID请仔细检查接线及固件配置
+> [!TIP]
+> 如果没有查找到ID请仔细检查接线及固件配置
 
 ## Klipper配置
 

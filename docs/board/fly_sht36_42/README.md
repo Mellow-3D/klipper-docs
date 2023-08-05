@@ -32,9 +32,11 @@ FLY SHT36/42是广州镁伦电子科技有限公司针对3D打印机挤出头设
 
 6. 风扇接口最大输出电流1A
 
-?> FLY-SHT36与SHT42除了外形不同外，接口配置完全一致
+> [!TIP]
+> FLY-SHT36与SHT42除了外形不同外，接口配置完全一致
 
-?> 重要
+> [!TIP]
+> 重要
 
 * 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
 * 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)
