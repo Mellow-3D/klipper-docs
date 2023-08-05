@@ -24,7 +24,8 @@ Super5-Pro的Klipper固件配置
 
 ### USB烧录
 
-?> Super5需要按下图所示，在**主板断电状态**下插入跳线帽来进入DFU模式，使用USB口进行线刷。
+> [!TIP]
+> Super5需要按下图所示，在**主板断电状态**下插入跳线帽来进入DFU模式，使用USB口进行线刷。
 
 ![dfu](../../images/boards/fly_super5/dfu.png)
 
@@ -56,7 +57,8 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 6. 出现上图内容则烧录成功
 
-?> 注意：烧录成功后一定记得拔下来跳线帽
+> [!TIP]
+> 注意：烧录成功后一定记得拔下来跳线帽
 
 ### 方式二：电脑USB烧录
 

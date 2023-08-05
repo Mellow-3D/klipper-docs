@@ -29,7 +29,8 @@
 
 ----
 
-?> 重要
+> [!TIP]
+> 重要
 
 * 非FLY上位机请按 [上位机配置]( "点击即可跳转") 文档配置好CAN
 * 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md "点击即可跳转")

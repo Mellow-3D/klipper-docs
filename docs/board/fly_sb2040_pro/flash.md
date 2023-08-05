@@ -1,10 +1,12 @@
 # 4. 固件编译和烧录
 
-?> 为测试，SB2040-Pro发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
+> [!TIP]
+> 为测试，SB2040-Pro发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
 
 ## 4.1 编译固件
 
-?>CanBoot固件默认1M
+> [!TIP]
+> CanBoot固件默认1M
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -25,7 +27,8 @@
 
    配置如下图
 
-   ?> 由于SB2040-Pro预装了CanBoot，支持CAN烧录，因此可以先尝试使用CanBoot烧录固件。如果不能使用CanBoot烧录可以使用USB来烧录！！
+   > [!TIP]
+> 由于SB2040-Pro预装了CanBoot，支持CAN烧录，因此可以先尝试使用CanBoot烧录固件。如果不能使用CanBoot烧录可以使用USB来烧录！！
 
     <!-- tabs:start -->
 
@@ -60,7 +63,8 @@
 
 ## 4.2 查找CAN uuid
 
-?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
 
 上位机配置CAN及UTOC使用请查看[上位机配置](/board/fly_sb2040/piconfig "点击即可跳转")
 
@@ -90,7 +94,8 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
 
-?>如果找不到CAN ID，请检查：
+> [!TIP]
+> 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * SB2040-PRO板上的120Ω跳线帽是否插上

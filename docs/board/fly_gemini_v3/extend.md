@@ -10,5 +10,6 @@
 
 ## 2.2 使用说明
 
-?>请查看：[Fly-RPFMEX使用说明](/board/fly_rpfmex/ "点击即可跳转")
+> [!TIP]
+> 请查看：[Fly-RPFMEX使用说明](/board/fly_rpfmex/ "点击即可跳转")
 

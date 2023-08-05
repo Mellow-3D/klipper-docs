@@ -7,9 +7,11 @@
 * 外设：USB\*4, GPIO-40Pin(兼容RPI), ETH\*1, Micro-HDMI\*1, DSI\*1, CSI\*1
 * 供电：为RPI供电提供5.1v 3A，保证其稳定运行，不会出现警告
 
-?> Puppet的DSI和CSI端口与树莓派的相反，请使用同向FPC线材连接
+> [!TIP]
+> Puppet的DSI和CSI端口与树莓派的相反，请使用同向FPC线材连接
 
-?> FAN2,FAN3,RGB,SERVO使用RPI引脚，只有配合RPI才能使用
+> [!TIP]
+> FAN2,FAN3,RGB,SERVO使用RPI引脚，只有配合RPI才能使用
 
 ## FLY-PUPPET
 

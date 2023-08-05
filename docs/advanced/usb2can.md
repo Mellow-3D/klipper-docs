@@ -1,6 +1,7 @@
 # Klipper的USB桥接CAN
 
-?> 此教程使用Fly-Super8做演示
+> [!TIP]
+> 此教程使用Fly-Super8做演示
 
 ## 为Super8编译USB桥接CAN固件
 

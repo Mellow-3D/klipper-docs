@@ -13,7 +13,8 @@
 
 * 如果发布全量升级固件则需要使用USB将Halo连接到电脑来升级
 
-?> 全量升级您的原有设置将不会保留，所有设置都会恢复默认
+> [!TIP]
+> 全量升级您的原有设置将不会保留，所有设置都会恢复默认
 
 1. 下载并解压USB烧录工具[flash_download_tool_3.9.4.zip(点击下载)](https://cdn.mellow.klipper.cn/Utils/flash_download_tool_3.9.4.zip)
 2. 下载固件[Halo固件下载](/board/fly_halo/firmware)
@@ -29,7 +30,8 @@
     <img src="../../images/boards/fly_halo/flash-2.png" style="width:50%;" />
 </div>
 
-?> 上图2中的``绿色框选区域``必须保证和图片中一致，不可自行修改
+> [!TIP]
+> 上图2中的``绿色框选区域``必须保证和图片中一致，不可自行修改
 
 8. 将Halo通过USB-Typec数据线连接到电脑
 9. 点击上图2中的``蓝色区域1``按钮选择你下载的固件

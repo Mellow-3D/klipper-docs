@@ -29,7 +29,8 @@ make menuconfig
 
 ## 2. 编译CANBOOT固件
 
-?> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
+> [!TIP]
+> 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
 
 ![canboot](../../images/boards/fly_sht36_pro/canboot.png)
 
@@ -47,9 +48,11 @@ make menuconfig
 
 ## 4 查找uuid
 
-?> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-SHT36 Pro与上位机通过CAN总线连接
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-SHT36 Pro与上位机通过CAN总线连接
 
-?> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
+> [!TIP]
+> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
 > 由于FLY-SHT36 Pro预装了CanBoot，支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
 
@@ -73,7 +76,8 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
 
-?>如果找不到CAN ID，请检查：
+> [!TIP]
+> 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * FLY-SHT36 Pro板上的120Ω跳线帽是否插上

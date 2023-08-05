@@ -1,8 +1,10 @@
 # 11. eMMC WiFi模块使用
 
-?> FLY-M2WE只适用于FLY-π和FLY-Gemini v2
+> [!TIP]
+> FLY-M2WE只适用于FLY-π和FLY-Gemini v2
 
-?> 不要带电插拔模块，此模块不支持热插拔
+> [!TIP]
+> 不要带电插拔模块，此模块不支持热插拔
 
 ## 11.1 产品详情
 

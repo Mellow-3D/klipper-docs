@@ -7,11 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/theme-simple.css">
+
+    <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+    <link rel="stylesheet" media="(prefers-color-scheme: light)"
+        href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500|Source+Sans+Pro:400,400i,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/translate-google.css">
+    <link rel="stylesheet" href="css/sidebar.min.css" />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
 </head>
 
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <body style="position: relative !important; min-height: 100% !important; top: 0px !important;">
 
@@ -62,19 +73,19 @@
 
     <script>
         window.$docsify = {
-
-            name: 'Fly Klipper Docs',
+            name: '<img src="logo.png" data-origin="logo.png" alt="Style Dictionary logo" class="sidebar-logo">Fly Klipper Docs',
             repo: 'Mellow-3D/klipper-docs',
             el: '#app',
             loadSidebar: true,
-            subMaxLevel: 5,
+            subMaxLevel: 6,
+            sidebarDisplayLevel: 1,
             notFoundPage: true,
             coverpage: true,
             auto2top: true,
             executeScript: true,
             loadNavbar: false,
+            autoHeader: true,
             mergeNavbar: true,
-
             nameLink: {
                 '/': '#/',
             },
@@ -106,6 +117,9 @@
                     id: ""
                 },
             },
+            'flexible-alerts': {
+                style: 'flat'
+            },
             // 在每个页面加载完成后执行的回调函数
             doneEach: function () {
                 // 创建一个谷歌翻译的脚本标签
@@ -118,9 +132,12 @@
             }
         }
     </script>
+
     <script src="js/docsify.min.js"></script>
     <script src="js/docsify-themeable.min.js"></script>
     <script src="js/index.min.js"></script>
+    <script src="js/flexible-alerts.js"></script>
+
     <script src="js/emoji.min.js"></script>
     <script src="js/zoom-image.min.js"></script>
     <script src="js/search.min.js"></script>
@@ -134,6 +151,7 @@
     <script src="js/docsify-pagination.min.js"></script>
     <script src="js/docsify-select.js"></script>
     <script src="js/beian.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
     <script>
         function init() {

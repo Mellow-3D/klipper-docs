@@ -14,19 +14,24 @@ RRF最新主板固件下载[RRF Config Tool (teamgloomy.github.io)](https://team
 
 ## 4.2 CAN接线
 
-?> SUPER8不需要其他设备即可连接
+> [!TIP]
+> SUPER8不需要其他设备即可连接
 
-?> 连接到主板后LED会降低闪烁速度
+> [!TIP]
+> 连接到主板后LED会降低闪烁速度
 
-?>**RRF接线，接线如下图所示**
+> [!TIP]
+> **RRF接线，接线如下图所示**
 
 ![canbridge](../../images/boards/fly_super8/canbridge.png)
 
-?>**非Super8接线方法**
+> [!TIP]
+> **非Super8接线方法**
 
 ![canbridge](../../images/boards/fly_rrf36/15.jpg)
 
-?> F4主控需要转接芯片才可使用RRF36
+> [!TIP]
+> F4主控需要转接芯片才可使用RRF36
 
 ![canfd](../../images/boards/fly_rrf36/15.jpg)
 

@@ -30,7 +30,8 @@ FLY SB2040-Pro是广州镁伦电子科技有限公司针对VORON Stealthburber�
 
 ----
 
-?> 重要
+> [!TIP]
+> 重要
 
 * 非FLY上位机请按 [上位机配置](/board/fly_sht36_42/piconfig "点击即可跳转") 文档配置好上位机
 * 使用CanBoot请查看 [CanBoot使用](/advanced/canboot.md "点击即可跳转")

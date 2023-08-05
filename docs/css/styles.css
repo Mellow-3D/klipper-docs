@@ -1,0 +1,160 @@
+:root {
+  --theme-color: #003dff;
+  --theme-color-light: #1449f9;
+  --theme-color-dark: #0b42f7;
+
+  --text-color-base: #23b6f0;
+  --text-color-secondary: #232388;
+  --text-color-tertiary: #32328f;
+
+  /* --cover-background-mask-color: #fff; */
+  --cover-background-color: #05289cb5;
+  --cover-background-mask-opacity: 0.1;
+
+  --base-font-size: 16px;
+  --base-font-weight: normal;
+}
+
+::selection {
+  background: var(--theme-color-light);
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Arial,
+    sans-serif;
+  color: var(--text-color-base);
+}
+
+.sidebar-logo {
+  display: block;
+  width: 8rem;
+  vertical-align: bottom;
+  line-height: 1.6;
+  height: 2.5rem;
+  margin: 0 auto;
+}
+
+a {
+  transition: all 0.3s linear;
+}
+
+.markdown-section a {
+  text-decoration: none;
+  border-bottom: 0.1rem solid var(--theme-color-light);
+  transition: all 0.3s ease;
+  color: #df2a2a;
+}
+
+.markdown-section a:hover {
+  border-color: var(--theme-color);
+  color: var(--theme-color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgb(255, 255, 255);
+  }
+
+  .markdown-section .warn {
+    border-color: #fffb00;
+    color: #fffb00;
+    background: #3e3e29;
+  }
+  .markdown-section blockquote {
+    border-color: #20ff1c;
+    color: #00fe2a;
+    background: #284a26;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: black;
+  }
+
+  .markdown-section .warn {
+    border-color: #fffb00;
+    color: #666402;
+    background: #ffff005c;
+  }
+  .markdown-section blockquote {
+    border-color: #20ff1c;
+    color: #026e00;
+    background: #6fd1688a;
+  }
+}
+
+.cover-main img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+section.cover p {
+  line-height: inherit;
+}
+
+section.cover .cover-main a {
+  font-weight: 600;
+}
+
+section.cover .cover-main a::before {
+  display: none;
+}
+
+section.cover .cover-main blockquote {
+  font-style: italic;
+  color: #868c91;
+}
+
+section.cover.show div.cover-main > p a {
+  border-style: solid;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.05rem;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem 1rem;
+  padding: 0.75em 2rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  border-width: 0.2rem;
+  color: #00fe2a;
+  border-color: #003dff;
+}
+section.cover.show div.cover-main > p a:hover {
+  color: #00fe2a80;
+  border-color: #003cff91;
+  opacity: 1;
+}
+
+section.cover.show div.cover-main > p a:last-child {
+  background-color: #003dff;
+  border-color: #003dff;
+  color: #fff;
+}
+section.cover.show div.cover-main > p a:last-child:hover {
+  background-color: #003cffac;
+  border-color: #003cff98;
+  color: #fff;
+  opacity: 1;
+}
+
+.sidebar-nav ul {
+  line-height: 1em;
+}
+
+.alert p strong {
+  color: #00aade;
+}
+
+.wy-table-responsive {
+  margin-bottom: 24px;
+  max-width: 100%;
+  overflow: auto;
+}
+.docutils {
+  border: 1px solid #e1e4e5;
+}

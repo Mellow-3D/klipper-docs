@@ -26,7 +26,8 @@ Mellow Fly Super8-Pro是广州镁伦电子科技有限公司Fly3D主板研发团
 
 ----
 
-?> 重要
+> [!TIP]
+> 重要
 
 * 非FLY上位机请按 [上位机配置](/board/fly_sht_v2/piconfig "点击即可跳转") 文档配置好CAN
 * 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md)

@@ -26,7 +26,8 @@
 
 ![usb-flash](../../../images/boards/fly_pi/usb_flash_4.png ":size=50%")
 
-?> 确保是在按键按下状态时将设备连接到电脑的
+> [!TIP]
+> 确保是在按键按下状态时将设备连接到电脑的
 
 ![usb-flash](../../../images/boards/fly_pi/usb_flash_5.png ":size=50%")
 

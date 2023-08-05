@@ -1,8 +1,10 @@
 # 2. eMMC WiFi模块烧录
 
-?> FLY-M2WE只适用于FLY-π，FLY-Gemini v2，FLY-Gemini v3
+> [!TIP]
+> FLY-M2WE只适用于FLY-π，FLY-Gemini v2，FLY-Gemini v3
 
-?> 不要带电插拔模块，此模块不支持热插拔
+> [!TIP]
+> 不要带电插拔模块，此模块不支持热插拔
 
 ## 2.1 产品详情
 
@@ -14,11 +16,14 @@
 
    FLY-M2WE提供了16G的eMMC和5G WiFi，能够提供更稳定的系统运行和更快的网络传输。（建议使用2.4GWiFi，虽然速度稍慢，但是距离远，连接也更稳定）
 
-?> FLY-M2WE只适用于FLY-π和FLY-Gemini v2,FLY-Gemini v3 不要带电插拔模块，此模块不支持热插拔
+> [!TIP]
+> FLY-M2WE只适用于FLY-π和FLY-Gemini v2,FLY-Gemini v3 不要带电插拔模块，此模块不支持热插拔
 
-?>  FLY-M2WE只适用于FLY-π和FLY-Gemini v2,FLY-Gemini v3
+> [!TIP]
+>  FLY-M2WE只适用于FLY-π和FLY-Gemini v2,FLY-Gemini v3
 
-?> **使用SD卡烧录给M2WE镜像需要提前把镜像烧录到SD卡中**
+> [!TIP]
+> **使用SD卡烧录给M2WE镜像需要提前把镜像烧录到SD卡中**
 
 **[FLY_M2WE eMMC购买地址](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.38.25636b45lpxmgF&id=685372879431 "点击即可跳转")**
 
@@ -27,7 +32,8 @@
 
 
 
-?> 如果同时有SD卡和emmc，并且两个都有系统，会优先启动SD卡系统
+> [!TIP]
+> 如果同时有SD卡和emmc，并且两个都有系统，会优先启动SD卡系统
 
    首先请安装好M2WE模块及天线，准备烧录系统。烧录镜像系统有两种方法，一种是将现有的SD卡系统迁移至eMMC模块，下面将对着两种使用方法做介绍。
 

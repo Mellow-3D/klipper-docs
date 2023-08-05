@@ -1,6 +1,6 @@
-![logo](/logo.svg)
+![logo](/logo.png)
  
-# Fly Klipper Docs <small>v0.2</small>
+# Fly Klipper Docs <small>v0.4</small>
  
 > Fly 文档
  
@@ -10,5 +10,9 @@
 - 进阶教程
 - 基础配置
 
-[Github](https://github.com/kluoyun/klipper-docs/)
-[开始](README)
+[Github](https://github.com/Mellow-3D/klipper-docs)
+[Discord](https://discord.gg/qMvp24jWNw)
+
+[开始3D打印之旅](README.md)
+
+![color](#D9F8F5)
