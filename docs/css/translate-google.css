@@ -1,72 +1,133 @@
 @import "https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css";
 
 body {
-    position: fixed;
-    top: 0px;
+  position: fixed;
+  top: 0px;
+}
+body {
+  top: 0px !important;
 }
 
 #google_translate_element {
-    overflow: hidden;
-    border-width: 1px;
-    border-radius: 0.25rem;
-    z-index: 9999;
-    position: fixed !important;
-    right: 0px; top: 0px;
+  overflow: hidden;
+  border-width: 0px;
+  border-radius: 0.25rem;
+  z-index: 9999;
+  position: fixed !important;
+  right: 100px;
+  top: 0px;
+}
+
+#google_translate_element .goog-te-gadget span {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-width: 0px;
+  pointer-events: none;
+}
+
+#google_translate_element .goog-te-gadget a {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-width: 0px;
+  pointer-events: none;
+}
+
+#goog-gt-tt {
+  display: none !important;
+  top: 0px !important;
+  width: 0px;
+  height: 0px;
+  border-width: 0px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#goog-gt-vt {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-width: 0px;
+  visibility: hidden;
+  pointer-events: none;
+}
+.goog-tooltip skiptranslate {
+  display: none !important;
+  top: 0px !important;
+}
+.activity-root {
+  display: hide !important;
+}
+.status-message {
+  display: hide !important;
+}
+.started-activity-container {
+  display: hide !important;
+}
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+iframe {
+  display: none;
+  width: 0px;
+  height: 0px;
+  border-width: 0px;
 }
 
 .skiptranslate {
-    display:none;
+  display: none;
 }
 
-.VIpgJd-ZVi9od-l4eHX-hSRGPd {
-    display:none;
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf {
+  display: none;
 }
 
 .goog-te-gadget {
-    font-size: 0 !important;
-    display: inline-block;
+  font-size: 0 !important;
+  display: inline-block;
 }
 
 .nav.app-nav li ul {
-    min-width: 130px;
+  min-width: 130px;
 }
 
 .goog-te-combo {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    font-size: 0.75rem !important;
-    line-height: 1rem !important;
-    outline: 2px solid transparent !important;
-    outline-offset: 2px !important;
-    background-image: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  background-image: none !important;
 
-    border-color: #888 transparent transparent transparent;
-    border-style: solid;
-    border-width: 5px 4px 0 4px;
-    z-index: 999;
-    background-color: #ffffff;
-    
-    filter: none !important;
-    border: 0.5px solid #e5e5e5;
-    outline: none;
-    height: 25px !important;
-    line-height: 25px;
+  border-color: #888 transparent transparent transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  z-index: 999;
+  background-color: #ffffff;
+
+  filter: none !important;
+  border: 0.5px solid #e5e5e5;
+  outline: none;
+  height: 25px !important;
+  line-height: 25px;
 }
 .goog-logo-link {
-    display: none !important;
+  display: none !important;
 }
 .goog-te-banner-frame {
-    display: none !important;
-    position: fixed !important;
+  display: none !important;
+  position: fixed !important;
 }
 
 .goog-tooltip {
-    display: none !important;
+  display: none !important;
 }
-.goog-text-highlight{
-    background-color: transparent!important;
-    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0)!important;
-    -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0)!important;
-    box-shadow: 0 0px 0px rgba(0, 0, 0, 0)!important;
+.goog-text-highlight {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
+  -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0) !important;
 }
-
