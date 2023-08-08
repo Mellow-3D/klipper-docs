@@ -47,7 +47,7 @@
 
 下图为普通热敏和**PT1000**的接线方法。
 
-<img src="../../images/boards/fly_sht36_pro/thermistor.png" alt="thermistor" style="zoom:80%;" />
+![thermistor](../../images/boards/fly_sht36_pro/thermistor.png)
 
 下图为**PT100**的接线方法。默认两线PT100，只需连接到从左至右第2、3个引脚即可。
 

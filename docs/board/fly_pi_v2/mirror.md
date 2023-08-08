@@ -1,4 +1,4 @@
-# 2. FLY π 的镜像烧录
+# 2. 镜像烧录
 
 ## 2.1 烧录前的准备
 
@@ -56,15 +56,12 @@
 
    7. 至此已经完成FLY镜像的写入，但是请勿拔出内存卡，还需要修改boot盘中的FLY_config文件，具体修改方法请查看：[FLY_Config](/board/fly_pi/FLY_π_description2 "点击即可跳转")
 
-### 2.2.2  FLY_M2WE(eMMC)镜像烧录
+### 2.2.2  M2WE(eMMC)镜像烧录
 
    FLY-M2WE提供了16G的eMMC和5G WiFi，能够提供更稳定的系统运行和更快的网络传输。（建议使用2.4GWiFi，虽然速度稍慢，但是距离远，连接也更稳定）
 
 > [!TIP]
-> FLY-M2WE只适用于FLY-π和FLY-Gemini v2，不要带电插拔模块，此模块不支持热插拔
-
-> [!TIP]
->  FLY-M2WE只适用于FLY-π和FLY-Gemini v2
+> FLY-M2WE只适用于FLY-π和FLY-Gemini v2/v3，不要带电插拔模块，此模块不支持热插拔
 
 **[FLY_M2WE eMMC购买地址](https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-23066022675.38.25636b45lpxmgF&id=685372879431 "点击即可跳转")**
 
@@ -97,11 +94,9 @@
 
 ----
 
-![usb-flash](../../images/boards/fly_pi/usb_flash_2.png ":size=50%")
+![boot](../../images/boards/fly_pi_v2/boot.jpg)
 
-![usb-flash](../../images/boards/fly_pi/usb_flash_3.png ":size=42%")
-
-4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到Gemini或Pi的下图中的USB接口
+4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到FLY-π v2的下图中的USB接口
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_4.png ":size=50%")
 

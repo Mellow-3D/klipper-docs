@@ -2,6 +2,12 @@
 
 ## 2.1 接线图
 
+
+
+> [!TIP]
+>
+> SHT36加速度不能使用版本的引脚分布和 sht36 Pro的引脚分布是一样的，因此本教程使用的图片均来自SHT36 Pro
+
 ![PIN](../../images/boards/fly_rrf/interface.png)
 
 ## 2.2 终端电阻配置
@@ -44,7 +50,7 @@
 
 下图为普通热敏和**PT1000**的接线方法。
 
-<img src="../../images/boards/fly_sht36_pro/thermistor.png" alt="thermistor" style="zoom:80%;" />
+![thermistor](../../images/boards/fly_sht36_pro/thermistor.png)
 
 下图为**PT100**的接线方法。默认两线PT100，只需连接到从左至右第2、3个引脚即可。
 

@@ -130,7 +130,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PB10                        # SPI 片选Pin脚定义
-#spi_bus: spi3                       # SPI 通讯总线定义
+#spi_bus: spi1                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -166,7 +166,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PE10                        # SPI 片选Pin脚定义
-#spi_bus: spi3                       # SPI 通讯总线定义
+#spi_bus: spi1                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
