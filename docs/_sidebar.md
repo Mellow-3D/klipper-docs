@@ -43,7 +43,8 @@
     - [FLY-SHT36-Pro](/board/fly_sht36_pro/README.md)
     - [FLY-SHT36-V2](/board/fly_sht_v2/README.md)
     - [FLY-SHT36/42](/board/fly_sht36_42/README.md)
-
+    - [FLY-SHT36-加速度无法使用版](/board/fly_shtadxl/README.md)
+    
   - SB2040 系列
     * [FLY-SB2040-Pro](/board/fly_sb2040_pro/README.md)
     * [FLY-SB2040-V1&V2](/board/fly_sb2040/README.md)

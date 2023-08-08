@@ -32,11 +32,11 @@ make menuconfig
 > [!TIP]
 > 如果您的CanBoot选项中没有RP2040请拉取最新的CanBoot
 
-![canboot](../../images/boards/fly_sht36_pro/canboot.png)
+![canboot](../../images/boards/fly_rrf/canboot.png)
 
 ## 3. 使用Type-C烧录固件
 
-![rst](../../images/boards/fly_sht36_pro/rst.png)
+![rst](../../images/boards/fly_rrf/rst.png)
 
 **短接跳线插上type-c到电脑会弹出RPI-RP2**
 

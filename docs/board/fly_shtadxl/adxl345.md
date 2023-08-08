@@ -1,19 +1,21 @@
 # 9. 加速度计的使用
 
+?>**klipper未支持LIS3DH无法使用加速度计**
+
 ## 9.1 配置
 
 配置如下：
 
 ```
 #####################################################################
-#                       adxl345加速度计配置（需要时启用即可）
+#                       LIS3DH加速度计配置（需要时启用即可）
 #####################################################################
-## 此版本用不了ADXL345加速度计
+## 此版本用不了LIS3DH加速度计
 [adxl345]
-cs_pin: RRF36:gpio9
-spi_software_sclk_pin: RRF36:gpio10
-spi_software_mosi_pin: RRF36:gpio11
-spi_software_miso_pin: RRF36:gpio12
+cs_pin: SHT36:gpio9
+spi_software_sclk_pin: SHT36:gpio10
+spi_software_mosi_pin: SHT36:gpio11
+spi_software_miso_pin: SHT36:gpio12
 #--------------------------------------------------------------------
 [resonance_tester]
 accel_chip: adxl345         # 加速度芯片型号

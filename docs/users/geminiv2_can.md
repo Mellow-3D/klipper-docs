@@ -31,6 +31,9 @@
 </table>
 </div>
 
+
+?>原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程](https://blog.csdn.net/KeyBordkiller/article/details/124524274)
+
 ## 1.物品准备
 > 本文中使用的是**SHT42** 
 
@@ -77,46 +80,42 @@
     
     
      如图：
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/a66fa3ec5fce4d69999eb269092e1438.png"/>
-    </div>
+    
+    ![5557](../images/users/geminiv2_can/5557.png) 
+    
     
     > :warning: <font style="background:yellow" color=red>5557 端子 一定要压好，不要让vcc虚连 </font>
     
     * VCC 和 GND，CAN H 和 CAN L 分别对应好位置
     
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/bf80bb107d0b474fa8b4a3551e780657.png"/>
-    </div>
+    ![can1](../images/users/geminiv2_can/can1.png)
     
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/0c67a35dc9fd4e12ad931c6529dc3af9.png"/>
-    </div>
+    ![can2](../images/users/geminiv2_can/utoc.png)
+    
     
     * 接线端子的实际效果：
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/be73b5077bc7407ca321c97d2b4e232e.png"/>
-    </div>
+    
+    ![link](../images/users/geminiv2_can/link.png)
+    
     
     * 连线的实际效果：
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/50b823c23c1c43c0adab91c9f07b6ed5.png"/>
-    </div>
+    
+      ![link1](../images/users/geminiv2_can/link1.png)
+    
     
     > :warning: <font style="background:yellow" color=red>线序一定不要接错</font>
     
   * ### CAN的VCC取电
     * 连接CAN工具头需要有VCC接入，这里以**UTOC** 取电为例
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/e29a075d786c424fac87265cb4b636dc.png"/>
-    </div>
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/4bb932fc0b6e44d58909c5ca7343d4ad.png"/>
-    </div>
+    
+    ![utoc1](../images/users/geminiv2_can/utoc1.png)
+    
+    ![utoc2](../images/users/geminiv2_can/utoc2.png)
+    
   * ###  **UTOC** 与 **Gemini** 连接
-  <div align=center>
-  <img src="https://img-blog.csdnimg.cn/bacee07b5ca44e1b9b7c041ef4647ff7.png"/>
-  </div>
+
+![utoc3](../images/users/geminiv2_can/utoc3.png)
+
 
 **<center><u><font size=6>至此接线部分完成</font></u></center>**
 
@@ -128,32 +127,25 @@
 
      下载链接：v2.9 [2022-04-12](https://cdn.mellow.klipper.cn/IMG/Build/FLY-v2.9_Flygemini_bullseye_current_5.10.85.img.xz)
 
-   <div align=center>
-   <img src="https://img-blog.csdnimg.cn/f19fe836a4dc413196991c6aec5cb9f4.png"/>
-   </div>
+![img](../images/users/geminiv2_can/img.png)
+
    * 下载后的镜像文件：
-   <div align=center>
-   <img src="https://img-blog.csdnimg.cn/fc1a53c255a0468d8a3712f92852959d.png"/>
-   </div>
+
+![img1](../images/users/geminiv2_can/img1.png)
+
    * 通过工具balenaEtcher给sd卡刷入镜像：
 
    下载链接：[balenaEtcher - Flash OS images to SD cards & USB drives](https://www.balena.io/etcher/)
-   <div align=center>
-   <img src="https://img-blog.csdnimg.cn/29f64ff3bf3c4fe6a959eb13ffccb22b.png"/>
-   </div>
 
-   <div align=center>
-   <img src="https://img-blog.csdnimg.cn/84cc3570434540119f5825d1749de59c.png"/>
-   </div>
+![0](../../docs/images/boards/fly_pi/etcher.png)
 
-   <div align=center>
-   <img src="https://img-blog.csdnimg.cn/842e611b14934f18b5baeac5e1d76c28.png"/>
-   </div>
+![1](../../docs/images/boards/fly_pi/etcher2.png)
+
 
    * 等待5分钟后刷好后拔下，并直接插入图中所示的linux的SD卡接口。
-   <div align=center>
-   <img src="https://img-blog.csdnimg.cn/1e34e0ec0c87485699b10f373c1c7530.png"/>
-   </div>
+
+![3](../images/users/geminiv2_can/gemini2.png)
+
 
    > Windows 提示的格式化不要管，直接拔出就行。
 
@@ -161,9 +153,9 @@
 
   *  ### 通电测试
      * 图中位置插入SD卡
-     <div align=center>
-     <img src="https://img-blog.csdnimg.cn/1e34e0ec0c87485699b10f373c1c7530.png"/  >
-     </div>
+     
+     ![3](../images/users/geminiv2_can/gemini2.png)
+     
      * 上电测试：注意这里采用的是USB（ CH340 ）连接的方式。
      
      * 因为刚烧录好的系统，没有配置WiFi
@@ -180,59 +172,57 @@
 
     具体步骤：
 
-    * Windows 设备管理器：记住COM号 如图：COM3
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/6a8190f5dbfc48149868bfcfafc0e5fa.png"/>
-    </div>
+    * Windows 设备管理器：记住COM号 如图：COM12
+    
+    ![PUTTY](../images/system/ssh2.png)
+    
     
     * 打开MobaXterm 添加新的session，选择serial
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/6daed671aa524b08ab165177c84292cd.png"/>
-    </div>
+    
+    ![MobaXterm](../images/system/MobaXterm.png)
+    
 
     * 配置波特率<font color=red>115200</font >，连接端口号为刚在<font color=red>设备管  理器</font >记住的端口
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/28a099b97bf443d5935e07cba2719633.png"/>
-    </div>
-
-    <div align=center>
-    <img src="https://img-blog.csdnimg.cn/4181764455af4d51b5f44e4ea765318b.png"/>
-    </div>
-
-    * 这个效果就ok了。
-
-    * 配置WiFi
-      * 在MobaXterm终端输入
-       ```bash
-       nmtui
-       ```
-      * 激活一个连接
-       <div align=center>
-       <img src="https://img-blog.csdnimg.cn/a08b12abd9e64119a0d2981478fc645f.png"/>
-       </div>
     
-      * 输入密码连接，带星号表示连接成功，退出
-       <div align=center>
-       <img src="https://img-blog.csdnimg.cn/217734f169ca4f46b2080a0850b84a98.png"/>
-       </div>
-
-       <div align=center>
-       <img src="https://img-blog.csdnimg.cn/f6d05e01775f43ebacb1c811d65a563f.png"/>
-       </div>
-
-    > 配置好WiFi后建议通过ssh ip连接获得更好的体验
-
-      MobaXterm 可以更简单的设置好字体，如图：
-
-      由于MobaXterm的特殊性，需要单独为每一个session设置字体和配置相关的设置
+    ![MobaXterm](../images/system/MobaXterm1.png)
     
-      <div align=center>
-      <img src="https://img-blog.csdnimg.cn/6d37c4ec82eb46b486dcd84833235d4a.png"/  >
-      </div>
-      <div align=center>
-      <img src="https://img-blog.csdnimg.cn/ab7c2a9dad564f59b9330f843e9c6ba8.png"/  >
-      </div>
-    
+
+![MobaXterm](../images/system/MobaXterm3.png)这个效果就ok了。
+
+* 这个效果就ok了。
+
+* 配置WiFi
+  * 在MobaXterm终端输入
+   ```bash
+   nmtui
+   ```
+  * 激活一个连接
+   <div align=center>
+   <img src="https://img-blog.csdnimg.cn/a08b12abd9e64119a0d2981478fc645f.png"/>
+   </div>
+
+  * 输入密码连接，带星号表示连接成功，退出
+   <div align=center>
+   <img src="https://img-blog.csdnimg.cn/217734f169ca4f46b2080a0850b84a98.png"/>
+   </div>
+
+   <div align=center>
+   <img src="https://img-blog.csdnimg.cn/f6d05e01775f43ebacb1c811d65a563f.png"/>
+   </div>
+
+> 配置好WiFi后建议通过ssh ip连接获得更好的体验
+
+  MobaXterm 可以更简单的设置好字体，如图：
+
+  由于MobaXterm的特殊性，需要单独为每一个session设置字体和配置相关的设置
+
+  <div align=center>
+  <img src="https://img-blog.csdnimg.cn/6d37c4ec82eb46b486dcd84833235d4a.png"/  >
+  </div>
+  <div align=center>
+  <img src="https://img-blog.csdnimg.cn/ab7c2a9dad564f59b9330f843e9c6ba8.png"/  >
+  </div>
+
   *  ### 下位机和CAN的配置
 
       * #### 下位机固件制作+刷写
@@ -299,7 +289,7 @@
 
         * 右键klipper.bin 文件 Download 到电脑上，建议对这个固件所在文件夹命名为Gemini_STM32fF405，用于区分和SHT42工具头不一样的固件。
 
-        * 准备好一个内存卡，将其格式化为FAT32 
+        * 准备好一个内存卡，将其格式化为FAT32 
 
         * 推荐使用DiskGenius的格式化功能(Windows下不能直接格式化为FAT32的情况下)
 
@@ -354,7 +344,7 @@
           <img src="https://img-blog.csdnimg.cn/bc58d7f5f1564bd4af6e31522f6e8860.png"/>
           </div>
 
-        > 在没有接入任何一种热敏电阻的情况下，这就是正常状态，继续配置 **SHT42**的固件。
+        > 在没有接入任何一种热敏电阻的情况下，这就是正常状态，继续配置 **SHT42**的固件。
 
       * #### **SHT42**固件制作+刷写
         *  制作**SHT42**的klipper固件
@@ -428,7 +418,7 @@
           <img src="https://img-blog.csdnimg.cn/69b4f2e6969743fa947b33d99f9d21a4.png"/>
           </div>
 
-          * usb刷写方式，打开刚刚在**Gemini**上编译好的用于**SHT42**的固件 
+          * usb刷写方式，打开刚刚在**Gemini**上编译好的用于**SHT42**的固件 
           <div align=center>
           <img src="https://img-blog.csdnimg.cn/c05ca884729641d39ed1bbe1f4ee50db.png"/>
           </div>
@@ -563,5 +553,5 @@
 
   >:warning:配置klipper限位的时候建议大家拔掉wifi,通过USB进行配置,如果配置有误,WIFI容易烧掉
 
- ## 完结 
- 原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程](https://blog.csdn.net/KeyBordkiller/article/details/124524274)
+ ## 完结 
+ 原文链接：[CSDN-Geminiv2_CAN保姆级详细配置流程]https://blog.csdn.net/KeyBordkiller/article/details/124524274)
