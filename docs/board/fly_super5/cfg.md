@@ -268,7 +268,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 extruder]                  # 挤出机驱动配置- TMC5160
 #cs_pin: PC0                         # SPI 片选Pin脚定义
-#spi_bus: spi3                       # SPI 通讯总线定义
+#spi_bus: spi1                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False)
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -281,6 +281,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 heater_pin: PD13             # 热床接口,接到HETA1
 sensor_type: Generic 3950    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PC5              # 热床传感器接口,接到ADC-2
+pullup_resistor:2200
 max_power: 1.0               # 热床功率
 min_temp: 0                  # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 490                # 最大温度（注意：测量温度超过设定值会触发紧急停止）
