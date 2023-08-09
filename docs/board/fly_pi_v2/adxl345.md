@@ -1,10 +1,32 @@
-# 10. 连接加速度计
+# 11. 连接加速度计
 
-## 10.1 加速度计直连
+## 11.1 接线
+
+加速度计的链接方式如下图所示
 
 <img src="../../images/boards/fly_pi_v2/adxl345.jpg" alt="adxl345" style="zoom:70%;" />
 
-## 10.2 USB加速度计
+## 11.2 配置
 
+```
+[mcu host]
+serial: /tmp/klipper_host_mcu
 
+[adxl345]
+cs_pin: host:None
+spi_bus: spidev0.0
 
+#[adxl345 bed]
+#cs_pin: host:None
+#spi_bus: spidev0.1
+
+[resonance_tester]
+accel_chip: adxl345
+#accel_chip_y: adxl345 bed
+probe_points:
+    100, 100, 20  # an example
+```
+
+## 11.3 使用
+
+测试请前往：[加速度计的使用](/advanced/Accelerometer?id=测试 "点击即可跳转")

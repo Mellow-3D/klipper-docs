@@ -8,7 +8,7 @@
 
 * 使用USB Type-c线材将FLY-π与电脑连接
 
-![piusb](../../images/boards/fly_pi/piusb.png)
+<img src="../../images/boards/fly_pi_v2/topc.jpg" alt="topc" style="zoom:80%;" />
 
 * 如果主板与电脑连接正常，打开设备管理器，就可以看到CH340的端口了
 
