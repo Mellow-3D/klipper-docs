@@ -99,6 +99,10 @@ section.cover .cover-main a {
   font-weight: 600;
 }
 
+.markdown-section strong {
+  color: #ff6a00;
+}
+
 section.cover .cover-main a::before {
   display: none;
 }
@@ -108,7 +112,7 @@ section.cover .cover-main blockquote {
   color: #868c91;
 }
 
-section.cover.show div.cover-main > p a {
+section.cover.show div.cover-main > p a:not(:last-child) {
   border-style: solid;
   border-radius: 2rem;
   box-sizing: border-box;
@@ -121,16 +125,28 @@ section.cover.show div.cover-main > p a {
   transition: all 0.15s ease;
 
   border-width: 0.2rem;
-  color: #00fe2a;
+  color: #000000;
   border-color: #003dff;
 }
-section.cover.show div.cover-main > p a:hover {
-  color: #00fe2a80;
+
+section.cover.show div.cover-main > p a:not(:last-child):hover {
+  color: #25252580;
   border-color: #003cff91;
   opacity: 1;
 }
 
 section.cover.show div.cover-main > p a:last-child {
+  border-style: solid;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1.05rem;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem 1rem;
+  padding: 0.75em 2rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
   background-color: #003dff;
   border-color: #003dff;
   color: #fff;
