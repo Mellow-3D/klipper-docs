@@ -4,7 +4,9 @@
 ```cfg
 ## PUPPET设置
 [mcu]
-serial: /dev/serial0
+serial: /dev/ttyAMA0 #RPI
+# serial: /dev/ttyS1 #FLY-PI V2
+# serial: /dev/ttyS2 #FLY-PI V1
 restart_method: command
 
 [mcu host]
@@ -20,11 +22,15 @@ pin: gpio25
 
 ## FAN2   VCC/5V可选电压风扇
 [fan_generic fan2]
-pin: host:gpio21
+pin: host:gpio21               #RPI
+# pin: host:gpiochip1/gpio105  #FLY-PI V2
+# pin: host:gpiochip1/gpio2    #FLY-PI
 
 ## FAN3   5V电压风扇
 [fan_generic fan3]
-pin: host:gpio20
+pin: host:gpio20               #RPI
+# pin: host:gpiochip1/gpio101  #FLY-PI V2
+# pin: host:gpiochip1/gpio201  #FLY-PI
 
 
 [stepper_x]
@@ -56,7 +62,7 @@ enable_pin: !gpio10
 microsteps: 16
 rotation_distance: 8
 endstop_pin: !gpio24
-#position_endstop: 0.6
+position_endstop: 0.6
 position_max: 230
 
 [extruder]
@@ -123,7 +129,9 @@ stealthchop_threshold: 999999
 
 ## RGB
 #[neopixel my_neopixel]
-#pin: host:gpio19
+#pin: host:gpio19               #RPI
+## pin: host:gpiochip1/gpio104  #FLY-PI V2
+## pin: host:gpiochip1/gpio205  #FLY-PI
 #chain_count: 12
 #color_order: GRB
 #initial_RED: 0.0
@@ -132,7 +140,9 @@ stealthchop_threshold: 999999
 
 #[bltouch]
 #sensor_pin: ^gpio24
-#control_pin: host:gpio16
+#control_pin: host:gpio16               #RPI
+## control_pin: host:gpiochip1/gpio108  #FLY-PI V2
+## control_pin: host:gpiochip1/gpio143  #FLY-PI
 #pin_move_time: 0.680
 #x_offset: 0.0
 #y_offset: 2.3
