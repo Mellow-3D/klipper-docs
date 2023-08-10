@@ -13,6 +13,43 @@
 
 ![display](../../images/boards/fly_pi/display.png)
 
+3.启用TFT屏幕方法
+
+```
+sudo nano /boot/armbianEnv.txt
+```
+
+如果是FLY-Pi&FLY-πFLY-Gemini v1~v3&FLY-Pi Lite选择FLY-TFT-V1
+
+如果是FLY-Pi v2&FLY-Gemini Plus选择FLY-TFT-V1-NEW
+
+> [!WARNING]
+>
+> 只能使用其中一个
+
+> [!NOTE]
+>
+> **如果需要旋转180度请在后面加入-h，例如：FBTFT=FLY-TFT-V1-h**
+>
+> **If you need to rotate 180 degrees, please add -h, for example: FBTFT=FLY-TFT-V1-h**
+
+```
+FLY-TFT-V1
+#FLY-TFT-V1-h
+#FLY-TFT-V1-NEW
+#FLY-TFT-V1-NEW-h
+```
+
+保存 退出 重启即可
+
+```
+CTRL S
+CTRL X
+sudo reboot
+```
+
+![tft](../../images/boards/fly_pi_v2/tft1.png)
+
 ## 6.2 屏幕接线
 
 屏幕端子需要自己连接
