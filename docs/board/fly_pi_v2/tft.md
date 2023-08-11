@@ -29,9 +29,9 @@ sudo nano /boot/armbianEnv.txt
 
 > [!NOTE]
 >
-> **如果需要旋转180度请在后面加入-h，例如：FBTFT=FLY-TFT-V1-h**
+> **如果需要旋转180度请在后面加入-h，例如：FLY-TFT-V1-h**
 >
-> **If you need to rotate 180 degrees, please add -h, for example: FBTFT=FLY-TFT-V1-h**
+> **If you need to rotate 180 degrees, please add -h, for example: FLY-TFT-V1-h**
 
 ```
 FLY-TFT-V1
