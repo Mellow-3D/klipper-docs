@@ -2,7 +2,7 @@
 
     * [1. 产品简介](/board/fly_gemini_v3/README.md)
     * [2. 4轴扩展板](/board/fly_gemini_v3/extend.md)
-    * [3.系统安装与配置](/board/fly_gemini_v3/flyos_install.md)
+    * [3. 系统安装与配置](/board/fly_gemini_v3/mirror/_sidebar.md)
     * [4. 拨码开关的使用](/board/fly_gemini_v3/dip.md)
     * [5. 固件编译烧录](/board/fly_gemini_v3/flash.md)
     * [6. 读取主板ID](/board/fly_gemini_v3/readid.md)

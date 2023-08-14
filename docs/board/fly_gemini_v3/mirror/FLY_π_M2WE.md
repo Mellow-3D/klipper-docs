@@ -56,14 +56,14 @@
 
 12. 点击``启动BOOT``，如果正常则会提示已成功启用BOOT
 
-![usb-flash](../../../images/boards/fly_pi/usb_flash_10.png ":size=50%")
+    ![usb-flash](../../../images/boards/fly_pi/usb_flash_10.png ":size=50%")
 
 13. 如果弹出未知磁盘等设备可以查看 如何重新格式化M2WE
 
     ![boot](../../../images/boards/fly_gemini_v3/boot.png ":size=50%")
+
 14. 现在可以打开文件资源管理器，多出一个14.5G的U盘（16G eMMC显示大小为14.5G）
 15. 这样就可以直接用Win32diskimager或balenaEtcher来烧录系统镜像，盘符选择为这个14.5GU盘的盘符
-
 16. 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")
 
 
