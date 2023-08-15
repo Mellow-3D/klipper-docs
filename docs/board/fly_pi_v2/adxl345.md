@@ -14,11 +14,7 @@ serial: /tmp/klipper_host_mcu
 
 [adxl345]
 cs_pin: host:None
-spi_bus: spidev0.0
-
-#[adxl345 bed]
-#cs_pin: host:None
-#spi_bus: spidev0.1
+spi_bus: spidev1.0
 
 [resonance_tester]
 accel_chip: adxl345
