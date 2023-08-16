@@ -1,4 +1,4 @@
-* FLY-π v2
+* FLY-Pi v2
 * [1. 产品简介](/board/fly_pi_v2/README.md)
 * [2. 镜像烧录](/board/fly_pi_v2/mirror.md)
 * [3. FLY_Config的使用](/board/fly_pi_v2/fly_config.md)
@@ -7,7 +7,7 @@
 * [6. FLY-TFT的使用](/board/fly_pi_v2/tft.md)
 * [7. HDMI屏幕的使用](/board/fly_pi_v2/hdmi.md)
 * [8. CPU散热风扇](/board/fly_pi_v2/corefan.md)
-* [9. FLY-π的供电](/board/fly_pi_v2/power.md)
+* [9. FLY-Pi-V2的供电](/board/fly_pi_v2/power.md)
 * [10. 板载UTOC的使用](/board/fly_pi_v2/utoc.md)
 * [11. 连接加速度计](/board/fly_pi_v2/adxl345.md)
 * [12. 引脚分布](/board/fly_pi_v2/pinout.md)
