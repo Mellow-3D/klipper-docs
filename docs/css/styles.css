@@ -36,18 +36,18 @@ body {
   margin: 0 auto;
 }
 
-a {
+a:not(.model3d-down) {
   transition: all 0.3s linear;
 }
 
-.markdown-section a {
+.markdown-section a:not(.model3d-down a) {
   text-decoration: none;
   border-bottom: 0.1rem solid var(--theme-color-light);
   transition: all 0.3s ease;
   color: #df2a2a;
 }
 
-.markdown-section a:hover {
+.markdown-section a:not(.model3d-down a):hover {
   border-color: var(--theme-color);
   color: var(--theme-color-dark);
 }
@@ -110,6 +110,42 @@ section.cover .cover-main a::before {
 section.cover .cover-main blockquote {
   font-style: italic;
   color: #868c91;
+}
+
+.model3d-down {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  border-style: solid;
+  border-radius: 2rem;
+  border-width: 0.1rem;
+  box-sizing: border-box;
+}
+.model3d-down a {
+  text-align: center;
+  border-style: solid;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  width: max-content;
+  font-size: 1.5rem;
+  letter-spacing: 0rem;
+  margin: 0.5rem auto;
+  padding: 0.3em 1rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+
+  background-color: #00fc97;
+  border-color: #00fc97a0;
+  color: #c80000;
+}
+
+.model3d-down a:hover {
+  background-color: #00a563d8;
+  border-color: #009a5da5;
+  color: #740000;
+  opacity: 1;
 }
 
 section.cover.show div.cover-main > p a:not(:last-child) {

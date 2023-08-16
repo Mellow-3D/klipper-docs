@@ -11,5 +11,7 @@
   * [9. Klipper配置检查](/board/fly_9/klippercheck.md)
   * [10. 打印前的准备](/board/fly_9/fly_9prepare.md)
   * [11. 引脚分布](/board/fly_9/pins.md)
+  * [12. 原理图](/board/fly_9/schematic.md)
+  * [13. 3D模型](/board/fly_9/3dmodel.md)
   
 
