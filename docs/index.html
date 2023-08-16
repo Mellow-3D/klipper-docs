@@ -34,7 +34,7 @@
                 pageLanguage: 'zh-CN',
                 includedLanguages: 'zh-CN,ru,zh-TW,en,ja,de,ko',
                 autoDisplay: false,
-                disableAutoTranslation: true,
+                disableAutoTranslation: false,
             }, 'google_translate_element');
         }
         function translateLanguage(lang) {
@@ -65,6 +65,11 @@
                 if (pair[0] == variable) { return pair[1]; }
             }
             return null;
+        }
+        function getFilenameFromUrl(url) {
+            const pathname = new URL(url).pathname;
+            const index = pathname.lastIndexOf('/');
+            return (-1 !== index) ? pathname.substring(index + 1) : pathname;
         }
     </script>
 
@@ -149,6 +154,9 @@
     <script src="js/docsify-select.js"></script>
     <script src="js/beian.min.js"></script>
     <script src="js/docsify-sidebar-collapse.min.js"></script>
+    <script src="js/pdfobject.min.js"></script>
+    <script src="/tools/o3dv/o3dv.min.js"></script>
+    <script src="js/docsify-pdf-embed.js"></script>
 
     <script>
         function init() {
