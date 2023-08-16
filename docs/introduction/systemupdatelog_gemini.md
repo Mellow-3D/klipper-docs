@@ -75,3 +75,9 @@
 
 * 支持FLY-Gemini v3主板
 * 新增基于Gemini v3主板的自动烧录脚本
+
+### v3.1
+
+* 支持FLY-Pi-V2主板
+* 更新FLY-Tools
+* CAN速率默认1M
