@@ -7,10 +7,10 @@
 ```
 ##ADXL345加速度计
 [adxl345]
-cs_pin: sb2040:gpio1
-spi_software_sclk_pin: sb2040:gpio0
-spi_software_mosi_pin: sb2040:gpio3
-spi_software_miso_pin: sb2040:gpio2
+cs_pin: sht36:PA4
+spi_software_sclk_pin: sht36:PA5
+spi_software_mosi_pin: sht36:PA7
+spi_software_miso_pin: sht36:PA6
 
 
 [resonance_tester]

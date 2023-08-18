@@ -14,7 +14,6 @@
 * ROM：支持最大128GB SDCARD
 * 外设：Spi x2，UART x2，USB x4（USB 2.0 x3，OTG x1），Micro HDMI x1，Eth x1（100M），CAN x1
 * 接口：板载M.2接口，可扩展WIFI，eMMC等。（私有协议，切勿连接非FLY π专用的M.2设备）
-* 40Pin接口，兼容树莓派
 * 支持12-24V直流供电，供电更稳定，省去降压模块
 * 预留了一个5V可控风扇接口，可用于上位机散热
 * 预留CAN扩展接口
