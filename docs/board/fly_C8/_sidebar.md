@@ -14,5 +14,5 @@
     * [12. 参考配置](/board/fly_C8/cfg.md)
     * [13. ADXL使用](/board/fly_C8/adxl345.md)
     * [14. 主控风扇使用](/board/fly_C8/corefan.md)
-    * [15. 桥接CAN]
+    * [15. 桥接CAN](/board/fly_C8/canbridge.md)
     * [16. 三维模型](/board/fly_C8/3dmodel.md)

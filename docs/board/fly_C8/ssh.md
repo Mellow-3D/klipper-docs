@@ -10,7 +10,7 @@
 
 * 使用USB Type-c线材将FLY-C8与电脑连接
 
-<img src="../../images/boards/fly_pi_v2/topc.jpg" alt="topc" style="zoom:80%;" />
+<img src="../../images/boards/fly_c8/topc.png" alt="topc" style="zoom:80%;" />
 
 * 如果主板与电脑连接正常，打开设备管理器，就可以看到CH340的端口了
 
@@ -40,27 +40,27 @@
 
 1. 在SSH软件输入`sudo nmtui`命令后回车，再输入`mellow`，会出现下图所示界面
 
-![nmtui1](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui1.png)
+![nmtui1](../../images/boards/fly_pi/nmtui1.png)
 
-![nmtui2](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui2.png)
+![nmtui2](../../images/boards/fly_pi/nmtui2.png)
 
 2. 选择`Activate a connection`后回车
 
-![nmtui3](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui3.png)
+![nmtui3](../../images/boards/fly_pi/nmtui3.png)
 
 3. 进入如下界面，通过键盘上的`↑``↓`键选择要连接的WiFi后，回车，输入密码后等待连接成功
 
-![nmtui4](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui4.png)
+![nmtui4](../../images/boards/fly_pi/nmtui4.png)
 
 <img src="C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui5.png" alt="nmtui5" style="zoom:90%;" />
 
 4.连接成功后如图所示
 
-![nmtui6](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui6.png)
+![nmtui6](../../images/boards/fly_pi/nmtui6.png)
 
 5. 按`ESC`键退出，返回命令行界面，输入`ifconfig`，图中`192.168.2.126`即为上位机的IP地址
 
-![nmtui7](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_pi\nmtui7.png)
+![nmtui7](../../images/boards/fly_pi/nmtui7.png)
 
 ## 7.2 远程连接
 

@@ -61,39 +61,36 @@
 
   - 兔子多色CAN扩展板
     * [FLY-ERCF](/board/fly_ercf/)
-
 - 扩展类
   - [FLY-SENSOR 调平传感器](/board/fly_sensor/)
   - [FLY-Halo WiFi智能圆屏](/board/fly_halo/)
-
+  - [TAP](/advanced/TAP.md)
+  - [7040 鼓风机](/advanced/7040.md)
+  - [加速度计](/advanced/Accelerometer.md)
+  - [USB 加速度计](/advanced/usbadxl.md)
+- 屏幕类
+  * [LCD屏幕](/advanced/lcd.md)
+  * [TFT屏幕](/advanced/tft.md)
+  * [12864屏幕](/advanced/12864.md)
 - 入门
   - [开始](README)
   - [系统镜像](/introduction/system.md)
   - [连接到 SSH](/introduction/conntossh.md)
   - [固件烧录](/introduction/firmware.md)
-
 - FLY-Config
   - [介绍](/fly_config/README)
   - [使用方法](/fly_config/Instructions.md)
-
-- 指南
+- 调试指南
   - [基础配置](/guide/configs.md)
   - [常见问题](/guide/what.md)
-
 - 用户投稿
   - [投稿须知](/users/README)
   - [Geminiv2 上配置 CAN](/users/geminiv2_can.md)
-
 - 进阶
   - [烧录 BL](/advanced/flashbl.md)
-  - [加速度计](/advanced/Accelerometer.md)
   - [CAN 使用](/advanced/can.md)
   - [USB 桥接 CAN](/advanced/usb2can.md)
   - [屏幕使用](/advanced/screen.md)
   - [CanBoot](/advanced/canboot.md)
-  - [USB 加速度计](/advanced/usbadxl.md)
-  - [TAP](/advanced/TAP.md)
-  - [7040 鼓风机](/advanced/7040.md)
-
 - 系统
   - [下载镜像](/introduction/downloadimg.md)
