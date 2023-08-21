@@ -34,16 +34,19 @@ sudo ./Fly-Sensor/scripts/install.sh
 ## 2. Klipper配置
 
 ```cfg
+[stepper_z]
+endstop_pin:probe:z_virtual_endstop
+
 [fly_probe]
 calibration_pin:sht36:PB1    # 舵机信号口
 probe_pwm_pin:sht36:PC15     # pwm
-zstop_pin:sht36:PB13         # zstop
+zstop_pin:sht36:PA1         # zstop
 x_offset: -23.2
 y_offset: -13
 z_offset: 0.0
 speed: 150
-samples:5    #每个点采样次数
-probe_mode:1 #0 当做接近开关使用  1：Z轴不升降采样距离 
+samples:3    #每个点采样次数
+probe_mode:0 #0 当做接近开关使用  1：Z轴不升降采样距离 
 
 [bed_mesh]
 speed: 100                   # 校准速度
@@ -59,13 +62,13 @@ bicubic_tension: 0.2
 [fly_probe]
 calibration_pin:sht36:PB1    # Servo signal port
 probe_pwm_pin:sht36:PC15     # pwm
-zstop_pin:sht36:PB13         # zstop
+zstop_pin:sht36:PA1         # zstop
 x_offset: -23.2
 y_offset: -13
 z_offset: 0.0
 speed: 150
-samples:5                    # Number of single samples
-probe_mode:1                 
+samples:3                    # Number of single samples
+probe_mode:0                 
 # 0 Used as a proximity switch 1: The Z axis does not raise or lower the sampling distance 
 
 [bed_mesh]

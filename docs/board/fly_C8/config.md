@@ -36,9 +36,9 @@
 
 ### 4.4.1 选择Klipper的控制网页
 
-在浏览器输入ip+:81即可切换mainsail
+找到下图所示选项，将``UI=fluidd``修改为``UI=mainsail``，则可将控制网页由``fluidd``切换为``mainsail``。
 
-例如将``192.168.1.123``修改为``192.168.1.123:81``
+![config1](../../images/boards/fly_pi/config1.png)
 
 ### 4.4.2 Klipperscreen的配置
 

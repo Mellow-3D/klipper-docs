@@ -68,6 +68,7 @@
   - [7040 鼓风机](/advanced/7040.md)
   - [加速度计](/advanced/Accelerometer.md)
   - [USB 加速度计](/advanced/usbadxl.md)
+  - [M2WE](/board/fly_m2we/)
 - 屏幕类
   * [LCD屏幕](/advanced/lcd.md)
   * [TFT屏幕](/advanced/tft.md)
