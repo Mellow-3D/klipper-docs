@@ -42,7 +42,7 @@
 
 * 出现下图则编译成功
 
-![putty](../../images/firmware/make4.png ":no-zooom")
+![putty](../../images/firmware/make5.png ":no-zooom")
 
 14. 下载固件到电脑
 

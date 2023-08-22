@@ -8,7 +8,7 @@
   * [6. 读取主板ID](/board/fly_gemini_v2/readid.md)
   * [7. Gemini主板接线](/board/fly_gemini_v2/line.md)
   * [8. 示例配置](/board/fly_gemini_v2/cfg.md)
-  * [9. CAN Hat的使用](/board/directory/host/canhat.md)
+  * [9. CAN Hat的使用](/board/fly_gemini_v2/canhat.md)
   * [10. 屏幕的使用](/board/fly_gemini_v2/screen.md)
   * [11. 主控散热风扇](/board/fly_gemini_v2/corefan.md)
   * [12. 加速度计的使用](/advanced/Accelerometer)
