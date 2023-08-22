@@ -50,3 +50,31 @@
 另外还需要指定使用的屏幕类型才能够正常使用！！！按下图中的提示修改为对应的配置即可。
 
 ![hdmi](../../images/boards/fly_pi/hdmi.png)
+
+## 4.5 音频使用
+
+**音频设备驱动启用方法**
+
+1. 在
+
+   ```
+   /boot/armbianEnv.txt
+   ```
+
+   中加入一行配置
+
+   ```
+   overlays=analog-codec
+   ```
+
+   
+
+2. 重启系统
+
+3. 执行命令**cat /proc/asound/cards**来查看是否存在音频设备，存在“H3_Audio_Codec”设备则正常（无设备则不会有任何输出）
+
+4. 安装播放器和解析器**sudo apt-get install sox libsox-fmt-all alsa-utils**
+
+5. 执行命令测试发声speaker-test -Dplughw:CARD=0 Device -c2 -twav（CARD=0，这个0对应上一步中查看的设备编号，默认0）
+
+6. 播放音频文件命令play xxx.mp3
