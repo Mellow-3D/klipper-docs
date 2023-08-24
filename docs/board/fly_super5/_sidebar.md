@@ -12,3 +12,5 @@
   * [11. Super5 Pro桥接CAN](/board/fly_super5/canbridge.md)
   * [12. 引脚分布](/board/fly_super5/pins.md)
   * [13. 相关链接](/board/fly_super5/link.md)
+  * [14. 原理图](/board/fly_super5/schematic.md)
+  * [15. 三维模型](/board/fly_super5/3dmodel.md)

@@ -9,4 +9,6 @@
 * [8. CPU散热风扇](/board/fly_pi/FLY_π_corefan)
 * [9. 引脚分布](/board/fly_pi/pins.md)
 * [10. CAN Hat的使用](/board/fly_pi/canhat.md)
+* [11. 原理图](/board/fly_pi/schematic.md)
+* [12. 三维模型](/board/fly_pi/3dmodel.md)
 

@@ -12,5 +12,7 @@
   * [10. Super8 桥接CAN](/board/fly_super8/Super8canbridge.md)
   * [11. 引脚分布](/board/fly_super8/pins.md)
   * [12. 相关链接](/board/fly_super8/link.md)
+  * [13. 原理图](/board/fly_super8/schematic.md)
+  * [14. 三维模型](/board/fly_super8/3dmodel.md)
   
 

@@ -3,3 +3,5 @@
   * [引脚分布](/board/fly_e3_pro/pins.md)
   * [示例配置](/board/fly_e3_pro/cfg.md)
   * [固件烧录](/board/fly_e3_pro/flash.md)
+  * [原理图](/board/fly_e3_pro/schematic.md)
+  * [三维模型](/board/fly_e3_pro/3dmodel.md)
