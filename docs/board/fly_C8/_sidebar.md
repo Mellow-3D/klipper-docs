@@ -10,9 +10,10 @@
     * [8. SSH连接](/board/fly_C8/ssh.md)
     * [9. 固件烧录](/board/fly_C8/flash.md)
     * [10. 读取ID](/board/fly_C8/c8id.md)
-    * [11. 主板接线]
+    * [11. 主板接线](/board/fly_C8/c8link.md)
     * [12. 参考配置](/board/fly_C8/cfg.md)
     * [13. ADXL使用](/board/fly_C8/adxl345.md)
     * [14. 主控风扇使用](/board/fly_C8/corefan.md)
     * [15. 桥接CAN](/board/fly_C8/canbridge.md)
-    * [16. 三维模型](/board/fly_C8/3dmodel.md)
+    * [16. 原理图](/board/fly_C8/schematic.md)
+    * [17. 三维模型](/board/fly_C8/3dmodel.md)

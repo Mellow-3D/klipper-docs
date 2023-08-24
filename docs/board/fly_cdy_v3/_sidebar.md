@@ -4,4 +4,6 @@
   * [引脚分布](/board/fly_cdy_v3/pins.md)
   * [示例配置](/board/fly_cdy_v3/cfg.md)
   * [固件烧录](/board/fly_cdy_v3/flash.md)
+  * [原理图](/board/fly_cdy_v3/schematic.md)
+  * [三维模型](/board/fly_cdy_v3/3dmodel.md)
 

@@ -15,4 +15,6 @@
   * [13. Klipper调试](/board/fly_gemini_v2/boardtest.md)
   * [14. 引脚分布](/board/fly_gemini_v2/pins.md)
   * [15. 相关链接](/board/fly_gemini_v2/link.md)
+  * [16. 原理图](/board/fly_gemini_v2/schematic.md)
+  * [17. 三维模型](/board/fly_gemini_v2/3dmodel.md)
 

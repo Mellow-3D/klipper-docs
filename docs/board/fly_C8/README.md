@@ -8,7 +8,7 @@
 
 
 
-![c8](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_c8\c8.png)
+![c8](../../images/boards/fly_c8/c8.png)
 
 ## **1.1 产品特点**
 
@@ -22,8 +22,6 @@
 * 预留SPI接口，可让客户外接加速度传感器进行加速度补偿
 * TFT屏幕与HDMI屏幕支持一线通
 * 系统预装klipper、moonraker、mainsail、fulidd、klipper-screen、Crowsmest、共振补偿插件 numpy与FLY-Tools，无需换源等复杂的操作，小白更容易上手
-
-[Fly-C8-淘宝网还没上架 需要替换 (taobao.com)](https://item.taobao.com/item.htm?spm=a230r.1.14.1.1a4840a8a8t04w&id=661670024975&ns=1&abbucket=16#detail "点击即可跳转")
 
 ## 1.2 产品参数
 
@@ -64,5 +62,5 @@
 
 ## 1.2 C8尺寸
 
- ![](C:\Users\74103\Documents\GitHub\klipper-docs\docs\images\boards\fly_c8\size.png)
+ ![](../../images/boards/fly_c8/size.png)
 

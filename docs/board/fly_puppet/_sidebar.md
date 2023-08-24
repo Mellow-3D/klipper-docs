@@ -7,3 +7,5 @@
   - [配合CM4使用](/board/fly_puppet/cm4.md)
   - [配合RPI3/4B使用](/board/fly_puppet/rpixb.md)
   - [配合FLY-π使用](/board/fly_puppet/flypi.md)
+  - [原理图](/board/fly_puppet/schematic.md)
+  - [三维模型](/board/fly_puppet/3dmodel.md)

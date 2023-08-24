@@ -16,4 +16,8 @@
     * [14. 引脚分布](/board/fly_gemini_v3/pins.md)
     * [15. 桥接CAN](/board/fly_gemini_v3/canbridge.md)
     * [16. 相关链接](/board/fly_gemini_v3/link.md)
+    * [17. 原理图](/board/fly_gemini_v3/schematic.md)
+    * [18. 三维模型](/board/fly_gemini_v3/3dmodel.md)
+    
+    
 

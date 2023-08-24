@@ -1,8 +1,8 @@
-# 4. 读取主板ID
+# 10. 读取主板ID
 
 > [!TIP] 
 >
-> 如果使用USB固件则无需搜索ID,系统默认把USBID转换成**/dev/ttyACM0**
+> 如果使用USB固件则无需搜索ID,系统默认把USBID转换成    **/dev/ttyACM0**
 
 1.[连接到SSH](/board/fly_C8/ssh "点击即可跳转")，然后输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
 

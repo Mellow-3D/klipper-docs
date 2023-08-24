@@ -11,3 +11,5 @@
   * [9. 加速度计](/board/fly_sht_v2/adxl345.md)
   * [10. CanBoot](/board/fly_sht_v2/shtcanboot.md)
   * [11. 相关链接](/board/fly_sht_v2/link.md)
+  * [12. 原理图](/board/fly_sht_v2/schematic.md)
+  * [13. 三维模型](/board/fly_sht_v2/3dmodel.md)
