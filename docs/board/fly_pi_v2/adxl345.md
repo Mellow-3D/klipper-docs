@@ -1,12 +1,12 @@
-# 11. 连接加速度计
+# 13. 连接加速度计
 
-## 11.1 接线
+## 13.1 接线
 
 加速度计的链接方式如下图所示
 
 <img src="../../images/boards/fly_pi_v2/adxl345.jpg" alt="adxl345" style="zoom:70%;" />
 
-## 11.2 配置
+## 13.2 配置
 
 ```
 [mcu host]
@@ -23,6 +23,6 @@ probe_points:
     100, 100, 20  # an example
 ```
 
-## 11.3 使用
+## 13.3 使用
 
 测试请前往：[加速度计的使用](/advanced/Accelerometer?id=测试 "点击即可跳转")

@@ -1,6 +1,6 @@
 
 
-# 9. FLY Gemini V3 CPU散热风扇的使用
+# 14. FLY Gemini V3 CPU散热风扇的使用
 
 * Gemini V3 板载了一个5V的可控风扇接口，用于CPU散热，接线方法如下图
 
