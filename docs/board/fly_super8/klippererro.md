@@ -1,13 +1,13 @@
 # 7. Klipper常见错误
 
-## 7.1 TMC UART Error
+## 7.1 TMC UART&SPI Error
 
 当TMC驱动程序和Super8主板之间的通讯失效时，就会出现这种情况。引起上述故障。常见的情况有如下几种
 
 * 没有给主板提供24V供电
 * 没有正确插上驱动UART跳线帽或者驱动跳线帽配置错误
 * 驱动损坏，无法正常使用
-* 驱动cs_pin配置错误
+* 驱动UART与CS配置错误
 
 <img src="../../images/boards/fly_super8/tmcerro.png" alt="tmcerro" style="zoom:60%;" />
 

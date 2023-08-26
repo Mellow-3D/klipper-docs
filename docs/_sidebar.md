@@ -85,8 +85,9 @@
 
 - 调试指南
   - [基础配置](/guide/configs.md)
+  - [Klipper常见问题与错误](/guide/klippererro/problem)
   - [常见问题](/guide/what.md)
-
+  
 - 用户投稿
   - [投稿须知](/users/README)
   - [Geminiv2 上配置 CAN](/users/geminiv2_can.md)
