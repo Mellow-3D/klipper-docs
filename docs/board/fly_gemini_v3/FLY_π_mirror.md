@@ -27,11 +27,11 @@
 2. SD卡插入读卡器，将读卡器插到电脑USB接口
 3. 打开软件，点击“**Flash from file**”选择前面下载的系统镜像文件
 
-<img src="../../../images/boards/fly_pi/etcher.png" alt="etcher" style="zoom:80%;" />
+<img src="../../images/boards/fly_pi/etcher.png" alt="etcher" style="zoom:80%;" />
 
 4. 点击**“Select target**”选择SD卡，大小和SD卡容量差不多的就是，或进入资源管理器查看SD卡盘符
 
-   <img src="../../../images/boards/fly_pi/etcher2.png" alt="etcher2" style="zoom:80%;" />
+   <img src="../../images/boards/fly_pi/etcher2.png" alt="etcher2" style="zoom:80%;" />
 
    5. 点击“**Falsh**”,出现进度条及“**Falshing…**”时开始写入系统镜像到SD卡。等待大约十多分钟，等待写入完成。
 

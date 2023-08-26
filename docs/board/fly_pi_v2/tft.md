@@ -1,6 +1,6 @@
-# 5. FLY -TFT 的使用
+# 8. FLY -TFT 的使用
 
-## 5.1 修改配置
+## 8.1 修改配置
 
 > [!TIP]
 > 首先，请打开FLY_config配置文件，打开方式请参照[打开fly_Config](/board/fly_pi/FLY_π_description2?id=_11-打开-fly_config "点击即可跳转")
@@ -50,7 +50,7 @@ sudo reboot
 
 ![tft](../../images/boards/fly_pi_v2/tft1.png)
 
-## 5.2 连接屏幕与上位机
+## 8.2 连接屏幕与上位机
 
 连接方式如下图所示：
 
