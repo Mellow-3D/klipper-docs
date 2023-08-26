@@ -1,7 +1,7 @@
 * FLY-9轴
 
   * [1. 产品简介](/board/fly_9/README.md)
-  * [2. fly_9轴 接线](/board/fly_9/FLY-9line.md)
+  * [2. fly_9轴 接线](/board/fly_9/wiring.md)
   * [3. Fly π的配置](/board/fly_9/flypi.md)
   * [4. 连接到SSH](/board/fly_9/ssh.md)
   * [5. 固件编译和烧录](/board/fly_9/firmware.md)
