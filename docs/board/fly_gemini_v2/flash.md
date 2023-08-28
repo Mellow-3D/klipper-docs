@@ -16,9 +16,9 @@
 
 ![usb](../../images/boards/fly_gemini_v3/usb.png)
 
-* USB桥接CAN固件配置
+* CAN固件配置
 
-![usb2can](../../images/boards/fly_gemini_v3/usb2can.png)
+![usb2can](../../images/boards/fly_gemini_v2/config-can.png)
 
 * 执行命令```make -j4```来编译固件
 

@@ -75,21 +75,3 @@ sudo sed -i 's/1000000/500000/g' /etc/network/interfaces.d/can0
 
 
 
-## 警告 "relative_reference_index"
-
-#### 1. 报错信息：
-
-![relative](../../images/guides/klippererro/relative.png)
-
-#### 2.报错原因
-
-在 Klipper Jun 20, 2023 的 [更新](https://github.com/Klipper3d/klipper/commit/8fe18f27a94df0a9d394824a3e648ee7f8fc280a) 中，弃用 `relative_reference_index` 选项，使用 `zero_reference_position` 选项代替，如果不升级配置文件可能会导致 z-offset 配置失效问题。
-
-#### 3. 解决方法
-
-```
-[bed_mesh]
-relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位设置在热床中间或者较平处）（解决热床校准之后在空中的问题）
-```
-
-把**[bed_mesh]**中的**relative_reference_index**配置完全删除

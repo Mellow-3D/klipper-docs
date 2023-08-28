@@ -12,7 +12,7 @@
     * [10. 读取ID](/board/fly_C8/c8id.md)
     * [11. 主板接线](/board/fly_C8/c8link.md)
     * [12. 参考配置](/board/fly_C8/cfg.md)
-    * [13. ADXL使用](/board/fly_C8/adxl345.md)
+    * [13. ADXL345使用](/board/fly_C8/adxl345.md)
     * [14. 主控风扇使用](/board/fly_C8/corefan.md)
     * [15. 桥接CAN](/board/fly_C8/canbridge.md)
     * [16. 原理图](/board/fly_C8/schematic.md)
