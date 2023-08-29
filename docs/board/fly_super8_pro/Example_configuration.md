@@ -559,7 +559,7 @@ gcode:
 
 ## 6.2 Voron 2.4 Example Configuration
 
-```position_endstop: 300         # 软限位最大行程 (250mm-300mm-350mm)
+```cfg
 ####################################################################################
 #                         3D MELLOW /FLY-Super8-Pro                                #
 ####################################################################################
@@ -1135,7 +1135,7 @@ gcode:
 
 ## 6.3 VZBOT Example_configuration
 
-```
+```cfg
 ### For Fly Super PRO 8 ####
 ### And Mellow Kit  ####
 ### For Fly Super non pro, the SPI bus is spi3
