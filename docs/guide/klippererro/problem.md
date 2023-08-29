@@ -47,6 +47,16 @@ sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持
 
 #### 确认CAN速率
 
+>[!Tip]
+>
+>上位机与下位机的CAN速率需要一致否则无法搜索到ID
+
+
+
+>[!Tip]
+>
+>如果Klipper之前连接过
+
 ```
 cat /etc/network/interfaces.d/can0
 ```
@@ -75,3 +85,32 @@ sudo sed -i 's/1000000/500000/g' /etc/network/interfaces.d/can0
 
 
 
+## 如何配置上位机CAN0
+
+1. 非FLY上位机的，请注意检查自己烧录的镜像内核是否支持CAN，如果不支持则无法使用CAN。检测方法如下。
+
+在SSH输入：
+
+```
+sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持CAN"
+```
+
+输入以上指令后，如果您的内核支持CAN就会返回：``您的内核支持CAN``；如果不支持就会返回：``您的内核不支持CAN``。
+
+**如果系统不支持需要更换系统**
+
+2. 创建配置文件,复制粘贴到终端并回车
+
+```bash
+sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
+allow-hotplug can0
+iface can0 can static
+    bitrate 1000000
+    up ifconfig $IFACE txqueuelen 1024
+    pre-up ip link set can0 type can bitrate 1000000
+    pre-up ip link set can0 txqueuelen 1024
+
+EOF
+```
+
+3. 重启上位机``sudo reboot``

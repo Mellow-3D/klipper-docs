@@ -72,7 +72,7 @@ Super8可以通过修改电阻的位置来调整EN、DIR、STEP、UART这几个�
 
 **Voron 2.4：**将X、Y、E0、Z 、Z1、 Z2、Z3 共七个电机依次接到主板上的Driver0 - Driver6
 
-![motor_3.4](../../images/boards/fly_super8/motor_3.4.png)
+![motor_2.4](../../images/boards/fly_super8/motor_2.4.png)
 
 ## 3.3  加热棒接线
 

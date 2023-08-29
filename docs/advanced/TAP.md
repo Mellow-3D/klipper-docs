@@ -1,4 +1,4 @@
-# TAP的配置教程
+## TAP的配置教程
 
 > [!TIP]
 > **TAP配置修改printer.cfg**
@@ -12,7 +12,7 @@
 > [!TIP]
 > **TAP修改的地方只有z限位与probe**
 
-```
+```cfg
 [stepper_z]
 endstop_pin: probe:z_virtual_endstop             # 限位开关接口
 
@@ -51,11 +51,13 @@ activate_gcode:
 
 到此打印机配置修改结束
 
-* 这是提高打印前准备时间的方法之一
+> [!Tip]
+>
+> 这是提高打印前准备时间的方法之一
 
-* PrusaSlicer启始宏修改 
+* ## PrusaSlicer启始宏修改 
 
-```
+```cfg
 M109 S150
 print_start
 M109 S[first_layer_temperature]
@@ -65,7 +67,7 @@ M109 S[first_layer_temperature]
 
 
 
-* CURA启始宏修改
+* ## CURA启始宏修改
 
 ```
 M109 S150
@@ -75,9 +77,9 @@ M109 S{material_print_temperature_layer_0} ;Start heating extruder
 
 ![2](../images/adv/TAP/CURA.png)
 
-* orca-slicer启始宏修改
+* ## Orca-Slicer启始宏修改
 
-```
+```cfg
 M190 S[bed_temperature_initial_layer_single]
 M109 S150
 print_start  PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}
