@@ -13,4 +13,5 @@
 * [12. 板载UTOC的使用](/board/fly_pi_v2/utoc.md)
 * [13. 连接加速度计](/board/fly_pi_v2/adxl345.md)
 * [14. 引脚分布](/board/fly_pi_v2/pinout.md)
-* [15. 三维模型](/board/fly_pi_v2/3dmodel.md)
+* [15. 原理图](/board/fly_pi_v2/schematic.md)
+* [16. 三维模型](/board/fly_pi_v2/3dmodel.md)

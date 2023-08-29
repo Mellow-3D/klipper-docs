@@ -5,7 +5,7 @@
 > [!TIP]
 > 此文档是TMC5160版本的参考配置
 
-```
+```cfg
 #####################################################################
 #                               主板配置
 #####################################################################
@@ -169,9 +169,9 @@ samples_tolerance_retries: 3 # 超公差重试次数
 # stepper: stepper_x
 # cs_pin: SHT36:gpio17
 # spi_bus: spi1
-# # spi_software_sclk_pin: SHT36:PA5
-# # spi_software_mosi_pin: SHT36:PA7
-# # spi_software_miso_pin: SHT36:PA6
+# #spi_software_sclk_pin: SHT36:gpio10
+# #spi_software_mosi_pin: SHT36:gpio11
+# #spi_software_miso_pin: SHT36:gpio12
 ```
 
 

@@ -11,3 +11,5 @@
   * [9. 加速度计](/board/fly_sht36_pro/adxl345.md)
   * [10. CanBoot](/board/fly_sht36_pro/SHTcanboot.md)
   * [11. 相关链接](/board/fly_sht36_pro/link.md)
+  * [12. 原理图](/board/fly_sht36_pro/schematic.md)
+  * [13. 三维模型](/board/fly_sht36_pro/3dmodel.md)
