@@ -5,3 +5,9 @@
 ![miniab_board2](../../images/boards/miniab_board/miniab_board2.png)
 
 ![miniab_board](../../images/boards/miniab_board/miniab_board.png)
+
+> [!Tip]
+>
+> VCC对应风扇接法，如果使用5V风扇请将跳线移动到上方
+
+![fan](../../images/boards/miniab_board/vccfan.png)
