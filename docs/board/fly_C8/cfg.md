@@ -2,8 +2,8 @@
 ####################################################################################
 #                         3D MELLOW /（需要自行添加）                                #
 ####################################################################################
-## Fly-E3-V2资料网址：http://mellow.klipper.cn/#/board/fly_e3_v2/
-## Fly-E3-V2原理图网址：https://github.com/Mellow-3D/fly-e3-v2
+## Fly-C8资料网址：http://mellow.klipper.cn/#/board/fly_fly_C8/
+## Fly-C8原理图网址：https://cdn.mellow.klipper.cn/SCH-PDF/FLY-C8.pdf
 ## FLY 官方淘宝店：https://shop126791347.taobao.com/shop/view_shop.htm?spm=a230r.1.14.4.1a4840a8hyvpPJ&user_number_id=2464680006
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
