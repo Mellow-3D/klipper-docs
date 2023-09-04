@@ -63,7 +63,7 @@ Klipper 检测到温度超过最大或最小阀值（热敏电阻可能开路或
 
 ## 3. 解决方法
 
-```
+```bash
 [bed_mesh]
 relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位设置在热床中间或者较平处）（解决热床校准之后在空中的问题）
 ```
@@ -91,7 +91,7 @@ relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位�
 # MCU 'mcu' shutdown: Timer too close
 ## 1. 报错信息
 
-![timer](../../images/guides/klippererro/timer too close.jpg)
+![timer](../../images/guides/klippererro/timer.jpg)
 
 ## 2. 报错原因
 
@@ -105,7 +105,7 @@ relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位�
 
 ## **树莓派可以使用此方法尝试**
 
-```
+```bash
 sudo timedatectl status | grep "NTP service" 
 sudo timedatectl set-ntp false
 ```

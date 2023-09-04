@@ -10,7 +10,7 @@
 
 ## 2. 控制台发送
 
-```
+```bash
 FLY_PROBE_Z0
 ```
 
@@ -32,7 +32,7 @@ FLY_PROBE_Z0
 
 自动校准
 
-```
+```bash
 FLY_PROBE_CALIBRATION
 ```
 

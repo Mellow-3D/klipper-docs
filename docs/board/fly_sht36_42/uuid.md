@@ -4,7 +4,7 @@
 
 在配置完上位机后，需要读取CAN ID，在SSH输入以下指令
 
-```
+```bash
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
 
@@ -14,7 +14,7 @@
 
 如果没有出现ID或报错，请认真阅读文档并检查接线。将查找到的ID填入下图所示位置。
 
-```
+```bash
 [mcu sht36]
 uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```

@@ -7,7 +7,7 @@
 >[!WARNING]
 >此操作可以解决归位超时，但是会修改Klipper源码，请慎重选择
 
-```
+```bash
 sed -i 's/TRSYNC_TIMEOUT = 0.025/TRSYNC_TIMEOUT = 0.05/g' /home/fly/klipper/klippy/mcu.py 
 sudo systemctl restart klipper
 ```
@@ -105,7 +105,7 @@ sudo systemctl restart klipper
 
 ![display](../images/screen/pi.png)
 
-```
+```bash
 sudo nano /boot/config.txt
 ```
 
@@ -117,19 +117,19 @@ sudo nano /boot/config.txt
 
 找到
 
-```
+```bash
 dtoverlay=vc4-kms-v3d
 ```
 
 修改
 
-```
+```bash
 dtoverlay=vc4-kms-v3d,f
 ```
 
 保存并且退出
 
-```
+```bash
 CTRL+S
 CTRL+X
 ```

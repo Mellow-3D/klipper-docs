@@ -8,13 +8,13 @@ Fly_senso安装脚本链接：[GitHub](https://github.com/kluoyun/Fly-Sensor)
 
 更新klipper
 
-```
+```bash
 cd ~/klipper
 git checkout .
 git pull
 ```
 安装脚本
-```
+```bash
 cd ~/
 git clone https://github.com/kluoyun/Fly-Sensor
 sudo chmod +x ./Fly-Sensor/scripts/install.sh
@@ -58,7 +58,7 @@ algorithm: bicubic           # 算法模型
 bicubic_tension: 0.2         
 ```
 
-```
+```cfg
 [fly_probe]
 calibration_pin:sht36:PB1    # Servo signal port
 probe_pwm_pin:sht36:PC15     # pwm

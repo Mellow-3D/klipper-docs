@@ -1,6 +1,6 @@
-# 8. FLY -TFT 的使用
+# 9. FLY -TFT 的使用
 
-## 8.1 修改配置
+## 1. 修改配置
 
 > [!TIP]
 > 首先，请打开FLY_config配置文件，打开方式请参照[打开fly_Config](/board/fly_pi/FLY_π_description2?id=_11-打开-fly_config "点击即可跳转")
@@ -15,7 +15,7 @@
 
 3.启用TFT屏幕方法
 
-```
+```bash
 sudo nano /boot/armbianEnv.txt
 ```
 
@@ -33,7 +33,7 @@ sudo nano /boot/armbianEnv.txt
 >
 > **If you need to rotate 180 degrees, please add -h, for example: FLY-TFT-V1-h**
 
-```
+```bash
 FLY-TFT-V1
 #FLY-TFT-V1-h
 #FLY-TFT-V1-NEW
@@ -42,7 +42,7 @@ FLY-TFT-V1
 
 保存 退出 重启即可
 
-```
+```bash
 CTRL S
 CTRL X
 sudo reboot
@@ -50,7 +50,7 @@ sudo reboot
 
 ![tft](../../images/boards/fly_pi_v2/tft1.png)
 
-## 8.2 连接屏幕与上位机
+## 2. 连接屏幕与上位机
 
 连接方式如下图所示：
 

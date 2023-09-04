@@ -27,13 +27,13 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 > [!TIP]
 > 使用桥接CAN会有两个uuid，请注意区分主板id和CAN板id。在不连接CAN板的情况下读到的就是主板id。
 
-```
+```bash
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
 
 出现``Found canbus_uuid=11aa22bb33cc``则查找到设备ID。其中``11aa22bb33cc``为设备uuid，可直接填入klipper配置文件。
 
- ```
+ ```cfg
  
  [mcu ]
  #serial: /dev/serial/by-id/usb-Klipper_stm32f407*******   # 注释掉这一行

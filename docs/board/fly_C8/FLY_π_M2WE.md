@@ -10,7 +10,7 @@
 
 # 5 使用USB烧录M2WE
 
-   #### 5.1 通过USB为eMMC烧录系统镜像
+   #### 1. 通过USB为eMMC烧录系统镜像
 
 1. 先下载安装需要的软件
 
@@ -28,9 +28,9 @@
 
 4. 按着BOOT键并且将双头USB接入电脑
 
-![usb-flash](../../images/boards/fly_pi/usb_flash_2.png ":size=50%")
+![usb-flash](../../images/boards/fly_c8/boot.png":size=50%")
 
-![usb-flash](../../images/boards/fly_pi/usb_flash_3.png ":size=42%")
+
 
 4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到Gemini或Pi的下图中的USB接口
 
@@ -75,7 +75,7 @@
 
 
 
-## 5.2 如何重新格式化M2WE
+## 2. 如何重新格式化M2WE
 
 如果写入失败或者需要重新刷写镜像时，请按如下操作：
 

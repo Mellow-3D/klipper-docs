@@ -57,7 +57,7 @@ activate_gcode:
 
 * ## PrusaSlicer启始宏修改 
 
-```cfg
+```bash
 M109 S150
 print_start
 M109 S[first_layer_temperature]
@@ -69,7 +69,7 @@ M109 S[first_layer_temperature]
 
 * ## CURA启始宏修改
 
-```
+```bash
 M109 S150
 print_start
 M109 S{material_print_temperature_layer_0} ;Start heating extruder
@@ -79,7 +79,7 @@ M109 S{material_print_temperature_layer_0} ;Start heating extruder
 
 * ## Orca-Slicer启始宏修改
 
-```cfg
+```bash
 M190 S[bed_temperature_initial_layer_single]
 M109 S150
 print_start  PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}

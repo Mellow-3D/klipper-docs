@@ -33,21 +33,21 @@
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 
-```
+```bash
 wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh && sudo bash gemini-tools_install.sh gemini-p8-tools
 ```
 
  > [!TIP]
  > **如果提示hid-flash错误可以执行下面命令，没有就无需执行**
 
-```
+```bash
  cd ~/klipper/lib/hidflash && make
 ```
 
   > [!TIP]
 > 执行下面的命令来自动烧录固件
 
-```
+```bash
 sudo gemini-p8-tools -f ~/klipper/out/klipper.bin
 ```
 
@@ -55,20 +55,20 @@ sudo gemini-p8-tools -f ~/klipper/out/klipper.bin
 
 * 进入烧录模式
 
-```
+```bash
   sudo gemini-p8-tools -h
 ```
 
 
 * 正常启动MCU
 
-```
+```bash
   sudo gemini-p8-tools -s
 ```
 
 * 重置MCU
 
-```
+```bash
   sudo gemini-p8-tools -r
 ```
 

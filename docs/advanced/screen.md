@@ -12,7 +12,7 @@
 
 只需要在配置里面添加即可使用
 
-```
+```cfg
 #if HAS_WIRED_LCD
 
   #define BEEPER_PIN                 EXP1_10_PIN
@@ -158,7 +158,7 @@
 
    
 
-## 核心板安装方法
+##  CTRL+SCTRL+Xbash
 
 ![link](../images/screen/lcd-link.png)
 
@@ -238,7 +238,7 @@
 
 ![display](../images/screen/pi.png)
 
-```
+```bash
 sudo nano /boot/config.txt
 ```
 
@@ -250,19 +250,19 @@ sudo nano /boot/config.txt
 
 找到
 
-```
+```bash
 dtoverlay=vc4-kms-v3d
 ```
 
 修改
 
-```
+```bash
 dtoverlay=vc4-kms-v3d,f
 ```
 
 保存并且退出
 
-```
+```bash
 CTRL+S
 CTRL+X
 ```

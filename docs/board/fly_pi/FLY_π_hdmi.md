@@ -1,4 +1,4 @@
-#  9. HDMI屏幕的使用
+#  10. HDMI屏幕的使用
 
 1. 启用 klipperscreen 将``KlipperScreen=false``修改为``KlipperScreen=true``
 

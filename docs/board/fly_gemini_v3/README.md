@@ -26,7 +26,7 @@
 
 ![size](../../images/boards/fly_gemini_v3/size.png)
 
-## 1.1 产品详情
+## 1. 产品详情
 
 [Fly3D Gemini双子座4轴3D打印机主板klipper/RRF固件运行linux-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?spm=a230r.1.14.1.1a4840a8a8t04w&id=661670024975&ns=1&abbucket=16#detail "点击即可跳转")
 
@@ -37,12 +37,12 @@
 
 * 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md "点击即可跳转")
 
-## 1.2 Gemini系列升级说明
+## 2. Gemini系列升级说明
 
 * Gemini V1.1：修复can芯片供电，以及打印偏移问题
 * Gemini V2.0：RAM升级至1G，可同时使用CAN和Klipperscreen
 * Gemini V3.0：分开芯片5V供电和板载上位机端口5V供电，主板5V端子短路时不会影响到系统使用；删除主板sd卡接口，改用hid烧录固件；板载CAN收发芯片，无需使用CAN Hat
 
-## 1.3 Gemini V3
+## 3. Gemini V3
 
 ![geminiv3](../../images/boards/fly_gemini_v3/geminiv3.png)

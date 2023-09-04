@@ -1,18 +1,25 @@
-# 9. 固件编译烧录
+# 10. 固件编译烧录
 
 > [!TIP]
 > FLY-C8 无需使用任何跳线即可烧录固件
 
 
 
-## 9.1 拨码开关设置
+## 1. 拨码开关设置
 
-* 拨码开关``1``,``2``打开将下位机与上位机通过内置USB连接，拨码``3``,``4``打开将下位机USB连接到板载Type-C端口
+> [!Warning]
+> 请注意拨码开关不是跳线，如果想正常使用还是需要拨动拨码
+* 拨码开关``1``,``2``打开将下位机与上位机通过内置USB连接
+
+  ![dip1](../../images/boards/fly_c8/dip1.png)
+
+* 拨码``3``,``4``打开将下位机USB连接到板载Type-C端口
+
+  ![dip2](../../images/boards/fly_c8/dip2.png)
+
 * ``1``,``2``为一组，``3``,``4``为一组。两组不可同时打开
 
-![dip1](../../images/boards/fly_c8/dip1.png)
-
-## 9.2 固件编译
+## 2. 固件编译
 
 编译固件前请确保 [连接到SSH](/board/fly_gemini/host/FLY_π_ssh.md "点击即可跳转")
 
@@ -29,48 +36,49 @@
 
 * 执行命令```make -j4```来编译固件
 
-## 9.3 固件烧录
+## 3. 固件烧录
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 
 ```
-wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh && sudo bash gemini-tools_install.sh gemini-p8-tools
-```
-
- > [!TIP]
- > **如果提示hid-flash错误可以执行下面命令，没有就无需执行**
-
-```
- cd ~/klipper/lib/hidflash && make
+curl -kfsSL https://cdn.mellow.klipper.cn/Utils/fly-flash/fly-flash_install.sh | sudo bash -s -- "c8"
 ```
 
   > [!TIP]
 > 执行下面的命令来自动烧录固件
 
-```
-sudo gemini-p8-tools -f ~/klipper/out/klipper.bin
+```bash
+sudo fly-flash -d c8 -h -f ~/klipper/out/klipper.bin
 ```
 
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
 
 * 进入烧录模式
 
-```
-  sudo gemini-p8-tools -h
+```bash
+sudo fly-flash -d c8 -h
 ```
 
 
 * 正常启动MCU
 
-```
-  sudo gemini-p8-tools -s
+```bash
+sudo fly-flash -d c8 -s
 ```
 
 * 重置MCU
 
+```bash
+sudo fly-flash -d c8 -r
 ```
-  sudo gemini-p8-tools -r
+
+* 进入DFU
+
+```bash
+sudo fly-flash -d c8 -u
 ```
+
+
 
 
 > [!TIP]

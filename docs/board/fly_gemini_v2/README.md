@@ -34,11 +34,11 @@
 * 非FLY上位机请按 [上位机配置]( "点击即可跳转") 文档配置好CAN
 * 使用CanBoot请查看：[CanBoot使用](/advanced/canboot.md "点击即可跳转")
 
-## 1.1 Gemini系列升级说明
+## 1. Gemini系列升级说明
 
 * Gemini V1.1：修复can芯片供电，以及打印偏移问题
 * Gemini V2.0：RAM升级至1G，可同时使用CAN和Klipperscreen
 
-## 1.2 FLY-Gemini V2
+## 2. FLY-Gemini V2
 
 ![geminiv2](../../images/boards/fly_gemini_v2/geminiv2.png)

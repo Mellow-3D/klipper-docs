@@ -12,7 +12,7 @@
 
 查找 USB固件ID 的一般方法是从主机上的 ssh 终端运行此指令
 
-```
+```bash
 ls /dev/serial/by-id/*
 ```
 
@@ -24,7 +24,7 @@ ls /dev/serial/by-id/*
 
 更新后的配置如下所示：
 
-```
+```bash
 [mcu]
 serial: /dev/serial/by-id/usb-Klipper_stm32h743xx_1B0044000A51303435393237-if00
 ```
@@ -39,7 +39,7 @@ serial: /dev/serial/by-id/usb-Klipper_stm32h743xx_1B0044000A51303435393237-if00
 
 在SSH输入：
 
-```
+```bash
 sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持CAN"
 ```
 
@@ -57,7 +57,7 @@ sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持
 >
 >如果Klipper之前连接过
 
-```
+```bash
 cat /etc/network/interfaces.d/can0
 ```
 
@@ -67,7 +67,7 @@ cat /etc/network/interfaces.d/can0
 
 下方指令是将**1M**速率修改成**500K**修改后需要**重启系统**
 
-```
+```bash
 sudo sed -i 's/1000000/500000/g' /etc/network/interfaces.d/can0
 ```
 
@@ -77,7 +77,7 @@ sudo sed -i 's/1000000/500000/g' /etc/network/interfaces.d/can0
 
 查找 CANID的一般方法是从主机上的 ssh 终端运行此指令
 
-```
+```bash
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
 
@@ -91,7 +91,7 @@ sudo sed -i 's/1000000/500000/g' /etc/network/interfaces.d/can0
 
 在SSH输入：
 
-```
+```bash
 sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持CAN"
 ```
 
