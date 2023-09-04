@@ -6,7 +6,7 @@
 >
 > **如果没有请先吧[safe_z_home]   配置屏蔽然后添加[homing_override]** 
 
-```
+```bash
 [gcode_macro _LIFT_Z]
 variable_status: False
 gcode:
@@ -59,14 +59,14 @@ gcode:
 
 > 需要自行创建并且在printer.cfg中引用此文件
 
-```
+```bash
 [include sensorless.cfg]
 # 无限位
 ```
 
 > sensorless.cfg的内容如下，驱动需要按自己的修改
 
-```
+```bash
 [gcode_macro _HOME_X]
 gcode:
     # Always use consistent run_current on A/B steppers during sensorless homing

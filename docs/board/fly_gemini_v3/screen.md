@@ -9,7 +9,7 @@
 >[!WARNING]
 >此操作可以解决归位超时，但是会修改Klipper源码，请慎重选择
 
-```
+```bash
 sed -i 's/TRSYNC_TIMEOUT = 0.025/TRSYNC_TIMEOUT = 0.05/g' /home/fly/klipper/klippy/mcu.py 
 sudo systemctl restart klipper
 ```
@@ -20,3 +20,7 @@ sudo systemctl restart klipper
 ## TFT屏幕接线
 
 ![tft](../../images/boards/fly_gemini_v3/10-2.jpg)
+
+* FLY-Gemini-V3接线**请注意FPC与排线只需要接其中一种**
+
+![tft](../../images/screen/v2.png)

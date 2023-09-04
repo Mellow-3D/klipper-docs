@@ -67,7 +67,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
    ![boot](../../images/boards/fly_ercf/boot.png)
 
-```
+```bash
 lsusb
 ```
 

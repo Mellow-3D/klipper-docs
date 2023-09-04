@@ -1,6 +1,6 @@
 
 
-# 14. FLY Gemini V3 CPU散热风扇的使用
+# 15. FLY Gemini V3 CPU散热风扇的使用
 
 * Gemini V3 板载了一个5V的可控风扇接口，用于CPU散热，接线方法如下图
 
@@ -8,7 +8,7 @@
 
 * 配置如下：
 
-  ```
+  ```cfg
   [mcu host]                     # FlyOS已默认为您生成linux MCU，定义即可使用           
   serial: /tmp/klipper_host_mcu 
   

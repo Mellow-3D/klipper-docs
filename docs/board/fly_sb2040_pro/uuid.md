@@ -5,7 +5,7 @@
 
 在SSH中输入下面的命令查找uuid
 
-```
+```bash
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```
 
@@ -22,7 +22,7 @@
 * 您的镜像内核是否支持CAN
 * 固件是否编译正确
 
-```
+```bash
 [mcu sb2040]
 uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```

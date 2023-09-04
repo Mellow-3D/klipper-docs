@@ -66,13 +66,13 @@
 
 首先进入ssh，然后依次输入以下指令
 
-```
+```bash
 git clone https://github.com/Arksine/CanBoot
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
 
-```
+```bash
 cd CanBoot
 ```
 

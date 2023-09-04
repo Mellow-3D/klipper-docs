@@ -52,7 +52,7 @@
 * 加热棒端口最大输出电流:  6A
 * 风扇端口最大输出电流:  1A
 * 驱动工作模式支持：SPI、UART、STEP/DIR
-* 支持驱动：支持TMC5160Pro、TMC5160、TMC2209、TMC2225、TMC2226、TMC2208、TMC2130、A4988等
+* 支持驱动：支持外置TMC5160Pro、TMC5160、TMC2209、TMC2225、TMC2226、TMC2208、TMC2130、A4988等
 * 拓展接口：BLTouch（Servos、Probe）、RGB X2、UART X1、12864 X1
 * 风扇: 两线数控风扇 X6 (支持24V、12V、5V)可选
 * 温度传感器：3路 NTC 100K

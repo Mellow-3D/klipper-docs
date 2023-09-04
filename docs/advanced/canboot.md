@@ -269,7 +269,7 @@ make
 
    <img src="../images/boards/fly_sb2040/statusled.png" alt="statusled" style="zoom:67%;" />
 
-```
+```bash
 python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
@@ -365,7 +365,7 @@ make
 
 3. 接好线后，建议整机断电重新上电开机一次。接着便可以使用CanBoot烧写固件。首先输入以下命令
 
-```
+```bash
 python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
@@ -419,7 +419,7 @@ make
 python3 ~/klipper/lib/canboot/flash_can.py -i can0 -q
 ```
 
-```
+```bash
 python3  ~/klipper/lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 ```
 

@@ -1,4 +1,4 @@
-# 13. 连接加速度计
+# 14. 连接加速度计
 
 ## 1 接线
 
@@ -8,7 +8,7 @@
 
 ## 2 配置
 
-```
+```cfg
 [mcu host]
 serial: /tmp/klipper_host_mcu
 

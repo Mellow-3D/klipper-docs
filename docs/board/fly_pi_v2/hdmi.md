@@ -1,6 +1,6 @@
-#  9. HDMI屏幕的使用
+#  10. HDMI屏幕的使用
 
-## 9.1 修改配置
+## 1. 修改配置
 
 1. 启用 klipperscreen 将``KlipperScreen=false``修改为``KlipperScreen=true``
 
@@ -14,7 +14,7 @@
    
    ![hdmi](../../images/boards/fly_pi/hdmi.png)
    
-   ## 9.2 连接屏幕
+   ## 2. 连接屏幕
    
    下图为FLY-π v2搭配 FLY LCD7/5电容触摸屏的接线方式（图中HDMI转FPC转接板需单独购买）：
    

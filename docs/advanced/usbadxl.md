@@ -75,15 +75,15 @@
 
 依次执行以下三条命令以安装加速度计依赖包。
 
-```
+```bash
 sudo apt update
 ```
 
-```
+```bash
 sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 ```
 
-```
+```bash
 ~/klippy-env/bin/pip install -v numpy
 ```
 

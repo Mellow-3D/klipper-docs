@@ -9,7 +9,7 @@
 >[!WARNING]
 >此操作可以解决归位超时，但是会修改Klipper源码，请慎重选择
 
-```
+```bash
 sed -i 's/TRSYNC_TIMEOUT = 0.025/TRSYNC_TIMEOUT = 0.05/g' /home/fly/klipper/klippy/mcu.py 
 sudo systemctl restart klipper
 ```

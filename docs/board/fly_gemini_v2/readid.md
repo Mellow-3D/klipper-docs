@@ -1,4 +1,4 @@
-# 6. 读取主板ID
+# 10. 读取主板ID
 
 1.[连接到SSH](/board/fly_gemini/host/FLY_π_ssh.md "点击即可跳转")，然后输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
 

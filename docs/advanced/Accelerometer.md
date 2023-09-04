@@ -46,7 +46,7 @@
 
 ![ACCE](../images/adv/accele/acc3.png ":no-zooom")
 
-```
+```ini
 MOSI ----> SDI(SDA)
 MISO ----> SDO
 CLK  ----> CLK(SCK)
@@ -58,7 +58,7 @@ CS   ----> CS
 * 打开printer.cfg加入加速度计配置
 * spi_bus必须配置，如果加速度计的cs引脚接到主板SPI0的cs1则spi_bus: spidev0.1
 
-```ini
+```cfg
 [mcu host]
 serial: /tmp/klipper_host_mcu
 

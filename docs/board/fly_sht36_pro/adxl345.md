@@ -4,7 +4,7 @@
 
 配置如下：
 
-```
+```bash
 #####################################################################
 #                       adxl345加速度计配置（需要时启用即可）
 #####################################################################
@@ -28,15 +28,15 @@ probe_points: 150,150,10    # 坐标配置为热床的中间
 
 依次执行以下三条命令以安装加速度计依赖包。
 
-```
+```bash
 sudo apt update
 ```
 
-```
+```bash
 sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 ```
 
-```
+```bash
 ~/klippy-env/bin/pip install -v numpy
 ```
 
@@ -46,7 +46,7 @@ sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 
 修改配置并保存重启后，在控制台输入指令：
 
-```
+```bash
 ACCELEROMETER_QUERY
 ```
 
@@ -58,20 +58,20 @@ ACCELEROMETER_QUERY
 
 测试X轴的命令如下：
 
-```
+```bash
 TEST_RESONANCES AXIS=X
 ```
 
 测试Y轴的命令如下：
 
-```
+```bash
 TEST_RESONANCES AXIS=Y
 ```
 
 > [!TIP]
 > 如果测试过程中打印机震动太剧烈请及时按紧急停止或发送``M112``来停止。过高的``accel_per_hz``会让振动变得剧烈，可以适当降低。
 
-```
+```bash
 [resonance_tester]
 accel_chip: adxl345
 accel_per_hz: 50  # 默认值为75

@@ -1,15 +1,15 @@
 
 
-# 6. 连接WiFi
+# 7. 连接WiFi
 
 连接WiFi一共有两种方式
 
-## 6.1 通过FLY_Config连接WiFi
+## 1. 通过FLY_Config连接WiFi
 
 找到WIFI配置，将WIFI处的flase改成true，并将WiFi名称和密码填写上，保存，插回上位机。等待几分钟后，进入路由器后台管理界面查看IP地址。
    ![connect_wifi](../../images/boards/fly_pi/connect_wifi.png)
 
-## 6.2 通过SSH软件连接
+## 2. 通过SSH软件连接
 
 使用 [串口连接](/board/fly_pi/FLY_π_ssh "点击即可跳转") 到SSH软件后使用nmtui命令连接WiFi
 

@@ -6,13 +6,13 @@
 
 **在系统配置config.g中寻找**
 
-```
+```cfg
 M308 S1 P"xxxx" Y"xxxx" T100000 B4092
 ```
 
 替换成
 
-```
+```cfg
 M308 S1 P"124.max31865cs" Y"rtd-max31865" F60 R430
 ```
 
@@ -20,7 +20,7 @@ M308 S1 P"124.max31865cs" Y"rtd-max31865" F60 R430
 
 ### 2 使用NTC 100K等普通热敏
 
-```
+```cfg
 M308 S1 P"xxxx" Y"xxxx" T100000 B4092
 ```
 
@@ -34,13 +34,13 @@ M308 S1 P"124.temp0" Y"thermistor" T100000 B4092
 
 ### 3 使用PT1000参考配置
 
-```
+```cfg
 M308 S1 P"xxxx" Y"xxxx" T100000 B4092
 ```
 
 替换成
 
-```
+```cfg
 M308 S1 P"124.temp0" Y"pt1000" T100000 B4092 R1000
 ```
 
@@ -50,7 +50,7 @@ M308 S1 P"124.temp0" Y"pt1000" T100000 B4092 R1000
 
 寻找
 
-```
+```cfg
 ; Drives
 M569 P0 S1                                   ; physical drive 0 goes forwards using default driver timings
 M569 P124.0 S1
@@ -69,13 +69,13 @@ M84 S30                                      ; Set idle timeout
 
 将里面的**M955 P0 S1**下面添加
 
-```
+```cfg
 M569 P124.0 S1
 ```
 
 把**M584 X0 Y1 Z2 E3**替换
 
-```
+```cfg
 M584 X0 Y1 Z2 E124.0 
 ```
 
@@ -85,7 +85,7 @@ M584 X0 Y1 Z2 E124.0
 
 **config.g**
 
-```
+```cfg
 ; Z-Probe
 M558 P0 H5 F120 T6000                        ; disable Z probe but set dive height, probe speed and travel speed
 M557 X15:215 Y15:195 S20                     ; define mesh grid
@@ -93,7 +93,7 @@ M557 X15:215 Y15:195 S20                     ; define mesh grid
 
 替换
 
-```
+```cfg
 ; Z-Probe
 M558 P9 H6 F250:30 T8000 C"^124.io0.in"       ; set Z probe type to bltouch and the dive height + speeds
 M950 S0 C"124.io0.out"                        ; Setup io0.out as servo port on Fly-RRF-36
@@ -103,7 +103,7 @@ M950 S0 C"124.io0.out"                        ; Setup io0.out as servo port on F
 
 对于homez.g，你需要有类似的东西。请相应地修改床中央所需的坐标。
 
-```
+```cfg
 ; ################# Home Z Preparation ################
 
 G91 															; Relative mode
@@ -124,28 +124,28 @@ G30					 											; Probe a single point
 
 FAN0
 
-```
+```cfg
 M950 F0 C"fan0" Q500                         ; create fan 0 on pin fan0 and set its frequency
 M106 P0 S0 H1 T50                            ; set fan 0 value. Thermostatic control is turned on
 ```
 
 替换
 
-```
+```cfg
 M950 F0 C"124.out1" Q500                     ; create fan 0 on pin fan0 and set its frequency
 M106 P0 S0 H1 T50                            ; set fan 0 value. Thermostatic control is turned off
 ```
 
 FAN1
 
-```
+```cfg
 M950 F1 C"fan1" Q500                         ; create fan 1 on pin fan1 and set its frequency
 M106 P1 S0 H-1 
 ```
 
 替换
 
-```
+```cfg
 M950 F1 C"124.out2" Q500                     ; create fan 1 on pin fan1 and set its frequency
 M106 P0 S0 H-1                               ; set fan 0 value. Thermostatic control is turned off
 ```
@@ -154,7 +154,7 @@ M106 P0 S0 H-1                               ; set fan 0 value. Thermostatic con
 
 ## 6.4 xy限位配置
 
-```
+```cfg
 M574 X1 S1 P"!124.io1.in"                     ; configure switch-type (e.g. microswitch) endstop for low end on X via pin io0
 M574 Y1 S1 P"124.io2.in"                      ; configure switch-type (e.g. microswitch) endstop for low end on Y via pin io1
 ```
@@ -165,7 +165,7 @@ M574 Y1 S1 P"124.io2.in"                      ; configure switch-type (e.g. micr
 
 配置里面添加
 
-```
+```cfg
 M955 P124.0 
 ```
 
@@ -173,13 +173,13 @@ M955 P124.0
 
 ## 6.6 加热棒配置
 
-```
+```cfg
 M950 H1 C"heat0" T1  
 ```
 
 替换
 
-```
+```cfg
 M950 H1 C"124.out0" T1  
 ```
 
