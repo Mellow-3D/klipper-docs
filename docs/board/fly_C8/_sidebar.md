@@ -1,7 +1,7 @@
 * FLY-C8
 
     * [1. 产品简介](/board/fly_C8/README.md)
-    * [2. 外设接口](/board/fly_C8/pins.md)
+    * [2. 外设接口](/board/fly_C8/interface.md)
     * [3. 镜像烧录准备](/board/fly_C8/FLY_π_mirror.md)
     * [4. 通过SD卡启动系统](/board/fly_C8/sd_mirror.md)
     * [5. 使用USB烧录M2WE](/board/fly_C8/FLY_π_M2WE.md)
@@ -11,7 +11,7 @@
     * [9. SSH连接](/board/fly_C8/ssh.md)
     * [10. 固件烧录](/board/fly_C8/flash.md)
     * [11. 读取ID](/board/fly_C8/c8id.md)
-    * [12. 主板接线](/board/fly_C8/c8link.md)
+    * [12. 主板接线](/board/fly_C8/wiring.md)
     * [13. 参考配置](/board/fly_C8/cfg.md)
     * [14. ADXL345使用](/board/fly_C8/adxl345.md)
     * [15. 主控风扇使用](/board/fly_C8/corefan.md)
