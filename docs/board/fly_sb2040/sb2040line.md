@@ -45,13 +45,19 @@
 
 <img src="../../images/boards/fly_sb2040/heater.png" alt="heater" style="zoom:80%;" />
 
-## 2.5 热敏接线
+## 2.5 PT1000与普通热敏配置
 
 SB2040工具板不支持PT100。下图为普通热敏和**PT1000**的接线方法。
 
 <img src="../../images/boards/fly_sb2040/thermistor.png" alt="thermistor" style="zoom:80%;" />
 
-> SB2040 V2支持 **PT100**，两线的PT100连接到中间两个引脚
+## 2.5.1 PT100接线
+
+> [!Tip]
+>
+> 请确定购买的工具板是否带**31865芯片**
+>
+> 两线的PT100连接到中间两个引脚
 
 <img src="../../images/boards/fly_sb2040/sb2040v2_pt100.png" alt="sb2040v2_pt100" style="zoom:80%;" />
 

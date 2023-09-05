@@ -33,7 +33,7 @@
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 
-  ```
+  ```bash
   curl -kfsSL https://cdn.mellow.klipper.cn/Utils/fly-flash/fly-flash_install.sh | sudo bash -s -- "gemini-v3"
   ```
 
@@ -65,11 +65,3 @@ sudo fly-flash -d gemini-v3 -s
 ```bash
 sudo fly-flash -d gemini-v3 -r
 ```
-
-
-
-> [!TIP]
->
-> 烧录完成后将跳线帽插入``G/BT1``侧（拉低BT1）
-
-![flash2](../../images/boards/fly_gemini_v3/flash2.png)

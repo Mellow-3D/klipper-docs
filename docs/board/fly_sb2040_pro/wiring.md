@@ -43,12 +43,18 @@
 
 ![heater](../../images/boards/fly_sb2040_pro/heater.png)
 
-## 2.5 热敏接线
+## 2.5 普通热敏与PT1000的接线方法
 
 下图为普通热敏和**PT1000**的接线方法。
 
 <img src="../../images/boards/fly_sb2040_pro/thermistor.png" alt="thermistor" style="zoom:80%;" />
 
+## 2.5.1 PT100接线
+
+> [!Tip]
+>
+> 请确定购买的工具板是否带**31865芯片**
+>
 > **PT100**的接线方法，两线的PT100连接到中间两个引脚
 
 <img src="../../images/boards/fly_sb2040_pro/sb2040v2_pt100.png" alt="sb2040v2_pt100" style="zoom:90%;" />
