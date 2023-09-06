@@ -43,11 +43,18 @@
 
 ![heater](../../images/boards/fly_sht36_pro/heater.png)
 
-## 2.6 热敏接线
+## 2.6 普通热敏与PT1000接线
 
 下图为普通热敏和**PT1000**的接线方法。
 
 ![thermistor](../../images/boards/fly_sht36_pro/thermistor.png)
+
+### 2.6.1 PT100接线
+
+> [!Tip]
+>
+> 请确定购买的工具板是否带**31865芯片**
+>
 
 下图为**PT100**的接线方法。默认两线PT100，只需连接到从左至右第2、3个引脚即可。
 
