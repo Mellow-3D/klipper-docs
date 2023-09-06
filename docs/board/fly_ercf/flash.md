@@ -1,4 +1,4 @@
-# 固件烧录
+# 4. 固件烧录
 
 > [!TIP]
 > ERCF自带**CANBOOT**无需在编译烧录**CANBOOT**
@@ -19,20 +19,23 @@
     make menuconfig
     ```
 
-## 配置固件
+## 4.1 配置固件
 
-1. ERCF的Klipper固件配置
-   * 推荐·使用CAN连接如下图配置
-   * 注意·如果使用Canboot烧录请将``Bootloader offset``选项选择为``16KiB bootloader``
-   ![config](../../images/boards/fly_ercf/config-can.png ":no-zooom")
-   ----
-   * USB连接如下图配置
-   * 注意·如果使用Canboot烧录请将``Bootloader offset``选项选择为``16KiB bootloader``![config](../../images/boards/fly_ercf/config-usb.png ":no-zooom")
+### 4.1.1 ERCF使用 CAN 连接的固件配置
+
+* 推荐·使用CAN连接如下图配置
+* 注意·如果使用Canboot烧录请将``Bootloader offset``选项选择为``16KiB bootloader``
+![config](../../images/boards/fly_ercf/config-can.png ":no-zooom")
+----
+
+### 4.1.2 ERCF使用 USB 连接的固件配置
+* USB连接如下图配置
+* 注意·如果使用Canboot烧录请将``Bootloader offset``选项选择为``16KiB bootloader``![config](../../images/boards/fly_ercf/config-usb.png ":no-zooom")
 
 
 * 如何编译固件参考[固件烧录](/introduction/firmware)
 
-## 编译并烧录固件
+## 4.2 编译并烧录固件
 
 * 编译
 
@@ -44,7 +47,7 @@
 
    使用**USB**烧录时最后出现**Creating hex file out/klipper.bin**则编译成功
 
-## 使用CanBoot烧录固件
+### 4.2.1 使用CanBoot烧录固件
 
 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 
@@ -56,7 +59,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
-## 使用USB烧录固件
+### 4.2.2 使用USB烧录固件
 
 > [!TIP]
 > **使用usb烧录时会覆盖掉CanBoot**
