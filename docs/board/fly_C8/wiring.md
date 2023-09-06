@@ -14,7 +14,7 @@
 > [!TIP]
 > 注：C8主板只支持12-24V供电，不支持高压驱动
 
-<img src="../../images/boards/fly_c8/power.png" alt="power" style="zoom:80%;" />
+<img src="../../images/boards/fly_c8/power1.png" alt="power" style="zoom:80%;" />
 
 ## 3.3 驱动跳线
 
@@ -94,11 +94,11 @@ C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如�
 
 **喷头热敏：**
 
-<img src="../../images/boards/fly_c8/thermistor.png" alt="thermistor" style="zoom:80%;" />
+
 
 **热床热敏：**
 
-<img src="../../images/boards/fly_c8/thermistor.png" alt="thermistor" style="zoom:80%;" />
+
 
 ## 3.9 风扇接线
 
@@ -107,10 +107,6 @@ C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如�
 **注意！！！选择错误的风扇电压可能会损坏风扇或者MOS模块。**
 
 ![fan_voltage](../../images/boards/fly_c8/fan_voltage.png)
-
-**MOS模块的安装（不分正反）。**如下图
-
-<img src="../../images/boards/fly_super8/fanmos.png" alt="fanmos" style="zoom:60%;" />
 
 **风扇接线。**如下图。
 
