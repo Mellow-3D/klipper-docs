@@ -6,6 +6,8 @@
 
 <img src="../../images/boards/fly_pi_v2/adxl345.jpg" alt="adxl345" style="zoom:70%;" />
 
+<img src="../../images/boards/fly_c8/adxl345.png" alt="adxl345" style="zoom:80%;" />
+
 ## 2 配置
 
 ```cfg

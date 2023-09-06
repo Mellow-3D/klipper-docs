@@ -78,8 +78,9 @@ sudo fly-flash -d c8 -r
 sudo fly-flash -d c8 -u
 ```
 
-
-
-
 > [!TIP]
 > 烧录完成后无需将插入任何跳线
+
+> [!warning]
+> 读取主板ID时，请使用12/24V供电，否则会导致读不到ID！！！
+

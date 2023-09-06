@@ -4,7 +4,7 @@
 
 * FLY C8 板载了ZH1.5-2pin的可控5V风扇接口，用于CPU散热，接线方法如下图
 
-  ![corefan](../../images/boards/fly_gemini_v3/corefan.png)
+  ![soc_fan](../../images/boards/fly_c8/soc_fan.png)
 
 * 配置如下：
 

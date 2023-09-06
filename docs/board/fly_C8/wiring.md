@@ -11,10 +11,13 @@
 
 **供电：**C8的供电分为2个部分，分别是主板（主控、驱动）供电，加热棒、风扇、热床供电。
 
-> [!TIP]
+> [!warning]
 > 注：C8主板只支持12-24V供电，不支持高压驱动
 
-<img src="../../images/boards/fly_c8/power1.png" alt="power" style="zoom:80%;" />
+> [!warning]
+> 注：主板供电和加热棒、风扇、热床供电都要接上（直接并联在一起即可），否则主板不能正常工作！！！
+
+<img src="../../images/boards/fly_c8/power.png" alt="power" style="zoom:80%;" />
 
 ## 3.3 驱动跳线
 
@@ -24,9 +27,11 @@
 
 **SPI模式。**最常见的使用这种模式的驱动有：TMC5160、TMC2230等。这类驱动芯片通过spi与主控同步串行通信，同样的也可以通过修改配置文件来设置驱动的细分、运行电流、静音模式等。
 
-<img src="../../images/boards/fly_super8/drive_dip.png" alt="drive_dip" style="zoom:75%;" />
+<img src="../../images/boards/fly_c8/dirve_dip.png" alt="dirve_dip" style="zoom:70%;" />
 
 **注：使用A4988驱动或者外接驱动，跳线模式选择：正常跳线模式。并在配置中将驱动配置删除即可。**
+
+<img src="../../images/boards/fly_c8/homeless.png" alt="homeless" style="zoom:80%;" />
 
 ## 3.4 驱动安装
 
@@ -54,11 +59,11 @@
 
 ![motorSCH](../../images/boards/fly_super8/motorSCH.png)
 
-* **Voron Trident：**
+**Voron Trident：**
 
 ![voron_tirdent](../../images/boards/fly_c8/voron_tirdent.png)
 
-* **Voron 2.4：**
+**Voron 2.4：**
 
 ![voron2.4](../../images/boards/fly_c8/voron2.4.png)
 
@@ -92,13 +97,9 @@ C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如�
 
 <img src="../../images/boards/fly_super8/semitec3.png" alt="semitec3" style="zoom:80%;" />
 
-**喷头热敏：**
+**喷头热敏、热床热敏：**
 
-
-
-**热床热敏：**
-
-
+<img src="../../images/boards/fly_c8/thermistor.png" alt="thermistor" style="zoom:80%;" />
 
 ## 3.9 风扇接线
 
@@ -157,13 +158,35 @@ Tap是一种基于喷嘴的z探针，适用于 voron 2.4和Trident打印机。�
 
 **注意！！！5V和GND不能接反，否则会损坏LED灯板甚至主板！！！**
 
-**图片正在制作中**
+<img src="../../images/boards/fly_c8/RGB.png" alt="RGB" style="zoom:80%;" />
 
-## 3.13 FLY-Mini12864接线
+## 3.13 加速度计接线
+
+<img src="../../images/boards/fly_c8/adxl345.png" alt="adxl345" style="zoom:80%;" />
+
+## 3.14 FLY-Mini12864接线
 
 下图为FLY的mini12864的接线方式，其他厂家的屏幕请咨询相应厂家。Mini12864屏幕接接反，接错可能会导致上位机连不上MCU。如果使用mini12864屏幕之前可以正常连上主板的MCU，而使用mini12864后就连不上MCU了，请尝试拔出mini12864的接线！！！
 
-**图片正在制作中**
+<img src="../../images/boards/fly_c8/mini12864.png" alt="mini12864" style="zoom:80%;" />
+
+## 3.15 拨码开关的使用
+
+> [!Warning]
+> 请注意拨码开关不是跳线，如果想正常使用还是需要拨动拨码
+
+> [!Warning]
+>  ``1``,``2``为一组，``3``,``4``为一组。两组不可同时打开
+
+* 拨码开关``1``,``2``向右拨动至打开状态，将下位机与上位机通过内置USB连接
+
+  <img src="../../images/boards/fly_c8/dip1.png" alt="dip1" style="zoom:90%;" />
+
+* 拨码``3``,``4``向右拨动至打开状态，将下位机USB连接到板载Type-C端口
+
+  <img src="../../images/boards/fly_c8/dip2.png" alt="dip2" style="zoom:90%;" />
+
+
 
 
 
