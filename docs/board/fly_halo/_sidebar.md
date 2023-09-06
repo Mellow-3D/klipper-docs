@@ -7,3 +7,4 @@
   * [5. 功能介绍](/board/fly_halo/fly_halo_function)
   * [6. 固件升级](/board/fly_halo/update)
   * [7. 固件下载](/board/fly_halo/firmware)
+  * [8. 三维模型](/board/fly_halo/3dmodel)

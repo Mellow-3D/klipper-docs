@@ -1,5 +1,5 @@
-# FLY-C8 3D模型
+# FLY-D5 3D模型
 
 ```3dmodel
-https://cdn.mellow.klipper.cn/STEP/FLY-C8.step
+https://cdn.mellow.klipper.cn/STEP/FLY-d5.step
 ```

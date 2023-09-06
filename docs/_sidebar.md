@@ -29,6 +29,9 @@
   - FLY C8系列
     - [FLY-C8](/board/fly_C8/README.md)
   
+  - FLY D5系列
+    - [FLY-D5](/board/fly_d5/README.md)
+
   - FLY 9 轴主板
     - [FLY-9 轴](/board/fly_9/)
   
