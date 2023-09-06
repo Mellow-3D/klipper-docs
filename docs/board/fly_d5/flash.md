@@ -1,18 +1,9 @@
-# 5. 固件编译烧录
+# 3. 固件编译烧录
 
 > [!TIP]
-> FLY-C8 无需使用任何跳线即可烧录固件
+> FLY-D5 不需使用任何跳线但是需要按着**BOOT键**并且将type-c接入上位机才可以烧录固件
 
-
-
-## 5.1 拨码开关设置
-
-* 拨码开关``1``,``2``打开将下位机与上位机通过内置USB连接，拨码``3``,``4``打开将下位机USB连接到板载Type-C端口
-* ``1``,``2``为一组，``3``,``4``为一组。两组不可同时打开
-
-![dip1](../../images/boards/fly_c8/dip1.png)
-
-## 5.2 固件编译
+## 1. 固件编译
 
 编译固件前请确保 [连接到SSH](/board/fly_gemini/host/FLY_π_ssh.md "点击即可跳转")
 
@@ -20,58 +11,45 @@
 
 * 普通USB固件配置
 
-![usb2can](../../images/boards/fly_c8/usb.png ":no-zooom")
+![usb](../../images/boards/fly_d5/usb.png)
 
 * USB桥接CAN固件配置
-* FLY-C8建议使用Klipper的USB桥接CAN固件，可以省去一个UTOC来通过CAN连接工具板
 
-![usb2can](../../images/boards/fly_c8/usb2can.png ":no-zooom")
+![usb](../../images/boards/fly_d5/can.png)
 
 * 执行命令```make -j4```来编译固件
 
-## 5.3 固件烧录
 
-* 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 
-```bash
-wget -O gemini-tools_install.sh https://cdn.mellow.klipper.cn/Utils/gemini-tools/gemini-tools_install.sh && sudo bash gemini-tools_install.sh gemini-p8-tools
-```
+## 2. BOOT按键
 
- > [!TIP]
- > **如果提示hid-flash错误可以执行下面命令，没有就无需执行**
+![boot](../../images/boards/fly_d5/boot.png)
 
-```bash
- cd ~/klipper/lib/hidflash && make
-```
+## 3. Klipper上位机烧录
 
-  > [!TIP]
-> 执行下面的命令来自动烧录固件
+1. 安装烧录工具
 
 ```bash
-sudo gemini-p8-tools -f ~/klipper/out/klipper.bin
+sudo apt install dfu-util -y
 ```
 
-* 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
-
-* 进入烧录模式
+2. 使用Type-C数据线将Super8 Pro板连接到Linux设备，请确保连接前已安装短接跳线
+3. 执行下面的命令查看是否连接成功,复制蓝色框中的USB ID
 
 ```bash
-  sudo gemini-p8-tools -h
+lsusb
 ```
 
+![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
-* 正常启动MCU
+4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
 
 ```bash
-  sudo gemini-p8-tools -s
+dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
 ```
 
-* 重置MCU
+5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
 
-```bash
-  sudo gemini-p8-tools -r
-```
+![7](../../images/boards/fly_sht36_42/7.png ":no-zooom")
 
-
-> [!TIP]
-> 烧录完成后无需将插入任何跳线
+6. 出现上图内容则烧录成功
