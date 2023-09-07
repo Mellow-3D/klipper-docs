@@ -1,5 +1,3 @@
-屏幕配置与使用
-
 >[!WARNING]
 >通电前请注意屏线方向是否正确
 
@@ -17,10 +15,6 @@ sudo systemctl restart klipper
 > [!WARNING]
 > 如果更新了Klipper则可能会将源码修改回去
 
-## HDMI屏幕接线
+## HDMI与TFT屏幕接线
 
-
-
-
-
-## TFT屏幕接线
+![](../../images/boards/fly_c8/screen.jpg)

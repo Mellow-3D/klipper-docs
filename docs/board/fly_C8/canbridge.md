@@ -8,6 +8,10 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 ## 1. CAN接线
 
+>[!Tip]
+>
+>请注意如果需要搜索工具的**CANID**需要给主板接上电源
+
 以SHT36V2为例，接线如下图所示
 
 <img src="../../images/boards/fly_c8/can_bridge.png" alt="can_bridge" style="zoom:80%;" />
@@ -20,7 +24,7 @@ Klipper固件配置界面如下图。编译固件后，按照 [C8固件编译和
 
 ## 3. 查看CAN uuid
 
-固件刷好后，先不连接SHT36V2工具板，使用下面的命令读取Gemini V3主板的CAN ID。
+固件刷好后，先不连接SHT36V2工具板，使用下面的命令读取C8主板的CAN ID。
 
 也可以使用 FLY 的ID读取工具使用方法请查看：[查看CAN uuid](/advanced/can?id=查看can-uuid "点击即可跳转") （此方法仅限Fly上位机）
 
