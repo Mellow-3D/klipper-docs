@@ -72,7 +72,7 @@ sudo systemctl restart klipper
 
    ![LCD-HDMI](../images/screen/LCD-HDMI.png)
 
-   ![LCD-HDMI](../images/screen/LCD-HDMI2.png)
+   ![LCD-HDMI](../images/screen/lcd-hdmi2.png)
 
 
 

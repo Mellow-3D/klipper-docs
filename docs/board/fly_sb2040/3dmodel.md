@@ -8,7 +8,7 @@
 https://cdn.mellow.klipper.cn/STEP/FLY-SB2040V2_Mainbody.step
 ```
 ```3dmodel
-https://cdn.mellow.klipper.cn/STEP/FLY-SB2040V2-Fan.step
+https://cdn.mellow.klipper.cn/STEP/FLY-SB2040V2_Fan.step
 ```
 
 # FLY-SB2040-V1模型
