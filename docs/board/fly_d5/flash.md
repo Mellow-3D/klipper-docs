@@ -1,7 +1,7 @@
 # 3. 固件编译烧录
 
 > [!TIP]
-> FLY-D5 不需使用任何跳线但是需要按着**BOOT键**并且将type-c接入上位机才可以烧录固件
+> FLY-D5 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
 
 ## 1. 固件编译
 
@@ -9,11 +9,11 @@
 
 这里只进行简要说明，完整编译步骤请查看：[编译klipper固件](/board/fly_super8/firmware?id=_1-编译klipper固件 "点击即可跳转")。
 
-* 普通USB固件配置
+**普通USB固件配置**
 
 ![usb](../../images/boards/fly_d5/usb.png)
 
-* USB桥接CAN固件配置
+**USB桥接CAN固件配置**
 
 ![usb](../../images/boards/fly_d5/can.png)
 
