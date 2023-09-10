@@ -11,7 +11,7 @@
     * [9. SSH连接](/board/fly_C8/ssh.md)
     * [10. 固件烧录](/board/fly_C8/flash.md)
     * [11. 读取ID](/board/fly_C8/c8id.md)
-    * [12. 主板接线](/board/fly_C8/wiring.md)
+    * [**12. 主板接线**](/board/fly_C8/wiring.md)
     * [13. 参考配置](/board/fly_C8/cfg.md)
     * [14. ADXL345使用](/board/fly_C8/adxl345.md)
     * [15. 主控风扇使用](/board/fly_C8/corefan.md)

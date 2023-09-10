@@ -1,7 +1,7 @@
 * FLY-E3 v2
 
   * [1. 产品简介](/board/fly_e3_v2/README.md)
-  * [2. E3 v2 接线](/board/fly_e3_v2/line.md)
+  * [**2. E3 v2 接线**](/board/fly_e3_v2/wiring.md)
   * [3. 连接到SSH](/board/fly_host/fly_pi/FLY_π_ssh)
   * [4. 固件编译和烧录](/board/fly_e3_v2/firmware.md)
   * [5. 读取主板ID](/board/fly_e3_v2/readid.md)

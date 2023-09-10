@@ -10,13 +10,13 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 以SHT36V2为例，接线如下图所示
 
-
+<img src="../../images/boards/fly_d5/canbridge.png" alt="canbridge" style="zoom:80%;" />
 
 ## 2. 主板固件参数配置
 
 Klipper固件配置界面如下图。编译固件后，按照 [D5固件编译和烧录](/board/fly_d5/flash "点击即可跳转") 给出的方法，将固件刷入主板中。
 
-
+![can](../../images/boards/fly_d5/can.png)
 
 ## 3. 查看CAN uuid
 
