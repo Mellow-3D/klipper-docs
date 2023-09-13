@@ -274,7 +274,6 @@ pid_kd: 363.769
 pin:PC9
 kick_start_time: 1.0         # 启动时间（勿动）
 off_below: 0.10              # 勿动
-hardware_pwm: true
 max_power: 1.0
 #--------------------------------------------------------------------
 [heater_fan 喉管散热]         # 喉管冷却风扇
