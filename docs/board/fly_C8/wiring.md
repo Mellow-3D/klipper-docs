@@ -41,10 +41,6 @@
 
 ![fly2209](../../images/boards/fly_super8/fly2209.png)
 
-**非FLY驱动：**如果是非FLY的驱动（下图为mks 2209），在安装之前需要剪掉图中两个引脚（这两个引脚为无限位归零引脚，不使用无限位归零功能则需要剪掉）。不同厂家的设计可能会有所区别，使用前请咨询相应厂家。
-
-![mks2209](../../images/boards/fly_super8/mks2209.png)
-
 **注意！！！ 安装驱动模块时，一定要保证插入的方向正确，即EN引脚在左上角，否则会损坏驱动甚至主板！！！注意给驱动贴好散热片！！！**
 
 <img src="../../images/boards/fly_c8/tmc_install.png" alt="tmc_install" style="zoom:80%;" />

@@ -122,11 +122,11 @@ homing_positive_dir: true           # 复位方向（一般不需要改动）
 #--------------------------------------------------------------------
 ##  请确保驱动型号配置正确 (2208 or 2209)
 # [tmc2209 stepper_x]                 # x 驱动配置 -TMC2209
-# uart_pin: PC13                       # 通讯端口Pin脚定义
+# uart_pin: PC13                      # 通讯端口Pin脚定义
 # interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 # run_current: 0.8                    # 电机运行电流值（单位：mA）
 # sense_resistor: 0.110               # 驱动采样电阻不要改
-# stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+# stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
 #--------------------------------------------------------------------
 [tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
 cs_pin: PC13                        # SPI 片选Pin脚定义
@@ -226,7 +226,7 @@ enable_pin: !PB11
 microsteps: 16
 full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
 rotation_distance: 22.52245         # 主动带轮周长mm
-# 校准步进值: 23.1325301 = 旧值22.6789511*（实际值102/目标值100）
+# 校准步进值: 23.1325301 = 旧值22.6789511*实际值102/目标值100
 gear_ratio: 50:10                   # 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.750            # 耗材直径
@@ -274,7 +274,6 @@ pid_kd: 363.769
 pin:PC9
 kick_start_time: 1.0         # 启动时间（勿动）
 off_below: 0.10              # 勿动
-hardware_pwm: true
 max_power: 1.0
 #--------------------------------------------------------------------
 [heater_fan 喉管散热]         # 喉管冷却风扇

@@ -64,3 +64,6 @@
 
  ![](../../images/boards/fly_c8/size.png)
 
+## 1.3 C8接口说明
+
+![pin](../../images/boards/fly_c8/interface.jpg)
