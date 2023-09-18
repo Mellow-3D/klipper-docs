@@ -72,6 +72,14 @@ sensor_pin: SHT36:gpio26           # 传感器引脚
 #pullup_resistor: 1000               # 热敏上拉电阻为1000，如果温度为负-180需要更换跳线
 #sensor_pin: SHT36:gpio26            # 传感器引脚  
 #--------------------------------------------------------------------
+##pt100配置
+#sensor_type: MAX31865
+#sensor_pin: SHT36:gpio1
+#spi_software_sclk_pin: SHT36:gpio10
+#spi_software_mosi_pin: SHT36:gpio12
+#spi_software_miso_pin: SHT36:gpio11
+#rtd_reference_r: 430
+#--------------------------------------------------------------------
 min_temp: -200                      # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 max_power: 1.0                      # 最大功率
