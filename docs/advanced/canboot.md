@@ -39,7 +39,7 @@ make
 
 ![3](../images/adv/canboot/3.png)
 
-* 像上图一样出现``Creating hex file out/canboot.bin`` 或 ``Creating uf2 file out/canboot.uf2`` 即为编译成功
+* 像上图一样出现``Creating hex file out/canboot.bin`` 即为编译成功
 
 #### **SB2040 & ERCF**
 
@@ -62,6 +62,18 @@ make
 
 > [!TIP]
 > SHT36 v2出厂已刷好CanBoot，无需执行这一步！！！
+
+![sht](../images/adv/canboot/sht.png)
+
+配置完成后按“Q”键，然后再按“Y”键即可退出并保存。执行下面的命令编译固件
+
+```bash
+make
+```
+
+![3](../images/adv/canboot/3.png)
+
+* 像上图一样出现``Creating hex file out/canboot.bin`` 即为编译成功
 
 <!-- tabs:end -->
 
@@ -155,6 +167,41 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.b
 
 > [!TIP]
 > SHT36 v2出厂已刷好CanBoot，无需执行这一步！！！
+
+1. 进入SHT36 V2的USB烧录模式
+
+![usbflash](../images/boards/fly_sht_v2/boot.png)
+
+2. 安装烧录工具
+
+```bash
+sudo apt install dfu-util -y
+```
+
+3. 使用Type-C数据线将SHT板连接到Linux设备，请确保连接前已安装**短接跳线**
+
+4. 执行下面的命令查看是否连接成功,复制蓝色框中的USB ID
+
+```bash
+lsusb
+```
+
+![6](../images/boards/fly_sht36_42/6.png)
+
+5. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
+
+```bash
+dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.bin
+```
+
+6. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
+
+![7](../images/boards/fly_sht36_42/7.png)
+
+7. 出现上图内容则烧录成功
+
+> [!TIP]
+> 注意：烧录成功后一定记得拔下来跳线帽
 
 <!-- tabs:end -->
 

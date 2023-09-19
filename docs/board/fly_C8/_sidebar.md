@@ -11,7 +11,7 @@
     * [9. 读取ID](/board/fly_C8/c8id.md)
     * [10. 参考配置](/board/fly_C8/cfg.md)
     * [11. 主板接线](/board/fly_C8/wiring.md)
-    * [12. 屏幕接线](/board/fly_C8/screen.md)
+    * [12. HDMI与TFT屏幕的使用](/board/fly_C8/screen.md)
     * [13. ADXL345使用](/board/fly_C8/adxl345.md)
     * [14. 主控风扇使用](/board/fly_C8/corefan.md)
     * [15. 桥接CAN](/board/fly_C8/canbridge.md)

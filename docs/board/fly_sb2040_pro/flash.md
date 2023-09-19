@@ -12,6 +12,13 @@
 
 这里只进行简要说明，完整编译步骤请查看：[编译klipper固件](/board/fly_super8/firmware?id=_1-编译klipper固件 "点击即可跳转")。看到第 **13** 步即可！！！
 
+> [!TIP]
+> 固件配置方法只是参考，需要按主板提供配置来配置
+
+**固件配置方法**
+
+![MAKE](../../images/adv/make.gif)
+
 1. 确保使用最新的klipper
 
     ```bash
@@ -31,21 +38,21 @@
 > 由于SB2040-Pro预装了CanBoot，支持CAN烧录，因此可以先尝试使用CanBoot烧录固件。如果不能使用CanBoot烧录可以使用USB来烧录！！
 
     <!-- tabs:start -->
-
+    
     ### **SB2040-Pro 使用CanBoot烧录时编译此固件**
-
+    
     **感叹号是英文否则会编译错误**
-
+    
     ![flansh](../../images/boards/fly_sb2040_pro/can.png)
-
+    
     ### **SB2040-Pro使用USB烧录时编译此固件**
-
+    
     **感叹号是英文否则会编译错误**
-
+    
     **使用USB烧录会覆盖CanBoot**
-
+    
     ![flashcan_2209](../../images/boards/fly_sb2040_pro/usb.png)
-
+    
     <!-- tabs:end -->
 
 3. 编译

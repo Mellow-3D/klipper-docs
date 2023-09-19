@@ -18,6 +18,13 @@
 
 这里只进行简要说明，完整编译步骤请查看：[编译klipper固件](/board/fly_super8/firmware?id=_1-编译klipper固件 "点击即可跳转")。
 
+> [!TIP]
+> 固件配置方法只是参考，需要按主板提供配置来配置
+
+**固件配置方法**
+
+![MAKE](../../images/adv/make.gif)
+
 * 普通USB固件配置
 
 ![usb2can](../../images/boards/fly_gemini_v3/usb.png ":no-zooom")
@@ -46,6 +53,9 @@ sudo fly-flash -d gemini-v3 -h -f ~/klipper/out/klipper.bin
 ```
 
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
+
+>[!Warning]
+>请注意烧录完固件无需执行下方指令
 
 * 进入烧录模式
 

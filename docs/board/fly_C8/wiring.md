@@ -7,6 +7,8 @@
 
 <img src="../../images/boards/fly_c8/interface.jpg" alt="interface" style="zoom:80%;" />
 
+<img src="../../images/boards/fly_c8/pins.jpg" alt="interface" style="zoom:80%;" />
+
 ## 3.2 电源接线
 
 **供电：**C8的供电分为2个部分，分别是主板（主控、驱动）供电，加热棒、风扇、热床供电。
