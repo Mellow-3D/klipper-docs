@@ -25,8 +25,4 @@ Mellow Fly-D5是广州镁伦电子科技有限公司Fly3D主板研发团队推�
 * 温度传感器：2路 NTC 100K
 * 支持机器结构：Cartesian、Delta、Kossel、Ultimaker、CoreXY
 
-
-
-## 3. D5尺寸
-
  

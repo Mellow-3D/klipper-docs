@@ -11,6 +11,8 @@
 5. ```make menuconfig```
 6. 现在应该出现了Klipper编译配置界面
 
+![MAKE](../images/adv/make.gif)
+
 ![putty](../images/firmware/make1.png ":no-zooom")
 
 * 上下键选择菜单，回车键确认或进入菜单

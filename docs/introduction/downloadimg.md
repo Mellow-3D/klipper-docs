@@ -5,7 +5,7 @@
 
 <!-- tabs:start -->
 
-#### **FLY-Gemini & FLY-π& FLY-Pi-V2**
+#### **FLY-Gemini & FLY-π & FLY-Pi-V2 & FLY-C8**
 
 1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
 
@@ -24,25 +24,8 @@
 
     * 初始账号：`root`
     * 初始密码：`1234`
-
-#### **FLY-π Pro**
-
-1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
-
-    FLYOS_v1  [2022-00-00]()
-
-    * 账号：`fly` 或者 `root`
-    * 密码：`mellow`
-
-    [更新记录](introduction/systemupdatelog_pipro.md)
-
-----
-
-2. 原版Armbian系统（不提供klipper安装等支持）
-
-    Armbian_00.00.00  [2022-00-00]()
-
-
+    
+    
 
 #### **FLY-π Lite**
 

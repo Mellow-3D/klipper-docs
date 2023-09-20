@@ -33,6 +33,10 @@
    找到WIFI配置，将WIFI处的flase改成true，并将WiFi名称和密码填写上，保存，插回上位机。等待几分钟后，进入路由器后台管理界面查看IP地址。
    ![connect_wifi](../../images/boards/fly_pi/connect_wifi.png)
 
+> [!Warning]
+>
+> 系统启动后会将此wifi保存到系统，并且将**WiFi=true**修改为**WiFi=flase**
+
 ## 3.4 Klipperscreen的配置
 
 找到下图所示选项，将``klipperscreen=flase``修改为``klipperscreen=true``，则可启用klipperscreen屏幕。
