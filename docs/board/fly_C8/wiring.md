@@ -1,15 +1,15 @@
-# 3. C8接线
+# C8接线
 
 > [!TIP]
 > 此教程以Voron Trident为例介绍接线方法，请结合自己的实际使用情况接线
 
-## 3.1 C8接口图
+## 1 C8接口图
 
 <img src="../../images/boards/fly_c8/interface.jpg" alt="interface" style="zoom:80%;" />
 
 <img src="../../images/boards/fly_c8/pins.jpg" alt="interface" style="zoom:80%;" />
 
-## 3.2 电源接线
+## 1.2 电源接线
 
 **供电：**C8的供电分为2个部分，分别是主板（主控、驱动）供电，加热棒、风扇、热床供电。
 
@@ -21,7 +21,7 @@
 
 <img src="../../images/boards/fly_c8/power.png" alt="power" style="zoom:80%;" />
 
-## 3.3 驱动跳线
+## 1.3 驱动跳线
 
 **STEP/DIR模式。**在这个模式下，通过使用跳线帽来设置细分，通过调节电位器来调整电流。最常见的是A4988驱动，使用这类驱动需要查询厂家提供的细分配置表，然后通过跳线帽来设置细分。
 
@@ -35,7 +35,7 @@
 
 <img src="../../images/boards/fly_c8/homeless.png" alt="homeless" style="zoom:80%;" />
 
-## 3.4 驱动安装
+## 1.4 驱动安装
 
 驱动在安装前需要进行相应的检查，以免对驱动或主板造成损坏。
 
@@ -47,7 +47,7 @@
 
 <img src="../../images/boards/fly_c8/tmc_install.png" alt="tmc_install" style="zoom:80%;" />
 
-## 3.5 步进电机接线
+## 1.5 步进电机接线
 
 在3D打印机中，最常用的是两相四线步进电机，其原理如图所示。鉴别步进电机线序有两种方法：
 
@@ -65,11 +65,11 @@
 
 ![voron2.4](../../images/boards/fly_c8/voron2.4.png)
 
-## 3.6  加热棒接线
+## 1.6  加热棒接线
 
 <img src="../../images/boards/fly_c8/heater.png" alt="heater" style="zoom:80%;" />
 
-## 3.7  热床接线
+## 1.7  热床接线
 
 **交流热床：**固态继电器在接线时，请注意输入和输出别接错了。
 
@@ -81,7 +81,7 @@
 
 <img src="../../images/boards/fly_c8/DCbed.png" alt="DCbed" style="zoom:80%;" />
 
-## 3.8  热敏电阻接线
+## 1.8  热敏电阻接线
 
 C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如下图。热敏电阻的类型请咨询购买商家。
 
@@ -91,15 +91,15 @@ C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如�
 
 如果为常规的NTC 100K（如下图所示），请将sensor_type 配置为：**Generic 3950**
 
-<img src="../../images/boards/fly_super8/semitec3.png" alt="semitec2" style="zoom:70%;" />
+<img src="../../images/boards/fly_super8/semitec1.png" alt="semitec2" style="zoom:70%;" />
 
-<img src="../../images/boards/fly_super8/semitec3.png" alt="semitec3" style="zoom:80%;" />
+<img src="../../images/boards/fly_super8/semitec1.png" alt="semitec3" style="zoom:80%;" />
 
 **喷头热敏、热床热敏：**
 
 <img src="../../images/boards/fly_c8/thermistor.png" alt="thermistor" style="zoom:80%;" />
 
-## 3.9 风扇接线
+## 1.9 风扇接线
 
 风扇电压选择。使用跳线帽短接对应电压的排针即可，选择方式如下图**。**注：图中黄色方框内的跳线方式均相同。
 
@@ -111,7 +111,7 @@ C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如�
 
 <img src="../../images/boards/fly_c8/fan.png" alt="fan" style="zoom:70%;" />
 
-## 3.10  限位开关接线
+## 1.10  限位开关接线
 
 限位开关有常开（NO）和常闭（NC）两种。一般在3D打印机上，建议使用**常闭（NC）**，这样在限位开关线路出现问题时，系统会及时报错，可以避免一些不必要的撞车，避免损坏打印机。
 
@@ -119,21 +119,21 @@ C8提供了4路ADC接口，即可以接入4路热敏。热敏的接线方法如�
 
 <img src="../../images/boards/fly_c8/endstop.png" alt="endstop" style="zoom:80%;" />
 
-## 3.11 调平传感器接线
+## 1.11 调平传感器接线
 
-### 3.11.1 PL08N接线
+### 1.11.1 PL08N接线
 
 VORON官方建议是使用欧姆龙Omron TL-Q5MC（之前官方推荐的是PL08N，两者原理一样，只是探测距离不一样）传感器来进行热床调平。接线方式如下图所示。
 
 <img src="../../images/boards/fly_c8/pl08n.png" alt="pl08n" style="zoom:65%;" />
 
-### 3.11.2 BL-Touch接线
+### 1.11.2 BL-Touch接线
 
 BL-touch一共有五根线，三根为第一组，负责传感器的供电和探针的收放，第二组为地线和信号线，输出限位信号。BL-touch接线时请仔细核对线序，错误的接线可能会永久性损坏传感器和主板！！！接线方法如下图所示。
 
 <img src="../../images/boards/fly_c8/bltouch.png" alt="bltouch" style="zoom:80%;" />
 
-### 3.11.3 Klicky接线
+### 1.11.3 Klicky接线
 
 Klicky为第三方的调平传感器，能够用极低的成本自己在家制作，且性能稳定，性价比高，非常推荐使用。接线方法如下图所示。
 
@@ -141,7 +141,7 @@ Klicky为第三方的调平传感器，能够用极低的成本自己在家制�
 
 <img src="../../images/boards/fly_c8/klicky.png" alt="klicky" style="zoom:65%;" />
 
-### 3.11.4 Voron Tap接线
+### 1.11.4 Voron Tap接线
 
 Tap是一种基于喷嘴的z探针，适用于 voron 2.4和Trident打印机。整个工具头移动以触发光开关，精度比常规限位开关更好，可以使用几乎市面上所有的打印平台。
 
@@ -152,23 +152,23 @@ Tap是一种基于喷嘴的z探针，适用于 voron 2.4和Trident打印机。�
 
 <img src="../../images/boards/fly_c8/tap.png" alt="tap" style="zoom:80%;" />
 
-## 3.12 RGB接线
+## 1.12 RGB接线
 
 **注意！！！5V和GND不能接反，否则会损坏LED灯板甚至主板！！！**
 
 <img src="../../images/boards/fly_c8/RGB.png" alt="RGB" style="zoom:80%;" />
 
-## 3.13 加速度计接线
+## 1.13 加速度计接线
 
 <img src="../../images/boards/fly_c8/adxl345.png" alt="adxl345" style="zoom:80%;" />
 
-## 3.14 FLY-Mini12864接线
+## 1.14 FLY-Mini12864接线
 
 下图为FLY的mini12864的接线方式，其他厂家的屏幕请咨询相应厂家。Mini12864屏幕接接反，接错可能会导致上位机连不上MCU。如果使用mini12864屏幕之前可以正常连上主板的MCU，而使用mini12864后就连不上MCU了，请尝试拔出mini12864的接线！！！
 
 <img src="../../images/boards/fly_c8/mini12864.png" alt="mini12864" style="zoom:80%;" />
 
-## 3.15 拨码开关的使用
+## 1.15 拨码开关的使用
 
 > [!Warning]
 > 请注意拨码开关不是跳线，如果想正常使用还是需要拨动拨码

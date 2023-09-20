@@ -3,6 +3,9 @@
 > [!TIP]
 > ERCF自带**CANBOOT**无需在编译烧录**CANBOOT**
 
+> [!TIP]
+> 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
+
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
 确保使用最新的klipper！！！
