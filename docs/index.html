@@ -18,8 +18,67 @@
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css" /> -->
 </head>
 
-<script type="text/javascript"
-    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function loadScript(url, callback) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+
+        if (script.readyState) {  // IE
+            script.onreadystatechange = function () {
+                if (script.readyState == "loaded" || script.readyState == "complete") {
+                    script.onreadystatechange = null;
+                    callback();
+                }
+            };
+        } else {  // Other
+            script.onload = function () {
+                callback();
+            };
+        }
+
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+    }
+    function ping(url, callback) {
+        var start = new Date().getTime();
+        var xhr = new XMLHttpRequest();
+        xhr.timeout = 2000;
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                var end = new Date().getTime();
+                var time = end - start;
+
+                if (callback && typeof callback === 'function') {
+                    callback(time);
+                }
+            }
+        };
+
+        xhr.open('GET', url, true);
+        xhr.send();
+    }
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var browserLanguage = navigator.language || navigator.userLanguage;
+        if (browserLanguage !== 'zh-CN') {
+            loadScript("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", function () {
+                console.log("谷歌翻译插件加载完成");
+            });
+        } else {
+            ping("https://translate.google.com/translate_a/element.js", function (t) {
+                console.log(t)
+                if (t >= 2000) {
+                    console.log("无法加载谷歌翻译插件");
+                } else {
+                    loadScript("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", function () {
+                        console.log("谷歌翻译插件加载完成");
+                    });
+                }
+            });
+        }
+
+    });
+</script>
 
 <body style="position: relative !important; min-height: 100% !important; top: 0px !important;">
 
