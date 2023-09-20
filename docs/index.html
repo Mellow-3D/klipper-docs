@@ -59,24 +59,18 @@
         xhr.send();
     }
     window.addEventListener('DOMContentLoaded', (event) => {
-        var browserLanguage = navigator.language || navigator.userLanguage;
-        if (browserLanguage !== 'zh-CN') {
-            loadScript("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", function () {
-                console.log("谷歌翻译插件加载完成");
-            });
-        } else {
-            ping("https://translate.google.com/translate_a/element.js", function (t) {
-                console.log(t)
-                if (t >= 2000) {
-                    console.log("无法加载谷歌翻译插件");
-                } else {
-                    loadScript("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", function () {
-                        console.log("谷歌翻译插件加载完成");
-                    });
-                }
-            });
-        }
+        var tr = document.getElementById("google_translate_element");
 
+        ping("https://translate.google.com/translate_a/element.js", function (t) {
+            if (t >= 2000) {
+                tr.innerHTML = '<div style="background-color: rgba(255, 255, 255, 0.5);width: auto;text-align: center;position: fixed;display: flex;top: 0;padding: 10px 0;right:65px;line-height: 0.8;border-radius: 10px;"><font style="font-size: 12px;color: blue;">无法加载翻译插件<br/>&nbsp;&nbsp;Unable to load translation plugin&nbsp;&nbsp;</font><div>';
+                console.log("无法加载谷歌翻译插件");
+            } else {
+                loadScript("https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit", function () {
+                    console.log("谷歌翻译插件加载完成");
+                });
+            }
+        });
     });
 </script>
 
