@@ -13,3 +13,4 @@
   * [11. 相关链接](/board/fly_sht_v2/link.md)
   * [12. 原理图](/board/fly_sht_v2/schematic.md)
   * [13. 三维模型](/board/fly_sht_v2/3dmodel.md)
+  * [13. 更新Canboot](/board/fly_sht_v2/canbootflash.md)

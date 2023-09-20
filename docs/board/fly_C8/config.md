@@ -1,4 +1,4 @@
-#  7. FLY_Config 的使用
+#  FLY_Config 的使用
 
 * FLY-Config用来简化系统配置等，适用于Klipper全家桶，免去进入ssh写命令的麻烦
 * 只能在FLY定制Armbian系统运行
