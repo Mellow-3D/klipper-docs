@@ -13,3 +13,4 @@
   * [11. 相关链接](/board/fly_sb2040/link.md)
   * [12. 原理图](/board/fly_sb2040/schematic.md)
   * [13. 三维模型](/board/fly_sb2040/3dmodel.md)
+  * [14. 烧录Canboot](/board/fly_sb2040/canbootflash.md)

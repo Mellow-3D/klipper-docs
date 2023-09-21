@@ -22,6 +22,10 @@
     make menuconfig
     ```
 
+**固件配置方法**
+
+![MAKE](../../images/adv/make.gif)
+
 ## 4.1 配置固件
 
 ### 4.1.1 ERCF使用 CAN 连接的固件配置
