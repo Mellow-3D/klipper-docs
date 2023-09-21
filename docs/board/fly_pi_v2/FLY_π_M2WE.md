@@ -26,11 +26,11 @@
 
    ![usb-flash](../../images/boards/fly_pi/usb_flash_1.png)
 
-4. 按着BOOT键并且将双头USB接入电脑
+4. 安装好M2WE,并且按着BOOT键并且将双头USB接入电脑
 
-![usb-flash](../../images/boards/fly_pi_v2/boot.jpg ":size=42%")
+![usb-flash](../../images/boards/fly_pi_v2/m2we.png ":size=42%")
 
-4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到Gemini或Pi的下图中的USB接口
+4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接Pi-V2的下图中的USB接口
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_4.png ":size=50%")
 

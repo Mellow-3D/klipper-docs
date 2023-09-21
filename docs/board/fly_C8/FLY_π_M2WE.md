@@ -26,13 +26,13 @@
 
    ![usb-flash](../../images/boards/fly_pi/usb_flash_1.png)
 
-4. 按着BOOT键并且将双头USB接入电脑
+4. 安装并且固定好M2WE，然后按着BOOT键并且将双头USB接入电脑
 
-![usb-flash](../../images/boards/fly_c8/boot.png":size=50%")
+![usb-flash](../../images/boards/fly_c8/m2we.png":size=50%")
 
 
 
-4. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到Gemini或Pi的下图中的USB接口
+5. 将附赠的双公头USB线一端连接到电脑，然后长按上图中的按钮，将双公头USB线另一端连接到主板的下图中的USB接口
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_4.png ":size=50%")
 
@@ -41,23 +41,22 @@
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_5.png ":size=50%")
 
-5. 如果一切正常，此时zadig中会多出一个``Unknow Device #x``或者``USB Device(VID_1f3a_PID_efe8)``，选择它
+6. 如果一切正常，此时zadig中会多出一个``Unknow Device #x``或者``USB Device(VID_1f3a_PID_efe8)``，选择它
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_6.png ":size=50%")
 
-6. 选择设备后检查一下USB ID是否与上图一致，如果不是请重新选择其他设备
-7. 上图中的第二处只能选择``WinUSB(vxxxxxxx)``版本号无所谓
-8. 点击``Install Driver``安装驱动
+7. 选择设备后检查一下USB ID是否与上图一致，如果不是请重新选择其他设备
+8. 上图中的第二处只能选择``WinUSB(vxxxxxxx)``版本号无所谓
+9. 点击``Install Driver``安装驱动
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_7.png ":size=50%")
 
-9. USB驱动安装成功 (驱动只安装一次，如果以后再次烧录不用再安装驱动)
-
-10. 打开安装好的FLY-BOOT，点击``检查设备``
+10. USB驱动安装成功 (驱动只安装一次，如果以后再次烧录不用再安装驱动)
+11. 打开安装好的FLY-BOOT，点击``检查设备``
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_8.png ":size=50%")
 
-11. 如果前面的步骤操作无误，则会提示发现可用设备（如果没有发现可用设备请仔细查看第4步）
+11. 如果前面的步骤操作无误，则会提示发现可用设备（如果没有发现可用设备请仔细查看第4步)
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_9.png)
 

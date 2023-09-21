@@ -1,4 +1,4 @@
-## 编译固件
+# 编译固件
 
 > [!TIP]
 > CanBoot固件默认500k
@@ -26,7 +26,21 @@
     make menuconfig
     ```
 
-**APM32F072 & STM32F072**
+# 固件编译
+
+<!-- tabs:start -->
+
+
+
+### **500k**
+
+![config](../../images/boards/fly_sht_v2/canboot2.png ":no-zooom")
+
+
+
+
+
+### **1M**
 
 ![config](../../images/boards/fly_sht_v2/canboot1.png ":no-zooom")
 
@@ -39,8 +53,18 @@
     ```
 
      最后出现**Creating bin file out/canboot.bin**则编译成功
+    
+    
 
-## STM32F072烧录CANBOOT
+
+
+
+
+# 烧录方法
+
+<!-- tabs:start -->
+
+#### **STM32F072烧录CANBOOT**
 
 > [!TIP]
 > 请确定36v2的主控是**APM32F072或者STM32F072**
@@ -86,11 +110,13 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/CanBoot/out/canboot.b
 
 8. 检查
 
-​    如果正确配置编译并烧录成功，则SHTv2板的这个灯会常亮
+    如果正确配置编译并烧录成功，则SHTv2板的这个灯会闪烁
 
 ![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")
 
-## APM32F072烧录CANBOOT
+
+
+#### **APM32F072烧录CANBOOT**
 
 > [!TIP]
 > 请确定36v2的主控是**APM32F072或者STM32F072**
@@ -116,6 +142,8 @@ https://cdn.mellow.klipper.cn/EXE/DFUProgrammer.zip
 
 点击开始更新固件稍等即可，烧录完即可拔掉type-c与跳线帽
 
-5. 重新插入type-c,如果正确配置编译并烧录成功，则SHTv2板的这个灯会常亮
+5. 重新插入type-c,如果正确配置编译并烧录成功，则SHTv2板的这个灯会闪烁
 
 ![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")
+
+<!-- tabs:end -->

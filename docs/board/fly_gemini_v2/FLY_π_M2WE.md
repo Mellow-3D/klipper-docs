@@ -24,7 +24,7 @@
 
    ![usb-flash](../../images/boards/fly_pi/usb_flash_1.png)
 
-4. 按着BOOT键并且将双头USB接入电脑
+4. 安装好M2WE，然后按着BOOT键并且将双头USB接入电脑
 
 ![usb-flash](../../images/boards/fly_pi/usb_flash_2.png ":size=50%")
 

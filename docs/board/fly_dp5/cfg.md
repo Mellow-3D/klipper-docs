@@ -2,8 +2,8 @@
 ####################################################################################
 #                         3D MELLOW /（需要自行添加）                                #
 ####################################################################################
-## Fly-D5资料网址：
-## Fly-D5原理图网址：
+## Fly-DP5资料网址：
+## Fly-DP5原理图网址：
 ## FLY 官方淘宝店：https://shop126791347.taobao.com/shop/view_shop.htm?spm=a230r.1.14.4.1a4840a8hyvpPJ&user_number_id=2464680006
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
@@ -24,7 +24,7 @@
 #####################################################################
 #                               文件调用                             #
 #####################################################################
-#[include fluidd.cfg]          # FLUIDD调用文件。
+[include fluidd.cfg]          # FLUIDD调用文件。
 #[include mainsail.cfg]        # MAINSDIL调用文件。
 #需要自行确定使用哪个文件
 
@@ -63,6 +63,28 @@ sensor_type: temperature_host     # 关联上位机
 # sensor_pin: PC2                   # 信号接口
 
 #####################################################################
+#                               驱动RGB                              #
+#####################################################################
+[neopixel my_neopixel]
+pin: PB7
+#   The pin connected to the neopixel. This parameter must be
+#   provided.
+chain_count:20
+#   The number of Neopixel chips that are "daisy chained" to the
+#   provided pin. The default is 1 (which indicates only a single
+#   Neopixel is connected to the pin).
+color_order: GRB
+#   Set the pixel order required by the LED hardware (using a string
+#   containing the letters R, G, B, W with W optional). Alternatively,
+#   this may be a comma separated list of pixel orders - one for each
+#   LED in the chain. The default is GRB.
+initial_RED: 1.0
+initial_GREEN: 0.0
+initial_BLUE: 0.0
+# initial_WHITE: 0.0
+#   See the "led" section for information on these parameters.
+
+#####################################################################
 #                              热床网格校准
 #####################################################################
 [bed_mesh]
@@ -74,21 +96,6 @@ probe_count: 4,4             # 采样点数（4X4为16点）
 mesh_pps: 2,2                # 补充采样点数
 algorithm: bicubic           # 算法模型
 bicubic_tension: 0.2         # 算法插值不要动
-
-#####################################################################
-#                            ADXL345
-#####################################################################
-# [adxl345]
-# cs_pin: host:None
-# spi_bus: spidev1.0
-# #--------------------------------------------------------------------
-# [resonance_tester]
-# accel_chip: adxl345               # 使用的加速度芯片名称
-# probe_points: 150, 150, 20        # 共振测试的坐标点
-# min_freq: 5                       # 共振测试的最小频率
-# max_freq: 130                     # 共振测试的最大频率
-# accel_per_hz: 75                  # 每赫兹加速度(mm/sec)，加速度=每赫兹加速度*频率，如果共振过于强烈，可以减少该值。默认75
-# hz_per_sec: 1                     # 测试的速度，较小的值会加长测试时间，较大的值会降低测试精度，(Hz/sec == sec^-2)，默认1
 
 
 #####################################################################
@@ -121,20 +128,20 @@ homing_retract_dist: 5              # 第一次触发复位开关之后的后退
 homing_positive_dir: true           # 复位方向（一般不需要改动）
 #--------------------------------------------------------------------
 ##  请确保驱动型号配置正确 (2208 or 2209)
-# [tmc2209 stepper_x]                 # x 驱动配置 -TMC2209
-# uart_pin: PC13                       # 通讯端口Pin脚定义
-# interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-# run_current: 0.8                    # 电机运行电流值（单位：mA）
-# sense_resistor: 0.110               # 驱动采样电阻不要改
-# stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
-#--------------------------------------------------------------------
-[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
-cs_pin: PC13                        # SPI 片选Pin脚定义
-spi_bus: spi1                       # SPI 通讯总线定义
-run_current: 1.0                    # 电机运行电流值
+[tmc2209 stepper_x]                 # x 驱动配置 -TMC2209
+uart_pin: PC13                       # 通讯端口Pin脚定义
 interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
-stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
+run_current: 0.8                    # 电机运行电流值（单位：mA）
+sense_resistor: 0.110               # 驱动采样电阻不要改
+stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+#--------------------------------------------------------------------
+# [tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
+# cs_pin: PC13                        # SPI 片选Pin脚定义
+# spi_bus: spi2                       # SPI 通讯总线定义
+# run_current: 1.0                    # 电机运行电流值
+# interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
 #                  Y 轴步进电机      (A电机)                       #
@@ -207,6 +214,7 @@ enable_pin: !PB0
 rotation_distance: 40
 gear_ratio: 80:16
 microsteps: 32
+#--------------------------------------------------------------------
 [tmc2209 stepper_z1]
 uart_pin: PA7
 interpolate: false
