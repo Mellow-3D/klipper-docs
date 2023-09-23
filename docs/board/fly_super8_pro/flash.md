@@ -1,4 +1,61 @@
-# 2. 固件烧录
+## 2. 固件烧录
+
+Super8 Pro的Klipper固件配置如下图所示：
+
+> [!TIP]
+> 早期的 Super8pro 使用的主控芯片为`H743`，不带`pro`字样，后期带`pro`字样的使用的是`H723`芯片。编译固件前请仔细检查主控型号，避免编译烧录错误的固件！！！
+
+<!-- tabs:start -->
+
+### **H743USB固件**
+
+![config](../../images/boards/fly_super8_pro/config.png ":no-zooom")
+
+### **H743CAN桥接固件**
+
+>[!TIP]
+>
+>此方法是通过主板桥接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
+
+![canbridge2](../../images/boards/fly_super8_pro/canbridge1.png)
+
+### **H743CAN固件**
+
+>[!TIP]
+>
+>此方法是通过主板CAN接口连接UTOC来寻找设备，请确保上位机的can0、桥接主板的CAN速率的速率完全一致
+
+![canbridge2](../../images/boards/fly_super8_pro/can.png)
+
+<!-- tabs:end -->
+
+
+
+<!-- tabs:start -->
+
+### **H723USB固件**
+
+<img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
+
+### **H723CAN桥接固件**
+
+>[!TIP]
+>
+>此方法是通过主板桥接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
+
+![canbridge2](../../images/boards/fly_super8_pro/canbridge2.png)
+
+### **H723CAN固件**
+
+>[!TIP]
+>
+>此方法是通过主板CAN接口连接UTOC来寻找设备，请确保上位机的can0、桥接主板的CAN速率的速率完全一致
+
+![canbridge2](../../images/boards/fly_super8_pro/can1.png)
+
+
+
+<!-- tabs:end -->
 
 ## 2.1  编译Klipper固件
 
@@ -22,30 +79,11 @@
 
 9. 进入菜单**Processor model**，按照下图所示配置信息进行配置
 
-Super8 Pro的Klipper固件配置如下图所示：
 
-> [!TIP]
-> 早期的 Super8pro 使用的主控芯片为`H743`，不带`pro`字样，后期带`pro`字样的使用的是`H723`芯片。编译固件前请仔细检查主控型号，避免编译烧录错误的固件！！！
 
-* H743
 
-![config](../../images/boards/fly_super8_pro/config.png ":no-zooom")
 
-* H723
 
-  <img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
-
-  > 如果找不到`H723`芯片选型，请执行如下命令后重新进入固件编译界面
-
-  ```
-  cd ~/klipper
-  ```
-
-  ```
-  git pull
-  ```
-
-  
 
 10. 配置完成后按```Q```键，出现**Save configuration**，这时再按```Y```键
 * 现在应该保存了配置并且退出到了命令行界面
@@ -56,18 +94,23 @@ Super8 Pro的Klipper固件配置如下图所示：
 
 ![make5](../../images/firmware/make5.png)
 
-12. 
-
 ## 2.2  烧录固件到主板
 
 > [!TIP]
 > Super8 Pro需要插入BT0/3.3V跳线帽来进入DFU模式，进行USB烧录
 
+
+
+> [!TIP]
+> 注意：烧录成功后一定记得拔下来跳线帽
+
+
+
 ![usbflash](../../images/boards/fly_super8_pro/boot.png ":no-zooom")
 
+<!-- tabs:start -->
 
-
-### 2.2.1 Klipper上位机烧录
+### **Klipper上位机烧录**
 
 1. 安装烧录工具
 
@@ -98,9 +141,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 > [!TIP]
 > 注意：烧录成功后一定记得拔下来跳线帽
 
-### 2.2.2 电脑USB烧录
 
-#### 2.2.2.1 下载固件到电脑
 
 * 使用软件**WinSCP**
 
@@ -119,7 +160,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 ![putty](../../images/firmware/down4.png ":no-zooom")
 
-#### 2.2.2.2 使用电脑USB烧录
+### **使用电脑USB烧录**
 
 1. 下载烧录工具[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip)
 2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
@@ -142,3 +183,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 ![5](../../images/boards/fly_sht36_42/5.png ":no-zooom")
 
+<!-- tabs:end -->
+
+>[!TIP]
+>注意：烧录成功后一定记得拔下来跳线帽

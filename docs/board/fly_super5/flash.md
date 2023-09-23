@@ -9,21 +9,21 @@
 
 ## 编译固件
 
-Super5-Pro的Klipper固件配置
+<!-- tabs:start -->
 
-* H723
+### **H723USB固件**
 
-  <img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
+<img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
 
-  > 如果找不到`H723`芯片选型，请执行如下命令后重新进入固件编译界面
+### **H723CAN桥接固件**
 
-  ```
-  cd ~/klipper
-  ```
+>[!TIP] 
+>
+>此方法是通过主板桥接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
 
-  ```
-  git pull
-  ```
+<img src="../../images/boards/fly_super5/canbridge2.png" alt="firmware_canboot" style="zoom:150%;" />
+
+<!-- tabs:end -->
 
 * 如何编译固件参考[固件烧录](/introduction/firmware)
 
@@ -36,7 +36,9 @@ Super5-Pro的Klipper固件配置
 
 ![dfu](../../images/boards/fly_super5/dfu.png)
 
-### 方式一：Klipper上位机烧录
+<!-- tabs:start -->
+
+### **方式一：Klipper上位机烧录**
 
 1. 安装烧录工具
 
@@ -64,10 +66,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 6. 出现上图内容则烧录成功
 
-> [!TIP]
-> 注意：烧录成功后一定记得拔下来跳线帽
-
-### 方式二：电脑USB烧录
+### **方式二：电脑USB烧录**
 
 1. 下载烧录工具[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip)
 2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
@@ -89,3 +88,9 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 9. 出现图中就是烧录成功
 
 ![5](../../images/boards/fly_sht36_42/5.png ":no-zooom")
+
+<!-- tabs:end -->
+
+>[!TIP] 
+>
+>注意：烧录成功后一定记得拔下来跳线帽

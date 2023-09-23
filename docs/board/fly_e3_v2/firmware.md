@@ -4,7 +4,20 @@
 
 ## 4.1 固件参数配置
 
+<!-- tabs:start -->
+
+### **USB固件配置**
+
 <img src="../../images/boards/fly_e3_v2/e3v2config.png" alt="e3v2config" style="zoom:150%;" />
+
+### **CAN桥接配置**
+
+>[!Tip]
+>此方法是通过主板桥接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
+
+![canbridge2](../../images/boards/fly_super8/canbridge2.png)
+
+<!-- tabs:end -->
 
 下面介绍如何编译和烧录固件。
 

@@ -3,7 +3,7 @@
 > [!TIP]
 > 为测试，SB2040-Pro发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
 
-## 4.1 编译固件
+## 1. 编译固件
 
 > [!TIP]
 > CanBoot固件默认1M
@@ -68,7 +68,7 @@
     
     
 
-## 4.2 查找CAN uuid
+## 2. 查找CAN uuid
 
 > [!TIP]
 > 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
@@ -108,7 +108,9 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 * SB2040-PRO板上的120Ω跳线帽是否插上
 * 您的镜像内核是否支持CAN
 
-## 4.3 使用CanBoot烧录固件
+<!-- tabs:start -->
+
+### **使用CanBoot烧录固件**
 
 1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 
@@ -126,7 +128,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ![firmware_led](../../images/boards/fly_sb2040_pro/firmware_led.png)
 
-## 4.4 使用USB烧录固件
+### **使用USB烧录固件**
 
 1. 查看是否连接到SB2040的BOOT烧录模式
 
@@ -155,9 +157,11 @@ lsusb
 
 ![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
 
+<!-- tabs:end -->
 
 
-3. 检查
+
+## 3. 检查
 
 如果正确配置编译并烧录成功，则SB2040-PRO板的这个灯会常亮
 

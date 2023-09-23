@@ -18,7 +18,7 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 **Super8** 主板的Klipper固件配置界面如下图。编译固件后，按照[固件编译和烧录](/board/fly_super8/firmware "点击即可跳转")给出的方法，将固件刷入Super8主板中。
 
-![canbridge2](../../images/boards/fly_super8/canbridge2.png)
+![canbridge2](../../images/boards/fly_super8_pro/canbridge2.png)
 
 ## 10.3 主板CAN uuid的读取
 
