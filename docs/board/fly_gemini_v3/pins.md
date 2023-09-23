@@ -58,9 +58,9 @@
 
 | 驱动 | 功能 | 引脚号 |
 | :----: | :----: | :----- |
-| X,Y,Z,E | MOSI | ***PA7*** |
-| X,Y,Z,E | MISO | ***PA6*** |
-| X,Y,Z,E | CLK | ***PA5*** |
+| X,Y,Z,E | MOSI | ***PB5*** |
+| X,Y,Z,E | MISO | ***PB4*** |
+| X,Y,Z,E | CLK | ***PB3*** |
 | X,Y,Z,E | CS | **UART** |
 
 <!-- tabs:end -->

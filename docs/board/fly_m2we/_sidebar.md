@@ -6,3 +6,5 @@ FLY-M2WE
 * [4. 使用USB烧录镜像](/board/fly_m2we/FLY_π_M2WE.md)
 * [5. 系统配置](/board/fly_m2we/config.md)
 * [6.系统备份](/board/fly_m2we/m2we_backup)
+* [7. 2.4GWIFI模块使用](/board/fly_m2we/M2_2.4G)
+

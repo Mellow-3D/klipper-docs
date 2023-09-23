@@ -11,7 +11,7 @@
 
 1. 如果您已经制作好SD卡，请使用读卡器连接到电脑。此时电脑应该会弹出资源管理器并且有一个“**可移动磁盘BOOT**” .如果未出现，请重新拔下 sd 卡，再插入电脑
 
-   eMMc进入BOOT盘方法，请参考：[通过usb为emmc烧录系统镜像](/board/fly_pi/FLY_π_description1?id=_2-通过usb为emmc烧录系统镜像)
+   eMMc进入BOOT盘方法，请参考：[通过usb为emmc烧录系统镜像](board/fly_pi_v2/FLY_π_M2WE)
 
    ![open_boot](../../images/boards/fly_pi/open_boot.png)
 
