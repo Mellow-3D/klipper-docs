@@ -267,7 +267,7 @@ nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.750            # 耗材直径
 heater_pin: PD12                    # 挤出头加热棒控制Pin脚设置(e0)
 sensor_type: Generic 3950           # 传感器型号
-sensor_pin: PC4                     # 挤出头传感器Pin脚（T_E0）
+sensor_pin: PC2                     # 挤出头传感器Pin脚（T_E0）
 max_power: 1.0                      # 加热棒PWM最大输出功率
 min_temp: -235                      # 挤出机最小温度
 max_temp: 500                       # 挤出机最大温度

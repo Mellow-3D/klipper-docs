@@ -4,11 +4,30 @@
 
 ## 2.1 固件参数配置
 
-Super8配置如下图所示。
+<!-- tabs:start -->
+
+### **USB 的固件配置**
 
 <img src="../../images/boards/fly_super8/e3v2config.png" alt="e3v2config" style="zoom:150%;" />
 
-下面介绍如何编译和烧录固件。
+### **CAN桥接固件**
+
+>[!TIP]
+>此方法是桥接工具板的配置，请确保工具板CAN速率与上位机的CAN速率完全一致
+
+![canbridge2](../../images/boards/fly_super8/canbridge2.png)
+
+### **CAN固件**
+
+>[!TIP]
+>此方法需要将主板的CAN口接到UTOC才可以找到CANid
+
+
+
+![can2](../../images/boards/fly_super8/can.png)
+
+
+<!-- tabs:end -->
 
 ## 2.2 编译Klipper固件
 

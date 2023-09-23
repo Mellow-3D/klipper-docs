@@ -25,14 +25,21 @@
 
 ![MAKE](../../images/adv/make.gif)
 
-* 普通USB固件配置
+<!-- tabs:start -->
+
+### **普通USB固件配置**
 
 ![usb2can](../../images/boards/fly_gemini_v3/usb.png ":no-zooom")
 
-* USB桥接CAN固件配置
+
+
+### **USB桥接CAN固件配置**
+
 * Gemini v3建议使用Klipper的USB桥接CAN固件，可以省去一个UTOC来通过CAN连接工具板
 
 ![usb2can](../../images/boards/fly_gemini_v3/usb2can.png ":no-zooom")
+
+<!-- tabs:end -->
 
 * 执行命令```make -j4```来编译固件
 

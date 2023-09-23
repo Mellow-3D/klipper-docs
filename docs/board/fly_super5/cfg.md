@@ -278,7 +278,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #                            热床配置                                # 
 #####################################################################
 [heater_bed]
-heater_pin: PD13             # 热床接口,接到HETA1
+heater_pin: PB0              # 热床接口,接到HETA1
 sensor_type: Generic 3950    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 sensor_pin: PC5              # 热床传感器接口,接到ADC-2
 pullup_resistor:2200

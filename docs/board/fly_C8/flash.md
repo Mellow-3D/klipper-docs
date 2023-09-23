@@ -30,16 +30,22 @@
 
 ![MAKE](../../images/adv/make.gif)
 
-**USB固件配置**
+<!-- tabs:start -->
 
-* 普通USB固件配置
+### **USB固件配置**
 
 ![usb2can](../../images/boards/fly_c8/usb.png ":no-zooom")
 
-* USB桥接CAN固件配置
+
+
+### **CAN桥接固件配置**
+
 * FLY-C8建议使用Klipper的USB桥接CAN固件，可以省去一个UTOC来通过CAN连接工具板
+* 此方法是通过主板桥接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
 
 ![usb2can](../../images/boards/fly_c8/usb2can.png ":no-zooom")
+
+<!-- tabs:end -->
 
 * 执行命令```make -j4```来编译固件
 

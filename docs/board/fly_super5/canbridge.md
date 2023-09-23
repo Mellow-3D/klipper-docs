@@ -18,10 +18,7 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 **Super5 Pro** 主板的Klipper固件配置界面如下图。编译固件后，按照[固件编译和烧录](/board/fly_super8/firmware "点击即可跳转")给出的方法，将固件刷入Super5 Pro主板中。
 
-> [!TIP]
-> 目前最新版本的klipper固件默认CAN速率为1000000，CanBoot速率请根据你的实际情况修改。
-
-<img src="../../images/boards/fly_super5/firmware_canboot.png" alt="firmware_canboot" style="zoom:150%;" />
+<img src="../../images/boards/fly_super5/canbridge2.png" alt="firmware_canboot" style="zoom:150%;" />
 
 ## 11.3 主板CAN uuid的读取
 
@@ -38,7 +35,7 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
  ```cfg
  
- [mcu sht36]
+ [mcu]
  #serial: /dev/serial/by-id/usb-Klipper_stm32f407*******   # 注释掉这一行
  canbus_uuid: 3251a329e6e3                                # 在此处填写主板的CAN ID
  ```
