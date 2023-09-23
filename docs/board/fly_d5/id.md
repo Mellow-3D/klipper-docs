@@ -4,10 +4,6 @@
 
 ### **USB ID读取方法**
 
-> [!TIP] 
->
-> 如果使用USB固件则无需搜索ID,系统默认把USBID转换成    **/dev/ttyACM0**
-
 1.[连接到SSH](/board/fly_C8/ssh "点击即可跳转")，然后输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
 
 <img src="../../images/boards/fly_super8/id.png" alt="id" style="zoom:80%;" />
@@ -22,10 +18,8 @@
 
 ### **CAN ID读取方法**
 
-> [!TIP]
+> [!WARNING]
 > 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
-
-
 
 > [!Tip]
 >

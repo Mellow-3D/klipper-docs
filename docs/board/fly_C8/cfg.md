@@ -32,8 +32,9 @@
 #                               主板配置                             #
 #####################################################################
 [mcu]                           # FLY主板ID
-serial: /dev/ttyACM0
-#USB固件不需要查询ID
+serial: /dev/serial/by-id/usb-Klipper_stm32f407xx_XXXXXXXXXXXXXXXXXXXXX
+### 查询usb固件id是：ls /dev/serial/by-id/
+### 把/dev/serial/by-id/usb-Klipper_stm32f407xx_XXXXXXXXXXXXXXXXXXXXX替换查询到的id
 #canbus_uuid: e51d5c71a901
 ### 查询can固件id是：~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ### can的id需要把serial替换成canbus_uuid: 后面添加id 

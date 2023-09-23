@@ -2,9 +2,9 @@
 
     * [1. 产品简介](/board/fly_C8/README.md)
     * [2. 镜像烧录准备](/board/fly_C8/FLY_π_mirror.md)
-    * [3. 通过SD卡启动系统](/board/fly_C8/sd_mirror.md)
-    * [4. 使用USB烧录M2WE](/board/fly_C8/FLY_π_M2WE.md)
-    * [5. 使用SD卡烧录M2WE](/board/fly_C8/sdemmc.md)
+    * [3. 系统镜像烧录至**SD**卡](/board/fly_C8/sd_mirror.md)
+    * [4. 系统镜像烧录至**M2WE**](/board/fly_C8/FLY_π_M2WE.md)
+    * [5.  SD卡系统**迁移**至M2WE](/board/fly_C8/sd_to_emmc.md)
     * [6. 上位机系统配置](/board/fly_C8/config.md)
     * [7. SSH连接](/board/fly_C8/ssh.md)
     * [8. 固件烧录](/board/fly_C8/flash.md)
