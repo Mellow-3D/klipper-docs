@@ -152,11 +152,11 @@ Tap是一种基于喷嘴的z探针，适用于V2和Trident打印机设计。整�
 
 下图为FLY的mini12864的接线方式，其他厂家的屏幕请咨询相应厂家。Mini12864屏幕接接反，接错可能会导致上位机连不上MCU。如果使用mini12864屏幕之前可以正常连上主板的MCU，而使用mini12864后就连不上MCU了，请尝试拔出mini12864的接线！！！
 
-**图片正在制作中**
+<img src="../../images/boards/fly_cdy_v3/mini12864.png" alt="mini12864" style="zoom:80%;" />
 
 ## 3.11 连接到上位机
 
 主板通过TypeC接口连接到上位机的USB口，也可以用过串口连接到上位机。这里只对前者做介绍。
 
-**图片正在制作中**
+<img src="../../images/boards/fly_cdy_v3/toπ.png" alt="toπ" style="zoom:80%;" />
 

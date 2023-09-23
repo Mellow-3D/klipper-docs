@@ -89,7 +89,7 @@ stealthchop_threshold: 500
 # run_current: 0.40
 # hold_current: 0.1
 # stealthchop_threshold: 500
-# diag0_pin: ercf:gpio22
+# diag_pin: ercf:gpio22
 # driver_SGT: 75
 
 
