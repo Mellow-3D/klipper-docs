@@ -37,23 +37,23 @@
    > [!TIP]
 > 由于SB2040-Pro预装了CanBoot，支持CAN烧录，因此可以先尝试使用CanBoot烧录固件。如果不能使用CanBoot烧录可以使用USB来烧录！！
 
-    <!-- tabs:start -->
-    
-    ### **SB2040-Pro 使用CanBoot烧录时编译此固件**
-    
-    **感叹号是英文否则会编译错误**
-    
-    ![flansh](../../images/boards/fly_sb2040_pro/can.png)
-    
-    ### **SB2040-Pro使用USB烧录时编译此固件**
-    
-    **感叹号是英文否则会编译错误**
-    
-    **使用USB烧录会覆盖CanBoot**
-    
-    ![flashcan_2209](../../images/boards/fly_sb2040_pro/usb.png)
-    
-    <!-- tabs:end -->
+<!-- tabs:start -->
+
+### **SB2040-Pro 使用CanBoot烧录时编译此固件**
+
+**感叹号是英文否则会编译错误**
+
+![flansh](../../images/boards/fly_sb2040_pro/can.png)
+
+### **SB2040-Pro使用USB烧录时编译此固件**
+
+**感叹号是英文否则会编译错误**
+
+**使用USB烧录会覆盖CanBoot**
+
+![flashcan_2209](../../images/boards/fly_sb2040_pro/usb.png)
+
+<!-- tabs:end -->
 
 3. 编译
 
@@ -111,6 +111,24 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 <!-- tabs:start -->
 
 ### **使用CanBoot烧录固件**
+
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040-Pro与上位机通过CAN总线连接
+
+> [!TIP]
+> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
+
+首先进入ssh，然后依次输入以下指令
+
+```
+git clone https://github.com/Arksine/CanBoot
+```
+
+![1](../../images/boards/fly_sht_v2/1.png)
+
+```
+cd CanBoot
+```
 
 1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 

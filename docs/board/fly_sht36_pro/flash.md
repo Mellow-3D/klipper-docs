@@ -83,12 +83,10 @@
 ### **使用CANBOOT烧录**
 
 > [!TIP]
-> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHTV2与上位机通过CAN总线连接
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHT36-Pro与上位机通过CAN总线连接
 
 > [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
-
-> 由于SHTV2预装了CanBoot，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
 
 首先进入ssh，然后依次输入以下指令
 
@@ -106,22 +104,19 @@ cd CanBoot
 python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
-下图中高亮部分``365f54003b9d``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+下图中高亮部分``365f54003b9d``就是这块SHT36 -Pro板的uuid，这个uuid每块板子都不一样。同一块HT36 -Pro板烧录固件后uuid是不会变的
 
 ![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
 
-
+1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 
 ```bash
-cd ~/klipper/
-make flash FLASH_DEVICE=2e8a:0003
+python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 ```
 
-执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
+2. 如下图，出现``CAN Flash Success``则烧录成功
 
-出现下图则烧录成功
-
-![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
+![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
 > [!TIP]
 > 如果找不到CAN ID，请检查：
