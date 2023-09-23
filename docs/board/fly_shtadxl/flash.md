@@ -31,53 +31,26 @@
 
     配置如下图
 
-    <!-- tabs:start -->
-
     
-
-    ### **FLY-SHT36-LIS3DH-使用CANBOOT烧录**
-
-    **感叹号是英文否则会编译错误**
-
-    **使用CANBOOT烧录时编译此固件**
-
-    ![flashcan](../../images/boards/fly_rrf/flash1.png)
-    
-    ### **FLY-SHT36-LIS3DH-使用USB烧录**
-    
-    **感叹号是英文否则会编译错误**
-    
-    **使用USB烧录时编译此固件**
-    
-    ![flashcan](../../images/boards/fly_rrf/flash.png)
-    
-    <!-- tabs:end -->
-    
-3. 编译
-
-    ```bash
-    make -j4
-    ```
-
-     最后出现**Creating hex file out/klipper.bin**则编译成功
-
-## 4.2 烧录
 
 <!-- tabs:start -->
 
-### **使用Type-C烧录固件**
+### **FLY-SHT36-LIS3DH-使用CANBOOT烧录**
 
-![rst](../../images/boards/fly_sht36_pro/rst.png)
+**感叹号是英文否则会编译错误**
 
-**短接跳线插上type-c到电脑会弹出RPI-RP2**
+**使用CANBOOT烧录时编译此固件**
 
-**弹出RPI-RP2后不需要在短接rst**
+![flashcan](../../images/boards/fly_rrf/flash1.png)
 
-![pri](../../images/boards/fly_sht36_pro/pri.png)
 
-**把klipper.uf2放进去，弹窗会关闭**
 
-### **使用CANBOOT烧录**
+```
+make clean
+make -j4
+```
+
+ 使用usb烧录的固件最后出现**Creating uf2 file out/klipper.bin**则编译成功
 
 > [!TIP]
 > 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHTV2与上位机通过CAN总线连接
@@ -133,4 +106,38 @@ make flash FLASH_DEVICE=2e8a:0003
 
 ![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")
 
+​    
+
+### **FLY-SHT36-LIS3DH-使用USB烧录**
+
+**感叹号是英文否则会编译错误**
+
+**使用USB烧录时编译此固件**
+
+![flashcan](../../images/boards/fly_rrf/flash.png)
+
+
+
+```
+make clean
+make -j4
+```
+
+ 使用usb烧录的固件最后出现**Creating uf2 file out/klipper.uf2**则编译成功
+
+**使用Type-C烧录固件**
+
+![rst](../../images/boards/fly_sht36_pro/rst.png)
+
+**短接跳线插上type-c到电脑会弹出RPI-RP2**
+
+**弹出RPI-RP2后不需要在短接rst**
+
+![pri](../../images/boards/fly_sht36_pro/pri.png)
+
+**把klipper.uf2放进去，弹窗会关闭**
+
 <!-- tabs:end -->
+
+
+
