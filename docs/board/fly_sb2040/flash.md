@@ -3,7 +3,7 @@
 > [!TIP]
 > 为测试，SB2040发货前会烧录CANBOOT固件，上电后所有引脚全部拉高，使用前请重新烧录
 
-## 4.1 编译固件
+## 编译固件
 
 > [!TIP]
 > CanBoot固件默认500k
@@ -32,21 +32,24 @@
     make menuconfig
     ```
 
-     配置如下图
+    
+
+<!-- tabs:start -->
+
+### **使用USB烧录固件**
+
 ![config](../../images/boards/fly_sb2040/config.png ":no-zooom")
 
-3. 编译
+编译
 
-    ```bash
-    make -j4
-    ```
+```bash
+make clean
+make -j4
+```
 
-     最后出现``Creating uf2 file out/klipper.uf2``则编译成功
+最后出现``Creating uf2 file out/klipper.uf2``则编译成功
 
-## 4.2 烧录固件
-
-> [!TIP]
-> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
+烧录固件
 
 上位机配置CAN及UTOC使用请查看[上位机配置](/board/fly_sb2040/piconfig "点击即可跳转")
 
@@ -77,9 +80,29 @@
 
 ![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
 
+### **使用CANBOOT烧录固件**
+
+>[!Tip]
+>
+>请确保工具板CAN速率与上位机的CAN速率完全一致，此方法需要将CAN线接好！！！
+
+![config](../../images/boards/fly_sb2040/can.png ":no-zooom")
+
+将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
+
+```bash
+python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
+```
+
+如下图，出现``CAN Flash Success``则烧录成功
+
+![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
 
-3. 检查
+
+<!-- tabs:end -->
+
+## 检查
 
 如果正确配置编译并烧录成功，则SB2040板的这个灯会常亮
 

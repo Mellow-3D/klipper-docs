@@ -50,8 +50,8 @@
 sudo apt install dfu-util -y
 ```
 
-2. 使用Type-C数据线将D5主板连接到Linux设备，请确保连接前已安装短接跳线
-3. 执行下面的命令查看是否连接成功,复制蓝色框中的USB ID
+2. 使用Type-C数据线将D5主板连接到Linux设备
+3. 执行下面的命令查看是否连接成功。
 
 ```bash
 lsusb
@@ -59,7 +59,7 @@ lsusb
 
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
-4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
+4. 烧录固件(烧录前确保已经编译过固件)
 
 ```bash
 dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
