@@ -80,14 +80,13 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 
 ![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
 
-烧录
+1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 
 ```bash
-cd ~/klipper/
-make flash FLASH_DEVICE=2e8a:0003
+python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 ```
 
-执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
+2. 如下图，出现``CAN Flash Success``则烧录成功
 
 出现下图则烧录成功
 
