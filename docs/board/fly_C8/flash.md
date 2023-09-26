@@ -13,6 +13,11 @@
 
   ![dip1](../../images/boards/fly_c8/dip1.png)
 
+  > [!TIP]
+  > 在这个模式下，图中所示的USB口会被占用，不能再插入其他USB设备
+
+  ![dip2](../../images/boards/fly_gemini_v3/dip2.png)
+
 * 拨码``3``,``4``打开将下位机USB连接到板载Type-C端口
 
   ![dip2](../../images/boards/fly_c8/dip2.png)
