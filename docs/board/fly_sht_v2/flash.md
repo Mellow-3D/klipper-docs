@@ -61,9 +61,10 @@
 3. 编译
 
     ```bash
+    make clean
     make -j4
     ```
-
+    
      最后出现**Creating hex file out/klipper.bin**则编译成功
 
 ## 4.2 查找uuid
@@ -92,9 +93,11 @@ cd CanBoot
 python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
-下图中高亮部分``365f54003b9d``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+请注意，搜索到id后是显示``Application: Canboot``前面id才是工具板id
 
-![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
+下图中高亮部分``53707ab04e74``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+
+![canid](../../images/adv/canid.png)
 
 > [!TIP]
 > 如果找不到CAN ID，请检查：

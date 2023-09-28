@@ -4,7 +4,7 @@
 #####################################################################
 #                               主板配置
 #####################################################################
-[mcu RRF36] # 工具主板序列号
+[mcu SHT36] # 工具主板序列号
 canbus_uuid: eeb4f40a0b9b
 ### 查询can固件id是：~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ### can的id需要把serial替换成canbus_uuid: 后面添加id 
@@ -12,15 +12,15 @@ canbus_uuid: eeb4f40a0b9b
 #####################################################################
 #                             温度监控
 #####################################################################
-[temperature_sensor RRF36]        # 工具板主板温度
+[temperature_sensor SHT36]        # 工具板主板温度
 sensor_type: temperature_mcu      # 关联mcu
-sensor_mcu: RRF36                 # 关联mcu是RRF36
+sensor_mcu: SHT36                 # 关联mcu是SHT36
 min_temp: 0                       # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 490                     # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 #--------------------------------------------------------------------
 [temperature_sensor Box]          # 工具板热敏温度 
 sensor_type: ATC Semitec 104GT-2  # 传感器型号
-sensor_pin: RRF36:gpio27          # 信号接口
+sensor_pin: SHT36:gpio27          # 信号接口
 min_temp: 0                       # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 490                     # 最大温度（注意：测量温度超过设定值会触发紧急停止）
 
@@ -29,9 +29,9 @@ max_temp: 490                     # 最大温度（注意：测量温度超过�
 #####################################################################
 #注：接完线需测试运行方向
 [extruder]                          # 挤出机
-step_pin: RRF36:gpio24              # 挤出电机方脉冲引脚
-dir_pin: RRF36:gpio23               # 挤出电机方向引脚设置
-enable_pin: !RRF36:gpio25           # 挤出电机方使能引脚设置
+step_pin: SHT36:gpio24              # 挤出电机方脉冲引脚
+dir_pin: SHT36:gpio23               # 挤出电机方向引脚设置
+enable_pin: !SHT36:gpio25           # 挤出电机方使能引脚设置
 ## 执行挤出机校准时，更新以下值
 ## 比如你要求100毫米的进料，但实际上是102：
 ## rotation_distance = <旧rotation_distance> * <实际挤出长度> / <请求的挤出长度>
@@ -42,16 +42,16 @@ microsteps: 16                      # 电机细分设置,细分越高，质量�
 full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.75             # 耗材直径
-heater_pin: RRF36:gpio8             # 加热棒引脚,接到HETA0
+heater_pin: SHT36:gpio8             # 加热棒引脚,接到HETA0
 #--------------------------------------------------------------------
 ##普通热敏配置
 sensor_type: ATC Semitec 104GT-2    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
-sensor_pin: RRF36:gpio26            # 传感器引脚  
+sensor_pin: SHT36:gpio26            # 传感器引脚  
 #--------------------------------------------------------------------
 ##pt1000配置
 #sensor_type: PT1000                 # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
 #pullup_resistor: 1100               # 热敏上拉电阻为1100，如果温度为负-180需要更换跳线
-#sensor_pin: RRF36:gpio26            # 传感器引脚  
+#sensor_pin: SHT36:gpio26            # 传感器引脚  
 #--------------------------------------------------------------------
 min_temp: -200                      # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 500                       # 最大温度（注意：测量温度超过设定值会触发紧急停止）
@@ -70,8 +70,8 @@ pid_kd = 131.721             # PID喷嘴温度自动校准项（pid校准完成�
 step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 extruder]                  # 挤出机驱动配置- TMC2209
-uart_pin: RRF36:gpio1               # 通讯端口Pin脚定义
-tx_pin: RRF36:gpio0
+uart_pin: SHT36:gpio1               # 通讯端口Pin脚定义
+tx_pin: SHT36:gpio0
 interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 run_current: 0.8                    # 电机运行电流值
 sense_resistor: 0.110               # 驱动采样电阻不要改
@@ -81,12 +81,12 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #                             风扇配置
 #####################################################################
 [fan]                        # 模型冷却风扇
-pin: RRF36:gpio15            # 信号接口
+pin: SHT36:gpio15            # 信号接口
 kick_start_time: 0.5         # 启动时间（勿动）
 off_below: 0.10              # 勿动
 #--------------------------------------------------------------------
 [heater_fan hotend_fan]      # 喉管冷却风扇
-pin: RRF36:gpio14            # 信号接口
+pin: SHT36:gpio14            # 信号接口
 max_power: 1.0               # 最大转速
 kick_start_time: 0.5         # 启动时间（勿动）
 heater: extruder             # 关联的设备：挤出机
@@ -97,14 +97,14 @@ fan_speed: 1.0               # 风扇转速
 #                            X限位配置
 #####################################################################
 [stepper_x]
-endstop_pin: !RRF36:gpio21
-## RRF36板有gpio2,gpio21两个限位引脚可用，按照实际接线修改配置
+endstop_pin: !SHT36:gpio21
+## SHT36板有gpio2,gpio21两个限位引脚可用，按照实际接线修改配置
 ## gpio21引脚默认支持高压输入，可用于12v的接近传感器等。可通过跳线帽配置gpio21为普通限位引脚
 #####################################################################
 #                           SB头led配置
 #####################################################################
 [neopixel sb_leds]
-pin: RRF36:gpio6            # 信号接口
+pin: SHT36:gpio6            # 信号接口
 chain_count: 3              # 灯珠数量
 color_order: GRBW           # 灯珠类型
 initial_RED: 0.4            # 
@@ -117,7 +117,7 @@ initial_WHITE: 0.0          # 连接后会亮起来
 #####################################################################
 # PL08N感应探头不低于喷嘴高度，仅用于调平,如果你的PL08N是NO（常开），请将更改pin添加到！ 
 [probe]
-pin: ^RRF36:gpio3            # 信号接口
+pin: ^SHT36:gpio3            # 信号接口
 x_offset: 0                  # X轴-传感器相对喷嘴偏移量
 y_offset: 25.0               # Y轴-传感器相对喷嘴偏移量
 z_offset: 0                  # Z轴-传感器相对喷嘴偏移量
@@ -130,8 +130,8 @@ samples_tolerance_retries: 3 # 超公差重试次数
 
 #--------------------------------------------------------------------
 #[bltouch]
-#sensor_pin: ^RRF36:gpio3     # 信号接口
-#control_pin: RRF36:gpio7     # 舵机控制
+#sensor_pin: ^SHT36:gpio3     # 信号接口
+#control_pin: SHT36:gpio7     # 舵机控制
 #x_offset: -26.1              # X轴-传感器相对喷嘴偏移量，需要自行确定偏移量
 #y_offset: -15.3              # Y轴-传感器相对喷嘴偏移量，需要自行确定偏移量
 #z_offset: 2.1                # Z轴-传感器相对喷嘴偏移量，需要自行确定偏移量
@@ -146,11 +146,11 @@ samples_tolerance_retries: 3 # 超公差重试次数
 # sensor_type: as5047d
 # #sample_period: 0.000400
 # stepper: stepper_x
-# cs_pin: RRF36:gpio17
+# cs_pin: SHT36:gpio17
 # spi_bus: spi1
-# # spi_software_sclk_pin: RRF36:PA5
-# # spi_software_mosi_pin: RRF36:PA7
-# # spi_software_miso_pin: RRF36:PA6
+# # spi_software_sclk_pin: SHT36:PA5
+# # spi_software_mosi_pin: SHT36:PA7
+# # spi_software_miso_pin: SHT36:PA6
 
 ```
 

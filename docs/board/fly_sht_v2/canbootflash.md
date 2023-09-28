@@ -1,7 +1,9 @@
 # 编译固件
 
 > [!TIP]
-> CanBoot固件默认500k
+> 请注意刷完Canboot后需要快速短接下方电容，刷写Canboot不会覆盖Klipper！！
+
+<img src="../../images/boards/fly_sht_v2/canboot.png" alt="canboot" style="zoom:80%;" />
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 

@@ -25,6 +25,11 @@
 
 ![MAKE](../../images/adv/make.gif)
 
+```
+cd klipper
+make menuconfig
+```
+
 <!-- tabs:start -->
 
 ### **普通USB固件配置**
@@ -41,7 +46,14 @@
 
 <!-- tabs:end -->
 
-* 执行命令```make -j4```来编译固件
+* 编译固件
+
+```
+make clean
+make -j4
+```
+
+
 
 ## 3. 固件烧录
 
@@ -64,21 +76,8 @@ sudo fly-flash -d gemini-v3 -h -f ~/klipper/out/klipper.bin
 >[!Warning]
 >请注意烧录完固件无需执行下方指令
 
-* 进入烧录模式
-
-```bash
- sudo fly-flash -d gemini-v3 -h
-```
-
 * 正常启动MCU
 
 ```bash
 sudo fly-flash -d gemini-v3 -s
-```
-
-
-* 重置MCU
-
-```bash
-sudo fly-flash -d gemini-v3 -r
 ```

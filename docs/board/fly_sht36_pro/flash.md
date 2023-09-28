@@ -45,10 +45,11 @@
     编译
 
     ```bash
+    make clean
     make -j4
     ```
     
-     使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
+     使用canboot烧录的固件最后出现**Creating hex file out/klipper.uf2**则编译成功
     
     ### 使用CANBOOT烧录
     

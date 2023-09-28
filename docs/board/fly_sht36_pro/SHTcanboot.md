@@ -46,7 +46,7 @@ make menuconfig
 
 **把canboot.uf2放进去，弹窗会关闭**
 
-## 4 查找uuid
+## 4. 查找uuid
 
 > [!TIP]
 > 请使用UTOC或者其他支持klipper USB桥接CAN的主板将FLY-SHT36 Pro与上位机通过CAN总线连接

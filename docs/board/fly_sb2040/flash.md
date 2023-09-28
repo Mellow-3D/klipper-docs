@@ -6,7 +6,7 @@
 ## 编译固件
 
 > [!TIP]
-> CanBoot固件默认500k
+> CanBoot固件默认500k，建议重新编译并且烧录1M的Canboot
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 

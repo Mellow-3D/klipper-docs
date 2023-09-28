@@ -103,15 +103,7 @@ run_current: 0.65                   # 电机运行电流值
 interpolate: False                  # 是否开启256微步插值（不建议开启）
 rref: 12300                         # 驱动采样电阻
 stealthchop_threshold: 99999        # 静音阀值（如果不需要静音，请将数值改为0）
-
-#####################################################################
-#                             温度检测
-#####################################################################
-##klipper还未支持，可以自行支持
-## https://github.com/Klipper3d/klipper/pull/6210
-# [temperature_sensor 2240]
-# sensor_type: temperature_driver
-# sensor_driver: tmc2240 extruder
+driver_TPFD: 0
 
 #####################################################################
 #                             风扇配置
