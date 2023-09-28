@@ -128,21 +128,6 @@ lsusb
 
 <!-- tabs:end -->
 
-编译
-
-```bash
-make clean
-make -j4
-```
-
- 使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
-
- 使用usb烧录的固件最后出现**Creating uf2 file out/klipper.uf2**则编译成功
-
-
-
-
-
 ## 3. 检查
 
 如果正确配置编译并烧录成功，则SB2040-PRO板的这个灯会常亮

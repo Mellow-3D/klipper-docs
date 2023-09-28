@@ -35,6 +35,11 @@
 
 ![MAKE](../../images/adv/make.gif)
 
+```
+cd klipper
+make menuconfig
+```
+
 <!-- tabs:start -->
 
 ### **USB固件配置**
@@ -52,7 +57,14 @@
 
 <!-- tabs:end -->
 
-* 执行命令```make -j4```来编译固件
+* 编译固件
+
+```
+make clean
+make -j4
+```
+
+
 
 ## 3. 固件烧录
 
@@ -71,15 +83,6 @@ sudo fly-flash -d c8 -h -f ~/klipper/out/klipper.bin
 
 * 注意：以上命令烧录固件会将``~/klipper/out/klipper.bin``烧录到下位机，请在烧录前编译好固件
 
-> [!Warning]
-> 请注意烧录完固件无需执行下方指令
-
-* 进入烧录模式
-
-```bash
-sudo fly-flash -d c8 -h
-```
-
 
 * 正常启动MCU
 
@@ -87,21 +90,9 @@ sudo fly-flash -d c8 -h
 sudo fly-flash -d c8 -s
 ```
 
-* 重置MCU
-
-```bash
-sudo fly-flash -d c8 -r
-```
-
-* 进入DFU
-
-```bash
-sudo fly-flash -d c8 -u
-```
-
 > [!TIP]
 > 烧录完成后无需将插入任何跳线
 
 > [!warning]
-> 读取主板ID时，请使用12/24V供电，否则会导致读不到ID！！！
+> 如果需要读取CAN工具板ID时，请使用12/24V供电，否则会导致读不到ID！！！
 

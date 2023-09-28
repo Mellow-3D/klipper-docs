@@ -6,7 +6,9 @@ Klipper链接:[STEPPER_BUZZ](https://www.klipper3d.org/G-Codes.html?h=stepper+bu
 
 ```
 STEPPER_BUZZ STEPPER=stepper_x
+STEPPER_BUZZ STEPPER=stepper_x1
 STEPPER_BUZZ STEPPER=stepper_y
+STEPPER_BUZZ STEPPER=stepper_y1
 STEPPER_BUZZ STEPPER=stepper_z
 STEPPER_BUZZ STEPPER=stepper_z1
 STEPPER_BUZZ STEPPER=stepper_z2
