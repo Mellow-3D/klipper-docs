@@ -6,18 +6,18 @@
 
 <!-- tabs:start -->
 
-### **USB 的固件配置**
+### ****USB 的固件配置****
 
 <img src="../../images/boards/fly_super8/e3v2config.png" alt="e3v2config" style="zoom:150%;" />
 
-### **CAN桥接固件**
+### ****CAN桥接固件****
 
 >[!TIP]
 >此方法是桥接工具板的配置，请确保工具板CAN速率与上位机的CAN速率完全一致
 
 ![canbridge2](../../images/boards/fly_super8/canbridge2.png)
 
-### **CAN固件**
+### ****CAN固件****
 
 >[!TIP]
 >此方法需要将主板的CAN口接到UTOC才可以找到CANid

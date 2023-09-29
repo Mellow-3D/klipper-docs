@@ -36,7 +36,7 @@
 
 <!-- tabs:start -->
 
-### **使用USB烧录固件**
+### ****使用USB烧录固件****
 
 ![config](../../images/boards/fly_sb2040/config.png ":no-zooom")
 
@@ -80,7 +80,7 @@ make -j4
 
 ![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
 
-### **使用CANBOOT烧录固件**
+### ****使用CANBOOT烧录固件****
 
 >[!Tip]
 >

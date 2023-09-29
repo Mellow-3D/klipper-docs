@@ -35,7 +35,7 @@
 
 <!-- tabs:start -->
 
-### **FLY-SHT36-LIS3DH-使用CANBOOT烧录**
+### ****FLY-SHT36-LIS3DH-使用CANBOOT烧录****
 
 **感叹号是英文否则会编译错误**
 
@@ -107,7 +107,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ​    
 
-### **FLY-SHT36-LIS3DH-使用USB烧录**
+### ****FLY-SHT36-LIS3DH-使用USB烧录****
 
 **感叹号是英文否则会编译错误**
 

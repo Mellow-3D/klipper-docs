@@ -36,7 +36,7 @@
 
     <!-- tabs:start -->
 
-    ### **SHT36 Pro 使用CANBOOT烧录时编译此固件**
+    ### ****SHT36 Pro 使用CANBOOT烧录时编译此固件****
 
     **感叹号是英文否则会编译错误**
 
@@ -98,7 +98,7 @@
     
     
     
-    ## **SHT36 Pro 使用USB烧录时编译此固件**
+    ## ****SHT36 Pro 使用USB烧录时编译此固件****
     
     ![flashcan_2209](../../images/boards/fly_sht36_pro/flash.png)
     

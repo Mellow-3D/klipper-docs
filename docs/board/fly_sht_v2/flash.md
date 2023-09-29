@@ -48,11 +48,11 @@
 
 <!-- tabs:start -->
 
-#### **GD32F103**
+#### ****GD32F103****
 
 ![config](../../images/boards/fly_sht_v2/config.png ":no-zooom")
 
-#### **APM32F072 & STM32F072**
+#### ****APM32F072 & STM32F072****
 
 ![config](../../images/boards/fly_sht_v2/config_072.png ":no-zooom")
 
