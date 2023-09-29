@@ -7,11 +7,11 @@ Super8 Pro的Klipper固件配置如下图所示：
 
 <!-- tabs:start -->
 
-### **H743USB固件**
+### ****H743USB固件****
 
 ![config](../../images/boards/fly_super8_pro/config.png ":no-zooom")
 
-### **H743CAN桥接固件**
+### ****H743CAN桥接固件****
 
 >[!TIP]
 >
@@ -19,7 +19,7 @@ Super8 Pro的Klipper固件配置如下图所示：
 
 ![canbridge2](../../images/boards/fly_super8_pro/canbridge1.png)
 
-### **H743CAN固件**
+### ****H743CAN固件****
 
 >[!TIP]
 >
@@ -33,11 +33,11 @@ Super8 Pro的Klipper固件配置如下图所示：
 
 <!-- tabs:start -->
 
-### **H723USB固件**
+### ****H723USB固件****
 
 <img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
 
-### **H723CAN桥接固件**
+### ****H723CAN桥接固件****
 
 >[!TIP]
 >
@@ -45,7 +45,7 @@ Super8 Pro的Klipper固件配置如下图所示：
 
 ![canbridge2](../../images/boards/fly_super8_pro/canbridge2.png)
 
-### **H723CAN固件**
+### ****H723CAN固件****
 
 >[!TIP]
 >

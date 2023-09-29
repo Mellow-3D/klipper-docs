@@ -21,14 +21,14 @@
 
 <!-- tabs:start -->
 
-#### **普通USB固件配置**
+#### ****普通USB固件配置****
 
 ![usb](../../images/boards/fly_gemini_v3/usb.png)
 
-#### **CAN桥接固件配置**
+#### ****CAN固件配置****
 
 >[!Tip]
->此方法是通过主板桥接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
+>此方法是通过主板连接CAN设备，请确保上位机的can0、桥接主板的CAN速率、CAN工具板的速率完全一致
 
 ![usb2can](../../images/boards/fly_gemini_v2/config-can.png)
 

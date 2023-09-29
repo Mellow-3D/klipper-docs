@@ -11,11 +11,11 @@
 
 <!-- tabs:start -->
 
-### **H723USB固件**
+### ****H723USB固件****
 
 <img src="../../images/boards/fly_super8_pro/H723_config.png" alt="H723_config" style="zoom:130%;" />
 
-### **H723CAN桥接固件**
+### ****H723CAN桥接固件****
 
 >[!TIP] 
 >

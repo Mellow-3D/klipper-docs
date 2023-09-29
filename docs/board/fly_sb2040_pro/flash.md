@@ -39,7 +39,7 @@
 
 <!-- tabs:start -->
 
-### **SB2040-Pro 使用CanBoot烧录时编译此固件**
+### ****SB2040-Pro 使用CanBoot烧录时编译此固件****
 
 **感叹号是英文否则会编译错误**
 
@@ -82,7 +82,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
-### **SB2040-Pro使用USB烧录时编译此固件**
+### ****SB2040-Pro使用USB烧录时编译此固件****
 
 **感叹号是英文否则会编译错误**
 
@@ -128,7 +128,7 @@ lsusb
 
 <!-- tabs:end -->
 
-## 3. 检查
+## 2. 检查
 
 如果正确配置编译并烧录成功，则SB2040-PRO板的这个灯会常亮
 

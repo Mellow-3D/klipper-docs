@@ -16,11 +16,11 @@
 
 <!-- tabs:start -->
 
-### **USB固件配置**
+### ****USB固件配置****
 
 ![usb](../../images/boards/fly_d5/usb.png)
 
-### **USB桥接CAN固件配置**
+### ****USB桥接CAN固件配置****
 
 * 此方法是桥接工具板的配置，请确保工具板CAN速率与上位机的CAN配置
 
