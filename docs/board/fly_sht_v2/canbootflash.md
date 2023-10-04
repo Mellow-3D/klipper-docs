@@ -51,9 +51,10 @@
 3. 编译
 
     ```bash
+    make clean
     make -j4
     ```
-
+    
      最后出现**Creating bin file out/canboot.bin**则编译成功
     
     

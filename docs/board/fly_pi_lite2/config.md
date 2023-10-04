@@ -45,22 +45,30 @@
 
 另外还需要指定使用的屏幕类型才能够正常使用！！！按下图中的提示修改为对应的配置即可。
 
+<!-- tabs:start -->
+
+### **HDMI**
+
+* HDMI屏幕只需要修改Display此选项即可
+
 ![hdmi](../../images/boards/fly_pi/hdmi.png)
 
-## 3.5 屏幕旋转
+### **TFT**
 
-> [!TIP]
-> 请不要随意修改系统的触摸配置
+![tft](../../images/boards/fly_pi/tft1.png)
 
-找到下图所示选项，将``FBTFT=FLY-TFT-V1``注释，将``FBTFT=FLY-TFT-V1-h``取消注释，则可旋转屏幕。
+* 请注意(FLY-Pi) & (FLY-π) & (FLY-Gemini v1~v3) & (FLY-Pi Lite2) 使用FLY-TFT-V1
+* (FLY-Pi v2) & (FLY-C8)使用FLY-TFT-V1-NEW
 
-![tft](../../images/boards/fly_pi_lite2/FBTFT.png)
+![tft](../../images/boards/fly_pi/tft2.png)
 
-！！！按下图中的提示修改为对应的配置即可。
+* TFT屏幕旋转只能选择**90**或者**270**
 
-![tft](../../images/boards/fly_pi_lite2/FBTFT1.png)
+![tft](../../images/boards/fly_pi/tft3.png)
 
-## 3.6 mainsail切换
+<!-- tabs:end -->
+
+## 3.5 mainsail切换
 
 在浏览器输入ip+:81即可切换mainsail
 

@@ -79,7 +79,7 @@ EOF
 
 >[!Tip]
 >
->如果Klipper之前连接过
+>如果Klipper之前连接过CAN设备则无法搜索到配置过的CANID
 
 ```bash
 cat /etc/network/interfaces.d/can0

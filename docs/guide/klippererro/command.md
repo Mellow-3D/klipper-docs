@@ -88,6 +88,8 @@ Klipper链接:[FORCE_MOVE](https://www.klipper3d.org/G-Codes.html?h=move#force_m
 
 该命令可以在没有归位情况下控制其中一个电机运行
 
+该命令建议在**fluidd**此界面下使用
+
 ```
 [force_move]
 enable_force_move: true
