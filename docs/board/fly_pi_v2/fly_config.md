@@ -79,16 +79,10 @@
 
 **音频设备驱动启用方法**
 
-1. 在
+1. 使用ssh执行此命令
 
    ```
-   /boot/armbianEnv.txt
-   ```
-
-   中加入一行配置
-
-   ```
-   overlays=analog-codec
+   echo "overlays=analog-codec" | sudo tee -a /boot/armbianEnv.txt
    ```
 
    
