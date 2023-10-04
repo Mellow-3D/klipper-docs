@@ -1,25 +1,12 @@
 ## 1 内存卡镜像烧录
 
-1. 先安装好软件“balenaEtcher”，也可以用其他的(Win32DiskImager)等工具
+1. 先安装好软件**Win32DiskImager**与解压工具
 2. SD卡插入读卡器，将读卡器插到电脑USB接口
-3. 打开软件，点击“**Flash from file**”选择前面下载的系统镜像文件
+3. 请确保烧录的sd卡做好备份
 
-<img src="../../images/boards/fly_pi/etcher.png" alt="etcher" style="zoom:80%;" />
+## 2. 格式化SD卡
 
-4. 点击**“Select target**”选择SD卡，大小和SD卡容量差不多的就是，或进入资源管理器查看SD卡盘符
-
-   <img src="../../images/boards/fly_pi/etcher2.png" alt="etcher2" style="zoom:80%;" />
-
-   5. 点击 “**Falsh**” ,出现进度条及“**Falshing…**”时开始写入系统镜像到SD卡。等待大约十多分钟，等待写入完成。
-
-   5. 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")
-   
-   5. 如果烧录失败需要格式化SD卡后在烧录
-   
-
-## 2. 如何重新格式化SD卡
-
-  如果写入失败或者需要重新刷写镜像时，请按如下操作：
+  烧录镜像需要格式化SD卡，请按如下操作：
 
   1. 点击“**此电脑**” 
 
@@ -39,11 +26,34 @@
 
   ![format](../../images/boards/fly_pi/format5.png)
 
-  4. 现在可以打开文件资源管理器，多出一个14.5G的U盘（16G eMMC显示大小为14.5G）
-   
-  5. 这样就可以直接用Win32diskimager或balenaEtcher来烧录系统镜像，盘符选择为这个14.5GU盘的盘符
-   
-  6. 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")
+4. 现在可以打开文件资源管理器，多出一个14.5G的U盘（16G eMMC显示大小为14.5G）
 
 
-​      
+
+## 3. 将下载好的系统镜像解压
+
+* 将下方系统镜像解压出来
+* img.md5这个文件无需解压
+
+![img](../../images/boards/fly_pi/img.png)
+
+## 4. 使用Win32diskimage来烧录系统镜像
+
+* 红色选择需要烧录的文件
+* 橙色选择需要烧录的sd卡
+* 蓝色将系统烧录到sd卡中
+>[!Tip]
+>
+>请确保烧录的设备是否选择正确
+
+![win32](../../images/boards/fly_pi/win32.png)
+
+* 确认烧录然后等待烧录完成
+
+![win32](../../images/boards/fly_pi/win32_1.png)
+
+* 烧录完成
+
+![win32](../../images/boards/fly_pi/win32_2.png)
+
+* 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")

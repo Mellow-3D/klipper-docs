@@ -1,31 +1,21 @@
 # 产品简介
 
-Fly-Pi-lite2是一款入门级Klipper上位机
+Fly-CM4与树莓派3B和4B完全兼容，并特别针对树莓派CM4拓展改进，这款拓展板提供了一整套专为3D打印机优化的功能。12-24V直流供电确保了供电的稳定性，对3D打印机的精确控制和连续运行至关重要。支持FLY-TFT和Fly-HDMI屏幕FPC连线功能，提供了更方便的走线方式。提供Can端口可以上位机直接Can连接下位机是目前比较流行方式。
 
 **特点**
 
-* CPU：高性能全志H3芯片，4核64位Cortex-A7
-* GPU：Mali-400 MP2
-* RAM：512MB DDR3
-* ROM：支持最大128GB SDCARD
-* WIFI :  板载2.4G WiFi
-* 外设：Spi x1，URAT x2, USB x2，HDMI x1
-* 接口：预留FPC，HDMI + USB FPC一线通
-* 为Klipper定制的系统，无需安装系统等复杂的操作，小白更容易上手
+* 支持树莓派CM4核心板
+* 支持12V-24V直流供电
+* 板载UTOC模块
+* 支持TFT与HDMI一线通
+* 支持DSI/spi屏幕接口
+* 支持CSI/USB摄像头接口
+* 40PIN扩展接口，兼容树莓派
 
 ## 产品详情
 
-[Fly3D Fly-π Lite2入门级上位机主板替代树莓派运行3D打印机Klipper固件-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?id=696987160553 "点击即可跳转")
+淘宝链接: [FLY PI4B CM4拓展板](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-23066022670.11.474e4dc3lfVaeO&id=734844931293)
 
-## FLY-π lite2
+## FLY-CM4
 
-![pi接口图jpg](../../images/boards/fly_pi_lite2/lite2.jpg)
-
-----
-
-> [!TIP]
-> 重要
-
-* 非FLY上位机请按[CAN使用](/advanced/can_rpi.md)文档配置好CAN
-* 使用CanBoot请查看[CanBoot使用](/advanced/canboot.md)
-
+![cm4](../../images/boards/fly_cm4/cm4.jpg)

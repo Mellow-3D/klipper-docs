@@ -1,18 +1,15 @@
-# CAN配置
+# CM4使用板载UTOC方法
 
-> [!TIP]
-> **lite2can速率为1000000**
+* 打开CAN
 
-> [!TIP]
-> **可以使用下方代码修改为500k速率**
+![can1](../../images/boards/fly_cm4/can1.png)
 
-```bash
-sudo sed -i 's/1000000/500000/g' /etc/network/interfaces.d/can0
-```
+* 接线方法
 
-改完需要重启
 
-```bash
-sudo reboot
-```
 
+![can](../../images/boards/fly_cm4/can.jpg)
+
+**请注意此操作会占用CM4的一个USB接口**
+
+![utoc](../../images/boards/fly_cm4/utoc2.jpg)
