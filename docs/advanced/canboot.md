@@ -34,7 +34,8 @@ make menuconfig
 配置完成后按“Q”键，然后再按“Y”键即可退出并保存。执行下面的命令编译固件
 
 ```bash
-make
+make clean
+make -J4
 ```
 
 ![3](../images/adv/canboot/3.png)
@@ -51,7 +52,8 @@ make
 配置完成后按“Q”键，然后再按“Y”键即可退出并保存。执行下面的命令编译固件
 
 ```bash
-make
+make clean
+make -J4
 ```
 
 ![3](../images/adv/canboot/3.png)
@@ -68,7 +70,8 @@ make
 配置完成后按“Q”键，然后再按“Y”键即可退出并保存。执行下面的命令编译固件
 
 ```bash
-make
+make clean
+make -J4
 ```
 
 ![3](../images/adv/canboot/3.png)
@@ -241,7 +244,8 @@ make menuconfig
 2. 编译klipper固件
 
 ```bash
-make
+make clean
+make -J4
 ```
 
 ![7](../images/adv/canboot/7.png)
@@ -302,7 +306,8 @@ python3 lib/canboot/flash_can.py -q
 2. 编译klipper固件
 
 ```bash
-make
+make clean
+make -J4
 ```
 
 ![7](../images/adv/canboot/7.png)
@@ -403,7 +408,8 @@ python3 lib/canboot/flash_can.py -i can0 -f ./out/klipper.bin -u fea6a45462e9
 2. 编译klipper固件
 
 ```bash
-make
+make clean
+make -J4
 ```
 
 ![7](../images/adv/canboot/7.png)
@@ -456,7 +462,8 @@ git pull
 
 ```bash
 make menuconfig
-make
+make clean
+make -J4
 ```
 
 * 为SHT36/42烧录klipper
