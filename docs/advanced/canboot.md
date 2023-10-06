@@ -35,7 +35,7 @@ make menuconfig
 
 ```bash
 make clean
-make -J4
+make -j4
 ```
 
 ![3](../images/adv/canboot/3.png)
@@ -53,7 +53,7 @@ make -J4
 
 ```bash
 make clean
-make -J4
+make -j4
 ```
 
 ![3](../images/adv/canboot/3.png)
@@ -71,7 +71,7 @@ make -J4
 
 ```bash
 make clean
-make -J4
+make -j4
 ```
 
 ![3](../images/adv/canboot/3.png)

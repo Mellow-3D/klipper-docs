@@ -72,22 +72,6 @@ relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位�
 
 
 
-# MCU Protocol error
-
-## 1. 报错信息
-
-![Protocol](../../images/guides/klippererro/protocol.png)
-
-## 2. 报错原因
-
-因为更新**Klipper**导致系统固件版本与下位机固件版本差距过大需要**更新固件**
-
-## 3. 解决方法
-
-重新刷写主板固件，最好全部下位机都**重新编译并且刷写固件**
-
-
-
 # MCU 'mcu' shutdown: Timer too close
 ## 1. 报错信息
 
