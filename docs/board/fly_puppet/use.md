@@ -57,3 +57,7 @@
 * 不可同时连接CM4和其他RPI
 
 * 与上位机配合使用请查看左侧目录中对应选项
+
+## 驱动跳线设置
+
+![3](../../images/boards/fly_puppet/tmc.png ":no-zooom")

@@ -18,7 +18,7 @@
 
 ----
 
-1. 原版Armbian系统（不提供klipper安装等支持）
+1. 原版Armbian系统（不提供klipper安装等支持,请注意此版本不支持通过M2WE启动）
 
     Armbian_22.08.0  （2022-07-11）<button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Release/Armbian_22.08.0-trunk_Flypiv1_bullseye_current_5.15.52.img.xz'">点我下载</button>
 

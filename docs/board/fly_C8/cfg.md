@@ -262,7 +262,7 @@ enable_pin: !PE10
 microsteps: 16
 full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
 rotation_distance: 22.52245         # 主动带轮周长mm
-# 校准步进值: 23.1325301 = 旧值22.6789511*（实际值102/目标值100）
+# 校准步进值: rotation_distance = <旧rotation_distance> * <实际挤出长度> / <请求的挤出长度>
 gear_ratio: 50:10                   # 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
 nozzle_diameter: 0.400              # 喷嘴直径
 filament_diameter: 1.750            # 耗材直径
