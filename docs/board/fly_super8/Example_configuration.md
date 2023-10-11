@@ -114,7 +114,9 @@ stealthchop_threshold: 0             # StealthChop mode will be enabled when the
 #--------------------------------------------------------------------
 #[tmc5160 stepper_x]
 #cs_pin: PC4
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False                    # Whether to enable 256 microstep interpolation (True for enable, False for disable).
 #sense_resistor: 0.075                 # When using the 5160pro, it needs to be modified to 0.033.
@@ -147,7 +149,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 #[tmc5160 stepper_y]
 #cs_pin: PF12
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False
 #sense_resistor: 0.075
@@ -188,7 +192,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z]
 #cs_pin: PE7
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False
 #sense_resistor: 0.075
@@ -213,7 +219,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 # [tmc5160 stepper_z1]
 # cs_pin: PE10
-# spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 # run_current: 1.0
 # interpolate: False
 # sense_resistor: 0.075
@@ -238,7 +246,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 # [tmc5160 stepper_z2]
 # cs_pin: PF1
-# spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 # run_current: 1.0
 # interpolate: False
 # sense_resistor: 0.075
@@ -287,7 +297,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 #[tmc5160 extruder]
 #cs_pin: PF15
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False
 #sense_resistor: 0.075
@@ -669,7 +681,9 @@ stealthchop_threshold: 0             # StealthChop mode will be enabled when the
 #--------------------------------------------------------------------
 #[tmc5160 stepper_x]
 #cs_pin: PC4
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False                    # Whether to enable 256 microstep interpolation (True for enable, False for disable).
 #sense_resistor: 0.075                 # When using the 5160pro, it needs to be modified to 0.033.
@@ -702,7 +716,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 #[tmc5160 stepper_y]
 #cs_pin: PF12
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False
 #sense_resistor: 0.075
@@ -743,7 +759,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z]
 #cs_pin: PE7
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False
 #sense_resistor: 0.075
@@ -769,7 +787,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 # [tmc5160 stepper_z1]
 # cs_pin: PE10
-# spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 # run_current: 1.0
 # interpolate: False
 # sense_resistor: 0.075
@@ -795,7 +815,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 # [tmc5160 stepper_z2]
 # cs_pin: PF1
-# spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 # run_current: 1.0
 # interpolate: False
 # sense_resistor: 0.075
@@ -821,7 +843,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 # [tmc5160 stepper_z3]
 # cs_pin: PG2
-# spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 # run_current: 1.0
 # interpolate: False
 # sense_resistor: 0.075
@@ -870,7 +894,9 @@ stealthchop_threshold: 0
 #--------------------------------------------------------------------
 #[tmc5160 extruder]
 #cs_pin: PF15
-#spi_bus: spi1a
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0
 #interpolate: False
 #sense_resistor: 0.075
