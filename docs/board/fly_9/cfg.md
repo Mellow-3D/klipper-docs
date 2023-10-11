@@ -332,9 +332,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #                            热床配置                                # 
 #####################################################################
 [heater_bed]
-heater_pin: PF3              # 热床接口
+heater_pin: PE2              # 热床接口
 sensor_type: Generic 3950    # 热床传感器类型
-sensor_pin:  PE2             # 热床传感器接口
+sensor_pin:  PF3             # 热床传感器接口
 max_power: 1.0               # 热床功率
 min_temp: 0                  # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 490                # 最大温度（注意：测量温度超过设定值会触发紧急停止）
@@ -951,9 +951,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #                            热床配置                                # 
 #####################################################################
 [heater_bed]
-heater_pin: PF3              # 热床接口
+heater_pin: PE2              # 热床接口
 sensor_type: Generic 3950    # 热床传感器类型
-sensor_pin:  PE2             # 热床传感器接口
+sensor_pin:  PF3             # 热床传感器接口
 max_power: 1.0               # 热床功率
 min_temp: 0                  # 最小温度（注意：测量温度超过设定值会触发紧急停止）
 max_temp: 490                # 最大温度（注意：测量温度超过设定值会触发紧急停止）

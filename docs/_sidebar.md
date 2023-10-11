@@ -1,11 +1,11 @@
 - [**FLY-Tools网页**](/board/fly_tools/)
-
 - FLY-上位机系列
+    - [FLY-CM4](/board/fly_cm4/)
     - [FLY-Pi-V2](/board/fly_pi_v2/)
     - [FLY-π](/board/fly_pi/)
+    - [FLY-MINI Pad](/board/fly_mini_pad/)
     - [FLY-lite2](/board/fly_pi_lite2/)
     - [FLY-lite](/board/fly_pi_lite/)
-    - [FLY-CM4](/board/fly_cm4/)
 - 主板
 
   - FLY-Super 系列主板
@@ -51,7 +51,6 @@
     - [FLY-TMC5160 PRO V1.5](/board/fly_tmc/5160PRO_1.5.md)
     - [FLY-TMC5160 HV](/board/fly_tmc/5160hv.md)
     - [无限位配置方法与宏](/board/fly_tmc/cfg.md)
-
 - 工具板
 
   - SHT 系列CAN工具板

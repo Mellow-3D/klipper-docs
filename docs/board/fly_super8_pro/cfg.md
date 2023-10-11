@@ -131,7 +131,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PC4                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -166,7 +168,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PF12                        # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -215,7 +219,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PE7                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -243,7 +249,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z1]                # 挤出机驱动配置- TMC5160
 #cs_pin: PE10                        # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -271,7 +279,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z2]                # 挤出机驱动配置- TMC5160
 #cs_pin: PF1                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -323,7 +333,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 extruder]                  # 挤出机驱动配置- TMC5160
 #cs_pin: PF15                        # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -477,7 +489,6 @@ speed: 100                   # 调平速度
 horizontal_move_z: 10        # Z轴起始高度
 retry_tolerance: 0.0075      # 采样公差
 retries: 5                   # 超公差重试次数
-max_adjust: 10               # 调平最大调整行程
 
 #####################################################################
 #                      FLY-Mini 12864 LCD
@@ -721,7 +732,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PC4                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -756,7 +769,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PF12                        # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -804,7 +819,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
 #cs_pin: PE7                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -831,7 +848,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z1]                # 挤出机驱动配置- TMC5160
 #cs_pin: PE10                        # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -858,7 +877,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z2]                # 挤出机驱动配置- TMC5160
 #cs_pin: PF1                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -885,7 +906,9 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 #--------------------------------------------------------------------
 #[tmc5160 stepper_z3]                # 挤出机驱动配置- TMC5160
 #cs_pin: PG2                         # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
@@ -936,7 +959,9 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 #--------------------------------------------------------------------
 #[tmc5160 extruder]                  # 挤出机驱动配置- TMC5160
 #cs_pin: PF15                        # SPI 片选Pin脚定义
-#spi_bus: spi1a                      # SPI 通讯总线定义
+# spi_software_mosi_pin: PB5
+# spi_software_miso_pin: PB4
+# spi_software_sclk_pin: PB3
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
