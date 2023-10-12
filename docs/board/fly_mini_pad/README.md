@@ -9,14 +9,14 @@ Fly-Pi-lite2是一款入门级Klipper上位机
 * RAM：512MB DDR3
 * ROM：支持最大128GB SDCARD
 * WIFI :  板载2.4G WiFi
-* 外设：Spi x1，URAT x2, USB x2，HDMI x1
+* 外设：SPI x1，USB x2，Type-C x1
 * 接口：三个XH2.54-2P接口分别支持，POWER-IN供电支持最高24V输入，CAN-BUS支持CAN总线连接，LI-PO支持3.7V并且带保护的锂电池供电/充电接口，一个XH2.54-6P接口支持外接加速度计
 * 为Klipper定制的系统，无需安装系统等复杂的操作，小白更容易上手
 * 屏幕分电容屏/电阻屏，分辨率320*480
 
 ## 产品详情
 
-[Fly3D Fly-π Lite2入门级上位机主板替代树莓派运行3D打印机Klipper固件-淘宝网 (taobao.com)](https://item.taobao.com/item.htm?id=696987160553 "点击即可跳转")
+
 
 ## FLY-MINI Pad
 
