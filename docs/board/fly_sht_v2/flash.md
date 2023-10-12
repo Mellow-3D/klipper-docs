@@ -22,16 +22,11 @@
 
 ![MAKE](../../images/adv/make.gif)
 
-1. 确保使用最新的klipper
+1. 修改klipper编译配置
 
     ```bash
-    # 进入klipper目录并拉取最新的klipper
-    cd ~/klipper && git pull
-    ```
-
-2. 修改klipper编译配置
-
-    ```bash
+    cd klipper
+    rm -rf .config
     make menuconfig
     ```
 
@@ -80,14 +75,11 @@
 首先进入ssh，然后依次输入以下指令
 
 ```
+cd
 git clone https://github.com/Arksine/CanBoot
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
-
-```
-cd CanBoot
-```
 
 ```bash
 python3 ~/klipper/lib/canboot/flash_can.py -q

@@ -14,6 +14,14 @@
 
 ![MAKE](../../images/adv/make.gif)
 
+
+
+```
+cd klipper
+rm -rf .config
+make menuconfig
+```
+
 <!-- tabs:start -->
 
 ### ****USB固件配置****
@@ -75,3 +83,7 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 ![7](../../images/boards/fly_sht36_42/7.png ":no-zooom")
 
 6. 出现上图内容则烧录成功
+
+>[!TIP]
+>
+>烧录完成后，需要给D5主板彻底断电一次
