@@ -37,6 +37,7 @@
 
 ```
 cd klipper
+rm -rf .config
 make menuconfig
 ```
 
@@ -69,6 +70,7 @@ make -j4
 ## 3. 固件烧录
 
 * 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
+* 请注意如果重新安装了系统需要在安装一次烧录工具
 
 ```
 curl -kfsSL https://cdn.mellow.klipper.cn/Utils/fly-flash/fly-flash_install.sh | sudo bash -s -- "c8"

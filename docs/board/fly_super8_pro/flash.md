@@ -63,8 +63,9 @@ Super8 Pro的Klipper固件配置如下图所示：
 2. 连接到SSH后输入```cd ~/klipper/```回车
 3. 按顺序执行下面的命令，输入命令后需要回车才会执行
 4. ```make clean```
-5. ```make menuconfig```
-6. 现在应该出现了Klipper编译配置界面
+5. ```rm -rf .config```
+6. ```make menuconfig```
+7. 现在应该出现了Klipper编译配置界面
 
 ![putty](../../images/firmware/make1.png ":no-zooom")
 
@@ -78,12 +79,6 @@ Super8 Pro的Klipper固件配置如下图所示：
 ![putty](../../images/firmware/make3.png ":no-zooom")
 
 9. 进入菜单**Processor model**，按照下图所示配置信息进行配置
-
-
-
-
-
-
 
 10. 配置完成后按```Q```键，出现**Save configuration**，这时再按```Y```键
 * 现在应该保存了配置并且退出到了命令行界面

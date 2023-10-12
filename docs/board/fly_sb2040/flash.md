@@ -19,16 +19,11 @@
 
 ![MAKE](../../images/adv/make.gif)
 
-1. 确保使用最新的klipper
+1. 修改klipper编译配置
 
     ```bash
-    # 进入klipper目录并拉取最新的klipper
-    cd ~/klipper && git pull
-    ```
-
-2. 修改klipper编译配置
-
-    ```bash
+    cd klipper
+    rm -rf .config
     make menuconfig
     ```
 

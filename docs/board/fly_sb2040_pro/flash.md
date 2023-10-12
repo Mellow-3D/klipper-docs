@@ -19,23 +19,19 @@
 
 ![MAKE](../../images/adv/make.gif)
 
-1. 确保使用最新的klipper
-
-    ```bash
-    # 进入klipper目录并拉取最新的klipper
-    cd ~/klipper && git pull
-    ```
-
-2. 修改klipper编译配置
+1. 修改klipper编译配置
 
    ```bash
+   cd klipper
+   rm -rf .config
    make menuconfig
    ```
 
    配置如下图
 
    > [!TIP]
-> 由于SB2040-Pro预装了CanBoot，支持CAN烧录，因此可以先尝试使用CanBoot烧录固件。如果不能使用CanBoot烧录可以使用USB来烧录！！
+   >
+   > 由于SB2040-Pro预装了CanBoot，支持CAN烧录，因此可以先尝试使用CanBoot烧录固件。如果不能使用CanBoot烧录可以使用USB来烧录！！
 
 <!-- tabs:start -->
 
@@ -63,14 +59,11 @@ make -j4
 首先进入ssh，然后依次输入以下指令
 
 ```
+cd
 git clone https://github.com/Arksine/CanBoot
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
-
-```
-cd CanBoot
-```
 
 1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
 
