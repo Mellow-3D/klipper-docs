@@ -151,9 +151,14 @@ run_current: 0.800
 interpolate: False
 
 [tmc2209 extruder]
-uart_pin: PC14
+uart_pin: PD5
 run_current: 0.800
 interpolate: False
+
+#[tmc2209 extruder1]
+#uart_pin: PC14
+#run_current: 0.800
+#interpolate: False
 
 
 
