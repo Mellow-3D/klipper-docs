@@ -6,7 +6,7 @@
 ## 4.1 编译固件
 
 > [!TIP]
-> CanBoot固件默认1M
+> CanBoot固件默认500k
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -46,7 +46,7 @@
     make -j4
     ```
 
-     使用canboot烧录的固件最后出现**Creating hex file out/klipper.uf2**则编译成功
+     使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
 
     ### 使用CANBOOT烧录
 
@@ -103,7 +103,7 @@
     make -j4
     ```
 
-     使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
+     使用canboot烧录的固件最后出现**Creating hex file out/klipper.uf2**则编译成功
 
     ### 使用Type-C烧录固件
 
