@@ -20,9 +20,6 @@ canbus_uuid: e51d5c71a901
 [adxl345]
 cs_pin: sht36v2:PA9
 spi_bus = spi2
-# spi_software_sclk_pin: sht36v2:PB13
-# spi_software_mosi_pin: sht36v2:PB15
-# spi_software_miso_pin: sht36v2:PB14
 #--------------------------------------------------------------------
 [resonance_tester]
 accel_chip: adxl345         # 加速度芯片型号
@@ -76,9 +73,6 @@ sensor_pin: sht36v2:PA3             # 传感器引脚
 #sensor_type: MAX31865                # 传感器型号，PT100版本
 #sensor_pin: sht36v2:PB12             # 传感器引脚，PT100版本
 #spi_bus: spi2                        # SPI 通讯总线定义
-## spi_software_sclk_pin: sht36v2:PB13 # 勿动
-## spi_software_mosi_pin: sht36v2:PB15 # 勿动
-## spi_software_miso_pin: sht36v2:PB14 # 勿动
 #rtd_reference_r: 430                 # 使用31865时需要删除前面#
 #--------------------------------------------------------------------
 min_temp: 10                        # 最小温度（注意：测量温度超过设定值会触发紧急停止）
@@ -86,7 +80,6 @@ max_temp: 500                       # 最大温度（注意：测量温度超过
 max_power: 1.0                      # 最大功率
 min_extrude_temp: 170               # 最小挤出温度（至少需要达到这个温度，挤出机才能挤出）
 pressure_advance: 0.05              # 推进压力-尽量将压力保持在1.0以下(压力提前是调整这个)
-pressure_advance_smooth_time: 0.040 # 平稳推进时间-默认值为0.040
 #压力提前调整方法:https://www.klipper3d.org/zh/Pressure_Advance.html
 pressure_advance_smooth_time: 0.040 # 平稳推进时间-默认值为0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
@@ -176,8 +169,5 @@ sensor_type: as5047d
 #stepper: stepper_x
 cs_pin: sht36v2:PC14
 spi_bus: spi1
-# spi_software_sclk_pin: sht36v2:PA5
-# spi_software_mosi_pin: sht36v2:PA7
-# spi_software_miso_pin: sht36v2:PA6
 ```
 

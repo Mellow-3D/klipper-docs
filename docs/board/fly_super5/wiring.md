@@ -91,7 +91,7 @@ Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线�
 
 **喷头热敏：**
 
-![nozzle_TH](../../images/boards/fly_super8/nozzle_TH.png)
+![nozzle_TH](../../images/boards/fly_super5/nozzle.png)
 
 **热床热敏：**
 

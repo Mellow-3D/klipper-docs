@@ -43,9 +43,8 @@
     make -j4
     ```
     
-     使用**CanBoot**烧录时最后出现**Creating hex file out/klipper.uf2**则编译成功
+     使用**CanBoot**烧录时最后出现**Creating hex file out/klipper.bin**则编译成功
     
-     使用**USB**烧录时最后出现**Creating hex file out/klipper.bin**则编译成功
   
   
   
@@ -73,9 +72,7 @@
   make -j4
   ```
 
-   使用**CanBoot**烧录时最后出现**Creating hex file out/klipper.uf2**则编译成功
-
-   使用**USB**烧录时最后出现**Creating hex file out/klipper.bin**则编译成功
+   使用**USB**烧录时最后出现**Creating hex file out/klipper.uf2**则编译成功
 
   
 
