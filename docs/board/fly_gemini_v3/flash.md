@@ -1,16 +1,23 @@
 # 9. 固件编译烧录
 
 > [!TIP]
-> Gemini v3烧录时**不要**在``G/BT1/3.3V``处插入任何跳线帽，烧录完成后无需将插入任何跳线
+> Gemini v3 **烧录时**和**烧录后**请保证``G/BT1/3.3V``处没有插入任何跳线帽
 
-<img src="../../images/boards/fly_gemini_v3/flash.png" alt="flash" style="zoom:80%;" />
+<img src="../../images/boards/fly_gemini_v3/no_jumper.png" alt="no_jumper" style="zoom:80%;" />
 
 ## 1. 拨码开关设置
 
-* 拨码开关``1``,``2``打开将下位机与上位机通过内置USB连接，拨码``3``,``4``打开将下位机USB连接到板载Type-C端口
+* 拨码开关``1``,``2``打开将下位机与上位机通过**内置USB连接**，拨码``3``,``4``打开将下位机USB连接到板载Type-C端口
 * ``1``,``2``为一组，``3``,``4``为一组。两组不可同时打开
 
+> [!TIP]
+>
+> 一般情况下，使用**内置USB连接**
+
+
 ![dip1](../../images/boards/fly_gemini_v3/dip1.png)
+
+<!-- tabs:end -->
 
 ## 2. 固件编译
 

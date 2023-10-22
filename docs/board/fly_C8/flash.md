@@ -14,7 +14,7 @@
   ![dip1](../../images/boards/fly_c8/dip1.png)
 
   > [!TIP]
-  > 在这个模式下，图中所示的USB口会被占用，不能再插入其他USB设备
+  > 在这个模式下，图中所示的USB口会被占用，不能再插入其他USB设备，**一般建议使用这种模式**
 
   ![dip2](../../images/boards/fly_gemini_v3/dip2.png)
 

@@ -1,7 +1,7 @@
 * FLY-SHT36 v2
 
   * [1. 产品简介](/board/fly_sht_v2/README.md)
-  * [2. SHT36 v2接线](/board/fly_sht_v2/shtv2line.md)
+  * [2. SHT36 v2接线](/board/fly_sht_v2/wiring.md)
   * [3. 非FLY上位机配置](/board/fly_sht_v2/piconfig.md)
   * [4. 固件编译和烧录](/board/fly_sht_v2/flash.md)
   * [5. uuid读取](/board/fly_sht_v2/uuid.md "点击即可跳转")
