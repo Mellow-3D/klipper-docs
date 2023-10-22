@@ -20,7 +20,7 @@ Klipper固件配置界面如下图。编译固件后，按照 [D5固件编译和
 
 ## 3. 查看CAN uuid
 
-固件刷好后，先不连接SHT36V2工具板，使用下面的命令读取Gemini V3主板的CAN ID。
+固件刷好后，先不连接SHT36V2工具板，使用下面的命令读取D5主板的CAN ID。
 
 也可以使用 FLY 的ID读取工具使用方法请查看：[查看CAN uuid](/advanced/can?id=查看can-uuid "点击即可跳转") （此方法仅限Fly上位机）
 
