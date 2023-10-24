@@ -57,10 +57,11 @@
 
 ![tft](../../images/boards/fly_pi/tft1.png)
 
-* 请注意(FLY-Pi) & (FLY-π) & (FLY-Gemini v1~v3) & (FLY-Pi Lite2) 使用FLY-TFT-V1
-* (FLY-Pi v2) & (FLY-C8)使用FLY-TFT-V1-NEW
+* 请注意屏幕版本
+* FLY-MiniPad: (FLY-MiniPad 电容屏版本 capacitive touchscreen version)
+* FLY-MiniPad-R: (FLY-MiniPad 电阻屏版本 Resistive touch screen version)
 
-![tft](../../images/boards/fly_pi/tft2.png)
+![tft](../../images/boards/fly_mini_pad/MiniPad.png)
 
 * TFT屏幕旋转只能选择**90**或者**270**
 
