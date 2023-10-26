@@ -86,28 +86,28 @@ info_tags:
 [BDsensor] 
 scl_pin:PC6  # 舵机信号口
 sda_pin:PC3  # 限位信号口
-delay: 20    # 20us每脉冲，该值应> =20但必须低于50
-z_offset:0   # 这个z_offset必须设置为0。 
-z_adjust:0.0 # Z轴调整，替换z_offset函数。在-0.3到0.3mm之间
+delay: 20 # 20us per pulse, this value should be >=20 but must be below 50
+z_offset:0 # this `z_offset` must be set to 0. 
+z_adjust:0.0 # z axis adjustment, replace the z_offset function. within -0.3 to 0.3mm
 x_offset: -34
 y_offset: 0
-#no_stop_probe:true   # 启用此选项以进行快速探测，工具头将在探测点停止。
-position_endstop: 0.8 # Z轴将在homing z时在此位置停止（毫米），推荐值 0.4~1.0
-#speed:0.8 # 此速度仅适用于Z倾斜和PROBE_ACCURACY命令。
+#no_stop_probe:true # enable this for fast probe, the toolhead will not stop at the probe point.
+position_endstop: 0.8 # the Z axis will stop at this position (mm) while homing z, recommend value is 0.4~1.0
+#speed:0.8 # this speed only works for the z tilt and PROBE_ACCURACY command.
 
 [stepper_z]
-endstop_pin: probe:z_virtual_endstop  # 将BDsensor设定为Z限位
-#position_endstop: 0.5                # 限位开关的位置
-homing_speed: 5                       # 归位速度
-second_homing_speed: 0.8              # 在进行第二次归位时步进器的速度（以毫米/秒为单位）
+endstop_pin: probe:z_virtual_endstop 
+#position_endstop: 0.5
+homing_speed: 5
+second_homing_speed: 0.8
 
 [bed_mesh]
-speed: 200          # 校准速度
-horizontal_move_z:1 # 在开始探测操作之前，探针应被命令移动到的高度，建议0.7~1.0mm
-algorithm: bicubic  # this should be bicubic if the bed mesh points count is > 6*6
+speed: 200
+horizontal_move_z:1
+algorithm: bicubic
 
 [quad_gantry_level]
-horizontal_move_z:1 # 在开始探测操作之前，探针应被命令移动到的高度，建议0.7~1.0mm
+horizontal_move_z:1
 
 ```
 
