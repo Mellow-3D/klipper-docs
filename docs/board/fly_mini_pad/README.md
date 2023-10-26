@@ -1,6 +1,6 @@
 # 产品简介
 
-Fly-Pi-lite2是一款入门级Klipper上位机
+Fly-MINI-Pad是一款入门级Klipper上位机
 
 **特点**
 

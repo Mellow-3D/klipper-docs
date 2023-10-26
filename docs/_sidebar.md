@@ -74,7 +74,8 @@
   - FLY MiniAB 集线板
     * [FLY MiniAB 集线板](/board/miniab_board/README.md)
 - **扩展类**
-  - [FLY-SENSOR 调平传感器](/board/fly_sensor/)
+  - [FLY-SENSOR 扫描传感器](/board/fly_sensor/)
+  - [BD-SENSOR 扫描传感器](/board/bd_sensor/)
   - [FLY-Halo WiFi智能圆屏](/board/fly_halo/)
   - [TAP](/advanced/TAP.md)
   - [7040 鼓风机](/advanced/7040.md)
