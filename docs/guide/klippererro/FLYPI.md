@@ -28,21 +28,20 @@
 
 ![putty](../../images/system/ssh3.png ":no-zooom")
 
-* 一切正常的话就可以看到启动画面了
+* 如果等待一分钟内一直这个界面请按两次回车
 
-<img src="../../images/system/ssh4.png" alt="putty" title=":no-zooom" style="zoom:80%;" />
+![ssh](../../images/guides/flash_gemini/ssh.png)
 
-* 等待片刻，出现这个画面就是启动了
+* 回车后出现下方界面则代表系统已经启动
 
-<img src="../../images/system/ssh5.png" alt="putty" title=":no-zooom" style="zoom:80%;" />
+![ssh1](../../images/guides/flash_gemini/ssh1.png)
 
+* 请确保系统镜像是否下载正确！！！
 * 请确保系统盘已经正常烧录！！！
 * 如果不确定系统盘是否烧录成功可以直接将sd卡接但电脑上查看是否有boot盘弹出！！！
 * 系统未启动可以按上位机重置键，判断系统是否启动！！！
 * 确定了系统盘烧录正常，并且ssh连接正常但是没有任何信息显示，请直接咨询客服！！！
 
-> 如果是主板启动很久后才连接的SSH那么请连接后按几下回车键
-
 > [!Warning]
 >
-> 如果没有正常启动，请截屏下来并且发给客服咨询
+> 如果没有正常启动，请先确定镜像是否烧录正确，截屏下来并且发给客服咨询
