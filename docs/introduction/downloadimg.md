@@ -25,21 +25,6 @@
     * 初始账号：`root`
     * 初始密码：`1234`
     
-    
-
-#### **FLY-π Lite**
-
-1. Lite系统镜像基于[debian 11](https://www.debian.org/)
-
-    fly-pi-lite-v1.3(beta)  （2023-01-29） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Beta/fly-pi-lite-v1.3.img.xz'">点我下载</button>
-    * 账号：`fly` 或者 `root`
-    * 密码：`mellow`
-    * 可通过这个本地域名访问lite [http://fly-pi-lite/](http://fly-pi-lite/)
-
-   [更新记录](introduction/systemupdatelog_lite.md)
-
-
-
 #### **FLY-π Lite2 & FLY-MINI-Pad**
 
 1. FLYOS 系统镜像基于[Armbian](https://www.armbian.com/)
@@ -59,5 +44,20 @@
 
     * 初始账号：`root`
     * 初始密码：`1234`
+
+#### **FLY-π Lite**
+
+1. Lite系统镜像基于[debian 11](https://www.debian.org/)
+
+    fly-pi-lite-v1.3(beta)  （2023-01-29） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Beta/fly-pi-lite-v1.3.img.xz'">点我下载</button>
+    * 账号：`fly` 或者 `root`
+    * 密码：`mellow`
+    * 可通过这个本地域名访问lite [http://fly-pi-lite/](http://fly-pi-lite/)
+
+   [更新记录](introduction/systemupdatelog_lite.md)
+
+
+
+
 
 <!-- tabs:end -->

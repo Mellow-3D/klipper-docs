@@ -79,6 +79,7 @@ info_tags:
 - 将BD传感器在Z轴回原点时作为限位开关需要将`[stepper_z]` 中的`endstop_pin`改为`endstop_pin: probe:z_virtual_endstop`
 - 请确保**printer.cfg**中有`[safe_z_home]` 
 - 将`[bed_mesh]`和`[z_tilt]`或者`[quad_gantry_level]`中的`[quad_gantry_level]`值改为1（建议0.7-1.0mm）在klipper的默认值为5mm，否则容易超出传感器范围
+- **喷嘴高度只适合在`z_adjust:`设置，正数是贴近热床，负数是远离热床，其它调喷嘴高度的设置都会有bug**
 
 下面是一个配置示例。
 
