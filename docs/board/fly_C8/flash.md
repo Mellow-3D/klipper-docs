@@ -28,17 +28,9 @@
 
 编译固件前请确保 [连接到SSH](/board/fly_gemini/host/FLY_π_ssh.md "点击即可跳转")
 
-> [!TIP]
-> 固件配置方法请按主板提供的来配置
-
-**固件配置方法**
-
-![MAKE](../../images/adv/make.gif)
-
 ```
 cd klipper
-rm -rf .config
-make menuconfig
+rm -rf .config && make menuconfig
 ```
 
 <!-- tabs:start -->

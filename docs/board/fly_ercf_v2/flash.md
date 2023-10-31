@@ -13,13 +13,10 @@
 2. 修改klipper编译配置
 
     ```bash
-    rm -rf .config
-    make menuconfig
+    rm -rf .config && make menuconfig
     ```
 
 **固件配置方法**
-
-![MAKE](../../images/adv/make.gif)
 
 ## 1. 配置固件
 

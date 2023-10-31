@@ -25,17 +25,11 @@
 
 这里只进行简要说明，完整编译步骤请查看：[编译klipper固件](/board/fly_super8/firmware?id=_1-编译klipper固件 "点击即可跳转")。
 
-> [!TIP]
-> 固件配置方法只是参考，需要按主板提供配置来配置
-
 **固件配置方法**
-
-![MAKE](../../images/adv/make.gif)
 
 ```
 cd klipper
-rm -rf .config
-make menuconfig
+rm -rf .config && make menuconfig
 ```
 
 <!-- tabs:start -->
