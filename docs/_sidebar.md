@@ -1,6 +1,6 @@
 - [**FLY-Tools 网页工具**](/board/fly_tools/)
 - **FLY-上位机系列**
-    - [FLY-CM4](/board/fly_cm4/)
+    - [FLY-CM4扩展板](/board/fly_cm4/)
     - [FLY-Pi-V2](/board/fly_pi_v2/)
     - [FLY-π](/board/fly_pi/)
     - [FLY-MINI Pad](/board/fly_mini_pad/)
