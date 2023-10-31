@@ -27,8 +27,7 @@
 2. 连接到SSH后输入```cd ~/klipper/```回车
 3. 按顺序执行下面的命令，输入命令后需要回车才会执行
 4. ```make clean```
-5. `rm -rf .config`
-6. ```make menuconfig```
+5. ``rm -rf .config && make menuconfig``
 7. 现在应该出现了Klipper编译配置界面
 
 ![putty](../../images/firmware/make1.png ":no-zooom")
