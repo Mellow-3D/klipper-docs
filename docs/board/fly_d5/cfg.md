@@ -91,8 +91,8 @@ enable_pin: !PC2                   # X轴电机使能引脚设置,使能引脚�
 rotation_distance: 40               # 主动带轮周长mm（2GT-20T带轮40，2GT-16T带轮32）
 microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
 full_steps_per_rotation: 200        # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
-endstop_pin: PB4                    # 限位开关PIN脚,建议常闭接常闭
-#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 限位开关接口
+endstop_pin: ^PB4                    # 限位开关PIN脚,建议常闭接常闭
+#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 无限位归零配置
 ###接常闭后是触发状态，加感叹号可以反转这个状态，万一断线时候可以避免撞机
 position_min: 0                     # 软限位最小行程
 position_endstop: 300               # 软限位最大行程 (250mm-300mm-350mm)
@@ -128,8 +128,8 @@ enable_pin: !PA2
 rotation_distance: 40
 microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
 full_steps_per_rotation: 200        # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
-endstop_pin: !PB3                    # 限位开关PIN脚,建议常闭然后添加！反转状态
-#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 限位开关接口
+endstop_pin: ^PB3                    # 限位开关PIN脚,建议常闭然后添加！反转状态
+#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 无限位归零配置
 ###接常闭后是触发状态，加感叹号可以反转这个状态，万一断线时候可以避免撞机
 position_min: 0
 position_endstop: 300
@@ -162,10 +162,10 @@ stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请�
 step_pin: PA5
 dir_pin: !PA4
 enable_pin: !PA6
-rotation_distance: 40         # 主动轮周长mm （2GT-20T为 40mm  16T为 32mm）
-gear_ratio: 80:16             # 减速比
-microsteps: 32
-endstop_pin: PD2             # 限位开关接口
+rotation_distance: 8         # 丝杆导程为 8，请根据你的实际使用情况修改
+microsteps: 16
+full_steps_per_rotation: 200  # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400)
+endstop_pin: ^PD2             # 限位开关接口
 position_max: 290             # 软限位最大行程 (240mm-290mm-340mm)
 position_endstop: -0.5        
 position_min: -5              # 软限位最小行程（配置喷嘴清洁需要-5左右）
@@ -181,19 +181,19 @@ sense_resistor: 0.110
 stealthchop_threshold: 0    # 静音阀值（如果不需要静音，请将数值改为0）
 ##--------------------------------------------------------------------
 ## DRIVER4电机位置
-[stepper_z1]
-step_pin: PC5
-dir_pin:  PC4
-enable_pin: !PB0
-rotation_distance: 40
-gear_ratio: 80:16
-microsteps: 32
-[tmc2209 stepper_z1]
-uart_pin: PA7
-interpolate: false
-run_current: 1.0
-sense_resistor: 0.110
-stealthchop_threshold: 0    
+#[stepper_z1]
+#step_pin: PB10
+#dir_pin:  PB2
+#enable_pin: !PB11
+#rotation_distance: 8
+#microsteps: 32
+
+#[tmc2209 stepper_z1]
+#uart_pin: PB1
+#interpolate: false
+#run_current: 1.0
+#sense_resistor: 0.110
+#stealthchop_threshold: 0    
 
 
 #####################################################################
@@ -201,9 +201,9 @@ stealthchop_threshold: 0
 #####################################################################
 ## DRIVER7电机位置
 [extruder]                          # 挤出机
-step_pin:PB10
-dir_pin:PB2
-enable_pin: !PB11
+step_pin:PC5
+dir_pin:PC4
+enable_pin: !PB0
 microsteps: 16
 full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
 rotation_distance: 22.52245         # 主动带轮周长mm
@@ -227,7 +227,7 @@ pid_ki = 1.304
 pid_kd = 131.721
 
 [tmc2209 extruder]
-uart_pin:PB1
+uart_pin:PA7
 interpolate: False
 run_current: 0.6
 sense_resistor: 0.110
@@ -358,8 +358,8 @@ color_order: RGB                # 颜色顺序
 #####################################################################
 #                           自定义gcode宏                            #
 #####################################################################
-[gcode_arcs]                       # 允许圆弧插补
-resolution: 1.0                    # 启用圆弧插补G2，G3
+#[gcode_arcs]                       # 允许圆弧插补
+#resolution: 1.0                    # 启用圆弧插补G2，G3
 #   一条弧线将被分割成若干段。每段的长度将
 #   等于上面设置的分辨率（mm）。更低的值会产生一个
 #   更细腻的弧线，但也会需要机器进行更多运算。小于
