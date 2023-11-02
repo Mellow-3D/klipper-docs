@@ -16,7 +16,7 @@
 
 ![piusb](../../images/boards/fly_pi/piusb.png)
 
-![usb-flash](../../images/boards/fly_pi/usb_flash_2.png ":size=50%")
+![usb-flash](../../images/boards/fly_gemini_v3/typec_tossh.png ":size=50%")
 
 ![ch340](../../images/boards/fly_pi_lite2/ch340.png)
 

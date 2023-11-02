@@ -1,3 +1,17 @@
+## 验证驱动状态
+
+Klipper链接:[TMC drivers)](https://www.klipper3d.org/TMC_Drivers.html)
+
+验证TMC驱动在SPI/UART模式的驱动状态
+
+* 使用方法将`extruder`替换成需要验证的驱动
+
+```
+DUMP_TMC STEPPER=extruder
+```
+
+
+
 ## 验证电机
 
 Klipper链接:[STEPPER_BUZZ](https://www.klipper3d.org/G-Codes.html?h=stepper+buzz#stepper_buzz)
@@ -82,7 +96,7 @@ touch_mode
 
 
 
-#### 强制移动电机
+## 强制移动电机
 
 Klipper链接:[FORCE_MOVE](https://www.klipper3d.org/G-Codes.html?h=move#force_move_1)
 
