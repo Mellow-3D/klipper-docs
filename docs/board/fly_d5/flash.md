@@ -76,6 +76,6 @@ dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.b
 
 6. 出现上图内容则烧录成功
 
->[!TIP]
+>[!Warning]
 >
 >烧录完成后，需要给D5主板彻底断电一次
