@@ -5,7 +5,7 @@
     * [2. 固件编译烧录](/board/fly_d5/flash.md)
     * [3. 读取ID](/board/fly_d5/id.md)
     * [4. 主板接线](/board/fly_d5/wiring.md)
-    * [5. 示例配置](/board/fly_d5/cfg.md)
+    * [5. printer参考配置](/board/fly_d5/cfg.md)
     * [6. Pin脚分布](/board/fly_d5/pins.md)
     * **进阶**
     * [7. 桥接CAN](/board/fly_d5/canbridge.md)

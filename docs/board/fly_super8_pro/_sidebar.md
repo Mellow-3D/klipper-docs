@@ -5,7 +5,7 @@
   * [2. 固件编译和烧录](/board/fly_super8_pro/flash.md)
   * [3. 读取主板ID](/board/fly_super8_pro/Super8id.md)
   * [4. Super8-Pro接线](/board/fly_super8_pro/Super8line.md)
-  * [5. 示例配置](/board/fly_super8_pro/cfg.md)
+  * [5. printer参考配置](/board/fly_super8_pro/cfg.md)
   * [6. Example configuration](/board/fly_super8_pro/Example_configuration.md)
   * [7. Pin脚分布](/board/fly_super8_pro/pins.md)
   * **调试**

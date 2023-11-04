@@ -11,7 +11,7 @@
     * [8. 固件编译烧录](/board/fly_C8/flash.md)
     * [9. 读取ID](/board/fly_C8/c8id.md)
     * [10. C8 主板接线](/board/fly_C8/wiring.md)
-    * [11. 示例配置](/board/fly_C8/cfg.md)
+    * [11. printer参考配置](/board/fly_C8/cfg.md)
     * [12. Pin脚分布](/board/fly_c8/pins.md)
     * **进阶**
     * [13. 桥接CAN](/board/fly_C8/canbridge.md)

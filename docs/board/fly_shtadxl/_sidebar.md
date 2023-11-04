@@ -6,7 +6,7 @@
   * [4. 固件编译和烧录](/board/fly_shtadxl/flash.md)
   * [5. uuid读取](/board/fly_shtadxl/uuid.md "点击即可跳转")
   * [6. 引脚分布](/board/fly_shtadxl/pins.md)
-  * [7. 示例配置](/board/fly_shtadxl/cfg.md)
+  * [7. printer参考配置](/board/fly_shtadxl/cfg.md)
   * [8. 桥接CAN](/board/fly_shtadxl/canbridge.md)
   * [9. 加速度计](/board/fly_shtadxl/adxl345.md)
   * [10. CanBoot](/board/fly_shtadxl/canboot.md)
