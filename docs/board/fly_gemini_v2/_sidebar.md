@@ -10,7 +10,7 @@
   * [7. 固件编译烧录](/board/fly_gemini_v2/flash.md)
   * [8. 读取主板ID](/board/fly_gemini_v2/readid.md)
   * [9. Gemini主板接线](/board/fly_gemini_v2/line.md)
-  * [10. 示例配置](/board/fly_gemini_v2/cfg.md)
+  * [10.printer参考配置](/board/fly_gemini_v2/cfg.md)
   * [11. Pin脚分布](/board/fly_gemini_v2/pins.md)
   * **进阶**
   * [12. 拨码开关的使用](/board/fly_gemini_v2/dip.md)

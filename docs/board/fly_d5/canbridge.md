@@ -12,6 +12,8 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 <img src="../../images/boards/fly_d5/canbridge.png" alt="canbridge" style="zoom:80%;" />
 
+<img src="../../images/boards/fly_d5/120Ω.png" alt="canbridge" style="zoom:80%;" />
+
 ## 2. 主板固件参数配置
 
 Klipper固件配置界面如下图。编译固件后，按照 [D5固件编译和烧录](/board/fly_d5/flash "点击即可跳转") 给出的方法，将固件刷入主板中。

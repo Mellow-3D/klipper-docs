@@ -5,7 +5,7 @@
   * [2. 固件编译和烧录](/board/fly_super5/flash.md)
   * [3. 读取主板ID](/board/fly_super5/usbid.md)
   * [4. Super5 Pro接线](/board/fly_super5/wiring.md)
-  * [5. 示例配置](/board/fly_super5/cfg.md)
+  * [5. printer参考配置](/board/fly_super5/cfg.md)
   * [6. Example configuration](/board/fly_super5/cfg.md)
   * [7. Pin脚分布](/board/fly_super5/pins.md)
   * **调试**

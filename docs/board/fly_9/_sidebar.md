@@ -5,7 +5,7 @@
   * [2. 固件编译和烧录](/board/fly_9/firmware.md)
   * [3. 读取主板ID](/board/fly_9/FLY_9id.md)
   * [4. fly_9轴 接线](/board/fly_9/wiring.md)
-  * [5. 示例配置](/board/fly_9/cfg.md)
+  * [5. printer参考配置](/board/fly_9/cfg.md)
   * [6. Pin脚分布](/board/fly_9/pins.md)
   * **进阶**
   * [7. 原理图](/board/fly_9/schematic.md)

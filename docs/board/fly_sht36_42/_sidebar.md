@@ -6,7 +6,7 @@
   * [4. 固件编译和烧录](/board/fly_sht36_42/flash.md)
   * [5. uuid读取](/board/fly_sht36_42/uuid.md)
   * [6. 引脚分布](/board/fly_sht36_42/pins.md)
-  * [7. 示例配置](/board/fly_sht36_42/cfg.md)
+  * [7. printer参考配置](/board/fly_sht36_42/cfg.md)
   * [8. 桥接CAN](/board/fly_sht36_42/canbridge.md)
   * [9. 加速度计](/board/fly_sht36_42/adxl345.md)
   * [10. CanBoot](/board/fly_sht36_42/shtcanboot.md)

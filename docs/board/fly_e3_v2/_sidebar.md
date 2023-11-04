@@ -5,7 +5,7 @@
   * [2. 固件编译和烧录](/board/fly_e3_v2/firmware.md)
   * [3. 读取主板ID](/board/fly_e3_v2/readid.md)
   * [4. E3 v2 主板接线](/board/fly_e3_v2/wiring.md)
-  * [5. 示例配置](/board/fly_e3_v2/cfg.md)
+  * [5. printer参考配置](/board/fly_e3_v2/cfg.md)
   * [6. Pin脚分布](/board/fly_e3_v2/pins.md)
   * **进阶**
   * [7. E3 v2 桥接CAN](/board/fly_e3_v2/canbridge.md)
