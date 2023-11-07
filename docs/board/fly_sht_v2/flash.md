@@ -79,11 +79,13 @@ git clone https://github.com/Arksine/CanBoot
 python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
-请注意，搜索到id后是显示``Application: Canboot``前面id才是工具板id
+请注意，搜索到id后是显示``Application: Canboot``前面才是工具板id
 
-下图中高亮部分``53707ab04e74``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+<img src="../../images/boards/fly_sht_v2/uuid.png" alt="uuid" style="zoom:80%;" />
 
-![canid](../../images/adv/canid.png)
+下图中高亮部分``365f54003b9d``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+
+
 
 > [!TIP]
 > 如果找不到CAN ID，请检查：
