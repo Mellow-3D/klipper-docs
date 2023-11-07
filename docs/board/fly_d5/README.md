@@ -33,4 +33,4 @@ Mellow Fly-D5是广州镁伦电子科技有限公司Fly3D主板研发团队推�
 
 * 支持机器结构：Cartesian、Delta、Kossel、Ultimaker、CoreXY
 
-<img src="../../images/boards/fly_cdy_v3/size.png" alt="size" style="zoom:80%;" />
+<img src="../../images/boards/fly_d5/size.png" alt="size" style="zoom:80%;" />

@@ -3,39 +3,74 @@
 > [!TIP]
 > 此教程以Voron 0.1为例介绍接线方法，请结合自己的实际使用情况接线
 
-## 5.1 接口图
+## 1.  接口图
 
 ![interface](../../images/boards/fly_d5/interface.png)
 
-## 5.2 电源接线
+## 2. 电源接线
 
 ![power](../../images/boards/fly_d5/power.png)
 
-## 5.3  步进电机接线
+## 3. 驱动口选择
 
-### 5.3.1 主板驱动跳线
+* DP5的驱动不需要任何跳线配置！
+* 请注意驱动有防呆接口，安装时候请注意方向
+* DP5有五个驱动口，可以按自己喜欢的方式选择接线
+* 请注意DP5靠近CAN接口的驱动位是没有无限位功能
+* 请注意CS与UART是同一个引脚
 
-**STEP/DIR模式。**在这个模式下，通过使用跳线帽来设置细分，通过调节电位器来调整电流。最常见的是A4988驱动，使用这类驱动需要查询厂家提供的细分配置表，然后通过跳线帽来设置细分。
+<img src="../../images/boards/fly_dp5/motor.png" alt="motor" style="zoom:80%;" />
 
-**UART模式。**最常见的使用这种模式的驱动有：TMC2208、TMC2209、TMC2226等。这类驱动芯片可以与主控进行UART异步串行通信，可以通过修改配置文件来设置驱动的细分、运行电流、静音模式等。
+Driv0驱动位
 
-**SPI模式。**最常见的使用这种模式的驱动有：TMC5160、TMC2230等。这类驱动芯片通过spi与主控同步串行通信，同样的也可以通过修改配置文件来设置驱动的细分、运行电流、静音模式等。
+```
+step_pin: PC15
+dir_pin: PC14        # 电机运行引脚设置，加感叹号会让运行方向反转
+enable_pin: !PC2
+uart_pin: PC13
+diag_pin: ^PB4
+```
 
-<img src="../../images/boards/fly_c8/dirve_dip.png" alt="dirve_dip" style="zoom:70%;" />
+Driv1驱动位
 
-### 5.3.2 驱动的安装
+```
+step_pin: PA1
+dir_pin: PA0        # 电机运行引脚设置，加感叹号会让运行方向反转
+enable_pin: !PA2
+uart_pin: PC3
+diag_pin: ^PB3
+```
+Driv2驱动位
 
-驱动在安装前需要进行相应的检查，以免对驱动或主板造成损坏。
+```
+step_pin: PA5
+dir_pin: !PA4        # 电机运行引脚设置，加感叹号会让运行方向反转
+enable_pin: !PA6
+uart_pin: PA3
+diag_pin: ^PD2
+```
+Driv3驱动位
 
-**FLY驱动：**如果不使用无限位归零功能，请将拨码开关拨到1的位置；相反如果要使用无限位归零功能，请将拨码开关拨到ON的位置。
+```
+step_pin:PC5
+dir_pin:PC4        # 电机运行引脚设置，加感叹号会让运行方向反转
+enable_pin: !PB0
+uart_pin: PA7
+diag_pin: ^PB5
+```
+Driv4驱动位
 
-![fly2209](../../images/boards/fly_super8/fly2209.png)
+```
+step_pin: PB10
+#dir_pin: PB2        # 电机运行引脚设置，加感叹号会让运行方向反转
+#enable_pin: !PB11
+uart_pin: PB1
 
-**注意！！！ 安装驱动模块时，一定要保证插入的方向正确，即EN引脚在左上角，否则会损坏驱动甚至主板！！！注意给驱动贴好散热片！！！**
+```
 
-<img src="../../images/boards/fly_c8/tmc_install.png" alt="tmc_install" style="zoom:80%;" />
 
-### 5.3.3 步进电机接线
+
+### 步进电机接线
 
 在3D打印机中，最常用的是两相四线步进电机，其原理如图所示。鉴别步进电机线序有两种方法：
 
@@ -45,7 +80,9 @@
 
 ![motorSCH](../../images/boards/fly_super8/motorSCH.png)
 
-<img src="../../images/boards/fly_d5/motor.png" alt="motor" style="zoom:80%;" />
+<img src="../../images/boards/fly_dp5/motor.png" alt="motor" style="zoom:80%;" />
+
+
 
 ## 5.4  加热棒接线
 
@@ -65,7 +102,7 @@
 
 ## 5.6  热敏电阻接线
 
-Super8提供了六路ADC接口，即可以接入六路热敏。热敏的接线方法如下图。热敏电阻的类型请咨询购买商家。
+热敏的接线方法如下图。热敏电阻的类型请咨询购买商家。
 
 如果为fly购买的（如下图所示），请将sensor_type 配置为：**ATC Semitec 104GT-2**。
 
