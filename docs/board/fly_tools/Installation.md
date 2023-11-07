@@ -22,22 +22,36 @@
    git clone https://github.com/Arksine/katapult
    ```
 
-3. 安装Fly-Tools服务
+3. - 安装Fly-Tools服务
 
-   - 安装过程依赖Github服务，如果安装过程中长时间无响应，请按`Ctrl + C`退出安装脚本并重试
+     * 安装过程依赖于Git服务商。如果遇到下载进度卡住不动，请按 `CTRL+C` 退出重试
 
-   ```
-   curl -kfsSL https://raw.githubusercontent.com/kluoyun/FLY-Tools/main/scripts/install.sh | sudo bash
-   ```
+     * Github每小时最大请求次数60次，Gitee未知
+   
+     - 通过Gitee获取安装脚本
 
+       ```
+       curl -kfsSL https://gitee.com/zxkxz/FLY-Tools/raw/main/scripts/install.sh | sudo bash
+       ```
+
+       
+
+     - 通过Github获取安装脚本
+
+       ```
+       curl -kfsSL https://raw.githubusercontent.com/kluoyun/FLY-Tools/main/scripts/install.sh | sudo bash
+       ```
+   
+   
+   
    <!-- tabs:start -->
-
+   
    ### ****FLY-Gemini**,**FLY-π**,**FLY-C8**,**FLY-PI-v2**的安装选项**
-
+   
    ![tools](../../images/boards/fly_tools/flyh5.png)
-
+   
    ### ****FLY-lite2**的安装选项**
-
+   
    ![tools](../../images/boards/fly_tools/flyh3.png)
    
 
