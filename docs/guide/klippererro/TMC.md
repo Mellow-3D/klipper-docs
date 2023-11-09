@@ -40,7 +40,13 @@
 
 # 其他常见问题
 
-## TMC 报告错误： `... ot=1(OvertempError!)`[¶](https://www.klipper3d.org/zh/TMC_Drivers.html#tmc-ot1overtemperror)
+## TMC 报告错误：“XXXXXX” reports GSTAT: 00000001 reset=1(Reset)
+
+这表明驱动器自我复位。
+
+疑似解决方法：经过群友反馈可以降低到50归位速度，并且将限位接常闭。
+
+## TMC 报告错误： `... ot=1(OvertempError!)
 
 这表明电机驱动器因温度过高而自我禁用。典型的解决方案是降低步进电机的电流，增加步进电机驱动器的冷却，和/或增加步进电机的冷却。
 
