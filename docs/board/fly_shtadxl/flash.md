@@ -85,13 +85,13 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 出现下图则烧录成功
 
-![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
+![flash](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
 > [!TIP]
 > 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
-* SHT36 PRO板上的120Ω跳线帽是否插上
+* SHT36 加速度计不能用板上的120Ω跳线帽是否插上
 * 您的镜像内核是否支持CAN
 
 如果确认没有上述问题，则可以尝试在**通电状态**下强制进入CanBoot来解决。此方法也可以在刷错固件连不上工具板之后尝试。进入CanBoot的方法如下，请小心使用！！！以免损坏SHT工具板！！！
