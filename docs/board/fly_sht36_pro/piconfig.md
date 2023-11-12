@@ -16,7 +16,7 @@ sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持
 输入以上指令后，如果您的内核支持CAN就会返回：``您的内核支持CAN``；如果不支持就会返回：``您的内核不支持CAN``。
 
 > [!TIP]
-> FLY上位机，FLY已为您完成所有配置工作，您只需确保镜像烧录正确即可。镜像烧录请查看：[系统镜像烧录](/#/board/fly_pi/FLY_π_description1 "点击即可跳转")
+> FLY上位机，FLY已为您完成所有配置工作，您只需确保镜像烧录正确即可。镜像烧录请查看：[系统镜像烧录](/board/fly_pi/mirror/FLY_π_mirror  "点击即可跳转")
 
 ## 3.2 非FLY上位机配置
 
@@ -44,6 +44,10 @@ sudo apt update && sudo apt install nano wget -y
 
 2. 创建配置文件,复制粘贴到终端并回车
 
+> [!WARNING] 
+>
+> 如果您的CAN速率为1M，请将：`` bitrate 500000`` 中的``500000``修改为``1000000``
+
 ```bash
 sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
 allow-hotplug can0
@@ -66,6 +70,10 @@ sudo wget https://cdn.mellow.klipper.cn/shell/can-enable -O /usr/bin/can-enable 
 sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
 ```
 
+> [!WARNING] 
+>
+> 如果您的CAN速率为1M，请将：`` can0 -b 500000`` 中的``500000``修改为``1000000``
+
 ```bash
 sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 1024' /etc/rc.local
 ```
@@ -80,6 +88,10 @@ sudo reboot
 
 * 如果树莓派设备插拔过USB转CAN设备请重启设备或者执行下面的命令
 * 确保已完成步骤3
+
+> [!WARNING] 
+>
+> 如果您的CAN速率为1M，请将：`` can0 -b 500000`` 中的``500000``修改为``1000000``
 
 ```bash
 sudo can-enable -d can0 -b 500000 -t 1024

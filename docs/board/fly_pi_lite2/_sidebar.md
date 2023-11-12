@@ -1,9 +1,11 @@
 * FLY-π Lite2
-
+  * **入门必看**
   * [产品简介](/board/fly_pi_lite2/README.md)
-  * [FLY π Lite的镜像烧录](/board/fly_pi_lite2/flash.md)
+  * [镜像烧录](/board/fly_pi_lite2/flash.md)
+  * [连接WiFi](/board/fly_pi_lite2/to_wifi.md)
   * [连接到SSH](/board/fly_pi_lite2/connssh.md)
   * [FLY_Confing使用](/board/fly_pi_lite2/config.md)
+  * **进阶**
   * [屏幕使用](/board/fly_pi_lite2/screen.md)
   * [CAN配置](/board/fly_pi_lite2/can.md)
   * [相关链接](/board/fly_pi_lite2/link.md)
