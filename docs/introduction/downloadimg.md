@@ -3,6 +3,15 @@
 > [!TIP]
 > 如果是重新烧录系统，请提前备份好配置文件。
 
+
+
+> [!Warning]
+> SD卡注意事项:
+>
+> 容量必须不小于16GB 或 不大于128G TF 卡
+>
+> TF 卡的传输速度必须为 class10 级或 class10 级以上，建议使用闪迪等品牌的 TF 卡
+
 <!-- tabs:start -->
 
 #### **FLY-Gemini & FLY-π & FLY-Pi-V2 & FLY-C8**
