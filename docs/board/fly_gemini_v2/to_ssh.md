@@ -8,9 +8,9 @@
 
 ## 1. 串口连接
 
-* 使用USB Type-c线材将FLY-π与电脑连接
+* 使用USB Type-c线材将FLY-Gemini与电脑连接
 
-<img src="../../images/boards/fly_pi_v2/topc.jpg" alt="topc" style="zoom:80%;" />
+<img src="../../images/boards/fly_gemini_v3/tossh.png" alt="tossh" style="zoom:60%;" />
 
 * 如果主板与电脑连接正常，打开设备管理器，就可以看到CH340的端口了
 
@@ -85,5 +85,5 @@
 
 * 登录成功
 
-* 至此，您已经完成FLY-PI v2的配置
+* 至此，您已经完成FLY-Gemini的配置
 

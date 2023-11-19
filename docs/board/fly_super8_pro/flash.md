@@ -59,7 +59,7 @@ Super8 Pro的Klipper固件配置如下图所示：
 
 ## 2.1  编译Klipper固件
 
-1. 请先阅读 [连接到SSH](/board/fly_pi/FLY_π_ssh "点击即可跳转") 文档
+1. 请先阅读 [连接到SSH](/board/fly_pi_v2/to_ssh "点击即可跳转")文档
 2. 连接到SSH后输入```cd ~/klipper/```回车
 3. 按顺序执行下面的命令，输入命令后需要回车才会执行
 4. ```make clean```

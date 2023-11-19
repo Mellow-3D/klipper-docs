@@ -3,7 +3,7 @@
   * [产品简介](/board/fly_pi_lite2/README.md)
   * [镜像烧录](/board/fly_pi_lite2/flash.md)
   * [连接WiFi](/board/fly_pi_lite2/to_wifi.md)
-  * [连接到SSH](/board/fly_pi_lite2/connssh.md)
+  * [连接到SSH](/board/fly_pi_lite2/to_ssh.md)
   * [FLY_Confing使用](/board/fly_pi_lite2/config.md)
   * **进阶**
   * [屏幕使用](/board/fly_pi_lite2/screen.md)

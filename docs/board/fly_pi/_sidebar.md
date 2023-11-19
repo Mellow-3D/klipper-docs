@@ -6,7 +6,7 @@
 * [5. SD卡系统**迁移**至M2WE](/board/fly_pi/sd_to_emmc.md)
 * [6. FLY_Config的使用](/board/fly_pi/FLY_π_fly_config.md)
 * [7. 连接WiFi](/board/fly_pi/FLY_π_wifi.md)
-* [8. 连接到SSH](/board/fly_pi/FLY_π_ssh.md)
+* [8. 连接到SSH](/board/fly_pi/to_ssh.md)
 * [9. FLY-TFT的使用](/board/fly_pi/FLY_π_tft.md)
 * [10. HDMI屏幕的使用](/board/fly_pi/FLY_π_hdmi.md)
 * [11. CPU散热风扇](/board/fly_pi/FLY_π_corefan)
