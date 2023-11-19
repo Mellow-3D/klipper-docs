@@ -6,7 +6,7 @@
 > [!TIP]
 > 建议使用Mellow的ADXL345加速度计模块
 
-![usbadxl](../images/adv/accele/usbadxl.png)
+<img src="../images/adv/accele/usbadxl.png" alt="usbadxl" style="zoom:55%;" />
 
 
 
@@ -14,13 +14,13 @@
 * 接线线序简单，直接type-c接到上位机
 * 固定方便，免去改结构件的麻烦
 
-## 准备
+## 1. 准备
 
 1. ADXL345加速度计模块
 2. 打印机
 3. 连接线
 
-## 固件编译
+## 2. 固件编译
 
 > [!TIP]
 > 出厂自带固件无需在烧录
@@ -29,7 +29,7 @@
 
 ![config](../images/adv/accele/config-usb.png)
 
-## 固件烧录
+## 3. 固件烧录
 
 1. 查看是否连接到USB加速度计的BOOT烧录模式
 
@@ -62,7 +62,7 @@
 
 
 
-## 测试
+## 4. 配置和测试
 
 > [!TIP]
 > 装加速度计依赖包安装方法如下
@@ -134,7 +134,7 @@ accel_per_hz: 50  # 默认值为75
 probe_points: ...
 ```
 
-## 自动校准
+## 5. 自动校准
 
 * klipper支持自动校准
 * 记得全部归位
@@ -147,7 +147,7 @@ probe_points: ...
 
 * 校准过程可能会比较长，请耐心等待
 
-# USBadxl 3d模型
+# 6. USB adxl 3d模型
 
 >[!WARNING]
 >

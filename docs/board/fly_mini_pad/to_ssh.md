@@ -10,7 +10,7 @@
 
 * 使用USB Type-c线材将FLY-π与电脑连接
 
-<img src="../../images/boards/fly_pi_v2/topc.jpg" alt="topc" style="zoom:80%;" />
+<img src="../../images/boards/fly_mini_pad/ch340.png" alt="ch340" style="zoom:70%;" />
 
 * 如果主板与电脑连接正常，打开设备管理器，就可以看到CH340的端口了
 
@@ -46,7 +46,7 @@
 
 * 查看IP，如果配置了FLY-Config中的WIFI则开机后就会自动连接
 
-  > 使用ssh软件和Fly_Config连接WiFi可以参考：[连接WiFi](/board/fly_pi_v2/to_wifi "点击即可跳转")
+  > 使用ssh软件连接WiFi可以参考：[通过SSH软件连接WiFi](/board/fly_pi_v2/to_wifi "点击即可跳转")
 
 * 在终端中输入命令```ip a|grep inet```回车，在返回内容中找到与你路由器同段的IP即可访问
 
@@ -85,5 +85,5 @@
 
 * 登录成功
 
-* 至此，您已经完成FLY-PI v2的配置
+* 至此，您已经完成FLY-π的配置
 

@@ -5,7 +5,7 @@
 
 # 1. 固件编译
 
-编译固件前请确保 [连接到SSH](/board/fly_gemini/host/FLY_π_ssh.md "点击即可跳转")
+编译固件前请确保 [连接到SSH](/board/fly_pi_v2/to_ssh "点击即可跳转")
 
 **固件配置方法**
 

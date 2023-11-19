@@ -10,7 +10,7 @@
 
 * 使用USB Type-c线材将FLY-π与电脑连接
 
-<img src="../../images/boards/fly_pi_v2/topc.jpg" alt="topc" style="zoom:80%;" />
+![ch340](../../images/boards/fly_pi_lite2/ch340.png)
 
 * 如果主板与电脑连接正常，打开设备管理器，就可以看到CH340的端口了
 
@@ -85,5 +85,5 @@
 
 * 登录成功
 
-* 至此，您已经完成FLY-PI v2的配置
+* 至此，您已经完成FLY-Pi lite2的配置
 
