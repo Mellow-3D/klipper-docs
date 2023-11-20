@@ -111,10 +111,10 @@ serial: /dev/serial/by-id/usb-Klipper_rp2040_XXXXXXXXXXXXXXXXXXXXX
 
 ##ADXL345加速度计
 [lis2dw]
-cs_pin: gpio9
-spi_software_sclk_pin: gpio10
-spi_software_mosi_pin: gpio11
-spi_software_miso_pin: gpio12
+cs_pin: LIS:gpio9
+spi_software_sclk_pin: LIS:gpio10
+spi_software_mosi_pin: LIS:gpio11
+spi_software_miso_pin: LIS:gpio12
 
 [resonance_tester]
 accel_chip: lis2dw
