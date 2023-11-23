@@ -10,7 +10,7 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 以SHT36V2为例，接线如下图所示
 
-<img src="../../images/boards/fly_d5/canbridge.png" alt="canbridge" style="zoom:80%;" />
+<img src="../../images/boards/fly_dp5/canbridge.png" alt="canbridge" style="zoom:85%;" />
 
 ## 2. 主板固件参数配置
 
