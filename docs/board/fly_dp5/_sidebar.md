@@ -8,6 +8,7 @@
     * [5. printer参考配置](/board/fly_dp5/cfg.md)
     * [6. Pin脚分布](/board/fly_dp5/pins.md)
     * **进阶**
+    * [8. 使用加速度计](/board/fly_dp5/adxl345.md)
     * [7. 桥接CAN](/board/fly_dp5/canbridge.md)
     * [8. 原理图](/board/fly_dp5/schematic.md)
     * [9. 三维模型](/board/fly_dp5/3dmodel.md) 

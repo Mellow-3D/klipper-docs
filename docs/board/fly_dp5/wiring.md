@@ -3,9 +3,17 @@
 > [!TIP]
 > 此教程以Voron 0.1为例介绍接线方法，请结合自己的实际使用情况接线
 
+> [!Warning]
+>
+> 请注意驱动LED是非常亮的使用时候请不要直视驱动LED
+>
+> 请注意驱动LED是非常亮的使用时候请不要直视驱动LED
+>
+> 请注意驱动LED是非常亮的使用时候请不要直视驱动LED
+
 ## 1.  接口图
 
-![interface](../../images/boards/fly_d5/interface.png)
+![interface](../../images/boards/fly_dP5/interface.png)
 
 ## 2. 电源接线
 

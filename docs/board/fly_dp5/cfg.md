@@ -2,8 +2,8 @@
 ####################################################################################
 #                         3D MELLOW /（需要自行添加）                                #
 ####################################################################################
-## Fly-D5资料网址：
-## Fly-D5原理图网址：
+## Fly-DP5资料网址：https://mellow.klipper.cn/#/board/fly_dp5/README
+## Fly-DP5原理图网址：https://mellow.klipper.cn/#/board/fly_dp5/schematic
 ## FLY 官方淘宝店：https://shop126791347.taobao.com/shop/view_shop.htm?spm=a230r.1.14.4.1a4840a8hyvpPJ&user_number_id=2464680006
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
@@ -81,326 +81,337 @@ bicubic_tension: 0.2         # 算法插值不要动
 #                          12864      
 
 #####################################################################
-#                  X 轴步进电机      (B电机)                       #
+#                            机型和加速度                            #
 #####################################################################
-## DRIVER0电机位置
-[stepper_x]
-step_pin: PC15                       # X轴电机脉冲引脚设置
-dir_pin: PC14                        # X轴电机运行引脚设置,方向按实际判断，加感叹号会让运行方向反转
-enable_pin: !PC2                   # X轴电机使能引脚设置,使能引脚需要加感叹号，否者电机不工作
-rotation_distance: 40               # 主动带轮周长mm（2GT-20T带轮40，2GT-16T带轮32）
-microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
-full_steps_per_rotation: 200        # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
-endstop_pin: PB4                    # 限位开关PIN脚,建议常闭接常闭
-#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 限位开关接口
-###接常闭后是触发状态，加感叹号可以反转这个状态，万一断线时候可以避免撞机
-position_min: 0                     # 软限位最小行程
-position_endstop: 300               # 软限位最大行程 (250mm-300mm-350mm)
-position_max: 300                   # 机械限位最大行程 (250mm-300mm-350mm)
-homing_speed: 200                   # 复位速度-最大 100
-homing_retract_dist: 5              # 第一次触发复位开关之后的后退距离
-homing_positive_dir: true           # 复位方向（一般不需要改动）
-#--------------------------------------------------------------------
-##  请确保驱动型号配置正确 (2208 or 2209)
-[tmc2209 stepper_x]                 # x 驱动配置 -TMC2209
-uart_pin: PC13                      # 通讯端口Pin脚定义
-interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-run_current: 0.8                    # 电机运行电流值（单位：mA）
-sense_resistor: 0.110               # 驱动采样电阻不要改
-stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
-#--------------------------------------------------------------------
-# [tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
-# cs_pin: PC13                        # SPI 片选Pin脚定义
-# spi_bus: spi2                       # SPI 通讯总线定义
-# run_current: 1.0                    # 电机运行电流值
-# interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
-# stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
+[printer]
+kinematics: corexy
+max_velocity: 200
+max_accel: 2000
+max_z_velocity: 15
+max_z_accel: 300
+square_corner_velocity: 6.0
 
 #####################################################################
-#                  Y 轴步进电机      (A电机)                       #
+#   X 轴步进电机     (B 电机)
 #####################################################################
-## DRIVER1电机位置
-[stepper_y]
-step_pin: PA1
-dir_pin: PA0
-enable_pin: !PA2
+## [stepper x] = B电机
+[stepper_x]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
 rotation_distance: 40
-microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
-full_steps_per_rotation: 200        # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
-endstop_pin: !PB3                    # 限位开关PIN脚,建议常闭然后添加！反转状态
-#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 限位开关接口
-###接常闭后是触发状态，加感叹号可以反转这个状态，万一断线时候可以避免撞机
-position_min: 0
-position_endstop: 300
-position_max: 300
-homing_speed: 200
-homing_retract_dist: 5
+microsteps: 32
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
+endstop_pin:
+position_endstop: 120
+position_max: 120
+homing_speed: 40                                  # 对于无传感器归位，建议不要超过40mm/s 
+homing_retract_dist: 0
 homing_positive_dir: true
 #--------------------------------------------------------------------
-##  请确保驱动型号配置正确 (2209 or 5160)
-[tmc2209 stepper_y]
-uart_pin: PC3
-interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-run_current: 0.8                    # 电机运行电流值（单位：mA）
-sense_resistor: 0.110               # 驱动采样电阻不要改
-stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+[tmc2209 stepper_x]
+uart_pin: 
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+sense_resistor: 0.110
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+#diag_pin: ^                         # 无限位引脚，这与主板其中一个限位相连
+#driver_SGTHRS: 255  			     # 这个设置为255，是无传感器归位的最大灵敏度，你稍后需要调整这个值。
+## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
 #--------------------------------------------------------------------
-#[tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
-#cs_pin: PC3
-#spi_bus: spi2                       # SPI 通讯总线定义
-#run_current: 1.0                    # 电机运行电流值
-#interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
-#sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
-#stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+[tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
+cs_pin: PB0
+spi_bus:spi3 
+run_current: 1.0            
+interpolate: False
+sense_resistor: 0.033               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+
 
 #####################################################################
-#                     Z轴步进电机 （Z Stepper Settings）             #
+#   Y 轴步进电机     (A 电机)
 #####################################################################
-## DRIVER2电机位置
-[stepper_z]
-step_pin: PA5
-dir_pin: !PA4
-enable_pin: !PA6
-rotation_distance: 40         # 主动轮周长mm （2GT-20T为 40mm  16T为 32mm）
-gear_ratio: 80:16             # 减速比
+## [stepper Y] = A电机
+[stepper_y]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+rotation_distance: 40
 microsteps: 32
-endstop_pin: PD2             # 限位开关接口
-position_max: 290             # 软限位最大行程 (240mm-290mm-340mm)
-position_endstop: -0.5        
-position_min: -5              # 软限位最小行程（配置喷嘴清洁需要-5左右）
-homing_speed: 10              # 复位速度-最大 20
-second_homing_speed: 3        # 二次复位速度-最大 10
-homing_retract_dist: 3        # 后撤距离
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
+endstop_pin:
+position_endstop: 120
+position_max: 120
+homing_speed: 40                                  # 对于无传感器归位，建议不要超过40mm/s 
+homing_retract_dist: 0
+homing_positive_dir: true
+#--------------------------------------------------------------------
+[tmc2209 stepper_y]
+uart_pin: 
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+sense_resistor: 0.110
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+#diag_pin: ^                         # 无限位引脚，这与主板其中一个限位相连
+#driver_SGTHRS: 255  			     # 这个设置为255，是无传感器归位的最大灵敏度，你稍后需要调整这个值。
+## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+#--------------------------------------------------------------------
+# [tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
+# cs_pin: 
+# spi_bus:
+# run_current: 0.0            
+# # 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+# interpolate: False
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+# #diag1_pin: ^!                      # 无限位引脚，这与主板其中一个限位相连
+# #driver_SGT: -64                    # -64是最敏感的值，63是最不敏感的值
+# ## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+
+#####################################################################
+#   Z 轴步进电机
+#####################################################################
+[stepper_z]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
+rotation_distance: 8                              # 丝杆导程为 8
+microsteps: 32
+endstop_pin:
+position_endstop: 120
+position_max: 120
+position_min: -1.5
+homing_speed: 20
+second_homing_speed: 3.0
+homing_retract_dist: 3.0
 #--------------------------------------------------------------------
 [tmc2209 stepper_z]
-uart_pin: PA3
-interpolate: false
-run_current: 0.8
+uart_pin: 
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
 sense_resistor: 0.110
-stealthchop_threshold: 0    # 静音阀值（如果不需要静音，请将数值改为0）
-##--------------------------------------------------------------------
-## DRIVER4电机位置
-[stepper_z1]
-step_pin: PC5
-dir_pin:  PC4
-enable_pin: !PB0
-rotation_distance: 40
-gear_ratio: 80:16
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+#diag_pin: ^                         # 无限位引脚，这与主板其中一个限位相连
+#driver_SGTHRS: 255  			     # 这个设置为255，是无传感器归位的最大灵敏度，你稍后需要调整这个值。
+## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+# --------------------------------------------------------------------
+# [tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
+# cs_pin: 
+# spi_bus:
+# run_current: 0.0            
+# # 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+# interpolate: False
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+# #diag1_pin: ^!                      # 无限位引脚，这与主板其中一个限位相连
+# #driver_SGT: -64                    # -64是最敏感的值，63是最不敏感的值
+# ## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+
+#####################################################################
+#   挤出机
+#####################################################################
+[extruder]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）                                  
+rotation_distance: 22.44
+## 执行挤出机校准时，更新以下值
+## 比如你要求100毫米的进料，但实际上是102：
+## rotation_distance = <旧rotation_distance> * <实际挤出长度> / <请求的挤出长度>
+## 校准步进值: 22.44=旧值22*实际值102/目标值100
+gear_ratio: 50:10                                 # 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
 microsteps: 32
-[tmc2209 stepper_z1]
-uart_pin: PA7
-interpolate: false
-run_current: 1.0
-sense_resistor: 0.110
-stealthchop_threshold: 0    
-
-
-#####################################################################
-#                             挤出机配置
-#####################################################################
-## DRIVER7电机位置
-[extruder]                          # 挤出机
-step_pin:PB10
-dir_pin:PB2
-enable_pin: !PB11
-microsteps: 16
-full_steps_per_rotation: 200        # 单圈脉冲数 （200 为 1.8 度, 400 为 0.9 度）
-rotation_distance: 22.52245         # 主动带轮周长mm
-# 校准步进值: 23.1325301 = 旧值22.6789511*实际值102/目标值100
-gear_ratio: 50:10                   # 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
-nozzle_diameter: 0.400              # 喷嘴直径
-filament_diameter: 1.750            # 耗材直径
-heater_pin: PC6                     # 挤出头加热棒控制Pin脚设置(e0)
-sensor_type: Generic 3950           # 传感器型号
-sensor_pin: PC1                     # 挤出头传感器Pin脚（T_E0）
-max_power: 1.0                      # 加热棒PWM最大输出功率
-min_temp: -235                      # 挤出机最小温度
-max_temp: 500                       # 挤出机最大温度
-min_extrude_temp: 150               # 加热棒最低挤出温度（达到此温度挤出机才能有挤出动作）
-pressure_advance: 0.04              # 挤出机压力提前参数
-pressure_advance_smooth_time:0.040  # 平稳推进时间-默认值为0.040
-#喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
+nozzle_diameter: 0.400
+filament_diameter: 1.750
+heater_pin:                                       # 加热棒引脚
+#sensor_type:
+## 检查你有哪些热敏电阻。参考 https://www.klipper3d.org/zh/Config_Reference.html#common-thermistors 以获取常见热敏电阻类型。
+## 传感器型号一般是(generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_pin:                                       # 热敏引脚
+min_temp: -200                                    # 最小温度
+max_temp: 300                                     # 最大温度
+min_extrude_temp: 170                             # 最小挤出温度
+max_extrude_only_distance: 150
+max_extrude_cross_section: 0.8
+pressure_advance: 0.0                             # 压力提前，需要手动调整
+pressure_advance_smooth_time: 0.040
 control = pid
 pid_kp = 26.213
 pid_ki = 1.304
 pid_kd = 131.721
-
+# 在初始检查后进行PID校准
+# 喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
+##--------------------------------------------------------------------
 [tmc2209 extruder]
-uart_pin:PB1
+uart_pin: PB6
 interpolate: False
-run_current: 0.6
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
 sense_resistor: 0.110
-stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+##--------------------------------------------------------------------
+# [tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
+# cs_pin: 
+# spi_bus:
+# run_current: 0.0            
+# # 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+# interpolate: False
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
 
 #####################################################################
-#                            热床配置
+#   热床配置
 #####################################################################
 [heater_bed]
-heater_pin: PC7              # 热床接口
-sensor_type: Generic 3950    # 热床传感器类型
-sensor_pin: PC0              # 热床传感器接口
-max_power: 1.0               # 热床功率
-min_temp: -235               # 热床最小温度
-max_temp: 500                # 热床最大温度
-# 热床温度PID校准命令：  "PID_CALIBRATE HEATER=heater_bed TARGET=100"
+heater_pin:                            # 加热棒引脚
+#sensor_type:
+## 检查你有哪些热敏电阻。参考 https://www.klipper3d.org/zh/Config_Reference.html#common-thermistors 以获取常见热敏电阻类型。
+## 传感器型号一般是(generic 3950, ATC Semitec 104GT-2， PT1000)
+smooth_time: 3.0
+#max_power: 1.0                                                     # 热床输出功率
+min_temp: 0
+max_temp: 120
 control: pid
-pid_kp: 58.437
-pid_ki: 2.347
-pid_kd: 363.769
-#####################################################################
-#                             风扇配置
-#####################################################################
-[fan]                        # 模型冷却风扇
-pin:PC9
-kick_start_time: 1.0         # 启动时间（勿动）
-off_below: 0.10              # 勿动
-max_power: 1.0
-#--------------------------------------------------------------------
-[heater_fan 喉管散热]         # 喉管冷却风扇
-pin:PC8
-max_power: 1.0
-kick_start_time: 0.5         # 启动时间（勿动）
-heater: extruder             # 关联的设备：挤出机
-heater_temp: 50              # 挤出机达到多少度启动风扇
-fan_speed: 1.0
+pid_kp: 68.453
+pid_ki: 2.749
+pid_kd: 426.122
+# 在初始检查后进行PID校准
+# 热床温度PID校准命令：  "PID_CALIBRATE HEATER=heater_bed TARGET=60"
 
 #####################################################################
-#                           闲置关闭热床                             #
+#   风扇配置
 #####################################################################
+[heater_fan hotend_fan]      # 喉管冷却风扇
+pin:
+max_power: 1.0               # 最大转速
+kick_start_time: 0.5         # 根据您使用的风扇，如果您的风扇无法启动，则可能需要增加此值
+heater: extruder
+heater_temp: 50
+##--------------------------------------------------------------------
+[fan]                        # 模型冷却风扇 
+pin:
+max_power: 1.0
+kick_start_time: 0.5         # 根据您使用的风扇，如果您的风扇无法启动，则可能需要增加此值
+off_below: 0.13
+cycle_time: 0.010
+
+#####################################################################
+#   断料传感器
+#####################################################################
+
+#[filament_switch_sensor Filament_Runout_Sensor]
+#pause_on_runout: True
+#runout_gcode: PAUSE
+#switch_pin: 
+
+#####################################################################
+#   归位和龙门调整程序
+#####################################################################
+
 [idle_timeout]
-timeout: 1800                # 空闲时间超过30分钟则关闭热床
+timeout: 1800
 
-#####################################################################
-#                           调平传感器                               #
-#####################################################################
-#默认PL08N感应探头不低于喷嘴高度，仅用于调平,如果你的PL08N是NO（常开），请将更改pin添加到！
-[probe]
-pin: ^PB5                   # 限位开关PIN脚,建议常闭然后添加！反转状态,位置在io-2
-x_offset: 0                  # X轴-传感器相对喷嘴偏移量
-y_offset: 25.0               # Y轴-传感器相对喷嘴偏移量
-z_offset: 0                  # Z轴-传感器相对喷嘴偏移量
-speed: 10.0                  # 调平速度
-samples: 3                   # 采样次数
-samples_result: median       # 取值方式（默认median-中位数）
-sample_retract_dist: 4.0     # 调平回缩距离
-samples_tolerance: 0.007     # 采样公差（注意过小的值可能造成采样次数增加）
-samples_tolerance_retries: 3 # 超公差重试次数
-#--------------------------------------------------------------------
-# [bltouch]
-# sensor_pin: ^PB5             # 信号接口
-# control_pin: PA8             # 舵机控制
-# x_offset: 0                  # X轴-传感器相对喷嘴偏移量
-# y_offset: 25.0               # Y轴-传感器相对喷嘴偏移量
-# z_offset: 0                  # Z轴-传感器相对喷嘴偏移量
-
-#####################################################################
-#                               归位                                #
-#####################################################################
-[safe_z_home]                # Z轴限位坐标
-home_xy_position:206,300     # Z轴限位位置定义（重要！！！自行进行调整）
-speed:100                    # 归位速度
-z_hop:10                     # 归位之前抬升高度
-#--------------------------------------------------------------------
-#[homing_override]
-#axes: z
-#set_position_z: 0
-#gcode:
-#   G90
-#   G0 Z15 F600
-#   G28 X Y
-#    ## Z 限位开关的 XY 位置
-#    ##通过后将X0和Y0更新为你的值（如X157、Y305）
-#    ## Z 轴限位位置定义
-#   G0 X185 Y250 F3600    #250mm   
-#   G28 Z
-#   G0 Z10 F1800
-
-
-#####################################################################
-#                            LED灯配置（需要时启用）
-#####################################################################
-[neopixel sb_leds]
-pin: PD15                   # 信号接口
-chain_count: 3              # 灯珠数量
-color_order: GRBW           # 灯珠类型
-initial_RED: 0.4            # 天
-initial_GREEN: 0.8          # 依
-initial_BLUE: 1             # 蓝
-initial_WHITE: 0.0          
-#--------------------------------------------------------------------
-[board_pins]
-aliases:
-    EXP1_1=NC,   EXP1_3=PC11,  EXP1_5=PC10, EXP1_7=NC, EXP1_9=<GND>,
-    EXP1_2=PA15, EXP1_4=PA14,  EXP1_6=PA13, EXP1_8=NC, EXP1_10=<5V>,
-    # EXP2 header
-    EXP2_1=PB14, EXP2_3=PC12, EXP2_5=PB6,   EXP2_7=NC,    EXP2_9=<GND>,
-    EXP2_2=PB13, EXP2_4=PB12, EXP2_6=PB15,  EXP2_8=<RST>, EXP2_10=<NC>,
-#--------------------------------------------------------------------    
-[display]
-lcd_type: uc1701                # 显示屏驱动类型
-cs_pin: EXP1_3                  # 显示屏片选cs引脚设置
-a0_pin: EXP1_4                  # 显示屏数据a0引脚设置
-rst_pin: EXP1_5                 # 显示屏复位rst脚设置
-contrast: 63                    # 对比度
-encoder_pins: ^EXP2_5, ^!EXP2_3 # 旋转编码器（旋钮开关）引脚设置
-click_pin: ^!EXP1_2             # 旋转编码器（旋钮开关）确认按键的引脚设置
-# --------------------------------------------------------------------
-####适用于FLY Mini12864
-[neopixel fly_mini12864]
-pin: EXP1_6                     # 显示屏背光灯控制引脚设置
-chain_count: 3
-initial_RED: 0.5                # 红色LED灯亮度控制（范围：0-1）
-initial_GREEN: 0.5              # 绿色LED灯亮度控制（范围：0-1）
-initial_BLUE: 0.5               # 蓝色LED灯亮度控制（范围：0-1）
-color_order: RGB                # 颜色顺序
-
-#####################################################################
-#                           自定义gcode宏                            #
-#####################################################################
-[gcode_arcs]                       # 允许圆弧插补
-resolution: 1.0                    # 启用圆弧插补G2，G3
-#   一条弧线将被分割成若干段。每段的长度将
-#   等于上面设置的分辨率（mm）。更低的值会产生一个
-#   更细腻的弧线，但也会需要机器进行更多运算。小于
-#   配置值的曲线会被视为直线。
-#   默认为1毫米。
-
-#--------------------------------------------------------------------
-[gcode_macro PRINT_START]          # 将 PRINT_START 设置为开始打印时的宏，自定义打印前的动作
+[homing_override]
+axes: xyz
+set_position_z: 0
 gcode:
-    G92 E0                         # 重置挤出
-    G28                            # 归位所有轴
-    G1 Z20 F3000                   # 抬高龙门
-    #SET_LED LED=LEDlight RED=0.2 GREEN=0.2 BLUE=0.5   # LED灯控制
-    #M117 Printing                 # 向屏幕发送文本
-    
-#--------------------------------------------------------------------
-[gcode_macro PRINT_HUAXIAN]        # 将 PRINT_HUAXIAN 设置为PRINT_START后的宏，自定义打印前的动作
-gcode:
-    G1 Z5 F3000 
-    G92 E0;              # 重置挤出
-    G90                  # 设置绝对坐标体系
-    G0 X5 Y1 F6000       # 移动至x5 y1位置，速度100mm/s（F6000，意思为6000mm每分钟）
-    G0 Z0.4              # 移动z轴高度至0.4
-    G91                  # 设置坐标体系为相对坐标
-    G1 X100 E20 F1200;   # 移动x轴100mm，并挤出，更改F可更改挤出率
-    G1 Y1                # 移动y轴1mm
-    G1 X-100 E20 F1200;  # 反方向移动x轴100mm，并挤出，更改F可更改挤出率
-    G0 z5                # 抬高z轴5mm
-    G1 E-5.0 F3600       # 缩回耗材丝
-    G92 E0;              # 重置挤出
-    G90                  # 设置绝对坐标体系 
+   G90
+   G0 Z5 F600
+  {% set home_all = 'X' not in params and 'Y' not in params and 'Z' not in params %}
 
-#--------------------------------------------------------------------
-[gcode_macro PRINT_END]            # 将 PRINT_END 设置为打印结束时的宏，自定义打印完成之后动作
+  {% if home_all or 'X' in params %}
+    _HOME_X
+  {% endif %}
+  
+  {% if home_all or 'Y' in params %}
+    _HOME_Y
+  {% endif %}
+  
+  {% if home_all or 'Z' in params %}
+    _HOME_Z
+  {% endif %}
+
+
+#[safe_z_home]                      # 仅当您使用V0.0或V0.1 Z端限位位置时需要。
+#home_xy_position: 120,120
+#speed: 50.0
+#z_hop: 5
+
+#####################################################################
+# LED
+#####################################################################
+
+[neopixel board_rgb]
+pin:
+chain_count: 1
+color_order: GRB
+initial_RED: 0.0
+initial_GREEN: 0.1
+initial_BLUE: 0.0
+
+#####################################################################
+#   V0 Display
+#####################################################################
+# [mcu display]
+# serial: **PASTE YOUR SERIAL PORT HERE AND UNCOMMENT**
+# restart_method: command
+
+# [display]
+# lcd_type: sh1106
+# i2c_mcu: display
+# i2c_bus: i2c1a
+# # Set the direction of the encoder wheel
+# #   Standard: Right (clockwise) scrolls down or increases values. Left (counter-clockwise scrolls up or decreases values.
+# encoder_pins: ^display:PA3, ^display:PA4
+# #   Reversed: Right (clockwise) scrolls up or decreases values. Left (counter-clockwise scrolls down or increases values.
+# #encoder_pins: ^display:PA4, ^display:PA3
+# click_pin: ^!display:PA1
+# kill_pin: ^!display:PA5
+# #x_offset: 2
+# #   Use X offset to shift the display towards the right. Value can be 0 to 3
+# #vcomh: 0
+# #   Set the Vcomh value on SSD1306/SH1106 displays. This value is
+# #   associated with a "smearing" effect on some OLED displays. The
+# #   value may range from 0 to 63. Default is 0.
+# #   Adjust this value if you get some vertical stripes on your display. (31 seems to be a good value)
+
+# [neopixel displayStatus]
+# pin: display:PA0
+# chain_count: 1
+# color_order: GRB
+# initial_RED: 0.2
+# initial_GREEN: 0.05
+# initial_BLUE: 0
+
+#####################################################################
+# 自定义宏
+#####################################################################
+[gcode_macro PRINT_START]
+# 将PRINT_START用于切片机启动脚本 - 请根据您的选择进行自定义。
 gcode:
+    G28                            ; home all axes
+    G90                            ; absolute positioning    
+    G1 Z20 F3000                   ; move nozzle away from bed
+   
+[gcode_macro PRINT_END]
+# 将PRINT_END用于切片机结束脚本 - 请根据您的选择进行自定义。
+gcode:
+    M400                           ; wait for buffer to clear
+    G92 E0                         ; zero the extruder
+    G1 E-4.0 F3600                 ; retract filament
+    G91                            ; relative positioning
+
     #   Get Boundaries
     {% set max_x = printer.configfile.config["stepper_x"]["position_max"]|float %}
     {% set max_y = printer.configfile.config["stepper_y"]["position_max"]|float %}
     {% set max_z = printer.configfile.config["stepper_z"]["position_max"]|float %}
-    
-    #   Check end position to determine safe directions to move
+
+    #   Check end position to determine safe direction to move
     {% if printer.toolhead.position.x < (max_x - 20) %}
         {% set x_safe = 20.0 %}
     {% else %}
@@ -418,19 +429,502 @@ gcode:
     {% else %}
         {% set z_safe = max_z - printer.toolhead.position.z %}
     {% endif %}
+
+    G0 Z{z_safe} F3600             ; move nozzle up
+    G0 X{x_safe} Y{y_safe} F20000  ; move nozzle to remove stringing
+    TURN_OFF_HEATERS
+    M107                           ; turn off fan
+    G90                            ; absolute positioning
+    G0 X60 Y{max_y-10} F3600          ; park nozzle at rear
+  
+[gcode_macro LOAD_FILAMENT]
+gcode:
+   M83                            ; set extruder to relative
+   G1 E30 F300                    ; load
+   G1 E15 F150                    ; prime nozzle with filament
+   M82                            ; set extruder to absolute
     
-    M400                              # 等待缓冲区清除
-    G92 E0                            # 将挤出机归零
-    G1 E-10.0 F3600                   # 缩回耗材丝
-    G91                               # 相对定位
-    G0 Z{z_safe} F3600               # 抬高龙门
-    G0 X{x_safe} Y{y_safe} F20000    # 移动喷嘴以移除架线
-    M104 S0                           # 关闭挤出头
-    M140 S0                           # 关闭热床
-    M106 S0                           # 关闭模型风扇
-    G90                               # 设置绝对坐标体系
-    G0 X{max_x / 2} Y{max_y} F3600   # 将喷嘴停在后部
-    BED_MESH_CLEAR                   # 卸载网床
+[gcode_macro UNLOAD_FILAMENT]
+gcode:
+   M83                            ; set extruder to relative
+   G1 E10 F300                    ; extrude a little to soften tip
+   G1 E-40 F1800                  ; retract some, but not too much or it will jam
+   M82                            ; set extruder to absolute
+
+[gcode_macro _HOME_X]
+gcode:
+    # Always use consistent run_current on A/B steppers during sensorless homing
+    {% set RUN_CURRENT_X = printer.configfile.settings['tmc2209 stepper_x'].run_current|float %}
+    {% set RUN_CURRENT_Y = printer.configfile.settings['tmc2209 stepper_y'].run_current|float %}
+    {% set HOME_CURRENT_RATIO = 0.7 %} adjust this value if you are having trouble with skipping while homing
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_X}# by default we are dropping the motor current during homing. you can 
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_Y}
+
+    # Home
+    G28 X
+    # Move away
+    G91
+    G1 X-10 F1200
+    
+    # Wait just a second… (give StallGuard registers time to clear)
+    G4 P1000
+    G90
+    # Set current during print
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={RUN_CURRENT_X}
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={RUN_CURRENT_Y}
+
+[gcode_macro _HOME_Y]
+gcode:
+    # Set current for sensorless homing
+    {% set RUN_CURRENT_X = printer.configfile.settings['tmc2209 stepper_x'].run_current|float %}
+    {% set RUN_CURRENT_Y = printer.configfile.settings['tmc2209 stepper_y'].run_current|float %}
+    {% set HOME_CURRENT_RATIO = 0.7 %} # by default we are dropping the motor current during homing. you can adjust this value if you are having trouble with skipping while homing
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_X}
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_Y}
+
+    # Home
+    G28 Y
+    # Move away
+    G91
+    G1 Y-10 F1200
+
+    # Wait just a second… (give StallGuard registers time to clear)
+    G4 P1000
+    G90
+    # Set current during print
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={RUN_CURRENT_X}
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={RUN_CURRENT_Y}
+
+
+
+[gcode_macro _HOME_Z]
+gcode:
+    G90
+    G28 Z
+    G1 Z30#####################################################################
+#                            机型和加速度                            #
+#####################################################################
+[printer]
+kinematics: corexy
+max_velocity: 200
+max_accel: 2000
+max_z_velocity: 15
+max_z_accel: 300
+square_corner_velocity: 6.0
+
+#####################################################################
+#   X 轴步进电机     (B 电机)
+#####################################################################
+## [stepper x] = B电机
+[stepper_x]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+rotation_distance: 40
+microsteps: 32
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
+endstop_pin:
+position_endstop: 120
+position_max: 120
+homing_speed: 40                                  # 对于无传感器归位，建议不要超过40mm/s 
+homing_retract_dist: 0
+homing_positive_dir: true
+#--------------------------------------------------------------------
+[tmc2209 stepper_x]
+uart_pin: 
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+sense_resistor: 0.110
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+#diag_pin: ^                         # 无限位引脚，这与主板其中一个限位相连
+#driver_SGTHRS: 255  			     # 这个设置为255，是无传感器归位的最大灵敏度，你稍后需要调整这个值。
+## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+#--------------------------------------------------------------------
+[tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
+cs_pin: PB0
+spi_bus:spi3 
+run_current: 1.0            
+interpolate: False
+sense_resistor: 0.033               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+
+
+#####################################################################
+#   Y 轴步进电机     (A 电机)
+#####################################################################
+## [stepper Y] = A电机
+[stepper_y]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+rotation_distance: 40
+microsteps: 32
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
+endstop_pin:
+position_endstop: 120
+position_max: 120
+homing_speed: 40                                  # 对于无传感器归位，建议不要超过40mm/s 
+homing_retract_dist: 0
+homing_positive_dir: true
+#--------------------------------------------------------------------
+[tmc2209 stepper_y]
+uart_pin: 
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+sense_resistor: 0.110
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+#diag_pin: ^                         # 无限位引脚，这与主板其中一个限位相连
+#driver_SGTHRS: 255  			     # 这个设置为255，是无传感器归位的最大灵敏度，你稍后需要调整这个值。
+## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+#--------------------------------------------------------------------
+# [tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
+# cs_pin: 
+# spi_bus:
+# run_current: 0.0            
+# # 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+# interpolate: False
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+# #diag1_pin: ^!                      # 无限位引脚，这与主板其中一个限位相连
+# #driver_SGT: -64                    # -64是最敏感的值，63是最不敏感的值
+# ## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+
+#####################################################################
+#   Z 轴步进电机
+#####################################################################
+[stepper_z]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
+rotation_distance: 8                              # 丝杆导程为 8
+microsteps: 32
+endstop_pin:
+position_endstop: 120
+position_max: 120
+position_min: -1.5
+homing_speed: 20
+second_homing_speed: 3.0
+homing_retract_dist: 3.0
+#--------------------------------------------------------------------
+[tmc2209 stepper_z]
+uart_pin: 
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+sense_resistor: 0.110
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+#diag_pin: ^                         # 无限位引脚，这与主板其中一个限位相连
+#driver_SGTHRS: 255  			     # 这个设置为255，是无传感器归位的最大灵敏度，你稍后需要调整这个值。
+## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+# --------------------------------------------------------------------
+# [tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
+# cs_pin: 
+# spi_bus:
+# run_current: 0.0            
+# # 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+# interpolate: False
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+# #diag1_pin: ^!                      # 无限位引脚，这与主板其中一个限位相连
+# #driver_SGT: -64                    # -64是最敏感的值，63是最不敏感的值
+# ## https://www.klipper3d.org/zh/TMC_Drivers.html?h=%E9%99%90%E4%BD%8D#_2
+
+#####################################################################
+#   挤出机
+#####################################################################
+[extruder]
+step_pin: 
+dir_pin:                                          # 电机方向，如果需要反转则在dir_pin: 后面添加!
+enable_pin: 
+full_steps_per_rotation: 200                      # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）                                  
+rotation_distance: 22.44
+## 执行挤出机校准时，更新以下值
+## 比如你要求100毫米的进料，但实际上是102：
+## rotation_distance = <旧rotation_distance> * <实际挤出长度> / <请求的挤出长度>
+## 校准步进值: 22.44=旧值22*实际值102/目标值100
+gear_ratio: 50:10                                 # 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
+microsteps: 32
+nozzle_diameter: 0.400
+filament_diameter: 1.750
+heater_pin:                                       # 加热棒引脚
+#sensor_type:
+## 检查你有哪些热敏电阻。参考 https://www.klipper3d.org/zh/Config_Reference.html#common-thermistors 以获取常见热敏电阻类型。
+## 传感器型号一般是(generic 3950, ATC Semitec 104GT-2， PT1000)
+sensor_pin:                                       # 热敏引脚
+min_temp: -200                                    # 最小温度
+max_temp: 300                                     # 最大温度
+min_extrude_temp: 170                             # 最小挤出温度
+max_extrude_only_distance: 150
+max_extrude_cross_section: 0.8
+pressure_advance: 0.0                             # 压力提前，需要手动调整
+pressure_advance_smooth_time: 0.040
+control = pid
+pid_kp = 26.213
+pid_ki = 1.304
+pid_kd = 131.721
+# 在初始检查后进行PID校准
+# 喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
+##--------------------------------------------------------------------
+[tmc2209 extruder]
+uart_pin: PB6
+interpolate: False
+#run_current: 0.0            
+## 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+sense_resistor: 0.110
+stealthchop_threshold: 0             # 设置为999999以启用隐形斩波，0则使用spreadcycle
+##--------------------------------------------------------------------
+# [tmc5160 stepper_z]                 # 挤出机驱动配置- TMC5160
+# cs_pin: 
+# spi_bus:
+# run_current: 0.0            
+# # 你需要使用公式（额定电机电流 * 0.707 = 最大运行电流）来计算运行电流值，起始值约为最大值的60%-70%
+# interpolate: False
+# sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
+# stealthchop_threshold: 0            # 设置为999999以启用隐形斩波，0则使用spreadcycle
+
+#####################################################################
+#   热床配置
+#####################################################################
+[heater_bed]
+heater_pin:                            # 加热棒引脚
+#sensor_type:
+## 检查你有哪些热敏电阻。参考 https://www.klipper3d.org/zh/Config_Reference.html#common-thermistors 以获取常见热敏电阻类型。
+## 传感器型号一般是(generic 3950, ATC Semitec 104GT-2， PT1000)
+smooth_time: 3.0
+#max_power: 1.0                                                     # 热床输出功率
+min_temp: 0
+max_temp: 120
+control: pid
+pid_kp: 68.453
+pid_ki: 2.749
+pid_kd: 426.122
+# 在初始检查后进行PID校准
+# 热床温度PID校准命令：  "PID_CALIBRATE HEATER=heater_bed TARGET=60"
+
+#####################################################################
+#   风扇配置
+#####################################################################
+[heater_fan hotend_fan]      # 喉管冷却风扇
+pin:
+max_power: 1.0               # 最大转速
+kick_start_time: 0.5         # 根据您使用的风扇，如果您的风扇无法启动，则可能需要增加此值
+heater: extruder
+heater_temp: 50
+##--------------------------------------------------------------------
+[fan]                        # 模型冷却风扇 
+pin:
+max_power: 1.0
+kick_start_time: 0.5         # 根据您使用的风扇，如果您的风扇无法启动，则可能需要增加此值
+off_below: 0.13
+cycle_time: 0.010
+
+#####################################################################
+#   断料传感器
+#####################################################################
+
+#[filament_switch_sensor Filament_Runout_Sensor]
+#pause_on_runout: True
+#runout_gcode: PAUSE
+#switch_pin: 
+
+#####################################################################
+#   归位和龙门调整程序
+#####################################################################
+
+[idle_timeout]
+timeout: 1800
+
+[homing_override]
+axes: xyz
+set_position_z: 0
+gcode:
+   G90
+   G0 Z5 F600
+  {% set home_all = 'X' not in params and 'Y' not in params and 'Z' not in params %}
+
+  {% if home_all or 'X' in params %}
+    _HOME_X
+  {% endif %}
+  
+  {% if home_all or 'Y' in params %}
+    _HOME_Y
+  {% endif %}
+  
+  {% if home_all or 'Z' in params %}
+    _HOME_Z
+  {% endif %}
+
+
+#[safe_z_home]                      # 仅当您使用V0.0或V0.1 Z端限位位置时需要。
+#home_xy_position: 120,120
+#speed: 50.0
+#z_hop: 5
+
+#####################################################################
+# LED
+#####################################################################
+
+[neopixel tmc_rgb]
+pin:PA8
+pin: PA8                    # 信号接口
+chain_count: 50             # 灯珠数量
+color_order: GRB            # 灯珠类型
+initial_RED: 0.0118
+initial_GREEN: 0.0235
+initial_BLUE: 0.0314
+initial_WHITE: 0.0    
+
+#####################################################################
+#   V0 Display
+#####################################################################
+# [mcu display]
+# serial: **PASTE YOUR SERIAL PORT HERE AND UNCOMMENT**
+# restart_method: command
+
+# [display]
+# lcd_type: sh1106
+# i2c_mcu: display
+# i2c_bus: i2c1a
+# # Set the direction of the encoder wheel
+# #   Standard: Right (clockwise) scrolls down or increases values. Left (counter-clockwise scrolls up or decreases values.
+# encoder_pins: ^display:PA3, ^display:PA4
+# #   Reversed: Right (clockwise) scrolls up or decreases values. Left (counter-clockwise scrolls down or increases values.
+# #encoder_pins: ^display:PA4, ^display:PA3
+# click_pin: ^!display:PA1
+# kill_pin: ^!display:PA5
+# #x_offset: 2
+# #   Use X offset to shift the display towards the right. Value can be 0 to 3
+# #vcomh: 0
+# #   Set the Vcomh value on SSD1306/SH1106 displays. This value is
+# #   associated with a "smearing" effect on some OLED displays. The
+# #   value may range from 0 to 63. Default is 0.
+# #   Adjust this value if you get some vertical stripes on your display. (31 seems to be a good value)
+
+# [neopixel displayStatus]
+# pin: display:PA0
+# chain_count: 1
+# color_order: GRB
+# initial_RED: 0.2
+# initial_GREEN: 0.05
+# initial_BLUE: 0
+
+#####################################################################
+# 自定义宏
+#####################################################################
+[gcode_macro PRINT_START]
+# 将PRINT_START用于切片机启动脚本 - 请根据您的选择进行自定义。
+gcode:
+    G28                            ; home all axes
+    G90                            ; absolute positioning    
+    G1 Z20 F3000                   ; move nozzle away from bed
+   
+[gcode_macro PRINT_END]
+# 将PRINT_END用于切片机结束脚本 - 请根据您的选择进行自定义。
+gcode:
+    M400                           ; wait for buffer to clear
+    G92 E0                         ; zero the extruder
+    G1 E-4.0 F3600                 ; retract filament
+    G91                            ; relative positioning
+
+    #   Get Boundaries
+    {% set max_x = printer.configfile.config["stepper_x"]["position_max"]|float %}
+    {% set max_y = printer.configfile.config["stepper_y"]["position_max"]|float %}
+    {% set max_z = printer.configfile.config["stepper_z"]["position_max"]|float %}
+
+    #   Check end position to determine safe direction to move
+    {% if printer.toolhead.position.x < (max_x - 20) %}
+        {% set x_safe = 20.0 %}
+    {% else %}
+        {% set x_safe = -20.0 %}
+    {% endif %}
+
+    {% if printer.toolhead.position.y < (max_y - 20) %}
+        {% set y_safe = 20.0 %}
+    {% else %}
+        {% set y_safe = -20.0 %}
+    {% endif %}
+
+    {% if printer.toolhead.position.z < (max_z - 2) %}
+        {% set z_safe = 2.0 %}
+    {% else %}
+        {% set z_safe = max_z - printer.toolhead.position.z %}
+    {% endif %}
+
+    G0 Z{z_safe} F3600             ; move nozzle up
+    G0 X{x_safe} Y{y_safe} F20000  ; move nozzle to remove stringing
+    TURN_OFF_HEATERS
+    M107                           ; turn off fan
+    G90                            ; absolute positioning
+    G0 X60 Y{max_y-10} F3600          ; park nozzle at rear
+  
+[gcode_macro LOAD_FILAMENT]
+gcode:
+   M83                            ; set extruder to relative
+   G1 E30 F300                    ; load
+   G1 E15 F150                    ; prime nozzle with filament
+   M82                            ; set extruder to absolute
+    
+[gcode_macro UNLOAD_FILAMENT]
+gcode:
+   M83                            ; set extruder to relative
+   G1 E10 F300                    ; extrude a little to soften tip
+   G1 E-40 F1800                  ; retract some, but not too much or it will jam
+   M82                            ; set extruder to absolute
+
+[gcode_macro _HOME_X]
+gcode:
+    # Always use consistent run_current on A/B steppers during sensorless homing
+    {% set RUN_CURRENT_X = printer.configfile.settings['tmc2209 stepper_x'].run_current|float %}
+    {% set RUN_CURRENT_Y = printer.configfile.settings['tmc2209 stepper_y'].run_current|float %}
+    {% set HOME_CURRENT_RATIO = 0.7 %} adjust this value if you are having trouble with skipping while homing
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_X}# by default we are dropping the motor current during homing. you can 
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_Y}
+
+    # Home
+    G28 X
+    # Move away
+    G91
+    G1 X-10 F1200
+    
+    # Wait just a second… (give StallGuard registers time to clear)
+    G4 P1000
+    G90
+    # Set current during print
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={RUN_CURRENT_X}
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={RUN_CURRENT_Y}
+
+[gcode_macro _HOME_Y]
+gcode:
+    # Set current for sensorless homing
+    {% set RUN_CURRENT_X = printer.configfile.settings['tmc2209 stepper_x'].run_current|float %}
+    {% set RUN_CURRENT_Y = printer.configfile.settings['tmc2209 stepper_y'].run_current|float %}
+    {% set HOME_CURRENT_RATIO = 0.7 %} # by default we are dropping the motor current during homing. you can adjust this value if you are having trouble with skipping while homing
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_X}
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={HOME_CURRENT_RATIO * RUN_CURRENT_Y}
+
+    # Home
+    G28 Y
+    # Move away
+    G91
+    G1 Y-10 F1200
+
+    # Wait just a second… (give StallGuard registers time to clear)
+    G4 P1000
+    G90
+    # Set current during print
+    SET_TMC_CURRENT STEPPER=stepper_x CURRENT={RUN_CURRENT_X}
+    SET_TMC_CURRENT STEPPER=stepper_y CURRENT={RUN_CURRENT_Y}
+
+
+
+[gcode_macro _HOME_Z]
+gcode:
+    G90
+    G28 Z
+    G1 Z30
 
 
 ```
