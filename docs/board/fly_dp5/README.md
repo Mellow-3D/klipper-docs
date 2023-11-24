@@ -2,7 +2,7 @@ Mellow Fly-DP5是广州镁伦电子科技有限公司Fly3D主板研发团队推�
 
 
 
-<img src="../../images/boards/fly_dP5/dP5.png" alt="D5" style="zoom: 35%;" />
+<img src="../../images/boards/fly_dP5/dp5.png" alt="D5" style="zoom: 35%;" />
 
 ## **1. 产品特点**
 

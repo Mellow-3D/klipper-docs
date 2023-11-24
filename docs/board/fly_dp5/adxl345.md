@@ -4,7 +4,9 @@
 
 加速度计的链接方式如下图所示
 
-<img src="../../images/boards/fly_dp5/adxl345.png" alt="adxl345" style="zoom:90%;" />
+![adxl](../../images/boards/fly_dp5/adxl345.png)
+
+
 
 ## 2. 配置
 
