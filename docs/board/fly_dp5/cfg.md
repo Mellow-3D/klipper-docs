@@ -347,7 +347,7 @@ gcode:
 #####################################################################
 
 [neopixel board_rgb]
-pin:
+pin:PA8
 chain_count: 1
 color_order: GRB
 initial_RED: 0.0
