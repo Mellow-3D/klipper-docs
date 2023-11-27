@@ -345,7 +345,6 @@ gcode:
 #####################################################################
 # LED
 #####################################################################
-
 [neopixel board_rgb]
 pin:PA8
 chain_count: 1
@@ -353,6 +352,32 @@ color_order: GRB
 initial_RED: 0.0
 initial_GREEN: 0.1
 initial_BLUE: 0.0
+#--------------------------------------------------------------------  
+[board_pins]
+aliases:
+    EXP1_1=NC,   EXP1_3=PC11,  EXP1_5=PC10, EXP1_7=NC, EXP1_9=<GND>,
+    EXP1_2=PA15, EXP1_4=PA14,  EXP1_6=PA13, EXP1_8=NC, EXP1_10=<5V>,
+    # EXP2 header
+    EXP2_1=PB14, EXP2_3=PC12, EXP2_5=PB6,   EXP2_7=NC,    EXP2_9=<GND>,
+    EXP2_2=PB13, EXP2_4=PB12, EXP2_6=PB15,  EXP2_8=<RST>, EXP2_10=<NC>,
+#--------------------------------------------------------------------    
+[display]
+lcd_type: uc1701                # 显示屏驱动类型
+cs_pin: EXP1_3                  # 显示屏片选cs引脚设置
+a0_pin: EXP1_4                  # 显示屏数据a0引脚设置
+rst_pin: EXP1_5                 # 显示屏复位rst脚设置
+contrast: 63                    # 对比度
+encoder_pins: ^EXP2_5, ^!EXP2_3 # 旋转编码器（旋钮开关）引脚设置
+click_pin: ^!EXP1_2             # 旋转编码器（旋钮开关）确认按键的引脚设置
+# --------------------------------------------------------------------
+####适用于FLY Mini12864
+[neopixel fly_mini12864]
+pin: EXP1_6                     # 显示屏背光灯控制引脚设置
+chain_count: 3
+initial_RED: 0.5                # 红色LED灯亮度控制（范围：0-1）
+initial_GREEN: 0.5              # 绿色LED灯亮度控制（范围：0-1）
+initial_BLUE: 0.5               # 蓝色LED灯亮度控制（范围：0-1）
+color_order: RGB                # 颜色顺序
 
 #####################################################################
 #   V0 Display

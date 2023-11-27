@@ -7,6 +7,9 @@ Klipper链接:[TMC drivers)](https://www.klipper3d.org/TMC_Drivers.html)
 * 使用方法将`extruder`替换成需要验证的驱动
 
 ```
+DUMP_TMC STEPPER=stepper_x
+DUMP_TMC STEPPER=stepper_y
+DUMP_TMC STEPPER=stepper_z
 DUMP_TMC STEPPER=extruder
 ```
 

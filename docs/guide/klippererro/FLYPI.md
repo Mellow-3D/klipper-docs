@@ -16,9 +16,13 @@
 
 ![piusb](../../images/boards/fly_pi/piusb.png)
 
-![usb-flash](../../images/boards/fly_gemini_v3/typec_tossh.png ":size=50%")
+![flash](../../images/boards/fly_gemini_v3/tossh.png ":size=50%")
+
+![flash](../../images/boards/fly_mini_pad/usb.png ":size=50%")
 
 ![ch340](../../images/boards/fly_pi_lite2/ch340.png)
+
+
 
 * 如果主板与电脑连接正常，打开设备管理器，就可以看到CH340的端口了
 
