@@ -60,11 +60,12 @@ Super8 Pro的Klipper固件配置如下图所示：
 ## 2.1  编译Klipper固件
 
 1. 请先阅读 [连接到SSH](/board/fly_pi_v2/to_ssh "点击即可跳转")文档
-2. 连接到SSH后输入```cd ~/klipper/```回车
-3. 按顺序执行下面的命令，输入命令后需要回车才会执行
-4. ```make clean```
-5. ```rm -rf .config && make menuconfig```
-6. 现在应该出现了Klipper编译配置界面
+2. 请注意下方只是参考
+3. 连接到SSH后输入```cd ~/klipper/```回车
+4. 按顺序执行下面的命令，输入命令后需要回车才会执行
+5. ```make clean```
+6. ```rm -rf .config && make menuconfig```
+7. 现在应该出现了Klipper编译配置界面
 
 ![putty](../../images/firmware/make1.png ":no-zooom")
 
@@ -124,11 +125,11 @@ lsusb
 4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
 
 ```bash
-dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
+cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 ```
 5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
 
-![7](../../images/boards/fly_sht36_42/7.png ":no-zooom")
+![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
 
 6. 出现上图内容则烧录成功
 

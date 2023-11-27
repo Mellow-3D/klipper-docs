@@ -67,12 +67,12 @@ lsusb
 4. 烧录固件(烧录前确保已经编译过固件)
 
 ```bash
-dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
+cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 ```
 
 5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
 
-![7](../../images/boards/fly_sht36_42/7.png ":no-zooom")
+![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
 
 6. 出现上图内容则烧录成功
 
