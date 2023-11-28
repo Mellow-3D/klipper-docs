@@ -43,3 +43,7 @@
       
 
    6. 至此已经完成FLY镜像的写入，但是请勿拔出内存卡，还需要修改boot盘中的FLY_config文件，具体修改方法请查看：[FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")
+
+> [!Warning]
+>
+> 系统稍微完成后会有一个boot盘与一个win电脑无法识别的分区，请不要格式化！！

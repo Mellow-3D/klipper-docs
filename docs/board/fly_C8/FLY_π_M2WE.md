@@ -72,7 +72,9 @@
 15. 这样就可以直接用Win32diskimager或balenaEtcher来烧录系统镜像，盘符选择为这个14.5GU盘的盘符
 16. 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")
 
-
+> [!Warning]
+>
+> 系统稍微完成后会有一个boot盘与一个win电脑无法识别的分区，请不要格式化！！
 
 ## 2. 如何重新格式化M2WE
 

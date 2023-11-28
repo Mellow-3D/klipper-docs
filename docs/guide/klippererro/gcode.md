@@ -181,7 +181,7 @@ gcode:
     {% set extruder_temp = params.EXTRUDER_TEMP %}
     {% set print_min_x = params.PRINT_MIN.split(",")[0]|int %}
     {% set print_min_y = params.PRINT_MIN.split(",")[1]|int %}
-    _MESSAGE TEXT="参考最小坐标点：({print_min_x},{print_min_y})"                 # 将打印的最小坐标点信息输出到控制台
+    #_MESSAGE TEXT="参考最小坐标点：({print_min_x},{print_min_y})"                 # 将打印的最小坐标点信息输出到控制台
     {% if print_min_x > 25 %}                                                 # 如果最小坐标的X轴左边还有大于25mm的空间，则在打印区域的左边画线
         {% set line_start_x = print_min_x - 22 %}
         {% set line_end_x = print_min_x - 22 %}
@@ -198,17 +198,17 @@ gcode:
         {% set line_start_y = 5 %}
         {% set line_end_y = 55 %}
     {% endif %}
-    _MESSAGE TEXT="移动到({line_start_x},{line_start_y})，加热热端，准备画线"      # 将打印头将要移动的目的坐标输出到控制台
+    #_MESSAGE TEXT="移动到({line_start_x},{line_start_y})，加热热端，准备画线"      # 将打印头将要移动的目的坐标输出到控制台
     G90                                                                       # 切换到相对于原点的坐标系
     G1 X{line_start_x} Y{line_start_y} Z3 F6000                               # 移动到准备位置
-    STATUS_HEATING                                                            # 设置SB灯颜色
-    M109 S{extruder_temp}                                                     # 等待热端到达指定温度
+    #STATUS_HEATING                                                           # 设置SB灯颜色
+    #M109 S{extruder_temp}                                                    # 等待热端到达指定温度
     G1 Z1 F1500                                                               # 下移喷嘴
-    _RESET_EXTRUDER                                                           # 重置挤出机
+    G92 E0                                                                    # 重置挤出机
     G1 E10 F150                                                               # 在原地挤出10mm耗材，黏住喷嘴上面的料
-    _RESET_EXTRUDER                                                           # 重置挤出机
+    G92 E0                                                                    # 重置挤出机
     G1 X{line_end_x} Y{line_end_y} Z0.25 F1500 E10                            # 画一条直线
-    _RESET_EXTRUDER                                                           # 重置挤出机
+    G92 E0                                                                    # 重置挤出机
     G1 Z2 F3000                                                               # 抬高喷嘴
 
 ```

@@ -57,3 +57,7 @@
 ![win32](../../images/boards/fly_pi/win32_2.png)
 
 * 镜像烧录完成后，请配置 [FLY_Config](/board/fly_pi/FLY_π_fly_config.md "点击即可跳转")
+
+>[!Warning]
+>
+>系统稍微完成后会有一个boot盘与一个win电脑无法识别的分区，请不要格式化！！！

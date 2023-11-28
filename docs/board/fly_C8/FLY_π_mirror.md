@@ -25,3 +25,7 @@
 **下载需要用到的工具和文件，国内用户请前往QQ群下载**
 
 * [工具](https://drive.google.com/drive/folders/1llH-lq-WsbIdwkmLL51n3OHo5dNNpcPy)
+
+> [!Warning]
+>
+> 系统稍微完成后会有一个boot盘与一个win电脑无法识别的分区，请不要格式化！！
