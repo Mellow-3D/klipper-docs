@@ -84,7 +84,7 @@ sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 ```
 
 ```bash
-~/klippy-env/bin/pip install -v numpy
+~/klippy-env/bin/pip install matplotlib numpy
 ```
 
 请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。在某些情况下，如果主板的 RAM 太少 安装可能会失败。
