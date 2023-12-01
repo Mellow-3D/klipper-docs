@@ -77,3 +77,13 @@ sudo systemctl restart klipper
 ![pi](../images/boards/fly_pi/tft.jpg)
 
 ![pi-v2](../images/boards/fly_pi_v2/tft.jpg)
+
+# FLY TFT V2接线图
+
+> [!Warning]
+>
+> 配置方法与TFT一样！！！
+
+
+
+![pi-v2](../images/adv/tftv2.jpg)

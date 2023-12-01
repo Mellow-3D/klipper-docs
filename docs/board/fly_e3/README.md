@@ -1,7 +1,5 @@
 # 1. 产品简介
 
-xxxxxxxxxx https://cdn.mellow.klipper.cn/SCH-PDF/FLY-RRF-E3.pdfpdf
-
 - 32位ARM Cortex-M4系列168 MHz，STM32F407ZGT6芯片
 - 固件：Reprap/Klipper
 - 动支持：A4988、LV8729、DRV8225、TMC2208/2209/5160等
