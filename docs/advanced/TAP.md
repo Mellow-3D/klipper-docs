@@ -1,3 +1,13 @@
+## TAP接线示意图！
+
+> [!Warning]
+>
+> 请注意不要将tap接到舵机口，需要接到限位口！！！
+
+
+
+<img src="../images/boards/fly_sht_v2/tap.png" alt="tap" style="zoom:80%;" />
+
 ## TAP的配置教程
 
 > [!TIP]
