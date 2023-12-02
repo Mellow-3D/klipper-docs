@@ -2,6 +2,10 @@
 
 ## 将传感器电缆连接到主板或CAN总线工具头板。
 
+请注意SB240无法使用BDsensor
+
+请注意SHT36需要将BDsensor的CLK/SCL    (Input)接到高压输入口，并且将跳线接上
+
 BDsensor的CKL和SDA线可以连接到电路板的任何GPIO引脚。您也可以将BD传感器电缆直接连接到Bltouch端口，例如：
 
 ```
@@ -20,16 +24,17 @@ BLtouch    |    BDsensor
 
 1. 如下图所示，将BD传感器安装在靠近热端的位置。 [STL of mount](https://www.thingiverse.com/thing:6098131),  [STL_mount_VzBot_Goliath short](https://discord.com/channels/829828765512106054/1163237892957671424)
 
-![img](https://raw.githubusercontent.com/markniu/Bed_Distance_sensor/new/doc/images/Connection1.jpg)
+![img](../../images/boards/bd_sensor/BD.png)
 
 ## 将补丁安装到 klipper 固件中
 
-- 克隆最新的 klipper 代码
+- 放弃之前修改的klipper文件并且更新klipper
 
 ```
-cd ~
-mv klipper klipper_bak
-git clone https://github.com/Klipper3d/klipper
+cd
+cd ~/klipper
+git checkout .
+git pull
 ```
 
 - 克隆BD传感器的最新代码

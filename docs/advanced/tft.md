@@ -82,7 +82,7 @@ sudo systemctl restart klipper
 
 > [!Warning]
 >
-> 配置方法与TFT一样！！！
+> 配置方法与TFT V1一样！！！
 
 
 
