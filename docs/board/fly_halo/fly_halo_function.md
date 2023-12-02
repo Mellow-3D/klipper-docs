@@ -4,6 +4,18 @@
 
 单击热床或者热端，从屏幕正上方顺时针滑动需要到达的温度后在点击热床或者热端即可设定温度。
 
+如果需要显示mcu温度与上位机温度需要添加此配置
+
+```
+[temperature_sensor mcu]
+sensor_type: temperature_mcu      # 关联mcu（默认）
+
+[temperature_sensor host]        # 上位机温度
+sensor_type: temperature_host     # 关联上位机
+```
+
+
+
 > **注意最高温度是读取配置里面的设置**
 
 ![heating](../../images/boards/fly_halo/heating.png)
