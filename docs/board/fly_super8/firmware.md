@@ -63,7 +63,7 @@
 
 * 出现下图则编译成功
 
-![putty](../../images/firmware/make2.png ":no-zooom")
+![make5](../../images/firmware/make5.png)
 
 14. 下载固件到电脑
 
@@ -78,7 +78,7 @@
 
 * 进入**out**文件夹
 
-![putty](../../images/firmware/down3.png ":no-zooom")
+![putty](../../images/firmware/make5.png ":no-zooom")
 
 * 直接将**klipper.bin**拖拽到电脑桌面或其他文件夹即可
 
