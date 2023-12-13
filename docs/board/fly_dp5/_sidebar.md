@@ -12,4 +12,4 @@
     * [7. 桥接CAN](/board/fly_dp5/canbridge.md)
     * [8. 原理图](/board/fly_dp5/schematic.md)
     * [9. 三维模型](/board/fly_dp5/3dmodel.md) 
-    * [10. 驱动LED](/board/fly_dp5/3dmodel.md) 
+    * [10. 驱动LED](/board/fly_dp5/led.md) 
