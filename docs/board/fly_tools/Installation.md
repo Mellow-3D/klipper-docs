@@ -28,7 +28,7 @@
 
      * Github每小时最大请求次数60次，Gitee未知
    
-     - 通过Gitee获取安装脚本
+     - 国内用户建议通过Gitee获取安装脚本
 
        ```
        curl -kfsSL https://gitee.com/zxkxz/FLY-Tools/raw/main/scripts/install.sh | sudo bash
