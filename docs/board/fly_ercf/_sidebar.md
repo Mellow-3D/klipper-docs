@@ -6,4 +6,5 @@
   * [4. 固件烧录](/board/fly_ercf/flash.md)
   * [5. 原理图](/board/fly_ercf/schematic.md)
   * [6. 三维模型](/board/fly_ercf/3dmodel.md)
+  * [7. CANBOOT](/board/fly_ercf/canboot.md)
 
