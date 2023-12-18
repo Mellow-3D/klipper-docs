@@ -23,52 +23,64 @@
 
 ![boot](../../images/boards/fly_d5/boot.png)
 
-# 2. 固件配置方法
+# 2. 固件配置
 
-* 请使用**MobaXterm_Personal**等**SSH工具**连接到您的上位机
-* 访问[FLY-Tools](http://mellow.klipper.cn/#/board/fly_tools/Installation)此链接并且安装[FLY-Tools](http://mellow.klipper.cn/#/board/fly_tools/Installation)
+**固件配置方法**
+
+```
+cd klipper
+rm -rf .config && make menuconfig
+```
 
 <!-- tabs:start -->
 
 ### ****USB固件配置****
-* 安装好FLY-Tools后请通过浏览器访问 **你的上位机IP+:9999**
-* 选择**固件编译**然后选择**FLY-D5**
-* USB固件编译配置如下
- ![usb](../../images/boards/fly_d5/usb.png)
+
+![usb](../../images/boards/fly_d5/usb.png)
 
 ### ****USB桥接CAN固件配置****
 
-* 安装好FLY-Tools后请通过浏览器访问 **你的上位机IP+:9999**
-* 选择**固件编译**然后选择**FLY-D5**
-* USB桥接CAN工具板编译配置如下
-* 如果需要修改CAN速率请修改**CANBUS rate**
-* 此方法是桥接工具板的配置，请确保**工具板CAN速率**与**上位机的CAN配置**一致
+* 此方法是桥接工具板的配置，请确保工具板CAN速率与上位机的CAN配置
 
 ![usb](../../images/boards/fly_d5/can.png)
 
 <!-- tabs:end -->
 
-* 点击下方**Start compiling**进行固件编译
+* 执行命令下方命令来编译固件
 
-![flash](../../images/boards/fly_d5/flash1.png)
-
-* 当显示下方提示时，则表示**固件编译成功**
-
-![flash](../../images/boards/fly_d5/flash.png)
+```
+make clean
+make -j4
+```
 
 # 3. Klipper上位机烧录
 
-1. 确保D5连接到上位机时是DFU模式可以通过查询ID界面确定
+1. 安装烧录工具
 
-![0](../../images/boards/fly_d5/dfu.png ":no-zooom")
+```bash
+sudo apt install dfu-util -y
+```
 
-2. 烧录固件(烧录前确保已经编译过固件)
+2. 使用Type-C数据线将D5主板连接到Linux设备
+3. 执行下面的命令查看是否连接成功。
 
-![1](../../images/boards/fly_d5/dfu1.png ":no-zooom")
+```bash
+lsusb
+```
 
-3. 烧录成功
+![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
-![2](../../images/boards/fly_d5/dfu2.png ":no-zooom")
+4. 烧录固件(烧录前确保已经编译过固件)
+
+```bash
+cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
+```
+
+5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
+
+![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
+
+6. 出现上图内容则烧录成功
 
 >[!Warning]
 >
