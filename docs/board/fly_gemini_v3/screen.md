@@ -24,3 +24,13 @@ sudo systemctl restart klipper
 * FLY-Gemini-V3接线**请注意FPC与排线只需要接其中一种**
 
 ![tft](../../images/screen/v2.png)
+
+## FLY TFT V2接线图
+
+> [!Warning]
+>
+> 配置方法与TFT V1一样！！！
+
+
+
+![pi-v2](../../images/adv/tftv2.jpg)

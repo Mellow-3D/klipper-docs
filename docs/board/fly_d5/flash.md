@@ -5,7 +5,7 @@
 
 # 固件编译
 
-请使用**MobaXterm_Personal**等**SSH工具**连接到您的上位机，并且需要确定以下几点
+请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
 1. **请确保上位机安装好了Klipper固件**
 2. **请确保登录的用户必须是安装好Klipper的用户**
