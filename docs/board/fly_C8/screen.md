@@ -1,4 +1,4 @@
-### 1. Klipperscreen的配置
+## 1. Klipperscreen的配置
 
 找到下图所示选项，将``klipperscreen=flase``修改为``klipperscreen=true``，则可启用klipperscreen屏幕。
 
@@ -6,9 +6,28 @@
 
 另外还需要指定使用的屏幕类型才能够正常使用！！！按下图中的提示修改为对应的配置即可。
 
-显示设备型号无需修改！
+<!-- tabs:start -->
+
+### **HDMI**
+
+* HDMI屏幕只需要修改Display此选项即可
 
 ![hdmi](../../images/boards/fly_pi/hdmi.png)
+
+### **TFT**
+
+![tft](../../images/boards/fly_pi/tft1.png)
+
+* 请注意(FLY-Pi) & (FLY-π) & (FLY-Gemini v1~v3) & (FLY-Pi Lite2) 使用FLY-TFT-V1
+* (FLY-Pi v2) & (FLY-C8)使用FLY-TFT-V1-NEW
+
+![tft](../../images/boards/fly_pi/tft2.png)
+
+* TFT屏幕旋转只能选择**90**或者**270**
+
+![tft](../../images/boards/fly_pi/tft3.png)
+
+<!-- tabs:end -->
 
 
 
@@ -34,3 +53,13 @@ sudo systemctl restart klipper
 ## 3. HDMI与TFT屏幕接线
 
 ![](../../images/boards/fly_c8/screen.jpg)
+
+## FLY TFT V2接线图
+
+> [!Warning]
+>
+> 配置方法与TFT V1一样！！！
+
+
+
+![pi-v2](../../images/adv/tftv2.jpg)

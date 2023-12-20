@@ -33,6 +33,18 @@
 
     ![tft](../../images/boards/fly_pi/tft.jpg)
 
+  
+  
+  # FLY TFT V2接线图
+  
+  > [!Warning]
+  >
+  > 配置方法与TFT V1一样！！！
+  
+  
+  
+  ![pi-v2](../../images/adv/tftv2.jpg)
+  
   如果屏幕只显示下图所示界面，请检查``FLY_CONFIG``中``Klipperscreen``的配置是否修改正确。
 
 ![no_display](../../images/boards/fly_pi/no_display.png)

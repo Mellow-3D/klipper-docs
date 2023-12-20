@@ -9,6 +9,7 @@
   * [CAN配置](/board/fly_mini_pad/can.md)
   * [ADXL配置](/board/fly_mini_pad/Accelerator.md)
   * [使用串口连接上位机](/board/fly_mini_pad/uart.md)
+  * [通过MINI-PAD连接其他Klipper机器](/board/fly_mini_pad/klipperscreen.md)
   * [电源接线](/board/fly_mini_pad/power.md)
   * [相关链接](/board/fly_mini_pad/link.md)
   * [三维模型](/board/fly_mini_pad/3dmodel.md)
