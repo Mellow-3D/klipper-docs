@@ -26,46 +26,17 @@
 
 ![can2](../../images/boards/fly_super8/can.png)
 
-
 <!-- tabs:end -->
 
-## 2.2 编译Klipper固件
+执行下方命令进行固件编译
 
-1. 请先阅读[连接到SSH](/board/fly_pi_v2/to_ssh "点击即可跳转")文档
-2. 连接到SSH后输入```cd ~/klipper/```回车
-3. 按顺序执行下面的命令，输入命令后需要回车才会执行
-4. ```make clean```
-5. ```rm -rf .config && make menuconfig```
-6. 现在应该出现了Klipper编译配置界面
+```
+make -j4
+```
 
-![putty](../../images/firmware/make1.png ":no-zooom")
 
-* 上下键选择菜单，回车键确认或进入菜单
-7. 进入菜单**Micro-controller Architecture**
 
-![putty](../../images/firmware/make2.png ":no-zooom")
-
-8. 选择**STMicroelectronics STM32**回车
-
-![putty](../../images/firmware/make3.png ":no-zooom")
-
-9. 进入菜单**Processor model**，选择**STM32F407**回车
-10. **Bootloader offset**如果是(32KiB bootloader)则不修改
-11. **Communication interface**是USB (on PA11/PA12)
-* 配置好后是这样的
-
-![f407](../../images/boards/fly_super8/f407.png)
-
-12. 按```Q```键，出现**Save configuration**，这时再按```Y```键
-* 现在应该保存了配置并且退出到了命令行界面
-
-13. 输入```make -j4```开始编译，时间有点长
-
-* 出现下图则编译成功
-
-![make5](../../images/firmware/make5.png)
-
-14. 下载固件到电脑
+## 2.2 下载Klipper固件
 
 * 使用软件**WinSCP**
 

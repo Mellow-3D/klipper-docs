@@ -1,68 +1,76 @@
-# 固件烧录
-
-> 烧录固件之前确保已完成[系统镜像](introduction/system)文档
-
 ## 编译Klipper固件
 
-1. 请先阅读[连接SSH](introduction/system)文档
-2. 连接到SSH后输入```cd ~/klipper/```回车
-3. 按顺序执行下面的命令，输入命令后需要回车才会执行
-4. ```make clean```
-5. `rm -rf .config`
-6. ```make menuconfig```
-7. 现在应该出现了Klipper编译配置界面
+固件编译将使用SUPER8-PRO**桥接CAN工具板固件**为例
 
-![MAKE](../images/adv/make.gif)
+请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
-![putty](../images/firmware/make1.png ":no-zooom")
+1. **请先保证上位机已经[连接到SSH](introduction/conntossh)**
+2. **请确保上位机安装好了Klipper固件**
+3. **请确保登录的用户必须是安装好Klipper的用户**
+4. **请确保你的输入法是英文**
+5. **请确保你的上位机可以正常搜索到设备**
+6. **请确保以上注意事项都做到，否则无法进行下一步**
 
-* 上下键选择菜单，回车键确认或进入菜单
-7. 进入菜单**Micro-controller Architecture**
+* **上位机连接SSH**后输入`cd klipper`并且**回车**
 
-![putty](../images/firmware/make2.png ":no-zooom")
+![cd](../images/firmware/cd.png ":no-zooom")
 
-8. 选择**STMicroelectronics STM32**回车
+* 输入`rm -rf .config && make menuconfig`，并且**回车**
 
-![putty](../images/firmware/make3.png ":no-zooom")
+![make](../images/firmware/make.png ":no-zooom")
 
-9. 进入菜单**Processor model**，选择**STM32F405**回车
-10. **Bootloader offset**如果是(32KiB bootloader)则不修改
-11. **Communication interface**是USB (on PA11/PA12)
-* 第10项选择的是按照主板选择的，Gemini是STM32F405
+* **回车后**将出现下面界面
 
-* 配置好后是这样的
+![make1](../images/firmware/make1.png ":no-zooom")
 
-![putty](../images/firmware/make4.png ":no-zooom")
+* 选择`Enable extra low-level configuration options`并且**回车**，此项是打开其他配置选项
 
-12. 按```Q```键，出现**Save configuration?**，这时再按```Y```键
-* 现在应该保存了配置并且退出到了命令行界面
+![make2](../images/firmware/make2.png ":no-zooom")
 
-13. 输入```make -j4```开始编译，时间有点长
+* 选择`Micro-controller Architecture`此项并且**回车**，此项是选择**下位机主控类型**！！！
+* 给Klipper机器一般使用`STM32`与`RP2040`这两种主控类型
 
-* 出现下图则编译成功
+![make3](../images/firmware/make3.png ":no-zooom")
 
-![putty](../images/firmware/make5.png ":no-zooom")
+* 选择`STMicroelectronics STM32`并且**回车**，然后需要选择**对应主板主控型号**!!!
 
-14. 下载固件到电脑
+![make4](../images/firmware/make4.png ":no-zooom")
 
-* 使用软件**WinSCP**
+![make6](../images/firmware/make6.png ":no-zooom")
 
-![putty](../images/firmware/down1.png ":no-zooom")
+* `Bootloader offset`为引导偏移此项需要查看主板对应主板提供的参数来选择！！！
+* 如果选择`No bootloader`则代表使用**DFU**烧录固件，会把原来**使用内存卡烧录引导**删除！！！
+* 选择`Clock Reference`此项需要查看主板对应主板提供的参数来选择！！！
 
-* 第一次登录会出现确认弹窗，点击是或者直接回车即可
-* 进入**klipper**文件夹
+![make7](../images/firmware/make7.png ":no-zooom")
 
-![putty](../images/firmware/down2.png ":no-zooom")
+* 选择` Communication interface `并且**回车**找到`USB to CAN bus bridge (USB on PA11/PA12)`然后回车选择此项目！！！
 
-* 进入**out**文件夹
+![make8](../images/firmware/make8.png ":no-zooom")
 
-![putty](../images/firmware/down3.png ":no-zooom")
+* FLY主板的CAN口默认`CAN bus (on PB8/PB9)`此项不需要修改
+* 请注意` CAN bus speed`是CAN速率，上位机的CAN速率与下位机CAN速率要**一致**
+* ` CAN bus speed`可自行设置默认为`1000000`
 
-* 直接将**klipper.bin**拖拽到电脑桌面或其他文件夹即可
+![make9](../images/firmware/make9.png ":no-zooom")
 
-![putty](../images/firmware/down4.png ":no-zooom")
+* `GPIO pins to set at micro-controller startup (NEW)`一般是用于判断主控是否有启动固件
+* 输入小写英文`q`和`y`保存并且退出固件参数选择
+* 输入`make -j4`并且**按回车进行固件编译**
+
+![make10](../images/firmware/make10.png ":no-zooom")
+
+* 出现`Creating hex file out/klipper.bin`代表**固件编译成功**
+
+![make5](../images/firmware/make5.png ":no-zooom")
 
 ## 烧录固件到主板
+
+使用MobaXterm_Personal左边文件目录找到`klipper`选择然后找到`out`打开
+
+并且将`klipper.bin`复制到SD卡
+
+![firmware](../images/firmware/firmware.png ":no-zooom")
 
 1. 准备一张SD卡(<32GB)，并且格式化成FAT32格式
 2. 将klipper.bin复制到SD卡，并且重命名为```firmware.bin```
