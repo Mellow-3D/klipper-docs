@@ -96,7 +96,8 @@
   - [系统镜像](/introduction/system.md)
   - [连接到 SSH](/introduction/conntossh.md)
   - [固件烧录](/introduction/firmware.md)
-
+  - [ID搜索与配置](/introduction/id.md)
+  
 - **FLY-Config**
   - [介绍](/fly_config/README)
   - [使用方法](/fly_config/Instructions.md)
