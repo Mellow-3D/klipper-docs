@@ -24,7 +24,7 @@ sudo apt-get install usbutils
 ls /dev/serial/by-id/*
 ```
 
-它会产生类似于以下内容的输出：
+它会输出以下类似于内容：
 
 ![usbid](../../images/guides/klippererro/usbid.png)
 
