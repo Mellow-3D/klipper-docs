@@ -12,7 +12,7 @@
     * [9. 读取ID](/board/fly_C8/c8id.md)
     * [10. C8 主板接线](/board/fly_C8/wiring.md)
     * [11. printer参考配置](/board/fly_C8/cfg.md)
-    * [12. Pin脚分布](/board/fly_c8/pins.md)
+    * [12. Pin脚分布](/board/fly_C8/pins.md)
     * **进阶**
     * [13. 桥接CAN](/board/fly_C8/canbridge.md)
     * [14. HDMI与TFT屏幕的使用](/board/fly_C8/screen.md)
@@ -22,5 +22,3 @@
     * [18. 原理图](/board/fly_C8/schematic.md)
     * [19. 三维模型](/board/fly_C8/3dmodel.md)
     * [20. BL烧录](/board/fly_C8/bootloader.md)
-    * **调试**
-    * [21. Klipper调试](/board/fly_c8/boardtest.md)
