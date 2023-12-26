@@ -13,17 +13,9 @@
 4. **请确保你的上位机可以正常搜索到设备**
 5. **请确保以上注意事项都做到，否则无法进行下一步**
 
-# 1. BOOT按键
 
->[!TIP]
->
->方法一：按住boot，将D5主板接到上位机，然后松开BOOT
->
->方法二：按住boot，再按下reset按键，松开reset按键，最后松开boot按键
 
-![boot](../../images/boards/fly_d5/boot.png)
-
-# 2. 固件配置
+# 1. 固件配置
 
 **固件配置方法**
 
@@ -53,9 +45,23 @@ make clean
 make -j4
 ```
 
+
+# 2. BOOT按键
+
+>[!TIP]
+>
+>方法一：按住boot，将D5主板接到上位机，然后松开BOOT
+>
+>方法二：按住boot，再按下reset按键，松开reset按键，最后松开boot按键
+
+![boot](../../images/boards/fly_d5/boot.png)
+
+
 # 3. Klipper上位机烧录
 
 1. 安装烧录工具
+
+* FLY上位机无需执行安装烧录工具
 
 ```bash
 sudo apt install dfu-util -y
@@ -67,6 +73,8 @@ sudo apt install dfu-util -y
 ```bash
 lsusb
 ```
+
+* 如果没有DFU设备请重新执行第二步
 
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
