@@ -3,7 +3,7 @@
 > [!TIP]
 > FLY-DP5 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
 
-# 1. 固件编译
+# 固件编译
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
@@ -12,6 +12,10 @@
 3. **请确保你的输入法是英文**
 4. **请确保你的上位机可以正常搜索到设备**
 5. **请确保以上注意事项都做到，否则无法进行下一步**
+
+
+
+# 1. 固件配置
 
 **固件配置方法**
 
@@ -42,31 +46,35 @@ make -j4
 ```
 
 
-
 # 2. BOOT按键
 
 >[!TIP]
 >
->方法一：按住boot，给D5主板供电，然后松开BOOT
+>方法一：按住boot，将DP5主板接到上位机，然后松开BOOT
 >
 >方法二：按住boot，再按下reset按键，松开reset按键，最后松开boot按键
 
 ![boot](../../images/boards/fly_d5/boot.png)
 
+
 # 3. Klipper上位机烧录
 
 1. 安装烧录工具
+
+* FLY上位机无需执行安装烧录工具
 
 ```bash
 sudo apt install dfu-util -y
 ```
 
-2. 使用Type-C数据线将D5主板连接到Linux设备
+2. 使用Type-C数据线将DP5主板连接到Linux设备
 3. 执行下面的命令查看是否连接成功。
 
 ```bash
 lsusb
 ```
+
+* 如果没有DFU设备请重新执行第二步
 
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
@@ -82,6 +90,6 @@ cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 
 6. 出现上图内容则烧录成功
 
->[!TIP]
+>[!Warning]
 >
->烧录完成后，需要给DP5主板彻底断电一次
+>烧录完成后，需要给D5主板彻底断电一次

@@ -25,7 +25,7 @@ sudo apt-get install usbutils
 
 `OpenMoko, Inc. stm32h743xx`属于**USB固件**是你的下位机刷了正确的**USB**固件才会显示，如果**刷错固件**或者**未刷固件**则**不会显示设备**或者**显示其他设备**。
 
-`OpenMoko, Inc. Geschwister Schneider CAN adapter` 属于**CAN固件**是你的下位机刷了**CAN固件或者CAN桥接固件和接了UTOC**才会显示，如果**刷错固件**或者**未刷固件**则**不会显示设备**或者**显示其他设备**。
+`OpenMoko, Inc. Geschwister Schneider CAN adapter` 属于**CAN固件**是你的下位机刷了**CAN桥接固件或者接了UTOC**才会显示，如果**刷错固件**或者**未刷固件**则**不会显示设备**或者**显示其他设备**。
 
 * CAN设备使用**并联其他的CAN设备**，而不是接到上位机则**只有一个CAN设备**
 
