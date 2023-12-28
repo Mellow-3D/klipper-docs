@@ -18,3 +18,4 @@
 * [15. 引脚分布](/board/fly_pi_v2/pinout.md)
 * [16. 原理图](/board/fly_pi_v2/schematic.md)
 * [17. 三维模型](/board/fly_pi_v2/3dmodel.md)
+* [18. I2C使用教程](/board/fly_pi_v2/i2c.md)

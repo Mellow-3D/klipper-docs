@@ -40,6 +40,7 @@
 
 * `Bootloader offset`为引导偏移此项需要查看主板对应主板提供的参数来选择！！！
 * 如果选择`No bootloader`则代表使用**DFU**烧录固件，会把原来**使用内存卡烧录引导**删除！！！
+* 如果需要内存卡烧录请选择`128K`，请注意其他主控请按对应固件配置来选择！！！
 * 选择`Clock Reference`此项需要查看主板对应主板提供的参数来选择！！！
 
 ![make7](../images/firmware/make7.png ":no-zooom")
