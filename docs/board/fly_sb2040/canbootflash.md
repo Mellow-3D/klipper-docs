@@ -7,9 +7,21 @@
 > [!TIP]
 > 固件配置方法只是参考，需要按主板提供配置来配置
 
-**固件配置方法**
+编译好的固件下载链接
 
-![MAKE](../../images/adv/make.gif)
+1M的CANBOOT
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_SB2040_CANBOOT_1M.uf2
+```
+
+500K的CANBOOT
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_SB2040_CANBOOT_500K.uf2
+```
+
+**固件配置方法**
 
 1. 进入CanBoot
 

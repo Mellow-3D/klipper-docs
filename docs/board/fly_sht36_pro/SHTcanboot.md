@@ -6,6 +6,12 @@ CanBoot是一种为ARM Cortex-M mcu设计的引导加载程序。这个引导加
 
 Klipper已支持CanBoot，通过CANBUS直接烧录固件。使用CanBoot后为SHT36/42板更新klipper固件无需再连接USB线，保持现有的CAN连接的情况下可直接烧录固件，能够更便捷、高效的更新CAN工具板的固件。
 
+* 这里提供编译好的CANBOOT速率是1M，其他速率请自行配置
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_ERCF_CANBOOT_1M.uf2
+```
+
 ## 1. 下载CanBoot
 
 1. 进入SSH终端
