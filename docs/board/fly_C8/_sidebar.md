@@ -22,3 +22,4 @@
     * [18. 原理图](/board/fly_C8/schematic.md)
     * [19. 三维模型](/board/fly_C8/3dmodel.md)
     * [20. BL烧录](/board/fly_C8/bootloader.md)
+    * [21. 使用上位机的i2c](/board/fly_C8/i2c.md)
