@@ -1,9 +1,7 @@
 
 
 > [!TIP]
-> FLY-DP5 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
-
-# 固件编译
+> FLY-D5 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
@@ -13,9 +11,7 @@
 4. **请确保你的上位机可以正常搜索到设备**
 5. **请确保以上注意事项都做到，否则无法进行下一步**
 
-
-
-# 1. 固件配置
+## 1. 编译Klipper固件
 
 **固件配置方法**
 
@@ -38,26 +34,56 @@ rm -rf .config && make menuconfig
 
 <!-- tabs:end -->
 
-* 执行命令下方命令来编译固件
+**下面以 *USB固件为例*   介绍如何编译Klipper固件：**
 
-```
-make clean
-make -j4
-```
+1. 请先阅读[连接到SSH](/board/fly_pi/to_ssh "点击即可跳转")文档
+2. 连接到SSH后输入```cd ~/klipper && make menuconfig```回车
+3. 现在应该出现了Klipper编译配置界面，**↑ ↓ 键**选择菜单，**回车键**确认或进入菜单
+4. 进入菜单**Micro-controller Architecture**
 
+<img src="../../images/firmware/make1.png" alt="make1" style="zoom:90%;" />
 
-# 2. BOOT按键
+9. 选择**STMicroelectronics STM32**回车
+
+<img src="../../images/firmware/make3.png" alt="make3" style="zoom:90%;" />
+
+9. 进入菜单**Processor model**，选择**STM32F072**回车
+
+![f407](../../images/boards/fly_d5/f072.jpg)
+
+9. **Bootloader offset** 设置为：**No bootloader**
+10. **Communication interface**是**USB (on PA11/PA12)**
+
+* 配置好后是这样的
+
+![f407](../../images/boards/fly_d5/f072_2.jpg)
+
+12. 按```Q```键，出现**Save configuration**，这时再按```Y```键
+
+* 现在应该保存了配置并且退出到了命令行界面
+
+13. 输入```make -j4```开始编译，时间有点长
+
+* 出现下图则编译成功
+
+![make5](../../images/firmware/make5.png)
+
+## 2. 进入烧录模式
 
 >[!TIP]
 >
->方法一：按住boot，将DP5主板接到上位机，然后松开BOOT
+> **左边为Boot键，右边为reset复位键**
 >
->方法二：按住boot，再按下reset按键，松开reset按键，最后松开boot按键
+>方法一：主板完全断电后，按住Boot，使用TypeC线将D5主板接到上位机，然后松开Boot
+>
+>方法二：使用TypeC线连接到上位机后，按住Boot，再按下reset按键，松开reset按键，最后松开Boot按键
+
+
+
 
 ![boot](../../images/boards/fly_d5/boot.png)
 
-
-# 3. Klipper上位机烧录
+## 3. Klipper上位机烧录
 
 1. 安装烧录工具
 
@@ -67,29 +93,29 @@ make -j4
 sudo apt install dfu-util -y
 ```
 
-2. 使用Type-C数据线将DP5主板连接到Linux设备
-3. 执行下面的命令查看是否连接成功。
+2. 执行下面的命令查看是否连接成功。
 
 ```bash
 lsusb
 ```
 
-* 如果没有DFU设备请重新执行第二步
+* 如果没有DFU设备请尝试重新进入**烧录模式**
 
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
 4. 烧录固件(烧录前确保已经编译过固件)
 
 ```bash
-cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
+cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 ```
 
-5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
-
-![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
-
-6. 出现上图内容则烧录成功
+5. 出现下图箭头处所示内容``File downloaded successfully``则烧录成功
 
 >[!Warning]
 >
->烧录完成后，需要给D5主板彻底断电一次
+>烧录完成后，需要给D5主板彻底断电一次。
+>
+>红色箭头所指这一行之后的报错请忽略！！！
+
+![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
+

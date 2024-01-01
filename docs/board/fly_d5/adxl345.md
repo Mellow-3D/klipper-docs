@@ -15,7 +15,7 @@ cs_pin: PB12
 spi_bus: spi2 # 硬spi，硬spi和软spi二选一。默认硬spi
 # spi_software_mosi_pin: PB15 # 软spi，硬spi和软spi二选一。默认硬spi
 # spi_software_miso_pin: PB14
-# spi_software_sclk_pin: PB12
+# spi_software_sclk_pin: PB13
 
 [resonance_tester]
 accel_chip: adxl345

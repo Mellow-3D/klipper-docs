@@ -46,7 +46,7 @@
 ## 1.3 FLY-π V2
 
 
-<img src="../../images/boards/fly_pi_v2/interface.jpg" alt="interface" style="zoom:60%;" />
+<img src="../../images/boards/fly_pi_v2/interface.jpg" alt="interface" style="zoom:100%;" />
 
 <img src="../../images/boards/fly_pi_v2/size.jpg" alt="size" style="zoom:67%;" />
 

@@ -12,3 +12,7 @@
     * [8. 桥接CAN](/board/fly_d5/canbridge.md)
     * [9. 原理图](/board/fly_d5/schematic.md)
     * [10. 三维模型](/board/fly_d5/3dmodel.md) 
+    * **调试**
+    * [11. Klipper常见错误](/board/fly_d5/klippererro.md)
+    * [12. Klipper配置检查](/board/fly_d5/klippercheck.md)
+    * [13. 打印前的准备](/board/fly_d5/Super8prepare.md)
