@@ -3,7 +3,14 @@
 > [!TIP]
 > 如果是重新烧录系统，请提前备份好配置文件。
 
+> [!Warning]
+> 请确定下载系统镜像对应上位机！！！！！
 
+> [!Warning]
+> 请确定下载系统镜像对应上位机！！！！！
+
+> [!Warning]
+> 请确定下载系统镜像对应上位机！！！！！
 
 > [!Warning]
 > SD卡注意事项:
@@ -12,9 +19,9 @@
 >
 > TF 卡的传输速度必须为 class10 级或 class10 级以上，建议使用闪迪等品牌的 TF 卡
 
-<!-- tabs:start -->
 
-#### **FLY-Gemini & FLY-π & FLY-Pi-V2 & FLY-C8**
+
+# 适用于**FLY-Gemini & FLY-π & FLY-Pi-V2 & FLY-C8**
 
 1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
 
@@ -34,7 +41,10 @@
     * 初始账号：`root`
     * 初始密码：`1234`
     
-#### **FLY-π Lite2 & FLY-MINI-Pad**
+
+
+
+# 适用于**FLY-Lite2 & FLY-MINI-Pad**
 
 1. FLYOS 系统镜像基于[Armbian](https://www.armbian.com/)
 
@@ -54,7 +64,9 @@
     * 初始账号：`root`
     * 初始密码：`1234`
 
-#### **FLY-π Lite**
+
+
+# 适用于**FLY-π Lite**
 
 1. Lite系统镜像基于[debian 11](https://www.debian.org/)
 

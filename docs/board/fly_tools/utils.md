@@ -8,3 +8,9 @@
 * 支持生成温度曲线图
 * 支持生成频率响应图，也可以送现有文件直接生成图表 
 
+**如果提示缺少`matplotlib`需要执行下方指令**
+
+```
+~/klippy-env/bin/pip install -v matplotlib
+```
+

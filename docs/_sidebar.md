@@ -94,7 +94,7 @@
 - **入门**
   - [开始](README)
   - [系统镜像](/introduction/system.md)
-  - [连接到 SSH](/introduction/conntossh.md)
+  - [FLY上位机连接 SSH](/introduction/conntossh.md)
   - [固件烧录](/introduction/firmware.md)
   - [ID搜索与配置](/introduction/id.md)
   
