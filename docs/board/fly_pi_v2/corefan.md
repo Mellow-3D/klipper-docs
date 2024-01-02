@@ -6,7 +6,7 @@
 
 FLY-π v2 板载了一个5V的可控接口，用于主控散热，接线方法如下图：
 
-> 接线图制作中，敬请期待
+![corefan](../../images/boards/fly_pi_v2/corefan.jpg)
 
 ## 2. 风扇配置
 
