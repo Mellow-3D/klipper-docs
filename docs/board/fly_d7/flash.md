@@ -1,7 +1,7 @@
 
 
 > [!TIP]
-> FLY-D5 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
+> FLY-D7 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
@@ -82,7 +82,7 @@ rm -rf .config && make menuconfig
 
 
 
-![boot](../../images/boards/fly_d5/boot.png)
+
 
 ## 3. Klipper上位机烧录
 
@@ -114,7 +114,7 @@ cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 
 >[!Warning]
 >
->烧录完成后，需要给D5主板彻底断电一次。
+>烧录完成后，需要给D7主板彻底断电一次。
 >
 >红色箭头所指这一行之后的报错请忽略！！！
 
