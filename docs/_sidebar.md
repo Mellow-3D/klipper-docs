@@ -31,7 +31,7 @@
   - FLY C8系列
     - [FLY-C8](/board/fly_C8/README.md)
     
-  - FLY D5系列
+  - FLY D系列
     - [FLY-D5](/board/fly_d5/README.md)
     - [FLY-DP5](/board/fly_dp5/README.md)
     
