@@ -1,7 +1,9 @@
 # 4. 固件烧录
 
 > [!TIP]
-> RRF36预装了CanBoot，支持CAN烧录，烧录前请使用CAN连接到上位机；也可以使用Type-C数据线连到到上位机，使用USB烧录
+> SHT36预装了CanBoot，支持CAN烧录，烧录前请使用CAN连接到上位机；也可以使用Type-C数据线连到到上位机，使用USB烧录
+>
+> 请注意 canboot默认速率为500k
 
 ## 4.1 编译固件
 
@@ -48,12 +50,12 @@ make -j4
  使用usb烧录的固件最后出现**Creating uf2 file out/klipper.bin**则编译成功
 
 > [!TIP]
-> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHTV2与上位机通过CAN总线连接
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHT与上位机通过CAN总线连接
 
 > [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
-> 由于SHTV2预装了CanBoot，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+> 由于SHT预装了CanBoot，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
 
 首先进入ssh，然后依次输入以下指令
 
@@ -71,7 +73,7 @@ cd CanBoot
 python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
-下图中高亮部分``365f54003b9d``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+下图中高亮部分``365f54003b9d``就是这块SHT板的uuid，这个uuid每块板子都不一样。同一块SHT板烧录固件后uuid是不会变的
 
 ![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
 

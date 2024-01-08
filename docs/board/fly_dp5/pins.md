@@ -4,4 +4,4 @@
 
 ## 1. FLY-D5 pin脚说明
 
-![pin](../../images/boards/fly_dP5/PIN.png)
+![pin](../../images/boards/fly_dp5/pins.png)
