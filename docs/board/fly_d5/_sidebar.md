@@ -16,3 +16,5 @@
     * [11. Klipper常见错误](/board/fly_d5/klippererro.md)
     * [12. Klipper配置检查](/board/fly_d5/klippercheck.md)
     * [13. 打印前的准备](/board/fly_d5/Super8prepare.md)
+    * **扩展**
+    * [14. 固件更新](/board/fly_d5/katapult.md)
