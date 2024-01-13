@@ -34,6 +34,7 @@
   - FLY D系列
     - [FLY-D5](/board/fly_d5/README.md)
     - [FLY-DP5](/board/fly_dp5/README.md)
+    - [FLY-D7](/board/fly_d7/README.md)
     
   - FLY 9 轴主板
     - [FLY-9 轴](/board/fly_9/) 

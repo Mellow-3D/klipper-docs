@@ -1,12 +1,12 @@
 # 4. 固件烧录
 
 > [!TIP]
-> ERCF自带**CANBOOT**无需在编译烧录**CANBOOT**
+> ERCF出厂已自带**CANBOOT**无需在编译烧录**CANBOOT**
 
 > [!TIP]
 > 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
 
-编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
+编译固件前请确保 [连接到SSH](/board/fly_pi/to_ssh?id=_2-%e8%bf%9c%e7%a8%8b%e8%bf%9e%e6%8e%a5 "点击即可跳转")，Klipper固件编译请查看：[编译Klipper固件](/introduction/firmware?id=%e7%bc%96%e8%af%91klipper%e5%9b%ba%e4%bb%b6 "点击即可跳转")
 
 确保使用最新的klipper！！！
 
@@ -43,9 +43,36 @@
      使用**CanBoot**烧录时最后出现**Creating hex file out/klipper.bin**则编译成功
     
   
+  **1. 查找uuid**
+  
+  > [!WARNING]
+  >
+  > 查找uuid之前，请确保您已经插上120Ω跳线帽
+  
+  ![120](../../images/boards/fly_ercf/120.png)
+  
+  首先进入ssh，然后依次输入以下指令
+  
+  ```
+  cd
+  git clone https://github.com/Arksine/CanBoot
+  ```
+  
+  ![1](../../images/boards/fly_sht_v2/1.png)
+  
+  ```bash
+  python3 ~/klipper/lib/canboot/flash_can.py -q
+  ```
+  
+  请注意，搜索到id后是显示``Application: Canboot``前面才是工具板id
+  
+  下图中高亮部分``365f54003b9d``就是这块SHTv2板的uuid，这个uuid每块板子都不一样。同一块SHTv2板烧录固件后uuid是不会变的
+  
+  <img src="../../images/boards/fly_sht_v2/uuid.png" alt="uuid" style="zoom:80%;" />
   
   
-  **使用CanBoot烧录固件**
+  
+  **2. 使用CanBoot烧录固件**
   
   将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
   
