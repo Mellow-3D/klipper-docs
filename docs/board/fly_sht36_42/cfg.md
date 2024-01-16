@@ -21,8 +21,11 @@ sensor_mcu: sht36
 pin: sht36:PB10
 
 ## FAN1
-[fan_generic fan]
+[heater_fan hotend_fan]
 pin: sht36:PB11
+heater: extruder
+heater_temp: 50.0
+
 
 ## X限位设置
 [stepper_x]

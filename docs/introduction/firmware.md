@@ -67,19 +67,19 @@
 
 ## 烧录固件到主板
 
-使用MobaXterm_Personal左边文件目录找到`klipper`选择然后找到`out`打开
+使用**MobaXterm_Personal**左边文件目录找到`klipper`选择然后找到`out`打开
 
 并且将`klipper.bin`复制到SD卡
 
 ![firmware](../images/firmware/firmware.png ":no-zooom")
 
-1. 准备一张SD卡(<32GB)，并且格式化成FAT32格式
+1. 准备一张SD卡**不得大于32G！！！**，并且格式化成FAT32格式
 2. 将klipper.bin复制到SD卡，并且重命名为```firmware.bin```
 
 ![putty](../images/firmware/flash1.png ":no-zooom")
 
 3. 主板断电，将SD卡插入主板
 4. 给主板上电，等待10秒左右
-5. 取下SD卡，插入电脑。如果SD卡中的看firmware.bin消失，出现```FLY.CUR```就是烧录成功了
+5. 取下SD卡，插入电脑。如果SD卡中的看**firmware.bin**消失，出现```FLY.CUR```就是烧录成功了
 
 ![putty](../images/firmware/flash2.png ":no-zooom")

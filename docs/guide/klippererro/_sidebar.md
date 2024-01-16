@@ -1,5 +1,4 @@
   * **Klipper常见情况**
-  * [搜索设备](/guide/klippererro/problem.md)
   * [常见报错](/guide/klippererro/ERROR.md)
   * [TMC驱动报错](/guide/klippererro/TMC.md)
   * [无限位注意事项](/guide/klippererro/Position.md)
