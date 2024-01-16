@@ -78,6 +78,16 @@ OpenMoko, Inc. Geschwister Schneider CAN adapter
 * **CAN速率是否一致**，请确保**上位机的CAN速率**与**下位机固件的CAN速率要一致**
 * 请在**完全断电**情况下，**CAN的H与L的阻值应该在60**左右
 
+**非FLY上位机的，请注意检查自己烧录的镜像内核是否支持CAN，如果不支持则无法使用CAN。检测方法如下。**
+
+在SSH输入：
+
+```bash
+sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持CAN"
+```
+
+输入以上指令后，如果您的内核支持CAN就会返回：``您的内核支持CAN``；如果不支持就会返回：``您的内核不支持CAN``。
+
 ### 上位机CAN速率查询方法
 
 上位机连接SSH后输入`sudo ip -details link show can0`回车输入你上位机的密码，将**输出以下内容**
