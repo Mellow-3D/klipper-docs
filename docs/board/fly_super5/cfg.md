@@ -372,7 +372,7 @@ aliases:
 #contrast: 63                    # 对比度
 #encoder_pins: ^EXP2_5, ^!EXP2_3 # 旋转编码器（旋钮开关）引脚设置
 #click_pin: ^!EXP1_2             # 旋转编码器（旋钮开关）确认按键的引脚设置
-#spi_bus: spi3                   # 必须指定SPI通道
+#spi_bus: spi1a                   # 必须指定SPI通道
 #--------------------------------------------------------------------
 #####适用于FLY Mini12864
 #[neopixel fly_mini12864]
