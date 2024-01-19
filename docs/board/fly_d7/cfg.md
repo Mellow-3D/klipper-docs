@@ -54,7 +54,7 @@ position_max: 200
 #position_max: 200
 
 #[stepper_z3]
-#step_pin: PA12
+#step_pin: PC12
 #dir_pin:  !PB5
 #enable_pin: !PC11
 #microsteps: 16
