@@ -9,7 +9,7 @@
   * [6. 启动前的系统配置](/board/fly_gemini_v2/flyos_install.md)
   * [7. 连接SSH](/board/fly_gemini_v2/to_ssh.md)
   * [8. 固件编译烧录](/board/fly_gemini_v2/flash.md)
-  * [9. 读取主板ID](/board/fly_gemini_v2/readid.md)
+  * [9. 读取主板ID](/board/fly_gemini_v2/usbid.md)
   * [10. Gemini主板接线](/board/fly_gemini_v2/wiring.md)
   * [11.printer参考配置](/board/fly_gemini_v2/cfg.md)
   * [12. Pin脚分布](/board/fly_gemini_v2/pins.md)
