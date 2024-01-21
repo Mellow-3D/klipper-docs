@@ -1,7 +1,7 @@
 
 
 > [!TIP]
-> FLY-D5 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
+> FLY-D7 需在断电状态下按住 **BOOT键** 后，使用Type-C数据线连接上位机，才能烧录固件
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
@@ -137,8 +137,11 @@
 
 
 
+## 3. 固件烧录
 
-## 3. Klipper上位机烧录
+<!-- tabs:start -->
+
+### **使用Klipper上位机烧录**
 
 1. 安装烧录工具
 
@@ -173,4 +176,29 @@ cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 >红色箭头所指这一行之后的报错请忽略！！！
 
 ![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
+
+### **使用电脑烧录**
+
+1. 下载烧录工具：[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip '点击即可下载')
+2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
+3. 将前面编译好的固件(klipper.bin)复制到电脑任意目录
+4. 使用Type-C数据线将D5主板连接到电脑，请确保连接前已安装短接跳线
+5. STM32CubeProgrammer中选择USB模式，并刷新，连接
+
+![2](../../images/boards/fly_sht36_42/2.png ":no-zooom")
+
+6. 如果没有出现错误弹窗则连接成功
+7. 打开固件文件，在弹窗中选择前面编译完成的固件文件(klipper.bin)。
+
+![3](../../images/boards/fly_sht36_42/3.png ":no-zooom")
+
+8. 确认页面有内容，不是00000。然后点击**Download**
+
+![4](../../images/boards/fly_sht36_42/4.png ":no-zooom")
+
+9. 出现图中就是烧录成功
+
+![5](../../images/boards/fly_sht36_42/5.png ":no-zooom")
+
+<!-- tabs:end -->
 
