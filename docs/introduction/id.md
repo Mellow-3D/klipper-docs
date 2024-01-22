@@ -122,6 +122,19 @@ sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持
 sudo modprobe can && echo "您的内核支持CAN" || echo "您的内核不支持CAN"
 ```
 
+### 创建CAN配置
+
+```bash
+sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
+allow-hotplug can0
+iface can0 can static
+    bitrate 1000000
+    up ifconfig $IFACE txqueuelen 1024
+    pre-up ip link set can0 type can bitrate 1000000
+    pre-up ip link set can0 txqueuelen 1024
+EOF
+```
+
 # Klipper配置ID方法
 
 * 在**浏览器中输入上位机的IP**,然后打开配置找到并且打开`printer.cfg`
@@ -172,6 +185,7 @@ initial_WHITE: 0.0
 
 * 如果需要调用工具板的端口则需要在`pin:PB0`的`pin:`后面添加其他MCU名字，下方是示例配置
 * 这样写就可以告诉klipper，我需要调用sht36的PB0端口，其他配置同理
+* 请注意配置无法重复使用，如果想使用工具板连接挤出机就需要将主板的配置屏蔽或者修改
 
 ```
 [neopixel sb_leds]

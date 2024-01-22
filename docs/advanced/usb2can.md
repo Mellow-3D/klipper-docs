@@ -127,15 +127,12 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 * 其他配置请自行添加，这边只做简单简介
 
 ```cfg
-[mcu]                           # D5主板ID
-#serial: /dev/serial/by-id/usb-Klipper_stm32f072xb_************************
-### 查询usb固件id是：ls /dev/serial/by-id/
-### 把/dev/serial/by-id/usb-Klipper_stm32f072xb_************************替换查询到的id
+[mcu]
 canbus_uuid: 18b1d7c39ac3
 ### 查询can固件id是：~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ### can的id需要把serial替换成canbus_uuid: 后面添加id 
 
-[mcu SHT36]                     # SHT36主板ID
+[mcu SHT36]
 canbus_uuid: 53707ab04e74
 ```
 

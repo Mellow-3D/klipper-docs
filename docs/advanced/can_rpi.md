@@ -30,8 +30,10 @@ sudo apt update && sudo apt install nano wget -y
 sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
 allow-hotplug can0
 iface can0 can static
-    bitrate 500000
-    up ifconfig \$IFACE txqueuelen 1024
+    bitrate 1000000
+    up ifconfig $IFACE txqueuelen 1024
+    pre-up ip link set can0 type can bitrate 1000000
+    pre-up ip link set can0 txqueuelen 1024
 EOF
 ```
 
