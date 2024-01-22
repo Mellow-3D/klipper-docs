@@ -80,13 +80,14 @@
   - [FLY-SENSOR 扫描传感器](/board/fly_sensor/)
   - [BD-SENSOR 扫描传感器](/board/bd_sensor/)
   - [FLY-Halo WiFi智能圆屏](/board/fly_halo/)
+  - [CANBUS](/advanced/canbus.md)
   - [TAP](/advanced/TAP.md)
   - [7040 鼓风机](/advanced/7040.md)
   - [加速度计](/advanced/Accelerometer.md)
   - [USB 加速度计(ADXL345)](/advanced/usb_adxl.md)
   - [USB 加速度计(LIS2DW)](/advanced/usb_lis2dw.md)
   - [M2WE](/board/fly_m2we/)
-
+  
 - **屏幕类**
   * [LCD屏幕](/advanced/lcd.md)
   * [TFT屏幕](/advanced/tft.md)
