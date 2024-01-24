@@ -10,11 +10,12 @@
     * **进阶**
     * [7. 使用加速度计](/board/fly_d5/adxl345.md)
     * [8. 桥接CAN](/board/fly_d5/canbridge.md)
-    * [9. 原理图](/board/fly_d5/schematic.md)
-    * [10. 三维模型](/board/fly_d5/3dmodel.md) 
+    * [9. 愤怒的兔子V2接线](/board/fly_d5/d5_ercf2_wiring.md)
+    * [10. 原理图](/board/fly_d5/schematic.md)
+    * [11. 三维模型](/board/fly_d5/3dmodel.md) 
     * **调试**
-    * [11. Klipper常见错误](/board/fly_d5/klippererro.md)
-    * [12. Klipper配置检查](/board/fly_d5/klippercheck.md)
-    * [13. 打印前的准备](/board/fly_d5/Super8prepare.md)
+    * [12. Klipper常见错误](/board/fly_d5/klippererro.md)
+    * [13. Klipper配置检查](/board/fly_d5/klippercheck.md)
+    * [14. 打印前的准备](/board/fly_d5/Super8prepare.md)
     * **扩展**
-    * [14. 固件更新](/board/fly_d5/katapult.md)
+    * [15. 固件更新](/board/fly_d5/katapult.md)

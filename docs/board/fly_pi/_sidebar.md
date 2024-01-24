@@ -14,4 +14,5 @@
 * [13. CAN Hat的使用](/board/fly_pi/canhat.md)
 * [14. 三维模型](/board/fly_pi/3dmodel.md)
 * [15. 使用I2C](/board/fly_pi/i2c.md)
+* [16. 使用加速度计](/board/fly_pi/adxl345.md)
 

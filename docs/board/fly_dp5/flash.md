@@ -133,7 +133,7 @@
 >
 >方法二：使用TypeC线连接到上位机后，按住Boot，再按下reset按键，松开reset按键，最后松开Boot按键
 
-<img src="../../images/boards/fly_d7/boot.png" alt="boot" style="zoom:80%;" />
+<img src="../../images/boards/fly_dp5/boot.png" alt="boot" style="zoom:90%;" />
 
 
 
@@ -182,7 +182,7 @@ cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 1. 下载烧录工具：[STM32CubeProgrammer](https://cdn.mellow.klipper.cn/Utils/STM32CubeProgrammer.zip '点击即可下载')
 2. 解压烧录工具到任意目录，进入`STM32CubeProgrammer/bin`目录，双击打开`STM32CubeProgrammer.exe`
 3. 将前面编译好的固件(klipper.bin)复制到电脑任意目录
-4. 使用Type-C数据线将DP5主板连接到电脑，请确保连接前已安装短接跳线
+4. 使用Type-C数据线将DP5主板连接到电脑，请确认已经进入[烧录模式](/board/fly_dp5/flash?id=_2-进入烧录模式 "点击即可跳转")
 5. STM32CubeProgrammer中选择USB模式，并刷新，连接
 
 ![2](../../images/boards/fly_sht36_42/2.png ":no-zooom")
