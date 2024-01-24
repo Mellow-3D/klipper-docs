@@ -19,7 +19,7 @@
 **正在完善仅供参考**
 
 * FLY Pi刷好最新系统后需要在**编辑boot盘下的armbianEnv.txt文件**
-* 在**armbianEnv.txt**中找到**overlays=usbhost2 usbhost3 **并在在后面添加下方指令即可
+* 在**armbianEnv.txt**中找到**overlays=usbhost2 usbhost3**并在在后面添加下方指令即可
 
 ```
  uart1 uart2
