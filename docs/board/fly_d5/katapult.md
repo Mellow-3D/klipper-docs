@@ -2,9 +2,6 @@
 
 * **Katapult（以前称为 CanBoot）可用与固件烧录**
 * **本次教程主要用于固件更新，以后无需按着`BOOT`键进入DFU**
-* **请确保主板处于DFU状态下！！！！**
-* **请确保主板处于DFU状态下！！！！**
-* **请确保主板处于DFU状态下！！！！**
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
 
@@ -29,7 +26,7 @@ cd ~/katapult && git pull
 ## 1. 固件编译
 
 ```
-rm -rf .config && make menuconfig
+cd && cd ~/katapult && rm -rf .config && make clean && make menuconfig  && make
 ```
 
 **请按提供的参数配置**
@@ -70,11 +67,23 @@ ls /dev/serial/by-id/*
 
 出现`/dev/serial/by-id/usb-katapult_stm32f072xb_12345-if00`代表**烧录成功！！！**
 
-* 如果进不去DFU可以使用在编译好**katapult于klipper**固件后执行下方命令进行**烧录katapult**！！！
+### 2.1. 无法进去DFU烧录解决方法
+
+* 如果进不去DFU可以使用在编译好**katapult于klipper**固件后执行下方方法进行**烧录katapult**！！！
+* 将katapult.bin 替换klipper.bin
 
 ```
 sudo rm ~/klipper/out/klipper.bin && cp ~/katapult/out/katapult.bin ~/klipper/out/klipper.bin
 ```
+
+* 烧录固件
+* USB ID需要自己查询替换
+
+```
+make flash FLASH_DEVICE=/dev/serial/by-id/usb-klipper_stm32f072xb_12345-if00
+```
+
+
 
 ## 3. 烧录USB klipper固件
 

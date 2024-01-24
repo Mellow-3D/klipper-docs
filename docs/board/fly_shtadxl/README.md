@@ -38,9 +38,5 @@ FLY-SHT36-LIS3DH是广州镁伦电子科技有限公司针对3D打印机挤出�
 * 非FLY上位机请按 [配置上位机](/board/fly_sht_v2/piconfig "点击即可跳转") 文档配置好上位机
 * 使用CanBoot请查看 [CanBoot使用](/advanced/canboot.md "点击即可跳转")
 
-----
 
-## 1.3 FLY-SHT36-LIS3DH
-
-![sht36pro](../../images/boards/fly_rrf/2.png)
 

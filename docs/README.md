@@ -6,6 +6,12 @@
 > [!TIP]
 > If you have any questions, please give me feedback in time
 
+> [!TIP]
+>
+> 请禁用浏览器对本网站的自动广告拦截功能，否则某些图片可能无法正常显示。
+>
+> Please disable your browser's automatic ad blocking for this website, otherwise some images may not display properly.
+
 * 文档内容基于以下环境
 * 系统：FLY定制版Armbian
 * 硬件：FLY系列主板
