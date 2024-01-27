@@ -10,7 +10,7 @@
 - 安装风扇时，请注意风扇的电流和电压规格，以免造成损坏。
 - 请注意UART1已经默认启用无需在配置
 - **树莓派可以使用全部接口！！！**
-- **树莓派系统要求在2024年1月1号之后！！！建议备份配置重新安装系统！！！**
+- **注意：树莓派使用的系统内核版本必须大于`5.17.x`, 执行命令`uname -r`查看内核版本**
 
 
 
@@ -109,7 +109,7 @@ FLY-TFT-V2是一款基于st7796的TFT液晶屏，支持电容触摸与电阻触�
     ```bash
     git clone https://github.com/kluoyun/FLY-TFT.git
     cd FLY-TFT-V2
-    shou ./scripts/install.sh
+    sudo ./scripts/install.sh
     ```
 
 ### 5. 使用

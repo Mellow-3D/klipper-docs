@@ -1,3 +1,3 @@
 # 1. 引脚分布
 
-![pins](../../images/boards/fly_c8/pins.jpg)
+![pins](../../images/boards/fly_c8/pins.png)
