@@ -1,6 +1,6 @@
-# 香橙派使用说明
+# Orange-Pi-CM4使用说明
 
-本次教程使用FLY CM4扩展版与**香橙派CM4**为例
+本次教程使用FLY CM4扩展版与**Orange-Pi-CM4**为例
 
 ## 注意事项：
 
@@ -8,17 +8,26 @@
 - 避免在潮湿或灰尘环境中使用扩展板。
 - 安装屏幕时，请注意不要带电拔插注意屏线方向，以免造成损坏。
 - 安装风扇时，请注意风扇的电流和电压规格，以免造成损坏。
-- **香橙派只能使用中间的RS232接口，FAN口！！！！**
-- **香橙派因系统问题无法使用FPC屏幕扩展接口！！！**
+- **Orange-Pi-只能使用中间的RS232接口，FAN口！！！！**
+- **Orange-Pi-因系统问题无法使用FPC屏幕扩展接口！！！**
 
 
 
 ## 串口使用方法
 
-使用下方命令打开系统设置找到**uart2-m0**与**pwm11-m1**打开然后重启系统
+使用下方命令打开系统设置选择**System**然后选择**Hardware**找到**uart2-m0**与**pwm11-m1**打开然后重启系统
 
 ```
 sudo orangepi-config
+```
+
+配置方法
+
+```
+[mcu] 
+serial: /dev/ttyS2
+baud: 250000
+restart_method:command
 ```
 
 
@@ -33,7 +42,7 @@ sudo orangepi-config
 [mcu host]       
 serial: /tmp/klipper_host_mcu 
 
-[temperature_sensor orangepi]
+[temperature_sensor Orange-Pi]
 sensor_type: temperature_host
 
 [temperature_fan core_fan] 

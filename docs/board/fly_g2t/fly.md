@@ -1,29 +1,28 @@
-# FLY Pi使用说明
+# FLY Pi V2使用说明
 
 本次教程使用**FLY Pi V2**为例
 
 ## 注意事项：
 
+- **FLY上位机只能使用带40PIN GPIO扩展的上位机，FLY-π与双子座无法使用！！**
+- **FLY上位机只能使用中间的RS232接口，FAN口与FPC屏幕接口！！！**
+- **至少需要将系统更新到FLY OS V3.3.2！！！**
 - 确保在安装扩展板前，上位机已经关闭电源。
 - 避免在潮湿或灰尘环境中使用扩展板。
 - 安装屏幕时，请注意不要带电拔插注意屏线方向，以免造成损坏。
 - 安装风扇时，请注意风扇的电流和电压规格，以免造成损坏。
-- **FLY上位机只能使用中间的RS232接口，FAN口与FPC屏幕接口！！！**
-- **FLY上位机只能使用带40PIN GPIO扩展的上位机，双子座无法使用！！**
-- **如果需要使用FPC屏幕接口需要将系统更新到FLY OS V3.3.2！！！**
 
 
 
 ## 串口使用方法
 
-**正在完善仅供参考**
+* FLY上位机刷好最新系统后需要访问**上位机的IP+:9999**
 
-* FLY Pi刷好最新系统后需要在**编辑boot盘下的armbianEnv.txt文件**
-* 在**armbianEnv.txt**中找到**overlays=usbhost2 usbhost3**并在在后面添加下方指令即可
+在系统设置里面找到
 
-```
- uart1 uart2
-```
+![uart](../../images/boards/fly_g2t/uart.png)
+
+选择**UART1**并且保存重启
 
 配置方法
 
@@ -40,9 +39,9 @@ restart_method:command
 
 **正在作图**
 
-## FAN使用方法
 
-**正在完善仅供参考**
+
+## FAN使用方法
 
 ```
 [mcu host]         
@@ -52,7 +51,7 @@ serial: /tmp/klipper_host_mcu
 sensor_type: temperature_host
 
 [temperature_fan core_fan]      # 上位机散热风扇
-pin: host:gpiochip1/gpio3                   # 上位机风扇pin脚
+pin: host:gpiochip1/gpio102                   # 上位机风扇pin脚
 max_power: 1.0
 sensor_type: temperature_host   # 设置为上位机主控温度
 control:watermark                  # 控制方式
