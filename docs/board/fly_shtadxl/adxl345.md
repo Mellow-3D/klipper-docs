@@ -11,15 +11,16 @@
 #                       LIS3DH加速度计配置（需要时启用即可）
 #####################################################################
 ## 此版本用不了LIS3DH加速度计
-[adxl345]
+[lis3dh]
 cs_pin: SHT36:gpio9
 spi_software_sclk_pin: SHT36:gpio10
 spi_software_mosi_pin: SHT36:gpio11
 spi_software_miso_pin: SHT36:gpio12
-#--------------------------------------------------------------------
+
 [resonance_tester]
-accel_chip: adxl345         # 加速度芯片型号
-probe_points: 150,150,10    # 坐标配置为热床的中间
+accel_chip: lis3dh
+probe_points:
+    125, 125, 20  #此处设置为你进行共振测量时喷头所处坐标
 ```
 
 > [!TIP]
