@@ -4,4 +4,4 @@
 
 ## 1. FLY-D7 pin脚说明
 
-![pin](../../images/boards/fly_d7/pin.png)
+正在更新
