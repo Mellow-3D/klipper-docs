@@ -8,6 +8,8 @@
 
 ![hdmi](../../images/boards/fly_cm4/hdmi.jpg)
 
+![hdmi](../../images/boards/fly_cm4/hdmi.png)
+
 ### **TFT屏幕配置方法**
 
 **配置方法正在制作**
