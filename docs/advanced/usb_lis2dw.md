@@ -48,16 +48,14 @@ cd ~./klipper && git pull
 
 ## 3. 固件烧录
 
-1. 查看是否连接到USB加速度计的BOOT烧录模式
-
-   按住USB加速度计的BOOT键，然后将usb连接到上位机
+1. 按住USB加速度计的BOOT键，然后将usb连接到上位机
 
    ![flash](../images/adv/accele/LIS2DW/flash.png)
 
    ```bash
    lsusb
    ```
-
+   
    执行上面的命令查看是否有 ``ID 2e8a:0003 Raspberry Pi RP2 Boot``这行，如没有请检查USB线(连接前记得按住BOOT键)
 
 ![config](../images/boards/fly_sb2040/lsusb.png ":no-zooom")

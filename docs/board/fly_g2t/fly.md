@@ -73,4 +73,6 @@ min_speed: 0.3                    # 最小转速，为满功率运转时的30%
 
 ### 接线方法
 
-**正在作图**
+![tft](../../images/boards/fly_g2t/TFTV2.png)
+
+![tft](../../images/boards/fly_g2t/TFT.png)
