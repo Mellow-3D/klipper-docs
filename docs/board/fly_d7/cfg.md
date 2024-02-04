@@ -145,7 +145,7 @@ max_z_accel: 100
 #stealthchop_threshold: 999999
 
 #[tmc2209 extruder]
-#uart_pin: PA10
+#uart_pin: PC10
 #run_current: 0.600
 #stealthchop_threshold: 999999
 
@@ -194,7 +194,7 @@ max_z_accel: 100
 #stealthchop_threshold: 999999
 
 #[tmc5160 extruder]
-#cs_pin: PA10
+#cs_pin: PC10
 #spi_bus: spi1
 #run_current: 0.800
 #stealthchop_threshold: 999999
