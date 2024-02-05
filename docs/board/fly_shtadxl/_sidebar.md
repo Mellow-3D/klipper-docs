@@ -11,3 +11,4 @@
   * [9. 加速度计](/board/fly_shtadxl/adxl345.md)
   * [10. CanBoot](/board/fly_shtadxl/canboot.md)
   * [11. 相关链接](/board/fly_shtadxl/link.md)
+  * [12. 原理图](/board/fly_shtadxl/schematic.md)
