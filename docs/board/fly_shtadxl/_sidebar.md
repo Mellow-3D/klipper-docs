@@ -4,7 +4,7 @@
   * [2. FLY-fly_shtadxl接线](/board/fly_shtadxl/wiring.md)
   * [3. 非FLY上位机配置](/board/fly_shtadxl/piconfig.md)
   * [4. 固件编译和烧录](/board/fly_shtadxl/flash.md)
-  * [5. uuid读取](/board/fly_shtadxl/uuid.md "点击即可跳转")
+  * [5. uuid读取](/board/fly_shtadxl/uuid.md)
   * [6. 引脚分布](/board/fly_shtadxl/pins.md)
   * [7. printer参考配置](/board/fly_shtadxl/cfg.md)
   * [8. 桥接CAN](/board/fly_shtadxl/canbridge.md)
