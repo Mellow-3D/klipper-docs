@@ -1,7 +1,7 @@
 * FLY-SB2040 v3
 
   * [1. 产品简介](/board/fly_sb2040_v3/README.md)
-  * [2. 拨码选择](/board/fly_sb2040_v3/sb2040line.md)
+  * [2. 拨码选择](/board/fly_sb2040_v3/DIP_switch.md)
   * [3. 固件编译和烧录](/board/fly_sb2040_v3/flash.md)
   * [4. Id读取](/board/fly_sb2040_v3/uuid.md)
   * [5. 引脚分布](/board/fly_sb2040_v3/pins.md)
