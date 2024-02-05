@@ -45,7 +45,7 @@ restart_method:command
 
 ### 接线方法
 
-**正在作图**
+![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
 
 ## FAN使用方法
 
@@ -74,7 +74,7 @@ min_speed: 0.3                    #最小转速，为满功率运转时的30%
 
 ### 接线方法
 
-**正在作图**
+![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
 
 ## 屏幕使用方法
 

@@ -2,8 +2,8 @@
 
 > [!WARNING]
 >
-> 如果不使用UART功能，请务必在下图中插入两个跳线帽，否则主板不能正常使用！！！
+> 由于图片分辨率太高，在网页上浏览无法看清，请将鼠标光标放在接线图上方，单击右键，将 **图片另存为** 到桌面再查看！
 
-<img src="../../images/boards/fly_d7/jumper_uart.png" alt="jumper_uart" style="zoom:80%;" />
+<img src="../../images/boards/fly_d7/save.png" alt="save" style="zoom:90%;" />
 
-**其余接线图正在制作中，敬请期待**
+![d7_wiring](../../images/boards/fly_d7/d7_wiring.png)
