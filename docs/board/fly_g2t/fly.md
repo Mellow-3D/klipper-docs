@@ -37,7 +37,7 @@ restart_method:command
 
 ### 接线方法
 
-**正在作图**
+![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
 
 
 
