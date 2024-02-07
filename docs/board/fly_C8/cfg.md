@@ -294,7 +294,7 @@ stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请
 [heater_bed]
 heater_pin: PB0              # 热床接口
 sensor_type: Generic 3950    # 热床传感器类型
-sensor_pin: PC4              # 热床传感器接口
+sensor_pin: PC5              # 热床传感器接口
 max_power: 1.0               # 热床功率
 min_temp: -235               # 热床最小温度
 max_temp: 500                # 热床最大温度
