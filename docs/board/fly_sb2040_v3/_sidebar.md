@@ -5,10 +5,12 @@
   * [3. 固件编译和烧录](/board/fly_sb2040_v3/flash.md)
   * [4. Id读取](/board/fly_sb2040_v3/uuid.md)
   * [5. 引脚分布](/board/fly_sb2040_v3/pins.md)
-  * [6. printer参考配置](/board/fly_sb2040_v3/cfg.md)
-  * [7. 加速度计](/board/fly_sb2040_v3/adxl345.md)
-  * [8. 相关链接](/board/fly_sb2040_v3/link.md)
-  * [9. 原理图](/board/fly_sb2040/schematic.md)
-  * [10. 三维模型](/board/fly_sb2040_v3/3dmodel.md)
+  * [6. 工具板接线](/board/fly_sb2040_v3/adxl345.md)
+  * [7. 8P拨码使用](/board/fly_sb2040_v3/max31865.md)
+  * [8. printer参考配置](/board/fly_sb2040_v3/cfg.md)
+  * [9. 加速度计](/board/fly_sb2040_v3/adxl345.md)
+  * [10. 相关链接](/board/fly_sb2040_v3/link.md)
+  * [11. 原理图](/board/fly_sb2040/schematic.md)
+  * [12. 三维模型](/board/fly_sb2040_v3/3dmodel.md)
 
  

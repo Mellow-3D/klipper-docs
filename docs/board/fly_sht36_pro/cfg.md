@@ -57,6 +57,17 @@ accel_per_hz: 75
 hz_per_sec: 1 
 
 #####################################################################
+#      spi
+#####################################################################
+## If you don't use 31865, you need to turn on this configuration
+## 如果不使用31865需要打开此配置
+[output_pin cs]
+pin: SHT36PRO:gpio1
+pwm: False
+# static_value: 0
+value: 1
+shutdown_value: 1
+#####################################################################
 #      Extruder thermal sensitivity
 #####################################################################
 ## Please select the type of thermocouple you want to use.
