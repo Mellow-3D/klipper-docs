@@ -6,6 +6,9 @@ ls /dev/serial/by-path/*
 
 ![id](../../images/boards/fly_utor/id.png)
 
+* 请注意使用FLY UTOR会输出三个id，但是如果你过另外一个UTOR系统会记录下来导致搜索时候出现多个id
+* 请确保id后面带有`-port0`否则无法使用
+
 # 参考配置
 
 ```
