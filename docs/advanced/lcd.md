@@ -124,7 +124,7 @@ dtoverlay=vc4-kms-v3d
 修改
 
 ```bash
-dtoverlay=vc4-kms-v3d,f
+dtoverlay=vc4-fkms-v3d,f
 ```
 
 保存并且退出
