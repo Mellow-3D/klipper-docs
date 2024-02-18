@@ -1,4 +1,12 @@
-# **搜索id**
+# **接线与搜索id**
+
+* 请注意串口工具板一定要与上位机共地否则无法连接！！！！
+
+# 接线
+
+![uart](../../images/boards/fly_utor/uart.png)
+
+* 上位机连接ssh后输入下方指令搜索设备！！
 
 ```
 ls /dev/serial/by-path/*
