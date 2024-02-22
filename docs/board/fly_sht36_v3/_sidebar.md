@@ -6,7 +6,7 @@
   * [4. Id读取](/board/fly_sht36_v3/uuid.md)
   * [5. 引脚分布](/board/fly_sht36_v3/pins.md)
   * [6. 工具板接线](/board/fly_sht36_v3/wiring.md)
-  * [7. 8P拨码使用](/board/fly_sht36_v3/max31865.md)
+  * [7. 6P拨码使用](/board/fly_sht36_v3/max31865.md)
   * [8. printer参考配置](/board/fly_sht36_v3/cfg.md)
   * [9. 加速度计](/board/fly_sht36_v3/adxl345.md)
   * [10. 原理图](/board/fly_sht36_v3/schematic.md)
