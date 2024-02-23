@@ -210,9 +210,9 @@ initial_WHITE: 0.0
 # stepper: stepper_x
 # cs_pin: SHT36PRO:gpio17
 # spi_bus: spi1
-# #spi_software_sclk_pin: SHT36PRO:gpio10
-# #spi_software_mosi_pin: SHT36PRO:gpio11
-# #spi_software_miso_pin: SHT36PRO:gpio12
+# #spi_software_sclk_pin: SHT36PRO:gpio18
+# #spi_software_mosi_pin: SHT36PRO:gpio19
+# #spi_software_miso_pin: SHT36PRO:gpio16
 
 ```
 
