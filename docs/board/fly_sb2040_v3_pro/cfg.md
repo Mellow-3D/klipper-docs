@@ -65,10 +65,11 @@ chain_count: 16
 # Number of LEDs
 # 灯珠数量
 color_order: GRB
-initial_RED: 0.4    #66CCFF
+initial_RED: 0.4
 initial_GREEN: 0.8
 initial_BLUE: 1
 initial_WHITE: 0.0
+#66CCFF
 
 #####################################################################
 # 	 Extruder thermal sensitivity
