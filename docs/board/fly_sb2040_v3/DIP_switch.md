@@ -10,7 +10,7 @@
 
 ![DIP](../../images/boards/fly_sb2040_v3/DIP.png)
 
-## KLIPPER使用UART连接时候请将拨码拨到
+## KLIPPER使用RS232连接时候请将拨码拨到
 
 **两个拨码都往上拨**
 
