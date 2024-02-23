@@ -93,7 +93,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 
 
 
-### ****UART 固件配置****
+### ****RS232 固件配置****
 
 >[!TIP]
 >请确保工具板拨码拨到正确位置
@@ -160,3 +160,8 @@ lsusb
 
 <!-- tabs:end -->
 
+### 确定固件烧录完成
+
+* 如果固件刷完后此led会在微亮情况下变成常亮
+
+![LED](../../images/boards/fly_sb2040_v3/led.png ":no-zooom")
