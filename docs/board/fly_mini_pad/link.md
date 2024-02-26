@@ -1,4 +1,12 @@
 # 相关链接
 
-FLY lite2与FLY TFT35的模型: [Printables](https://www.printables.com/model/527626-fly-pi-lite2-fly-tft35-holder-for-voron"点击即可跳转")
+MINI PAD外壳
+
+```
+https://www.printables.com/model/625823-fly_mini_pad-ordinary-shell
+```
+
+```
+https://www.printables.com/model/625819-fly_mini_pad-luxury-edition-shell
+```
 
