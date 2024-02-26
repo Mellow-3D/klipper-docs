@@ -22,9 +22,6 @@
 
 ## 2. 固件编译
 
-> [!TIP]
-> 出厂自带固件无需在烧录
-
 * USB连接如下图配置
 
 ![config](../images/adv/accele/config-usb.png)
