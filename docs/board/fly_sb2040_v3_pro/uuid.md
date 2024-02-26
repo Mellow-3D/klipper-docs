@@ -1,5 +1,9 @@
 # CAN id读取
 
+**两个拨码都往下拨后将CAN线接上去**
+
+![DIP](../../images/boards/fly_sb2040_v3/DIP.png)
+
 > [!TIP]
 > [搜索CANuuid](/introduction/id?id=搜索can固件id "点击即可跳转")方法
 
@@ -35,6 +39,10 @@ uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 # 串口ID读取
 
 * 请注意串口工具板一定要与上位机共地否则无法连接！！！！
+
+**两个拨码都往上拨后将CAN线接上去**
+
+![DIP](../../images/boards/fly_sb2040_v3/UART.png)
 
 # 接线
 
