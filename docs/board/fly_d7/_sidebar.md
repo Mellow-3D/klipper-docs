@@ -10,7 +10,7 @@
     * **进阶**
     * [8. 桥接CAN](/board/fly_d7/canbridge.md)
     * [9. 原理图](/board/fly_d7/schematic.md)
-    * [10. 三维模型](/board/fly_d7/3dmodel.md) 
+    * [10. 3D模型](/board/fly_d7/3dmodel.md) 
     * **调试**
     * [11. Klipper常见错误](/board/fly_d7/klippererro.md)
     * [12. Klipper配置检查](/board/fly_d7/klippercheck.md)
