@@ -12,7 +12,7 @@
     * [8. 桥接CAN](/board/fly_d5/canbridge.md)
     * [9. 愤怒的兔子V2接线](/board/fly_d5/d5_ercf2_wiring.md)
     * [10. 原理图](/board/fly_d5/schematic.md)
-    * [11. 三维模型](/board/fly_d5/3dmodel.md) 
+    * [11. 3D模型](/board/fly_d5/3dmodel.md) 
     * **调试**
     * [12. Klipper常见错误](/board/fly_d5/klippererro.md)
     * [13. Klipper配置检查](/board/fly_d5/klippercheck.md)
