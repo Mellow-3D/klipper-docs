@@ -4,4 +4,3 @@
 https://cdn.mellow.klipper.cn/STEP/FLY-SB2040V2_Mainbody.step
 ```
 
-

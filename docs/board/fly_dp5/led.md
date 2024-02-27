@@ -24,3 +24,37 @@ git clone https://github.com/julianschill/klipper-led_effect.git
 cd klipper-led_effect
 ./install-led_effect.sh
 ```
+
+## 参考配置
+
+```
+[neopixel TP_led]
+pin: PB7
+chain_count: 25
+# Number of LEDs
+# 灯珠数量
+color_order: GRB
+initial_RED: 0.4    
+initial_GREEN: 0.8
+initial_BLUE: 1
+initial_WHITE: 0.0
+#66CCFF 
+
+[led_effect sb_nozzle_cooling]
+autostart:              false
+frame_rate:             24
+leds:
+    neopixel:TP_led (9,10)
+layers:
+        breathing  3 1 top (0.0, 0.0, 1.0, 0.1)
+
+[led_effect rainbow]
+leds:
+    neopixel:TP_led
+autostart:                          true
+frame_rate:                         24
+layers:
+    gradient  0.3  1 add (0.3, 0.0, 0.0),(0.0, 0.3, 0.0),(0.0, 0.0, 0.3)
+
+```
+

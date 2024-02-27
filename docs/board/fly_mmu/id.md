@@ -1,8 +1,10 @@
-搜索id前面请确保已经连接XT3.0线
+# ID读取
+
+搜索id前面请确保已经连接CAN线
 
 ![xt](../../images/boards/fly_mmu/xt.jpg)
 
-# CAN id读取
+# CAN ID读取
 
 > [!TIP]
 > [搜索CANuuid](/introduction/id?id=搜索can固件id "点击即可跳转")方法
@@ -27,23 +29,28 @@
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * MMU板上的120Ω终端电阻跳线帽是否插上
+
 * 是否正确供电，在刷固件时可以只使用TypeC接口供电
 * 您的镜像内核是否支持CAN
 * 固件是否编译正确
 * 具体方法可以参考[ID搜索与配置](https://mellow.klipper.cn/#/introduction/id?id=搜索can固件id)
 
+## 与UTOC的接线
+
+![DIP](../../images/boards/fly_sb2040_v3_pro/utoc.png)
+
 ## CAN参考配置
 
 ```bash
 [mcu mmu]
-uuid: b7c79ec3f948     #将读取到的uuid填写到此处
+canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```
 
 # 串口ID读取
 
 * 请注意串口工具板一定要与上位机共地否则无法连接！！！！
 
-# 接线
+## 与UTOR接线
 
 ![uart](../../images/boards/fly_utor/uart.png)
 

@@ -209,10 +209,9 @@ initial_WHITE: 0.0
 # #sample_period: 0.000400
 # stepper: stepper_x
 # cs_pin: SHT36PRO:gpio17
-# spi_bus: spi1
-# #spi_software_sclk_pin: SHT36PRO:gpio18
-# #spi_software_mosi_pin: SHT36PRO:gpio19
-# #spi_software_miso_pin: SHT36PRO:gpio16
+# spi_software_sclk_pin: SHT36PRO:gpio18
+# spi_software_mosi_pin: SHT36PRO:gpio19
+# spi_software_miso_pin: SHT36PRO:gpio16
 
 ```
 
