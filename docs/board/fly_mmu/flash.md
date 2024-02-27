@@ -4,7 +4,7 @@
 
 # 编译Klipper固件
 
-请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
+请使用**MobaXterm_Personal**等**SSH工具**连接通过**网络**到您的上位机，并且需要确定以下几点
 
 1. **请确保上位机安装好了Klipper服务**
 2. **请确保登录的用户必须是安装好Klipper的用户**
@@ -74,8 +74,6 @@
 
 >[!TIP]
 >请确保工具板拨码拨到正确位置
-
-
 
 ![UART](../../images/boards/fly_mmu/uart.png)
 
@@ -177,6 +175,6 @@ cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 
 ### 确定固件烧录完成
 
-* 如果固件刷完后此led会在微亮情况下变成常亮
+* 如果固件刷完后此led会变成常亮
 
 ![LED](../../images/boards/fly_mmu/led.png ":no-zooom")

@@ -4,7 +4,7 @@
 
 # 编译Klipper固件
 
-请使用**MobaXterm_Personal**等**SSH工具**连接通过**WIFI**到您的上位机，并且需要确定以下几点
+请使用**MobaXterm_Personal**等**SSH工具**连接通过**网络**到您的上位机，并且需要确定以下几点
 
 1. **请确保上位机安装好了Klipper服务**
 2. **请确保登录的用户必须是安装好Klipper的用户**
@@ -71,6 +71,10 @@
 > 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040-V3与上位机通过CAN总线连接
 
 > [!TIP]
+>
+> 请先看[Id读取](http://mellow.klipper.cn/#/board/fly_sb2040_v3_pro/uuid?id=can-id读取)接好线与上位机连接后在搜索CAN ID
+
+> [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
 首先进入ssh，然后依次输入以下指令
@@ -93,12 +97,12 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 
 
 
-### ****UART 固件配置****
+### ****RS232固件配置****
 
 >[!TIP]
 >请确保工具板拨码拨到正确位置
 >
->请注意因为UART连接无法使用直接通过命令行重新进入SSH，只能通过USB更新固件
+>请注意因为RS232连接无法使用直接通过命令行重新进入SSH，只能通过USB更新固件
 
 ![UART](../../images/boards/fly_sb2040_v3/flash_uart.png)
 

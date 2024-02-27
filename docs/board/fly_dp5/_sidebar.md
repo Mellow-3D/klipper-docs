@@ -13,3 +13,4 @@
     * [8. 原理图](/board/fly_dp5/schematic.md)
     * [9. 三维模型](/board/fly_dp5/3dmodel.md) 
     * [10. 驱动LED](/board/fly_dp5/led.md) 
+    * [11. 驱动LED配置方法](/board/fly_dp5/LED_Effect.md) 

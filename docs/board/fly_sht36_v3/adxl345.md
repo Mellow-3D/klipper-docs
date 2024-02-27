@@ -46,7 +46,7 @@ sudo apt install python3-numpy python3-matplotlib libatlas-base-dev
 
 请注意，根据 CPU 的性能，可能需要*很多*时间，最多 10-20 分钟。请耐心等待完成 安装。在某些情况下，如果主板的 RAM 太少 安装可能会失败。
 
-## 9.2 测试
+## 测试
 
 修改配置并保存重启后，在控制台输入指令：
 
@@ -82,7 +82,7 @@ accel_per_hz: 50  # 默认值为75
 probe_points: ...
 ```
 
-## 9.3 使用
+## 使用
 
 > [!TIP]
 > klipper支持自动校准，在校准开始前记得全部归位
