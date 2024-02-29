@@ -160,18 +160,7 @@ probe_points: ...
 ![ACCE](../images/adv/accele/acc5.png ":no-zooom")
 
 * 校准过程可能会比较长，请耐心等待
-
-## 6. USBadxl 3d模型
-
->[!WARNING]
->
->本地浏览器渲染模型较慢，建议将模型下载到本地计算机查看
-
-```3dmodel
-https://cdn.mellow.klipper.cn/STEP/Fly-usb_adxl.step
-```
-
-## 7. 噪音问题
+## 6. 噪音问题
 
 >[!Warning]
 >
@@ -199,3 +188,17 @@ git checkout 43ce7c0b9ad4f30277c10b086b86a0937dbfebbc
 ```
 git checkout master
 ```
+
+
+## 7. USBadxl 3d模型
+
+>[!WARNING]
+>
+>本地浏览器渲染模型较慢，建议将模型下载到本地计算机查看
+
+
+
+```3dmodel
+https://cdn.mellow.klipper.cn/STEP/Fly-usb_adxl.step
+```
+
