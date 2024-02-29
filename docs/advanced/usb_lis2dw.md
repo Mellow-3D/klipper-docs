@@ -170,3 +170,32 @@ probe_points: ...
 ```3dmodel
 https://cdn.mellow.klipper.cn/STEP/Fly-usb_adxl.step
 ```
+
+## 7. 噪音问题
+
+>[!Warning]
+>
+>klipper版本从v0.12.0-47-g3f845019开始，2d加速度计噪声测量值变大
+
+* 修改前
+
+![2d](../images/adv/accele/LIS2DW/2.png)
+
+* 修改后
+
+![2d](../images/adv/accele/LIS2DW/1.png)
+
+* 可以修改Klipper版本解决此问题，请注意执行后需要等5分钟后重启Klipper
+* 因为版本差异过大需要重新主板固件
+
+```
+git checkout 43ce7c0b9ad4f30277c10b086b86a0937dbfebbc
+```
+
+* 测试完成后可以则可以将Klipper改回去
+* 因版本差异过大，更改完klipper后需要重新编译并且烧录固件
+* 可以使用下方命令在将版本改回去
+
+```
+git checkout master
+```
