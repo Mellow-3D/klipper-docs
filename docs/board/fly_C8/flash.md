@@ -29,8 +29,7 @@
 编译固件前请确保 [连接到SSH](/board/fly_gemini/host/FLY_π_ssh.md "点击即可跳转")
 
 ```
-cd klipper
-rm -rf .config && make menuconfig
+cd && cd klipper && rm -rf .config && make menuconfig
 ```
 
 <!-- tabs:start -->
@@ -50,11 +49,10 @@ rm -rf .config && make menuconfig
 
 <!-- tabs:end -->
 
-* 编译固件
+* 配置完后输入`Q`与`Y`退出并且执行下方命令编译固件
 
 ```
-make clean
-make -j4
+make clean && make -j4
 ```
 
 
