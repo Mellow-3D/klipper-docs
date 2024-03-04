@@ -85,6 +85,8 @@ Github地址:[FLY-TFT](https://github.com/kluoyun/FLY-TFT)
 
 FLY-TFT-V2是一款基于st7796的TFT液晶屏，支持电容触摸与电阻触摸两种，分辨率320x480，使用SPI接口
 
+* 需要自行安装[KlipperScreen](https://klipperscreen.readthedocs.io/en/latest/Installation/)
+
 ### 2. 系统安装
 
 > 注意：树莓派使用的系统内核版本必须大于`5.17.x`, 执行命令`uname -r`查看内核版本
