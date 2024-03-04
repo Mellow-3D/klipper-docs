@@ -2,6 +2,7 @@
   * [常见报错](/guide/klippererro/ERROR.md)
   * [TMC驱动报错](/guide/klippererro/TMC.md)
   * [无限位注意事项](/guide/klippererro/Position.md)
+  * [关于CAN掉线处理方法](/guide/klippererro/can.md)
   * **FLY系统常见问题**
   * [系统时区修改](/guide/klippererro/timedatectl.md)
   * [判断FLY上位机是否有启动](/guide/klippererro/FLYPI.md)

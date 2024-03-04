@@ -16,7 +16,7 @@
     * **进阶**
     * [13. 拨码开关的使用](/board/fly_gemini_v3/dip.md)
     * [14. 4轴扩展板](/board/fly_gemini_v3/extend.md)
-    * [15. CAN Hat的使用](/board/fly_gemini_v3/canbridge.md)
+    * [15. CAN桥接](/board/fly_gemini_v3/canbridge.md)
     * [16. 屏幕的使用](/board/fly_gemini_v3/screen.md)
     * [17. 主控散热风扇](/board/fly_gemini_v3/corefan.md)
     * [18. 加速度计的使用](/advanced/Accelerometer)
