@@ -14,4 +14,4 @@
     * [9. 三维模型](/board/fly_dp5/3dmodel.md) 
     * [10. 驱动LED](/board/fly_dp5/led.md) 
     * [11. 驱动LED配置方法](/board/fly_dp5/LED_Effect.md) 
-    * [12. malin固件下载](/board/fly_dp5/malin.md) 
+    * [12. Marlin固件下载](/board/fly_dp5/malin.md) 
