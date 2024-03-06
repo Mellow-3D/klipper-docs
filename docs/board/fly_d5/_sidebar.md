@@ -19,4 +19,4 @@
     * [14. 打印前的准备](/board/fly_d5/Super8prepare.md)
     * **扩展**
     * [15. 通过katapult更新固件](/board/fly_d5/katapult.md)
-    * [16. malin固件](/board/fly_d5/malin.md)
+    * [16. Marlin固件](/board/fly_d5/malin.md)
