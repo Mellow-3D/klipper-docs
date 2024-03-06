@@ -3,6 +3,8 @@
 > [!Warning]
 >
 > 烧录固件之前确保已完成[上位机连接ssh](introduction/conntossh.md "点击即可跳转")文档
+>
+> SB2040 PRO V3预先安装了katapult固件并且使用CAN连接，速率为1M
 
 # 编译Klipper固件
 

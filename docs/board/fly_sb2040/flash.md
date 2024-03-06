@@ -6,7 +6,7 @@
 ## 编译固件
 
 > [!TIP]
-> CanBoot固件默认500k，建议重新编译并且烧录1M的Canboot
+> CanBoot固件默认1M
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -17,8 +17,7 @@
 1. 修改klipper编译配置
 
     ```bash
-    cd klipper
-    rm -rf .config && make menuconfig
+    cd && cd ~/klipper && rm -rf .config && make menuconfig
     ```
     
 
@@ -59,7 +58,7 @@ make -j4
 2. 烧录
    
     ```bash
-    cd ~/klipper/
+    cd && cd ~/klipper/
     make flash FLASH_DEVICE=2e8a:0003
     ```
     

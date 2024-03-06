@@ -18,4 +18,5 @@
     * [13. Klipper配置检查](/board/fly_d5/klippercheck.md)
     * [14. 打印前的准备](/board/fly_d5/Super8prepare.md)
     * **扩展**
-    * [15. 固件更新](/board/fly_d5/katapult.md)
+    * [15. 通过katapult更新固件](/board/fly_d5/katapult.md)
+    * [16. malin固件](/board/fly_d5/malin.md)

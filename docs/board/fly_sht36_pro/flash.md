@@ -6,7 +6,7 @@
 ## 4.1 编译固件
 
 > [!TIP]
-> CanBoot固件默认500k
+> CanBoot固件默认1M
 
 编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
 
@@ -17,8 +17,7 @@
 1. 修改klipper编译配置
 
     ```bash
-    cd klipper
-    rm -rf .config && make menuconfig
+    cd && cd ~/klipper && rm -rf .config && make menuconfig
     ```
     
 
@@ -35,8 +34,7 @@
 编译
     
 ```bash
-    make clean
-    make -j4
+make clean && make -j4
 ```
 
  使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
@@ -52,17 +50,15 @@
 首先进入ssh，然后依次输入以下指令
     
 ```
-    cd
-    git clone https://github.com/Arksine/CanBoot
+cd && git clone https://github.com/Arksine/katapult
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
-    
 ```bash
-    python3 ~/klipper/lib/canboot/flash_can.py -q
+cd && cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
-下图中高亮部分``365f54003b9d``就是这块SHT36 -Pro板的uuid，这个uuid每块板子都不一样。同一块HT36 -Pro板烧录固件后uuid是不会变的
+下图中高亮部分``365f54003b9d``就是这块SHT36 -Pro板的uuid，这个uuid每块板子都不一样。同一块SHT36 -Pro板烧录固件后uuid是不会变的
 
 <img src="../../images/boards/fly_sht_v2/uuid.png" alt="uuid" style="zoom:70%;" />
     
@@ -119,7 +115,7 @@
 
 ## 4.2 检查
 
-如果成功进入Canboot，下图中的LED灯会以一定的频率闪烁
+如果成功进入klipper，下图中的LED灯会常亮
 
-![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")
+![](../../images/boards/fly_sht36_pro/led.png)
 

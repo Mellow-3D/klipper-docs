@@ -1,7 +1,7 @@
 # 4. 固件编译和烧录
 
 > [!TIP]
-> 为测试，SB2040-Pro发货前会烧录klipper固件，上电后所有引脚全部拉高，使用前请重新烧录
+> 为测试，SB2040-Pro发货前会烧录katapult固件
 
 ## 1. 编译固件
 
@@ -17,8 +17,7 @@
 1. 修改klipper编译配置
 
    ```bash
-   cd klipper
-   rm -rf .config && make menuconfig
+   cd && cd ~/klipper && rm -rf .config && make menuconfig
    ```
    
    配置如下图
@@ -38,8 +37,7 @@
 编译
 
 ```bash
-make clean
-make -j4
+make clean && make -j4
 ```
 
  使用canboot烧录的固件最后出现**Creating hex file out/klipper.bin**则编译成功
@@ -53,8 +51,7 @@ make -j4
 首先进入ssh，然后依次输入以下指令
 
 ```
-cd
-git clone https://github.com/Arksine/CanBoot
+cd && git clone https://github.com/Arksine/katapult
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
