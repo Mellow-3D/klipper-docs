@@ -18,7 +18,7 @@ Mellow Fly-DP5是广州镁伦电子科技有限公司Fly3D主板研发团队推�
 
 * MCU: STM32F072RBT6
 
-* 固件:  Klipper
+* 固件:  Klipper/malin
 
 * 支持12-24V直流供电，供电更稳定，省去降压模块
 

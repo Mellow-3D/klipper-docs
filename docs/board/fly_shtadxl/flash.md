@@ -16,10 +16,9 @@
 1. 确保使用最新的klipper
 
     ```bash
-    # 进入klipper目录并拉取最新的klipper
-    cd ~/klipper && git pull
+    cd && cd ~/klipper
     ```
-
+    
 2. 修改klipper编译配置
 
     ```bash
@@ -55,19 +54,21 @@ make -j4
 > [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
-> 由于SHT预装了CanBoot，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+> [!TIP]
+>
+> 由于SHT预装了katapult，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+
+> [!TIP]
+>
+> 请注意 canboot默认速率为500k
 
 首先进入ssh，然后依次输入以下指令
 
 ```
-git clone https://github.com/Arksine/CanBoot
+cd && git clone https://github.com/Arksine/katapult
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
-
-```
-cd CanBoot
-```
 
 ```bash
 python3 ~/klipper/lib/canboot/flash_can.py -q
@@ -100,7 +101,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 如果成功进入Canboot，下图中的LED灯会以一定的频率闪烁
 
-![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")
+![config](../../images/boards/fly_rrf/led.png ":no-zooom")
 
 ​    
 
@@ -123,7 +124,7 @@ make -j4
 
 **使用Type-C烧录固件**
 
-![rst](../../images/boards/fly_sht36_pro/rst.png)
+![rst](../../images/boards/fly_rrf/boot.png ":no-zooom")
 
 **短接跳线插上type-c到电脑会弹出RPI-RP2**
 
@@ -135,5 +136,7 @@ make -j4
 
 <!-- tabs:end -->
 
+### 刷完固件后 这个led会常亮
 
+![config](../../images/boards/fly_rrf/led.png ":no-zooom")
 

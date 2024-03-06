@@ -1,7 +1,7 @@
 # 4. 固件烧录
 
 > [!TIP]
-> ERCF出厂已自带**CANBOOT**无需在编译烧录**CANBOOT**
+> ERCF出厂已自带**CANBOOT**无需在编译烧录**CANBOOT** ,CAN速率为1M
 
 > [!TIP]
 > 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
@@ -130,12 +130,6 @@ lsusb
 ![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
 
 <!-- tabs:end -->
-
-
-
-
-
-----
 
 
 

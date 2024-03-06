@@ -20,8 +20,7 @@
 1. 修改klipper编译配置
 
     ```bash
-    cd klipper
-    rm -rf .config && make menuconfig
+    cd && cd ~/klipper && rm -rf .config && make menuconfig
     ```
 
 > [!TIP]
@@ -50,8 +49,7 @@
 3. 编译
 
     ```bash
-    make clean
-    make -j4
+    make clean && make -j4
     ```
     
      最后出现**Creating hex file out/klipper.bin**则编译成功
@@ -64,19 +62,18 @@
 > [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
 
-> 由于SHTV2预装了CanBoot，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+> 由于SHTV2预装了katapult，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
 
 首先进入ssh，然后依次输入以下指令
 
 ```
-cd
-git clone https://github.com/Arksine/CanBoot
+cd && git clone https://github.com/Arksine/katapult
 ```
 
 ![1](../../images/boards/fly_sht_v2/1.png)
 
 ```bash
-python3 ~/klipper/lib/canboot/flash_can.py -q
+cd && cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
 请注意，搜索到id后是显示``Application: Canboot``前面才是工具板id
@@ -111,6 +108,12 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 ```
 
 如下图，出现``CAN Flash Success``则烧录成功
+
+如果需要更新固件可以在klipper连接起来下直接执行下方命令来更新sht36固件
+
+```bash
+python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
+```
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 

@@ -28,6 +28,8 @@
 >[!TIP]
 >请确保工具板拨码拨到正确位置
 >
+>SHT36 V3预先安装了katapult固件并且使用CAN连接，速率为1M
+>
 >**烧录时候请确保工具板已经正常连接到UTOC或者刷好桥接固件的工具板上**
 
 ![can](../../images/boards/fly_sb2040_v3/flash_can.png)
