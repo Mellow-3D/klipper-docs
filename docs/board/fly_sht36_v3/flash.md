@@ -74,7 +74,11 @@
 
 > [!TIP]
 >
-> 请先看[Id读取](http://mellow.klipper.cn/#/board/fly_sb2040_v3_pro/uuid?id=can-id读取)接好线与上位机连接后在搜索CAN ID
+> 请先看[Id读取](http://mellow.klipper.cn/#/board/fly_sb2040_v3_pro/uuid?id=can-id读取)接好线与上位机连接后在进行下一步
+
+> [!TIP]
+>
+> 请先确定好已经配置了上位机的[CAN](https://mellow.klipper.cn/#/introduction/id?id=搜索can固件id)在进行搜索id
 
 > [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录

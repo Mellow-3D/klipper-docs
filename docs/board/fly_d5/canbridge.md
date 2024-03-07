@@ -29,6 +29,10 @@ Klipper固件配置界面如下图。编译固件后，按照 [D5固件编译和
 > [!TIP]
 > 使用桥接CAN会有两个uuid，请注意区分主板id和CAN板id。在不连接CAN板的情况下读到的就是主板id。
 
+> [!TIP]
+>
+> 请先确定好已经配置了上位机的[CAN](https://mellow.klipper.cn/#/introduction/id?id=搜索can固件id)在进行搜索id
+
 ```bash
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ```

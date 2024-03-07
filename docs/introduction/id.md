@@ -38,6 +38,7 @@ sudo apt-get install usbutils
 * 接错线导致下位机进入短路保护模式，请注意建议将下位机的全部外设拆除限位，风扇，驱动等等！！！
 * 如果是STM32主控下位机处于DFU模式，请将DFU跳线去除后重新给下位机通电
 * 如果是RP2040主控下位机处于RP2 BOOT模式，请将BOOT跳线去除后重新给下位机通电
+* 系统问题导致显示不全，如果有`1d50:606f`则为can设备，如果有`1d50:614e`则为STM32主控设备
 
 # 搜索设备ID
 
@@ -66,6 +67,7 @@ ls /dev/serial/by-id/*
 * 请在完全断电情况下，将CAN的H与CAN的L接好使用万用表量CAN的H与L阻值
 * 如果两端120R跳线都接上阻值应该在60左右
 * 请确保UTOC或者CAN桥接固件的主板是已经连接到上位机，输入`lsusb`后有输出以下内容
+* 系统问题导致显示不全，如果有`1d50:606f`则为can设备
 
 ```
 OpenMoko, Inc. Geschwister Schneider CAN adapter
