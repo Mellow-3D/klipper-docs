@@ -11,5 +11,6 @@
   * [9. 加速度计](/board/fly_sb2040_v3/adxl345.md)
   * [10. 原理图](/board/fly_sb2040_v3/schematic.md)
   * [11. 三维模型](/board/fly_sb2040_v3/3dmodel.md)
+  * [12. CANBOOT下载](/board/fly_sb2040_v3_pro/canboot.md)
 
  

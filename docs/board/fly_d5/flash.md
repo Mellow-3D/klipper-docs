@@ -52,7 +52,7 @@
 
 * 配置好后是这样的
 
-![f407](../../images/boards/fly_d5/f072_2.jpg)
+![072](../../images/boards/fly_d5/usb.png)
 
 12. 按```Q```键，出现**Save configuration**，这时再按```Y```键
 
@@ -98,7 +98,7 @@
 
 10. 选中第一个选项，回车，即可展开所需的全部设置选项
 
-<img src="../../images/firmware/make11.png" alt="make11" style="zoom:80%;" />
+![f407](../../images/boards/fly_d5/f072.jpg)
 
 10. **Bootloader offset** 设置为：**No bootloader**
 11. **Communication interface**设置为**USB to CAN bus bridge (USB on PA11/PA12)**

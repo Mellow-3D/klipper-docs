@@ -11,20 +11,20 @@ Klipper已支持katapult，通过CANBUS直接烧录固件。使用katapult后为
 * 这里提供编译好的katapult速率是1M
 
 ```
-https://cdn.mellow.klipper.cn/BL/FLY_SB2040_CANBOOT_1M.uf2
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V3_SB2040V3_katapult_CAN_1M.uf2
 ```
 
 * 这里提供编译好的katapult速率是500K
 
 ```
-https://cdn.mellow.klipper.cn/BL/FLY_SB2040_CANBOOT_500K.uf2
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V3_SB2040V3_katapult_CAN_500K.uf2
 ```
 
 ## 使用Type-C烧录固件
 
 1. 按住SB2040的BOOT键，然后将usb连接到上位机
 
-![boot](../../images/boards/fly_sb2040/boot.png)
+![boot](../../images/boards/fly_sb2040_v3/boot.png)
 
 **短接跳线插上type-c到电脑会弹出RPI-RP2**
 
@@ -58,5 +58,5 @@ python3 ~/klipper/lib/canboot/flash_can.py -q
 > 如果找不到CAN ID，请检查：
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
-* FLY-SB2040板上的120Ω跳线是否插上
+* FLY-SB2040板上的120Ω拨码是否打开
 * 您的镜像内核是否支持CAN
