@@ -1,0 +1,60 @@
+# CanBoot
+
+什么是CanBoot？
+
+CanBoot是一种为ARM Cortex-M mcu设计的引导加载程序。这个引导加载程序最初是为CAN节点设计的，以便与Klipper一起使用。引导加载程序本身利用了Klipper的硬件抽象层，将内存占用最小化。除了CAN, CanBoot现在还支持USB和UART接口。目前支持lpc176x、stm32和rp2040三种mcu。CAN支持目前仅限于stm32 f系列和rp2040设备。
+
+Klipper已支持CanBoot，通过CANBUS直接烧录固件。使用CanBoot后为SHT36/42板更新klipper固件无需再连接USB线，保持现有的CAN连接的情况下可直接烧录固件，能够更便捷、高效的更新CAN工具板的固件。
+
+* 这里提供编译好的CANBOOT速率是1M
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V3_SB2040V3_katapult_CAN_1M.uf2
+```
+
+这里提供编译好的CANBOOT速率是500K
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V3_SB2040V3_katapult_CAN_500K.uf2
+```
+
+## 使用Type-C烧录固件
+
+1. 按住SHT36的BOOT键，然后将usb连接到上位机
+
+![boot](../../images/boards/fly_sht36_v3/boot.png)
+
+**短接跳线插上type-c到电脑会弹出RPI-RP2**
+
+**弹出RPI-RP2后不需要在短接rst！！！！！！！**
+
+![pri](../../images/boards/fly_sht36_pro/pri.png)
+
+**把canboot.uf2放进去，弹窗会关闭**
+
+## 查找uuid
+
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SHT36与上位机通过CAN总线连接
+
+> [!TIP]
+> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
+
+> 由于SHT36预装了CanBoot，支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+
+首先进入ssh，然后依次输入以下指令
+
+```bash
+python3 ~/klipper/lib/canboot/flash_can.py -q
+```
+
+下图中高亮部分``365f54003b9d``就是这块FLY-SHT36-PRO板的uuid，这个uuid每块板子都不一样。同一块SHT36板烧录固件后uuid是不会变的
+
+![config](../../images/boards/fly_sht_v2/uuid.png ":no-zooom")
+
+> [!TIP]
+> 如果找不到CAN ID，请检查：
+
+* 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
+* FLY-SHT36板上的120Ω跳线帽是否插上
+* 您的镜像内核是否支持CAN

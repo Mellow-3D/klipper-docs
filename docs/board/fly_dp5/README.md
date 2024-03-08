@@ -17,19 +17,12 @@ Mellow Fly-DP5是广州镁伦电子科技有限公司Fly3D主板研发团队推�
 ## 2. 产品参数
 
 * MCU: STM32F072RBT6
-
 * 固件:  Klipper/Marlin
-
 * 支持12-24V直流供电，供电更稳定，省去降压模块
-
 * 驱动工作模式支持：SPI、UART、STEP/DIR
-
 * 支持驱动：支持外置TMC5160Pro、TMC5160、TMC2209、TMC2225、TMC2226、TMC2208、TMC2130、A4988等
-
 * 拓展接口：BLTouch（Servos、Probe）、UART X1、12864 X1
-
 * 风扇: 两线可控风扇 X2 、并联风扇 X2 、常开风扇 X2
-
 * 温度传感器：2路 NTC 100K
-
+* 加热接口：2路可控接口支持10A
 * 支持机器结构：Cartesian、Delta、Kossel、Ultimaker、CoreXY

@@ -17,7 +17,7 @@
 1. 修改klipper编译配置
 
     ```bash
-    cd && cd ~/klipper && rm -rf .config && make menuconfig
+    cd ~/klipper && rm -rf .config && make menuconfig
     ```
     
 
@@ -55,7 +55,7 @@ cd && git clone https://github.com/Arksine/katapult
 
 ![1](../../images/boards/fly_sht_v2/1.png)
 ```bash
-cd && cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
+cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
 ```
 
 下图中高亮部分``365f54003b9d``就是这块SHT36 -Pro板的uuid，这个uuid每块板子都不一样。同一块SHT36 -Pro板烧录固件后uuid是不会变的
@@ -66,7 +66,7 @@ cd && cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
 1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
    
 ```bash
-    python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
+python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 ```
 
 2. 如下图，出现``CAN Flash Success``则烧录成功

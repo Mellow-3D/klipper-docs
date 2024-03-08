@@ -1,65 +1,32 @@
-# 编译固件
 
-> [!TIP]
-> 请注意刷完Canboot后需要快速短接下方电容，刷写Canboot不会覆盖Klipper！！
 
-<img src="../../images/boards/fly_sht_v2/canboot.png" alt="canboot" style="zoom:80%;" />
+# 下载固件
 
-编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
-
-这里只简要介绍固件编译参数
-
-> [!TIP]
-> 固件配置方法只是参考，需要按主板提供配置来配置
-
-**固件配置方法**
-
-![MAKE](../../images/adv/make.gif)
-
-1. 进入CanBoot
-
-    ```bash
-    cd ~/CanBoot
-    ```
-    
-2. 修改Canboot编译配置
-
-    ```bash
-    make menuconfig
-    ```
-
-# 固件编译
+编译固件前请确保 [连接到SSH](/introduction/conntossh "点击即可跳转")
 
 <!-- tabs:start -->
 
-
-
 ### **500k**
+
+500K的CANBOOT下载链接
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V2_072_CANBOOT_500K.bin
+```
 
 ![config](../../images/boards/fly_sht_v2/canboot2.png ":no-zooom")
 
-
-
-
-
 ### **1M**
+
+1M的CANBOOT下载链接
+
+```
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V2_072_CANBOOT_500K.bin
+```
 
 ![config](../../images/boards/fly_sht_v2/canboot1.png ":no-zooom")
 
 <!-- tabs:end -->
-
-3. 编译
-
-    ```bash
-    make clean
-    make -j4
-    ```
-    
-     最后出现**Creating bin file out/canboot.bin**则编译成功
-    
-    
-
-
 
 
 

@@ -31,5 +31,7 @@ Mellow Fly-D7是广州镁伦电子科技有限公司Fly3D主板研发团队推�
 
 * 温度传感器：3路 NTC 100K
 
+* 加热接口：3路可控接口支持10A
+
 * 支持机器结构：Cartesian、Delta、Kossel、Ultimaker、CoreXY
 
