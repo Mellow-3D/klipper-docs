@@ -1,6 +1,6 @@
 # 
 
-# ID读取
+# 4. ID读取
 
 >[!Warning]
 >
@@ -10,11 +10,13 @@
 >
 >搜索ID前确保拨码拨到正确位置！！！！
 
-# CAN ID读取
+<!-- tabs:start -->
 
-**can口旁边拨码朝下拨，中间拨码朝右拨**
+## ** CAN ID读取**
 
-![DIP](../../images/boards/fly_sht36_v3/DIP.png)
+* 请确认拨码在RS232模式下
+
+<img src="../../images/boards/fly_sht36_v3/can_mode.png" alt="can_mode" style="zoom:100%;" />
 
 > [!TIP]
 > [搜索CANuuid](/introduction/id?id=搜索can固件id "点击即可跳转")方法
@@ -22,9 +24,9 @@
 > [!TIP]
 > 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
 
-## 与UTOC连接
+与UTOC连接
 
-![DIP](../../images/boards/fly_sb2040_v3_pro/utoc.png)
+![utoc_wiring](../../images/boards/fly_sht36_v3/utoc_wiring.png)
 
 * 在SSH中输入下面的命令查找uuid
 * 如果你你工具板处于klipper固件下将显示`Application：klippper`
@@ -49,20 +51,24 @@
 * 您的镜像内核是否支持CAN
 * 固件是否编译正确
 
-## CANID参考配置
+CAN ID参考配置
 
 ```bash
 [mcu SHT36V3]
 canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```
 
-# 串口ID读取
+## ** RS232 ID读取**
 
 * 请注意串口工具板一定要与上位机共地否则无法连接！！！！
 
-## 与UTOR接线
+* 请确认拨码在RS232模式下
 
-![uart](../../images/boards/fly_utor/uart.png)
+![232_mode](../../images/boards/fly_sht36_v3/232_mode.png)
+
+* 与UTOR接线如下
+
+![utor_wiring](../../images/boards/fly_utor/utor_wiring.png)
 
 * 上位机连接ssh后输入下方指令搜索设备！！
 
@@ -75,7 +81,7 @@ ls /dev/serial/by-path/*
 * 请注意使用FLY UTOR会输出三个id，但是如果你过另外一个UTOR系统会记录下来导致搜索时候出现多个id
 * 请确保id后面带有`-port0`否则无法使用
 
-## RS232参考配置
+RS232参考配置
 
 ```
 [mcu SHT36V3]  # 工具主板序列号
@@ -85,4 +91,8 @@ serial: /dev/serial/by-path/platform-xhci-hcd.0.auto-usb-0:1.4.2:1.0-port0
 baud: 250000
 restart_method:command
 ```
+
+<!-- tabs:end -->
+
+
 
