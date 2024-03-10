@@ -43,11 +43,9 @@ baud: 250000
 restart_method:command
 ```
 
-### 接线方法
-
-![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
-
 ## FAN使用方法
+
+* 如果需要树莓派40PIN控制设备需要根据Klipper教程进行安装[RPi 微控制器](https://www.klipper3d.org/zh/RPi_microcontroller.html?h=rpi)
 
 添加配置
 
@@ -71,10 +69,6 @@ kick_start_time: 0.50
 max_speed: 0.8                   #最大转速，为满功率运转时的80%
 min_speed: 0.3                    #最小转速，为满功率运转时的30%
 ```
-
-### 接线方法
-
-![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
 
 ## 屏幕使用方法
 
@@ -129,12 +123,16 @@ FLY-TFT-V2是一款基于st7796的TFT液晶屏，支持电容触摸与电阻触�
     ```
 * 重启KlipperScreen即可
 
-### 5. 反馈
+### 6. 反馈
 
 > 我们在最新的MainsailOS系统上测试通过，如果有问题欢迎通过Github Issues反馈。
 
-### 接线方法
+### 屏幕接线
 
 ![tft](../../images/boards/fly_g2t/TFTV2.png)
 
 ![tft](../../images/boards/fly_g2t/TFT.png)
+
+## 接线方法
+
+![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
