@@ -52,7 +52,9 @@ canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 
 ## 与UTOR接线
 
-![uart](../../images/boards/fly_utor/uart.png)
+* 接线参考
+
+![uart](../../images/boards/fly_utor/utor_wiring.png)
 
 * 上位机连接ssh后输入下方指令搜索设备！！
 

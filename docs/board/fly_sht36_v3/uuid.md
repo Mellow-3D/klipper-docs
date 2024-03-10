@@ -12,9 +12,9 @@
 
 <!-- tabs:start -->
 
-## ** CAN ID读取**
+## **CAN ID读取**
 
-* 请确认拨码在RS232模式下
+* 请确认拨码在Klipper CAN模式下
 
 <img src="../../images/boards/fly_sht36_v3/can_mode.png" alt="can_mode" style="zoom:100%;" />
 
@@ -58,7 +58,7 @@ CAN ID参考配置
 canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```
 
-## ** RS232 ID读取**
+## **RS232 ID读取**
 
 * 请注意串口工具板一定要与上位机共地否则无法连接！！！！
 

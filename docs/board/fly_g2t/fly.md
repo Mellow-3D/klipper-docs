@@ -20,7 +20,7 @@
 
 在系统设置里面找到
 
-![uart](../../images/boards/fly_g2t/uart.png)
+![uart](../../images/boards/fly_g2t/RS232.png)
 
 选择**UART1**并且保存重启
 
@@ -34,10 +34,6 @@ restart_method:command
 ```
 
 
-
-### 接线方法
-
-![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
 
 
 
@@ -65,14 +61,14 @@ min_speed: 0.3                    # 最小转速，为满功率运转时的30%
 
 ```
 
-### 接线方法
-
-**正在作图**
-
 ## 屏幕使用方法
 
-### 接线方法
+### 屏幕安装
 
 ![tft](../../images/boards/fly_g2t/TFTV2.png)
 
 ![tft](../../images/boards/fly_g2t/TFT.png)
+
+## 接线方法
+
+![FLY_G2T_wiring](../../images/boards/fly_g2t/FLY_G2T_wiring.png)
