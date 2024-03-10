@@ -32,6 +32,8 @@
 
 <img src="../../images/boards/fly_c8/tmc_install.png" alt="tmc_install" style="zoom:80%;" />
 
+![sensorless](../../images/boards/fly_d5/sensorless.png)
+
 ### 5.3.3 步进电机接线
 
 在3D打印机中，最常用的是两相四线步进电机，其原理如图所示。鉴别步进电机线序有两种方法：

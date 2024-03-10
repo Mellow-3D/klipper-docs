@@ -1,4 +1,4 @@
-# 固件烧录
+# 3. 固件烧录
 
 > 烧录固件之前确保已完成[上位机连接ssh](introduction/conntossh.md "点击即可跳转")文档
 
@@ -103,7 +103,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 
 
 
-### ****RS232固件配置****
+### ****RS232 固件配置****
 
 >[!TIP]
 >请确保工具板拨码拨到正确位置

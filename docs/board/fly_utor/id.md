@@ -4,7 +4,7 @@
 
 # 接线
 
-![uart](../../images/boards/fly_utor/uart.png)
+![utor_wiring](../../images/boards/fly_utor/utor_wiring.png)
 
 * 上位机连接ssh后输入下方指令搜索设备！！
 
