@@ -7,7 +7,6 @@
   * [FLY_Confing使用](/board/fly_mini_pad/config.md)
   * [屏幕使用](/board/fly_mini_pad/screen.md)
   * [CAN配置](/board/fly_mini_pad/can.md)
-  * [使用加速度计](/board/fly_mini_pad/Accelerator.md)
   * [使用串口连接主板](/board/fly_mini_pad/uart.md)
   * [通过MINI-PAD连接其他Klipper机器](/board/fly_mini_pad/klipperscreen.md)
   * [电源接线](/board/fly_mini_pad/power.md)
