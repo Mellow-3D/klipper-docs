@@ -18,7 +18,7 @@ https://cdn.mellow.klipper.cn/BL/FLY_ERCF_CANBOOT_1M.uf2
 
 **短接跳线插上type-c到电脑会弹出RPI-RP2**
 
-**弹出RPI-RP2后不需要在短接rst！！！！！！！**
+**弹出RPI-RP2后不需要在短接BOOT！！！！！！！**
 
 ![pri](../../images/boards/fly_sht36_pro/pri.png)
 
