@@ -238,7 +238,6 @@ stealthchop_threshold: 500    # 静音阀值（如果不需要静音，请将数
 step_pin: PE2                       # 挤出电机方脉冲引脚
 dir_pin: PD5                        # 挤出电机方向引脚设置
 enable_pin: !PD6                    # 挤出电机方使能引脚设置
-rotation_distance: 22.6789511       # 步进值-Bondtech 5mm 驱动齿轮
 ## 执行挤出机校准时，更新以下值
 ## 比如你要求100毫米的进料，但实际上是102：
 ## rotation_distance = <旧rotation_distance> * <实际挤出长度> / <请求的挤出长度>
