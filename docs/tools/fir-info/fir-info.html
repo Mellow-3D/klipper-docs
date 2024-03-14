@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="mdui-theme-auto" lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0">
+    <title>Klipper固件信息解析</title>
+    <meta name="description" content="从klipper预编译固件中提取可用信息的一个工具">
+    <link rel="modulepreload" crossorigin href="https://cdn.w3cbus.com/mdui/2/assets/Index-1e44a59f.js">
+    <link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/2/assets/Index-542028b8.css">
+    <link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/2/assets/vendor-fonts-dca0575d.css">
+    <link rel="preload" href="https://cdn.w3cbus.com/mdui/2/assets/alipay-3fbeabd1.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="https://cdn.w3cbus.com/mdui/2/assets/wechat-3f2befb9.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="https://cdn.w3cbus.com/mdui/2/assets/group_qrcode-dd093846.jpg" as="image"
+        type="image/jpeg">
+    <link rel="modulepreload" crossorigin href="https://cdn.w3cbus.com/mdui/2/assets/Adsense-306712d1.js">
+    <link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/2/assets/Adsense-62cf4609.css">
+    <link rel="preconnect" href="https://cdn.w3cbus.com">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <style>
+        .layout-main {
+            width: 100%;
+            min-height: 200px;
+            height: 85vh;
+            padding: 20px;
+        }
+
+        .drop-zone {
+            width: 90%;
+            /* 设置为全屏宽度 */
+            max-width: 100%;
+            /* 保证最大宽度不会超过屏幕 */
+            height: 200px;
+            /* background-color: #f1f1f1; */
+            /* border: 2px dashed #ccc; */
+            border-radius: 4px;
+            font-size: 20px;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .drag-over {
+            position: fixed;
+            /* 固定定位使遮罩层相对于视窗定位 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            /* 宽度占满整个屏幕 */
+            height: 100%;
+            /* 高度占满整个屏幕 */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 半透明黑色背景，最后一个参数控制透明度，这里是50% */
+            /* z-index: 9999999999999; */
+            /* 设置较大的z-index值，确保遮罩层在所有元素之上 */
+            display: block;
+            /* 默认隐藏遮罩层，通过JavaScript或CSS控制显示与隐藏 */
+        }
+    </style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js"></script>
+</head>
+
+<body id="drop-zone" class="layout-main">
+    <div id="app">
+        <div id="overlay" class=""></div>
+
+        <!-- 添加隐藏的文件输入元素 -->
+        <input id="file-input" type="file" accept=".bin,.uf2" style="display:none;">
+
+        <mdui-layout>
+            <mdui-layout-main class="layout-main">
+                <mdui-list style="width: 100%;">
+                    <mdui-list-item nonclickable alignment="center"
+                        style="display: flex;width: 100%;justify-content: center;align-items: center;">
+                        <!-- <mdui-card clickable id="drop-zone" class="drop-zone"
+                            variant="filled">拖放Klipper固件文件到这里</mdui-card> -->
+                        <mdui-button id="file-input-btn">
+                            点击选择固件或拖拽固件到当前页面
+                            <mdui-icon slot="icon" name="downloading"></mdui-icon>
+                            <mdui-icon slot="end-icon" name="attach_file"></mdui-icon>
+                        </mdui-button>
+                    </mdui-list-item>
+                    <mdui-list-item nonclickable  v-if="infos.length > 0">
+                        <table class="mdui-table">
+                            <tr v-for="info in infos">
+                                <td>{{info.title}}</td>
+                                <td v-html="info.info"></td>
+                            </tr>
+                        </table>
+                        <table class="mdui-table" v-if="initpins.length > 0">
+                            <caption>启动时引脚默认状态</caption>
+                            <tr v-for="pin in initpins">
+                                <td>{{pin.name}}</td>
+                                <td>{{pin.state}}</td>
+                            </tr>
+                        </table>
+                        <table class="mdui-table" v-if="spi_infos.length > 0">
+                            <caption>SPI引脚分配</caption>
+                            <tr>
+                                <td>总线名称</td>
+                                <td>MISO</td>
+                                <td>MOSI</td>
+                                <td>SCK</td>
+                            </tr>
+                            <tr v-for="info in spi_infos">
+                                <td>{{info.bus}}</td>
+                                <td>{{info.miso}}</td>
+                                <td>{{info.mosi}}</td>
+                                <td>{{info.sck}}</td>
+                            </tr>
+                        </table>
+                        <table class="mdui-table" v-if="i2c_infos.length > 0">
+                            <caption>I2C引脚分配</caption>
+                            <tr>
+                                <td>总线名称</td>
+                                <td>SDA</td>
+                                <td>SCL</td>
+                            </tr>
+                            <tr v-for="info in i2c_infos">
+                                <td>{{info.bus}}</td>
+                                <td>{{info.sda}}</td>
+                                <td>{{info.scl}}</td>
+                            </tr>
+                        </table>
+                    </mdui-list-item>
+                </mdui-list>
+            </mdui-layout-main>
+        </mdui-layout>
+    </div>
+</body>
+<script type="text/javascript" src="./fir-info.js"></script>
+
+</html>
