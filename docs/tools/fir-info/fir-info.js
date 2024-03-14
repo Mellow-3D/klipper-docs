@@ -348,14 +348,12 @@ createApp({
             dropZone.addEventListener('dragleave', function (e) {
                 e.preventDefault();
                 overlay.classList.remove('drag-over');
-                // document.querySelector('.overlay').style.display = 'none'; // 隐藏遮罩层
             });
 
             // 文件被放下时处理
             dropZone.addEventListener('drop', function (e) {
                 e.preventDefault();
                 overlay.classList.remove('drag-over');
-                // document.querySelector('.overlay').style.display = 'none'; // 隐藏遮罩层
                 let files = e.dataTransfer.files; // 获取拖放的文件列表
                 handleFiles(files);
             });
