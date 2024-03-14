@@ -69,6 +69,23 @@ const PDF_MARGIN_BOTTOM = '5rem';
 						'</div>'
 					);
 				}
+			} else if (lang && !lang.localeCompare('firinfo', 'en', { sensitivity: 'base' })) {
+				if (verify) {
+					return true;
+				} else {
+					var divId = "markdown_code_firinfo_container_" + unique_id_generator().toString();
+					var container_list = new Array();
+					if (localStorage.getItem('firinfo_container_list')) {
+						container_list = JSON.parse(localStorage.getItem('firinfo_container_list'));
+					}
+					container_list.push({ "firinfo_location": code, "div_id": divId });
+					localStorage.setItem('firinfo_container_list', JSON.stringify(container_list));
+					return (
+						'<div style="margin-top:' + PDF_MARGIN_TOP + '; margin-bottom:' + PDF_MARGIN_BOTTOM + ';" id="' + divId + '">'
+						+ '<iframe style="width:100%; height:80vh;min-height:400px;" src="/tools/fir-info/fir-info.html"/>' +
+						'</div>'
+					);
+				}
 			}
 			return false;
 		}
@@ -181,6 +198,24 @@ const PDF_MARGIN_BOTTOM = '5rem';
 						html += '<\/script>';
 					}
 					localStorage.removeItem('3dmodel_container_list');
+				} else if (lang == 'firinfo') {
+					container_list = JSON.parse(localStorage.getItem('firinfo_container_list'));
+					if (container_list) {
+						html += '<script>';
+						container_list.forEach(function (container) {
+							var view_location = "/tools/fir-info/fir-info.html"
+							html += '\
+									document.getElementById("'+ container['div_id'] + '").innerHTML = \
+									\'<iframe \
+										id="'+ iframe_id + '"\
+								    	src="'+ view_location + '"\
+								    	style="border: none;" \
+									\/>\'\
+								;';
+						});
+						html += '<\/script>';
+					}
+					localStorage.removeItem('firinfo_container_list');
 				}
 				next(html);
 			});

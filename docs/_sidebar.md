@@ -119,3 +119,6 @@
   - [CanBoot](/advanced/canboot.md)
 - **系统**
   - [下载镜像](/introduction/downloadimg.md)
+- **网页小工具**
+  - [Klipper固件解析](/tools/fir-info/README.md)
+
