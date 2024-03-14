@@ -7,16 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0">
     <title>Klipper固件信息解析</title>
     <meta name="description" content="从klipper预编译固件中提取可用信息的一个工具">
-    <link rel="modulepreload" crossorigin href="https://cdn.w3cbus.com/mdui/2/assets/Index-1e44a59f.js">
-    <link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/2/assets/Index-542028b8.css">
-    <link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/2/assets/vendor-fonts-dca0575d.css">
-    <link rel="preload" href="https://cdn.w3cbus.com/mdui/2/assets/alipay-3fbeabd1.jpg" as="image" type="image/jpeg">
-    <link rel="preload" href="https://cdn.w3cbus.com/mdui/2/assets/wechat-3f2befb9.jpg" as="image" type="image/jpeg">
-    <link rel="preload" href="https://cdn.w3cbus.com/mdui/2/assets/group_qrcode-dd093846.jpg" as="image"
-        type="image/jpeg">
-    <link rel="modulepreload" crossorigin href="https://cdn.w3cbus.com/mdui/2/assets/Adsense-306712d1.js">
-    <link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/2/assets/Adsense-62cf4609.css">
-    <link rel="preconnect" href="https://cdn.w3cbus.com">
     <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
     <style>
         .layout-main {
@@ -83,8 +73,6 @@
                             variant="filled">拖放Klipper固件文件到这里</mdui-card> -->
                         <mdui-button id="file-input-btn">
                             点击选择固件或拖拽固件到当前页面
-                            <mdui-icon slot="icon" name="downloading"></mdui-icon>
-                            <mdui-icon slot="end-icon" name="attach_file"></mdui-icon>
                         </mdui-button>
                     </mdui-list-item>
                     <mdui-list-item nonclickable  v-if="infos.length > 0">
