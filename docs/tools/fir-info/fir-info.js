@@ -164,6 +164,28 @@ createApp({
                         }
                         index++;
                     }
+                    if(start_pos == -1){
+                        let targetSequence12 = [0x78, 0xDA];
+                        index = 0;
+    
+                        // 遍历查找开始位置
+                        while (index + targetSequence12.length <= arrayBuffer.byteLength) {
+                            let foundMatch = true;
+                            for (let i = 0; i < targetSequence12.length; i++) {
+                                if (view.getUint8(index + i) !== targetSequence12[i]) {
+                                    foundMatch = false;
+                                    break;
+                                }
+                            }
+    
+                            if (foundMatch) {
+                                // console.log(`开始位置：${index}`);
+                                start_pos = index;
+                                break;
+                            }
+                            index++;
+                        } 
+                    }
                     // 遍历查找结束位置
                     targetSequence2 = [0x02, 0x00, 0x00, 0x00, 0x00, 0x02];
                     while (index + targetSequence2.length <= arrayBuffer.byteLength) {
@@ -257,6 +279,9 @@ createApp({
                 var start_pos = data_hex.indexOf("78da9d");
                 if (start_pos == -1) {
                     // console.log('指定的字节序列未在文件中找到。');
+                    start_pos = data_hex.indexOf("78da");
+                }
+                if (start_pos == -1) {
                     mdui.alert({
                         headline: "错误",
                         description: "UF2文件解析错误,0x01",
