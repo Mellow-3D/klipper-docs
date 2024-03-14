@@ -53,12 +53,18 @@ createApp({
                     // console.log(commitHash);
                 }
 
-                infos.value = [
-                    { "title": "固件版本", "info": commitHash ? klipper_dict.version.replace(commitHash, "<a href='https://github.com/Klipper3d/klipper/commit/" + commitHash + "' target='_blank'>" + commitHash + "</a>") : klipper_dict.version },
-                    { "title": "工具链版本", "info": klipper_dict.build_versions },
-                    { "title": "主控型号", "info": klipper_dict.config.MCU.toUpperCase() },
-                    { "title": "主控频率", "info": (klipper_dict.config.CLOCK_FREQ) / 1000000 + ' MHz' },
-                ];
+                if (klipper_dict.hasOwnProperty("app")) {
+                    infos.value.push({ "title": "APP程序", "info": klipper_dict.app });
+                }
+                if (klipper_dict.hasOwnProperty("license")) {
+                    infos.value.push({ "title": "程序许可", "info": klipper_dict.license });
+                }
+
+                infos.value.push({ "title": "固件版本", "info": commitHash ? klipper_dict.version.replace(commitHash, "<a href='https://github.com/Klipper3d/klipper/commit/" + commitHash + "' target='_blank'>" + commitHash + "</a>") : klipper_dict.version });
+                infos.value.push({ "title": "工具链版本", "info": klipper_dict.build_versions });
+                infos.value.push({ "title": "主控型号", "info": klipper_dict.config.MCU.toUpperCase() });
+                infos.value.push({ "title": "主控频率", "info": (klipper_dict.config.CLOCK_FREQ) / 1000000 + ' MHz' });
+
                 if (klipper_dict.config.hasOwnProperty("RESERVE_PINS_USB")) {
                     infos.value.push({ "title": "USB引脚", "info": `DM:${klipper_dict.config.RESERVE_PINS_USB.split(',')[0]},  DP:${klipper_dict.config.RESERVE_PINS_USB.split(',')[1]}` });
                 }
@@ -164,10 +170,10 @@ createApp({
                         }
                         index++;
                     }
-                    if(start_pos == -1){
+                    if (start_pos == -1) {
                         let targetSequence12 = [0x78, 0xDA];
                         index = 0;
-    
+
                         // 遍历查找开始位置
                         while (index + targetSequence12.length <= arrayBuffer.byteLength) {
                             let foundMatch = true;
@@ -177,14 +183,14 @@ createApp({
                                     break;
                                 }
                             }
-    
+
                             if (foundMatch) {
                                 // console.log(`开始位置：${index}`);
                                 start_pos = index;
                                 break;
                             }
                             index++;
-                        } 
+                        }
                     }
                     // 遍历查找结束位置
                     targetSequence2 = [0x02, 0x00, 0x00, 0x00, 0x00, 0x02];
