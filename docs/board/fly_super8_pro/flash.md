@@ -120,6 +120,8 @@ sudo apt install dfu-util -y
 lsusb
 ```
 
+* 因系统版本问题可能显示其他名字，如果有`0483:df11`则代表进入烧录模式
+
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
 4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID

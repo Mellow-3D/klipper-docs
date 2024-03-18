@@ -2,7 +2,7 @@
 
 > [!TIP]
 >
-> 请将[include sht36v2.cfg]添加到printer.cfg下
+> 请将[include SHT36PRO.cfg]添加到printer.cfg下
 
 [下载链接](https://cdn.mellow.klipper.cn/FLY_Config/SHT36PRO.cfg)
 

@@ -8,7 +8,7 @@
 
 ## 1. 串口连接
 
-* 使用USB Type-c线材将FLY-π与电脑连接
+* 使用USB Type-c线材将FLY-mini Pad与电脑连接
 
 <img src="../../images/boards/fly_mini_pad/ch340.png" alt="ch340" style="zoom:70%;" />
 
