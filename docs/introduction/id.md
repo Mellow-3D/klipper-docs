@@ -23,11 +23,11 @@ sudo apt-get install usbutils
 
 ![lsusb](../images/guides/klippererro/lsusb.png)
 
-`OpenMoko, Inc. stm32h743xx`属于USB固件是你的下位机刷了正确的USB固件才会显示，如果刷错固件或者未刷固件则不会显示设或者显示其他设备。
+`1d50:614e`属于USB固件是你的下位机刷了正确的USB固件才会显示，如果刷错固件或者未刷固件则不会显示设或者显示其他设备。
 
-`OpenMoko, Inc. Geschwister Schneider CAN adapter` 属于CAN固件是你的下位机刷了CAN桥接固件或者接了UTOC才会显示，如果刷错固件或者未刷固件则不会显示设备或者显示其他设备。
+`1d50:606f` 属于CAN固件是你的下位机刷了CAN桥接固件或者接了UTOC才会显示，如果刷错固件或者未刷固件则不会显示设备或者显示其他设备。
 
-* CAN设备使用并联其他的CAN设备，而不是接到上位机则只有一个CAN设备
+* 如果有多个CAN设备建议都接到UTOC上否则会多个CAN设备，这会导致连接和配置容易出问题
 
 如果没有这两个设备有以下几种可能
 
@@ -169,7 +169,7 @@ canbus_uuid: c5d882c0d121
 [mcu]
 serial: /dev/serial/by-id/usb-Klipper_stm32H743xx_500025000151323032333133-if00
 
-[mcu SHT36V3]
+[mcu SHT36]
 canbus_uuid: c5d882c0d121
 ```
 
@@ -191,14 +191,14 @@ samples_tolerance_retries: 3
 ```
 
 * 如果需要调用工具板的端口则需要在`pin:`的后面添加其他MCU名字并且修改你需要使用的引脚号，下方是示例配置
-* 这样写就可以告诉klipper，我需要调用`SHT36V3`的`gpio22`端口，其他配置同理
-* 如果`probe`出现反转（触发时报告“打开”，反之亦然），则在端号定义中添加一个“！”（例如，“pin: !^SHT36V3:gpio22”），或者如果已经存在“！”，则删除该“！”。
+* 这样写就可以告诉klipper，我需要调用`SHT36的`gpio22`端口，其他配置同理
+* 如果`probe`出现反转（触发时报告“打开”，反之亦然），则在端号定义中添加一个“！”（例如，“pin: !^SHT36:gpio22”），或者如果已经存在“！”，则删除该“！”。
 * 如果限位状态根本没有变化，则通常表示限位器连接到不同的引脚。 但是，它也可能表示需要更改引脚的上拉设置（pin 名称开头的“^” - 大多数打印机需要使用上拉电阻并且应该存在“^”）。
 * 请注意配置无法重复使用，如果想使用工具板连接挤出机就需要将主板的配置屏蔽或者修改
 
 ```
 [probe]
-pin: ^SHT36V3:gpio22
+pin: ^SHT36:gpio22
 x_offset: 0
 y_offset: 25.0
 z_offset: 0

@@ -52,7 +52,7 @@
 
 * 配置好后是这样的
 
-![f407](../../images/boards/fly_d5/f072_2.jpg)
+![usb](../../images/boards/fly_d5/usb.png)
 
 12. 按```Q```键，出现**Save configuration**，这时再按```Y```键
 
@@ -158,6 +158,8 @@ lsusb
 ```
 
 * 如果没有DFU设备请尝试重新进入**烧录模式**
+
+* 因系统版本问题可能显示其他名字，如果有`0483:df11`则代表进入烧录模式
 
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 

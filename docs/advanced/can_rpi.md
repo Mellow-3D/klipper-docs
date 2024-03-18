@@ -20,12 +20,8 @@
 > [!TIP]
 > 注意：使用SPI转CAN(MCP215)等设备时建议设置bitrate为250000
 
-1. 执行下面的命令安装当前文档所需软件包
-```bash
-sudo apt update && sudo apt install nano wget -y
-```
+1. 创建配置文件,复制粘贴到终端并回车
 
-2. 创建配置文件,复制粘贴到终端并回车
 ```bash
 sudo /bin/sh -c "cat > /etc/network/interfaces.d/can0" << EOF
 allow-hotplug can0
@@ -37,36 +33,10 @@ iface can0 can static
 EOF
 ```
 
-> [!TIP]
-> 测试发现在部分设备中无法开机自动启用CAN，所以建议都执行下面操作
-
-1. 开机自动启用CAN
-```bash
-sudo wget https://cdn.mellow.klipper.cn/shell/can-enable -O /usr/bin/can-enable > /dev/null 2>&1 && sudo chmod +x /usr/bin/can-enable || echo "The operation failed"
-```
-
-```bash
-sudo cat /etc/rc.local | grep "exit 0" > /dev/null || sudo sed -i '$a\exit 0' /etc/rc.local
-```
-
-```bash
-sudo sed -i '/^exit\ 0$/i \can-enable -d can0 -b 500000 -t 1024' /etc/rc.local
-```
-
-
-
-4. 重启设备
+2. 重启设备
 
 ```bash
 sudo reboot
-```
-
-5. USB转CAN模块在树莓派中无法即插即用
-
-* 如果树莓派设备插拔过USB转CAN设备请重启设备或者执行下面的命令
-* 确保已完成步骤3
-```bash
-sudo can-enable -d can0 -b 500000 -t 1024
 ```
 
 ## 连接

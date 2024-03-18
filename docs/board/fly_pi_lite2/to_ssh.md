@@ -8,7 +8,7 @@
 
 ## 1. 串口连接
 
-* 使用USB Type-c线材将FLY-π与电脑连接
+* 使用USB Type-c线材将FLY-lite2与电脑连接
 
 ![ch340](../../images/boards/fly_pi_lite2/ch340.png)
 
