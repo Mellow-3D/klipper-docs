@@ -1,10 +1,12 @@
-# ID读取
+
+
+
 
 搜索id前面请确保已经连接CAN线
 
 ![xt](../../images/boards/fly_mmu/xt.jpg)
 
-# CAN ID读取
+# 1. CAN ID读取
 
 > [!TIP]
 > [搜索CANuuid](/introduction/id?id=搜索can固件id "点击即可跳转")方法
@@ -46,7 +48,7 @@
 canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 ```
 
-# 串口ID读取
+# 2. RS232 ID读取
 
 * 请注意串口工具板一定要与上位机共地否则无法连接！！！！
 
@@ -67,7 +69,7 @@ ls /dev/serial/by-path/*
 * 请注意使用FLY UTOR会输出三个id，但是如果你过另外一个UTOR系统会记录下来导致搜索时候出现多个id
 * 请确保id后面带有`-port0`否则无法使用
 
-## 参考RS232配置
+## RS232参考配置
 
 ```
 [mcu mmu]  # 工具主板序列号

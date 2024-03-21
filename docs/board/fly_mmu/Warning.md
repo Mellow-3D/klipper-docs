@@ -1,22 +1,20 @@
-# 注意事项
+# 4. 注意事项
 
-## 安装支架
+## 1. 安装支架
 
 兔子V2[支架](https://cdn.mellow.klipper.cn/STEP/FLY_MMU.zip)
 
-## CAN连接注意事项
+## 2. CAN连接注意事项
 
-* MMU的120R跳线需要接上，并且主板的120R要接上
+* MMU的**120R跳线**需要接上，并且**主板的120R**要接上
 
-* 在断电情况下使用万用表量H与L的阻值正常应在60R左右
+* 在断电情况下使用万用表量**H与L**的阻值正常应在**60R**左右
 
-![120Ω](../../images/boards/fly_mmu/120Ω.png)
+* 请注意拨码要拨到**正确位置**否则**无法正常使用**
 
-* 请注意拨码要拨到正确位置否则无法正常使用
+![can_mode](../../images/boards/fly_mmu/can_mode.png)
 
-![120Ω](../../images/boards/fly_mmu/can.jpg)
-
-## RS232连接
+## 3. RS232连接
 
 * 请注意拨码要拨到正确位置否则无法正常使用
 * 工具板与上位机一定要供地！！！！否则无法连接
@@ -26,4 +24,4 @@
 * RS232输出电压有6v请不要接到can上！！！
 * RS232输出电压有6v请不要接到can上！！！
 
-![120Ω](../../images/boards/fly_mmu/uart.jpg)
+![rs232_mode](../../images/boards/fly_mmu/rs232_mode.png)
