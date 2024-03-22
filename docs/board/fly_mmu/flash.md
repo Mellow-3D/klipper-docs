@@ -1,8 +1,7 @@
-# 固件烧录
-
+# 3. 固件烧录
 > 烧录固件之前确保已完成[上位机连接到ssh](introduction/conntossh.md "点击即可跳转")文档
 
-# 编译Klipper固件
+## 1. 编译Klipper固件
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**网络**到您的上位机，并且需要确定以下几点
 
@@ -115,7 +114,7 @@
 
 <!-- tabs:end -->
 
-# 烧录固件
+## 2. 烧录固件
 
 <!-- tabs:start -->
 
@@ -175,7 +174,7 @@ cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
 
 <!-- tabs:end -->
 
-### 确定固件烧录完成
+## 3.确定固件烧录完成
 
 * 如果固件刷完后此led会变成常亮
 
