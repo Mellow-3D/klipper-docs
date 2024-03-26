@@ -1,5 +1,11 @@
 # 7. FLY-SHT36 v3配置参考
 
+> [!TIP]
+>
+> 请将[include SHT36V3.cfg]添加到printer.cfg下
+
+[下载链接](https://cdn.mellow.klipper.cn/FLY_Config/SHT36V3.cfg)
+
 ```cfg
 #####################################################################
 # 	 Notes
@@ -63,7 +69,7 @@ pin: SHT36:gpio26
 chain_count: 3
 # Number of LEDs
 # 灯珠数量
-color_order: RGB
+color_order: GRB
 initial_RED: 0.4
 initial_GREEN: 0.8
 initial_BLUE: 1
