@@ -1,5 +1,11 @@
 # 7. FLY-SB2040 PRO v3配置参考
 
+> [!TIP]
+>
+> 请将[include SB2040.cfg]添加到printer.cfg下
+
+[下载链接](https://cdn.mellow.klipper.cn/FLY_Config/SB2040.cfg)
+
 ```cfg
 
 #####################################################################
@@ -64,7 +70,7 @@ pin: SB2040:gpio26
 chain_count: 16
 # Number of LEDs
 # 灯珠数量
-color_order: RGB
+color_order: GRB
 initial_RED: 0.4    #66CCFF
 initial_GREEN: 0.8
 initial_BLUE: 1
@@ -141,7 +147,8 @@ interpolate:False
 run_current: 0.65
 interpolate: False
 rref: 12300
-stealthchop_threshold: 0 
+stealthchop_threshold: 0
+driver_TPFD: 0
 
 ###------------------------------------------------------------------
 [verify_heater extruder]

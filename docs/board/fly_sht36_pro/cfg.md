@@ -155,7 +155,7 @@ pin: SHT36PRO:gpio6
 chain_count: 3
 # Number of LEDs
 # 灯珠数量
-color_order: RGB
+color_order: GRB
 initial_RED: 0.4    
 initial_GREEN: 0.8
 initial_BLUE: 1

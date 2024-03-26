@@ -43,9 +43,7 @@ sudo systemctl restart klipper
 
 ## FLY TFT V2接线图
 
-> [!Warning]
->
-> 配置方法与TFT V1一样！！！
+G2T+TFTV2使用方法请看这:[FLY_G2T](https://mellow.klipper.cn/#/board/fly_g2t/fly)
 
 
 
