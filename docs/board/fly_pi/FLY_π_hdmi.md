@@ -1,11 +1,13 @@
 #  10. HDMI屏幕的使用
 
-1. 启用 klipperscreen 将``KlipperScreen=false``修改为``KlipperScreen=true``
+> [!TIP]
+> 浏览器打开你的IP:9999来访问FLY-Tools
 
-![kp](../../images/boards/fly_pi/kp.png)
+1. 启用 klipperscreen 需要将下方选项打开才可启用klipperscreen
 
-2. 将Display改成HDMI，然后插回内存卡，上电开机等待一会即可。请注意接好HDMI线。
+![kp](../../images/boards/fly_pi/hdmi.png)
 
-   **注：FLY π上板载的HDMI接口是Micro HDMI，购买HDMI线时请注意！！！**
+然后保存重启系统
 
-   ![hdmi](../../images/boards/fly_pi/hdmi.png)
+**注：FLY π上板载的HDMI接口是Micro HDMI，购买HDMI线时请注意！！！**
+

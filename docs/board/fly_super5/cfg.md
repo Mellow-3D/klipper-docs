@@ -88,7 +88,6 @@ probe_count: 4,4             # 采样点数（4X4为16点）
 mesh_pps: 2,2                # 补充采样点数
 algorithm: bicubic           # 算法模型
 bicubic_tension: 0.2         # 算法插值不要动
-relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位设置在热床中间或者较平处）（解决热床校准之后在空中的问题）
 
 #####################################################################
 #             X/Y步进电机设置 (X/Y Stepper Settings)                 # 
@@ -280,7 +279,7 @@ stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请
 [heater_bed]
 heater_pin: PB0              # 热床接口,接到HETA1
 sensor_type: Generic 3950    # 传感器型号  (Generic 3950, ATC Semitec 104GT-2， PT1000)
-sensor_pin: PC5              # 热床传感器接口,接到ADC-2
+sensor_pin: PB1              # 热床传感器接口
 pullup_resistor:2200
 max_power: 1.0               # 热床功率
 min_temp: 0                  # 最小温度（注意：测量温度超过设定值会触发紧急停止）

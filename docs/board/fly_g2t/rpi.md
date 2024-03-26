@@ -12,7 +12,9 @@
 - **树莓派可以使用全部接口！！！**
 - **注意：树莓派使用的系统内核版本必须大于`5.17.x`, 执行命令`uname -r`查看内核版本**
 
+## 安装方法
 
+![PI](../../images/boards/fly_g2t/rpi.png)
 
 ## 串口使用方法
 
@@ -130,8 +132,6 @@ FLY-TFT-V2是一款基于st7796的TFT液晶屏，支持电容触摸与电阻触�
 ### 屏幕接线
 
 ![tft](../../images/boards/fly_g2t/TFTV2.png)
-
-![tft](../../images/boards/fly_g2t/TFT.png)
 
 ## 接线方法
 

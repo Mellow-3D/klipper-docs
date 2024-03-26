@@ -88,7 +88,6 @@ probe_count: 4,4             # 采样点数（4X4为16点）
 mesh_pps: 2,2                # 补充采样点数
 algorithm: bicubic           # 算法模型
 bicubic_tension: 0.2         # 算法插值不要动
-relative_reference_index: 7  # 第多少个点作为±0.00  （最好将点位设置在热床中间或者较平处）（解决热床校准之后在空中的问题）
 
 #####################################################################
 #             X/Y步进电机设置 (X/Y Stepper Settings)                 # 
