@@ -72,9 +72,11 @@
   - USB系列CAN工具板
     * [FLY-RHT36/42](/board/fly_rht36_42/README.md)
   
+  - MMU系列工具板
+    * [FLY-MMU](/board/fly_mmu/README.md)
+  
   - 兔子多色CAN扩展板
     * [FLY-ERCF](/board/fly_ercf/README.md)
-    * [FLY-MMU](/board/fly_mmu/README.md)
     
   - FLY MiniAB 集线板
     * [FLY MiniAB 集线板](/board/miniab_board/README.md)
@@ -105,7 +107,7 @@
   - [介绍](/fly_config/README)
   - [使用方法](/fly_config/Instructions.md)
 - **调试指南**
-  - [基础配置](/guide/configs.md)
+  - [参考配置](/guide/configs/README.md)
   - [Klipper常见问题与错误](/guide/klippererro/ERROR)
   - [常见问题](/guide/what.md)
 - **用户投稿**

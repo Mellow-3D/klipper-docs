@@ -4,7 +4,7 @@
 
 ## 注意事项：
 
-- **FLY上位机只能使用带40PIN GPIO扩展的上位机，FLY-π与双子座无法使用！！**
+- **FLY G2T支持FLY PI V2Y与FLY C8，FLY-π与双子座无法使用！！**
 - **FLY上位机只能使用中间的RS232接口，FAN口与FPC屏幕接口！！！**
 - **至少需要将系统更新到FLY OS V3.3.2！！！**
 - 确保在安装扩展板前，上位机已经关闭电源。
@@ -35,10 +35,6 @@ baud: 250000
 restart_method:command
 ```
 
-
-
-
-
 ## FAN使用方法
 
 ```
@@ -65,11 +61,18 @@ min_speed: 0.3                    # 最小转速，为满功率运转时的30%
 
 ## 屏幕使用方法
 
+FLY_Tools配置
+
+* fly-tft-v2-c是3.5寸TFT电容屏选择
+* fly-tft-v2-r是3.5寸TFT电阻屏选择
+
+![Tools](../../images/boards/fly_g2t/tools.png)
+
 ### 屏幕安装
 
 ![tft](../../images/boards/fly_g2t/TFTV2.png)
 
-![tft](../../images/boards/fly_g2t/TFT.png)
+
 
 ## 接线方法
 

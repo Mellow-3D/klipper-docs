@@ -2,15 +2,11 @@
 
 * 请确保接线牢固稳定！！！
 
-## 1.通过SSH打开UART
+## 1.通过FLY Tools打开UART
 
-```
- sudo nano /boot/armbianEnv.txt
-```
+![I2C](../../images/boards/fly_pi_v2/uart.png)
 
-![I2C](../../images/boards/fly_pi_v2/I2C.png)
-
-* 找到`overlays=usbhost2 `并且在后面添加`UART2`与`UART1`
+* 找到`Overlays `并且在后面添加`UART2`与`UART1`
 * 保存退出并且重启
 
 ```

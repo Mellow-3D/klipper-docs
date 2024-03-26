@@ -22,7 +22,7 @@
 #      Master ID Configuration
 #####################################################################
 [mcu SHT36PRO]
-canbus_uuid: e51d5c71a901
+canbus_uuid: 
 ### 查询can固件id是：~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ### can的id需要把serial替换成canbus_uuid: 后面添加id 
 
@@ -57,17 +57,6 @@ accel_per_hz: 75
 hz_per_sec: 1 
 
 #####################################################################
-#      spi
-#####################################################################
-## If you don't use 31865, you need to turn on this configuration
-## 如果不使用31865需要打开此配置
-[output_pin cs]
-pin: SHT36PRO:gpio1
-pwm: False
-# static_value: 0
-value: 1
-shutdown_value: 1
-#####################################################################
 #      Extruder thermal sensitivity
 #####################################################################
 ## Please select the type of thermocouple you want to use.
@@ -84,8 +73,8 @@ sensor_pin: SHT36PRO:gpio26
 #pullup_resistor: 1000
 #sensor_pin: SHT36PRO:gpio26
 ###------------------------------------------------------------------
-## Using MAX31865 to connect PT100 or PT1000
-## 使用MAX31865接PT100或者PT1000
+## Using MAX31865 to connect PT100
+## 使用MAX31865接PT100
 #sensor_type: MAX31865
 #sensor_pin: SHT36PRO:gpio1
 #spi_software_sclk_pin: SHT36PRO:gpio10       
@@ -101,13 +90,13 @@ sensor_pin: SHT36PRO:gpio26
 step_pin: SHT36PRO:gpio23
 dir_pin: SHT36PRO:gpio24               # 挤出电机方向引脚设置
 enable_pin: !SHT36PRO:gpio25
-rotation_distance: 22.44
+rotation_distance: 21.84
 ## rotation_distance = The original rotation_distance multiplied by the actual extrusion length divided by the requested extrusion length.
 ## 校准步进值: 22.44=旧值22*实际值102/目标值100
-gear_ratio:50:17
+gear_ratio:50:10
 ## 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
 microsteps:16
-full_steps_per_rotation: 200   
+full_steps_per_rotation: 200     
 nozzle_diameter:0.400
 filament_diameter:1.75
 heater_pin: SHT36PRO:gpio8
@@ -122,10 +111,10 @@ pressure_advance: 0.05
 pressure_advance_smooth_time: 0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
 #喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
-control = pid
-pid_kp = 26.213
-pid_ki = 1.304
-pid_kd = 131.721
+control: pid
+pid_kp: 26.213
+pid_ki:1.304
+pid_kd: 131.721
 step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc5160 extruder] 
@@ -166,7 +155,7 @@ pin: SHT36PRO:gpio6
 chain_count: 3
 # Number of LEDs
 # 灯珠数量
-color_order: GRB
+color_order: RGB
 initial_RED: 0.4    
 initial_GREEN: 0.8
 initial_BLUE: 1

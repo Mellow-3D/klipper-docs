@@ -1,4 +1,25 @@
-屏幕配置与使用
+> [!TIP] 
+>
+> 浏览器打开你的IP:9999来访问FLY-Tools
+
+<!-- tabs:start -->
+
+### **HDMI**
+
+* HDMI屏幕
+
+![hdmi](../../images/boards/fly_pi/hdmi.png)
+
+### **TFT**
+
+* TFT屏幕
+
+![tft](../../images/boards/fly_pi/kp.png)
+
+<!-- tabs:end -->
+
+>[!WARNING]
+>通电前请注意屏线方向是否正确
 
 >[!WARNING]
 >通电前请注意屏线方向是否正确

@@ -9,7 +9,7 @@
 
 ```cfg
 #####################################################################
-# 	 Notes
+#      Notes
 #####################################################################
 ## 请将[include sht36v2.cfg]添加到printer.cfg下
 ## Please add [include sht36v2.cfg] under printer.cfg
@@ -20,15 +20,15 @@
 ## [probe] && [bltouch] && [stepper_x]
 
 #####################################################################
-# 	 Master ID Configuration
+#      Master ID Configuration
 #####################################################################
 [mcu sht36v2]
-canbus_uuid: e51d5c71a901
+canbus_uuid: 
 ### 查询can固件id是：~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
 ### can的id需要把serial替换成canbus_uuid: 后面添加id 
 
 #####################################################################
-# 	 Temperature monitoring
+#      Temperature monitoring
 #####################################################################
 [temperature_sensor SHT36-V2]
 sensor_type: temperature_mcu
@@ -38,7 +38,7 @@ sensor_mcu: sht36v2
 sensor_type: ATC Semitec 104GT-2
 sensor_pin = sht36v2:PA4
 #####################################################################
-# 	 Accelerometer
+#      Accelerometer
 #####################################################################
 ## https://www.klipper3d.org/Measuring_Resonances.html?h=adxl#adxl345
 [adxl345]
@@ -56,7 +56,7 @@ accel_per_hz: 75
 hz_per_sec: 1 
 
 #####################################################################
-# 	 Extruder thermal sensitivity
+#      Extruder thermal sensitivity
 #####################################################################
 ## Please select the type of thermocouple you want to use.
 ## 请根据你想要使用的热敏选择
@@ -72,28 +72,28 @@ sensor_pin: sht36v2:PA3
 #pullup_resistor: 1100
 #sensor_pin: sht36v2:PA3
 ###------------------------------------------------------------------
-## Using MAX31865 to connect PT100 or PT1000
-## 使用MAX31865接PT100或者PT1000
+## Using MAX31865 to connect PT100
+## 使用MAX31865接PT100
 #sensor_type: MAX31865
 #sensor_pin: sht36v2:PB12
 #spi_bus: spi2
 #rtd_reference_r: 430
 
 #####################################################################
-# 	 extruder
+#      extruder
 #####################################################################
 ## https://www.klipper3d.org/Config_Reference.html#extruder
 [extruder]
 step_pin: sht36v2:PB4
 dir_pin: sht36v2:PB3               # 挤出电机方向引脚设置
 enable_pin: !sht36v2:PA15
-rotation_distance: 22.44
+rotation_distance: 21.84
 ## rotation_distance = The original rotation_distance multiplied by the actual extrusion length divided by the requested extrusion length.
 ## 校准步进值: 22.44=旧值22*实际值102/目标值100
-gear_ratio:50:17
+gear_ratio:50:10
 ## 减速比（伽利略齿比7.5:1 并且这行注释掉；BMG为50：17，输出轴在前，输入轴在后）
 microsteps:16
-full_steps_per_rotation: 200   
+full_steps_per_rotation: 200    
 nozzle_diameter:0.400
 filament_diameter:1.75
 heater_pin: sht36v2:PA8
@@ -108,10 +108,10 @@ pressure_advance: 0.05
 pressure_advance_smooth_time: 0.040
 #max_extrude_only_distance: 200.0   # 挤出流量报错可以注释这个，但是建议重新切片
 #喷嘴温度PID校准命令：  "PID_CALIBRATE HEATER=extruder TARGET=245
-control = pid
-pid_kp = 26.213
-pid_ki = 1.304
-pid_kd = 131.721
+control: pid
+pid_kp: 26.213
+pid_ki:1.304
+pid_kd: 131.721
 step_pulse_duration: 0.000004
 #--------------------------------------------------------------------
 [tmc2209 extruder]
@@ -122,7 +122,7 @@ sense_resistor: 0.110
 stealthchop_threshold: 500
 
 #####################################################################
-# 	 FAN
+#      FAN
 #####################################################################
 [fan]
 pin: sht36v2:PB11
@@ -133,7 +133,7 @@ heater: extruder
 heater_temp: 50.0
 
 #####################################################################
-# 	 X STOP
+#      X STOP
 #####################################################################
 # [stepper_x]
 # endstop_pin: !sht36v2:PA2
@@ -141,7 +141,7 @@ heater_temp: 50.0
 ## PA1引脚默认支持高压输入，可用于12v的接近传感器等。可通过跳线帽配置PA1为普通限位引脚
 
 #####################################################################
-# 	 Stealthburner LED
+#      Stealthburner LED
 #####################################################################
 ## https://github.com/VoronDesign/Voron-Stealthburner/tree/main
 [neopixel sb_leds]
@@ -157,7 +157,7 @@ initial_WHITE: 0.0
 #66CCFF 
 
 #####################################################################
-# 	 TAP && PL08N && BLTOUCH 
+#      TAP && PL08N && BLTOUCH 
 #####################################################################
 ## https://www.klipper3d.org/Config_Reference.html?h=probe#probe
 #[probe]

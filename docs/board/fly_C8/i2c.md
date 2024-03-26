@@ -1,26 +1,16 @@
 # 使用上位机40PIN的I2C接口
 
-* 本次教程使用**LM75**的I2C传感器与**I2C2**做示例！！！
+* 本次教程使用**FLY-PI V2**LM75**的I2C传感器与**I2C2做示例！！！
 * 请注意**I2C1**被其他设备已经占用是无法使用！！！
 * 请确保接线牢固稳定！！！
 
-## 1.通过SSH打开I2C
+## 1.通过FLY Tools打开I2C
 
-```
- sudo nano /boot/armbianEnv.txt
-```
+![](../../images/boards/fly_pi_v2/I2C.png)
 
-![I2C](../../images/boards/fly_pi_v2/I2C.png)
-
-* 找到`overlays=usbhost2 `并且在后面添加`i2c2`与`i2c0`
+* 找到`Overlays `并且在后面选择`i2c2`与`i2c0`
 * 请注意**I2C1**被其他设备已经占用是无法使用!!!
-* 保存退出并且重启
-
-```
-CTRL+S
-CTRL+X
-sudo reboot
-```
+* 保存并且重启
 
 ## 2.接线并且搜索
 
@@ -57,4 +47,3 @@ i2c_mcu:host
 i2c_bus:i2c.2
 # i2c_software_scl
 ```
-

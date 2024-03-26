@@ -5,4 +5,5 @@
   * [屏幕使用](/board/fly_cm4/screen.md)
   * [CAN配置](/board/fly_cm4/can.md)
   * [使用DSI与CSI](/board/fly_cm4/dsicsi.md)
+  * [注意事项](/board/fly_cm4/Warning.md)
 

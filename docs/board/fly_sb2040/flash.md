@@ -76,17 +76,31 @@ make -j4
 
 ![config](../../images/boards/fly_sb2040/can.png ":no-zooom")
 
-将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040与上位机通过CAN总线连接
 
-```bash
-python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
+> [!TIP]
+> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
+
+> 由于SB2040预装了katapult，只支持CAN烧录，因此在固件烧录前需要读取uuid后才能烧录固件
+
+首先进入ssh，然后依次输入以下指令
+
+```
+cd && git clone https://github.com/Arksine/katapult
 ```
 
-如下图，出现``CAN Flash Success``则烧录成功
+![1](../../images/boards/fly_sht_v2/1.png)
 
-![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
+```bash
+cd && cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
+```
 
+请注意，搜索到id后是显示``Application: Canboot``前面才是工具板id
 
+<img src="../../images/boards/fly_sht_v2/uuid.png" alt="uuid" style="zoom:80%;" />
+
+下图中高亮部分``365f54003b9d``就是这块SB2040板的uuid，这个uuid每块板子都不一样。同一块SB2040板烧录固件后uuid是不会变的
 
 <!-- tabs:end -->
 

@@ -35,7 +35,7 @@ https://cdn.mellow.klipper.cn/BL/FLY_SB2040_CANBOOT_500K.uf2
     make menuconfig
     ```
 
-# 固件编译
+# 固件
 
 <!-- tabs:start -->
 
@@ -55,45 +55,22 @@ https://cdn.mellow.klipper.cn/BL/FLY_SB2040_CANBOOT_500K.uf2
 
 <!-- tabs:end -->
 
-3. 编译
 
-    ```bash
-    make clean
-    make -j4
-    ```
-    
-     最后出现**Creating bin file out/canboot.uf2**则编译成功
-    
-    
+
+
 
 # 烧录方法
 
 1. 查看是否连接到SB2040的BOOT烧录模式
    
-    按住SB2040板的BOOT键，然后将usb连接到上位机
+    按住SB2040板的BOOT键，然后将usb连接到电脑
 
     ![boot](../../images/boards/fly_sb2040/boot.png)
     
-    ```bash
-    lsusb
-    ```
-    
-    执行上面的命令查看是否有 ``ID 2e8a:0003 Raspberry Pi RP2 Boot``这行，如没有请检查USB线(连接前记得按住BOOT键)
 
-![config](../../images/boards/fly_sb2040/lsusb.png ":no-zooom")
+2. 把canboot.uf2放进去，弹窗会关闭
 
-2. 烧录
-   
-    ```bash
-    cd ~/klipper/
-    make flash FLASH_DEVICE=2e8a:0003
-    ```
-    
-   执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
-   
-   出现下图则烧录成功
-
-![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
+   ![pri](../../images/boards/fly_sht36_pro/pri.png)
 
 
 
