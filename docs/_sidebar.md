@@ -83,6 +83,7 @@
 - **扩展类**
   - [FLY-SENSOR 扫描传感器](/board/fly_sensor/)
   - [BD-SENSOR 扫描传感器](/board/bd_sensor/)
+  - [VORON_StealthBurner_LED](/advanced/voronled.md)
   - [FLY-Halo WiFi智能圆屏](/board/fly_halo/)
   - [FLY-UTOR](/board/fly_utor/README.md)
   - [FLY-G2T](/board/fly_g2t/README.md)
