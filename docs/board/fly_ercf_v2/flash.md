@@ -1,111 +1,176 @@
 # 4. 固件烧录
 
-编译固件前请确保 [连接到SSH](/board/fly_pi/FLY_π_description5 "点击即可跳转")
+> [!TIP]
+> 已经识别到的CAN ID是不会被查找到的（即已经写入配置文件printer.cfg中的ID，连接成功并正常运行的，是不会被查找到的）
 
-确保使用最新的klipper！！！
+> [!TIP]
+>
+> 通过RS232连接必须供地，否则无法正常使用
 
-1. 进入klipper目录并拉取最新的klipper
-   
-   ```bash
-    cd ~/klipper && git pull
-   ```
-   
-2. 修改klipper编译配置
+# 编译Klipper固件
 
-    ```bash
-    rm -rf .config && make menuconfig
-    ```
+请使用**MobaXterm_Personal**等**SSH工具**连接通过**网络**到您的上位机，并且需要确定以下几点
 
-**固件配置方法**
+1. **请确保上位机安装好了Klipper服务**
+2. **请确保登录的用户必须是安装好Klipper的用户**
+3. **请确保你的输入法是英文**
+4. **请确保你的上位机可以正常搜索到设备**
+5. **请确保以上注意事项都做到，否则无法进行下一步**
 
-## 1. 配置固件
 
-### ERCF固件配置
 
-* USB连接如下图配置
+* 连接到SSH后输入下面的命令并回车：
 
-![config](../../images/boards/fly_ercf_v2/usb.png ":no-zooom")
+     ```
+     cd  && cd ~/klipper  && make clean && rm -rf .config && make menuconfig
+     ```
 
-* CAN连接如下图配置
+* 现在应该出现了Klipper编译配置界面，**↑ ↓ 键**选择菜单，**回车键**确认或进入菜单
 
-![config](../../images/boards/fly_ercf_v2/can.png ":no-zooom")
+<!-- tabs:start -->
 
-* 编译
+### ****CAN 固件配置****
+>[!TIP]
+>请确保工具板拨码拨到正确位置
+>
+>**烧录时候请确保工具板已经正常连接到UTOC或者刷好桥接固件的工具板上**
 
-  ```bash
-  make clean
-  make -j4
+![can](../../images/boards/fly_ercf_v2/flash_can.png)
+
+* 选择`[ ] Enable extra low-level configuration options`然后回车
+
+![make](../../images/boards/fly_sb2040_v3/make.png)
+
+* 选择`    Micro-controller Architecture (Atmega AVR)  --->`回车进去找到`( ) Raspberry Pi RP2040`然后回车
+
+![make1](../../images/boards/fly_sb2040_v3/make1.png)
+
+* 选择`    Bootloader offset (No bootloader)  --->`回车然后选择`( ) 16KiB bootloader`在回车
+
+![make2](../../images/boards/fly_sb2040_v3/make2.png)
+
+* 选择`    Communication interface (USB)  --->`回车然后选择`( ) CAN bus`回车
+
+![make3](../../images/boards/fly_sb2040_v3/make3.png)
+
+* 选择`(4) CAN RX gpio number (NEW)`将**4**改成**1**
+* 选择`(5) CAN TX gpio number (NEW)`将**5**改成**0**
+
+![make4](../../images/boards/fly_sb2040_v3/make4.png)
+
+* `(1000000) CAN bus speed`为can速率默认为1M，不建议自己修改
+* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`!gpio5`然后回车
+* 请注意 **!** 请使用英文输入法输入
+
+![make5](../../images/boards/fly_sb2040_v3/make5.png)
+
+* 输入`Q`保存然后输入`Y`退出即可编译固件
+* 输入`make`即可编译固件
+* 出现`  Creating bin file out/klipper.bin`代表本次编译固件成功
+
+![make10](../../images/boards/fly_sb2040_v3/make10.png)
+
+**CAN烧录方法**
+
+> [!TIP]
+> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040-V3与上位机通过CAN总线连接
+
+> [!TIP]
+>
+> 请先看[Id读取](http://mellow.klipper.cn/#/board/fly_sb2040_v3_pro/uuid?id=can-id读取)接好线与上位机连接后在搜索CAN ID
+
+> [!TIP]
+> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
+
+首先进入ssh，然后依次输入以下指令
+
 ```
-  
- 使用最后出现**Creating hex file out/klipper.bin**则编译成功
-  
+~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
+```
+
+![canid](../../images/guides/klippererro/canid.png)
+
+1. 将下面命令中的``c5d882v0d121``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
+
+```bash
+python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
+```
+
+2. 如下图，出现``CAN Flash Success``则烧录成功
+
+![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
 
-## 2.2 编译Klipper固件
 
-1. 请先阅读[连接到SSH](/board/fly_pi/FLY_π_ssh "点击即可跳转")文档
-2. 连接到SSH后输入```cd ~/klipper/```回车
-3. 按顺序执行下面的命令，输入命令后需要回车才会执行
-4. ```make clean```
-5. ```rm -rf .config```
-6. ```make menuconfig```
-7. 现在应该出现了Klipper编译配置界面
+### ****RS232 固件配置****
 
-![putty](../../images/firmware/make1.png ":no-zooom")
+>[!TIP]
+>请确保工具板拨码拨到正确位置
+>
+>请注意因为RS232连接无法使用直接通过命令行重新进入SSH，只能通过USB更新固件
 
-* 上下键选择菜单，回车键确认或进入菜单
-7. 进入菜单**Micro-controller Architecture**
+![UART](../../images/boards/fly_sb2040_v3/flash_uart.png)
 
-![putty](../../images/firmware/make2.png ":no-zooom")
+* 选择`[ ] Enable extra low-level configuration options`然后回车
 
-8. 选择**STMicroelectronics STM32**回车
+![make](../../images/boards/fly_sb2040_v3/make.png)
 
-![putty](../../images/firmware/make3.png ":no-zooom")
+* 选择`    Micro-controller Architecture (Atmega AVR)  --->`回车进去找到`( ) Raspberry Pi RP2040`然后回车
 
-9. 进入菜单**Processor model**，选择**STM32F407**回车
-10. **Bootloader offset**如果是(32KiB bootloader)则不修改
-11. **Communication interface**是USB (on PA11/PA12)
-* 配置好后是这样的
+![make1](../../images/boards/fly_sb2040_v3/make1.png)
 
-![f407](../../images/boards/fly_super8/f407.png)
+* 这一项`    Bootloader offset (No bootloader)  --->`不动
+* 这一项`    Flash chip (W25Q080 with CLKDIV 2)  --->`不动
 
-12. 按```Q```键，出现**Save configuration**，这时再按```Y```键
-* 现在应该保存了配置并且退出到了命令行界面
+* 选择`    Communication interface (USB)  --->`回车然后选择`( ) Serial (on UART0 GPIO1/GPIO0)`回车
 
-13. 输入```make -j4```开始编译，时间有点长
+![make6](../../images/boards/fly_sb2040_v3/make6.png)
 
-* 出现下图则编译成功
+* 这一项为串口波特率。默认250K`(250000) Baud rate for serial port`不动
 
-![putty](../../images/firmware/make2.png ":no-zooom")
+* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`!gpio5`然后回车
+* 请注意 **!** 请使用英文输入法输入
 
-14. 下载固件到电脑
+![make7](../../images/boards/fly_sb2040_v3/make7.png)
 
-* 使用软件**WinSCP**
+* 输入`Q`保存然后输入`Y`退出即可编译固件
+* 输入`make`即可编译固件
+* 出现`  Creating uf2 file out/klipper.uf2`代表本次编译固件成功
 
-![putty](../../images/firmware/down1.png ":no-zooom")
+![make8](../../images/boards/fly_sb2040_v3/make8.png)
 
-* 第一次登录会出现确认弹窗，点击是或者直接回车即可
-* 进入**klipper**文件夹
+**USB烧录方法**
 
-![putty](../../images/firmware/down2.png ":no-zooom")
+1. 按住SB2040板的BOOT键，然后将usb连接到上位机
 
-* 进入**out**文件夹
+![boot](../../images/boards/fly_sb2040/boot.png)
 
-![putty](../../images/firmware/down3.png ":no-zooom")
+```bash
+lsusb
+```
 
-* 直接将**klipper.bin**拖拽到电脑桌面或其他文件夹即可
+执行上面的命令查看是否有 ``ID 2e8a:0003 Raspberry Pi RP2 Boot``这行，如没有请检查USB线(连接前记得按住BOOT键)
 
-![putty](../../images/firmware/down4.png ":no-zooom")
+![config](../../images/boards/fly_sb2040/lsusb.png ":no-zooom")
 
-## 2.3  烧录固件到主板
+2. 烧录
+   
+    ```bash
+    cd ~/klipper/
+    make flash FLASH_DEVICE=2e8a:0003
+    ```
+    
 
-1. 准备一张SD卡(<32GB)，并且格式化成 **FAT32** 格式
-2. 将klipper.bin复制到SD卡，并且重命名为```firmware.bin```
+* 执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
 
-![putty](../../images/firmware/flash1.png ":no-zooom")
+   出现下图则烧录成功
 
-3. 主板断电，将SD卡插入主板
-4. 给主板上电，等待10秒左右
-5. 取下SD卡，插入电脑。如果SD卡中的看``firmware.bin``消失，出现```FLY.CUR```就是烧录成功了
+![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
 
-![putty](../../images/firmware/flash2.png ":no-zooom")
+<!-- tabs:end -->
+
+### 确定固件烧录完成
+
+* 如果固件刷完后此led会在微亮情况下变成常亮
+
+![LED](../../images/boards/fly_sb2040_v3/led.png ":no-zooom")
