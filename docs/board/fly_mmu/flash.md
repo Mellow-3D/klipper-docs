@@ -67,8 +67,6 @@
 
 ![make10](../../images/boards/fly_mmu/make9.png)
 
-
-
 ### ****RS232 固件配置****
 
 >[!TIP]

@@ -4,83 +4,115 @@
 > 文档中出现的所有`*`包裹的内容需要按照自己实际的修改
 
 
-## 驱动可用引脚
+## ercf_hardware.cfg
 
 ```cfg
-step_pin: PE14
-dir_pin:  PE13
-enable_pin: !PE12
+## Enraged Rabbit : Carrot Feeder V1.1 hardware config file
 
-cs_pin: PE11
-spi_bus: spi1a
-DIAG:PE10
-#--------------------------------------------------------------------
-step_pin: PC5
-dir_pin: !PB1
-enable_pin: !PB0
+# This configuration file is only applicable to FLY ERCF Board
 
-cs_pin: PE7
-spi_bus: spi1a
-DIAG:PE8
-#--------------------------------------------------------------------
-step_pin: PC4
-dir_pin: PA6
-enable_pin: !PA7
+[mcu ercf]
+canbus_uuid:  *3251a329e6e3*
 
-cs_pin: PA5
-spi_bus: spi1a
-DIAG:PA4
-#--------------------------------------------------------------------
-step_pin: PE4
-dir_pin: PE6
-enable_pin: !PE5 
+# Carrot Feeder 5mm D-cut shaft
+[manual_stepper gear_stepper]
+step_pin: ercf:gpio7
+dir_pin: ercf:gpio8
+enable_pin: !ercf:gpio6
+rotation_distance: 22.6789511	#Bondtech 5mm Drive Gears
+gear_ratio: 80:20
+microsteps: 16  # Please do not go higher than 16, this can cause 'MCU Timer too close' issues under Klipper
+full_steps_per_rotation: 200	#200 for 1.8 degree, 400 for 0.9 degree
+velocity: 35
+accel: 150
+#Right now no pin is used for the endstop, but we need to define one for klipper. So just use a random, not used pin
+endstop_pin: ercf:gpio13
 
-cs_pin: PC13  
-spi_bus: spi1a
-DIAG:PC14
-#####################################################################
-#                             驱动LED                               #
-#####################################################################
-#请不要将下方led数值修改过大，会很刺眼
-[neopixel TMC_leds]
-pin: PA8                     # 信号接口
-chain_count: 25              # 灯珠数量
-color_order: GRB             # 灯珠类型
-initial_RED: 0.0118          # 天
-initial_GREEN: 0.0235        # 依
-initial_BLUE: 0.0314         # 蓝
-initial_WHITE: 0.0       
+[tmc2209 manual_stepper gear_stepper]
+# Adapt accordingly to your setup and desires
+# The default values are tested with the BOM NEMA14 motor
+# Please adapt those values to the motor you are using
+# Example : for NEMA17 motors, you'll usually set the stealthchop_threshold to 0
+# and use higher current
+uart_pin: ercf:gpio9
+interpolate: True
+run_current: 0.40
+hold_current: 0.1
+sense_resistor: 0.110
+stealthchop_threshold: 500
+# diag_pin: ercf:gpio23
 
+# [tmc5160 manual_stepper gear_stepper]
+# cs_pin: ercf:gpio9
+#spi_software_sclk_pin: ercf:gpio19
+#spi_software_mosi_pin: ercf:gpio18
+#spi_software_miso_pin: ercf:gpio16
+# interpolate: True
+# run_current: 0.40
+# hold_current: 0.1
+# stealthchop_threshold: 500
+# diag0_pin: ercf:gpio23
+
+
+
+# Carrot Feeder selector
+[manual_stepper selector_stepper]
+step_pin: ercf:gpio2
+dir_pin: ercf:gpio1
+enable_pin: !ercf:gpio3
+microsteps: 16    # Please do not go higher than 16, this can cause 'MCU Timer too close' issues under Klipper
+rotation_distance: 40
+full_steps_per_rotation: 200	#200 for 1.8 degree, 400 for 0.9 degree
+velocity: 200
+accel: 600
+# Select the endstop you want depending if you are using sensorless homing for the selector or not
+endstop_pin: ercf:gpio20
+#endstop_pin: tmc2209_selector_stepper:virtual_endstop
+#endstop_pin: tmc5160_selector_stepper:virtual_endstop
+
+[tmc2209 manual_stepper selector_stepper]
+uart_pin: ercf:gpio0
+run_current: 0.55
+interpolate: True
+sense_resistor: 0.110
+stealthchop_threshold: 500
+# Uncomment the lines below if you want to use sensorless homing for the selector
+#diag_pin: ^ercf:gpio22      # Set to MCU pin connected to TMC DIAG pin
+#driver_SGTHRS: 75  # 255 is most sensitive value, 0 is least sensitive
+
+# [tmc5160 manual_stepper selector_stepper]
+# cs_pin: ercf:gpio0
+#spi_software_sclk_pin: ercf:gpio19
+#spi_software_mosi_pin: ercf:gpio18
+#spi_software_miso_pin: ercf:gpio16
+# interpolate: True
+# run_current: 0.40
+# hold_current: 0.1
+# stealthchop_threshold: 500
+# diag_pin: ercf:gpio22
+# driver_SGT: 75
+
+
+# Values are for the MG90S servo
+[servo ercf_servo]
+pin: ercf:gpio21
+maximum_servo_angle: 180
+minimum_pulse_width: 0.00085
+maximum_pulse_width: 0.00215
+
+[duplicate_pin_override]
+pins: ercf:gpio15
+# Put there the pin used by the encoder and the filament_motion_sensor
+# It has to be the same pin for those 3
+
+[filament_motion_sensor encoder_sensor]
+switch_pin: ^ercf:gpio15
+pause_on_runout: False
+detection_length: 10.0
+extruder: extruder
+# runout_gcode: _ERCF_ENCODER_MOTION_ISSUE
+
+[filament_switch_sensor toolhead_sensor]
+pause_on_runout: False
+switch_pin: ^ercf:gpio14
 ```
-
-## 限位可用引脚
-
-```
-PD3
-PD4
-PD5
-PD6
-PD7
-PC0
-PC1
-PC2
-PC3
-PE2
-PE3
-```
-
-## 舵机可用引脚
-
-```
-PA0
-PA1
-PA2
-PA3
-```
-
-## LED可用引脚
-
-```
-PE10
-```
-

@@ -64,7 +64,7 @@
 [neopixel sb_leds]
 pin: 'enter_your_led_data_pin_name'
 #   The pin connected to the neopixel. This parameter must be provided.
-chain_count: 12
+chain_count: 10
 #   The number of Neopixel chips that are "daisy chained" to the
 #   provided pin. The default is 1 (which indicates only a single
 #   Neopixel is connected to the pin).
