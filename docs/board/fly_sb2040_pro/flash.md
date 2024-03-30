@@ -66,6 +66,13 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
+* 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
+* 请保证能找到ID或者KIPPER已经连接上
+
+```
+python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
+```
+
 ### ****SB2040-Pro使用USB烧录时编译此固件****
 
 **感叹号是英文否则会编译错误**

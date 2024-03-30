@@ -117,8 +117,15 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
-3. 检查
+* 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
+* 请保证能找到ID或者KIPPER已经连接上
 
-    如果正确配置编译并烧录成功，则SHTv2板的这个灯会常亮
+```
+python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
+```
+
+检查
+
+如果正确配置编译并烧录成功，则SHTv2板的这个灯会常亮
 
 ![config](../../images/boards/fly_sht_v2/statusled.png ":no-zooom")

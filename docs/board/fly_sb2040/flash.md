@@ -102,6 +102,13 @@ cd && cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
 
 下图中高亮部分``365f54003b9d``就是这块SB2040板的uuid，这个uuid每块板子都不一样。同一块SB2040板烧录固件后uuid是不会变的
 
+* 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
+* 请保证能找到ID或者KIPPER已经连接上
+
+```
+python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
+```
+
 <!-- tabs:end -->
 
 ## 检查
