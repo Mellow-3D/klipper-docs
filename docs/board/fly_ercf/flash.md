@@ -84,6 +84,13 @@
   
   ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
+* 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
+* 请保证能找到ID或者KIPPER已经连接上
+
+```
+python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
+```
+
 ### ****ERCF使用 USB 连接的固件配置****
 
 * USB连接如下图配置

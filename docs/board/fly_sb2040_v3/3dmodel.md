@@ -8,3 +8,7 @@
 https://cdn.mellow.klipper.cn/STEP/FLY_SB2040_PRO_V3.step
 ```
 
+```3dmodel
+https://cdn.mellow.klipper.cn/STEP/SB2040-FV.step
+```
+

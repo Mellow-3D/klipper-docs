@@ -99,6 +99,13 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 
 ![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
 
+* 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
+* 请保证能找到ID或者KIPPER已经连接上
+
+```
+python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
+```
+
 
 
 ### ****RS232 固件配置****
