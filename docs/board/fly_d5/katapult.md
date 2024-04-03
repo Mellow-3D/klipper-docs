@@ -137,5 +137,5 @@ make flash FLASH_DEVICE=/dev/serial/by-id/usb-katapult_stm32f072xb_12345-if00
 ![2](../../images/boards/fly_d5/flash2.png)
 
 * 出现`CAN Flash Success`代表烧录成功
-* 如果需要更新KLIPPER固件可在`Klipper`目录下执行`python3 ~/katapult/scripts/flashtool.py -i can0 -u <MCU ID> -r`，此命令可以让主板**进入katapult固件下**只需要**重新执行烧录klipper固件命令即可**
+* 如果需要更新KLIPPER固件可在`Klipper`目录下执行`~/klippy-env/bin/python3  ~/katapult/scripts/flashtool.py -i can0 -u <MCU ID> -r`，此命令可以让主板**进入katapult固件下**只需要**重新执行烧录klipper固件命令即可**
 

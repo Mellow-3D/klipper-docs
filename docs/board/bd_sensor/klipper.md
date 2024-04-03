@@ -40,7 +40,7 @@ git pull
 - 克隆BD传感器的最新代码
 
 ```
-git clone https://github.com/markniu/Bed_Distance_sensor.git
+cd && git clone https://github.com/markniu/Bed_Distance_sensor.git
 ```
 
 - 安装
