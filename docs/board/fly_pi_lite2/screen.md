@@ -41,9 +41,7 @@
 >
 > 配置方法与TFT V1一样！！！
 
-
-
-![pi-v2](../../images/adv/tftv2.jpg)
+![hdmi](../../images/boards/fly_pi_lite2/tftv2.jpg)
 
 # HDMI屏幕接线
 

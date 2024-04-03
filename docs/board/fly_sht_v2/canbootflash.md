@@ -21,7 +21,7 @@ https://cdn.mellow.klipper.cn/BL/FLY_SHT36V2_072_CANBOOT_500K.bin
 1M的CANBOOT下载链接
 
 ```
-https://cdn.mellow.klipper.cn/BL/FLY_SHT36V2_072_CANBOOT_500K.bin
+https://cdn.mellow.klipper.cn/BL/FLY_SHT36V2_072_CANBOOT_1M.bin
 ```
 
 ![config](../../images/boards/fly_sht_v2/canboot1.png ":no-zooom")
