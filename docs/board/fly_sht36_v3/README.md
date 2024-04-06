@@ -41,7 +41,7 @@ FLY SHT36 V3是广州镁伦电子科技有限公司针对3D打印机挤出头设
 
 ● 加热棒接口: 加热棒（HEAT0），10A
 
-● 扩展接口: RGB，EndStop，PT100/PT1000，XH2.54-2P CAN口
+● 扩展接口: RGB，EndStop，PT100/PT1000，XH2.54-2P CAN扩展口
 
 ● 风扇接口：两路DC可控风扇
 
@@ -49,3 +49,17 @@ FLY SHT36 V3是广州镁伦电子科技有限公司针对3D打印机挤出头设
 
 ● 温度传感器：一路100K NTC或PT1000（TH0），一路PT100/PT1000可选
 
+# 4. 产品分类
+
+| SHT36 V3       |          V3          |       Plus V3        |        Max V3        |
+| :------------- | :------------------: | :------------------: | :------------------: |
+| Drive          | ![alt text][TMC2209] | ![alt text][TMC2209] | ![alt text][TMC2209] |
+| Klipper CANBus |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |
+| Klipper RS232  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |
+| RRF CANBus     |         :x:          |         :x:          |  :white_check_mark:  |
+| LIS2DW         |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |
+| MAX31865       |         :x:          |  :white_check_mark:  |  :white_check_mark:  |
+| LDC1612        |         :x:          |         :x:          |  :white_check_mark:  |
+
+
+[TMC2209]: https://img.shields.io/badge/-TMC2209-green "TMC2209"

@@ -4,7 +4,7 @@ FLY SB2040 PRO V3是广州镁伦电子科技有限公司针对VORON Stealthburbe
 
 ![v3](../../images/boards/fly_sb2040_v3_pro/sb2040.png)
 
-## 1.1 产品特点
+# 2. 产品特点
 
 * 预留BOOT，用户可使用USB进入BOOT模式更新固件
 * 支持Klipper固件使用串口与CAN连接，其中CAN的端子电阻120R可通过拨码选择
@@ -16,7 +16,7 @@ FLY SB2040 PRO V3是广州镁伦电子科技有限公司针对VORON Stealthburbe
 
 
 
-## 1.2 产品参数
+# 3. 产品参数
 
 ● MCU：Raspberry Pi rp2040，Dual core ARM Cortex-M0+@133MHz
 
@@ -40,3 +40,18 @@ FLY SB2040 PRO V3是广州镁伦电子科技有限公司针对VORON Stealthburbe
 
 ● 温度传感器：一路100K NTC或PT1000（TH0），一路PT100/PT1000可选
 
+# 4. 产品分类
+
+| SB2040         |          V3          |       Plus V3        |        Max V3        |        Pro V3        |     Pro Plus V3      |      Pro Max V3      |
+| :------------- | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: | :------------------: |
+| Drive          | ![alt text][TMC2209] | ![alt text][TMC2209] | ![alt text][TMC2209] | ![alt text][TMC2240] | ![alt text][TMC2240] | ![alt text][TMC2240] |
+| Klipper CANBus |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |
+| Klipper RS232  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |
+| RRF CANBus     |         :x:          |         :x:          |  :white_check_mark:  |         :x:          |         :x:          |  :white_check_mark:  |
+| LIS2DW         |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |  :white_check_mark:  |
+| MAX31865       |         :x:          |  :white_check_mark:  |  :white_check_mark:  |         :x:          |  :white_check_mark:  |  :white_check_mark:  |
+| LDC1612        |         :x:          |         :x:          |  :white_check_mark:  |         :x:          |         :x:          |  :white_check_mark:  |
+
+
+[TMC2209]: https://img.shields.io/badge/-TMC2209-green "TMC2209"
+[TMC2240]: https://img.shields.io/badge/-TMC2240-blue "TMC2240"

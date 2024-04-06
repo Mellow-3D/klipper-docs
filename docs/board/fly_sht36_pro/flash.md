@@ -68,10 +68,15 @@ cd ~/klipper && python3 ~/klipper/lib/canboot/flash_can.py -q
     
 
 1. 将下面命令中的``365f54003b9d``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
+
    
+
 ```bash
 python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 ```
+
+
+
 
 2. 如下图，出现``CAN Flash Success``则烧录成功
    
