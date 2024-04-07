@@ -1,4 +1,4 @@
-# ERCF接线
+# ERCF V2接线
 
 此接线图以愤怒的兔子V2为例
 
@@ -8,4 +8,4 @@
 
 ![save](../../images/boards/fly_d7/save.png)
 
-![wiring](../../images/boards/fly_ercf/wiring.png)
+![wiring](../../images/boards/fly_ercf_v2/wiring.png)

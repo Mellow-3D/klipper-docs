@@ -1,5 +1,4 @@
 - [**FLY-Tools 网页工具**](/board/fly_tools/)
-
 - **FLY-上位机系列**
     - [FLY-CM4扩展板](/board/fly_cm4/)
     - [FLY-Pi-V2](/board/fly_pi_v2/)
@@ -7,7 +6,6 @@
     - [FLY-MINI Pad](/board/fly_mini_pad/)
     - [FLY-lite2](/board/fly_pi_lite2/)
     - [FLY-lite](/board/fly_pi_lite/)
-
 - **主板**
   - FLY-Super 系列主板
     - [FLY-Super8-Pro](/board/fly_super8_pro/README.md)
@@ -51,7 +49,6 @@
 
   - FLY 驱动系列
     - [FLY-TMC驱动](/board/fly_tmc/)
-
 - **工具板**
   - SHT 系列CAN工具板
     - [FLY-SHT36-V3](/board/fly_sht36_v3/README.md)
@@ -119,7 +116,6 @@
   - [CAN 使用](/advanced/can.md)
   - [USB 桥接 CAN](/advanced/usb2can.md)
   - [屏幕使用](/advanced/screen.md)
-  - [CanBoot](/advanced/canboot.md)
 - **系统**
   - [下载镜像](/introduction/downloadimg.md)
 - **网页小工具**
