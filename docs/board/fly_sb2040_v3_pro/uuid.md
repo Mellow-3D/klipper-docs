@@ -12,8 +12,6 @@
 
 **两个拨码都往下拨后将CAN线接上去**
 
-![DIP](../../images/boards/fly_sb2040_v3/DIP.png)
-
 > [!TIP]
 > [搜索CANuuid](/introduction/id?id=搜索can固件id "点击即可跳转")方法
 
@@ -40,8 +38,6 @@
 
 * 接线是否正确，例如CANH 和 CANL是否接反或者接触不良
 * 请确保SB2040板上的120Ω拨码已经打开！！！！
-
-![120Ω](../../images/boards/fly_sb2040_v3/120Ω.png)
 
 * 是否正确供电，在刷固件时可以只使用TypeC接口供电
 * 您的镜像内核是否支持CAN
@@ -72,13 +68,7 @@ canbus_uuid: b7c79ec3f948     #将读取到的uuid填写到此处
 >
 > 请注意串口工具板一定要与上位机共地否则无法连接！！！！
 
-**两个拨码都往上拨后将CAN线接上去**
-
-![DIP](../../images/boards/fly_sb2040_v3/UART.png)
-
 ## 与UTOR接线
-
-![uart](../../images/boards/fly_utor/uart.png)
 
 * 上位机连接ssh后输入下方指令搜索设备！！
 
