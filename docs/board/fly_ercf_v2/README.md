@@ -4,10 +4,10 @@
 * 两个驱动位，支持UART及SPI驱动
 * 兼容原版ERCF EASY Board
 * 体积压缩极致，采用4层板设计
+* 将14PIN扩展口更换成XHD2.54，接线更牢固以防断线的事情发生
 * 支持12-24V电压
-* 支持CAN总线连接，数据传输更稳定，延迟更小，连接更稳定
+* 支持CAN总线与RS232连接，数据传输更稳定，延迟更小，连接更稳定
 * can接口使用XT30（2+2），支持15A电流
-* 赠送1米CAN连接线，避免用户无法正确压端子导致信号丢失的困扰
 
 ----
 
@@ -19,6 +19,6 @@
 
 ----
 
-# FLY-ERCF
+# FLY-ERCF V2
 
-![ercf](../../images/boards/fly_ercf/ercf.png ":no-zooom")
+![ercf](../../images/boards/fly_ercf_v2/ercf.png ":no-zooom")

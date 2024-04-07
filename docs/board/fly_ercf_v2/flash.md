@@ -5,7 +5,7 @@
 
 > [!TIP]
 >
-> 通过RS232连接必须供地，否则无法正常使用
+> x ## Enraged Rabbit : Carrot Feeder V1.1 hardware config file​# This configuration file is only applicable to FLY ERCF Board​[mcu ercf]canbus_uuid:  *3251a329e6e3*​# Carrot Feeder 5mm D-cut shaft[manual_stepper gear_stepper]step_pin: ercf:gpio7dir_pin: ercf:gpio8enable_pin: !ercf:gpio6rotation_distance: 22.6789511   #Bondtech 5mm Drive Gearsgear_ratio: 80:20microsteps: 16  # Please do not go higher than 16, this can cause 'MCU Timer too close' issues under Klipperfull_steps_per_rotation: 200    #200 for 1.8 degree, 400 for 0.9 degreevelocity: 35accel: 150#Right now no pin is used for the endstop, but we need to define one for klipper. So just use a random, not used pinendstop_pin: ercf:gpio13​[tmc2209 manual_stepper gear_stepper]# Adapt accordingly to your setup and desires# The default values are tested with the BOM NEMA14 motor# Please adapt those values to the motor you are using# Example : for NEMA17 motors, you'll usually set the stealthchop_threshold to 0# and use higher currentuart_pin: ercf:gpio9interpolate: Truerun_current: 0.40hold_current: 0.1sense_resistor: 0.110stealthchop_threshold: 500# diag_pin: ercf:gpio23​# [tmc5160 manual_stepper gear_stepper]# cs_pin: ercf:gpio9#spi_software_sclk_pin: ercf:gpio19#spi_software_mosi_pin: ercf:gpio18#spi_software_miso_pin: ercf:gpio16# interpolate: True# run_current: 0.40# hold_current: 0.1# stealthchop_threshold: 500# diag0_pin: ercf:gpio23​​​# Carrot Feeder selector[manual_stepper selector_stepper]step_pin: ercf:gpio2dir_pin: ercf:gpio1enable_pin: !ercf:gpio3microsteps: 16    # Please do not go higher than 16, this can cause 'MCU Timer too close' issues under Klipperrotation_distance: 40full_steps_per_rotation: 200    #200 for 1.8 degree, 400 for 0.9 degreevelocity: 200accel: 600# Select the endstop you want depending if you are using sensorless homing for the selector or notendstop_pin: ercf:gpio20#endstop_pin: tmc2209_selector_stepper:virtual_endstop#endstop_pin: tmc5160_selector_stepper:virtual_endstop​[tmc2209 manual_stepper selector_stepper]uart_pin: ercf:gpio0run_current: 0.55interpolate: Truesense_resistor: 0.110stealthchop_threshold: 500# Uncomment the lines below if you want to use sensorless homing for the selector#diag_pin: ^ercf:gpio22      # Set to MCU pin connected to TMC DIAG pin#driver_SGTHRS: 75  # 255 is most sensitive value, 0 is least sensitive​# [tmc5160 manual_stepper selector_stepper]# cs_pin: ercf:gpio0#spi_software_sclk_pin: ercf:gpio19#spi_software_mosi_pin: ercf:gpio18#spi_software_miso_pin: ercf:gpio16# interpolate: True# run_current: 0.40# hold_current: 0.1# stealthchop_threshold: 500# diag_pin: ercf:gpio22# driver_SGT: 75​​# Values are for the MG90S servo[servo ercf_servo]pin: ercf:gpio21maximum_servo_angle: 180minimum_pulse_width: 0.00085maximum_pulse_width: 0.00215​[duplicate_pin_override]pins: ercf:gpio15# Put there the pin used by the encoder and the filament_motion_sensor# It has to be the same pin for those 3​[filament_motion_sensor encoder_sensor]switch_pin: ^ercf:gpio15pause_on_runout: Falsedetection_length: 10.0extruder: extruder# runout_gcode: _ERCF_ENCODER_MOTION_ISSUE​[filament_switch_sensor toolhead_sensor]pause_on_runout: Falseswitch_pin: ^ercf:gpio14cfg
 
 # 编译Klipper固件
 
@@ -35,7 +35,7 @@
 >
 >**烧录时候请确保工具板已经正常连接到UTOC或者刷好桥接固件的工具板上**
 
-![can](../../images/boards/fly_ercf_v2/flash_can.png)
+![can](../../images/boards/fly_ercf_v2/can.png)
 
 * 选择`[ ] Enable extra low-level configuration options`然后回车
 
@@ -59,10 +59,9 @@
 ![make4](../../images/boards/fly_sb2040_v3/make4.png)
 
 * `(1000000) CAN bus speed`为can速率默认为1M，不建议自己修改
-* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`!gpio5`然后回车
-* 请注意 **!** 请使用英文输入法输入
+* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`gpio17`然后回车
 
-![make5](../../images/boards/fly_sb2040_v3/make5.png)
+![make5](../../images/boards/fly_ercf_v2/can.png)
 
 * 输入`Q`保存然后输入`Y`退出即可编译固件
 * 输入`make`即可编译固件
@@ -109,7 +108,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 >
 >请注意因为RS232连接无法使用直接通过命令行重新进入SSH，只能通过USB更新固件
 
-![UART](../../images/boards/fly_sb2040_v3/flash_uart.png)
+![UART](../../images/boards/fly_ercf_v2/uart.png)
 
 * 选择`[ ] Enable extra low-level configuration options`然后回车
 
@@ -127,11 +126,9 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 ![make6](../../images/boards/fly_sb2040_v3/make6.png)
 
 * 这一项为串口波特率。默认250K`(250000) Baud rate for serial port`不动
+* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`gpio17`然后回车
 
-* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`!gpio5`然后回车
-* 请注意 **!** 请使用英文输入法输入
-
-![make7](../../images/boards/fly_sb2040_v3/make7.png)
+![make7](../../images/boards/fly_ercf_v2/uart.png)
 
 * 输入`Q`保存然后输入`Y`退出即可编译固件
 * 输入`make`即可编译固件
@@ -141,9 +138,9 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 
 **USB烧录方法**
 
-1. 按住SB2040板的BOOT键，然后将usb连接到上位机
+1. 按住ERCF_V2板的BOOT键，然后将usb连接到上位机
 
-![boot](../../images/boards/fly_sb2040/boot.png)
+![boot](../../images/boards/fly_ercf_v2/boot.png)
 
 ```bash
 lsusb
@@ -173,4 +170,4 @@ lsusb
 
 * 如果固件刷完后此led会在微亮情况下变成常亮
 
-![LED](../../images/boards/fly_sb2040_v3/led.png ":no-zooom")
+![LED](../../images/boards/fly_ercf_v2/led.png ":no-zooom")
