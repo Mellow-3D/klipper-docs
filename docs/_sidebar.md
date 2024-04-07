@@ -115,7 +115,6 @@
   - [烧录 BL](/advanced/flashbl.md)
   - [CAN 使用](/advanced/can.md)
   - [USB 桥接 CAN](/advanced/usb2can.md)
-  - [屏幕使用](/advanced/screen.md)
 - **系统**
   - [下载镜像](/introduction/downloadimg.md)
 - **网页小工具**
