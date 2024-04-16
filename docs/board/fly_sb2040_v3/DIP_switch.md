@@ -4,5 +4,5 @@
 
 
 
-![DIP](../../images/boards/fly_sb2040_v3/DIP.jpg)
+![DIP](../../images/boards/fly_sb2040_v3/mode_dip.png)
 
