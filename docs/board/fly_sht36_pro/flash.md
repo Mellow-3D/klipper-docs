@@ -3,10 +3,6 @@
 > [!TIP]
 > SHT36 Pro预装了CanBoot，支持CAN烧录，烧录前请使用CAN连接到上位机；也可以使用Type-C数据线连到到上位机，使用USB烧录
 
-> [!TIP]
->
-> SHT36PRO因上位机差异可能导致驱动无法使用，可以试一下这个固件使用CAN速率1M[下载链接](https://cdn.mellow.klipper.cn/BL/SHT36PRO/SHT36PRO_KLIPPER_CAN_1M.uf2)
-
 ## 4.1 编译固件
 
 > [!TIP]
