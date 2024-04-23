@@ -31,7 +31,6 @@
 ## 3.3 连接WiFi
 
    找到WIFI配置，将WIFI处的flase改成true，并将WiFi名称和密码填写上，保存，插回上位机。等待几分钟后，进入路由器后台管理界面查看IP地址。
-   ![connect_wifi](../../images/boards/fly_pi/connect_wifi.png)
 
 > [!Warning]
 >
@@ -65,8 +64,3 @@
 
 ![tft](../../images/boards/fly_pi/tft3.png)
 
-## 3.5 mainsail切换
-
-在浏览器输入ip+:81即可切换mainsail
-
-例如将``192.168.1.123``修改为``192.168.1.123:81``

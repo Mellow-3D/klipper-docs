@@ -1,3 +1,7 @@
+> [!Tip]
+>
+> RRF教程链接:[地址](https://teamgloomy.github.io/fly_rrf_36_general.html)
+
 # 1. 产品简介
 
 FLY SHT36 V3是广州镁伦电子科技有限公司针对3D打印机挤出头设计的喷头工具板，使用该工具板，可以用四根线来替代原来主板与打印头之间繁杂的接线，优化布局。SHT36 V3适用于36步进电机，其集成了CAN收发器、RS232收发器、TypeC口、TMC2209驱动、LIS2DW加速度传感器，2个可控风扇等其他功能的工具板。此工具板适用于Klipper与RRF固件。

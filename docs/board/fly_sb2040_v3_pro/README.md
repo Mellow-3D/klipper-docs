@@ -1,3 +1,7 @@
+> [!Tip]
+>
+> RRF教程链接:[地址](https://teamgloomy.github.io/fly_sb2040_pro_max_v3_general.html)
+
 # 1. 产品简介
 
 FLY SB2040 PRO V3是广州镁伦电子科技有限公司针对VORON Stealthburber打印头推出的一款工具板，使用该工具板，可以用四根线来替代原来主板与打印头之间繁杂的接线，优化布局。SB2040适用于36步进电机，其集成了CAN收发器、RS232收发器、USB口、TMC2240驱动、LIS2DW加速度传感器，三个可控风扇等其他功能的工具板。此工具板适用于Klipper与RRF固件。
