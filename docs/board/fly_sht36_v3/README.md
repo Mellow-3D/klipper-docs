@@ -51,6 +51,8 @@ FLY SHT36 V3是广州镁伦电子科技有限公司针对3D打印机挤出头设
 
 # 4. 产品分类
 
+RRF教程链接[RRF](https://teamgloomy.github.io/fly_rrf_36_general.html)
+
 | SHT36 V3       |          V3          |       Plus V3        |        Max V3        |
 | :------------- | :------------------: | :------------------: | :------------------: |
 | Drive          | ![alt text][TMC2209] | ![alt text][TMC2209] | ![alt text][TMC2209] |

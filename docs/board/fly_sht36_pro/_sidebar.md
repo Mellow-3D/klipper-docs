@@ -12,3 +12,4 @@
   * [10. 相关链接](/board/fly_sht36_pro/link.md)
   * [11. 原理图](/board/fly_sht36_pro/schematic.md)
   * [12. 三维模型](/board/fly_sht36_pro/3dmodel.md)
+  * [13. 5160SPI解决方法](/board/fly_sht36_pro/spi.md)
