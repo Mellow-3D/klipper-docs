@@ -8,5 +8,20 @@ Unable to write tmc spi 'extruder' register IHOLD_IRUN
 
 解决方法
 
-* 刷写提供正常的固件，CAN速率1M[下载链接](https://cdn.mellow.klipper.cn/BL/SHT36PRO/SHT36PRO_KLIPPER_CAN_1M.uf2)
+* 刷写提供正常的固件
 * 更换上位机
+
+固件下载与烧录，请注意需要工具板可以正常连接can并且拥有CANBOOT
+
+* 下载
+
+```
+cd && git clone https://github.com/FengHua741/FLY_Katapult.git
+```
+
+* 烧录
+
+```
+python3 ~/klipper/lib/canboot/flash_can.py -f ~/FLY_Katapult/SHT36/SHT36PRO_KLIPPER_CAN-1M.bin -u c8a53261de65
+```
+
