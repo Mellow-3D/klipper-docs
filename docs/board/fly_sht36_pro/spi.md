@@ -22,6 +22,6 @@ cd && git clone https://github.com/FengHua741/FLY_Katapult.git
 * 烧录
 
 ```
-python3 ~/klipper/lib/canboot/flash_can.py -f ~/FLY_Katapult/SHT36/SHT36PRO_KLIPPER_CAN-1M.bin -u c8a53261de65
+python3 ~/klipper/lib/canboot/flash_can.py -f ~/FLY_Katapult/Klipper/SHT36PRO/SHT36PRO_KLIPPER_CAN-1M.bin -u c8a53261de65
 ```
 
