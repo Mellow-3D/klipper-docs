@@ -7,7 +7,7 @@
 
 ![FLY-ERCF](../../images/boards/fly_ercf_v2/pin.jpg)
 
-![ERCF](../../images/boards/fly_ercf/12.jpg)
+![ERCF](../../images/boards/fly_ercf_v2/12.jpg)
 
 ## FLY-ERCF驱动跳线图
 
