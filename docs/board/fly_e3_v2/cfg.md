@@ -269,7 +269,7 @@ step_pulse_duration: 0.000004
 uart_pin: PD4                       # 通讯端口Pin脚定义
 interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 run_current: 0.8                    # 电机运行电流值
-sense_resistor: 0.075               # 驱动采样电阻不要改
+sense_resistor: 0.110               # 驱动采样电阻不要改
 stealthchop_threshold: 500          # 静音阀值（如果不需要静音，请将数值改为0）
 #--------------------------------------------------------------------
 #[tmc5160 extruder]                  # 挤出机驱动配置- TMC5160
