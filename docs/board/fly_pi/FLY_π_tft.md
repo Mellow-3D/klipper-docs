@@ -39,7 +39,7 @@
   >
   > 配置方法与TFT V1一样！！！
   
-  
+  * 如果使用TFT V1接口需要在FLY Tools里面配置**fly-tft-v1**
   
   ![pi-v2](../../images/adv/tftv2.jpg)
   

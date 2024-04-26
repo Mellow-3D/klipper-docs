@@ -21,6 +21,9 @@
 
 G2T+TFTV2使用方法请看这:[FLY_G2T](https://mellow.klipper.cn/#/board/fly_g2t/fly)
 
+* 如果使用TFT V1接口需要在FLY Tools里面配置**fly-tft-v1**
+* 如果使用TFT V2接口需要搭配G2T并且配置**fly-tft-v2**加上屏幕型号
+
 ![pi-v2](../../images/adv/tftv2.jpg)
 
 * 如果屏幕只显示下图所示界面，请检查``FLY_Tools``中``Klipperscreen``的配置是否打开。
