@@ -39,3 +39,5 @@ sudo systemctl restart klipper
 ## TFT屏幕接线
 
 ![tft](../../images/screen/v2.png)
+
+![link](../../images/screen/link.png)
