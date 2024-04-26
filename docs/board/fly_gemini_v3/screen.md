@@ -46,6 +46,8 @@ sudo systemctl restart klipper
 
 ![tft](../../images/screen/v2.png)
 
+![link](../../images/screen/link.png)
+
 ## FLY TFT V2接线图
 
 > [!Warning]
