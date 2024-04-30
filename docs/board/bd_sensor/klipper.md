@@ -2,7 +2,7 @@
 
 ## 将传感器电缆连接到主板或CAN总线工具头板。
 
-请注意SB240无法使用BDsensor
+请注意SB2040无法使用BDsensor
 
 请注意SHT36需要将BDsensor的CLK/SCL    (Input)接到高压输入口，并且将跳线接上
 
