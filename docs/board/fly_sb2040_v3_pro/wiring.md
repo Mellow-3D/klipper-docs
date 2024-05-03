@@ -6,7 +6,7 @@
 
 ![save](../../images/boards/fly_d7/save.png)
 
->[!TIPS]
+>[!Tip]
 >
 >SB2040 V3和SB2040 V3 Pro接线图通用
 

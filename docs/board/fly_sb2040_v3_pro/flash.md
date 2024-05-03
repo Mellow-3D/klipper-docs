@@ -149,7 +149,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
 
 1. 按住SB2040板的BOOT键，然后将usb连接到上位机
 
-![boot](../../images/boards/fly_sb2040/boot.png)
+![boot](../../images/boards/fly_sb2040_v3/boot.png)
 
 ```bash
 lsusb
