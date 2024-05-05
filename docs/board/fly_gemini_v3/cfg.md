@@ -346,7 +346,7 @@ aliases:
     EXP1_1=PC9,  EXP1_3=PA13,  EXP1_5=PA9,   EXP1_7=<NC>,  EXP1_9=<GND>,
     EXP1_2=PB10,  EXP1_4=PA10,  EXP1_6=PA8,   EXP1_8=<NC>,  EXP1_10=<5V>,
     # EXP2 header
-    EXP2_1=PB14, EXP2_3=PA15,  EXP2_5=PA14,  EXP2_7=PA7  EXP2_9=<GND>,
+    EXP2_1=PB14, EXP2_3=PA15,  EXP2_5=PA14,  EXP2_7=PA7,  EXP2_9=<GND>,
     EXP2_2=PB13, EXP2_4=PB12,  EXP2_6=PB15,  EXP2_8=<RST>, EXP2_10=<NC>,
 #--------------------------------------------------------------------
 #[display]
