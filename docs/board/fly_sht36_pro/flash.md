@@ -108,7 +108,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u 365f54003b9d
 
 短接跳线插上type-c到电脑会弹出RPI-RP2
 
-弹出RPI-RP2后不需要在短接BOOT
+**弹出RPI-RP2后不需要在短接BOOT**
 
 <img src="../../images/boards/fly_sht36_pro/pri.png" alt="pri" style="zoom:90%;" />
     
