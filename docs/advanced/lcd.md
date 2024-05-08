@@ -98,6 +98,22 @@ sudo systemctl restart klipper
 
 ## 树莓派配置
 
+用于树莓派的Raspberry Pi OS / Ubuntu / Kali 和 Retropie系统。
+
+1. 请在[树莓派官网](https://www.raspberrypi.com/software/operating-systems/)下载最新版本的镜像。将压缩文件下载到PC上，并解压得到.img文件。
+2. TF卡连接到PC，使用[SDFormatter](https://www.waveshare.net/w/upload/d/d7/Panasonic_SDFormatter.zip)软件格式化TF卡。
+3. 打开[Win32DiskImager](https://www.waveshare.net/w/upload/7/76/Win32DiskImager.zip)软件，选择第1步准备的系统镜像，点击write烧写系统镜像。
+4. 烧写完成后，打开TF卡根目录的config.txt文件，在config.txt最后加入以下代码，保存并安全弹出TF卡。
+
+```
+dtoverlay=vc4-kms-v3d
+dtoverlay=vc4-kms-dsi-7inch
+```
+
+5. 将TF卡插入树莓派，给树莓派上电，正常等待几秒后可以进入显示，系统启动后可以正常触摸。
+
+
+
 > [!NOTE]
 > 树莓派无法使用触摸时候可以按此方法修改配置
 
