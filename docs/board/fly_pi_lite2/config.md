@@ -51,7 +51,7 @@
 
 * HDMI屏幕只需要修改Display此选项即可
 
-![hdmi](../../images/boards/fly_pi/hdmi.png)
+![hdmi](../../images/boards/fly_pi_lite2/hdmi.png)
 
 ### **TFT**
 
