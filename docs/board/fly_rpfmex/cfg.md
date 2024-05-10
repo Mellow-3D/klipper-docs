@@ -24,9 +24,9 @@ pin: rpfmex:gpio12
 
 ## M0
 [stepper_x]
-step_pin: gpio6
-dir_pin: gpio5
-enable_pin: !gpio9
+step_pin: rpfmex:gpio6
+dir_pin: rpfmex:gpio5
+enable_pin: !rpfmex:gpio9
 microsteps: 16
 rotation_distance: 40
 endstop_pin: !rpfmex:gpio27
@@ -34,9 +34,9 @@ endstop_pin: !rpfmex:gpio27
 
 ## M1
 [stepper_y]
-step_pin: gpio1
-dir_pin: gpio0
-enable_pin: !gpio4
+step_pin: rpfmex:gpio1
+dir_pin: rpfmex:gpio0
+enable_pin: !rpfmex:gpio4
 microsteps: 16
 rotation_distance: 40
 endstop_pin: !rpfmex:gpio28
@@ -44,9 +44,9 @@ endstop_pin: !rpfmex:gpio28
 
 ## M2
 [stepper_z]
-step_pin: gpio22
-dir_pin: gpio21
-enable_pin: !gpio25
+step_pin: rpfmex:gpio22
+dir_pin: rpfmex:gpio21
+enable_pin: !rpfmex:gpio25
 microsteps: 16
 rotation_distance: 40
 endstop_pin: !rpfmex:gpio29

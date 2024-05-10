@@ -80,7 +80,13 @@ sudo rm ~/klipper/out/klipper.bin && cp ~/katapult/out/katapult.bin ~/klipper/ou
 * USB ID需要自己查询替换
 
 ```
-make flash FLASH_DEVICE=/dev/serial/by-id/usb-klipper_stm32f072xb_12345-if00
+~/klippy-env/bin/python ~/klipper/lib/canboot/flash_can.py  -d <你的设备串口地址>
+```
+
+* 参考
+
+```
+~/klippy-env/bin/python ~/klipper/lib/canboot/flash_can.py -d /dev/serial/by-id/usb-katapult_stm32f072xb_12345-if00
 ```
 
 
