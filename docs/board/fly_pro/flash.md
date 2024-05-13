@@ -67,6 +67,10 @@
 
 ## 固件烧录
 
+* 输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
+
+<img src="../../images/boards/fly_super8/id.png" alt="id" style="zoom:80%;" />
+
 * 出厂预刷Katapult我们可以直接通过Katapult刷固件，请注意`-d`后面有空格
 
 ```
