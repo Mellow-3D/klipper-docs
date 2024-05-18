@@ -55,25 +55,6 @@ CS   ----> CS
 
 
 
-## 打开串口
-
-```
- sudo nano /boot/armbianEnv.txt
-```
-
-![boot](../images/adv/accele/boot.png ":no-zooom")
-
-* 找到`FLY-TFT-V1-NEW `并且删除`
-* 保存退出并且重启
-
-```
-CTRL+S
-CTRL+X
-sudo reboot
-```
-
-
-
 ## 测试
 
 * 打开printer.cfg加入加速度计配置

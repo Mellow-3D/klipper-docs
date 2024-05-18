@@ -1,4 +1,6 @@
-刷写BL或者Katapult
+## 本教程提供刷写BL方式
+
+* **PROX10有两个BL，一个katapult可以使用上位机直接更新固件，一个内存卡BL固件可以使用TF卡更新固件**
 
 拉取最新BL
 
@@ -6,9 +8,9 @@
 cd && git clone https://github.com/FengHua741/FLY_Katapult.git
 ```
 
-进入DFU烧录
+* 进入DFU烧录
 
-按着主板的BT0后按右边的RST即可进去DFU模式（需要配图）
+* 按着主板的BT0后按右边的RST即可进去DFU模式（需要配图）
 
 <!-- tabs:start -->
 
@@ -32,10 +34,17 @@ lsusb
 
 4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
 
-```bash
-sudo dfu-util -a 0 -D ~/katapult/out/katapult.bin --dfuse-address 0x08000000:force:mass-erase -d 0483:df11
+* **需要烧录katapult固件**
 
+```bash
+sudo dfu-util -a 0 -D ~/FLY_Katapult/BL/ProX10/ProX10_USB_katapult.bin --dfuse-address 0x08000000:force:mass-erase -d 0483:df11
 ```
+* **需要烧录内存卡BL固件**
+
+```bash
+sudo dfu-util -a 0 -D ~/FLY_Katapult/BL/ProX10/BL.bin --dfuse-address 0x08000000:force:mass-erase -d 0483:df11
+```
+
 5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
 
 ![7](../../images/boards/fly_super8_pro/dfu.png ":no-zooom")
@@ -43,7 +52,7 @@ sudo dfu-util -a 0 -D ~/katapult/out/katapult.bin --dfuse-address 0x08000000:for
 6. 出现上图内容则烧录成功
 
 > [!TIP]
-> 注意：烧录成功后一定记得拔下来跳线帽
+> 注意：烧录成功后一定要断电重启
 
 ### **使用电脑USB烧录**
 
