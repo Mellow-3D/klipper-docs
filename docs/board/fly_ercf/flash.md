@@ -54,8 +54,8 @@
   首先进入ssh，然后依次输入以下指令
   
   ```
-  cd
-  git clone https://github.com/Arksine/CanBoot
+  cd ~/
+  git clone https://github.com/Arksine/katapult
   ```
   
   ![1](../../images/boards/fly_sht_v2/1.png)

@@ -1,4 +1,4 @@
-# 5. FLY-D7接线
+# 5. FLY-Micio接线
 
 > [!WARNING]
 >
@@ -6,6 +6,5 @@
 
 <img src="../../images/boards/fly_d7/save.png" alt="save" style="zoom:90%;" />
 
-<img src="../../images/boards/fly_d7/d7_uart.png" alt="d7_uart" style="zoom:60%;" />
 
-![d7_wiring](../../images/boards/fly_d7/d7_wiring.png)
+

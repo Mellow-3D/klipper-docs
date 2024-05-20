@@ -1,7 +1,7 @@
-## 1. FLY-D7接口说明
+## 1. FLY-Micio接口说明
 
-![pin](../../images/boards/fly_d7/interface.png)
+![pin](../../images/boards/fly_micio/interface.png)
 
-## 1. FLY-D7 pin脚说明
+## 1. FLY-Micio pin脚说明
 
-![pin](../../images/boards/fly_d7/pin.png)
+![pin](../../images/boards/fly_micio/pin.png)
