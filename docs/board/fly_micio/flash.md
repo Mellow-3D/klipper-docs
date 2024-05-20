@@ -6,7 +6,7 @@
 >
 > Micio预先安装了katapult固件并且使用USB连接
 
-# 编译Klipper固件
+# 固件注意事项
 
 请使用**MobaXterm_Personal**等**SSH工具**连接通过**网络**到您的上位机，并且需要确定以下几点
 
@@ -26,140 +26,85 @@
 
 * 现在应该出现了Klipper编译配置界面，**↑ ↓ 键**选择菜单，**回车键**确认或进入菜单
 
-<!-- tabs:start -->
-### ****USB固件配置****
+# 编译Klipper固件
+
+* 请根据自己的机器选择编译相应的固件
+
+* 请确保使用**MobaXterm_Personal**等**SSH工具**连接到上位机，并且是**安装好klipper的用户**参考教程:[上位机连接 SSH](https://mellow.klipper.cn/#/introduction/conntossh?id=通过wifi或者网线连接上位机)
+
+* 上位机连接SSH后输入`cd klipper`并且回车
+
+![cd](../../images/firmware/cd.png ":no-zooom")
+
+* 输入`rm -rf .config && make menuconfig`，并且回车
+* 其中`rm -rf .config`是为了清理之前编译的固件参数
+
+![make](../../images/firmware/make.png ":no-zooom")
+
+* 回车后将出现下面界面
+* 看到此界面后就可以开始编译固件
+
+![make1](../../images/firmware/make1.png ":no-zooom")
+
+* 选择`Enable extra low-level configuration options`并且**回车**，此项是打开其他配置选项
+* 选择`    Micro-controller Architecture (Atmega AVR)  --->`回车进去找到`( ) Raspberry Pi RP2040`然后回车
+
+![make1](../../images/boards/fly_sb2040_v3/make1.png)
+
+
+
+* 选择`    Bootloader offset (No bootloader)  --->`回车然后选择`( ) 16KiB bootloader`在回车
+
+![make2](../../images/boards/fly_sb2040_v3/make2.png)
+
+* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`gpio8`然后回车
 
 ![USB](../../images/boards/fly_micio/usb.png)
 
-* 选择`[ ] Enable extra low-level configuration options`然后回车
+* 至此USB固件编译完成输入`Q`与`Y`进行退出保存
+* 如果需要编译**USB桥接CAN固件需要修改选择**`Communication interface (USBSERIAL) `回车，在选择` Communication interface (USB to CAN bus bridge)  --->`即可
 
-![make](../../images/boards/fly_sb2040_v3/make.png)
+<!-- tabs:start -->
 
-* 选择`    Micro-controller Architecture (Atmega AVR)  --->`回车进去找到`( ) Raspberry Pi RP2040`然后回车
+## ****USB固件配置****
 
-![make1](../../images/boards/fly_sb2040_v3/make1.png)
+![USB](../../images/boards/fly_micio/usb.png)
 
-* 选择`    Bootloader offset (No bootloader)  --->`回车然后选择`( ) 16KiB bootloader`在回车
-
-![make2](../../images/boards/fly_sb2040_v3/make2.png)
-
-* 输入`Q`保存然后输入`Y`退出即可编译固件
-* 输入`make`即可编译固件
-* 出现`  Creating bin file out/klipper.bin`代表本次编译固件成功
-
-![make10](../../images/boards/fly_sb2040_v3/make10.png)
-
-**USB烧录方法**
-
-1. 按住SB2040板的BOOT键，然后将usb连接到上位机
-
-![boot](../../images/boards/fly_sb2040_v3/boot.png)
-
-```bash
-lsusb
-```
-
-执行上面的命令查看是否有 ``ID 2e8a:0003 Raspberry Pi RP2 Boot``这行，如没有请检查USB线(连接前记得按住BOOT键)
-
-![config](../../images/boards/fly_sb2040/lsusb.png ":no-zooom")
-
-2. 烧录
-   
-    ```bash
-    cd ~/klipper/
-    make flash FLASH_DEVICE=2e8a:0003
-    ```
-    
-
-* 执行上面的命令可能会提示输入密码，输入当前用户的密码就好，输密码的时候是不可见的。输完之接按回车
-
-   出现下图则烧录成功
-
-![flash](../../images/boards/fly_sb2040/flash.png ":no-zooom")
-
-### ****CAN桥接固件配置****
->[!TIP]
->请确保工具板拨码拨到正确位置
->
->**烧录时候请确保工具板已经正常连接到UTOC或者刷好桥接固件的工具板上**
-
-![can](../../images/boards/fly_micio/flash_can.png)
-
-* 选择`[ ] Enable extra low-level configuration options`然后回车
-
-![make](../../images/boards/fly_sb2040_v3/make.png)
-
-* 选择`    Micro-controller Architecture (Atmega AVR)  --->`回车进去找到`( ) Raspberry Pi RP2040`然后回车
-
-![make1](../../images/boards/fly_sb2040_v3/make1.png)
-
-* 选择`    Bootloader offset (No bootloader)  --->`回车然后选择`( ) 16KiB bootloader`在回车
-
-![make2](../../images/boards/fly_sb2040_v3/make2.png)
-
-* 选择`    Communication interface (USB)  --->`回车然后选择`( ) CAN bus`回车
-
-![make3](../../images/boards/fly_sb2040_v3/make3.png)
-
-* 选择`(4) CAN RX gpio number (NEW)`将**4**改成**1**
-* 选择`(5) CAN TX gpio number (NEW)`将**5**改成**0**
-
-![make4](../../images/boards/fly_sb2040_v3/make4.png)
-
-* `(1000000) CAN bus speed`为can速率默认为1M，不建议自己修改
-* 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`!gpio5`然后回车
-* 请注意 **!** 请使用英文输入法输入
-
-![make5](../../images/boards/fly_sb2040_v3/make5.png)
-
-* 输入`Q`保存然后输入`Y`退出即可编译固件
-* 输入`make`即可编译固件
-* 出现`  Creating bin file out/klipper.bin`代表本次编译固件成功
-
-![make10](../../images/boards/fly_sb2040_v3/make10.png)
-
-**CAN烧录方法**
-
-> [!TIP]
-> 请使用UTOC或者其他支持klipper USB桥接CAN的主板将SB2040-V3与上位机通过CAN总线连接
-
-> [!TIP]
->
-> 请先看[Id读取](http://mellow.klipper.cn/#/board/fly_sb2040_v3_pro/uuid?id=can-id读取)接好线与上位机连接后在搜索CAN ID
-
-> [!TIP]
-> 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录
-
-首先进入ssh，然后依次输入以下指令
-
-```
-~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
-```
-
-![canid](../../images/guides/klippererro/canid.png)
-
-1. 将下面命令中的``c5d882v0d121``替换为[查找uuid](#_2-查找uuid "点击即可跳转")中查找到的uuid
-
-```bash
-python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
-```
-
-2. 如下图，出现``CAN Flash Success``则烧录成功
-
-![config](../../images/boards/fly_sht_v2/flash.png ":no-zooom")
-
-* 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
-* 请保证能找到ID或者KIPPER已经连接上
-
-```
-python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
-```
-
+## ****CAN桥接固件配置****
+![make3](../../images/boards/fly_micio/can.png)
 
 <!-- tabs:end -->
 
-### 确定固件烧录完成
+* 输入`Q`保存然后输入`Y`退出即可编译固件
+* 输入`make`即可编译固件
+* 出现`  Creating bin file out/klipper.bin`代表本次编译固件成功
 
-* 如果固件刷完后此led会在微亮情况下变成常亮
+![make10](../../images/boards/fly_sb2040_v3/make10.png)
 
-![LED](../../images/boards/fly_sb2040_v3/led.png ":no-zooom")
+# 固件烧录
+
+* 输入 ``ls /dev/serial/by-id/*`` 回车。如果一切正常，则会出现下面一行蓝色的ID。
+
+<img src="../../images/boards/fly_super8/id.png" alt="id" style="zoom:80%;" />
+
+* 更新USB固件需要在编译好最新固件后输入下方命令更新，请注意`=`后面没有空格
+
+```
+make flash FLASH_DEVICE=<你的设备串口地址>
+```
+
+* 更新USB桥接CAN固件需要在编译好最新固件后输入下方命令重置进去Katapult
+
+```
+~/klippy-env/bin/python3 ~/katapult/scripts/flashtool.py -i can0 -u <MCU ID> -r
+```
+
+* 然后输入即可更新，请注意`=`后面没有空格
+
+```
+make flash FLASH_DEVICE=<你的设备串口地址>
+```
+
+# 确定固件是否烧录成功
+
+* 如果固件刷完后此led会在闪烁情况下变成常亮
