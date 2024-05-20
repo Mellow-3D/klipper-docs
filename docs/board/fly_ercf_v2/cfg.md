@@ -26,7 +26,7 @@ full_steps_per_rotation: 200	#200 for 1.8 degree, 400 for 0.9 degree
 velocity: 35
 accel: 150
 #Right now no pin is used for the endstop, but we need to define one for klipper. So just use a random, not used pin
-endstop_pin: ercf:gpio13
+endstop_pin: ercf:gpio15
 
 [tmc2209 manual_stepper gear_stepper]
 # Adapt accordingly to your setup and desires
@@ -40,7 +40,7 @@ run_current: 0.40
 hold_current: 0.1
 sense_resistor: 0.110
 stealthchop_threshold: 500
-# diag_pin: ercf:gpio23
+# diag_pin: ercf:gpio15
 
 # [tmc5160 manual_stepper gear_stepper]
 # cs_pin: ercf:gpio9
@@ -51,15 +51,15 @@ stealthchop_threshold: 500
 # run_current: 0.40
 # hold_current: 0.1
 # stealthchop_threshold: 500
-# diag0_pin: ercf:gpio23
+# diag0_pin: ercf:gpio15
 
 
 
 # Carrot Feeder selector
 [manual_stepper selector_stepper]
-step_pin: ercf:gpio2
-dir_pin: ercf:gpio1
-enable_pin: !ercf:gpio3
+step_pin: ercf:gpio4
+dir_pin: ercf:gpio5
+enable_pin: !ercf:gpio5
 microsteps: 16    # Please do not go higher than 16, this can cause 'MCU Timer too close' issues under Klipper
 rotation_distance: 40
 full_steps_per_rotation: 200	#200 for 1.8 degree, 400 for 0.9 degree
@@ -71,17 +71,17 @@ endstop_pin: ercf:gpio20
 #endstop_pin: tmc5160_selector_stepper:virtual_endstop
 
 [tmc2209 manual_stepper selector_stepper]
-uart_pin: ercf:gpio0
+uart_pin: ercf:gpio2
 run_current: 0.55
 interpolate: True
 sense_resistor: 0.110
 stealthchop_threshold: 500
 # Uncomment the lines below if you want to use sensorless homing for the selector
-#diag_pin: ^ercf:gpio22      # Set to MCU pin connected to TMC DIAG pin
+#diag_pin: ^ercf:gpio20      # Set to MCU pin connected to TMC DIAG pin
 #driver_SGTHRS: 75  # 255 is most sensitive value, 0 is least sensitive
 
 # [tmc5160 manual_stepper selector_stepper]
-# cs_pin: ercf:gpio0
+# cs_pin: ercf:gpio2
 #spi_software_sclk_pin: ercf:gpio19
 #spi_software_mosi_pin: ercf:gpio18
 #spi_software_miso_pin: ercf:gpio16
@@ -89,7 +89,7 @@ stealthchop_threshold: 500
 # run_current: 0.40
 # hold_current: 0.1
 # stealthchop_threshold: 500
-# diag_pin: ercf:gpio22
+# diag_pin: ercf:gpio20
 # driver_SGT: 75
 
 
@@ -106,13 +106,10 @@ pins: ercf:gpio15
 # It has to be the same pin for those 3
 
 [filament_motion_sensor encoder_sensor]
-switch_pin: ^ercf:gpio15
+switch_pin: ^ercf:gpio21
 pause_on_runout: False
 detection_length: 10.0
 extruder: extruder
 # runout_gcode: _ERCF_ENCODER_MOTION_ISSUE
 
-[filament_switch_sensor toolhead_sensor]
-pause_on_runout: False
-switch_pin: ^ercf:gpio14
 ```

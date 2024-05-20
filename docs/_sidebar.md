@@ -74,6 +74,7 @@
   
   - 兔子多色CAN扩展板
     * [FLY-ERCF](/board/fly_ercf/README.md)
+    * [FLY-ERCF_V2](/board/fly_ercf_v2/README.md)
     
   - FLY MiniAB 集线板
     * [FLY MiniAB 集线板](/board/miniab_board/README.md)

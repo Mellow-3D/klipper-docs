@@ -21,4 +21,4 @@
 
 # FLY-ERCF V2
 
-![ercf](../../images/boards/fly_ercf_v2/ercf.png ":no-zooom")
+![ercf](../../images/boards/fly_ercf_v2/ercf.jpg ":no-zooom")
