@@ -5,9 +5,7 @@
 > [!TIP]
 > 引脚图中出现的``Pxx``均为缩写，如``P10``在配置中应为``gpio10``
 
-![FLY-ERCF](../../images/boards/fly_ercf_v2/pin.jpg)
-
-![ERCF](../../images/boards/fly_ercf_v2/12.jpg)
+![FLY-ERCF](../../images/boards/fly_ercf_v2/pin.png)
 
 ## FLY-ERCF驱动跳线图
 
