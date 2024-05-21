@@ -13,5 +13,6 @@
   * [11. 三维模型](/board/fly_sb2040_v3_pro/3dmodel.md)
   * [12. 注意事项](/board/fly_sb2040_v3_pro/tmc.md)
   * [13. CANBOOT下载](/board/fly_sb2040_v3_pro/canboot.md)
+  * [14. 扫床使用](/board/fly_sb2040_v3_pro/1612.md)
 
  
