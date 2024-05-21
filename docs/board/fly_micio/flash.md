@@ -87,6 +87,18 @@
 
 <img src="../../images/boards/fly_super8/id.png" alt="id" style="zoom:80%;" />
 
+* 第一次刷固件需要使用下方指令，请注意`-d`后面有空格
+
+```
+~/klippy-env/bin/python ~/klipper/lib/canboot/flash_can.py  -d <你的设备串口地址>
+```
+
+* 参考指令
+
+```
+~/klippy-env/bin/python ~/klipper/lib/canboot/flash_can.py -d /dev/serial/by-id/usb-katapult_stm32f072xb_12345-if00
+```
+
 * 更新USB固件需要在编译好最新固件后输入下方命令更新，请注意`=`后面没有空格
 
 ```
