@@ -4,7 +4,7 @@
 >
 > 烧录固件之前确保已完成[上位机连接ssh](introduction/conntossh.md "点击即可跳转")文档
 >
-> Micio预先安装了katapult固件并且使用USB连接
+> Micio4预先安装了katapult固件并且使用USB连接
 
 # 固件注意事项
 
@@ -120,3 +120,5 @@ make flash FLASH_DEVICE=<你的设备串口地址>
 # 确定固件是否烧录成功
 
 * 如果固件刷完后此led会在闪烁情况下变成常亮
+
+![led](../../images/boards/fly_micio/led.png)

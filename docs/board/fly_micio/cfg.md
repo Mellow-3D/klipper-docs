@@ -4,8 +4,8 @@
 ####################################################################################
 #                                         3D MELLOW                                #
 ####################################################################################
-## Fly#C8资料网址：http://mellow.klipper.cn/#/board/fly_fly_C8/
-## Fly#C8原理图网址：https://cdn.mellow.klipper.cn/SCH#PDF/FLY#C8.pdf
+## Fly#C8资料网址：http://mellow.klipper.cn/#/board/fly_micio/README
+## Fly#C8原理图网址：http://mellow.klipper.cn/#/board/fly_micio/schematic
 ## FLY 官方淘宝店：https://shop126791347.taobao.com/shop/view_shop.htm?spm=a230r.1.14.4.1a4840a8hyvpPJ&user_number_id=2464680006
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
@@ -20,7 +20,7 @@
 ## 热敏电阻类型                             [extruder] 和 [heater_bed]
 ## Z轴限位开关停止位置                      [safe_z_home] 
 ## Z轴限位开关偏移位置                      [stepper_z] 
-## PID 校准                                [extruder] 和 [heater_bed] 
+## PID 校准                               [extruder] 和 [heater_bed] 
 ## 微调挤出机电机步进值                     [extruder] 
 
 #####################################################################
@@ -44,7 +44,7 @@ serial: /dev/serial/by-id/usb-Klipper_rp2040_MELLOW-if00
 #####################################################################
 #      Temperature monitoring
 #####################################################################
-[temperature_sensor MCU]        #显示主板的温度
+[temperature_sensor Micio4]        #显示主板的温度
 sensor_type: temperature_mcu
 #####################################################################
 # [temperature_sensor lite2]       #上位机温度

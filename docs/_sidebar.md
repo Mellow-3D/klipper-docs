@@ -47,6 +47,9 @@
   - FLY MINI
     * [FLY-MINI](/board/fly_mini/)
 
+  - FLY Micio4
+    * [FLY-Micio4](/board/fly_Micio/)
+
   - FLY 驱动系列
     - [FLY-TMC驱动](/board/fly_tmc/)
 - **工具板**
