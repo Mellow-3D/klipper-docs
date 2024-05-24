@@ -12,6 +12,8 @@
 
 6. **出厂预刷Katapult，如果需要使用Micro SD卡刷固件需要手动进入DFU并且烧录BL**
 
+![Dialing_code](../../images/boards/fly_pro/Dialing_code.png)
+
 ## 编译Klipper固件
 
 * 请根据自己的机器选择编译相应的固件

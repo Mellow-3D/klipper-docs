@@ -1,5 +1,7 @@
 # 系统烧录
 
+![Dialing_code](../../images/boards/fly_pro/Dialing_code.png)
+
 ## 注意事项
 
 1. 禁止带电时拔插除USB之外的任何设备
@@ -72,16 +74,12 @@
 
 ## 烧写镜像
 
-1. 用Win32DiskImager.exe[（点这里下载）](https://www.waveshare.net/w/upload/7/76/Win32DiskImager.zip)烧写镜像。
-2. 选择要烧写的镜像（步骤1下载的），点击“Write”进行烧写，烧录完成后，会提示你是否要格式化，这里需要点击取消
+1. 用Raspberry Pi Imager [（点这里下载）](https://www.raspberrypi.com/software/)烧写镜像。
+2. 烧录前需要配置账号密码与打开SSH
 
-![win32](../../images/boards/fly_pro/win32.png)
+![Imager](../../images/boards/fly_pro/Imager.png)
 
 3. 烧录完毕之后，在我的电脑会识别出一个U盘的盘符
-
-> [!Tip]
->
-> 烧录完成后需要打开BOOT盘创建一个`ssh`的文件
 
 ## 烧录完成并重启
 
