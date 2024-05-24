@@ -6,7 +6,11 @@
     - [FLY-MINI Pad](/board/fly_mini_pad/)
     - [FLY-lite2](/board/fly_pi_lite2/)
     - [FLY-lite](/board/fly_pi_lite/)
+
 - **主板**
+  - FLY-Pro系列主板
+    - [FLY-Pro-X10](/board/fly_pro/README.md)
+
   - FLY-Super 系列主板
     - [FLY-Super8-Pro](/board/fly_super8_pro/README.md)
     - [FLY-Super8](/board/fly_super8/README.md)
@@ -48,7 +52,7 @@
     * [FLY-MINI](/board/fly_mini/)
 
   - FLY Micio4
-    * [FLY-Micio4](/board/fly_Micio/)
+    * [FLY-Micio4](/board/fly_micio/)
 
   - FLY 驱动系列
     - [FLY-TMC驱动](/board/fly_tmc/)
