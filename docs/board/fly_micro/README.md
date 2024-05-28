@@ -1,6 +1,6 @@
-Mellow Fly-Micio4是广州镁伦电子科技有限公司Fly3D主板研发团队推出的一款高性能3D打印机主板，最多支持4路步进电机。
+Mellow Fly-Micro4是广州镁伦电子科技有限公司Fly3D主板研发团队推出的一款高性能3D打印机主板，最多支持4路步进电机。
 
-![micio](../../images/boards/fly_micio/micio.png)
+![micro](../../images/boards/fly_micro/micro.png)
 
 
 
