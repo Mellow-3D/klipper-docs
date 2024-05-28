@@ -4,8 +4,8 @@
 ####################################################################################
 #                                         3D MELLOW                                #
 ####################################################################################
-## Fly#C8资料网址：http://mellow.klipper.cn/#/board/fly_micio/README
-## Fly#C8原理图网址：http://mellow.klipper.cn/#/board/fly_micio/schematic
+## Fly micro资料网址：http://mellow.klipper.cn/#/board/fly_micro/README
+## Fly micro原理图网址：http://mellow.klipper.cn/#/board/fly_micro/schematic
 ## FLY 官方淘宝店：https://shop126791347.taobao.com/shop/view_shop.htm?spm=a230r.1.14.4.1a4840a8hyvpPJ&user_number_id=2464680006
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
@@ -44,7 +44,7 @@ serial: /dev/serial/by-id/usb-Klipper_rp2040_MELLOW-if00
 #####################################################################
 #      Temperature monitoring
 #####################################################################
-[temperature_sensor Micio4]        #显示主板的温度
+[temperature_sensor Micro4]        #显示主板的温度
 sensor_type: temperature_mcu
 #####################################################################
 # [temperature_sensor lite2]       #上位机温度

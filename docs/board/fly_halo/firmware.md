@@ -2,7 +2,7 @@
 
 1. FLY-Halo发布版全量升级固件
 
-    halo-f-release-v0.21-0b27aba-full.bin （2023-11-15） <button type="button" onclick="window.location.href='https://cdn.mellow.klipper.cn/firmware/halo-f-release-v0_21-0b27aba-full.bin'">点我下载</button>
+    halo-f-release-v0.21-0b27aba-full.bin （2025-05-28） <button type="button" onclick="window.location.href='https://cdn.mellow.klipper.cn/firmware/halo-f-release-v0_0_2-17-g5ace4f6-full.bin'">点我下载</button>
 
     [固件更新记录](/board/fly_halo/updatelog_halo)
 

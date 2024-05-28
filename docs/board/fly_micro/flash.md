@@ -4,7 +4,7 @@
 >
 > 烧录固件之前确保已完成[上位机连接ssh](introduction/conntossh.md "点击即可跳转")文档
 >
-> Micio4预先安装了katapult固件并且使用USB连接
+> Micro4预先安装了katapult固件并且使用USB连接
 
 # 固件注意事项
 
@@ -59,7 +59,7 @@
 
 * 选择`()  GPIO pins to set at micro-controller startup (NEW)`输入`gpio8`然后回车
 
-![USB](../../images/boards/fly_micio/usb.png)
+![USB](../../images/boards/fly_micro/usb.png)
 
 * 至此USB固件编译完成输入`Q`与`Y`进行退出保存
 * 如果需要编译**USB桥接CAN固件需要修改选择**`Communication interface (USBSERIAL) `回车，在选择` Communication interface (USB to CAN bus bridge)  --->`即可
@@ -68,10 +68,10 @@
 
 ## ****USB固件配置****
 
-![USB](../../images/boards/fly_micio/usb.png)
+![USB](../../images/boards/fly_micro/usb.png)
 
 ## ****CAN桥接固件配置****
-![make3](../../images/boards/fly_micio/can.png)
+![make3](../../images/boards/fly_micro/can.png)
 
 <!-- tabs:end -->
 
@@ -121,4 +121,4 @@ make flash FLASH_DEVICE=<你的设备串口地址>
 
 * 如果固件刷完后此led会在闪烁情况下变成常亮
 
-![led](../../images/boards/fly_micio/led.png)
+![led](../../images/boards/fly_micro/led.png)
