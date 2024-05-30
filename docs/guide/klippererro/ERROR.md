@@ -47,9 +47,12 @@ Klipper 检测到温度超过最大或最小阀值（热敏电阻可能开路或
 
 ## 3. 解决方法
 
-1. 检查热敏型号是否正确
-2. 检查热敏Pin脚是否正确
-3. 检查热敏是否有短路
+1. 配置里面搜索`min_temp:`最小温度改`-235`
+2. 配置里面搜索`max_temp:`最大温度改`99999999`
+3. 检查热敏型号是否正确
+4. 检查热敏Pin脚是否正确
+5. 检查热敏是否有短路
+6. 确定并且解决后需要更改回原来温度
 
 # 警告 "relative_reference_index"
 
@@ -123,13 +126,13 @@ sudo timedatectl set-ntp false
 
 ## 2. 报错原因
 
-关机时无法更新MCU的MCU配置
+因急停等原因无法更新MCU的MCU配置,
 
 ## 3. 解决方法
 
-重置klipper固件
+点击重置klipper固件
 
-或者断电重启
+![restart](../../images/guides/klippererro/restart.png)
 
 # Shutdown due to webhooks request
 ## 1. 报错信息
@@ -144,7 +147,4 @@ sudo timedatectl set-ntp false
 
 重启klipper服务与重置固件即可
 
-
-
-
-
+![restart](../../images/guides/klippererro/restart.png)

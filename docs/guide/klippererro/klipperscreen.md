@@ -29,17 +29,7 @@ sudo rm -rf /etc/udev/rules.d/fly_devices.rules && sudo wget https://upyun.pan.z
 
 ![ks](../../images/guides/klippererro/ks.png)
 
-2. 添加引用，ks.cfg可自行重命名，然后添加新配置。
-
-```cfg
-[include ks.cfg]
-```
-
-![ks](../../images/guides/klippererro/ks1.png)
-
-![ks](../../images/guides/klippererro/ks2.png)
-
-3. 打开`ks.cfg`并且添加以下配置，可以修改`VORON-300`打印机名称与 `192.168.6.217`需要连接的机器。
+2. 打开`KlipperScreen.conf`并且在最上面添加以下配置，可以修改`VORON-300`打印机名称与 `192.168.6.217`需要连接的机器。
 
 >[!Warning]
 >

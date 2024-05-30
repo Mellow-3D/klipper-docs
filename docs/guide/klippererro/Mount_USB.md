@@ -1,4 +1,8 @@
-FLY挂载U盘方法
+FLY上位机挂载U盘方法
+
+>[!Warning]
+>
+>目前FLY上位机只有mini pad  Lite和lite2才需要执行此步骤,其他FLY上位机无需执行
 
 使用SSH软件连接到上位机后执行下方指令
 
