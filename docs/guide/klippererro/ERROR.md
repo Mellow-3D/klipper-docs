@@ -111,11 +111,11 @@ sudo timedatectl set-ntp false
 
 ## 2. 报错原因
 
-**[homing override]**与**[safe_z_home]**不能同时使用
+`[homing override]`与 `[safe_z_home]`不能同时使用
 
 ## 3. 解决方法
 
-**[homing override]**与**[safe_z_home]**注释其中一个即可
+`[homing override]`与 `[safe_z_home]`注释其中一个即可
 
 
 

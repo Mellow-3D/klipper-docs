@@ -28,6 +28,10 @@
 
 ## 指定上位机型号
 
+>[!Warning]
+>
+>必须指定上位机型号否则无法启动
+
 ![board](../../images/boards/fly_pi/board.png)
 
 * 将*board=none*中的*none*改成你的上位机型号，如下面几个
@@ -61,7 +65,7 @@ board=fly-c8
 1. 使用ssh执行此命令
 
    ```
-   echo "overlays=analog-codec" | sudo tee -a /boot/armbianEnv.txt
+   echo "overlays=analog-codec" | sudo tee -a /boot/FlyOS-Env.txt
    ```
 
    
