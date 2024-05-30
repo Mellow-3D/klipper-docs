@@ -61,7 +61,7 @@ board=fly-c8
 1. 使用ssh执行此命令
 
    ```
-   echo "overlays=analog-codec" | sudo tee -a /boot/armbianEnv.txt
+   echo "overlays=analog-codec" | sudo tee -a /boot/FlyOS-Env.txt
    ```
 
    

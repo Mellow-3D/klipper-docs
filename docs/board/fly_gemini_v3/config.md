@@ -28,6 +28,10 @@
 
 ## 指定上位机型号
 
+>[!Warning]
+>
+>必须指定上位机型号否则无法启动
+
 ![board](../../images/boards/fly_pi/board.png)
 
 * 将*board=none*中的*none*改成你的上位机型号，如下面几个
