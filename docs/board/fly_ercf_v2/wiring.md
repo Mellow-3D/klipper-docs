@@ -8,4 +8,4 @@
 
 ![save](../../images/boards/fly_d7/save.png)
 
-![wiring](../../images/boards/fly_ercf_v2/wiring.png)
+![ERCF_v2_wiring](../../images/boards/fly_ercf_v2/ERCF_v2_wiring.png)
