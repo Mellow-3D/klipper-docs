@@ -85,5 +85,5 @@ FLY-TFT-V2是一款基于st7796的TFT液晶屏，支持电容触摸与电阻触�
 
 ### 屏幕接线
 
-![tft](../../images/boards/fly_pro/TFTV2.png)
+![tft](../../images/boards/fly_pro/tft.jpg)
 

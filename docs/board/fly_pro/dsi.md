@@ -9,3 +9,5 @@ dtoverlay=vc4-kms-dsi-7inch
 ![dsi](../../images/boards/fly_pro/dsi.png)
 
 保存重启系统即可
+
+![dsi](../../images/boards/fly_pro/dsi.jpg)

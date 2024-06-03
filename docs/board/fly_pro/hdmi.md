@@ -1,3 +1,3 @@
-## 正在制作
+## HDMI接线图
 
-接线图+端口占用说明
+![HDMI](../../images/boards/fly_pro/hdmi.jpg)

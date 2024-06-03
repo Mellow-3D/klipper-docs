@@ -15,3 +15,5 @@
     * [11. Klipper常见错误](/board/fly_d7/klippererro.md)
     * [12. Klipper配置检查](/board/fly_d7/klippercheck.md)
     * [13. 打印前的准备](/board/fly_d7/Super8prepare.md)
+    * **Malin固件**
+    * [14. Malin固件](/board/fly_d7/malin.md)

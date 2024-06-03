@@ -9,3 +9,5 @@ dtoverlay=imx219,cam1
 ![csi](../../images/boards/fly_pro/csi.png)
 
 保存重启系统即可
+
+![csi](../../images/boards/fly_pro/csi.jpg)
