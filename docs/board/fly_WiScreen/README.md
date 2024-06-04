@@ -1,6 +1,6 @@
-Fly_WiScreen是广州镁伦电子科技有限公司Fly3D主板研发团队推出的一款高性能3D打印机主板
+Fly_WiScreen是广州镁伦电子科技有限公司Fly3D主板研发团队推出的一款远程集群扩展屏幕
 
-
+![WiScreen](../../images/boards/fly_WiScreen/WiScreen.JPG)
 
 ## **1. 产品特点**
 

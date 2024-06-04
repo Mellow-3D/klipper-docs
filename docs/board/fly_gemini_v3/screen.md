@@ -53,6 +53,8 @@ sudo systemctl restart klipper
 > [!Warning]
 >
 > 配置方法与TFT V1一样！！！
+>
+> Gemini V3用不了电容屏版本
 
 * 如果使用TFT V1接口需要在FLY Tools里面配置**fly-tft-v1**
 
