@@ -86,6 +86,7 @@
   - FLY MiniAB 集线板
     * [FLY MiniAB 集线板](/board/miniab_board/README.md)
 - **扩展类**
+  - [FLY-WiScreen屏幕](/board/fly_WiScreen/README.md)
   - [FLY-SENSOR 扫描传感器](/board/fly_sensor/)
   - [BD-SENSOR 扫描传感器](/board/bd_sensor/)
   - [VORON_StealthBurner_LED](/advanced/voronled.md)
