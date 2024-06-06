@@ -1,4 +1,4 @@
-# 树莓派系统使用网线连接WiScreen
+# Linux系统使用网线连接WiScreen
 
 安装服务
 
