@@ -62,7 +62,7 @@
     - [FLY-SHT36-Pro](/board/fly_sht36_pro/README.md)
     - [FLY-SHT36-V2](/board/fly_sht_v2/README.md)
     - [FLY-SHT36/42](/board/fly_sht36_42/README.md)
-    - [FLY-SHT36-LIS3DH](/board/fly_shtadxl/README.md)
+    - [FLY-SHT36-加速度计不能用版](/board/fly_shtadxl/README.md)
     
   - SB2040 系列CAN工具板
     * [FLY-SB2040-PRO_V3](/board/fly_sb2040_v3_pro/README.md)
