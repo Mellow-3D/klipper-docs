@@ -64,6 +64,46 @@ G90
 G91\nG1 X10 F6000\nG90
 ```
 
- 
+
+
+ # 使用对象排除
+
+* 需要替换moonraker
+
+* 请先连接SSH，并且保证可以正常上网
+
+1. 备份moonraker文件
+
+```
+mv ~/moonraker ~/moonraker-bak
+```
+
+2. 停止moonraker服务
+
+```
+sudo systemctl restart moonraker
+```
+
+3. 拉取moonraker
+
+```
+git clone https://e.coding.net/g-ofpa1390/3D-Printers/moonraker-dev.git -b flylcd-dev moonraker
+```
+
+4. 在浏览器访问上位机找到`moonraker.conf`添加，然后重启系统
+
+```
+[network]
+```
+
+5. 然后在浏览器输入下方地址，其中IP需要替换成上位机的IP
+
+```
+http://ip:7125/server/network/wifi/scan
+```
+
+* 出现这步代表操作完成
+
+![moonraker](../../images/boards/fly_WiScreen/moonraker.png)
 
  
