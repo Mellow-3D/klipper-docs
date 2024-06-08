@@ -36,8 +36,8 @@ pin: FAN1
 
 
 ```
-[fan_generic fan1]
-pin: FAN1
+[fan_generic fan2]
+pin: FAN2
 ```
 
  
