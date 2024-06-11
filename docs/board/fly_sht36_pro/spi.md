@@ -16,12 +16,12 @@ Unable to write tmc spi 'extruder' register IHOLD_IRUN
 * 下载
 
 ```
-cd && git clone https://github.com/FengHua741/FLY_Katapult.git
+cd ~/ && git clone https://github.com/FengHua741/FLY_Katapult.git && cd /FLY_Katapult && git pull
 ```
 
 * 烧录
 
 ```
-python3 ~/klipper/lib/canboot/flash_can.py -f ~/FLY_Katapult/Klipper/SHT36PRO/SHT36PRO_KLIPPER_CAN-1M.bin -u c8a53261de65
+python3 ~/klipper/lib/canboot/flash_can.py -f ~/FLY_Katapult/Klipper/SHT36PRO/SHT36PRO_KLIPPER_CAN-1M_v0.12.0-229-g589bd64c.bin -u <SHT36PRO_canid>
 ```
 
