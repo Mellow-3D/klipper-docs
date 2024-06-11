@@ -85,6 +85,26 @@
 ~/klippy-env/bin/python ~/klipper/lib/canboot/flash_can.py -d /dev/serial/by-id/usb-katapult_stm32f072xb_12345-if00
 ```
 
+* 安装`pip install pyserial`
+
+```
+pip install pyserial
+```
+
+  * 如果提示`-bash: pip: command not found`需要执行
+
+```
+sudo apt-get install pip
+```
+
+* 如果提示出现下方报错需要执行
+
+![pip](../../images/firmware/pip.png)
+
+```
+ pip install pyserial --break-system-packages
+```
+
 * 更新USB固件需要在编译好最新固件后输入下方命令更新，请注意`=`后面没有空格
 
 ```
