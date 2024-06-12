@@ -51,7 +51,7 @@
   - FLY MINI
     * [FLY-MINI](/board/fly_mini/)
 
-  - FLY Micio4
+  - FLY Micro4
     * [FLY-Micro4](/board/fly_micro/README.md)
 
   - FLY 驱动系列
