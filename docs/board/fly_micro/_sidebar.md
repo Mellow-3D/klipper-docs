@@ -15,3 +15,5 @@
     * [11. Klipper常见错误](/board/fly_micro/klippererro.md)
     * [12. Klipper配置检查](/board/fly_micro/klippercheck.md)
     * [13. 打印前的准备](/board/fly_micro/Super8prepare.md)
+    * **BL**
+    * [14. BL下载](/board/fly_micro/bl.md) 
