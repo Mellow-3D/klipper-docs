@@ -1,15 +1,16 @@
-# 5160spi问题
+# 5160SPI问题
 
-如果使用5160显示下方报错，因上位机差异可能导致驱动无法使用
+如果使用5160显示下方报错，因上位机Arm工具链版本问题`arm-none-eabi-gcc`
 
 ```
 Unable to write tmc spi 'extruder' register IHOLD_IRUN
 ```
 
-解决方法
+解决方法有以下三种
 
-* 刷写提供正常的固件
+* 编译工具链arm-none-eabi-gcc从gcc10换到gcc8就可以
 * 更换上位机
+* 刷写提供正常的固件
 
 固件下载与烧录，请注意需要工具板可以正常连接can并且拥有CANBOOT
 
