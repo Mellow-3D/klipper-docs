@@ -13,3 +13,5 @@
   * [11. 相关链接](/board/fly_sb2040_pro/link.md)
   * [12. 原理图](/board/fly_sb2040_pro/schematic.md)
   * [13. 三维模型](/board/fly_sb2040_pro/3dmodel.md)
+  * [14. GSTAT: 00000004](/board/fly_sb2040_pro/undervoltage.md)
+
