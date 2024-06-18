@@ -63,7 +63,7 @@ make clean && make -j4
 * 请注意如果重新安装了系统需要在安装一次烧录工具
 
 ```
-curl -kfsSL https://cdn.mellow.klipper.cn/Utils/fly-flash/fly-flash_install.sh | sudo bash -s -- "c8"
+sudo curl -kfsSL https://github.com/kluoyun/fly-flash/blob/main/fly-flash.sh -o /usr/bin/fly-flash && sudo chmod +x /usr/bin/fly-flash
 ```
 
   > [!TIP]
