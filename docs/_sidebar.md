@@ -90,6 +90,7 @@
   - [FLY-SENSOR 扫描传感器](/board/fly_sensor/)
   - [BD-SENSOR 扫描传感器](/board/bd_sensor/)
   - [VORON_StealthBurner_LED](/advanced/voronled.md)
+  - [FLY-FilGuard-断堵料传感器](/advanced/filguard.md)
   - [缓冲器](/advanced/buffer.md)
   - [FLY-Halo WiFi智能圆屏](/board/fly_halo/)
   - [FLY-UTOR](/board/fly_utor/README.md)
