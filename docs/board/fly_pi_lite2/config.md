@@ -60,7 +60,7 @@
 * 请注意(FLY-Pi) & (FLY-π) & (FLY-Gemini v1~v3) & (FLY-Pi Lite2) 使用FLY-TFT-V1
 * (FLY-Pi v2) & (FLY-C8)使用FLY-TFT-V1-NEW
 
-![tft](../../images/boards/fly_pi/tft2.png)
+![tft](../../images/boards/fly_pi/tft1.png)
 
 * TFT屏幕旋转只能选择**90**或者**270**
 
