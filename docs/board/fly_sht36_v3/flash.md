@@ -103,6 +103,7 @@ python3 ~/klipper/lib/canboot/flash_can.py -u c5d882v0d121
 
 * 如果需要更新固件只需要编译好固件后重新执行烧录指令就可以更新固件
 * 请保证能找到ID或者KIPPER已经连接上
+* `<MCU ID>`需要替换成你需要更新的工具版ID,可以在配置里面查看
 
 ```
 python3 ~/klipper/lib/canboot/flash_can.py -u  <MCU ID>
