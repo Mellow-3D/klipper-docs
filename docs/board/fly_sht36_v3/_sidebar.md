@@ -12,5 +12,6 @@
   * [10. 原理图](/board/fly_sht36_v3/schematic.md)
   * [11. 三维模型](/board/fly_sht36_v3/3dmodel.md)
   * [12. 扫床使用](/board/fly_sht36_v3/1612.md)
+  * [13. CANBOOT](/board/fly_sht36_v3/canboot.md)
 
  
