@@ -2,21 +2,30 @@
 
 ## 9.1 配置
 
+拉取klipper
+
+```cfg
+cp -r klipper klipperdev
+sudp rm -rf ~/klipper
+git clone https://github.com/FLYmaker/klipper.git
+sudo systemctl restart klipper
+```
+
 配置如下：
 
 ```bash
 #####################################################################
 #                       LIS3DH加速度计配置（需要时启用即可）
 #####################################################################
-## 此版本用不了LIS3DH加速度计
-[lis3dh]
+[lis2dw]
+is_lis3dh:True
 cs_pin: SHT36:gpio9
 spi_software_sclk_pin: SHT36:gpio10
 spi_software_mosi_pin: SHT36:gpio11
 spi_software_miso_pin: SHT36:gpio12
 
 [resonance_tester]
-accel_chip: lis3dh
+accel_chip: lis2dw
 probe_points:
     125, 125, 20  #此处设置为你进行共振测量时喷头所处坐标
 ```
