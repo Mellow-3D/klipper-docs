@@ -127,7 +127,7 @@ lsusb
 4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
 
 ```bash
-cd && cd ~/klipper && make flash FLASH_DEVICE=0483:df11
+dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
 ```
 5. 没有报错则烧录成功,如果出现报错请重新检查每个步骤操作
 
