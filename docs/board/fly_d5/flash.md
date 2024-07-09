@@ -165,7 +165,7 @@ lsusb
 4. 烧录固件(烧录前确保已经编译过固件)
 
 ```bash
-cd ~/klipper && make flash FLASH_DEVICE=0483:df11
+dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
 ```
 
 5. 出现下图箭头处所示内容``File downloaded successfully``则烧录成功
