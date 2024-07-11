@@ -128,20 +128,20 @@ homing_retract_dist: 5              # 第一次触发复位开关之后的后退
 homing_positive_dir: true           # 复位方向（一般不需要改动）
 #--------------------------------------------------------------------
 ##  请确保驱动型号配置正确 (2208 or 2209)
-[tmc2209 stepper_x]                 # x 驱动配置 -TMC2209
+[tmc2209 stepper_x]
 uart_pin: PC9                       # 通讯端口Pin脚定义
 interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 run_current: 0.8                    # 电机运行电流值（单位：mA）
 sense_resistor: 0.110               # 驱动采样电阻不要改
-stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
 #--------------------------------------------------------------------
-#[tmc5160 stepper_x]                 # 挤出机驱动配置- TMC5160
+#[tmc5160 stepper_x]
 #cs_pin: PC9                         # SPI 片选Pin脚定义
 #spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
-#stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+#stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
 #                  Y 轴步进电机      (DRIVER1)                       #
@@ -155,7 +155,7 @@ rotation_distance: 40
 microsteps: 16                      # 电机细分设置，细分越高，质量越高，但主控负荷越大
 full_steps_per_rotation: 200        # 电机单圈所需脉冲数（1.8度电机:200，0.9度电机:400）
 endstop_pin: !PD8                    # 限位开关PIN脚,建议常闭然后添加！反转状态
-#endstop_pin: tmc5160_stepper_x:virtual_endstop        # 限位开关接口
+#endstop_pin: tmc5160_stepper_y:virtual_endstop        # 限位开关接口
 ###接常闭后是触发状态，加感叹号可以反转这个状态，万一断线时候可以避免撞机
 position_min: 0
 position_endstop: 300
@@ -170,15 +170,15 @@ uart_pin: PC10
 interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 run_current: 0.8                    # 电机运行电流值（单位：mA）
 sense_resistor: 0.110               # 驱动采样电阻不要改
-stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
 #--------------------------------------------------------------------
-#[tmc5160 stepper_y]                 # 挤出机驱动配置- TMC5160
+#[tmc5160 stepper_y]
 #cs_pin: PC10
 #spi_bus: spi3                       # SPI 通讯总线定义
 #run_current: 1.0                    # 电机运行电流值
 #interpolate: False                  # 是否开启256微步插值（开启是True，关闭是False）
 #sense_resistor: 0.075               # 驱动采样电阻不要改（如果使用5160 Pro，请将数值修改为0.033）
-#stealthchop_threshold: 0          # 静音阀值（如果不需要静音，请将数值改为0）
+#stealthchop_threshold: 0            # 静音阀值（如果不需要静音，请将数值改为0）
 
 #####################################################################
 #                     Z轴步进电机 （Z Stepper Settings）             #
