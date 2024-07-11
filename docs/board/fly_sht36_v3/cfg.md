@@ -133,20 +133,12 @@ pid_ki:1.304
 pid_kd: 131.721
 step_pulse_duration: 0.000004
 ###------------------------------------------------------------------
-# [tmc2209 extruder]
-# uart_pin:SHT36:gpio15
-# interpolate:False
-# run_current: 0.8
-# sense_resistor:0.110
-# stealthchop_threshold:0
-###------------------------------------------------------------------
-# [tmc2240 extruder]
-# uart_pin:SB2040V3:gpio15
-# interpolate:False
-# run_current: 0.65
-# interpolate: False
-# rref: 12300
-# stealthchop_threshold: 0 
+[tmc2209 extruder]
+uart_pin:SHT36:gpio15
+interpolate:False
+run_current: 0.8
+sense_resistor:0.110
+stealthchop_threshold:0
 ###------------------------------------------------------------------
 [verify_heater extruder]
 max_error: 20
