@@ -52,6 +52,8 @@ lsusb
 
 4. 烧录固件(烧录前确保已经编译过固件),将下面命令中的**0483:df11**替换为前面复制的USB ID
 
+* 请注意加入sudo后需要输入你当前用户的密码，并且密码看不到
+
 ```bash
 dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
 ```
