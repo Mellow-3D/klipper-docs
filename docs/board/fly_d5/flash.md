@@ -163,6 +163,7 @@ lsusb
 ![6](../../images/boards/fly_sht36_42/6.png ":no-zooom")
 
 4. 烧录固件(烧录前确保已经编译过固件)
+   * 请注意加入sudo后需要输入你当前用户的密码，并且密码看不到
 
 ```bash
 dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
