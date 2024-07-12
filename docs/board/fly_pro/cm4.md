@@ -17,6 +17,14 @@
 
 ![emmc](../../images/boards/fly_pro/emmc.png)
 
+## 树莓派预安装TFTV2系统下载链接
+
+* 适用于树莓派3B/3B+/4B/CM4/5B的系统镜像
+
+```
+https://cdn.mellow.klipper.cn/IMG/Beta/RPI-TFT-IMG-new.img.xz
+```
+
 ## 镜像下载
 
 - 下载系统[（戳我下载）](https://www.raspberrypi.org/downloads/raspberry-pi-os/)下载最新发布的系统（或如图所示）。

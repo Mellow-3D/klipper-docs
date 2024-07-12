@@ -6,6 +6,14 @@ Github地址:[FLY-TFT](https://github.com/kluoyun/FLY-TFT)
 >
 >请先安装KlipperScreen在安装TFT驱动
 
+## 树莓派预安装TFTV2系统下载链接
+
+* 适用于树莓派3B/3B+/4B/CM4/5B的系统镜像
+
+```
+https://cdn.mellow.klipper.cn/IMG/Beta/RPI-TFT-IMG-new.img.xz
+```
+
 
 ### 1. 介绍
 
@@ -36,7 +44,7 @@ FLY-TFT-V2是一款基于st7796的TFT液晶屏，支持电容触摸与电阻触�
 ### 4. 驱动安装
 
 1. 安装FLY-TFT-V2驱动
-    
+   
     ```
     git clone https://github.com/kluoyun/FLY-TFT.git
     cd FLY-TFT
