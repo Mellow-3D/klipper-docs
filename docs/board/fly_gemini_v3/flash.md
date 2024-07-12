@@ -64,7 +64,7 @@ make -j4
 * 请注意重新安装了系统需要重新下载烧录工具！！！
 
   ```bash
-  curl -kfsSL https://cdn.mellow.klipper.cn/Utils/fly-flash/fly-flash_install.sh | sudo bash -s -- "gemini-v3"
+  sudo curl https://cdn.mellow.klipper.cn/firmware/fly-flash.sh -o /usr/bin/fly-flash && sudo chmod +x /usr/bin/fly-flash
   ```
 
 
