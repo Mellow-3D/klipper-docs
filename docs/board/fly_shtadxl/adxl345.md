@@ -5,8 +5,8 @@
 拉取klipper
 
 ```cfg
-cp -r klipper klipperdev
-sudp rm -rf ~/klipper
+sudo cp -r klipper klipperdev
+sudo rm -rf ~/klipper
 git clone https://github.com/FLYmaker/klipper.git
 sudo systemctl restart klipper
 ```
