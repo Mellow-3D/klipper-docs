@@ -8,7 +8,6 @@
   * **进阶**
   * [屏幕使用](/board/fly_pi_lite2/screen.md)
   * [CAN配置](/board/fly_pi_lite2/can.md)
-  * [使用加速度计](/board/fly_pi_lite2/accelerator.md)
   * [相关链接](/board/fly_pi_lite2/link.md)
   * [原理图](/board/fly_pi_lite2/schematic.md)
   * [三维模型](/board/fly_pi_lite2/3dmodel.md)
