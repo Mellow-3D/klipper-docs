@@ -166,7 +166,7 @@ lsusb
    * 请注意加入sudo后需要输入你当前用户的密码，并且密码看不到
 
 ```bash
-dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
+sudo dfu-util -a 0 -d 0483:df11 --dfuse-address 0x08000000 -D ~/klipper/out/klipper.bin
 ```
 
 5. 出现下图箭头处所示内容``File downloaded successfully``则烧录成功

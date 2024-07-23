@@ -59,13 +59,7 @@ make -j4
 
 ## 3. 固件烧录
 
-* 执行下面的命令来添加一键烧录工具，这个命令只执行一次，后续烧录不用
 
-* 请注意重新安装了系统需要重新下载烧录工具！！！
-
-  ```bash
-  sudo curl https://cdn.mellow.klipper.cn/firmware/fly-flash.sh -o /usr/bin/fly-flash && sudo chmod +x /usr/bin/fly-flash
-  ```
 
 
   > [!TIP]
