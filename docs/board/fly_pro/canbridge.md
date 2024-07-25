@@ -1,4 +1,4 @@
-# 11. Super5 Pro桥接CAN
+# 11. Pro桥接CAN
 
 CAN总线是一种用于实时应用的串行通讯协议总线，它可以使用双绞线来传输信号，是世界上应用最广泛的现场总线之一。CAN协议用于汽车中各种不同元件之间的通信，以此取代昂贵而笨重的配电线束。该协议的健壮性使其用途延伸到其他自动化和工业应用。CAN协议的特性包括完整性的串行数据通讯、提供实时支持、传输速率高达1Mb/s、同时具有11位的寻址以及检错能力。
 
@@ -12,13 +12,13 @@ CAN总线是一种用于实时应用的串行通讯协议总线，它可以使�
 
 以SHT36V2为例，接线如下图所示
 
-<img src="../../images/boards/fly_super5/canbridge.png" alt="canbridge" style="zoom:90%;" />
+<img src="../../images/boards/fly_pro/canbridge.png" alt="canbridge" style="zoom:90%;" />
 
 ## 11.2 主板固件参数配置
 
-**Super5 Pro** 主板的Klipper固件配置界面如下图。编译固件后，按照[固件编译和烧录](/board/fly_super8/firmware "点击即可跳转")给出的方法，将固件刷入Super5 Pro主板中。
+**Pro X10** 主板需要编译CAN桥接固件然后刷进去
 
-<img src="../../images/boards/fly_super5/canbridge2.png" alt="firmware_canboot" style="zoom:150%;" />
+
 
 ## 11.3 主板CAN uuid的读取
 

@@ -47,12 +47,6 @@ https://cdn.mellow.klipper.cn/IMG/Beta/RPI-TFT-IMG-new.img.xz
 
 ## 进入烧录模式
 
-作图两个拨码状态
-
-将2号拨码往上拨后插上typec到电脑cm4进入烧录模式
-
-往下拨则正常启动
-
 * 此时连接电脑并且给主板供电，电脑设备管理器中会识别出一个BCMxxx的设备
 
 ![2711](../../images/boards/fly_pro/bcm2711.png)
