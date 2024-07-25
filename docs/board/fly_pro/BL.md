@@ -10,7 +10,7 @@ cd && git clone https://github.com/FengHua741/FLY_Katapult.git
 
 * 进入DFU烧录
 
-* 按着主板的BT0后按右边的RST即可进去DFU模式（需要配图）
+* 按着主板的BT0后按右边的RST即可进去DFU模式
 
 <!-- tabs:start -->
 
