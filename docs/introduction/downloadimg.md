@@ -48,7 +48,7 @@
 
 1. FLYOS 系统镜像基于[Armbian](https://www.armbian.com/)
 
-   FLYOS_v3.2  （2024-07-18） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Build/FLY-v3.2_Flypilite2.img.xz'">点我下载</button>
+   FLYOS_v3.2 （2023-10-13） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Build/FLY-v3.2_Flypilite2_bullseye_current_5.10.85.img.xz'">点我下载</button>
 
    * 账号：`fly` 或者 `root`
    * 密码：`mellow`
