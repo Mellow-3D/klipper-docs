@@ -16,7 +16,7 @@
   sensor_type: temperature_host
   
   [temperature_fan core_fan]      # 上位机散热风扇
-  pin: host:gpiochip1/gpio3           	    # 上位机风扇pin脚
+  pin: host:gpiochip1/gpio106           	    # 上位机风扇pin脚
   max_power: 1.0
   sensor_type: temperature_host   # 设置为上位机主控温度
   control:watermark          		# 控制方式

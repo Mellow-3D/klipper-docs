@@ -99,7 +99,7 @@ sensor_pin:SHT36:gpio27
 # spi_software_sclk_pin: SHT36:gpio2
 # spi_software_mosi_pin: SHT36:gpio3
 # spi_software_miso_pin: SHT36:gpio4
-# rtd_reference_r: 430
+# rtd_reference_r: 430  ## 使用PT100时请设置为430，使用PT1000时请设置为4300
 
 #####################################################################
 # 	 extruder
