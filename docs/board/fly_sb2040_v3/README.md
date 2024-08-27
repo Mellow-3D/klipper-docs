@@ -1,6 +1,6 @@
 ## 1. 产品简介
 
-FLY SB2040 V3是广州镁伦电子科技有限公司针对VORON Stealthburber打印头推出的一款工具板，使用该工具板，可以用四根线来替代原来主板与打印头之间繁杂的接线，优化布局。SB2040适用于36步进电机，其集成了CAN收发器、RS232收发器、USB口、TMC2209驱动、LIS2DW加速度传感器，三个可控风扇等其他功能的工具板。此工具板适用于Klipper与RRF固件。
+FLY SB2040 V3是广州镁伦电子科技有限公司针对VORON Stealthburber打印头推出的一款工具板，使用该工具板，可以用四根线来替代原来主板与打印头之间繁杂的接线，优化布局。SB2040适用于stealthburner与afterburner，其集成了CAN收发器、RS232收发器、USB口、TMC2209驱动、LIS2DW加速度传感器，三个可控风扇等其他功能的工具板。此工具板适用于Klipper与RRF固件。
 
 ![v3](../../images/boards/fly_sb2040_v3/sb2040.png)
 
@@ -13,7 +13,7 @@ FLY SB2040 V3是广州镁伦电子科技有限公司针对VORON Stealthburber打
 * 温度传感器支持： 板载MAX31865芯片，兼容PT100和PT1000温度传感器。
 * 支持两路2/3/4线风扇、1路2线风扇，5V/VCC电压可选
 * 板载LIS2DW加速度传感器与LDC1612传感器
-* 预留RGB接口、板载2209驱动，支持多种调平传感器，例如BLtouch、klicky、Voron Tap、PL08n等
+* 预留RGB接口、板载2209驱动，支持多种调平传感器，例如klicky、Voron Tap、PL08n等
 * 支持12-24V电压、15A电流输入，增大加热棒端口，额定电流10A
 
 ## 3. 新增功能
