@@ -58,7 +58,7 @@ stealthchop_threshold: 500
 # Carrot Feeder selector
 [manual_stepper selector_stepper]
 step_pin: ercf:gpio4
-dir_pin: ercf:gpio5
+dir_pin: ercf:gpio3
 enable_pin: !ercf:gpio5
 microsteps: 16    # Please do not go higher than 16, this can cause 'MCU Timer too close' issues under Klipper
 rotation_distance: 40
