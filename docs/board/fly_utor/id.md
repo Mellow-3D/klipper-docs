@@ -6,6 +6,10 @@
 
 ![utor_wiring](../../images/boards/fly_utor/utor_wiring.png)
 
+![utor_mmu_wiring](F:\MELLOW资料\klipper-docs\docs\images\boards\fly_utor\utor_mmu_wiring.png)
+
+![utor_sht36v3_wiring](F:\MELLOW资料\klipper-docs\docs\images\boards\fly_utor\utor_sht36v3_wiring.png)
+
 * 上位机连接ssh后输入下方指令搜索设备！！
 
 ```
