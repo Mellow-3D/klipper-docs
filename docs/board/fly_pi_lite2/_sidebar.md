@@ -7,6 +7,7 @@
   * [FLY_Confing使用](/board/fly_pi_lite2/config.md)
   * **进阶**
   * [屏幕使用](/board/fly_pi_lite2/screen.md)
+  * [加速度计使用](/board/fly_pi_lite2/accelerator.md)
   * [CAN配置](/board/fly_pi_lite2/can.md)
   * [相关链接](/board/fly_pi_lite2/link.md)
   * [原理图](/board/fly_pi_lite2/schematic.md)
