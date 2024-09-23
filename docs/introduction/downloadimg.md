@@ -25,7 +25,7 @@
 
 1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
 
-    FLYOS_v3.3.4 （2024-03-26） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Build/FlyOS_3.3.4_Flygemini_bullseye_current_5.10.85.7z'">点我下载</button>
+    FLYOS_v3.3.4 （2024-03-26） <button onclick="window.location.href='https://cdn.mellow.klipper.cn/IMG/Beta/FlyOS_3.3.4_fix_20240923.img.xz'">点我下载</button>
     
     * 账号：`fly` 或者 `root`
     * 密码：`mellow`
