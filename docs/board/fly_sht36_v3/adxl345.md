@@ -8,10 +8,10 @@
 #####################################################################
 ## https://www.klipper3d.org/Measuring_Resonances.html?h=adxl#adxl345
 [lis2dw]
-cs_pin: SHT36V3:gpio12
-spi_software_sclk_pin: SHT36V3:gpio2
-spi_software_mosi_pin: SHT36V3:gpio3
-spi_software_miso_pin: SHT36V3:gpio4
+cs_pin: SHT36:gpio12
+spi_software_sclk_pin: SHT36:gpio2
+spi_software_mosi_pin: SHT36:gpio3
+spi_software_miso_pin: SHT36:gpio4
 #--------------------------------------------------------------------
 [resonance_tester]
 accel_chip: lis2dw
