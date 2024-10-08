@@ -4,8 +4,8 @@
 ####################################################################################
 #                         3D MELLOW /FLY-D7                                         #
 ####################################################################################
-## FLY-D7 资料网址： https://mellow.klipper.cn/#/board/fly_d7/README
-## FLY-D7 原理图网址：https://mellow.klipper.cn/#/board/fly_d7/schematic
+## FLY-D7 资料网址： https://mellow-old.klipper.cn/#/board/fly_d7/README
+## FLY-D7 原理图网址：https://mellow-old.klipper.cn/#/board/fly_d7/schematic
 ## FLY 官方淘宝店：https://item.taobao.com/item.htm?abbucket=8&id=760788458714&ns=1&spm=a21n57.1.0.0.632e523cCKBdRJ
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
@@ -545,8 +545,8 @@ gcode:
 ####################################################################################
 #                         3D MELLOW /FLY-D7                                #
 ####################################################################################
-## FLY-D7 资料网址： https://mellow.klipper.cn/#/board/fly_d7/README
-## FLY-D7 原理图网址：https://mellow.klipper.cn/#/board/fly_d7/schematic
+## FLY-D7 资料网址： https://mellow-old.klipper.cn/#/board/fly_d7/README
+## FLY-D7 原理图网址：https://mellow-old.klipper.cn/#/board/fly_d7/schematic
 ## FLY 官方淘宝店：https://item.taobao.com/item.htm?abbucket=8&id=760788458714&ns=1&spm=a21n57.1.0.0.632e523cCKBdRJ
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883

@@ -29,7 +29,7 @@ Klipper固件配置界面如下图。编译固件后，按照 [D5固件编译和
 
 > [!TIP]
 >
-> 请先确定好已经配置了上位机的[CAN](https://mellow.klipper.cn/#/introduction/id?id=搜索can固件id)在进行搜索id
+> 请先确定好已经配置了上位机的[CAN](https://mellow-old.klipper.cn/#/introduction/id?id=搜索can固件id)在进行搜索id
 
 ```bash
 ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0

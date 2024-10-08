@@ -50,9 +50,9 @@ board=fly-c8
 
 > [!Tip]
 >
-> 保存配置并且通过[通过串口](https://mellow.klipper.cn/#/introduction/conntossh)且[连接WiFi](https://mellow.klipper.cn/#/board/fly_pi_v2/to_wifi?id=_2-通过ssh软件连接)
+> 保存配置并且通过[通过串口](https://mellow-old.klipper.cn/#/introduction/conntossh)且[连接WiFi](https://mellow-old.klipper.cn/#/board/fly_pi_v2/to_wifi?id=_2-通过ssh软件连接)
 >
-> 其他功能请通过FLY-Tools进行[设置](https://mellow.klipper.cn/#/board/fly_tools/setting)！！！
+> 其他功能请通过FLY-Tools进行[设置](https://mellow-old.klipper.cn/#/board/fly_tools/setting)！！！
 
 >[!Warning]
 >

@@ -13,7 +13,7 @@
 1. SD卡一张，容量必须不小于16GB 或 不大于128G TF 卡，TF 卡的传输速度必须为 class10 级或 class10 级以上
 2. 读卡器
 3. 系统镜像
-5. [系统镜像](https://mellow.klipper.cn/#/introduction/downloadimg?id=适用于fly-gemini-amp-fly-π-amp-fly-pi-v2-amp-fly-c8)
+5. [系统镜像](https://mellow-old.klipper.cn/#/introduction/downloadimg?id=适用于fly-gemini-amp-fly-π-amp-fly-pi-v2-amp-fly-c8)
 
 **注：其他非FLY的上位机请勿使用FLY的专属镜像，否则会损坏上位机！！！**
 

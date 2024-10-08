@@ -52,7 +52,7 @@
 ###  3.3 SB2040
 
 > [!TIP]
-> **SB2040**使用Servo signal port需要拆掉电容[SB2040-Pro](https://mellow.klipper.cn/#/board/fly_sb2040_pro/sb2040line)
+> **SB2040**使用Servo signal port需要拆掉电容[SB2040-Pro](https://mellow-old.klipper.cn/#/board/fly_sb2040_pro/sb2040line)
 
 |       功能        |   GPIO    |
 | :---------------: | :--------- |

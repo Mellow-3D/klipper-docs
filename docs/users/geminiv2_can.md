@@ -1,5 +1,5 @@
 ﻿# Gemini_V2-CAN的配置详细流程
-**全程参考官网：** [mellow.klipper.cn](https://mellow.klipper.cn/)
+**全程参考官网：** [mellow-old.klipper.cn](https://mellow-old.klipper.cn/)
 
 > [!TIP]
 > 本文提供了<font style="background:yellow">软件</font>，<font style="background:yellow">镜像</font>，以及编译好的<font style="background:yellow">klipper固件</font>,方便一次性下载。
@@ -511,7 +511,7 @@
 
   > CAN部分的配置本文以**SHT42**为例
 
-  > 示例具体可以参考官网：[SHT36/42-CFG](https://mellow.klipper.cn/#/board/fly_sht36_42/cfg)
+  > 示例具体可以参考官网：[SHT36/42-CFG](https://mellow-old.klipper.cn/#/board/fly_sht36_42/cfg)
 
   * 手动屏蔽掉没有温度传感器的错误:
 

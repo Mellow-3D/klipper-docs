@@ -78,7 +78,7 @@
 
 > [!TIP]
 >
-> 请先确定好已经配置了上位机的[CAN](https://mellow.klipper.cn/#/introduction/id?id=搜索can固件id)在进行搜索id
+> 请先确定好已经配置了上位机的[CAN](https://mellow-old.klipper.cn/#/introduction/id?id=搜索can固件id)在进行搜索id
 
 > [!TIP]
 > 如果已经烧录过klipper并且在正常运行，可跳过查找uuid，使用配置文件中的uuid进行烧录

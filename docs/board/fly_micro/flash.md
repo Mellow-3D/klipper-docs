@@ -30,7 +30,7 @@
 
 * 请根据自己的机器选择编译相应的固件
 
-* 请确保使用**MobaXterm_Personal**等**SSH工具**连接到上位机，并且是**安装好klipper的用户**参考教程:[上位机连接 SSH](https://mellow.klipper.cn/#/introduction/conntossh?id=通过wifi或者网线连接上位机)
+* 请确保使用**MobaXterm_Personal**等**SSH工具**连接到上位机，并且是**安装好klipper的用户**参考教程:[上位机连接 SSH](https://mellow-old.klipper.cn/#/introduction/conntossh?id=通过wifi或者网线连接上位机)
 
 * 上位机连接SSH后输入`cd klipper`并且回车
 

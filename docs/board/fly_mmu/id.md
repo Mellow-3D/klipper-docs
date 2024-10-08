@@ -47,7 +47,7 @@
 * 是否正确供电，在刷固件时可以只使用TypeC接口供电
 * 您的镜像内核是否支持CAN
 * 固件是否编译正确
-* 具体方法可以参考[ID搜索与配置](https://mellow.klipper.cn/#/introduction/id?id=搜索can固件id)
+* 具体方法可以参考[ID搜索与配置](https://mellow-old.klipper.cn/#/introduction/id?id=搜索can固件id)
 
 ### 与UTOC的接线
 

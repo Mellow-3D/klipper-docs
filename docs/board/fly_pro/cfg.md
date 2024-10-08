@@ -6,8 +6,8 @@
 ####################################################################################
 #                         3D MELLOW /（需要自行添加）                                #
 ####################################################################################
-## Fly-PRO_X10资料网址：https://mellow.klipper.cn/#/board/fly_pro/README
-## Fly-PRO_X10原理图网址：https://mellow.klipper.cn/#/board/fly_pro/schematic
+## Fly-PRO_X10资料网址：https://mellow-old.klipper.cn/#/board/fly_pro/README
+## Fly-PRO_X10原理图网址：https://mellow-old.klipper.cn/#/board/fly_pro/schematic
 ## FLY 官方淘宝店：https://shop126791347.taobao.com/shop/view_shop.htm?spm:a230r.1.14.4.1a4840a8hyvpPJ&user_number_id:2464680006
 ## 如需售后，请联系淘宝客服
 ## FLY 售后技术支持群：621032883
