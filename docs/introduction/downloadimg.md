@@ -26,8 +26,8 @@
 1. FLYOS（预装Klipper及所有所需环境）基于[Armbian](https://www.armbian.com/)
 
     FLYOS_v3.3.4 （2024-03-26） 
-    * <button onclick="window.location.href='https://pan.baidu.com/s/1i5YPl4veZB7CExO2pA6lYg?pwd=ipx7'">百度网盘</button>
-    * <button onclick="window.location.href='https://drive.google.com/drive/folders/1Ok4MMgE0A6enKdkzZc9K_RQgQ8exqnG1?usp=drive_link'">谷歌网盘</button>
+       <button onclick="window.location.href='https://pan.baidu.com/s/1i5YPl4veZB7CExO2pA6lYg?pwd=ipx7'">百度网盘</button>
+       <button onclick="window.location.href='https://drive.google.com/drive/folders/1Ok4MMgE0A6enKdkzZc9K_RQgQ8exqnG1?usp=drive_link'">谷歌网盘</button>
     * 账号：`fly` 或者 `root`
     * 密码：`mellow`
 
@@ -50,8 +50,8 @@
 1. FLYOS 系统镜像基于[Armbian](https://www.armbian.com/)
 
    FLYOS_v3.2 （2023-10-13）
-    * <button onclick="window.location.href='https://pan.baidu.com/s/1kv1XaiwlNfbA4SDcOOsGAw?pwd=sthu'">百度网盘</button>
-    * <button onclick="window.location.href='https://pan.baidu.com/s/1kv1XaiwlNfbA4SDcOOsGAw?pwd=sthu'">谷歌网盘</button>
+       <button onclick="window.location.href='https://pan.baidu.com/s/1kv1XaiwlNfbA4SDcOOsGAw?pwd=sthu'">百度网盘</button>
+       <button onclick="window.location.href='https://pan.baidu.com/s/1kv1XaiwlNfbA4SDcOOsGAw?pwd=sthu'">谷歌网盘</button>
 
    * 账号：`fly` 或者 `root`
    * 密码：`mellow`
